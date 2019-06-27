@@ -1,14 +1,18 @@
 :root {
+  /* stylelint-disable custom-property-empty-line-before */
   --mainBorderWidth: 9px;
   --secondaryBorderWidth: 6px;
-  --arrowMargin: 24px;
-  --arrowMarginCalculated: calc(var(--mainBorderWidth) + var(--arrowMargin));
+
+  /* --mainBorderWidth + margin value */
+  --arrowMargin: 35px;
+  --arrowMarginNegative: -35px;
+
   --cursorMargin: 28px;
+  --cursorMarginNegative: -28px;
 }
 
 ._container {
   padding: 8px 10px;
-  text-align: center;
   color: var(--white);
   font-size: 1.3rem;
   font-weight: 100;
@@ -22,22 +26,35 @@
   border-radius: 2px;
   font-family: var(--fontPrimary);
   z-index: 2;
+  max-width: 178px;
+  box-sizing: border-box;
+  text-align: left;
 }
 
 .container-top-start {
   composes: _container;
-  /* stylelint-disable-next-line length-zero-no-unit */
-  transform: translate(calc(0px - var(--arrowMarginCalculated)), calc(-100% - var(--cursorMargin)));
+
+  /*
+    It was written this way before:
+    transform: translate(calc(0px - var(--arrowMarginCalculated)), calc(-100% - var(--cursorMargin)));
+
+    But since IE10, IE11, and Edge < 14 don't support using calc() inside a transform,
+    we have to rewrite it differently. Translates are applied one by one.
+    Eg: translateX(-10px) translateX(-10px) is equal to translateX(-20px)
+
+    Please see https://stackoverflow.com/a/21469557
+   */
+  transform: translateX(var(--arrowMarginNegative)) translateY(-100%) translateY(var(--cursorMarginNegative));
 }
 
 .container-top-middle {
   composes: _container;
-  transform: translate(-50%, calc(-100% - var(--cursorMargin)));
+  transform: translateX(-50%) translateY(-100%) translateY(var(--cursorMarginNegative));
 }
 
 .container-top-end {
   composes: _container;
-  transform: translate(calc(-100% + var(--arrowMarginCalculated)), calc(-100% - var(--cursorMargin)));
+  transform: translateX(-100%) translateX(var(--arrowMargin)) translateY(-100%) translateY(var(--cursorMarginNegative));
 }
 
 .container-right-start,
@@ -49,8 +66,7 @@
 
 .container-bottom-start {
   composes: _container;
-  /* stylelint-disable-next-line length-zero-no-unit */
-  transform: translate(calc(0px - var(--arrowMarginCalculated)), var(--cursorMargin));
+  transform: translateX(var(--arrowMarginNegative)) translateY(var(--cursorMargin));
 }
 
 .container-bottom-middle {
@@ -60,14 +76,14 @@
 
 .container-bottom-end {
   composes: _container;
-  transform: translate(calc(-100% + var(--arrowMarginCalculated)), var(--cursorMargin));
+  transform: translateX(-100%) translateX(var(--arrowMargin)) translateY(var(--cursorMargin));
 }
 
 .container-left-start,
 .container-left-middle,
 .container-left-end {
   composes: _container;
-  transform: translate(calc(-100% - var(--cursorMargin)), -50%);
+  transform: translateX(-100%) translateX(var(--cursorMarginNegative)) translateY(-50%);
 }
 
 ._arrow {
@@ -89,7 +105,7 @@
 
 .arrow-top-start {
   composes: _arrow-top;
-  left: var(--arrowMarginCalculated);
+  left: var(--arrowMargin);
 }
 
 .arrow-top-middle {
@@ -99,7 +115,7 @@
 
 .arrow-top-end {
   composes: _arrow-top;
-  left: calc(100% - var(--arrowMarginCalculated));
+  left: calc(100% - var(--arrowMargin));
 }
 
 ._arrow-left {
@@ -148,7 +164,7 @@
 
 .arrow-bottom-start {
   composes: _arrow-bottom;
-  left: var(--arrowMarginCalculated);
+  left: var(--arrowMargin);
 }
 
 .arrow-bottom-middle {
@@ -158,5 +174,5 @@
 
 .arrow-bottom-end {
   composes: _arrow-bottom;
-  left: calc(100% - var(--arrowMarginCalculated));
+  left: calc(100% - var(--arrowMargin));
 }
