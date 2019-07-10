@@ -3,7 +3,6 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
 import anime from 'animejs';
 
 import { generate, parametric } from './Shared';
@@ -36,14 +35,14 @@ function step({ el, offset }, s) {
   const roundScale = particlesLayer.scale < 0.01 ? 0 : particlesLayer.scale;
   // eslint-disable-next-line
   el.style.transform = `
-          translate3d(${x}px, ${-y}px, 0)
-          rotate3d(0, 0, 1, ${-sMod * 360 + 90}deg)
-          scale3d(${roundScale}, ${roundScale}, 1)
-        `;
+    translate3d(${x}px, ${y}px, 0)
+    rotate3d(0, 0, 1, ${sMod * 360 + 90}deg)
+    scale3d(${roundScale}, ${roundScale}, 1)
+  `;
 }
 
 /**
- * Encryption animatoin loop
+ * Encryption animation loop
  * @param ms
  */
 function update(ms) {
@@ -134,8 +133,50 @@ class Encrypting extends Component {
     timelineOut
       .add(
         {
+          targets: this.ringRef.current,
+          'stroke-dashoffset': [1000, 748],
+          rotate: [-245, -50],
+          duration: 1333,
+          easing: 'easeInOutCubic',
+        },
+        0,
+      )
+      .add(
+        {
           targets: particlesLayer,
           scale: [1, 0],
+          duration: 1000,
+          easing: 'easeInOutCubic',
+        },
+        150,
+      )
+      .add(
+        {
+          targets: this.containerRef.current,
+          translateY: [0, 30],
+          opacity: [1, 0],
+          duration: 500,
+          easing: 'easeInCubic',
+          complete: this.onComplete,
+        },
+        1000,
+      )
+      .add(
+        {
+          targets: this.textRef.current,
+          opacity: [1, 0],
+          translateY: [0, 10],
+          duration: 500,
+          easing: 'easeInCubic',
+        },
+        '-=700',
+      );
+
+    timelineIn
+      .add(
+        {
+          targets: particlesLayer,
+          scale: [0, 1],
           duration: 300,
           easing: 'easeInCubic',
         },
@@ -143,31 +184,10 @@ class Encrypting extends Component {
       )
       .add(
         {
-          targets: this.containerRef.current,
-          opacity: [1, 0],
-          duration: 300,
-          easing: 'easeOutCubic',
-          complete: this.onComplete,
-        },
-        250,
-      );
-
-    timelineIn
-      .add(
-        {
-          targets: this.containerRef.current,
-          opacity: [0, 1],
-          duration: 300,
-          easing: 'easeOutCubic',
-        },
-        0,
-      )
-      .add(
-        {
           targets: this.ringRef.current,
-          'stroke-dashoffset': [748, 1000],
-          rotate: [-50, -245],
-          duration: 1333,
+          'stroke-dashoffset': 1000,
+          rotate: -245,
+          duration: 0,
           easing: 'easeInOutCubic',
         },
         100,
@@ -184,12 +204,13 @@ class Encrypting extends Component {
       )
       .add(
         {
-          targets: particlesLayer,
-          scale: [0, 1],
-          duration: 1000,
-          easing: 'easeInOutCubic',
+          targets: this.containerRef.current,
+          opacity: [0, 1],
+          translateY: 0,
+          duration: 400,
+          easing: 'easeOutCubic',
         },
-        150,
+        250,
       );
   }
 
