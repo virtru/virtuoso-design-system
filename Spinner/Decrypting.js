@@ -272,6 +272,7 @@ class Decrypting extends Component {
               fontSize: 12,
               fontFamily: 'Open Sans',
               textAlign: 'center',
+              wordBreak: 'keep-all',
             }}
           >
             {title}
