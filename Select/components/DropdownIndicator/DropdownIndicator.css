@@ -1,0 +1,7 @@
+.chevron {
+  display: flex;
+}
+
+.chevron.inverted {
+  transform: rotate(180deg);
+}

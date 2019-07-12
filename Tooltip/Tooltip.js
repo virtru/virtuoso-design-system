@@ -23,14 +23,12 @@ const reversePosition = {
   [POSITION.LEFT]: POSITION.RIGHT,
 };
 
-const Tooltip = forwardRef(function Tooltip({ overlay, position, arrowPosition }, ref) {
-  return (
-    <div className={styles[`container-${position}-${arrowPosition}`]} ref={ref}>
-      <div className={styles[`arrow-${reversePosition[position]}-${arrowPosition}`]} />
-      {overlay}
-    </div>
-  );
-});
+const Tooltip = forwardRef(({ overlay, position, arrowPosition }, ref) => (
+  <div className={styles[`container-${position}-${arrowPosition}`]} ref={ref}>
+    <div className={styles[`arrow-${reversePosition[position]}-${arrowPosition}`]} />
+    {overlay}
+  </div>
+));
 
 Tooltip.propTypes = {
   overlay: PropTypes.node,
