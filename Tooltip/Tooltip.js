@@ -1,4 +1,11 @@
-import React, { forwardRef, useLayoutEffect, useRef, useState, cloneElement } from 'react';
+import React, {
+  cloneElement,
+  forwardRef,
+  Fragment,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from 'react';
 import PropTypes from 'prop-types';
 import usePortal from '../../helpers/usePortal';
 import styles from './Tooltip.css';
@@ -52,6 +59,9 @@ const TooltipWrapper = ({ children, ...tooltipProps }) => {
       const rect = childrenRef.current.getBoundingClientRect();
       let { top, left } = rect;
 
+      top += window.scrollY;
+      left += window.scrollX;
+
       const isHorizontal = [POSITION.LEFT, POSITION.RIGHT].includes(tooltipProps.position);
 
       if (isHorizontal) {
@@ -101,16 +111,28 @@ const TooltipWrapper = ({ children, ...tooltipProps }) => {
     },
   };
 
-  return [
-    cloneElement(children, { ref: childrenRef, ...extendedChildrenProps }),
-    // We could wrap children with a div that has position: relative
-    // and then position a Tooltip relatively to this wrapper
-    // but this approach may break children positioning if children has position: absolute.
-    // To avoid situation like this we render a Tooltip into the document.body
-    // and then use children bounding rectangle to position a Tooltip by setting
-    // top and left style properties.
-    usePortal(isVisible && <Tooltip {...tooltipProps} ref={tooltipRef} />),
-  ];
+  return (
+    <Fragment>
+      {cloneElement(children, { ref: childrenRef, ...extendedChildrenProps })}
+      {/*
+        We could wrap children with a div that has position: relative
+        and then position a Tooltip relatively to this wrapper
+        but this approach may break children positioning if children has position: absolute.
+        To avoid situation like this we render a Tooltip into the document.body
+        and then use children bounding rectangle to position a Tooltip by setting
+        top and left style properties.
+      */}
+      {usePortal(isVisible && <Tooltip {...tooltipProps} ref={tooltipRef} />)}
+    </Fragment>
+  );
+};
+
+TooltipWrapper.propTypes = {
+  children: PropTypes.node,
+};
+
+TooltipWrapper.defaultProps = {
+  children: null,
 };
 
 export default Object.assign(TooltipWrapper, {
