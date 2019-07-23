@@ -1,8 +1,7 @@
 .oauthButton {
   box-sizing: border-box;
   border-radius: 3px;
-  font-size: 1.6rem;
-  font-family: var(--fontPrimary);
+  font: var(--paragraph);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -13,7 +12,6 @@
   color: var(--slateDarker);
   background-color: var(--white);
   padding: 12px 29px;
-  font-weight: normal;
   min-width: 240px;
 }
 

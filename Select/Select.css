@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  font-size: 1.3rem;
+  font: var(--small);
   z-index: 1;
 }
 

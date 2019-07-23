@@ -14,8 +14,7 @@
 ._container {
   padding: 8px 10px;
   color: var(--white);
-  font-size: 1.3rem;
-  font-weight: 100;
+  font: var(--small);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -24,7 +23,6 @@
   pointer-events: none;
   background: var(--slateDarkest);
   border-radius: 2px;
-  font-family: var(--fontPrimary);
   z-index: 2;
   max-width: 178px;
   box-sizing: border-box;
