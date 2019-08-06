@@ -1,0 +1,125 @@
+.base {
+  padding: 0;
+  border: none;
+  border-radius: 3px;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  outline: none;
+  font-family: var(--fontPrimary);
+  font-weight: bold;
+  line-height: 1em;
+  cursor: pointer;
+  fill: currentColor;
+}
+
+.fullWidth {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.base:hover,
+.base:focus {
+  border-color: var(--blueDarkest);
+  box-shadow: 0 1px 4px 1px rgba(var(--blueDarker), 0.3);
+}
+
+.base:disabled {
+  pointer-events: none;
+}
+
+.base:disabled:hover {
+  box-shadow: none;
+}
+
+.primary {
+  composes: base;
+  border: 1px solid var(--blueDarker);
+  background-color: var(--blueDarker);
+  color: var(--white);
+}
+
+.primary:hover,
+.primary:focus {
+  background-color: var(--blueDarkest);
+}
+
+.primary:active {
+  background-color: var(--slatePrimary);
+  border-color: var(--slatePrimary);
+  color: var(--white);
+}
+
+.primary:disabled {
+  background-color: var(--slateLighter);
+  border-color: var(--slateLighter);
+}
+
+.secondary {
+  composes: base;
+  border: 1px solid var(--slateDarker);
+  color: var(--blueDarker);
+}
+
+.secondary:hover,
+.secondary:focus {
+  color: var(--blueDarkest);
+}
+
+.secondary:active {
+  background-color: var(--slatePrimary);
+  border-color: var(--slatePrimary);
+  color: var(--white);
+}
+
+.secondary:disabled {
+  color: var(--slateLighter);
+  border-color: var(--slateLighter);
+}
+
+.noOutline {
+  composes: secondary;
+  border-color: var(--white);
+}
+
+.noOutline:hover,
+.noOutline:focus {
+  border-color: var(--white);
+}
+
+.noOutline:active {
+  background-color: var(--slateLightest);
+  border-color: var(--slateLightest);
+  color: var(--blueDarkest);
+}
+
+.noOutline:disabled {
+  border-color: var(--white);
+}
+
+.large {
+  font-size: 1.6rem;
+  padding: 13px 24px 11px 24px;
+}
+
+.medium {
+  font-size: 1.3rem;
+  padding: 9px 18px;
+}
+
+.small {
+  font-size: 1.3rem;
+  padding: 3px 12px;
+}
+
+.square {
+  display: block;
+  min-width: 38px;
+  font-size: 1.6rem;
+  padding: 10px;
+}
+
+/* stylelint-disable-next-line plugin/selector-tag-no-without-class */
+.base svg {
+  vertical-align: middle;
+}
