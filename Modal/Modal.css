@@ -17,6 +17,7 @@
   background-color: var(--white);
   box-shadow: 0 0 4px 1px rgba(var(--black), 0.3);
   box-sizing: border-box;
+  max-width: 450px;
 }
 
 .title {
@@ -31,12 +32,4 @@
 
 .footer {
   margin-top: 24px;
-}
-
-.fit-content {
-  width: auto;
-}
-
-.small {
-  max-width: 450px;
 }
