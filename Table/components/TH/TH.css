@@ -1,0 +1,35 @@
+.sorter {
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.headerCell {
+  color: var(--bluePrimary);
+  font-weight: normal;
+  border: 0 solid currentColor;
+  border-bottom-width: 1px;
+  padding: 10px 5px;
+  font-size: 1.4rem;
+}
+
+.min {
+  width: 1px;
+  word-break: keep-all;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
