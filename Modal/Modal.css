@@ -1,0 +1,42 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(var(--slateDarker), 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.container {
+  padding: 25px 24px;
+  border-radius: 3px;
+  background-color: var(--white);
+  box-shadow: 0 0 4px 1px rgba(var(--black), 0.3);
+  box-sizing: border-box;
+}
+
+.title {
+  color: var(--slateDarkest);
+  font: var(--heading-xxs);
+  line-height: 2.4rem;
+}
+
+.content {
+  margin-top: 12px;
+}
+
+.footer {
+  margin-top: 24px;
+}
+
+.fit-content {
+  width: auto;
+}
+
+.small {
+  max-width: 450px;
+}
