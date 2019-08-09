@@ -2,7 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
 
+import Sorter from './Sorter'
 import { TBL_HEADERS } from '../../table-selectors'
+import { SORT_DESC, SORT_ASC, SORT_OFF } from './sort-constants';
 
 import styles from './TH.css'
 
@@ -11,8 +13,6 @@ export const TEXT_ALIGNMENT = {
   CENTER: 'CENTER',
   RIGHT: 'RIGHT',
 };
-
-const Sorter = () => <div/>
 
 const TH = ({
   children,
@@ -60,5 +60,7 @@ TH.defaultProps = {
   min: false,
   width: null,
 };
+
+TH.sortDirection = { SORT_DESC, SORT_ASC, SORT_OFF }
 
 export default TH;
