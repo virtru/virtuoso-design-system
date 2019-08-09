@@ -9,7 +9,7 @@ const THead = ({ children }) => (
   <thead className={TBL_HEAD}>
     <tr className={styles.headerRow}>{children}</tr>
   </thead>
-)
+);
 
 THead.propTypes = {
   children: PropTypes.node,

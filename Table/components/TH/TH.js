@@ -15,15 +15,16 @@ export const TEXT_ALIGNMENT = {
 };
 
 const TH = ({
+  className,
   children,
   sorting,
-  clickHandler,
+  onClick,
   textAlignment,
   min,
   width,
   ...rest
 }) => {
-  const thClassNames = cn(TBL_HEADERS, styles.headerCell, {
+  const thClassNames = cn(TBL_HEADERS, styles.headerCell, className, {
     [styles.clickable]: sorting,
     [styles.min]: min,
     [styles.left]: textAlignment === TEXT_ALIGNMENT.LEFT,
@@ -32,7 +33,7 @@ const TH = ({
   });
 
   return (
-    <th className={thClassNames} onClick={clickHandler} style={{ width }} {...rest}>
+    <th className={thClassNames} onClick={onClick} style={{ width }} {...rest}>
       {children}
       {sorting && (
         <div className={styles.sorter}>
@@ -44,7 +45,7 @@ const TH = ({
 }
 
 TH.propTypes = {
-  clickHandler: PropTypes.func,
+  onClick: PropTypes.func,
   sorting: PropTypes.string,
   textAlignment: PropTypes.oneOf(Object.values(TEXT_ALIGNMENT)),
   children: PropTypes.node,
@@ -53,7 +54,7 @@ TH.propTypes = {
 };
 
 TH.defaultProps = {
-  clickHandler: () => {},
+  onClick: () => {},
   sorting: '',
   textAlignment: TEXT_ALIGNMENT.LEFT,
   children: null,
