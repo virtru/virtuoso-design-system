@@ -19,7 +19,7 @@ export default isMobile => ({
   menu: provided => ({
     ...provided,
     borderRadius: '3px',
-    marginTop: '-2px',
+    marginTop: '-4px',
     borderTopRightRadius: '0',
     borderTopLeftRadius: '0',
     boxShadow: 'none',
@@ -28,12 +28,12 @@ export default isMobile => ({
     zIndex: 'unset',
   }),
 
-  control: (provided, { isFocused, selectProps: { isDisabled } }) => {
+  control: (provided, { isFocused, selectProps: { isDisabled, menuIsOpen } }) => {
     const common = {
       cursor: 'pointer',
       boxShadow: 'none',
       transition: 'none',
-      minHeight: isMobile ? '49px' : 'initial',
+      minHeight: isMobile ? '48px' : '34px',
     };
 
     const hover = {
@@ -45,7 +45,7 @@ export default isMobile => ({
 
     const regular = {
       ...common,
-      border: `1px solid ${colors.slateDarker}`,
+      border: `1px solid ${menuIsOpen ? colors.blueDarkest : colors.slateDarker}`,
       borderRadius: '3px',
       color: colors.slateDarkest,
       fill: colors.slateDarkest,
@@ -73,11 +73,12 @@ export default isMobile => ({
     };
   },
 
-  menuList: provided => ({
+  menuList: (provided, { selectProps: { menuIsOpen } }) => ({
     ...provided,
     padding: 0,
     borderBottomRightRadius: '3px',
     borderBottomLeftRadius: '3px',
+    marginTop: menuIsOpen ? '3px' : 'initial',
   }),
 
   option: (provided, { isFocused }) => {
@@ -87,7 +88,7 @@ export default isMobile => ({
       color: colors.slateDarkest,
       fontFamily: text.fontPrimary,
       fontSize: isMobile ? '1.6rem' : '1.3rem',
-      padding: isMobile ? '13px 10px' : '9px 11px',
+      padding: isMobile ? '12px 10px' : '8px 11px',
     };
 
     const hover = {
