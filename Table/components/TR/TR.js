@@ -12,6 +12,11 @@ const VARIANT = {
   SELECTED: 'SELECTED',
 };
 
+// Thoughts:
+// Drop focusable and just check if onClick is defined
+// remove variant and just do custom styling on implementation side? (Loses auto-highling background)
+// Remove plain variant, or make BORDERED default
+
 const TR = ({ className, children, onClick, id, isCollapsed, focusable, variant }) => {
   const ref = useRef(null);
 
