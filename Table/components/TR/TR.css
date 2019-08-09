@@ -1,25 +1,40 @@
 .dataRow {
   text-align: left;
-  cursor: pointer;
+  font-family: var(--fontPrimary);
   border-top: 1px solid transparent;
   color: var(--mineShaft);
 }
 
-.dataRowBordered:hover,
-.dataRowBordered:focus {
+.dataRowBordered {
+  border-top: 1px solid var(--wildSand);
+}
+
+.dataRowBordered:last-child {
+  border-bottom: 1px solid var(--wildSand);
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
   outline: none;
   border-bottom: 1px solid var(--bluePrimary);
   border-top: 1px solid var(--bluePrimary);
   color: var(--bluePrimary);
 }
 
-.dataRowBordered:focus {
-  background: var(--highlightLightBlue);
-}
-
 .dataRowBordered.collapsed {
   border-top: 1px solid var(--bluePrimary);
   border-bottom: none;
   color: var(--bluePrimary);
+  background: var(--highlightLightBlue);
+}
+
+.selected {
+  outline: none;
+  border-bottom: 1px solid var(--blueDarker);
+  border-top: 1px solid var(--blueDarker);
+  color: var(--blueDarker);
   background: var(--highlightLightBlue);
 }

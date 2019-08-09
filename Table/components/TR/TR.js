@@ -6,32 +6,35 @@ import { TBL_ROW } from '../../table-selectors'
 
 import styles from './TR.css'
 
-export const VARIANT = {
+const VARIANT = {
   PLAIN: 'PLAIN',
   BORDERED: 'BORDERED',
+  SELECTED: 'SELECTED',
 };
 
-const TR = ({ children, onClick, id, isCollapsed, focusable, variant }) => {
+const TR = ({ className, children, onClick, id, isCollapsed, focusable, variant }) => {
   const ref = useRef(null);
 
   //useCallback?
-  const rowClickHandler = () => {
+  const rowClickHandler = onClick ? () => {
     if (!focusable) {
       ref.current.blur();
     }
     onClick(event);
-  }
+  } : undefined
 
-  const classNames = cn(TBL_ROW, styles.dataRow, {
+  const classNames = cn(TBL_ROW, styles.dataRow, className, {
     [styles.collapsed]: isCollapsed,
+    [styles.clickable]: onClick,
     [styles.dataRowBordered]: variant === VARIANT.BORDERED,
+    [styles.selected]: variant === VARIANT.SELECTED,
   });
   
   return (
     <tr
       ref={ref}
       className={classNames}
-      tabIndex="0"
+      tabIndex={focusable ? "0" : undefined}
       onClick={rowClickHandler}
       data-id={id}
     >
@@ -51,12 +54,13 @@ TR.propTypes = {
 
 TR.defaultProps = {
   children: null,
-  onClick: /* istanbul ignore next */ () => null,
+  onClick: undefined,
   id: '',
   isCollapsed: false,
   focusable: false,
   variant: VARIANT.PLAIN,
 };
 
+TR.variant = VARIANT;
 
 export default TR;

@@ -2,6 +2,7 @@
   margin-left: 5px;
   display: inline-block;
   vertical-align: middle;
+  margin-left: 14px;
 }
 
 .clickable {
@@ -9,10 +10,8 @@
 }
 
 .headerCell {
-  color: var(--bluePrimary);
+  font-family: var(--fontPrimary);
   font-weight: normal;
-  border: 0 solid currentColor;
-  border-bottom-width: 1px;
   padding: 10px 5px;
   font-size: 1.4rem;
 }

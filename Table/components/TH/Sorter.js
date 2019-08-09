@@ -9,6 +9,8 @@ import {
 } from '../../table-selectors'
 import { SORT_DESC, SORT_ASC, SORT_OFF } from './sort-constants';
 
+import styles from './Sorter.css'
+
 const Sorter = ({ direction }) => {
   const arrowUpClassNames = cn(
     TBL_HEADER_SORT_UP,

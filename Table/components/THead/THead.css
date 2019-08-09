@@ -1,3 +1,5 @@
 .headerRow {
   padding: 0 0 15px;
+  border-top: 1px solid var(--slateLighter);
+  border-bottom: 1px solid var(--slateLighter);
 }
