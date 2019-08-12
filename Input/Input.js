@@ -20,7 +20,7 @@ const STATE = {
  * @returns {*}
  * @constructor
  */
-const Input = ({ state, message, ...inputProps }, ref) => {
+const Input = forwardRef(({ state, message, ...inputProps }, ref) => {
   const isErrorState = state === STATE.ERROR;
   const isInfoState = state === STATE.INFO && message;
 
@@ -40,7 +40,7 @@ const Input = ({ state, message, ...inputProps }, ref) => {
       )}
     </span>
   );
-};
+});
 
 Input.propTypes = {
   state: PropTypes.oneOf(Object.values(STATE)),
@@ -52,4 +52,4 @@ Input.defaultProps = {
   message: '',
 };
 
-export default Object.assign(forwardRef(Input), { STATE });
+export default Object.assign(Input, { STATE });

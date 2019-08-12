@@ -5,13 +5,13 @@ export default isMobile => ({
   singleValue: provided => ({
     ...provided,
     fontFamily: text.fontPrimary,
-    fontSize: isMobile ? '1.6rem' : '1.3rem',
+    fontSize: isMobile ? '16px' : '13px',
   }),
 
   placeholder: provided => ({
     ...provided,
     fontFamily: text.fontPrimary,
-    fontSize: isMobile ? '1.6rem' : '1.3rem',
+    fontSize: isMobile ? '16px' : '13px',
     color: 'inherit',
     margin: '0 3px',
   }),
@@ -87,7 +87,7 @@ export default isMobile => ({
       backgroundColor: colors.white,
       color: colors.slateDarkest,
       fontFamily: text.fontPrimary,
-      fontSize: isMobile ? '1.6rem' : '1.3rem',
+      fontSize: isMobile ? '16px' : '13px',
       padding: isMobile ? '12px 10px' : '8px 11px',
     };
 

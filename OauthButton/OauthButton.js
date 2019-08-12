@@ -29,7 +29,7 @@ const ICONS = {
  * @returns {*}
  * @constructor
  */
-const OauthButton = ({ children, variant, fullWidth, ...props }, ref) => {
+const OauthButton = forwardRef(({ children, variant, fullWidth, ...props }, ref) => {
   const classNames = cn(styles.oauthButton, { [styles.fullWidth]: fullWidth });
 
   return (
@@ -38,10 +38,10 @@ const OauthButton = ({ children, variant, fullWidth, ...props }, ref) => {
       <span>{children}</span>
     </button>
   );
-};
+});
 
 OauthButton.propTypes = {
-  variant: PropTypes.oneOf(VARIANT).isRequired,
+  variant: PropTypes.oneOf(Object.values(VARIANT)).isRequired,
   children: PropTypes.node,
   fullWidth: PropTypes.bool,
 };
@@ -51,4 +51,4 @@ OauthButton.defaultProps = {
   fullWidth: false,
 };
 
-export default Object.assign(forwardRef(OauthButton), { VARIANT });
+export default Object.assign(OauthButton, { VARIANT });
