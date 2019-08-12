@@ -9,21 +9,24 @@ import styles from './TR.css';
 const VARIANT = {
   PLAIN: 'PLAIN',
   BORDERED: 'BORDERED',
-  SELECTED: 'SELECTED',
 };
 
-// Thoughts:
-// Drop focusable and just check if onClick is defined
-// remove variant and just do custom styling on implementation side? (Loses auto-highling background)
-// Remove plain variant, or make BORDERED default
-
-const TR = ({ className, children, onClick, id, isCollapsed, focusable, variant }) => {
+const TR = ({
+  className,
+  children,
+  onClick,
+  id,
+  isCollapsed,
+  blurAfterClick,
+  highlightOnHover,
+  variant,
+}) => {
   const ref = useRef(null);
 
   // useCallback?
   const rowClickHandler = onClick
     ? event => {
-        if (!focusable) {
+        if (blurAfterClick) {
           ref.current.blur();
         }
         onClick(event);
@@ -32,16 +35,16 @@ const TR = ({ className, children, onClick, id, isCollapsed, focusable, variant 
 
   const classNames = cn(TBL_ROW, styles.dataRow, className, {
     [styles.collapsed]: isCollapsed,
+    [styles.highlight]: onClick || highlightOnHover,
     [styles.clickable]: onClick,
     [styles.dataRowBordered]: variant === VARIANT.BORDERED,
-    [styles.selected]: variant === VARIANT.SELECTED,
   });
 
   return (
     <tr
       ref={ref}
       className={classNames}
-      tabIndex={focusable ? '0' : undefined}
+      tabIndex={onClick ? '0' : undefined}
       onClick={rowClickHandler}
       data-id={id}
     >
@@ -56,7 +59,8 @@ TR.propTypes = {
   onClick: PropTypes.func,
   id: PropTypes.string,
   isCollapsed: PropTypes.bool,
-  focusable: PropTypes.bool,
+  highlightOnHover: PropTypes.bool,
+  blurAfterClick: PropTypes.bool,
   variant: PropTypes.oneOf(Object.values(VARIANT)),
 };
 
@@ -66,8 +70,9 @@ TR.defaultProps = {
   onClick: undefined,
   id: '',
   isCollapsed: false,
-  focusable: false,
-  variant: VARIANT.PLAIN,
+  blurAfterClick: false,
+  highlightOnHover: false,
+  variant: VARIANT.BORDERED,
 };
 
 TR.variant = VARIANT;

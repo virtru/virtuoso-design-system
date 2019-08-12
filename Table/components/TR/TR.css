@@ -13,28 +13,21 @@
   border-bottom: 1px solid var(--wildSand);
 }
 
-.clickable {
-  cursor: pointer;
+.highlight:hover {
+  outline: none;
+  border-bottom: 1px solid var(--blueDarker);
+  border-top: 1px solid var(--blueDarker);
+  color: var(--blueDarker);
+  background: var(--highlightLightBlue);
 }
 
-.clickable:hover {
-  outline: none;
-  border-bottom: 1px solid var(--bluePrimary);
-  border-top: 1px solid var(--bluePrimary);
-  color: var(--bluePrimary);
+.clickable {
+  cursor: pointer;
 }
 
 .dataRowBordered.collapsed {
   border-top: 1px solid var(--bluePrimary);
   border-bottom: none;
   color: var(--bluePrimary);
-  background: var(--highlightLightBlue);
-}
-
-.selected {
-  outline: none;
-  border-bottom: 1px solid var(--blueDarker);
-  border-top: 1px solid var(--blueDarker);
-  color: var(--blueDarker);
   background: var(--highlightLightBlue);
 }
