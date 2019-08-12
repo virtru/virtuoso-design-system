@@ -1,10 +1,11 @@
-import React, { useMemo, forwardRef } from 'react';
+import React, { forwardRef, useMemo } from 'react';
 import ReactSelect from 'react-select';
 
 import { useIsMobile } from '../../helpers/useIsMobile';
 
 import DropdownIndicator from './components/DropdownIndicator/DropdownIndicator';
 import IndicatorSeparator from './components/IndicatorSeparator/IndicatorSeparator';
+
 import styles from './Select.css';
 import getStyles from './Select.css.js';
 
