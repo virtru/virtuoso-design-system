@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import { TBL_HEAD } from '../../table-selectors'
+import { TBL_HEAD } from '../../table-selectors';
 
-import styles from './THead.css'
+import styles from './THead.css';
 
 const THead = ({ children }) => (
   <thead className={TBL_HEAD}>

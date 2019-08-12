@@ -1,22 +1,24 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import cn from 'classnames'
+import React from 'react';
+import PropTypes from 'prop-types';
+import cn from 'classnames';
 
-import { TBL_COLUMN } from '../../table-selectors'
+import { TBL_COLUMN } from '../../table-selectors';
 
-import styles from './TD.css'
+import styles from './TD.css';
 
-const TD = ({ children, className, textAlignment, ...rest }) => (
+const TD = ({ children, className, ...rest }) => (
   <td className={cn(TBL_COLUMN, className, styles.dataCell)} {...rest}>
     {children}
   </td>
 );
 
 TD.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node,
 };
 
 TD.defaultProps = {
+  className: '',
   children: null,
 };
 

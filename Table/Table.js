@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import cn from 'classnames'
+import React from 'react';
+import PropTypes from 'prop-types';
+import cn from 'classnames';
 
-import { TBL, TBL_BODY } from './table-selectors'
+import { TBL, TBL_BODY } from './table-selectors';
 
-import styles from './Table.css'
+import styles from './Table.css';
 
 const Table = ({ children, isScrollableBody }) => (
   <table className={cn(TBL, styles.table, { [isScrollableBody]: styles.scrollableBody })}>
@@ -24,10 +24,18 @@ Table.defaultProps = {
 
 export default Table;
 
-const TBody = ({children}) => <tbody className={TBL_BODY}>{children}</tbody>
+const TBody = ({ children }) => <tbody className={TBL_BODY}>{children}</tbody>;
+
+TBody.propTypes = {
+  children: PropTypes.node,
+};
+
+TBody.defaultProps = {
+  children: undefined,
+};
 
 export { default as THead } from './components/THead/THead';
-export { TBody }
+export { TBody };
 export { default as TH } from './components/TH/TH';
 
 export { default as TR } from './components/TR/TR';

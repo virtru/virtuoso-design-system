@@ -8,4 +8,4 @@ module.exports = {
   TBL_HEADER_SORT_UP: 'at_sort_up',
   TBL_HEADER_SORT_DOWN: 'at_sort_down',
   TBL_HEADER_SORT_ACTIVE: 'at_sort_active',
-}
+};
