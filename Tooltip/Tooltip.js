@@ -1,11 +1,4 @@
-import React, {
-  cloneElement,
-  forwardRef,
-  Fragment,
-  useLayoutEffect,
-  useRef,
-  useState,
-} from 'react';
+import React, { cloneElement, forwardRef, useLayoutEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import usePortal from '../../helpers/usePortal';
 import styles from './Tooltip.css';
@@ -112,7 +105,7 @@ const TooltipWrapper = ({ children, ...tooltipProps }) => {
   };
 
   return (
-    <Fragment>
+    <>
       {cloneElement(children, { ref: childrenRef, ...extendedChildrenProps })}
       {/*
         We could wrap children with a div that has position: relative
@@ -123,7 +116,7 @@ const TooltipWrapper = ({ children, ...tooltipProps }) => {
         top and left style properties.
       */}
       {usePortal(isVisible && <Tooltip {...tooltipProps} ref={tooltipRef} />)}
-    </Fragment>
+    </>
   );
 };
 
