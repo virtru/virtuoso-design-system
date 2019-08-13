@@ -20,15 +20,3 @@
   width: 1px;
   word-break: keep-all;
 }
-
-.left {
-  text-align: left;
-}
-
-.center {
-  text-align: center;
-}
-
-.right {
-  text-align: right;
-}

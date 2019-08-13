@@ -7,19 +7,10 @@ import { SORT_DESC, SORT_ASC, SORT_OFF } from './sort-constants';
 
 import styles from './TH.css';
 
-export const TEXT_ALIGNMENT = {
-  LEFT: 'LEFT',
-  CENTER: 'CENTER',
-  RIGHT: 'RIGHT',
-};
-
-const TH = ({ className, children, sorting, onClick, textAlignment, min, width, ...rest }) => {
+const TH = ({ className, children, sorting, onClick, min, width, ...rest }) => {
   const thClassNames = cn(styles.headerCell, className, {
     [styles.clickable]: sorting,
     [styles.min]: min,
-    [styles.left]: textAlignment === TEXT_ALIGNMENT.LEFT,
-    [styles.center]: textAlignment === TEXT_ALIGNMENT.CENTER,
-    [styles.right]: textAlignment === TEXT_ALIGNMENT.RIGHT,
   });
 
   return (
@@ -37,8 +28,7 @@ const TH = ({ className, children, sorting, onClick, textAlignment, min, width, 
 TH.propTypes = {
   className: PropTypes.string,
   onClick: PropTypes.func,
-  sorting: PropTypes.string,
-  textAlignment: PropTypes.oneOf(Object.values(TEXT_ALIGNMENT)),
+  sorting: PropTypes.oneOf([SORT_DESC, SORT_ASC, SORT_OFF]),
   children: PropTypes.node,
   min: PropTypes.bool,
   width: PropTypes.string,
@@ -48,12 +38,11 @@ TH.defaultProps = {
   className: '',
   onClick: () => {},
   sorting: '',
-  textAlignment: TEXT_ALIGNMENT.LEFT,
   children: null,
   min: false,
   width: null,
 };
 
-TH.sortDirection = { SORT_DESC, SORT_ASC, SORT_OFF };
+TH.SORT_DIRECTION = { SORT_DESC, SORT_ASC, SORT_OFF };
 
 export default TH;
