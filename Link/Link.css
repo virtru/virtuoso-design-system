@@ -1,0 +1,52 @@
+.link {
+  font-family: var(--fontPrimary);
+  background: none;
+  border: none;
+  padding: 0;
+  display: inline-block;
+  color: var(--blueDarker);
+  text-decoration: underline;
+}
+
+.link:visited {
+  color: var(--slateDarker);
+}
+
+.link:hover {
+  background: none;
+  box-shadow: none;
+  color: var(--blueDarkest);
+}
+
+.link:active {
+  color: var(--purplePrimary);
+  text-decoration: none;
+}
+
+.link[disabled] {
+  pointer-events: none;
+  color: var(--slateDarker);
+}
+
+/*** Light Variant ***/
+.linkLight {
+  composes: link;
+  color: var(--blueLighter);
+}
+
+.linkLight:visited {
+  color: var(--slateLighter);
+}
+
+.linkLight:hover {
+  color: var(--blueLightest);
+}
+
+.linkLight:active {
+  color: var(--purpleLighter);
+}
+
+.linkLight[disabled] {
+  pointer-events: none;
+  color: var(--slateLighter);
+}
