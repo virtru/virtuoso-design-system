@@ -23,7 +23,7 @@
 .title {
   color: var(--slateDarkest);
   font: var(--heading-xxs);
-  line-height: 2.4rem;
+  line-height: 24px;
 }
 
 .content {

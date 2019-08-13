@@ -98,25 +98,26 @@
 }
 
 .large {
-  font-size: 1.6rem;
-  padding: 13px 24px 11px 24px;
+  font-size: 16px;
+  padding: 16px 24px 14px 24px;
 }
 
 .medium {
-  font-size: 1.3rem;
-  padding: 9px 18px;
+  font-size: 13px;
+  padding: 11px 18px 10px 18px;
 }
 
 .small {
-  font-size: 1.3rem;
-  padding: 3px 12px;
+  font-size: 13px;
+  padding: 5px 12px 4px 12px;
 }
 
 .square {
+  font-size: 13px;
+  line-height: 16px;
   display: block;
-  min-width: 38px;
-  font-size: 1.6rem;
-  padding: 10px;
+  min-width: 36px;
+  padding: 9px;
 }
 
 /* stylelint-disable-next-line plugin/selector-tag-no-without-class */

@@ -39,7 +39,7 @@ const sizeClasses = {
  * @returns {*}
  * @constructor
  */
-const Button = ({ variant, size, fullWidth, children, ...buttonProps }, ref) => {
+const Button = forwardRef(({ variant, size, fullWidth, children, ...buttonProps }, ref) => {
   const buttonClasses = cn(variantClasses[variant], sizeClasses[size], {
     [styles.fullWidth]: fullWidth,
   });
@@ -50,7 +50,7 @@ const Button = ({ variant, size, fullWidth, children, ...buttonProps }, ref) => 
       {children}
     </button>
   );
-};
+});
 
 Button.propTypes = {
   variant: PropTypes.oneOf(Object.values(VARIANT)).isRequired,
@@ -66,4 +66,4 @@ Button.defaultProps = {
   children: null,
 };
 
-export default Object.assign(forwardRef(Button), { VARIANT, SIZE });
+export default Object.assign(Button, { VARIANT, SIZE });
