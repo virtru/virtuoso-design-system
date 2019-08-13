@@ -5,7 +5,7 @@ import cn from 'classnames';
 import styles from './Table.css';
 
 const Table = ({ children, className, isScrollableBody }) => (
-  <table className={cn(className, styles.table, { [isScrollableBody]: styles.scrollableBody })}>
+  <table className={cn(className, styles.table, { [styles.scrollableBody]: isScrollableBody })}>
     {children}
   </table>
 );
