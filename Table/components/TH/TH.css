@@ -12,6 +12,7 @@
 .headerCell {
   font-family: var(--fontPrimary);
   font-weight: normal;
+  text-align: left;
   padding: 10px 5px;
   font-size: 1.4rem;
 }

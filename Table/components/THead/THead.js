@@ -5,8 +5,8 @@ import cn from 'classnames';
 import styles from './THead.css';
 
 const THead = ({ children, className, trClassName }) => (
-  <thead className={className}>
-    <tr className={cn(styles.headerRow, trClassName)}>{children}</tr>
+  <thead className={cn(styles.headerRow, className)}>
+    <tr className={cn(trClassName)}>{children}</tr>
   </thead>
 );
 

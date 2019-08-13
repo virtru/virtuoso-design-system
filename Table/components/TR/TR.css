@@ -1,12 +1,15 @@
 .dataRow {
   text-align: left;
   font-family: var(--fontPrimary);
-  border-top: 1px solid transparent;
   color: var(--mineShaft);
 }
 
 .dataRowBordered {
   border-top: 1px solid var(--wildSand);
+}
+
+.dataRowBordered:first-child {
+  border-top-color: var(--slateLighter);
 }
 
 .dataRowBordered:last-child {
@@ -23,6 +26,10 @@
 
 .clickable {
   cursor: pointer;
+}
+
+.clickable:focus {
+  outline: none;
 }
 
 .dataRowBordered.collapsed {
