@@ -21,7 +21,6 @@ const TR = ({
 }) => {
   const ref = useRef(null);
 
-  // useCallback?
   const rowClickHandler = onClick
     ? event => {
         if (blurAfterClick) {
