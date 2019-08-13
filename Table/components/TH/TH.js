@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import cn from 'classnames';
 
 import Sorter from './Sorter';
-import { TBL_HEADERS } from '../../table-selectors';
 import { SORT_DESC, SORT_ASC, SORT_OFF } from './sort-constants';
 
 import styles from './TH.css';
@@ -15,7 +14,7 @@ export const TEXT_ALIGNMENT = {
 };
 
 const TH = ({ className, children, sorting, onClick, textAlignment, min, width, ...rest }) => {
-  const thClassNames = cn(TBL_HEADERS, styles.headerCell, className, {
+  const thClassNames = cn(styles.headerCell, className, {
     [styles.clickable]: sorting,
     [styles.min]: min,
     [styles.left]: textAlignment === TEXT_ALIGNMENT.LEFT,

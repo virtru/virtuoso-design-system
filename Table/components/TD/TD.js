@@ -2,12 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
 
-import { TBL_COLUMN } from '../../table-selectors';
-
 import styles from './TD.css';
 
 const TD = ({ children, className, ...rest }) => (
-  <td className={cn(TBL_COLUMN, className, styles.dataCell)} {...rest}>
+  <td className={cn(className, styles.dataCell)} {...rest}>
     {children}
   </td>
 );

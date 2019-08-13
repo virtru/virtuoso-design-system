@@ -2,8 +2,6 @@ import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
 
-import { TBL_ROW } from '../../table-selectors';
-
 import styles from './TR.css';
 
 const VARIANT = {
@@ -33,7 +31,7 @@ const TR = ({
       }
     : undefined;
 
-  const classNames = cn(TBL_ROW, styles.dataRow, className, {
+  const classNames = cn(styles.dataRow, className, {
     [styles.collapsed]: isCollapsed,
     [styles.highlight]: onClick || highlightOnHover,
     [styles.clickable]: onClick,

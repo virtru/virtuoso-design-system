@@ -1,22 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import { TBL_HEAD } from '../../table-selectors';
+import cn from 'classnames';
 
 import styles from './THead.css';
 
-const THead = ({ children }) => (
-  <thead className={TBL_HEAD}>
-    <tr className={styles.headerRow}>{children}</tr>
+const THead = ({ children, className, trClassName }) => (
+  <thead className={className}>
+    <tr className={cn(styles.headerRow, trClassName)}>{children}</tr>
   </thead>
 );
 
 THead.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
+  trClassName: PropTypes.string,
 };
 
 THead.defaultProps = {
   children: null,
+  className: '',
+  trClassName: '',
 };
 
 export default THead;

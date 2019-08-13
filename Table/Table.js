@@ -2,23 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
 
-import { TBL, TBL_BODY } from './table-selectors';
-
 import styles from './Table.css';
 
-const Table = ({ children, isScrollableBody }) => (
-  <table className={cn(TBL, styles.table, { [isScrollableBody]: styles.scrollableBody })}>
+const Table = ({ children, className, isScrollableBody }) => (
+  <table className={cn(className, styles.table, { [isScrollableBody]: styles.scrollableBody })}>
     {children}
   </table>
 );
 
 Table.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
   isScrollableBody: PropTypes.bool,
 };
 
 Table.defaultProps = {
   children: null,
+  className: '',
   isScrollableBody: false,
 };
 
