@@ -24,18 +24,8 @@ Table.defaultProps = {
 
 export default Table;
 
-const TBody = ({ children }) => <tbody className={TBL_BODY}>{children}</tbody>;
-
-TBody.propTypes = {
-  children: PropTypes.node,
-};
-
-TBody.defaultProps = {
-  children: undefined,
-};
-
+export { default as TBody } from './components/TBody/TBody';
 export { default as THead } from './components/THead/THead';
-export { TBody };
 export { default as TH } from './components/TH/TH';
 
 export { default as TR } from './components/TR/TR';
