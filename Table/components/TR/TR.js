@@ -73,6 +73,6 @@ TR.defaultProps = {
   variant: VARIANT.BORDERED,
 };
 
-TR.variant = VARIANT;
+TR.VARIANT = VARIANT;
 
 export default TR;
