@@ -5,16 +5,17 @@
   border-top: 1px solid var(--wildSand);
 }
 
+/* stylelint-disable-next-line plugin/selector-tag-no-without-class */
+thead .dataRow {
+  border: none;
+}
+
 .dataRow:first-child {
   border-top-color: var(--slateLighter);
 }
 
 .dataRowlast-child {
   border-bottom: 1px solid var(--wildSand);
-}
-
-thead .dataRow {
-  border: none;
 }
 
 .highlight:hover {
