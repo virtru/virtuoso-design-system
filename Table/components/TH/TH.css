@@ -1,5 +1,4 @@
 .sorter {
-  margin-left: 5px;
   display: inline-block;
   vertical-align: middle;
   margin-left: 14px;
@@ -14,7 +13,7 @@
   font-weight: normal;
   text-align: left;
   padding: 10px 5px;
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 
 .min {
