@@ -4,11 +4,6 @@ import cn from 'classnames';
 
 import styles from './TR.css';
 
-const VARIANT = {
-  PLAIN: 'PLAIN',
-  BORDERED: 'BORDERED',
-};
-
 const TR = ({
   className,
   children,
@@ -17,7 +12,6 @@ const TR = ({
   isCollapsed,
   blurAfterClick,
   highlightOnHover,
-  variant,
 }) => {
   const ref = useRef(null);
 
@@ -27,6 +21,8 @@ const TR = ({
           ref.current.blur();
         }
         onClick(event);
+        event.preventDefault();
+        event.stopPropagation();
       }
     : undefined;
 
@@ -34,7 +30,6 @@ const TR = ({
     [styles.collapsed]: isCollapsed,
     [styles.highlight]: onClick || highlightOnHover,
     [styles.clickable]: onClick,
-    [styles.dataRowBordered]: variant === VARIANT.BORDERED,
   });
 
   return (
@@ -58,7 +53,6 @@ TR.propTypes = {
   isCollapsed: PropTypes.bool,
   highlightOnHover: PropTypes.bool,
   blurAfterClick: PropTypes.bool,
-  variant: PropTypes.oneOf(Object.values(VARIANT)),
 };
 
 TR.defaultProps = {
@@ -69,9 +63,6 @@ TR.defaultProps = {
   isCollapsed: false,
   blurAfterClick: false,
   highlightOnHover: false,
-  variant: VARIANT.BORDERED,
 };
-
-TR.VARIANT = VARIANT;
 
 export default TR;

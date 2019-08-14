@@ -2,18 +2,19 @@
   text-align: left;
   font-family: var(--fontPrimary);
   color: var(--mineShaft);
-}
-
-.dataRowBordered {
   border-top: 1px solid var(--wildSand);
 }
 
-.dataRowBordered:first-child {
+.dataRow:first-child {
   border-top-color: var(--slateLighter);
 }
 
-.dataRowBordered:last-child {
+.dataRowlast-child {
   border-bottom: 1px solid var(--wildSand);
+}
+
+thead .dataRow {
+  border: none;
 }
 
 .highlight:hover {
