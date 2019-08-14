@@ -30,6 +30,10 @@
 
 .clickable:focus {
   outline: none;
+  border-bottom: 1px solid var(--blueDarker);
+  border-top: 1px solid var(--blueDarker);
+  color: var(--blueDarker);
+  background: var(--highlightLightBlue);
 }
 
 .dataRowBordered.collapsed {
