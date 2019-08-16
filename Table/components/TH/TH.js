@@ -37,7 +37,7 @@ TH.propTypes = {
 TH.defaultProps = {
   className: '',
   onClick: () => {},
-  sorting: '',
+  sorting: undefined,
   children: null,
   min: false,
   width: null,
