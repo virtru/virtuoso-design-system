@@ -1,0 +1,31 @@
+.base {
+  font-family: var(--fontPrimary);
+}
+
+.normal {
+  composes: base;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.small {
+  composes: base;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.xsmall {
+  composes: base;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.xxsmall {
+  composes: base;
+  font-size: 8px;
+  line-height: 12px;
+}
+
+.paragraph {
+  margin: 0 0 24px 0;
+}
