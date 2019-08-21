@@ -48,4 +48,4 @@ Modal.defaultProps = {
   onRequestClose: () => null,
 };
 
-export default Modal;
+export default Object.assign(Modal, { VARIANT });
