@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import ErrorIcon from './error.svg';
 import styles from './Textarea.css';
 
-const Textarea = ({ disabled, error, label, message, value, onChange }) => {
+const Textarea = ({ disabled, error, label, message, value, onChange, rows, ...textareaProps }) => {
   const labelClass = classnames(styles.label, {
     [styles.errorText]: !disabled && error,
     [styles.disabled]: disabled,
@@ -24,15 +24,22 @@ const Textarea = ({ disabled, error, label, message, value, onChange }) => {
   });
 
   return (
-    <>
+    <div className={styles.container}>
       {label && <h2 className={labelClass}>{label}</h2>}
-      <textarea className={textareaClass} disabled={disabled} value={value} onChange={onChange} />
+      <textarea
+        className={textareaClass}
+        disabled={disabled}
+        value={value}
+        onChange={onChange}
+        rows={rows}
+        {...textareaProps}
+      />
       {message && (
         <span className={hintMessageClass}>
           {!disabled && error && <ErrorIcon />} {message}
         </span>
       )}
-    </>
+    </div>
   );
 };
 
@@ -43,6 +50,7 @@ Textarea.propTypes = {
   message: PropTypes.string,
   value: PropTypes.string,
   onChange: PropTypes.func,
+  rows: PropTypes.number,
 };
 
 Textarea.defaultProps = {
@@ -52,12 +60,7 @@ Textarea.defaultProps = {
   message: undefined,
   value: undefined,
   onChange: undefined,
+  rows: 3,
 };
-
-Textarea.Wrapped = props => (
-  <div className={styles.container}>
-    <Textarea {...props} />
-  </div>
-);
 
 export default Textarea;

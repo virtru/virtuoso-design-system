@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .label {
   font-family: var(--fontPrimary);
   font-size: 16px;
@@ -11,9 +17,7 @@
   padding: 9px 12px;
   min-width: 180px;
   min-height: 54px;
-  width: 300px;
-  height: 100px;
-  max-width: 100%;
+  width: 100%;
   font-family: var(--fontPrimary);
   font-size: 13px;
   line-height: 18px;
