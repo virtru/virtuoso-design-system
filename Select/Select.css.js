@@ -1,5 +1,4 @@
-import colors from '../../styles/colors';
-import text from '../../styles/text';
+import { colors, text } from 'virtru-design-params/src';
 
 export default isMobile => ({
   singleValue: provided => ({

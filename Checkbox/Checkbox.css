@@ -6,13 +6,13 @@
 }
 
 ._checkbox.disabled {
-  color: var(--alto);
-  border-color: var(--alto);
+  color: var(--slateLighter);
+  border-color: var(--slateLighter);
 }
 
 .checkboxContainer:focus-within ._checkbox.disabled,
 .checkboxContainer:hover ._checkbox.disabled {
-  color: var(--alto);
+  color: var(--slateLighter);
 }
 
 .checkboxContainer {

@@ -14,7 +14,7 @@
   height: 1.5px;
   border-radius: 2px;
   width: 51%;
-  background: var(--alto);
+  background: var(--slateLighter);
   transform: skew(0deg, -45deg);
 }
 
@@ -26,7 +26,7 @@
   height: 1.5px;
   border-radius: 2px;
   width: 50%;
-  background: var(--alto);
+  background: var(--slateLighter);
   transform: skew(0deg, 45deg);
 }
 
