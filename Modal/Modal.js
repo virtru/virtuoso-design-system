@@ -13,15 +13,15 @@ export const VARIANT = {
   LARGE: 'large',
 };
 
-const Modal = ({ title, children, footer, variant, ...props }) =>
+const Modal = ({ title, children, footer, variant, onRequestClose, showCloseButton, ...props }) =>
   usePortal(
     <div className={styles.overlay}>
-      <div className={variant === VARIANT.LARGE ? styles.large : styles.small}>
+      <div className={variant === VARIANT.LARGE ? styles.large : styles.small} {...props}>
         <div className={styles.header}>
-          <div className={styles.title}> {title} </div>
+          <div className={styles.title}>{title}</div>
           <div>
-            {props.showCloseButton ? (
-              <button type="button" className={styles.closeButton} onClick={props.onRequestClose}>
+            {showCloseButton ? (
+              <button type="button" className={styles.closeButton} onClick={onRequestClose}>
                 {'✕'}
               </button>
             ) : null}
@@ -44,7 +44,7 @@ Modal.propTypes = {
 Modal.defaultProps = {
   children: null,
   footer: null,
-  showCloseButton: true,
+  showCloseButton: false,
   onRequestClose: () => null,
 };
 

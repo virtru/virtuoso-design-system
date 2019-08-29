@@ -17,7 +17,7 @@
   background-color: var(--white);
   box-shadow: 0 0 4px 1px rgba(var(--black), 0.3);
   box-sizing: border-box;
-  max-width: 450px;
+  width: 450px;
 }
 
 .large {
@@ -26,7 +26,7 @@
   background-color: var(--white);
   box-shadow: 0 0 4px 1px rgba(var(--black), 0.3);
   box-sizing: border-box;
-  max-width: 800px;
+  width: 800px;
 }
 
 .header {
@@ -46,7 +46,13 @@
 }
 
 .footer {
+  display: flex;
+  justify-content: flex-end;
   margin-top: 24px;
+}
+
+.footer > *:not(:first-child) {
+  margin-left: 12px;
 }
 
 .closeButton {
@@ -55,8 +61,25 @@
   padding: 0;
   border: none;
   outline: none;
+  background: transparent;
 }
 
 .closeButton:active {
   color: var(--slatePrimary);
+}
+
+@media (--screenMobile) {
+  .small,
+  .large {
+    width: 327px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer > *:not(:first-child) {
+    margin-left: 0;
+    margin-top: 12px;
+  }
 }
