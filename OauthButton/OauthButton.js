@@ -11,12 +11,14 @@ const VARIANT = {
   GOOGLE: 'Google',
   OUTLOOK: 'Outlook',
   OFFICE365: 'Office365',
+  OTHER: 'Other',
 };
 
 const ICONS = {
   [VARIANT.GOOGLE]: <GoogleIcon />,
   [VARIANT.OUTLOOK]: <OutlookIcon />,
   [VARIANT.OFFICE365]: <Office365Icon />,
+  [VARIANT.OTHER]: null,
 };
 
 /**
@@ -34,7 +36,7 @@ const OauthButton = forwardRef(({ children, variant, fullWidth, ...props }, ref)
 
   return (
     <button type="button" {...props} className={classNames} ref={ref}>
-      <span className={styles.icon}>{ICONS[variant]}</span>
+      {ICONS[variant] && <span className={styles.icon}>{ICONS[variant]}</span>}
       <span>{children}</span>
     </button>
   );
