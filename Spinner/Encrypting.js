@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import anime from 'animejs';
 
-import { generate, parametric } from './Shared';
+import { generate, parametric, labelStyles } from './Shared';
 
 // animejs particles layer (handles the scaling part)
 const particlesLayer = {
@@ -283,19 +283,7 @@ class Encrypting extends Component {
             }}
             ref={this.particlesRef}
           />
-          <div
-            ref={this.textRef}
-            style={{
-              position: 'absolute',
-              width: '100%',
-              bottom: '-32px',
-              color: '#36404f',
-              fontSize: 12,
-              fontFamily: 'Open Sans',
-              textAlign: 'center',
-              wordBreak: 'keep-all',
-            }}
-          >
+          <div ref={this.textRef} style={labelStyles}>
             {title}
           </div>
         </div>

@@ -49,3 +49,17 @@ export function generate(target) {
   });
   return els;
 }
+
+export const labelStyles = {
+  position: 'absolute',
+  width: '100%',
+  top: '100%',
+  marginTop: '13px',
+  color: '#36404f',
+  fontSize: 12,
+  fontFamily: 'Open Sans',
+  willChange: 'opacity',
+  whiteSpace: 'nowrap',
+  display: 'flex',
+  justifyContent: 'center',
+};
