@@ -52,8 +52,8 @@ const TooltipWrapper = ({ children, ...tooltipProps }) => {
       const rect = childrenRef.current.getBoundingClientRect();
       let { top, left } = rect;
 
-      top += window.scrollY;
-      left += window.scrollX;
+      top += Math.round(document.documentElement.scrollTop);
+      left += Math.round(document.documentElement.scrollLeft);
 
       const isHorizontal = [POSITION.LEFT, POSITION.RIGHT].includes(tooltipProps.position);
 
