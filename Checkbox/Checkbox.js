@@ -1,14 +1,9 @@
 import React, { forwardRef, useMemo } from 'react';
 import PropTypes from 'prop-types';
+import cn from 'classnames';
+import useCheckboxSvg, { VARIANT } from './useCheckboxSvg';
 
 import styles from './Checkbox.css';
-
-export const VARIANT = {
-  UNCHECKED: 'UNCHECKED',
-  CHECKED: 'CHECKED',
-  INDETERMINATE: 'INDETERMINATE',
-  PRESET: 'PRESET',
-};
 
 const base36 = 36;
 const afterDecimalIndex = 2;
@@ -18,46 +13,21 @@ const generateId = () =>
     .substr(afterDecimalIndex);
 
 /**
- * Returns array of checkbox class names
- * @param variant
- * @param disabled
- * @returns {Array}
- */
-function getCheckboxClassNames({ variant, disabled }) {
-  const classNames = [styles.checkboxState];
-
-  switch (variant) {
-    case VARIANT.INDETERMINATE:
-      classNames.push(styles.checkboxStateIndeterminate);
-      break;
-    case VARIANT.CHECKED:
-      classNames.push(styles.checkboxStateChecked);
-      break;
-    case VARIANT.PRESET:
-      classNames.push(styles.checkboxStatePreset);
-      break;
-    default:
-      classNames.push(styles.checkboxStateUnchecked);
-  }
-
-  if (disabled) {
-    classNames.push(styles.disabled);
-  }
-
-  return classNames;
-}
-
-/**
  * Checkbox component
  * @param disabled
  * @param variant
+ * @param id
+ * @param onChange
  * @param props
  * @returns {*}
  * @constructor
  */
-const Checkbox = forwardRef(({ variant, disabled, ...props }, ref) => {
-  const inputID = useMemo(() => generateId(), []);
-  const classNames = getCheckboxClassNames({ variant, disabled });
+const Checkbox = forwardRef(({ variant, disabled, id, onChange, ...props }, ref) => {
+  const inputID = useMemo(() => id || generateId(), [id]);
+  const visualClassNames = cn(styles.checkboxState, {
+    [styles.disabled]: disabled,
+  });
+  const CheckboxSVG = useCheckboxSvg(variant);
 
   return (
     <label ref={ref} htmlFor={inputID} className={styles.label}>
@@ -68,9 +38,12 @@ const Checkbox = forwardRef(({ variant, disabled, ...props }, ref) => {
           disabled={disabled}
           checked={variant === VARIANT.CHECKED}
           className={styles.checkboxInput}
+          onChange={onChange}
           {...props}
         />
-        <div className={classNames.join(' ')} />
+        <div className={visualClassNames}>
+          <CheckboxSVG />
+        </div>
       </div>
     </label>
   );
@@ -79,10 +52,15 @@ const Checkbox = forwardRef(({ variant, disabled, ...props }, ref) => {
 Checkbox.propTypes = {
   variant: PropTypes.oneOf(Object.values(VARIANT)).isRequired,
   disabled: PropTypes.bool,
+  id: PropTypes.string,
+  onChange: PropTypes.func,
 };
 
 Checkbox.defaultProps = {
   disabled: false,
+  id: undefined,
+  onChange: undefined,
 };
 
+export { VARIANT };
 export default Object.assign(Checkbox, { VARIANT });
