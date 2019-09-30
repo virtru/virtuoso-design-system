@@ -12,6 +12,7 @@ const TR = ({
   isCollapsed,
   blurAfterClick,
   highlightOnHover,
+  ...rest
 }) => {
   const ref = useRef(null);
 
@@ -39,6 +40,7 @@ const TR = ({
       tabIndex={onClick ? '0' : undefined}
       onClick={rowClickHandler}
       data-id={id}
+      {...rest}
     >
       {children}
     </tr>
