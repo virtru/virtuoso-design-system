@@ -5,54 +5,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import anime from 'animejs';
 
-import { generate, parametric, labelStyles } from './Shared';
-
-// animejs particles layer (handles the scaling part)
-const particlesLayer = {
-  scale: 0,
-};
-
-// animejs timelines for in/out animations
-const timelineIn = anime.timeline({
-  autoplay: false,
-});
-const timelineOut = anime.timeline({
-  autoplay: false,
-});
-
-let particles;
-let frameId;
-
-/**
- * Encryption Particle time step function
- * @param el
- * @param offset
- * @param s
- */
-function step({ el, offset }, s) {
-  const sMod = s * Math.max(Math.sqrt(offset), 0.5) + offset;
-  const [x, y] = parametric(sMod);
-  const roundScale = particlesLayer.scale < 0.01 ? 0 : particlesLayer.scale;
-  // eslint-disable-next-line
-  el.style.transform = `
-    translate3d(${x}px, ${y}px, 0)
-    rotate3d(0, 0, 1, ${sMod * 360 + 90}deg)
-    scale3d(${roundScale}, ${roundScale}, 1)
-  `;
-}
-
-/**
- * Encryption animation loop
- * @param ms
- */
-function update(ms) {
-  const s = ms / 1000;
-  if (!particles) return;
-  particles.forEach(p => {
-    step(p, s);
-  });
-  frameId = window.requestAnimationFrame(update);
-}
+import { generate, labelStyles, parametric } from './Shared';
 
 /**
  * @param step {String} - either 'loading' or 'done'. 'done' ends animation
@@ -74,11 +27,30 @@ class Encrypting extends Component {
     this.destroy = this.destroy.bind(this);
 
     this.onComplete = this.onComplete.bind(this);
+
+    this.step = this.step.bind(this);
+    this.update = this.update.bind(this);
+
+    // animejs particles layer (handles the scaling part)
+    this.particlesLayer = {
+      scale: 0,
+    };
+
+    // animejs timelines for in/out animations
+    this.timelineIn = anime.timeline({
+      autoplay: false,
+    });
+    this.timelineOut = anime.timeline({
+      autoplay: false,
+    });
+
+    this.particles = null;
+    this.frameId = null;
   }
 
   componentDidMount() {
-    particles = generate(this.particlesRef.current);
-    frameId = window.requestAnimationFrame(update);
+    this.particles = generate(this.particlesRef.current);
+    this.frameId = window.requestAnimationFrame(this.update);
     this.mountTimelines();
 
     // In case component starts in loading state
@@ -109,28 +81,59 @@ class Encrypting extends Component {
 
   // eslint-disable-next-line
   start() {
-    timelineIn.play();
+    this.timelineIn.play();
+  }
+
+  /**
+   * Encryption Particle time step function
+   * @param el
+   * @param offset
+   * @param s
+   */
+  step({ el, offset }, s) {
+    const sMod = s * Math.max(Math.sqrt(offset), 0.5) + offset;
+    const [x, y] = parametric(sMod);
+    const roundScale = this.particlesLayer.scale < 0.01 ? 0 : this.particlesLayer.scale;
+    // eslint-disable-next-line
+    el.style.transform = `
+    translate3d(${x}px, ${y}px, 0)
+    rotate3d(0, 0, 1, ${sMod * 360 + 90}deg)
+    scale3d(${roundScale}, ${roundScale}, 1)
+  `;
+  }
+
+  /**
+   * Encryption animation loop
+   * @param ms
+   */
+  update(ms) {
+    const s = ms / 1000;
+    if (!this.particles) return;
+    this.particles.forEach(p => {
+      this.step(p, s);
+    });
+    this.frameId = window.requestAnimationFrame(this.update);
   }
 
   // eslint-disable-next-line
   done() {
-    timelineOut.play();
+    this.timelineOut.play();
   }
 
   destroy() {
     // Clean up listeners and avoid memory leaks
-    window.cancelAnimationFrame(frameId);
+    window.cancelAnimationFrame(this.frameId);
     anime.remove([
       this.containerRef.current,
       this.ringRef.current,
       this.textRef.current,
-      particlesLayer,
+      this.particlesLayer,
     ]);
   }
 
   mountTimelines() {
     // Mount timeline OUT first
-    timelineOut
+    this.timelineOut
       .add(
         {
           targets: this.ringRef.current,
@@ -143,7 +146,7 @@ class Encrypting extends Component {
       )
       .add(
         {
-          targets: particlesLayer,
+          targets: this.particlesLayer,
           scale: [1, 0],
           duration: 1000,
           easing: 'easeInOutCubic',
@@ -172,10 +175,10 @@ class Encrypting extends Component {
         '-=700',
       );
 
-    timelineIn
+    this.timelineIn
       .add(
         {
-          targets: particlesLayer,
+          targets: this.particlesLayer,
           scale: [0, 1],
           duration: 300,
           easing: 'easeInCubic',
