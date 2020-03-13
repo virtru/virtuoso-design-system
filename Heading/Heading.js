@@ -31,12 +31,12 @@ const sizeStyles = {
  * @prop {Node} children
  * @return {*}
  */
-const Heading = ({ size, rank, children, ...headingProps }) => {
+const Heading = ({ size, rank, children, color, ...headingProps }) => {
   const sizeStyle = sizeStyles[size];
   const HTag = `h${rank}`;
 
   return (
-    <HTag className={sizeStyle} {...headingProps}>
+    <HTag className={sizeStyle} style={{ color }} {...headingProps}>
       {children}
     </HTag>
   );
@@ -45,11 +45,13 @@ const Heading = ({ size, rank, children, ...headingProps }) => {
 Heading.propTypes = {
   size: PropTypes.oneOf(Object.values(SIZE)).isRequired,
   rank: PropTypes.oneOf(VALID_HEADING_RANKS).isRequired,
+  color: PropTypes.string,
   children: PropTypes.node,
 };
 
 Heading.defaultProps = {
   children: null,
+  color: null,
 };
 
 export default Object.assign(Heading, { SIZE });
