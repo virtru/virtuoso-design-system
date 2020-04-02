@@ -1,6 +1,13 @@
 import { colors, text } from 'virtru-design-params/src';
 
 export default isMobile => ({
+  input: provided => ({
+    ...provided,
+    margin: '0',
+    padding: '0',
+    lineHeight: '1rem',
+  }),
+
   singleValue: provided => ({
     ...provided,
     fontFamily: text.fontPrimary,
