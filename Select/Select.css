@@ -1,7 +1,6 @@
 .container {
   width: 100%;
   font: var(--small);
-  z-index: 1;
 }
 
 /*

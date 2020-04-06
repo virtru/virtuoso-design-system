@@ -1,6 +1,11 @@
 import { colors, text } from 'virtru-design-params/src';
 
 export default isMobile => ({
+  container: (provided, { selectProps: { menuIsOpen } }) => ({
+    ...provided,
+    zIndex: menuIsOpen ? '2' : '1',
+  }),
+
   input: provided => ({
     ...provided,
     margin: '0',
