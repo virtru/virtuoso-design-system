@@ -23,15 +23,16 @@ const sizeClasses = {
  * @param {Object} props
  * @prop {String} tag The HTML tag to render the text in
  * @prop {String} size
+ * @prop {String} color
  * @prop {Node} children
  * @return {*}
  */
-const Text = ({ tag, size, children, ...textProps }) => {
+const Text = ({ tag, size, color, children, ...textProps }) => {
   const Tag = tag;
   const tagClass = tag === 'p' ? styles.paragraph : null;
 
   return (
-    <Tag className={cn(sizeClasses[size], tagClass)} {...textProps}>
+    <Tag className={cn(sizeClasses[size], tagClass)} style={{ color }} {...textProps}>
       {children}
     </Tag>
   );
@@ -40,12 +41,14 @@ const Text = ({ tag, size, children, ...textProps }) => {
 Text.propTypes = {
   tag: PropTypes.string,
   size: PropTypes.oneOf(Object.values(SIZE)),
+  color: PropTypes.string,
   children: PropTypes.node,
 };
 
 Text.defaultProps = {
   tag: 'p',
   size: SIZE.NORMAL,
+  color: null,
   children: null,
 };
 
