@@ -3,7 +3,6 @@
   background: none;
   border: none;
   padding: 0;
-  display: inline-block;
   color: var(--blueDarker);
   text-decoration: underline;
 }
