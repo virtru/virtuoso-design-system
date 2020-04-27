@@ -61,7 +61,7 @@
 }
 
 :global(.react-toggle--checked .react-toggle-track) {
-  background-color: var(--bluePrimary);
+  background-color: var(--blueDarker);
   border: 0;
   box-shadow: none;
 }

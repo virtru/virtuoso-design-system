@@ -19,14 +19,18 @@
   cursor: pointer;
 }
 
+.checkboxInput[disabled] {
+  pointer-events: none;
+}
+
 .checkboxState {
   width: 100%;
   height: 100%;
   color: var(--slateDarkest);
 }
 
-.checkboxContainer:focus-within .checkboxState,
-.checkboxContainer:hover .checkboxState {
+.checkboxContainer:focus-within .checkboxState:not(.disabled),
+.checkboxContainer:hover .checkboxState:not(.disabled) {
   color: var(--blueDarker);
 }
 
