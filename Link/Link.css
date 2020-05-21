@@ -24,7 +24,7 @@
 
 .link[disabled] {
   pointer-events: none;
-  color: var(--slateDarker);
+  color: var(--slateLighter);
 }
 
 /*** Light Variant ***/
