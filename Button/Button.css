@@ -117,7 +117,7 @@
   line-height: 16px;
   display: block;
   min-width: 36px;
-  padding: 9px;
+  min-height: 36px;
 }
 
 /* stylelint-disable-next-line plugin/selector-tag-no-without-class */
