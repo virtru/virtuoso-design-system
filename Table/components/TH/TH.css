@@ -1,7 +1,7 @@
 .sorter {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 14px;
+  margin-right: 14px;
 }
 
 .clickable {
@@ -19,4 +19,9 @@
 .min {
   width: 1px;
   word-break: keep-all;
+}
+
+.innerContainer {
+  display: flex;
+  align-items: center;
 }

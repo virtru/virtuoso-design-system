@@ -15,12 +15,14 @@ const TH = ({ className, children, sorting, onClick, min, width, ...rest }) => {
 
   return (
     <th className={thClassNames} onClick={onClick} style={{ width }} {...rest}>
-      {children}
-      {sorting && (
-        <div className={styles.sorter}>
-          <Sorter direction={sorting} />
-        </div>
-      )}
+      <div className={styles.innerContainer}>
+        {sorting && (
+          <div className={styles.sorter}>
+            <Sorter direction={sorting} />
+          </div>
+        )}
+        {children}
+      </div>
     </th>
   );
 };
