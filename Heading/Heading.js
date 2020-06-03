@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import cn from 'classnames';
 
 import styles from './Heading.css';
 
@@ -28,15 +29,17 @@ const sizeStyles = {
  * @param {Object} props
  * @prop {Number} size
  * @prop {Number} rank A number from 1 to 6
+ * @prop {Boolean} noMargin Indicates whether heading should have spacing (margin)
  * @prop {Node} children
  * @return {*}
  */
-const Heading = ({ size, rank, children, color, ...headingProps }) => {
+const Heading = ({ size, rank, children, color, noMargin, ...headingProps }) => {
   const sizeStyle = sizeStyles[size];
   const HTag = `h${rank}`;
+  const className = cn(sizeStyle, { [styles.noMargin]: noMargin });
 
   return (
-    <HTag className={sizeStyle} style={{ color }} {...headingProps}>
+    <HTag className={className} style={{ color }} {...headingProps}>
       {children}
     </HTag>
   );
@@ -46,12 +49,14 @@ Heading.propTypes = {
   size: PropTypes.oneOf(Object.values(SIZE)).isRequired,
   rank: PropTypes.oneOf(VALID_HEADING_RANKS).isRequired,
   color: PropTypes.string,
+  noMargin: PropTypes.bool,
   children: PropTypes.node,
 };
 
 Heading.defaultProps = {
   children: null,
   color: null,
+  noMargin: false,
 };
 
 export default Object.assign(Heading, { SIZE });
