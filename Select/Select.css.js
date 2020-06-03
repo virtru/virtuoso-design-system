@@ -124,8 +124,42 @@ export default isMobile => ({
     padding: '8px 9px',
   }),
 
-  valueContainer: provided => ({
+  valueContainer: (provided, { selectProps: { isMulti }, hasValue }) => ({
     ...provided,
-    padding: '9px 8px',
+    padding: isMulti && hasValue ? '0' : '9px 8px',
+  }),
+
+  multiValue: provided => ({
+    ...provided,
+    backgroundColor: colors.blueLightest,
+    margin: '3px 0 3px 3px',
+    padding: '0',
+    '&:hover': {
+      backgroundColor: colors.slateLightest,
+    },
+  }),
+
+  multiValueLabel: provided => ({
+    ...provided,
+    fontSize: isMobile ? '16px' : '13px',
+    paddingTop: '5px',
+    paddingRight: '10px',
+    paddingBottom: '5px',
+    paddingLeft: '9px',
+  }),
+
+  clearIndicator: provided => ({
+    ...provided,
+    padding: '0',
+  }),
+
+  multiValueRemove: provided => ({
+    ...provided,
+    paddingLeft: '9px',
+    paddingRight: '9px',
+    '&:hover': {
+      borderRadius: 0,
+      backgroundColor: colors.purpleLighter,
+    },
   }),
 });

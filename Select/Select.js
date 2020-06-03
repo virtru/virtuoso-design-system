@@ -5,6 +5,8 @@ import { useIsMobile } from '../../helpers/useIsMobile';
 
 import DropdownIndicator from './components/DropdownIndicator/DropdownIndicator';
 import IndicatorSeparator from './components/IndicatorSeparator/IndicatorSeparator';
+import ClearIndicator from './components/ClearIndicator/ClearIndicator';
+import MultiValueRemove from './components/MultiValueRemove/MultiValueRemove';
 
 import styles from './Select.css';
 import getStyles from './Select.css.js';
@@ -24,6 +26,8 @@ const Select = (props, ref) => {
       components={{
         DropdownIndicator,
         IndicatorSeparator,
+        ClearIndicator,
+        MultiValueRemove,
       }}
     />
   );
