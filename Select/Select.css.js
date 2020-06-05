@@ -8,7 +8,7 @@ export default isMobile => ({
 
   input: provided => ({
     ...provided,
-    margin: '0',
+    margin: '0 0 0 3px',
     padding: '0',
     lineHeight: '1rem',
   }),
