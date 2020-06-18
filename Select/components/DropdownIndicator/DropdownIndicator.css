@@ -1,5 +1,8 @@
+@import 'virtru-design-params';
+
 .chevron {
   display: flex;
+  fill: var(--slateDarkest);
 }
 
 .chevron.inverted {

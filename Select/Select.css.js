@@ -11,6 +11,7 @@ export default isMobile => ({
     margin: '0 0 0 3px',
     padding: '0',
     lineHeight: '1rem',
+    fontSize: isMobile ? '16px' : '13px',
   }),
 
   singleValue: provided => ({
@@ -45,6 +46,7 @@ export default isMobile => ({
       boxShadow: 'none',
       transition: 'none',
       minHeight: isMobile ? '48px' : '34px',
+      height: '100%',
     };
 
     const hover = {
@@ -121,7 +123,7 @@ export default isMobile => ({
 
   dropdownIndicator: provided => ({
     ...provided,
-    padding: '8px 9px',
+    padding: isMobile ? '14px 9px' : '8px 9px',
   }),
 
   valueContainer: (provided, { selectProps: { isMulti }, hasValue }) => ({
@@ -131,6 +133,7 @@ export default isMobile => ({
 
   multiValue: provided => ({
     ...provided,
+    borderRadius: '3px',
     backgroundColor: colors.blueLightest,
     margin: '3px 0 3px 3px',
     padding: '0',
@@ -141,9 +144,10 @@ export default isMobile => ({
 
   multiValueLabel: provided => ({
     ...provided,
+    color: colors.blueDarker,
     fontSize: isMobile ? '16px' : '13px',
     paddingTop: '5px',
-    paddingRight: '10px',
+    paddingRight: '7px',
     paddingBottom: '5px',
     paddingLeft: '9px',
   }),
@@ -159,7 +163,13 @@ export default isMobile => ({
     paddingRight: '9px',
     '&:hover': {
       borderRadius: 0,
-      backgroundColor: colors.purpleLighter,
+      backgroundColor: colors.slateLightest,
     },
+  }),
+
+  indicatorsContainer: provided => ({
+    ...provided,
+    alignSelf: 'baseline',
+    height: '100%',
   }),
 });

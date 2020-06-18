@@ -1,26 +1,42 @@
 @import 'virtru-design-params';
 
 .indicator {
-  width: 12px;
-  height: 12px;
   position: relative;
 }
 
-._line {
+.small .indicator {
+  width: 13px;
+  height: 13px;
+}
+
+.large .indicator {
+  width: 20px;
+  height: 20px;
+}
+
+.line {
   position: absolute;
-  width: 12px;
-  height: 1px;
   border-radius: 2px;
   background-color: var(--blueDarker);
   top: 50%;
 }
 
+.small .line {
+  width: 13px;
+  height: 1px;
+}
+
+.large .line {
+  width: 20px;
+  height: 2px;
+}
+
 .lineLeft {
-  composes: _line;
+  composes: line;
   transform: translateY(-50%) rotate(45deg);
 }
 
 .lineRight {
-  composes: _line;
+  composes: line;
   transform: translateY(-50%) rotate(-45deg);
 }
