@@ -170,6 +170,7 @@ export default isMobile => ({
   indicatorsContainer: provided => ({
     ...provided,
     alignSelf: 'baseline',
+    alignItems: 'baseline',
     height: '100%',
   }),
 });
