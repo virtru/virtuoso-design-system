@@ -1,7 +1,7 @@
 .sorter {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 14px;
+  margin-left: 14px;
 }
 
 .clickable {
@@ -10,10 +10,10 @@
 
 .headerCell {
   font-family: var(--fontPrimary);
-  font-weight: normal;
+  font-weight: 600;
   text-align: left;
-  padding: 10px 5px;
-  font-size: 14px;
+  padding: 8px 5px;
+  font-size: 13px;
 }
 
 .min {

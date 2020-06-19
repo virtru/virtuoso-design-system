@@ -1,33 +1,33 @@
 .sortUp {
   position: relative;
   text-align: center;
-  margin-bottom: 3px;
+  padding-top: 1px;
   height: 6px;
-  width: 12px;
+  width: 10px;
 }
 
 .sortUp::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 1.5px;
-  border-radius: 2px;
-  width: 51%;
-  background: var(--slateLighter);
-  transform: skew(0deg, -45deg);
+  top: -3px;
+  left: 2px;
+  height: 8px;
+  border-radius: 1px;
+  width: 1px;
+  background: var(--slateEvenLighter);
+  transform: rotate(45deg);
 }
 
 .sortUp::after {
   content: '';
   position: absolute;
-  top: 0;
-  right: 0;
-  height: 1.5px;
-  border-radius: 2px;
-  width: 50%;
-  background: var(--slateLighter);
-  transform: skew(0deg, 45deg);
+  top: -3px;
+  right: 2px;
+  height: 8px;
+  border-radius: 1px;
+  width: 1px;
+  background: var(--slateEvenLighter);
+  transform: rotate(-45deg);
 }
 
 .sortDown {
@@ -37,5 +37,5 @@
 
 .active::before,
 .active::after {
-  background: black;
+  background: var(--slateDarkest);
 }

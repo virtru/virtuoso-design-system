@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cn from 'classnames';
 
 import Sorter from './Sorter';
-import { SORT_DESC, SORT_ASC, SORT_OFF } from './sort-constants';
+import { SORT_ASC, SORT_DESC, SORT_OFF } from './sort-constants';
 
 import styles from './TH.css';
 
@@ -16,12 +16,12 @@ const TH = ({ className, children, sorting, onClick, min, width, ...rest }) => {
   return (
     <th className={thClassNames} onClick={onClick} style={{ width }} {...rest}>
       <div className={styles.innerContainer}>
+        {children}
         {sorting && (
           <div className={styles.sorter}>
             <Sorter direction={sorting} />
           </div>
         )}
-        {children}
       </div>
     </th>
   );
