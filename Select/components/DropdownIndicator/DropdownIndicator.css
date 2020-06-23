@@ -3,6 +3,10 @@
   fill: var(--slateDarkest);
 }
 
-.chevron.inverted {
+.inverted {
   transform: rotate(180deg);
+}
+
+.disabled {
+  fill: var(--slateLighter);
 }

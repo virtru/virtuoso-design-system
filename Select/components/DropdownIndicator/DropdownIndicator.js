@@ -7,12 +7,17 @@ import styles from './DropdownIndicator.css';
 
 const DropdownIndicator = props => {
   const {
-    selectProps: { menuIsOpen },
+    selectProps: { menuIsOpen, isDisabled },
   } = props;
+
+  const classNames = cn(styles.chevron, {
+    [styles.inverted]: menuIsOpen,
+    [styles.disabled]: isDisabled,
+  });
 
   return (
     <ReactSelectComponent.DropdownIndicator {...props}>
-      <div className={cn(styles.chevron, { [styles.inverted]: menuIsOpen })}>
+      <div className={classNames}>
         <Chevron />
       </div>
     </ReactSelectComponent.DropdownIndicator>

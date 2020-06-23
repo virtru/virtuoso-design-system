@@ -5,38 +5,27 @@
   border-top: 1px solid var(--slateLightest);
 }
 
-.dataRow:first-child {
+/* stylelint-disable plugin/selector-tag-no-without-class */
+thead .dataRow {
   border-color: var(--slateLighter);
 }
 
-/**
-  :only-child Explanation:
-    We need it here to override
-    styles that are applied by
-    .dataRow:first-child since
-    they have higher specificity
-*/
-/* stylelint-disable-next-line plugin/selector-tag-no-without-class */
-thead .dataRow:only-child {
+tbody .dataRow:first-child {
   border-color: var(--slateLighter);
 }
 
-/*
-  :not(:only-child) Explanation:
-    We don't apply bottom border to
-    tr in thead because it overrides
-    top border of first row in tbody
-*/
-.dataRow:last-child:not(:only-child) {
+tbody .dataRow:last-child {
   border-bottom: 1px solid var(--slateLightest);
 }
 
-.highlight:hover {
+tbody .highlight:focus,
+tbody .highlight:hover {
   outline: none;
   border-bottom: 1px solid var(--blueDarker);
   border-top: 1px solid var(--blueDarker);
   background: var(--slateLightest);
 }
+/* stylelint-enable plugin/selector-tag-no-without-class */
 
 .clickable {
   cursor: pointer;

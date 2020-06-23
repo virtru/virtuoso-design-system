@@ -10,7 +10,7 @@ export default isMobile => ({
     ...provided,
     margin: '0 0 0 3px',
     padding: '0',
-    lineHeight: '1rem',
+    lineHeight: '1em',
     fontSize: isMobile ? '16px' : '13px',
   }),
 
