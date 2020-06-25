@@ -5,8 +5,8 @@ import Arrow from './components/Arrow/Arrow';
 
 import styles from './Paginator.css';
 
-const Paginator = ({ start, end, total, min, children, onPrevClick, onNextClick }) => (
-  <div className={styles.paginator}>
+const Paginator = ({ start, end, total, min, children, onPrevClick, onNextClick, ...props }) => (
+  <div className={styles.paginator} {...props}>
     {children && <div className={styles.children}>{children}</div>}
     <div className={styles.arrows}>
       <Arrow variant={Arrow.VARIANT.LEFT} disabled={start <= min} onClick={onPrevClick} />
