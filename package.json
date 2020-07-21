@@ -1,0 +1,31 @@
+{
+  "name": "virtuoso-design-system",
+  "version": "1.0.0",
+  "description": "Thanks for using this template! 🙏 The goal of this template is to simplify the creation of repositories and encourage Virtru best practices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avkvirtru/virtuoso-design-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avkvirtru/virtuoso-design-system/issues"
+  },
+  "homepage": "https://github.com/avkvirtru/virtuoso-design-system#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
+    "babel-loader": "^8.1.0"
+  }
+}
