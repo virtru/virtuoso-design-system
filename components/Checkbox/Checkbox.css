@@ -1,0 +1,56 @@
+.checkboxContainer {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.checkboxInput {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.checkboxInput[disabled] {
+  pointer-events: none;
+}
+
+.checkboxState {
+  width: 100%;
+  height: 100%;
+  color: var(--slateDarkest);
+}
+
+.checkboxContainer:focus-within .checkboxState:not(.disabled),
+.checkboxContainer:hover .checkboxState:not(.disabled) {
+  color: var(--blueDarker);
+}
+
+.checkboxState.disabled {
+  color: var(--slateLighter);
+}
+
+/* this is the only one that needs to adjust the background color */
+.checkboxState.disabled :global(.checkbox-svg-fill-preset) {
+  fill: var(--slateLightest);
+}
+
+@media (--screenMobile) {
+  .checkboxContainer {
+    width: 20px;
+    height: 20px;
+  }
+
+  .label {
+    padding: 14px;
+    display: inline-block;
+  }
+}

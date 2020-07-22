@@ -1,0 +1,27 @@
+.sorter {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 14px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.headerCell {
+  font-family: var(--fontPrimary);
+  font-weight: 600;
+  text-align: left;
+  padding: 8px 5px;
+  font-size: 13px;
+}
+
+.min {
+  width: 1px;
+  word-break: keep-all;
+}
+
+.innerContainer {
+  display: flex;
+  align-items: center;
+}

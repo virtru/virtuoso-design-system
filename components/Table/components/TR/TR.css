@@ -1,0 +1,45 @@
+.dataRow {
+  text-align: left;
+  font-family: var(--fontPrimary);
+  color: var(--slateDarkest);
+  border-top: 1px solid var(--slateLightest);
+}
+
+/* stylelint-disable plugin/selector-tag-no-without-class */
+thead .dataRow {
+  border-color: var(--slateLighter);
+}
+
+tbody .dataRow:first-child {
+  border-color: var(--slateLighter);
+}
+
+tbody .dataRow:last-child {
+  border-bottom: 1px solid var(--slateLightest);
+}
+
+tbody .highlight:focus,
+tbody .highlight:hover {
+  outline: none;
+  border-bottom: 1px solid var(--blueDarker);
+  border-top: 1px solid var(--blueDarker);
+  background: var(--slateLightest);
+}
+/* stylelint-enable plugin/selector-tag-no-without-class */
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:focus {
+  outline: none;
+  border-bottom: 1px solid var(--blueDarker);
+  border-top: 1px solid var(--blueDarker);
+  background: var(--blueLightest);
+}
+
+.dataRowBordered.collapsed {
+  border-top: 1px solid var(--bluePrimary);
+  border-bottom: none;
+  background: var(--blueLightest);
+}

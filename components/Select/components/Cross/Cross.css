@@ -1,0 +1,40 @@
+.indicator {
+  position: relative;
+}
+
+.small .indicator {
+  width: 13px;
+  height: 13px;
+}
+
+.large .indicator {
+  width: 20px;
+  height: 20px;
+}
+
+.line {
+  position: absolute;
+  border-radius: 2px;
+  background-color: var(--blueDarker);
+  top: 50%;
+}
+
+.small .line {
+  width: 13px;
+  height: 1px;
+}
+
+.large .line {
+  width: 20px;
+  height: 2px;
+}
+
+.lineLeft {
+  composes: line;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.lineRight {
+  composes: line;
+  transform: translateY(-50%) rotate(-45deg);
+}

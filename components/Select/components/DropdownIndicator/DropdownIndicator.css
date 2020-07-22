@@ -1,0 +1,12 @@
+.chevron {
+  display: flex;
+  fill: var(--slateDarkest);
+}
+
+.inverted {
+  transform: rotate(180deg);
+}
+
+.disabled {
+  fill: var(--slateLighter);
+}

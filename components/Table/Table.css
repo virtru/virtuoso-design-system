@@ -1,0 +1,10 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.scrollableBody {
+  overflow-y: auto;
+  height: 100%;
+}
