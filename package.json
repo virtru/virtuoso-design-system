@@ -29,6 +29,7 @@
     "@storybook/addon-storysource": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
-    "babel-loader": "^8.1.0"
+    "babel-loader": "^8.1.0",
+    "storybook-addons-abstract": "^5.0.7"
   }
 }
