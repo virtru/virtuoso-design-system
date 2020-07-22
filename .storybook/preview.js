@@ -17,7 +17,7 @@ import styles from './styles.css';
 
 addParameters({
   options: {
-    theme: themes.dark,
+    // theme: themes.dark,
   },
 });
 
