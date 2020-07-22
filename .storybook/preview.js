@@ -15,7 +15,23 @@ import 'virtru-typography';
 
 import styles from './styles.css';
 
+// import design tokens so webpack and storybook-design-token render them
+import tokens from '../components/tokens.css';
+
+// configure storybook-design-token
+const cssReq = require.context('!!raw-loader!../components', true, /.\.css$/);
+const cssTokenFiles = cssReq
+  .keys()
+  .map(filename => ({ filename, content: cssReq(filename).default }));
+
 addParameters({
+  // configure storybook-design-token
+  designToken: {
+    files: {
+      css: cssTokenFiles,
+    }
+  },
+  // configure @storybook/theming
   options: {
     // theme: themes.dark,
   },

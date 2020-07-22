@@ -1,0 +1,29 @@
+/* 
+ * Example design tokens from 
+ * https://github.com/UX-and-I/storybook-design-token#usage
+ * 
+ * TODO: replace with Virtuoso design tokens
+ */
+
+/**
+ * @tokens Colors
+ * @presenter Color
+ */
+
+:root {
+  --n0: #fff; /* Token Description */
+  --n100: #fbfbfb;
+  --n200: #edeeef;
+  --n300: #e4e5e7;
+  --primary: var(--n300);
+}
+
+/**
+ * @tokens Border Radius
+ * @presenter BorderRadius
+ */
+
+:root {
+  --border-radius-m: 4px;
+  --border-radius-l: 8px;
+}

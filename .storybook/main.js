@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
   stories: ['../stories/**/*.stories.js', '../stories/vrc-stories/*.js'],
   addons: [
+    'storybook-design-token',
     '@storybook/addon-actions', 
     '@storybook/addon-links',
     '@storybook/addon-knobs',
