@@ -8,5 +8,11 @@ module.exports = {
     '@storybook/addon-knobs',
     '@storybook/addon-a11y',
     'storybook-addons-abstract/register',
+    {
+      name: '@storybook/addon-docs',
+      options: {
+        configureJSX: true,
+      },
+    },
   ],
 };
