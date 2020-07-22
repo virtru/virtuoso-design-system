@@ -9,12 +9,12 @@ module.exports = {
     '../stories/vrc-stories/*.(js|mdx)',
   ],
   addons: [
+    '@storybook/addon-a11y',
     'storybook-design-token',
     '@storybook/addon-actions', 
     '@storybook/addon-links',
     '@storybook/addon-storysource',
     '@storybook/addon-knobs',
-    '@storybook/addon-a11y',
     'storybook-addons-abstract/register',
     {
       name: '@storybook/addon-docs',

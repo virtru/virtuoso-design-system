@@ -35,8 +35,16 @@ addParameters({
   options: {
     // configure @storybook/theming
     theme: themes.dark,
+
+    /**
+     * id to select an addon panel
+     * @type {String}
+     */
+    selectedPanel: 'storybook/a11y/panel',
   },
 });
+
+addDecorator(withA11y);
 
 addDecorator(Story => (
   <div className={styles.container}>
@@ -44,5 +52,4 @@ addDecorator(Story => (
   </div>
 ));
 
-addDecorator(withA11y);
 addDecorator(withKnobs);
