@@ -1,4 +1,7 @@
 *.log
 node_modules
 .DS_Store
+
+# Output
+dist/
 storybook-static

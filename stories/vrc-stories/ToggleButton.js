@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean } from '@storybook/addon-knobs';
 
-import { ToggleButton } from '../lib';
+import { ToggleButton } from '@';
 
 // eslint-disable-next-line react/prop-types
 const Container = ({ children }) => (

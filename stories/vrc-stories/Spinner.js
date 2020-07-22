@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 
 import { text, boolean } from '@storybook/addon-knobs';
 
-import { Encrypting, Decrypting } from '../lib';
+import { Encrypting, Decrypting } from '@';
 
 storiesOf('Spinner', module)
   .lokiSkip('Encrypting', () => (

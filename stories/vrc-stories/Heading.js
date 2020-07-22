@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean, select, text } from '@storybook/addon-knobs';
 
-import { Heading, Text } from '../lib';
+import { Heading, Text } from '@';
 
 // eslint-disable-next-line react/prop-types
 const Container = ({ children }) => <div style={{ maxWidth: '575px' }}>{children}</div>;

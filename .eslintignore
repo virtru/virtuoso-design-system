@@ -1,0 +1,12 @@
+node_modules/**
+.eslintrc
+.gitignore
+.nvmrc
+CHANGELOG.md
+package.json
+package-lock.json
+README.md
+buildkite-scripts/
+dist/
+storybook-static/
+devops-ansible/

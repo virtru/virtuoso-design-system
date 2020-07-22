@@ -3,7 +3,7 @@
 import React, { useLayoutEffect, useReducer, useRef, useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean, select } from '@storybook/addon-knobs';
-import { Table, TBody, TD, TH, THead, TR } from '../lib';
+import { Table, TBody, TD, TH, THead, TR } from '@';
 
 const StoryTHead = ({
   onClickSelect = () => {},

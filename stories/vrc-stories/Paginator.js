@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { number, text } from '@storybook/addon-knobs';
 
-import { Paginator } from '../lib';
+import { Paginator } from '@';
 
 const renderVariant = (name, children) => (
   <div style={{ marginBottom: 20 }}>
