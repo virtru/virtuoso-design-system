@@ -31,8 +31,9 @@ addParameters({
       css: cssTokenFiles,
     }
   },
-  // configure @storybook/theming
+  
   options: {
+    // configure @storybook/theming
     theme: themes.dark,
   },
 });
