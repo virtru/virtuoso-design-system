@@ -3,7 +3,7 @@ import React, { useRef, useLayoutEffect } from 'react';
 import { storiesOf } from '@storybook/react';
 
 import { boolean, select } from '@storybook/addon-knobs';
-import { Checkbox } from '../lib';
+import { Checkbox } from '@';
 
 const variants = Object.values(Checkbox.VARIANT);
 const [defaultVariant] = variants;

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean, text, number } from '@storybook/addon-knobs';
-import { Textarea } from '../lib';
+import { Textarea } from '@';
 
 const sampleText = `This is a sample
 to cover this plain white field.

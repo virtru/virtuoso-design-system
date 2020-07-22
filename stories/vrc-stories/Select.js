@@ -3,7 +3,7 @@ import React, { useLayoutEffect, useRef } from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean, number, text } from '@storybook/addon-knobs';
 
-import { Select } from '../lib';
+import { Select } from '@';
 
 const generateOptions = count =>
   Array.from({ length: count }).map((_, index) => ({

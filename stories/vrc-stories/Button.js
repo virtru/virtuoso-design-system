@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { text, boolean, select } from '@storybook/addon-knobs';
 import Icon from './assets/icon.svg';
 
-import { Button } from '../lib';
+import { Button } from '@';
 
 // eslint-disable-next-line react/prop-types
 const Container = ({ children }) => (
@@ -68,6 +68,8 @@ const printButtonTable = (size, children = 'Label') => (
     </tbody>
   </table>
 );
+
+console.log(storiesOf('Button', module))
 
 storiesOf('Button', module)
   .lokiSkip('default', () => (

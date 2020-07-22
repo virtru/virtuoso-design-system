@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { number, select } from '@storybook/addon-knobs';
 
-import { Tab, Tabs, TabList, TabPanel } from '../lib';
+import { Tab, Tabs, TabList, TabPanel } from '@';
 
 // eslint-disable-next-line react/prop-types
 const Container = ({ children }) => (

@@ -3,7 +3,7 @@ import React, { useRef, useLayoutEffect } from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, boolean, select } from '@storybook/addon-knobs';
 
-import { Input } from '../lib';
+import { Input } from '@';
 
 // eslint-disable-next-line react/prop-types
 const Container = ({ children }) => (

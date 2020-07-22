@@ -19,9 +19,11 @@
     "url": "https://github.com/avkvirtru/virtuoso-design-system/issues"
   },
   "homepage": "https://github.com/avkvirtru/virtuoso-design-system#readme",
-  "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
     "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
     "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-knobs": "^5.3.19",
@@ -29,6 +31,78 @@
     "@storybook/addon-storysource": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
-    "babel-loader": "^8.1.0"
+    "babel-loader": "^8.0.6",
+    "@testing-library/react": "^8.0.8",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.2",
+    "chokidar-cli": "^2.1.0",
+    "css-loader": "^2.1.1",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-jest-enzyme": "^6.0.2",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jest": "^22",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26",
+    "jest-config-virtru": "git+ssh://git@github.com/virtru/jest-config-virtru#semver:^2",
+    "jest-dom": "^3.2.2",
+    "loki": "^0.20.3",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-custom-properties": "^8.0.10",
+    "postcss-hexrgba": "^1.0.1",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.16.4",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-svg-loader": "^3.0.3",
+    "rollup": "^1.32.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-react-svg": "^3.0.3",
+    "style-loader": "^0.23.1",
+    "stylelint": "^13.5.0",
+    "stylelint-config-css-modules": "^1.3.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-selector-tag-no-without-class": "^2.0.0",
+    "url-loader": "^2.0.0",
+    "virtru-typography": "git+ssh://git@github.com/virtru/virtru-typography.git#semver:^0.3.1"
+  },
+  "dependencies": {
+    "animejs": "^3.0.1",
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
+    "react-select": "^3.0.4",
+    "react-tabs": "^3.0.0",
+    "react-toggle": "^4.1.1",
+    "virtru-design-params": "git+ssh://git@github.com/virtru/virtru-design-params.git#semver:1.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.3",
+    "react-dom": "^16.3",
+    "virtru-typography": "^0.3.1"
+  },
+  "loki": {
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.docker",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false,
+        "fitWindow": false
+      },
+      "chrome.iphone7": {
+        "target": "chrome.docker",
+        "preset": "iPhone 7"
+      }
+    }
   }
 }

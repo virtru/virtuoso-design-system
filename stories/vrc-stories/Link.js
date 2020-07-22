@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, select } from '@storybook/addon-knobs';
 
-import { Link } from '../lib';
+import { Link } from '@';
 
 // eslint-disable-next-line react/prop-types
 const Container = ({ children }) => (

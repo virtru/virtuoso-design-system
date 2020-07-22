@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { select, text, boolean } from '@storybook/addon-knobs';
 
-import { OauthButton } from '../lib';
+import { OauthButton } from '@';
 
 const variants = Object.values(OauthButton.VARIANT);
 const [defaultVariant] = variants;
