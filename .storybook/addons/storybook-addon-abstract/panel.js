@@ -1,16 +1,15 @@
-import * as Abstract from "abstract-sdk";
-import * as React from "react";
-import { useParameter, useStorybookState } from "@storybook/api";
-import { styled } from "@storybook/theming";
-import { PARAM_KEY } from "./constants";
+import * as Abstract from 'abstract-sdk';
+import * as React from 'react';
+import { useParameter, useStorybookState } from '@storybook/api';
+import { styled } from '@storybook/theming';
+import { PARAM_KEY } from './constants';
 
-const ABSTRACT_APP_URL =
-  process.env.STORYBOOK_ABSTRACT_APP_URL || "https://app.abstract.com";
+const ABSTRACT_APP_URL = process.env.STORYBOOK_ABSTRACT_APP_URL || 'https://app.abstract.com';
 
 const Iframe = styled.iframe({
-  width: "100%",
-  height: "100%",
-  border: "0 none"
+  width: '100%',
+  height: '100%',
+  border: '0 none',
 });
 
 function parseShareURL(url) {
@@ -46,10 +45,10 @@ export function Panel() {
       );
     }
 
-    const url = new URL(`/embed/${shareId}${layerId && `?collectionLayerId=${layerId}` || ''}`, ABSTRACT_APP_URL);
+    const url = new URL(`/embed/${shareId}`, ABSTRACT_APP_URL);
 
     return (
-      <Iframe src={url.toString()} />
+      <Iframe src={url.toString()} frameBorder="0" allowFullScreen={true} />
     );
   }, [shareDescriptor, storyId]);
 }

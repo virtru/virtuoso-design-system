@@ -7,7 +7,7 @@
             "primaryEmailId": "afc2b55f-9436-415e-b4b0-36d75bc49666",
             "createdAt": "2018-10-01T19:22:29.321Z",
             "updatedAt": "2019-08-27T20:17:01.579Z",
-            "lastActiveAt": "2020-07-22T23:46:55.750Z",
+            "lastActiveAt": "2020-07-23T12:05:03.759Z",
             "username": "avk",
             "name": "Art Klepchukov",
             "avatarUrl": "https://avatars.goabstract.com/avatars/8a8564c4-8467-43e9-ad34-d0e3bf854657.",
@@ -96,92 +96,5 @@
                 "textContent": null
             }
         ]
-    },
-    "layers": [
-        {
-            "id": "201E190A-094C-4949-93FF-B772ADBF1C06",
-            "name": "Button/.Text/.Primary/Large/.Enabled",
-            "type": "symbol",
-            "width": 92,
-            "height": 48,
-            "x": 1716,
-            "y": 0,
-            "lastChangedAtSha": "35896ae350523174d77288beda2322fb12ccfdd6",
-            "projectId": "a6903c20-18d2-11e9-a3e9-737b87f98f8d",
-            "sha": "35896ae350523174d77288beda2322fb12ccfdd6",
-            "fileId": "BA664976-3CA2-4E67-9A02-2776E933E55C",
-            "pageId": "9CB6F78B-DA66-4AB8-A871-9C5052853FB7",
-            "updatedAt": "2020-05-18T19:21:25.000Z",
-            "order": 169,
-            "version": 2
-        },
-        {
-            "id": "81B600C1-3381-4473-9B55-146B86C29F4E",
-            "name": "Button/.Text/.Primary/Large/Disabled",
-            "type": "symbol",
-            "width": 92,
-            "height": 48,
-            "x": 1474,
-            "y": 870,
-            "lastChangedAtSha": "eaabf715d14681a28d80ebb46b9b5ce411c7412c",
-            "projectId": "a6903c20-18d2-11e9-a3e9-737b87f98f8d",
-            "sha": "eaabf715d14681a28d80ebb46b9b5ce411c7412c",
-            "fileId": "BA664976-3CA2-4E67-9A02-2776E933E55C",
-            "pageId": "9CB6F78B-DA66-4AB8-A871-9C5052853FB7",
-            "updatedAt": "2020-06-15T20:53:54.000Z",
-            "order": 178,
-            "version": 2
-        },
-        {
-            "id": "F156EE4B-CA3C-4B62-8CB7-F64E53D190D7",
-            "name": "Button/.Text/.Primary/Large/Focus",
-            "type": "symbol",
-            "width": 92,
-            "height": 48,
-            "x": 1474,
-            "y": 1068,
-            "lastChangedAtSha": "eaabf715d14681a28d80ebb46b9b5ce411c7412c",
-            "projectId": "a6903c20-18d2-11e9-a3e9-737b87f98f8d",
-            "sha": "eaabf715d14681a28d80ebb46b9b5ce411c7412c",
-            "fileId": "BA664976-3CA2-4E67-9A02-2776E933E55C",
-            "pageId": "9CB6F78B-DA66-4AB8-A871-9C5052853FB7",
-            "updatedAt": "2020-06-15T20:53:54.000Z",
-            "order": 177,
-            "version": 2
-        },
-        {
-            "id": "D363225A-B94D-4406-A149-13528C5EB4F5",
-            "name": "Button/.Text/.Primary/Large/Hover",
-            "type": "symbol",
-            "width": 92,
-            "height": 48,
-            "x": 1474,
-            "y": 1266,
-            "lastChangedAtSha": "eaabf715d14681a28d80ebb46b9b5ce411c7412c",
-            "projectId": "a6903c20-18d2-11e9-a3e9-737b87f98f8d",
-            "sha": "eaabf715d14681a28d80ebb46b9b5ce411c7412c",
-            "fileId": "BA664976-3CA2-4E67-9A02-2776E933E55C",
-            "pageId": "9CB6F78B-DA66-4AB8-A871-9C5052853FB7",
-            "updatedAt": "2020-06-15T20:53:54.000Z",
-            "order": 176,
-            "version": 2
-        },
-        {
-            "id": "F10325BB-7734-4D66-92F7-2AC0F4DA2778",
-            "name": "Button/.Text/.Primary/Large/Pressed",
-            "type": "symbol",
-            "width": 92,
-            "height": 48,
-            "x": 1474,
-            "y": 1464,
-            "lastChangedAtSha": "eaabf715d14681a28d80ebb46b9b5ce411c7412c",
-            "projectId": "a6903c20-18d2-11e9-a3e9-737b87f98f8d",
-            "sha": "eaabf715d14681a28d80ebb46b9b5ce411c7412c",
-            "fileId": "BA664976-3CA2-4E67-9A02-2776E933E55C",
-            "pageId": "9CB6F78B-DA66-4AB8-A871-9C5052853FB7",
-            "updatedAt": "2020-06-15T20:53:54.000Z",
-            "order": 175,
-            "version": 2
-        }
-    ]
+    }
 }

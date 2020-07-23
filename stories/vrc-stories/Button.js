@@ -69,9 +69,12 @@ const printButtonTable = (size, children = 'Label') => (
   </table>
 );
 
-console.log(storiesOf('Button', module))
-
 storiesOf('Button', module)
+  .addParameters({
+    abstract: {
+      shareId: 'b97555e2-2cd2-4a35-b1b8-cd5e3a85c243',
+    },
+  })
   .lokiSkip('default', () => (
     <Container>
       <Button

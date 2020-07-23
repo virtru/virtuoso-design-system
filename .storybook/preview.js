@@ -42,7 +42,7 @@ addParameters({
      * @type {String}
      */
     selectedPanel: 'storybook/a11y/panel',
-  },
+  }
 });
 
 addDecorator(withA11y);
