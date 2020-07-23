@@ -9,6 +9,7 @@ import {
 import { withA11y } from '@storybook/addon-a11y';
 import { withKnobs } from '@storybook/addon-knobs';
 import { themes } from '@storybook/theming';
+import virtuosoTheme from './virtuosoTheme.js';
 
 import 'loki/configure-react';
 import 'virtru-typography';
@@ -34,7 +35,7 @@ addParameters({
   
   options: {
     // configure @storybook/theming
-    // theme: themes.dark,
+    theme: virtuosoTheme,
 
     /**
      * id to select an addon panel
