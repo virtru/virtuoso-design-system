@@ -34,7 +34,7 @@ addParameters({
   
   options: {
     // configure @storybook/theming
-    theme: themes.dark,
+    // theme: themes.dark,
 
     /**
      * id to select an addon panel

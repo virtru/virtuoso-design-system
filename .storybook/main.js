@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   stories: [
     // Make Introduction appear first in list of stories.
@@ -13,7 +15,6 @@ module.exports = {
     'storybook-design-token',
     '@storybook/addon-actions', 
     '@storybook/addon-links',
-    '@storybook/addon-storysource',
     '@storybook/addon-knobs',
     'storybook-addons-abstract/register',
     {
