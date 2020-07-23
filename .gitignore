@@ -1,6 +1,12 @@
+# General
 *.log
-node_modules
 .DS_Store
+
+# Sensitive
+.env
+
+# Node
+node_modules
 
 # Output
 dist/

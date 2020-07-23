@@ -1,0 +1,78 @@
+#!/usr/bin/env node -r dotenv/config
+const fs = require('fs');
+const path = require('path');
+const { Client } = require('abstract-sdk');
+
+const { ABSTRACT_API_TOKEN, ABSTRACT_PROJECT_ID, ABSTRACT_COLLECTION_ID } = process.env;
+
+const ABSTRACT_CACHE_FILE = path.resolve(
+  path.join(__dirname, '..', '.storybook', 'abstract_layers_cache.json'),
+);
+
+class RunError extends Error {
+  /**
+   * Constructor
+   *
+   * @param msg the error message
+   * @param err the error driving
+   */
+  constructor(msg, err = null) {
+    super(msg);
+    this.message = msg;
+    this.err = err;
+  }
+}
+
+/**
+ * Run script
+ */
+async function run() {
+  const client = new Client({
+    accessToken: ABSTRACT_API_TOKEN,
+  });
+
+  // Get collection
+  let collection;
+  try {
+    collection = await client.collections.info({
+      projectId: ABSTRACT_PROJECT_ID,
+      branchId: 'master',
+      collectionId: ABSTRACT_COLLECTION_ID,
+    });
+  } catch (e) {
+    throw RunError('Could not get collections', e);
+  }
+
+  // Get layers
+  let layers;
+  try {
+    layers = await Promise.all(
+      collection.layers.map(layer =>
+        client.layers.info({
+          projectId: ABSTRACT_PROJECT_ID,
+          branchId: 'master',
+          fileId: layer.fileId,
+          layerId: layer.layerId,
+          sha: layer.sha,
+        }),
+      ),
+    );
+  } catch (e) {
+    throw RunError('Could not get layers', e);
+  }
+
+  // Save to cache
+  fs.writeFileSync(
+    ABSTRACT_CACHE_FILE,
+    JSON.stringify(
+      {
+        collection,
+        layers,
+      },
+      null,
+      '    ',
+    ),
+  );
+}
+
+run().catch();
