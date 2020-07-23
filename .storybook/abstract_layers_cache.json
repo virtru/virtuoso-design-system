@@ -1,0 +1,100 @@
+{
+    "collection": {
+        "id": "54502926-41f2-4cba-b75e-8077bb69a093",
+        "userId": "f8eaad98-c9dc-4b68-bcf2-8ae974e2dd00",
+        "user": {
+            "id": "f8eaad98-c9dc-4b68-bcf2-8ae974e2dd00",
+            "primaryEmailId": "afc2b55f-9436-415e-b4b0-36d75bc49666",
+            "createdAt": "2018-10-01T19:22:29.321Z",
+            "updatedAt": "2019-08-27T20:17:01.579Z",
+            "lastActiveAt": "2020-07-23T12:05:03.759Z",
+            "username": "avk",
+            "name": "Art Klepchukov",
+            "avatarUrl": "https://avatars.goabstract.com/avatars/8a8564c4-8467-43e9-ad34-d0e3bf854657.",
+            "isScimProvisioned": false
+        },
+        "projectId": "a6903c20-18d2-11e9-a3e9-737b87f98f8d",
+        "branchId": "master",
+        "branchHead": "2a6dcae4542375a1e118ba90d7a037b6392b8f51",
+        "name": "Storybook",
+        "description": "",
+        "order": 1,
+        "createdAt": "2020-07-22T18:29:32.264Z",
+        "thumbnailCollectionLayerId": "0c307f64-f517-4ed5-935c-0ad17492e17f",
+        "thumbnailCollectionLayerSha": "35896ae350523174d77288beda2322fb12ccfdd6",
+        "updatedAt": "2020-07-22T18:31:00.115Z",
+        "publishedAt": "2020-07-22T18:29:37.409Z",
+        "layers": [
+            {
+                "id": "0c307f64-f517-4ed5-935c-0ad17492e17f",
+                "projectId": "a6903c20-18d2-11e9-a3e9-737b87f98f8d",
+                "collectionId": "54502926-41f2-4cba-b75e-8077bb69a093",
+                "fileId": "BA664976-3CA2-4E67-9A02-2776E933E55C",
+                "pageId": "9CB6F78B-DA66-4AB8-A871-9C5052853FB7",
+                "layerId": "201E190A-094C-4949-93FF-B772ADBF1C06",
+                "sha": "35896ae350523174d77288beda2322fb12ccfdd6",
+                "useLatestCommit": true,
+                "isPinned": true,
+                "order": 1,
+                "kind": "layer",
+                "textContent": null
+            },
+            {
+                "id": "1ea52396-e5d6-4b98-aa3c-0b590c7fac8f",
+                "projectId": "a6903c20-18d2-11e9-a3e9-737b87f98f8d",
+                "collectionId": "54502926-41f2-4cba-b75e-8077bb69a093",
+                "fileId": "BA664976-3CA2-4E67-9A02-2776E933E55C",
+                "pageId": "9CB6F78B-DA66-4AB8-A871-9C5052853FB7",
+                "layerId": "81B600C1-3381-4473-9B55-146B86C29F4E",
+                "sha": "eaabf715d14681a28d80ebb46b9b5ce411c7412c",
+                "useLatestCommit": true,
+                "isPinned": true,
+                "order": 2,
+                "kind": "layer",
+                "textContent": null
+            },
+            {
+                "id": "31418cbe-c26d-4dc0-923a-c16d4aaf84ef",
+                "projectId": "a6903c20-18d2-11e9-a3e9-737b87f98f8d",
+                "collectionId": "54502926-41f2-4cba-b75e-8077bb69a093",
+                "fileId": "BA664976-3CA2-4E67-9A02-2776E933E55C",
+                "pageId": "9CB6F78B-DA66-4AB8-A871-9C5052853FB7",
+                "layerId": "F156EE4B-CA3C-4B62-8CB7-F64E53D190D7",
+                "sha": "eaabf715d14681a28d80ebb46b9b5ce411c7412c",
+                "useLatestCommit": true,
+                "isPinned": true,
+                "order": 3,
+                "kind": "layer",
+                "textContent": null
+            },
+            {
+                "id": "4447727d-5d45-477b-a590-e062fb41a9f4",
+                "projectId": "a6903c20-18d2-11e9-a3e9-737b87f98f8d",
+                "collectionId": "54502926-41f2-4cba-b75e-8077bb69a093",
+                "fileId": "BA664976-3CA2-4E67-9A02-2776E933E55C",
+                "pageId": "9CB6F78B-DA66-4AB8-A871-9C5052853FB7",
+                "layerId": "D363225A-B94D-4406-A149-13528C5EB4F5",
+                "sha": "eaabf715d14681a28d80ebb46b9b5ce411c7412c",
+                "useLatestCommit": true,
+                "isPinned": true,
+                "order": 4,
+                "kind": "layer",
+                "textContent": null
+            },
+            {
+                "id": "6aa5807f-54c5-4101-a93d-36816c2a78c6",
+                "projectId": "a6903c20-18d2-11e9-a3e9-737b87f98f8d",
+                "collectionId": "54502926-41f2-4cba-b75e-8077bb69a093",
+                "fileId": "BA664976-3CA2-4E67-9A02-2776E933E55C",
+                "pageId": "9CB6F78B-DA66-4AB8-A871-9C5052853FB7",
+                "layerId": "F10325BB-7734-4D66-92F7-2AC0F4DA2778",
+                "sha": "eaabf715d14681a28d80ebb46b9b5ce411c7412c",
+                "useLatestCommit": true,
+                "isPinned": true,
+                "order": 5,
+                "kind": "layer",
+                "textContent": null
+            }
+        ]
+    }
+}
