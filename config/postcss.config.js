@@ -10,7 +10,7 @@ module.exports = {
     postcssCustomProperties({
       preserve: false,
       importFrom: [
-        'lib/components/style/tokens.css',
+        'lib/styles/tokens.css',
         'node_modules/virtru-design-params/src/colors/colors.css',
         'node_modules/virtru-design-params/src/text/text.css',
         'node_modules/virtru-design-params/src/typography/typography.css',

@@ -21,6 +21,7 @@ module.exports = async ({ config }) => {
       test: /\.css$/,
       include: [
         path.join(__dirname),
+        path.join(__dirname, '../lib/styles'),
         path.join(__dirname, '../lib/components'),
       ],
       use: [

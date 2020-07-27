@@ -29,7 +29,7 @@ module.exports = {
     }),
     postcss({
       config: {
-        path: './postcss.config.js'
+        path: path.join('.', 'postcss.config.js')
       }
     }),
     nodeResolve(),
