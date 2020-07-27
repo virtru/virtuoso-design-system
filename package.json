@@ -1,7 +1,7 @@
 {
   "name": "virtuoso-design-system",
   "version": "1.0.0",
-  "description": "Thanks for using this template! 🙏 The goal of this template is to simplify the creation of repositories and encourage Virtru best practices.",
+  "description": "A set of reusable elements that enable Virtru designers and Virtru engineers to create consistent Virtru products.",
   "main": "lib/index.js",
   "scripts": {
     "build": "rollup --config config/rollup.config.js",
@@ -21,9 +21,16 @@
     "type": "git",
     "url": "git+https://github.com/avkvirtru/virtuoso-design-system.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "Virtru",
+    "design system",
+    "React"
+  ],
+  "contributors": [
+    "Arthur Klepchukov",
+    "Ryan Schumacher"
+  ],
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/avkvirtru/virtuoso-design-system/issues"
   },
