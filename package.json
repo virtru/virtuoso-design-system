@@ -1,6 +1,6 @@
 {
   "name": "virtuoso-design-system",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Thanks for using this template! 🙏 The goal of this template is to simplify the creation of repositories and encourage Virtru best practices.",
   "main": "lib/index.js",
   "scripts": {
