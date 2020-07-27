@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = async ({ config }) => {
   config.resolve = {
     alias: {
-      '@': path.resolve(__dirname, '../components/'),
+      '@': path.resolve(__dirname, '../lib'),
     },
     extensions: ['.js', '.jsx', '.css', '.png', '.jpg', '.gif', '.jpeg'],
   };
@@ -21,7 +21,8 @@ module.exports = async ({ config }) => {
       test: /\.css$/,
       include: [
         path.join(__dirname),
-        path.join(__dirname, '../components'),
+        path.join(__dirname, '../lib/styles'),
+        path.join(__dirname, '../lib/components'),
       ],
       use: [
         {
@@ -49,8 +50,8 @@ module.exports = async ({ config }) => {
     .concat({
       test: /\.css$/,
       include: [
-        path.join(__dirname, '../node_modules/virtru-typography'),
-        path.join(__dirname, '../node_modules/@storybook'),
+        path.join(__dirname, '..', 'node_modules', 'virtru-typography'),
+        path.join(__dirname, '..', 'node_modules', '@storybook'),
       ],
       use: [
         {

@@ -1,0 +1,9 @@
+.container {
+  width: 100%;
+}
+
+.containerInner {
+  flex: auto;
+  max-width: var(--vds-container-width-xl);
+  padding: var(--vds-container-padding-md);
+}
