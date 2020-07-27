@@ -4,6 +4,7 @@
   "description": "A set of reusable elements that enable Virtru designers and Virtru engineers to create consistent Virtru products.",
   "main": "lib/index.js",
   "scripts": {
+    "auto": "auto",
     "build": "rollup --config config/rollup.config.js",
     "build:watch": "chokidar \"components/**/*\" -c \"npm run build\"",
     "clean": "rimraf dist/*",
@@ -55,6 +56,7 @@
     "@storybook/react": "^5.3.19",
     "@testing-library/react": "^8.0.8",
     "abstract-sdk": "^8.0.0-beta.33",
+    "auto": "^9.48.1",
     "babel-jest": "^26.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-module-name-mapper": "^1.2.0",
