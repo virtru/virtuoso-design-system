@@ -8,9 +8,9 @@ module.exports = {
   plugins: [
     postcssImport(),
     postcssCustomProperties({
-      preserve: true, // Support `@import` per https://github.com/postcss/postcss-custom-properties/issues/204
+      preserve: false,
       importFrom: [
-        'lib/components/style/index.css',
+        'lib/components/style/tokens.css',
         'node_modules/virtru-design-params/src/colors/colors.css',
         'node_modules/virtru-design-params/src/text/text.css',
         'node_modules/virtru-design-params/src/typography/typography.css',
