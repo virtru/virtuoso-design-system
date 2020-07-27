@@ -3,8 +3,7 @@
 }
 
 .containerInner {
-  color: var(--vds-white);
   flex: auto;
-  max-width: 1024px;
-  padding: 18px;
+  max-width: var(--vds-container-width-xl);
+  padding: var(--vds-container-padding-md);
 }

@@ -122,8 +122,10 @@
  */
 
 :root {
-  --vds-font-family-body:     'Open Sans', Helvetica, Arial, sans-serif;
-  --vds-font-family-display:  'Raleway', Helvetica, Arial, sans-serif;
+  --vds-font-family-body:      'Open Sans', Helvetica, Arial, sans-serif;
+  --vds-font-family-display:   'Raleway', Helvetica, Arial, sans-serif;
+  --vds-font-family-primary:   'Raleway', Helvetica, Arial, sans-serif;
+  --vds-font-family-secondary: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 /**
@@ -166,4 +168,23 @@
   --vds-line-height-heading-md:   36px;
   --vds-line-height-heading-lg:   48px;
   --vds-line-height-heading-xl:   54px;
+}
+
+
+/**
+ * @tokens Container Widths
+ * @presenter ContainerWidth
+ */
+
+:root {
+  --vds-container-width-xl: 1024px;
+}
+
+/**
+ * @tokens Container Paddings
+ * @presenter ContainerPadding
+ */
+
+:root {
+  --vds-container-padding-md: 18px;
 }
