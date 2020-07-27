@@ -1,0 +1,6 @@
+.container {
+  display: block;
+  padding: 15px;
+  font-size: var(--vds-font-size-heading-sm);
+  line-height: var(--vds-line-height-sm);
+}

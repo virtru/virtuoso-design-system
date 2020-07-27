@@ -18,6 +18,6 @@ git subtree split --prefix=stories/        -b subtree_react-components_stories
 git checkout -
 
 ## Add subtree from branches
-git subtree add --squash --prefix=components/         subtree_react-components_components
-git subtree add --squash --prefix=helpers/            subtree_react-components_helpers
+git subtree add --squash --prefix=lib/components/     subtree_react-components_components
+git subtree add --squash --prefix=lib/helpers/        subtree_react-components_helpers
 git subtree add --squash --prefix=stories/vrc-stories subtree_react-components_stories

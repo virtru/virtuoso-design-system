@@ -3,6 +3,11 @@ module.exports = {
   parserOptions: {
     allowImportExportEverywhere: true,
   },
+  settings: {
+    import/resolver: {
+      babel-module: {}
+    }
+  },
   extends: [
     'airbnb',
     'plugin:jest/recommended',
@@ -22,11 +27,12 @@ module.exports = {
   },
   plugins: ['react', 'react-hooks', 'prettier'],
   rules: {
-    'prettier/prettier': ['error'],
-    'react/jsx-wrap-multilines': [
+    'import/no-extraneous-dependencies': [
       'error',
-      { declaration: false, assignment: false },
+      { peerDependencies: true },
     ],
+    'prettier/prettier': ['error'],
+    'react/jsx-wrap-multilines': ['error', { declaration: false, assignment: false }],
     'react/jsx-filename-extension': 'off',
     'react/jsx-fragments': 'error',
     'require-jsdoc': [
