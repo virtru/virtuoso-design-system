@@ -19,7 +19,6 @@
     "test-ci": "jest --ci --coverage",
     "test:vrt": "build-storybook && loki --require-reference --reactUri file:./storybook-static",
     "storybook": "start-storybook -p 6006",
-    "storybook:build": "build-storybook -c .storybook -o docs",
     "lint": "eslint . && stylelint ./**/*.css",
     "prettify": "eslint . --fix",
     "release": "auto shipit"
