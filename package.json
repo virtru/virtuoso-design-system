@@ -1,28 +1,41 @@
 {
   "name": "virtuoso-design-system",
-  "version": "1.0.0",
-  "description": "Thanks for using this template! 🙏 The goal of this template is to simplify the creation of repositories and encourage Virtru best practices.",
-  "main": "lib/index.js",
+  "version": "1.0.1",
+  "description": "A set of reusable elements that enable Virtru designers and Virtru engineers to create consistent Virtru products.",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
+    "auto": "auto",
     "build": "rollup --config config/rollup.config.js",
     "build:watch": "chokidar \"components/**/*\" -c \"npm run build\"",
     "clean": "rimraf dist/*",
-    "postinstall": "npm run build",
+    "prepublishOnly": "npm run build",
     "start": "npm run storybook",
     "test": "jest",
     "test-ci": "jest --ci --coverage",
     "test:vrt": "build-storybook && loki --require-reference --reactUri file:./storybook-static",
     "storybook": "start-storybook -p 6006",
-    "storybook:build": "build-storybook -c .storybook -o docs",
     "lint": "eslint . && stylelint ./**/*.css",
-    "prettify": "eslint . --fix"
+    "prettify": "eslint . --fix",
+    "release": "auto shipit",
+    "postrelease": "storybook-to-ghpages"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/avkvirtru/virtuoso-design-system.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "Virtru",
+    "design system",
+    "React"
+  ],
+  "contributors": [
+    "Arthur Klepchukov",
+    "Ryan Schumacher"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/avkvirtru/virtuoso-design-system/issues"
@@ -46,8 +59,10 @@
     "@storybook/addon-viewport": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
+    "@storybook/storybook-deployer": "^2.8.6",
     "@testing-library/react": "^8.0.8",
     "abstract-sdk": "^8.0.0-beta.33",
+    "auto": "^9.48.1",
     "babel-jest": "^26.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-module-name-mapper": "^1.2.0",

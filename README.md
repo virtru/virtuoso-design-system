@@ -14,20 +14,18 @@ To run storybook locally:
 npm run storybook
 ```
 
-To update the docs for others to use: 
+## Releasing
 
-```shell
-npm run storybook:build
-```
+Releases are handled by [Auto](https://intuit.github.io/auto/). All you have to do is `npm run release` and you'll get:
 
-This should generate a static copy of Storybook into a directory like `docs/`. 
-GitHub Pages then reads and serves Storybook from that directory. 
+* automatic changelog
+* bump npm version
+* publish to npm — based on your `npm login` or NPM_TOKEN in `.env`
+* make a GitHub release — based on your GH_TOKEN in `.env`
 
-Before pushing (or merging to master), you can sanity check the built docs locally via: 
+This works with the magic described in [auto shipit docs](https://intuit.github.io/auto/docs/generated/shipit).
 
-```shell
-npx http-server docs
-```
+A static version of the Storybook docs are generated automatically before we publish releases to npm. 
 
 ## Development Tests
 
@@ -49,3 +47,7 @@ npm run storybook
 ```shell
 npm run test
 ```
+
+---
+
+Copyright © 2020 Virtru Corporation
