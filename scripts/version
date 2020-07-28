@@ -20,12 +20,13 @@ git checkout -q -b $branch_name
 # Build docs
 npm run storybook:build
 
-git add -A .
-
 # Bump version
-npm version $1
-pkg_version=$(node -p -e "require('./package.json').version")
+npm version $1 --no-git-tag-version
+pkg_version=$(node -p -e "require('./package.json').version" | awk '{$1=$1};1')
 
+# Commit the changes
+git add -A .
+git commit -m "Bump version $pkg_version"
 git push -u origin "release/$pkg_version"
 
 git checkout $current_branch
