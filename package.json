@@ -20,7 +20,8 @@
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook -c .storybook -o docs",
     "lint": "eslint . && stylelint ./**/*.css",
-    "prettify": "eslint . --fix"
+    "prettify": "eslint . --fix",
+    "release": "auto shipit",
   },
   "repository": {
     "type": "git",
