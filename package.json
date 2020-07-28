@@ -21,7 +21,7 @@
     "storybook:build": "build-storybook -c .storybook -o docs",
     "lint": "eslint . && stylelint ./**/*.css",
     "prettify": "eslint . --fix",
-    "release": "auto shipit",
+    "release": "auto shipit"
   },
   "repository": {
     "type": "git",
