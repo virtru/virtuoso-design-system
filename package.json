@@ -13,7 +13,6 @@
     "build:watch": "chokidar \"components/**/*\" -c \"npm run build\"",
     "clean": "rimraf dist/*",
     "prepublishOnly": "npm run build",
-    "postpublish": "storybook-to-ghpages",
     "start": "npm run storybook",
     "test": "jest",
     "test-ci": "jest --ci --coverage",
@@ -21,7 +20,8 @@
     "storybook": "start-storybook -p 6006",
     "lint": "eslint . && stylelint ./**/*.css",
     "prettify": "eslint . --fix",
-    "release": "auto shipit"
+    "release": "auto shipit",
+    "postrelease": "storybook-to-ghpages"
   },
   "repository": {
     "type": "git",
