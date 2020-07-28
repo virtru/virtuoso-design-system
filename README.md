@@ -49,3 +49,7 @@ npm run storybook
 ```shell
 npm run test
 ```
+
+---
+
+Copyright © 2020 Virtru Corporation
