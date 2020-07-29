@@ -12,16 +12,15 @@ module.exports = {
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
   },
-  collectCoverageFrom: [
-    "lib/**/*.{js,jsx}",
-    "!**/node_modules/**",
-  ],
+  cacheDirectory: '<rootDir>/node_modules/.cache/jest',
+  collectCoverageFrom: ['lib/**/*.{js,jsx}', '!**/node_modules/**'],
   coverageThreshold: {
     global: {
       branches: 80,
       functions: 80,
       lines: 80,
-      statements: -10
-    }
-  }
+      statements: -10,
+    },
+  },
+  coverageReporters: ['lcov', 'text-summary'],
 };
