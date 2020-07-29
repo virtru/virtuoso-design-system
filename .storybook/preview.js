@@ -12,7 +12,6 @@ import { themes } from '@storybook/theming';
 import virtuosoTheme from './virtuosoTheme.js';
 
 import 'loki/configure-react';
-import 'virtru-typography';
 
 import styles from './styles.css';
 
