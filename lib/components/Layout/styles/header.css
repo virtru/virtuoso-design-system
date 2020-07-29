@@ -33,7 +33,7 @@
 
 .company {
   color: var(--vds-color-white);
-  font-family: var(--vds-font-family-secondary);
+  font-family: var(--vds-font-family-body);
   font-size: 1.9rem;
   font-weight: 600;
   margin-right: 1rem;
@@ -41,7 +41,7 @@
 
 .poweredBy {
   color: var(--vds-color-white);
-  font-family: var(--vds-font-family-primary);
+  font-family: var(--vds-font-family-display);
   font-size: 1.7rem;
   font-weight: 200;
   display: none;
