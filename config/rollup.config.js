@@ -5,6 +5,7 @@ const { babel } = require('@rollup/plugin-babel');
 const commonjs = require('@rollup/plugin-commonjs');
 const postcss = require('rollup-plugin-postcss');
 const reactSvg = require('rollup-plugin-react-svg');
+const postcssConfig = require('./postcss.config');
 
 module.exports = {
   input: 'lib/components/index.js',
@@ -27,11 +28,7 @@ module.exports = {
         { find: '@', replacement: path.join(__dirname, '..', 'lib') }
       ],
     }),
-    postcss({
-      config: {
-        path: path.join('.', 'postcss.config.js')
-      }
-    }),
+    postcss(postcssConfig),
     nodeResolve(),
     babel({
       babelHelpers: 'bundled',
