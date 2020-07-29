@@ -14,6 +14,10 @@ To run storybook locally:
 npm run storybook
 ```
 
+## Examples
+
+Examples can be found in `/examples`
+
 ## Releasing
 
 Releases are handled by [Auto](https://intuit.github.io/auto/). All you have to do is `npm run release` and you'll get:
@@ -27,7 +31,7 @@ This works with the magic described in [auto shipit docs](https://intuit.github.
 
 A static version of the Storybook docs are generated automatically before we publish releases to npm. 
 
-## Development Tests
+## Development &  Testing
 
 To develop new components make sure to:
 
