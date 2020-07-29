@@ -11,3 +11,6 @@ node_modules
 # Output
 dist/
 storybook-static
+coverage
+.loki
+.storybook-out/

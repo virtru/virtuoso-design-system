@@ -15,14 +15,19 @@
     "clean": "rimraf dist/*",
     "prepublishOnly": "npm run build",
     "start": "npm run storybook",
-    "test": "jest",
+    "test": "run-s test:*",
     "test-ci": "jest --ci --coverage",
+    "test:js": "jest",
     "test:vrt": "build-storybook && loki --require-reference --reactUri file:./storybook-static",
     "storybook": "start-storybook -p 6006",
-    "lint": "eslint . && stylelint ./**/*.css",
+    "lint": "run-p lint:js lint:style lint:commit-msg:last",
+    "lint:js": "eslint",
+    "lint:style": "stylelint ./**/*.css",
+    "lint:commit-msg:edit": "commitlint --edit",
+    "lint:commit-msg:last": "commitlint --from HEAD~1 --to HEAD",
     "prettify": "eslint . --fix",
     "release": "auto shipit",
-    "postrelease": "storybook-to-ghpages"
+    "postrelease": "storybook-to-ghpages --out .storybook-out"
   },
   "repository": {
     "type": "git",
@@ -43,15 +48,17 @@
   },
   "homepage": "https://github.com/avkvirtru/virtuoso-design-system#readme",
   "devDependencies": {
+    "@arkweid/lefthook": "^0.7.2",
     "@auto-it/all-contributors": "^9.48.2",
     "@auto-it/conventional-commits": "^9.48.2",
     "@auto-it/first-time-contributor": "^9.48.2",
-    "@auto-it/git-tag": "^9.48.2",
     "@auto-it/jira": "^9.48.2",
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
     "@rollup/plugin-alias": "^3.1.1",
     "@rollup/plugin-babel": "^5.1.0",
     "@rollup/plugin-commonjs": "^14.0.0",
@@ -90,6 +97,7 @@
     "jest-config-virtru": "git+ssh://git@github.com/virtru/jest-config-virtru#semver:^2",
     "jest-dom": "^3.2.2",
     "loki": "^0.20.3",
+    "npm-run-all": "^4.1.5",
     "postcss-custom-media": "^7.0.8",
     "postcss-custom-properties": "^8.0.10",
     "postcss-hexrgba": "^1.0.1",
@@ -143,16 +151,5 @@
         "preset": "iPhone 7"
       }
     }
-  },
-  "auto": {
-    "plugins": [
-      "npm",
-      "all-contributors",
-      "conventional-commits",
-      "first-time-contributor",
-      "git-tag",
-      "jira",
-      "released"
-    ]
   }
 }
