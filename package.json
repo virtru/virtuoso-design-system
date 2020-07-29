@@ -151,16 +151,5 @@
         "preset": "iPhone 7"
       }
     }
-  },
-  "auto": {
-    "plugins": [
-      "npm",
-      "all-contributors",
-      "conventional-commits",
-      "first-time-contributor",
-      "git-tag",
-      "jira",
-      "released"
-    ]
   }
 }
