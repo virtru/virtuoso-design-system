@@ -9,7 +9,6 @@
 .brandingLogo {
   fill: var(--vds-color-white);
   line-height: 1rem;
-  margin-top: 5px;
   margin-left: 24px;
   height: 20px;
 }

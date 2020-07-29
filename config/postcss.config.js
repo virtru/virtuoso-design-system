@@ -1,3 +1,4 @@
+const path = require('path');
 const postcssHexRgba = require('postcss-hexrgba');
 const postcssImport = require('postcss-import');
 const postcssCustomProperties = require('postcss-custom-properties');
@@ -21,5 +22,5 @@ module.exports = {
       importFrom: ['node_modules/virtru-design-params/src/screen/screen.css'],
     }),
   ],
-  extract: 'dist/styles.css',
+  extract: path.resolve('dist/styles.css'),
 };
