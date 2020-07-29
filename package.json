@@ -2,6 +2,7 @@
   "name": "virtuoso-design-system",
   "version": "1.0.1",
   "description": "A set of reusable elements that enable Virtru designers and Virtru engineers to create consistent Virtru products.",
+  "author": "Virtru CI <ci@virtru.com>",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "files": [
@@ -42,6 +43,11 @@
   },
   "homepage": "https://github.com/avkvirtru/virtuoso-design-system#readme",
   "devDependencies": {
+    "@auto-it/all-contributors": "^9.48.2",
+    "@auto-it/conventional-commits": "^9.48.2",
+    "@auto-it/first-time-contributor": "^9.48.2",
+    "@auto-it/git-tag": "^9.48.2",
+    "@auto-it/jira": "^9.48.2",
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.4.4",
@@ -137,5 +143,16 @@
         "preset": "iPhone 7"
       }
     }
+  },
+  "auto": {
+    "plugins": [
+      "npm",
+      "all-contributors",
+      "conventional-commits",
+      "first-time-contributor",
+      "git-tag",
+      "jira",
+      "released"
+    ]
   }
 }
