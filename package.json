@@ -26,7 +26,7 @@
     "lint:commit-msg:edit": "commitlint --edit",
     "lint:commit-msg:last": "commitlint --from HEAD~1 --to HEAD",
     "prettify": "eslint . --fix",
-    "release": "auto shipit",
+    "release": "npx node-env-run --env .env-auto --exec \"auto shipit\"",
     "postrelease": "storybook-to-ghpages --out .storybook-out"
   },
   "repository": {

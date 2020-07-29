@@ -3,7 +3,7 @@
 .DS_Store
 
 # Sensitive
-.env
+.env*
 
 # Node
 node_modules
