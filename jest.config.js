@@ -1,7 +1,6 @@
 module.exports = {
   roots: ['<rootDir>'],
   setupFilesAfterEnv: ['<rootDir>/config/test.config.js'],
-  preset: 'jest-config-virtru',
   moduleFileExtensions: ['js', 'ts', 'tsx', 'json'],
   moduleNameMapper: {
     '\\.css$': 'identity-obj-proxy',
