@@ -1,3 +1,23 @@
+# v1.0.2 (Wed Jul 29 2020)
+
+#### 🐛 Bug Fix
+
+- Improve release [#18](https://github.com/avkvirtru/virtuoso-design-system/pull/18) ([@jrschumacher](https://github.com/jrschumacher))
+- Improve release process [#17](https://github.com/avkvirtru/virtuoso-design-system/pull/17) ([@jrschumacher](https://github.com/jrschumacher))
+- Automate releases to NPM and GitHub [#12](https://github.com/avkvirtru/virtuoso-design-system/pull/12) ([@avkvirtru](https://github.com/avkvirtru))
+
+#### ⚠️ Pushed to `master`
+
+- Update version script ([@jrschumacher](https://github.com/jrschumacher))
+- Add version script ([@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 2
+
+- Arthur Klepchukov ([@avkvirtru](https://github.com/avkvirtru))
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v1.0.0 (Mon Jul 27 2020)
 
 - Prepared first version of the public Virtuoso design system
