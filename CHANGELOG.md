@@ -1,3 +1,16 @@
+# v1.0.5 (Thu Jul 30 2020)
+
+#### 🐛 Bug Fix
+
+- Fix header undefined [#20](https://github.com/avkvirtru/virtuoso-design-system/pull/20) ([@jrschumacher](https://github.com/jrschumacher))
+- docs: Add example application [#14](https://github.com/avkvirtru/virtuoso-design-system/pull/14) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 1
+
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v1.0.2 (Wed Jul 29 2020)
 
 #### 🐛 Bug Fix
