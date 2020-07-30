@@ -15,4 +15,4 @@ jobs:
           condition:
             issue-attribute: milestone
             match: v1.0
-          repo-token: ${{ secrets.GH_TOKEN }}
+          repo-token: ${{ github.token }}
