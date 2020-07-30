@@ -13,12 +13,6 @@ const Container = ({ children }) => (
   <div style={{ maxWidth: '600px', display: 'flex', flexGrow: '1' }}>{children}</div>
 );
 
-const company = text('Company Name', 'Virtru')
-const logo = text(
-  'Company Logo',
-  'https://inxmad4bw31barrx17wec71c-wpengine.netdna-ssl.com/wp-content/themes/salient-child/img/virtru-logo-white-rgb.svg',
-)
-
 storiesOf('Layout', module).lokiSkip('default', () => (
   <Container>
     <Layout>
