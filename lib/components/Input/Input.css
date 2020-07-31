@@ -6,52 +6,52 @@
 
 .input {
   box-sizing: border-box;
-  border: 1px solid var(--slateDarker);
+  border: 1px solid var(--vds-color-slate-darker);
   border-radius: 3px;
-  background-color: var(--white);
+  background-color: var(--vds-color-white);
   outline: none;
-  color: var(--slateDarkest);
+  color: var(--vds-color-slate-darkest);
   font: var(--small);
   padding: 8px 12px;
   width: 100%;
 }
 
 .input:hover {
-  border-color: var(--blueDarkest);
-  box-shadow: 0 1px 4px 1px rgba(var(--blueDarker), 0.3);
+  border-color: var(--vds-color-blue-darkest);
+  box-shadow: 0 1px 4px 1px rgba(var(--vds-color-blue-darker), 0.3);
 }
 
 .input:focus {
-  border-color: var(--blueDarkest);
-  box-shadow: 0 1px 4px 1px rgba(var(--blueDarker), 0.3);
-  background-color: var(--slateLightest);
+  border-color: var(--vds-color-blue-darkest);
+  box-shadow: 0 1px 4px 1px rgba(var(--vds-color-blue-darker), 0.3);
+  background-color: var(--vds-color-slate-lightest);
 }
 
 .input:disabled {
   pointer-events: none;
-  color: var(--slateLighter) !important;
+  color: var(--vds-color-slate-lighter) !important;
   border-color: currentColor !important;
-  background: var(--white) !important;
+  background: var(--vds-color-white) !important;
   box-shadow: none !important;
 }
 
 .error.input {
-  border: 1px solid var(--redPrimary);
+  border: 1px solid var(--vds-color-red-primary);
 }
 
 .error.input:hover {
-  box-shadow: 0 1px 4px 1px rgba(var(--black), 0.3);
+  box-shadow: 0 1px 4px 1px rgba(var(--vds-color-black), 0.3);
 }
 
 .error.input:focus {
-  box-shadow: 0 1px 4px 1px rgba(var(--black), 0.3);
-  background-color: var(--redLightest);
+  box-shadow: 0 1px 4px 1px rgba(var(--vds-color-black), 0.3);
+  background-color: var(--vds-color-red-lightest);
 }
 
 .text {
   display: flex;
   align-items: center;
-  color: var(--slateDarker);
+  color: var(--vds-color-slate-darker);
   font: var(--small);
   margin-top: 6px;
 }
@@ -69,7 +69,7 @@
 }
 
 .error.text {
-  color: var(--redPrimary);
+  color: var(--vds-color-red-primary);
 }
 
 @media (--screenMobile) {

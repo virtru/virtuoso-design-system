@@ -13,7 +13,7 @@
 
 ._container {
   padding: 8px 10px;
-  color: var(--white);
+  color: var(--vds-color-white);
   font: var(--small);
   display: flex;
   flex-direction: row;
@@ -21,7 +21,7 @@
   justify-content: center;
   position: absolute;
   pointer-events: none;
-  background: var(--slateDarkest);
+  background: var(--vds-color-slate-darkest);
   border-radius: 2px;
   z-index: 2;
   max-width: 178px;
@@ -88,7 +88,7 @@
   width: 0;
   height: 0;
   position: absolute;
-  border: var(--mainBorderWidth) solid var(--slateDarkest);
+  border: var(--mainBorderWidth) solid var(--vds-color-slate-darkest);
 }
 
 ._arrow-top {

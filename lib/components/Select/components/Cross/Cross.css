@@ -15,7 +15,7 @@
 .line {
   position: absolute;
   border-radius: 2px;
-  background-color: var(--blueDarker);
+  background-color: var(--vds-color-blue-darker);
   top: 50%;
 }
 

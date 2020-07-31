@@ -1,29 +1,29 @@
 .dataRow {
   text-align: left;
   font-family: var(--fontPrimary);
-  color: var(--slateDarkest);
-  border-top: 1px solid var(--slateLightest);
+  color: var(--vds-color-slate-darkest);
+  border-top: 1px solid var(--vds-color-slate-lightest);
 }
 
 /* stylelint-disable plugin/selector-tag-no-without-class */
 thead .dataRow {
-  border-color: var(--slateLighter);
+  border-color: var(--vds-color-slate-lighter);
 }
 
 tbody .dataRow:first-child {
-  border-color: var(--slateLighter);
+  border-color: var(--vds-color-slate-lighter);
 }
 
 tbody .dataRow:last-child {
-  border-bottom: 1px solid var(--slateLightest);
+  border-bottom: 1px solid var(--vds-color-slate-lightest);
 }
 
 tbody .highlight:focus,
 tbody .highlight:hover {
   outline: none;
-  border-bottom: 1px solid var(--blueDarker);
-  border-top: 1px solid var(--blueDarker);
-  background: var(--slateLightest);
+  border-bottom: 1px solid var(--vds-color-blue-darker);
+  border-top: 1px solid var(--vds-color-blue-darker);
+  background: var(--vds-color-slate-lightest);
 }
 /* stylelint-enable plugin/selector-tag-no-without-class */
 
@@ -33,13 +33,13 @@ tbody .highlight:hover {
 
 .clickable:focus {
   outline: none;
-  border-bottom: 1px solid var(--blueDarker);
-  border-top: 1px solid var(--blueDarker);
-  background: var(--blueLightest);
+  border-bottom: 1px solid var(--vds-color-blue-darker);
+  border-top: 1px solid var(--vds-color-blue-darker);
+  background: var(--vds-color-blue-lightest);
 }
 
 .dataRowBordered.collapsed {
-  border-top: 1px solid var(--bluePrimary);
+  border-top: 1px solid var(--vds-color-blue-primary);
   border-bottom: none;
-  background: var(--blueLightest);
+  background: var(--vds-color-blue-lightest);
 }

@@ -8,38 +8,38 @@
   justify-content: center;
   white-space: nowrap;
   outline: none;
-  border: 1px solid var(--slateDarker);
-  color: var(--slateDarker);
-  background-color: var(--white);
+  border: 1px solid var(--vds-color-slate-darker);
+  color: var(--vds-color-slate-darker);
+  background-color: var(--vds-color-white);
   padding: 12px 29px;
   min-width: 240px;
 }
 
 .oauthButton:hover,
 .oauthButton:focus {
-  border-color: var(--blueDarkest);
-  box-shadow: 0 1px 4px 1px rgba(var(--blueDarker), 0.3);
+  border-color: var(--vds-color-blue-darkest);
+  box-shadow: 0 1px 4px 1px rgba(var(--vds-color-blue-darker), 0.3);
 }
 
 .oauthButton:active {
-  color: var(--white);
-  background-color: var(--slatePrimary);
-  border-color: var(--slatePrimary);
-  box-shadow: 0 1px 4px 1px rgba(var(--black), 0.3);
+  color: var(--vds-color-white);
+  background-color: var(--vds-color-slate-primary);
+  border-color: var(--vds-color-slate-primary);
+  box-shadow: 0 1px 4px 1px rgba(var(--vds-color-black), 0.3);
 }
 
 .oauthButton:active path {
-  fill: var(--white) !important;
+  fill: var(--vds-color-white) !important;
 }
 
 .oauthButton:disabled {
   pointer-events: none;
-  color: var(--slateLighter);
-  border-color: var(--slateLighter);
+  color: var(--vds-color-slate-lighter);
+  border-color: var(--vds-color-slate-lighter);
 }
 
 .oauthButton:disabled path {
-  fill: var(--slateLighter) !important;
+  fill: var(--vds-color-slate-lighter) !important;
 }
 
 .icon {

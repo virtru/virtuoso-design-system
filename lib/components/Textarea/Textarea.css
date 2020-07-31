@@ -25,22 +25,22 @@
 
 .default:hover,
 .default:focus {
-  border: 1px solid var(--blueDarkest);
+  border: 1px solid var(--vds-color-blue-darkest);
   box-shadow: 0 1px 4px 1px rgba(23, 78, 182, 0.3);
 }
 
 .default:focus {
-  background-color: var(--slateLightest);
+  background-color: var(--vds-color-slate-lightest);
   outline: none;
 }
 
 .disabled {
-  border-color: var(--slateLighter);
-  color: var(--slateLighter);
+  border-color: var(--vds-color-slate-lighter);
+  color: var(--vds-color-slate-lighter);
 }
 
 .error {
-  border-color: var(--redDarker);
+  border-color: var(--vds-color-red-darker);
 }
 
 .error:hover,
@@ -49,7 +49,7 @@
 }
 
 .error:focus {
-  background-color: var(--slateLightest);
+  background-color: var(--vds-color-slate-lightest);
   outline: none;
 }
 
@@ -62,11 +62,11 @@
 }
 
 .hint {
-  color: var(--slateDarker);
+  color: var(--vds-color-slate-darker);
 }
 
 .errorText {
-  color: var(--redDarker);
+  color: var(--vds-color-red-darker);
 }
 
 @media (--screenMobile) {

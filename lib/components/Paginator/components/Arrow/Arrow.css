@@ -20,7 +20,7 @@
 .left::before {
   content: '';
   position: absolute;
-  background-color: var(--slateDarkest);
+  background-color: var(--vds-color-slate-darkest);
   width: 2px;
   height: 11px;
   border-radius: 1px;
@@ -32,7 +32,7 @@
 .left::after {
   content: '';
   position: absolute;
-  background-color: var(--slateDarkest);
+  background-color: var(--vds-color-slate-darkest);
   width: 2px;
   height: 11px;
   border-radius: 1px;
@@ -43,7 +43,7 @@
 
 .left:disabled::before,
 .left:disabled::after {
-  background-color: var(--slateLighter);
+  background-color: var(--vds-color-slate-lighter);
 }
 
 .right {

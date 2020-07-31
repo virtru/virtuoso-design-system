@@ -9,7 +9,7 @@
 }
 
 .container :global(.react-tabs__tab-list) {
-  border-bottom: 1px solid var(--slateDarker);
+  border-bottom: 1px solid var(--vds-color-slate-darker);
   margin: 0;
   padding: 0;
 }
@@ -25,14 +25,14 @@
 }
 
 .container :global(.react-tabs__tab) {
-  color: var(--slatePrimary);
+  color: var(--vds-color-slate-primary);
   font-size: 16px;
   font-family: var(--fontSecondary);
   font-weight: bold;
   display: inline-block;
   position: relative;
   cursor: pointer;
-  border: 1px solid var(--slateLighter);
+  border: 1px solid var(--vds-color-slate-lighter);
   border-bottom: 0;
   border-radius: 3px 3px 0 0;
   margin-left: 4px;
@@ -40,17 +40,17 @@
 
 .container :global(.react-tabs__tab--selected) {
   cursor: auto;
-  color: var(--slateDarker);
-  border-color: var(--slateDarker);
-  border-bottom: 1px solid var(--white);
+  color: var(--vds-color-slate-darker);
+  border-color: var(--vds-color-slate-darker);
+  border-bottom: 1px solid var(--vds-color-white);
   margin-bottom: -1px;
 }
 
 .container :global(.react-tabs__tab:hover),
 .container :global(.react-tabs__tab:focus) {
-  color: var(--blueDarker);
-  border-color: var(--blueDarker);
-  border-bottom: 1px solid var(--white);
+  color: var(--vds-color-blue-darker);
+  border-color: var(--vds-color-blue-darker);
+  border-bottom: 1px solid var(--vds-color-white);
   margin-bottom: -1px;
 }
 
