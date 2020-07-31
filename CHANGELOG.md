@@ -1,3 +1,16 @@
+# v1.1.0 (Fri Jul 31 2020)
+
+#### 🐛 Bug Fix
+
+- Update layout style for content [#31](https://github.com/avkvirtru/virtuoso-design-system/pull/31) ([@jrschumacher](https://github.com/jrschumacher))
+- chore: add workflow to manage issues [#29](https://github.com/avkvirtru/virtuoso-design-system/pull/29) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 1
+
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v1.0.5 (Thu Jul 30 2020)
 
 #### 🐛 Bug Fix
