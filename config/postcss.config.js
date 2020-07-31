@@ -19,7 +19,7 @@ module.exports = {
     }),
     postcssHexRgba,
     postcssCustomMedia({
-      importFrom: ['node_modules/virtru-design-params/src/screen/screen.css'],
+      importFrom: ['lib/styles/tokens.css'],
     }),
   ],
   extract: path.resolve('dist/styles.css'),

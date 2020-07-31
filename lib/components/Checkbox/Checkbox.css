@@ -43,7 +43,7 @@
   fill: var(--vds-color-slate-lightest);
 }
 
-@media (--screenMobile) {
+@media (--vds-screen-mobile) {
   .checkboxContainer {
     width: 20px;
     height: 20px;

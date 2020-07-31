@@ -72,7 +72,7 @@
   color: var(--vds-color-red-primary);
 }
 
-@media (--screenMobile) {
+@media (--vds-screen-mobile) {
   .input {
     padding: 12px 11px;
     font: var(--paragraph);

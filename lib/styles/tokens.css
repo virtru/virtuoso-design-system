@@ -233,3 +233,14 @@
 :root {
   --vds-container-padding-md: 18px;
 }
+
+
+
+
+/**
+ * @tokens Responsive breakpoints
+ * depends on https://github.com/postcss/postcss-custom-media
+ * TODO: revisit if this is even the right approach for taking into account orientations and future breakpoints
+ */
+
+@custom-media --vds-screen-mobile screen and (max-width: 767px);

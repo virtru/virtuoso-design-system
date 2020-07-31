@@ -69,7 +69,7 @@
   color: var(--vds-color-slate-primary);
 }
 
-@media (--screenMobile) {
+@media (--vds-screen-mobile) {
   .small,
   .large {
     width: 327px;

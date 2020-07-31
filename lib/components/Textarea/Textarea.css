@@ -69,7 +69,7 @@
   color: var(--vds-color-red-darker);
 }
 
-@media (--screenMobile) {
+@media (--vds-screen-mobile) {
   .textarea {
     resize: none;
     min-width: unset;
