@@ -27,7 +27,7 @@
 .container :global(.react-tabs__tab) {
   color: var(--vds-color-slate-primary);
   font-size: 16px;
-  font-family: var(--fontSecondary);
+  font-family: var(--vds-font-family-display);
   font-weight: bold;
   display: inline-block;
   position: relative;

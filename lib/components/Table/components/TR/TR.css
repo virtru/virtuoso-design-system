@@ -1,6 +1,6 @@
 .dataRow {
   text-align: left;
-  font-family: var(--fontPrimary);
+  font-family: var(--vds-font-family-body);
   color: var(--vds-color-slate-darkest);
   border-top: 1px solid var(--vds-color-slate-lightest);
 }

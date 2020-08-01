@@ -2,7 +2,7 @@
   display: inline-block;
   cursor: pointer;
   font-size: 14px;
-  font-family: var(--fontSecondary);
+  font-family: var(--vds-font-family-display);
   color: var(--vds-color-white);
   position: relative;
 }
