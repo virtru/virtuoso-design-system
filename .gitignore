@@ -12,5 +12,4 @@ node_modules
 dist/
 storybook-static
 coverage
-.loki
 .storybook-out/
