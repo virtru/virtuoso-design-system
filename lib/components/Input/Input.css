@@ -11,7 +11,7 @@
   background-color: var(--vds-color-white);
   outline: none;
   color: var(--vds-color-slate-darkest);
-  font: var(--small);
+  font: var(--vds-font-sm);
   padding: 8px 12px;
   width: 100%;
 }
@@ -52,7 +52,7 @@
   display: flex;
   align-items: center;
   color: var(--vds-color-slate-darker);
-  font: var(--small);
+  font: var(--vds-font-sm);
   margin-top: 6px;
 }
 
@@ -75,6 +75,6 @@
 @media (--vds-screen-mobile) {
   .input {
     padding: 12px 11px;
-    font: var(--paragraph);
+    font: var(--vds-font-md);
   }
 }

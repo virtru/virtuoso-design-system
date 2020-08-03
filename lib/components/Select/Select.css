@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  font: var(--small);
+  font: var(--vds-font-sm);
 }
 
 /*

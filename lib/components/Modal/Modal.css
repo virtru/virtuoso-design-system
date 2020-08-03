@@ -37,13 +37,13 @@
 
 .title {
   color: var(--vds-color-slate-darkest);
-  font: var(--heading-xxs);
+  font: var(--vds-font-heading-xxs);
   line-height: 24px;
 }
 
 .content {
   margin-top: 12px;
-  font: var(--small);
+  font: var(--vds-font-sm);
 }
 
 .footer {

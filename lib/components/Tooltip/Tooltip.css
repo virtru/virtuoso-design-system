@@ -14,7 +14,7 @@
 ._container {
   padding: 8px 10px;
   color: var(--vds-color-white);
-  font: var(--small);
+  font: var(--vds-font-sm);
   display: flex;
   flex-direction: row;
   align-items: center;
