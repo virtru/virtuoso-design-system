@@ -166,26 +166,30 @@
  * @tokens Font Sizes
  * @presenter FontSize
  *
- * NOTE: assumes font-size 100% on html
- *
  * Values use Major Third (4:5) modular scale
  * https://www.modularscale.com/?16&px&1.25
  */
 
 :root {
+  /* NOTE: assumes font-size 62.5% on html */
+  --vds-font-scale-base: 1.6rem;
+  --vds-font-scale: 1.25;
+
   /* --variable-name: decimal; font-size/line-height ratio from modular scale */
-  --vds-font-size-xxs:  0.512rem; /* 8/12px; */
-  --vds-font-size-xs:   0.64rem; /* 10/15px; */
-  --vds-font-size-sm:   0.8rem; /* 13/18px; */
-  --vds-font-size-md:   1rem; /* 16/24px; */
+  /* define size-md FIRST to use in calc operations */
+  --vds-font-size-md:   var(--vds-font-scale-base); /* 16/24px; */
+  --vds-font-size-sm:   calc(var(--vds-font-size-md) / var(--vds-font-scale)); /* 13/18px; */
+  --vds-font-size-xs:   calc(var(--vds-font-size-sm) / var(--vds-font-scale)); /* 10/15px; */
+  --vds-font-size-xxs:  calc(var(--vds-font-size-xs) / var(--vds-font-scale)); /* 8/12px; */
   --vds-font-size-body: var(--vds-font-size-md);
 
-  --vds-font-size-heading-xxs:  1rem; /* 16/24px; */
-  --vds-font-size-heading-xs:   1.25rem; /* 20/24px; */
-  --vds-font-size-heading-sm:   1.563rem; /* 25/30px; */
-  --vds-font-size-heading-md:   1.953rem; /* 31/36px; */
-  --vds-font-size-heading-lg:   2.441rem; /* 39/48px; */
-  --vds-font-size-heading-xl:   3.052rem; /* 49/54px; */
+  /* define size-heading-xxs FIRST to use in calc operations */
+  --vds-font-size-heading-xxs:  var(--vds-font-scale-base); /* 16/24px; */
+  --vds-font-size-heading-xs:   calc(var(--vds-font-size-heading-xxs) * var(--vds-font-scale)); /* 20/24px; */
+  --vds-font-size-heading-sm:   calc(var(--vds-font-size-heading-xs) * var(--vds-font-scale)); /* 25/30px; */
+  --vds-font-size-heading-md:   calc(var(--vds-font-size-heading-sm) * var(--vds-font-scale)); /* 31/36px; */
+  --vds-font-size-heading-lg:   calc(var(--vds-font-size-heading-md) * var(--vds-font-scale)); /* 39/48px; */
+  --vds-font-size-heading-xl:   calc(var(--vds-font-size-heading-lg) * var(--vds-font-scale)); /* 49/54px; */ 
 }
 
 
@@ -195,8 +199,6 @@
 /**
  * @tokens Line Heights
  * @presenter LineHeight
- *
- * NOTE: assumes font-size 100% on html
  *
  * Prefer unitless numbers for line-height values for predictable rendering
  * https://developer.mozilla.org/en-US/docs/Web/CSS/line-height
@@ -224,8 +226,6 @@
 
 /**
  * @tokens Font Declarations
- *
- * NOTE: assumes font-size 100% on html
  *
  * https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals#Font_shorthand
  * Many font properties can also be set through the shorthand property font. These are written in the following order:
@@ -259,48 +259,6 @@
   --vds-font-heading-md:       normal normal bold normal var(--vds-font-size-heading-md)/var(--vds-line-height-heading-md) var(--vds-font-family-display);
   --vds-font-heading-lg:       normal normal bold normal var(--vds-font-size-heading-lg)/var(--vds-line-height-heading-lg) var(--vds-font-family-display);
   --vds-font-heading-xl:       normal normal bold normal var(--vds-font-size-heading-xl)/var(--vds-line-height-heading-xl) var(--vds-font-family-display);
-}
-
-
-
-
-
-/**
- * @tokens LEGACY Font Declarations
- * DO NOT USE until Art revisits for typographic scale and line height
- *
- * NOTE: assumes font-size 62.5% on html
- *
- * copied from https://github.com/virtru/virtru-design-params/blob/master/src/typography/typography.css
- */
-
-:root {
-  /* use with font: shorthand:
-
-   define:
-   --variable-name: weight size family
-   e.g.
-   --vds-font-ex: bold 3rem sans-serif;
-
-   use:
-   font: var(--vds-font-ex);
-   */
-
-  --vds-font-xxs:              normal 0.8rem var(--vds-font-family-body);
-  --vds-font-xs:               normal 1.0rem var(--vds-font-family-body);
-  --vds-font-sm:               normal 1.3rem var(--vds-font-family-body);
-  --vds-font-sm-bold:          bold   1.3rem var(--vds-font-family-body);
-  --vds-font-md:               normal 1.6rem var(--vds-font-family-body);
-  --vds-font-md-bold:          bold   1.6rem var(--vds-font-family-body);
-  --vds-font-body:             var(--vds-font-md);
-  --vds-font-body-bold:        var(--vds-font-md-bold);
-
-  --vds-font-heading-xxs:      bold 1.6rem var(--vds-font-family-display);
-  --vds-font-heading-xs:       bold 2.0rem var(--vds-font-family-display);
-  --vds-font-heading-sm:       bold 2.5rem var(--vds-font-family-display);
-  --vds-font-heading-md:       bold 3.1rem var(--vds-font-family-display);
-  --vds-font-heading-lg:       bold 3.9rem var(--vds-font-family-display);
-  --vds-font-heading-xl:       bold 4.9rem var(--vds-font-family-display);
 }
 
 
