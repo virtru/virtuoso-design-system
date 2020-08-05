@@ -13,3 +13,4 @@ dist/
 storybook-static
 coverage
 .storybook-out/
+lefthook-local.yml
