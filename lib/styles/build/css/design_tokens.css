@@ -1,0 +1,50 @@
+/**
+ * Do not edit directly
+ * Generated on Wed, 05 Aug 2020 22:02:53 GMT
+ */
+
+:root {
+  --vds-color-transparent: transparent;
+  --vds-color-ghosted: rgba(81, 88, 100, 0.5);
+  --vds-color-overlay: rgba(81, 88, 100, 0.5);
+  --vds-color-white: #FFFFFF;
+  --vds-color-black: #000000;
+  --vds-color-slate-lightest: #F3F5F7;
+  --vds-color-slate-even-lighter: #DCE0E5;
+  --vds-color-slate-lighter: #C6CBD4;
+  --vds-color-slate-primary: #777E8C;
+  --vds-color-slate-darker: #515864;
+  --vds-color-slate-darkest: #2D323B;
+  --vds-color-blue-lightest: #DEEEFF;
+  --vds-color-blue-lighter: #B2D6FF;
+  --vds-color-blue-primary: #3668FF; /* Core brand color */
+  --vds-color-blue-darker: #174EB6; /* Buttons */
+  --vds-color-blue-darkest: #001E4A; /* Headers */
+  --vds-color-green-lightest: #E8F5E4;
+  --vds-color-green-lighter: #BAE5B3;
+  --vds-color-green-primary: #75B749;
+  --vds-color-green-darker: #307A21;
+  --vds-color-green-darkest: #1B4712;
+  --vds-color-yellow-lightest: #F9F2D8;
+  --vds-color-yellow-lighter: #FAD674;
+  --vds-color-yellow-primary: #F6B816;
+  --vds-color-yellow-darker: #B28207;
+  --vds-color-yellow-darkest: #5E4400;
+  --vds-color-orange-lightest: #FFE8D1;
+  --vds-color-orange-lighter: #FFBC76;
+  --vds-color-orange-primary: #FF8200;
+  --vds-color-orange-darker: #D66400;
+  --vds-color-orange-darkest: #763700;
+  --vds-color-red-lightest: #FFE9E9;
+  --vds-color-red-lighter: #FF8F8E;
+  --vds-color-red-primary: #E70D12;
+  --vds-color-red-darker: #A70A0E;
+  --vds-color-red-darkest: #6A0709;
+  --vds-color-purple-lightest: #EAE7FF;
+  --vds-color-purple-lighter: #C2B7FA;
+  --vds-color-purple-primary: #6E5BCF;
+  --vds-color-purple-darker: #4A3A9B;
+  --vds-color-purple-darkest: #241C48;
+  --vds-font-family-body: 'Open Sans', Helvetica, Arial, sans-serif;
+  --vds-font-family-display: 'Raleway', Helvetica, Arial, sans-serif;
+}

@@ -2,8 +2,9 @@
  * Example design tokens from
  * https://github.com/UX-and-I/storybook-design-token#usage
  *
+ * NOTE: these are manually curated design tokens by Art Klepchukov as part of Innovation Week 2020 project. Consider using the tokens managed by style-dictionary instead as they serve more than just CSS.
+ *
  * TODO: replace with all Virtuoso design tokens
- * TODO: write an intro to design tokens here and in docs
  */
 
 /* why? allow tabular alignment of related values for custom variables */
@@ -11,66 +12,6 @@
 
 /* why? allow each set of tokens to specify where they apply without assuming every token should apply to :root or the whole file */
 /* stylelint-disable no-duplicate-selectors */
-
-
-
-
-
-/**
- * @tokens Colors
- * @presenter Color
- */
-
-:root {
-  --vds-color-transparent:          transparent;
-  --vds-color-ghosted:              rgba(81, 88, 100, 0.5);
-  --vds-color-overlay:              var(--vds-color-ghosted);
-
-  --vds-color-white:                #FFFFFF;
-  --vds-color-slate-lightest:       #F3F5F7;
-  --vds-color-slate-even-lighter:   #DCE0E5;
-  --vds-color-slate-lighter:        #C6CBD4;
-  --vds-color-slate-primary:        #777E8C;
-  --vds-color-slate-darker:         #515864;
-  --vds-color-slate-darkest:        #2D323B;
-  --vds-color-black:                #000000;
-
-  --vds-color-blue-lightest:  #DEEEFF;
-  --vds-color-blue-lighter:   #B2D6FF;
-  --vds-color-blue-primary:   #3668FF; /* Core brand color */
-  --vds-color-blue-darker:    #174EB6; /* Buttons */
-  --vds-color-blue-darkest:   #001E4A; /* Headers */
-
-  --vds-color-green-lightest:  #E8F5E4;
-  --vds-color-green-lighter:   #BAE5B3;
-  --vds-color-green-primary:   #75B749;
-  --vds-color-green-darker:    #307A21;
-  --vds-color-green-darkest:   #1B4712;
-
-  --vds-color-yellow-lightest:  #F9F2D8;
-  --vds-color-yellow-lighter:   #FAD674;
-  --vds-color-yellow-primary:   #F6B816;
-  --vds-color-yellow-darker:    #B28207;
-  --vds-color-yellow-darkest:   #5E4400;
-
-  --vds-color-orange-lightest:  #FFE8D1;
-  --vds-color-orange-lighter:   #FFBC76;
-  --vds-color-orange-primary:   #FF8200;
-  --vds-color-orange-darker:    #D66400;
-  --vds-color-orange-darkest:   #763700;
-
-  --vds-color-red-lightest:  #FFE9E9;
-  --vds-color-red-lighter:   #FF8F8E;
-  --vds-color-red-primary:   #E70D12;
-  --vds-color-red-darker:    #A70A0E;
-  --vds-color-red-darkest:   #6A0709;
-
-  --vds-color-purple-lightest:  #EAE7FF;
-  --vds-color-purple-lighter:   #C2B7FA;
-  --vds-color-purple-primary:   #6E5BCF;
-  --vds-color-purple-darker:    #4A3A9B;
-  --vds-color-purple-darkest:   #241C48;
-}
 
 
 
@@ -149,20 +90,6 @@
 
 
 /**
- * @tokens Font Families
- * @presenter FontFamily
- */
-
-:root {
-  --vds-font-family-body:      'Open Sans', Helvetica, Arial, sans-serif;
-  --vds-font-family-display:   'Raleway', Helvetica, Arial, sans-serif;
-}
-
-
-
-
-
-/**
  * @tokens Font Sizes
  * @presenter FontSize
  *
@@ -189,7 +116,7 @@
   --vds-font-size-heading-sm:   calc(var(--vds-font-size-heading-xs) * var(--vds-font-scale)); /* 25/30px; */
   --vds-font-size-heading-md:   calc(var(--vds-font-size-heading-sm) * var(--vds-font-scale)); /* 31/36px; */
   --vds-font-size-heading-lg:   calc(var(--vds-font-size-heading-md) * var(--vds-font-scale)); /* 39/48px; */
-  --vds-font-size-heading-xl:   calc(var(--vds-font-size-heading-lg) * var(--vds-font-scale)); /* 49/54px; */ 
+  --vds-font-size-heading-xl:   calc(var(--vds-font-size-heading-lg) * var(--vds-font-scale)); /* 49/54px; */
 }
 
 
