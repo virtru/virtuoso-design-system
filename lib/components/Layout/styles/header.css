@@ -8,7 +8,7 @@
 
 .brandingLogo {
   fill: var(--vds-color-white);
-  line-height: 1rem;
+  line-height: var(--vds-line-height-sm);
   margin-left: 24px;
   height: 20px;
 }
@@ -22,6 +22,8 @@
   color: var(--vds-color-white);
 }
 
+/* FIXME: stylelint probably shouldn't be disabled here */
+/* stylelint-disable-next-line plugin/selector-tag-no-without-class */
 .headerText h1 {
   margin: 0;
   font-size: 19px;
@@ -31,17 +33,25 @@
   margin-right: 25px;
 }
 
+/* FIXME: CSS not used, add examples of component that use it or remove */
 .company {
   color: var(--vds-color-white);
-  font-family: var(--vds-font-family-secondary);
+  font-family: var(--vds-font-family-body);
+
+  /* FIXME: stylelint probably shouldn't be disabled here */
+  /* stylelint-disable-next-line declaration-property-unit-whitelist */
   font-size: 1.9rem;
   font-weight: 600;
   margin-right: 1rem;
 }
 
+/* FIXME: CSS not used, add examples of component that use it or remove */
 .poweredBy {
   color: var(--vds-color-white);
-  font-family: var(--vds-font-family-primary);
+  font-family: var(--vds-font-family-display);
+
+  /* FIXME: stylelint probably shouldn't be disabled here */
+  /* stylelint-disable-next-line declaration-property-unit-whitelist */
   font-size: 1.7rem;
   font-weight: 200;
   display: none;

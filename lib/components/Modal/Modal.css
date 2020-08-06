@@ -4,7 +4,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(var(--slateDarker), 0.5);
+  background-color: rgba(var(--vds-color-slate-darker), 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,8 +14,8 @@
 .small {
   padding: 25px 24px;
   border-radius: 3px;
-  background-color: var(--white);
-  box-shadow: 0 0 4px 1px rgba(var(--black), 0.3);
+  background-color: var(--vds-color-white);
+  box-shadow: 0 0 4px 1px rgba(var(--vds-color-black), 0.3);
   box-sizing: border-box;
   width: 450px;
 }
@@ -23,8 +23,8 @@
 .large {
   padding: 25px 24px;
   border-radius: 3px;
-  background-color: var(--white);
-  box-shadow: 0 0 4px 1px rgba(var(--black), 0.3);
+  background-color: var(--vds-color-white);
+  box-shadow: 0 0 4px 1px rgba(var(--vds-color-black), 0.3);
   box-sizing: border-box;
   width: 800px;
 }
@@ -36,14 +36,14 @@
 }
 
 .title {
-  color: var(--slateDarkest);
-  font: var(--heading-xxs);
+  color: var(--vds-color-slate-darkest);
+  font: var(--vds-font-heading-xxs);
   line-height: 24px;
 }
 
 .content {
   margin-top: 12px;
-  font: var(--small);
+  font: var(--vds-font-sm);
 }
 
 .footer {
@@ -57,7 +57,7 @@
 }
 
 .closeButton {
-  color: var(--slateDarkest);
+  color: var(--vds-color-slate-darkest);
   font-size: 16px;
   padding: 0;
   border: none;
@@ -66,10 +66,10 @@
 }
 
 .closeButton:active {
-  color: var(--slatePrimary);
+  color: var(--vds-color-slate-primary);
 }
 
-@media (--screenMobile) {
+@media (--vds-screen-mobile) {
   .small,
   .large {
     width: 327px;

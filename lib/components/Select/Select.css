@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  font: var(--small);
+  font: var(--vds-font-sm);
 }
 
 /*
@@ -10,7 +10,7 @@
 .container :global(.select__menu)::before {
   content: '';
   position: absolute;
-  box-shadow: 0 1px 4px 1px rgba(var(--blueDarker), 0.3);
+  box-shadow: 0 1px 4px 1px rgba(var(--vds-color-blue-darker), 0.3);
   top: 0;
   left: 0;
   right: 0;
@@ -21,7 +21,7 @@
 .container :global(.select__control)::before {
   content: '';
   position: absolute;
-  box-shadow: 0 1px 4px 1px rgba(var(--blueDarker), 0.3);
+  box-shadow: 0 1px 4px 1px rgba(var(--vds-color-blue-darker), 0.3);
   top: 0;
   left: 0;
   right: 0;

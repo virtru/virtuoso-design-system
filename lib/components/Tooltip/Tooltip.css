@@ -13,15 +13,15 @@
 
 ._container {
   padding: 8px 10px;
-  color: var(--white);
-  font: var(--small);
+  color: var(--vds-color-white);
+  font: var(--vds-font-sm);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   position: absolute;
   pointer-events: none;
-  background: var(--slateDarkest);
+  background: var(--vds-color-slate-darkest);
   border-radius: 2px;
   z-index: 2;
   max-width: 178px;
@@ -88,7 +88,7 @@
   width: 0;
   height: 0;
   position: absolute;
-  border: var(--mainBorderWidth) solid var(--slateDarkest);
+  border: var(--mainBorderWidth) solid var(--vds-color-slate-darkest);
 }
 
 ._arrow-top {

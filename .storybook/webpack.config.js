@@ -50,7 +50,6 @@ module.exports = async ({ config }) => {
     .concat({
       test: /\.css$/,
       include: [
-        path.join(__dirname, '..', 'node_modules', 'virtru-typography'),
         path.join(__dirname, '..', 'node_modules', '@storybook'),
       ],
       use: [

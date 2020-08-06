@@ -1,0 +1,47 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+import { vds as jsDesignTokens } from '@/styles/build/js/design_tokens.js';
+import rawJsDesignTokens from '!!raw-loader!@/styles/build/js/design_tokens.js';
+import cssDesignTokens from '!!raw-loader!@/styles/build/css/design_tokens.css';
+
+<Meta title="Basics|Design Tokens" />
+
+# Design Tokens
+
+> Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.
+>
+> — [Salesforce Lightning Design System](https://www.lightningdesignsystem.com/design-tokens/)
+
+[Style Dictionary](https://amzn.github.io/style-dictionary/#/) is a build system that allows you to define **design tokens** once, in a way for any platform or language to consume. 
+
+1. Our design tokens are defined in [lib/styles/style_dict/tokens/](https://github.com/avkvirtru/virtuoso-design-system/blob/master/lib/styles/style_dict/tokens/) as JSON files…
+
+1. …built into the versions below.
+
+Design tokens change **INFREQUENTLY**. So building them is a manual step that should be code reviewed. See [GitHub README](https://github.com/avkvirtru/virtuoso-design-system/blob/master/README.md) for the details.
+
+## Governance
+
+Questions:
+
+- When do we adopt new tokens? TBD
+
+- How do we retire unused or under-used tokens? TBD
+
+- How do we evolve tokens for more platforms? TBD
+
+## Design tokens built for CSS
+
+TBD: import these in your project with…
+
+<pre><code>
+  { cssDesignTokens }
+</code></pre>
+
+## Design tokens built for JS
+
+TBD: import these in your project with…
+
+<pre><code>
+  { rawJsDesignTokens }
+</code></pre>

@@ -12,14 +12,15 @@ module.exports = {
       preserve: false,
       importFrom: [
         'lib/styles/tokens.css',
-        'node_modules/virtru-design-params/src/colors/colors.css',
-        'node_modules/virtru-design-params/src/text/text.css',
-        'node_modules/virtru-design-params/src/typography/typography.css',
+        'lib/styles/build/css/design_tokens.css',
       ],
     }),
     postcssHexRgba,
     postcssCustomMedia({
-      importFrom: ['node_modules/virtru-design-params/src/screen/screen.css'],
+      importFrom: [
+        'lib/styles/tokens.css',
+        'lib/styles/build/css/design_tokens.css',
+      ],
     }),
   ],
   extract: path.resolve('dist/styles.css'),

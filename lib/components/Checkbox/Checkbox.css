@@ -26,24 +26,24 @@
 .checkboxState {
   width: 100%;
   height: 100%;
-  color: var(--slateDarkest);
+  color: var(--vds-color-slate-darkest);
 }
 
 .checkboxContainer:focus-within .checkboxState:not(.disabled),
 .checkboxContainer:hover .checkboxState:not(.disabled) {
-  color: var(--blueDarker);
+  color: var(--vds-color-blue-darker);
 }
 
 .checkboxState.disabled {
-  color: var(--slateLighter);
+  color: var(--vds-color-slate-lighter);
 }
 
 /* this is the only one that needs to adjust the background color */
 .checkboxState.disabled :global(.checkbox-svg-fill-preset) {
-  fill: var(--slateLightest);
+  fill: var(--vds-color-slate-lightest);
 }
 
-@media (--screenMobile) {
+@media (--vds-screen-mobile) {
   .checkboxContainer {
     width: 20px;
     height: 20px;
