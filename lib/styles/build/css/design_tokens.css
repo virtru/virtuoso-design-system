@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 06 Aug 2020 16:26:15 GMT
+ * Generated on Thu, 06 Aug 2020 18:13:32 GMT
  */
 
 :root {
@@ -54,4 +54,12 @@
   --vds-color-purple-darkest: #241C48;
   --vds-font-family-body: 'Open Sans', Helvetica, Arial, sans-serif;
   --vds-font-family-display: 'Raleway', Helvetica, Arial, sans-serif;
+  --vds-spacer-xxs: 3px;
+  --vds-spacer-xs: 6px;
+  --vds-spacer-sm: 12px;
+  --vds-spacer-md: 24px; /* Default spacer to establish typographic rhythm with line height */
+  --vds-spacer-lg: 48px;
+  --vds-spacer-xl: 72px;
+  --vds-spacer-tap-friendly: 48px;
+  --vds-container-width-xl: 1024px;
 }
