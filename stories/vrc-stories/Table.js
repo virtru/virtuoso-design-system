@@ -3,7 +3,9 @@
 import React, { useLayoutEffect, useReducer, useRef, useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean, select } from '@storybook/addon-knobs';
-import { Table, TBody, TD, TH, THead, TR } from '@';
+import { Table, TBody, TD, TH, THead, TR, TABLE_STYLES } from '@';
+
+const { GREY } = TABLE_STYLES;
 
 const StoryTHead = ({
   onClickSelect = () => {},
@@ -27,7 +29,7 @@ const StoryTHead = ({
 );
 
 const StoryTR = ({ data, isSelected = false, highlightOnHover = false, onClick }) => (
-  <TR onClick={onClick} highlightOnHover={highlightOnHover}>
+  <TR onClick={onClick} highlightOnHover={highlightOnHover} isSelected={isSelected}>
     {onClick && (
       <TD>
         <input type="checkbox" checked={isSelected} readOnly />
@@ -115,7 +117,9 @@ storiesOf('Table', module)
     const isClickable = mode === 'clickable';
     const onClick = isClickable ? d => () => actions.toggle(d.address) : () => undefined;
     const isSortable = boolean('Sortable on Address', false);
+    const isBordered = boolean('New attribute', false);
     const isErrorShown = boolean('Table Error', false);
+    const tableStyle = select('Table styles', ['default', GREY], 'none');
 
     const isAllSelected = Object.values(selectedState).every(isTrue => isTrue);
     const changeSort = () => setSortDirection(sortOrder[sortDirection]);
@@ -126,10 +130,11 @@ storiesOf('Table', module)
     } else if (isSortable && sortDirection === SORT_DESC) {
       sortedData.sort((d1, d2) => (d1.address > d2.address ? -1 : 1));
     }
+    const width = tableStyle === GREY ? '800px' : '500px';
 
     return (
-      <div style={{ width: '500px' }}>
-        <Table>
+      <div style={{ width }}>
+        <Table tableStyle={tableStyle}>
           {isClickable ? (
             <StoryTHead
               isSelected={isAllSelected}
@@ -153,9 +158,9 @@ storiesOf('Table', module)
             </THead>
           )}
           <TBody>
-            {isErrorShown && (
+            {isErrorShown && tableStyle !== GREY && (
               <TR>
-                <TD colSpan={4}>
+                <TD colSpan={onClick ? 5 : 4}>
                   <div
                     style={{
                       margin: '10px 0',
@@ -179,6 +184,22 @@ storiesOf('Table', module)
                 highlightOnHover={isHoverable}
               />
             ))}
+            {isBordered && tableStyle === GREY && (
+              <TR isBordered>
+                <TD colSpan={onClick ? 5 : 4}>
+                  <div style={{ fontSize: '13px', textAlign: 'center' }}>
+                    <a
+                      style={{
+                        fontSize: '13px'
+                      }}
+                      href="#"
+                    >
+                      + Assign entity to attribute
+                    </a>
+                  </div>
+                </TD>
+              </TR>
+            )}
           </TBody>
         </Table>
       </div>

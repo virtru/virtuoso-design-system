@@ -3,11 +3,21 @@
   font-family: var(--fontPrimary);
   color: var(--slateDarkest);
   border-top: 1px solid var(--slateLightest);
+  position: relative;
 }
 
+.grey.dataRow {
+  border: none;
+  background: var(--slateLightest);
+}
 /* stylelint-disable plugin/selector-tag-no-without-class */
 thead .dataRow {
   border-color: var(--slateLighter);
+}
+
+thead .grey.dataRow {
+  border: none;
+  background: var(--slateDarker);
 }
 
 tbody .dataRow:first-child {
@@ -17,6 +27,15 @@ tbody .dataRow:first-child {
 tbody .dataRow:last-child {
   border-bottom: 1px solid var(--slateLightest);
 }
+tbody .grey.dataRow:last-child {
+  border: none;
+}
+
+.bordered.grey.dataRow,
+.bordered.grey.dataRow:last-child,
+.bordered.grey.dataRow:first-child {
+  border-top: 1px solid var(--slateLighter);
+}
 
 tbody .highlight:focus,
 tbody .highlight:hover {
@@ -24,6 +43,14 @@ tbody .highlight:hover {
   border-bottom: 1px solid var(--blueDarker);
   border-top: 1px solid var(--blueDarker);
   background: var(--slateLightest);
+}
+
+tbody .grey.highlight:focus,
+tbody .grey.highlight:hover,
+tbody .selected.grey {
+  outline: none;
+  border: none;
+  background: var(--greenLighter);
 }
 /* stylelint-enable plugin/selector-tag-no-without-class */
 

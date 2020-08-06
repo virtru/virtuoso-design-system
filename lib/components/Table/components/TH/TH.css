@@ -16,6 +16,14 @@
   font-size: 13px;
 }
 
+.grey.headerCell {
+  color: var(--white);
+  font-weight: 100;
+  text-align: left;
+  padding: 7px 12px;
+  font-size: 16px;
+}
+
 .min {
   width: 1px;
   word-break: keep-all;

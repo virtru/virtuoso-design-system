@@ -4,6 +4,10 @@
   font-size: 13px;
 }
 
+.grey.table {
+  font-size: 16px;
+}
+
 .scrollableBody {
   overflow-y: auto;
   height: 100%;

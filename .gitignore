@@ -14,3 +14,4 @@ storybook-static
 coverage
 .loki
 .storybook-out/
+/.idea/

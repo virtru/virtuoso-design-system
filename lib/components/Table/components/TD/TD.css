@@ -3,3 +3,9 @@
   height: 35px;
   text-align: left;
 }
+
+.grey.dataCell {
+  padding: 0 12px;
+  height: 36px;
+  text-align: left;
+}
