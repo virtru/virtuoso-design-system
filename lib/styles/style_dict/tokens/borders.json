@@ -1,0 +1,15 @@
+{
+  "vds": {
+    "border": {
+      "radius": {
+        "xs": { "value": "3px" },
+        "sm": { "value": "6px" },
+        "md": { "value": "9px" }
+      },
+      "transparent": { "value": "1px solid {vds.color.transparent.value}" },
+      "enabled":     { "value": "1px solid {vds.color.slate.darker.value}" },
+      "disabled":    { "value": "1px solid {vds.color.slate.lighter.value}" },
+      "error":       { "value": "1px solid {vds.color.red.darker.value}" }
+    }
+  }
+}

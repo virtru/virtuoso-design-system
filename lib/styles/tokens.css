@@ -18,40 +18,6 @@
 
 
 /**
- * @tokens Borders
- * @presenter Border
- */
-
-:root {
-  --vds-border-transparent:   1px solid var(--vds-color-transparent);
-  --vds-border-enabled:       1px solid var(--vds-color-slate-darker);
-  --vds-border-disabled:      1px solid var(--vds-color-slate-lighter);
-  --vds-border-error:         1px solid var(--vds-color-red-darker);
-}
-
-
-
-
-
-/**
- * @tokens Border Radii
- * @presenter BorderRadius
- */
-
-:root {
-  --vds-border-radius-xs: 3px;
-  --vds-border-radius-sm: 6px;
-  --vds-border-radius-md: 9px;
-
-  /* --vds-border-radius-lg: 12px; */
-  /* --vds-border-radius-xl: 24px; */
-}
-
-
-
-
-
-/**
  * @tokens Spacing Scale
  * @presenter Spacing
  */

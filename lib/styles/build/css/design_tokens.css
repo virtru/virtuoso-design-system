@@ -1,9 +1,16 @@
 /**
  * Do not edit directly
- * Generated on Wed, 05 Aug 2020 22:02:53 GMT
+ * Generated on Thu, 06 Aug 2020 16:26:15 GMT
  */
 
 :root {
+  --vds-border-radius-xs: 3px;
+  --vds-border-radius-sm: 6px;
+  --vds-border-radius-md: 9px;
+  --vds-border-transparent: 1px solid transparent;
+  --vds-border-enabled: 1px solid #515864;
+  --vds-border-disabled: 1px solid #C6CBD4;
+  --vds-border-error: 1px solid #A70A0E;
   --vds-color-transparent: transparent;
   --vds-color-ghosted: rgba(81, 88, 100, 0.5);
   --vds-color-overlay: rgba(81, 88, 100, 0.5);
