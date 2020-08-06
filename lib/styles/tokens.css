@@ -18,24 +18,6 @@
 
 
 /**
- * @tokens Drop Shadows
- * @presenter Shadow
- */
-
-:root {
-  --vds-shadow-modal:         0 0 4px 1px rgba(0, 0, 0, 0.3);
-  --vds-shadow-hover:         0 1px 4px 1px rgba(23, 78, 182, 0.3);
-  --vds-shadow-focus:         var(--vds-shadow-hover);
-  --vds-shadow-pressed:       0 1px 4px 1px rgba(45, 50, 59, 0.3);
-  --vds-shadow-hover-error:   0 1px 4px 1px rgba(81, 88, 100, 0.3);
-  --vds-shadow-focus-error:   var(--vds-shadow-hover-error);
-}
-
-
-
-
-
-/**
  * @tokens Font Sizes
  * @presenter FontSize
  *

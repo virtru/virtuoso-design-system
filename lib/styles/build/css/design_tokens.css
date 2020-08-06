@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 06 Aug 2020 18:13:32 GMT
+ * Generated on Thu, 06 Aug 2020 18:24:32 GMT
  */
 
 :root {
@@ -54,6 +54,12 @@
   --vds-color-purple-darkest: #241C48;
   --vds-font-family-body: 'Open Sans', Helvetica, Arial, sans-serif;
   --vds-font-family-display: 'Raleway', Helvetica, Arial, sans-serif;
+  --vds-shadow-modal: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+  --vds-shadow-hover: 0 1px 4px 1px rgba(23, 78, 182, 0.3);
+  --vds-shadow-focus: 0 1px 4px 1px rgba(23, 78, 182, 0.3);
+  --vds-shadow-pressed: 0 1px 4px 1px rgba(45, 50, 59, 0.3);
+  --vds-shadow-hover-error: 0 1px 4px 1px rgba(81, 88, 100, 0.3);
+  --vds-shadow-focus-error: 0 1px 4px 1px rgba(81, 88, 100, 0.3);
   --vds-spacer-xxs: 3px;
   --vds-spacer-xs: 6px;
   --vds-spacer-sm: 12px;
