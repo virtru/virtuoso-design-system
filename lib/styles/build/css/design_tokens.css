@@ -1,19 +1,19 @@
 /**
  * Do not edit directly
- * Generated on Fri, 07 Aug 2020 23:39:20 GMT
+ * Generated on Fri, 07 Aug 2020 23:43:16 GMT
  */
 
 :root {
   --vds-border-radius-xs: 3px;
   --vds-border-radius-sm: 6px;
   --vds-border-radius-md: 9px;
-  --vds-border-transparent: 1px solid transparent;
-  --vds-border-enabled: 1px solid #515864;
-  --vds-border-disabled: 1px solid #C6CBD4;
-  --vds-border-error: 1px solid #A70A0E;
+  --vds-border-transparent: 1px solid var(--vds-color-transparent);
+  --vds-border-enabled: 1px solid var(--vds-color-slate-darker);
+  --vds-border-disabled: 1px solid var(--vds-color-slate-lighter);
+  --vds-border-error: 1px solid var(--vds-color-red-darker);
   --vds-color-transparent: transparent;
   --vds-color-ghosted: rgba(81, 88, 100, 0.5);
-  --vds-color-overlay: rgba(81, 88, 100, 0.5);
+  --vds-color-overlay: var(--vds-color-ghosted);
   --vds-color-white: #FFFFFF;
   --vds-color-black: #000000;
   --vds-color-slate-lightest: #F3F5F7;
@@ -56,10 +56,10 @@
   --vds-font-family-display: 'Raleway', Helvetica, Arial, sans-serif;
   --vds-shadow-modal: 0 0 4px 1px rgba(0, 0, 0, 0.3);
   --vds-shadow-hover: 0 1px 4px 1px rgba(23, 78, 182, 0.3);
-  --vds-shadow-focus: 0 1px 4px 1px rgba(23, 78, 182, 0.3);
+  --vds-shadow-focus: var(--vds-shadow-hover);
   --vds-shadow-pressed: 0 1px 4px 1px rgba(45, 50, 59, 0.3);
   --vds-shadow-hover-error: 0 1px 4px 1px rgba(81, 88, 100, 0.3);
-  --vds-shadow-focus-error: 0 1px 4px 1px rgba(81, 88, 100, 0.3);
+  --vds-shadow-focus-error: var(--vds-shadow-hoverError);
   --vds-spacer-xxs: 3px;
   --vds-spacer-xs: 6px;
   --vds-spacer-sm: 12px;
