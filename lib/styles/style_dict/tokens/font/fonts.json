@@ -1,0 +1,49 @@
+{
+  "vds": {
+    "font": {
+      "xxs": {
+        "value": "normal normal normal  normal {vds.font.size.xxs.value}/{vds.line-height.xxs.value} {vds.font.family.body.value}"
+      },
+      "xs": {
+        "value": "normal normal normal  normal {vds.font.size.xs.value}/{vds.line-height.xs.value} {vds.font.family.body.value}"
+      },
+      "sm": {
+        "value": "normal normal normal  normal {vds.font.size.sm.value}/{vds.line-height.sm.value} {vds.font.family.body.value}"
+      },
+      "sm-bold": {
+        "value": "normal normal bold    normal {vds.font.size.sm.value}/{vds.line-height.sm.value} {vds.font.family.body.value}"
+      },
+      "md": {
+        "value": "normal normal normal  normal {vds.font.size.md.value}/{vds.line-height.md.value} {vds.font.family.body.value}"
+      },
+      "md-bold": {
+        "value": "normal normal bold    normal {vds.font.size.md.value}/{vds.line-height.md.value} {vds.font.family.body.value}"
+      },
+      "body": {
+        "value": "{vds.font.md.value}"
+      },
+      "body-bold": {
+        "value": "{vds.font.md-bold.value}"
+      },
+
+      "heading-xxs": {
+        "value": "normal normal bold normal {vds.font.size.heading-xxs.value}/{vds.line-height.heading-xxs.value} {vds.font.family.display.value}"
+      },
+      "heading-xs": {
+        "value": "normal normal bold normal {vds.font.size.heading-xs.value}/{vds.line-height.heading-xs.value} {vds.font.family.display.value}"
+      },
+      "heading-sm": {
+        "value": "normal normal bold normal {vds.font.size.heading-sm.value}/{vds.line-height.heading-sm.value} {vds.font.family.display.value}"
+      },
+      "heading-md": {
+        "value": "normal normal bold normal {vds.font.size.heading-md.value}/{vds.line-height.heading-md.value} {vds.font.family.display.value}"
+      },
+      "heading-lg": {
+        "value": "normal normal bold normal {vds.font.size.heading-lg.value}/{vds.line-height.heading-lg.value} {vds.font.family.display.value}"
+      },
+      "heading-xl": {
+        "value": "normal normal bold normal {vds.font.size.heading-xl.value}/{vds.line-height.heading-xl.value} {vds.font.family.display.value}"
+      }
+    }
+  }
+}

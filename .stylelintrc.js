@@ -40,6 +40,9 @@ module.exports = {
     
     // why? encourages separation of unrelated blocks in the same file
     'max-empty-lines': 5,
+    
+    // why? trailing zeros align CSS properties for comparisons across lines
+    "number-no-trailing-zeros": null,
   },
   ignoreFiles: [
     './coverage/**/*.css',

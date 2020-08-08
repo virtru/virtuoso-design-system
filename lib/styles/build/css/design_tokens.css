@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 07 Aug 2020 23:43:16 GMT
+ * Generated on Sat, 08 Aug 2020 00:00:40 GMT
  */
 
 :root {
@@ -54,6 +54,44 @@
   --vds-color-purple-darkest: #241C48;
   --vds-font-family-body: 'Open Sans', Helvetica, Arial, sans-serif;
   --vds-font-family-display: 'Raleway', Helvetica, Arial, sans-serif;
+  --vds-font-xxs: normal normal normal  normal var(--vds-font-size-xxs)/var(--vds-line-height-xxs) var(--vds-font-family-body);
+  --vds-font-xs: normal normal normal  normal var(--vds-font-size-xs)/var(--vds-line-height-xs) var(--vds-font-family-body);
+  --vds-font-sm: normal normal normal  normal var(--vds-font-size-sm)/var(--vds-line-height-sm) var(--vds-font-family-body);
+  --vds-font-sm-bold: normal normal bold    normal var(--vds-font-size-sm)/var(--vds-line-height-sm) var(--vds-font-family-body);
+  --vds-font-md: normal normal normal  normal var(--vds-font-size-md)/var(--vds-line-height-md) var(--vds-font-family-body);
+  --vds-font-md-bold: normal normal bold    normal var(--vds-font-size-md)/var(--vds-line-height-md) var(--vds-font-family-body);
+  --vds-font-body: var(--vds-font-md);
+  --vds-font-body-bold: var(--vds-font-md-bold);
+  --vds-font-heading-xxs: normal normal bold normal var(--vds-font-size-heading-xxs)/var(--vds-line-height-heading-xxs) var(--vds-font-family-display);
+  --vds-font-heading-xs: normal normal bold normal var(--vds-font-size-heading-xs)/var(--vds-line-height-heading-xs) var(--vds-font-family-display);
+  --vds-font-heading-sm: normal normal bold normal var(--vds-font-size-heading-sm)/var(--vds-line-height-heading-sm) var(--vds-font-family-display);
+  --vds-font-heading-md: normal normal bold normal var(--vds-font-size-heading-md)/var(--vds-line-height-heading-md) var(--vds-font-family-display);
+  --vds-font-heading-lg: normal normal bold normal var(--vds-font-size-heading-lg)/var(--vds-line-height-heading-lg) var(--vds-font-family-display);
+  --vds-font-heading-xl: normal normal bold normal var(--vds-font-size-heading-xl)/var(--vds-line-height-heading-xl) var(--vds-font-family-display);
+  --vds-font-scale-base: 1.6rem; /* assumes font-size 62.5% on html */
+  --vds-font-scale-multiplier: 1.25; /* Major Third (4:5) modular scale https://www.modularscale.com/?16&px&1.25 */
+  --vds-font-size-md: var(--vds-font-scale-base); /* 16/24px !!! consider --vds-font-* to set all font properties, not just font-size */
+  --vds-font-size-sm: calc(var(--vds-font-size-md) / var(--vds-font-scale-multiplier)); /* 13/18px !!! consider --vds-font-* to set all font properties, not just font-size */
+  --vds-font-size-xs: calc(var(--vds-font-size-sm) / var(--vds-font-scale-multiplier)); /* 10/15px !!! consider --vds-font-* to set all font properties, not just font-size */
+  --vds-font-size-xxs: calc(var(--vds-font-size-xs) / var(--vds-font-scale-multiplier)); /* 8/12px !!! consider --vds-font-* to set all font properties, not just font-size */
+  --vds-font-size-body: var(--vds-font-size-md); /*  !!! consider --vds-font-* to set all font properties, not just font-size */
+  --vds-font-size-heading-xxs: var(--vds-font-scale-base); /* 16/24px !!! consider --vds-font-* to set all font properties, not just font-size */
+  --vds-font-size-heading-xs: calc(var(--vds-font-size-heading-xxs) * var(--vds-font-scale-multiplier)); /* 20/24px !!! consider --vds-font-* to set all font properties, not just font-size */
+  --vds-font-size-heading-sm: calc(var(--vds-font-size-heading-xs) * var(--vds-font-scale-multiplier)); /* 25/30px !!! consider --vds-font-* to set all font properties, not just font-size */
+  --vds-font-size-heading-md: calc(var(--vds-font-size-heading-sm) * var(--vds-font-scale-multiplier)); /* 31/36px !!! consider --vds-font-* to set all font properties, not just font-size */
+  --vds-font-size-heading-lg: calc(var(--vds-font-size-heading-md) * var(--vds-font-scale-multiplier)); /* 39/48px !!! consider --vds-font-* to set all font properties, not just font-size */
+  --vds-font-size-heading-xl: calc(var(--vds-font-size-heading-lg) * var(--vds-font-scale-multiplier)); /* 49/54px !!! consider --vds-font-* to set all font properties, not just font-size */
+  --vds-line-height-xxs: 1.50; /* 8/12px !!! consider --vds-font-* to set all font properties, not just line-height */
+  --vds-line-height-xs: 1.50; /* 10/15px !!! consider --vds-font-* to set all font properties, not just line-height */
+  --vds-line-height-sm: 1.38; /* 13/18px !!! consider --vds-font-* to set all font properties, not just line-height */
+  --vds-line-height-md: 1.50; /* 16/24px !!! consider --vds-font-* to set all font properties, not just line-height */
+  --vds-line-height-body: var(--vds-line-height-md); /* !!! consider --vds-font-* to set all font properties, not just line-height */
+  --vds-line-height-heading-xxs: 1.50; /* 16/24px !!! consider --vds-font-* to set all font properties, not just line-height */
+  --vds-line-height-heading-xs: 1.20; /* 20/24px !!! consider --vds-font-* to set all font properties, not just line-height */
+  --vds-line-height-heading-sm: 1.20; /* 25/30px !!! consider --vds-font-* to set all font properties, not just line-height */
+  --vds-line-height-heading-md: 1.16; /* 31/36px !!! consider --vds-font-* to set all font properties, not just line-height */
+  --vds-line-height-heading-lg: 1.23; /* 39/48px !!! consider --vds-font-* to set all font properties, not just line-height */
+  --vds-line-height-heading-xl: 1.10; /* 49/54px !!! consider --vds-font-* to set all font properties, not just line-height */
   --vds-shadow-modal: 0 0 4px 1px rgba(0, 0, 0, 0.3);
   --vds-shadow-hover: 0 1px 4px 1px rgba(23, 78, 182, 0.3);
   --vds-shadow-focus: var(--vds-shadow-hover);
