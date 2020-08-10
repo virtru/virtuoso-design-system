@@ -1,7 +1,7 @@
 commit-msg:
-  commands:
-    lint-commit-msg:
-      run: npm run lint:commit-msg:edit
+  scripts:
+    commit-linter:
+      runner: bash
 pre-commit:
   parallel: true
   commands:
