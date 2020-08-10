@@ -1,3 +1,36 @@
+# v1.2.0 (Mon Aug 10 2020)
+
+#### 🚀 Enhancement
+
+- feat(design tokens): style dictionary replaces css-in-js from virtru-design-params [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@avkvirtru](https://github.com/avkvirtru))
+
+#### 🐛 Bug Fix
+
+- Unify design tokens under Style Dictionary [#36](https://github.com/avkvirtru/virtuoso-design-system/pull/36) ([@avkvirtru](https://github.com/avkvirtru) [@jrschumacher](https://github.com/jrschumacher))
+- fix: lefthook-local skipping style linting [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@avkvirtru](https://github.com/avkvirtru))
+- refactor: font tokens to explicitly use modular scale, size vars, & line height vars [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@avkvirtru](https://github.com/avkvirtru))
+- docs: add Loki VRT docs & reference [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@avkvirtru](https://github.com/avkvirtru))
+- chore: remove virtru-design-params dependencies - typography [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@avkvirtru](https://github.com/avkvirtru))
+- chore: remove virtru-design-params dependencies - text [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@avkvirtru](https://github.com/avkvirtru))
+- chore: remove virtru-design-params dependencies - screen [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@avkvirtru](https://github.com/avkvirtru))
+- chore: remove virtru-design-params dependencies [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@avkvirtru](https://github.com/avkvirtru))
+- style: update header.css based on stylelint failures [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@avkvirtru](https://github.com/avkvirtru))
+- style: clean up tokens.css [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@avkvirtru](https://github.com/avkvirtru))
+- style: add trailing lines for stylelint [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@avkvirtru](https://github.com/avkvirtru))
+- chore: remove -primary and -secondary font tokens [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@avkvirtru](https://github.com/avkvirtru))
+- fix: lingering virtru-typography references break [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@avkvirtru](https://github.com/avkvirtru))
+- chore: update package-lock.json [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@avkvirtru](https://github.com/avkvirtru))
+- fix: npm run test missing jest-config-virtru preset [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@avkvirtru](https://github.com/avkvirtru))
+- chore: remove jest-config virtru private dependency [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@jrschumacher](https://github.com/jrschumacher))
+- chore(virtru-typography): remove virtru typography dependency [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 2
+
+- Arthur Klepchukov ([@avkvirtru](https://github.com/avkvirtru))
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v1.1.0 (Fri Jul 31 2020)
 
 #### 🐛 Bug Fix
