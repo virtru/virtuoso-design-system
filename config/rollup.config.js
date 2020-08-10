@@ -5,6 +5,7 @@ const { babel } = require('@rollup/plugin-babel');
 const commonjs = require('@rollup/plugin-commonjs');
 const postcss = require('rollup-plugin-postcss');
 const reactSvg = require('rollup-plugin-react-svg');
+const copy = require('rollup-plugin-copy');
 const postcssConfig = require('./postcss.config');
 
 module.exports = {
@@ -37,5 +38,10 @@ module.exports = {
     }),
     commonjs(),
     reactSvg(),
+    copy({
+      targets: [
+        { src: 'lib/styles/build/**/*.{css,js}', dest: 'dist' }
+      ]
+    })
   ],
 };
