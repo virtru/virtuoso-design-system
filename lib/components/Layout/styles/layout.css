@@ -1,3 +1,5 @@
+/* TODO: Ryan please triage or fix */
+/* stylelint-disable plugin/selector-tag-no-without-class */
 .container {
   width: 100%;
   position: absolute;
@@ -21,5 +23,5 @@
 .containerInner {
   flex: auto;
   max-width: var(--vds-container-width-xl);
-  padding: var(--vds-container-padding-md);
+  padding: calc(var(--vds-spacer-xs) + var(--vds-spacer-xs));
 }
