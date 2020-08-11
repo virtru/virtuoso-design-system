@@ -11,7 +11,7 @@
   "scripts": {
     "auto": "auto",
     "build": "rollup --config config/rollup.config.js",
-    "build:watch": "npm run build -- --watch --watch.include \"lib/**\"",
+    "build:watch": "npm run build -- --watch --watch.include 'lib/**'",
     "clean": "rimraf dist/*",
     "prepublishOnly": "npm run build",
     "start": "npm run storybook",
@@ -23,11 +23,11 @@
     "style-dictionary:build": "style-dictionary build --config=./lib/styles/style_dict/config.js",
     "style-dictionary:clean": "style-dictionary clean --config=./lib/styles/style_dict/config.js",
     "lint": "run-p lint:js lint:style lint:commit-msg:last",
-    "lint:js": "eslint lib/**/*.js",
-    "lint:style": "stylelint lib/**/*.css",
+    "lint:js": "eslint 'lib/**/*.js' '*.js'",
+    "lint:style": "stylelint 'lib/**/*.css'",
     "lint:commit-msg": "commitlint --edit",
     "prettify": "eslint . --fix",
-    "release": "npx node-env-run --env .env-auto --exec \"auto shipit\"",
+    "release": "npx node-env-run --env .env-auto --exec 'auto shipit'",
     "postrelease": "storybook-to-ghpages --out .storybook-out"
   },
   "repository": {
