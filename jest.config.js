@@ -15,12 +15,13 @@ module.exports = {
   cacheDirectory: '<rootDir>/node_modules/.cache/jest',
   collectCoverageFrom: ['lib/**/*.{js,jsx}', '!**/node_modules/**'],
   coverageThreshold: {
-    global: {
-      branches: 80,
-      functions: 80,
-      lines: 80,
-      statements: -10,
-    },
+    // TODO improve test coverage so we can set global thresholds
+    // global: {
+    //   branches: 80,
+    //   functions: 80,
+    //   lines: 80,
+    //   statements: -10,
+    // },
   },
   coverageReporters: ['lcov', 'text-summary'],
 };

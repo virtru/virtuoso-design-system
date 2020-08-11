@@ -1,0 +1,36 @@
+{
+  "projectName": "virtuoso-design-system",
+  "projectOwner": "virtru",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "jrschumacher",
+      "name": "Ryan Schumacher",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/46549?v=4",
+      "profile": "https://linkedin.com/in/jrschumacher",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    },
+    {
+      "login": "avkvirtru",
+      "name": "Arthur Klepchukov",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/44370126?v=4",
+      "profile": "https://avk.github.io/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}

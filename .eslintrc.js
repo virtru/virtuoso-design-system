@@ -4,14 +4,16 @@ module.exports = {
     allowImportExportEverywhere: true,
   },
   settings: {
-    import/resolver: {
-      babel-module: {}
-    }
+    'import/resolver': {
+      'babel-module': {},
+    },
+    react: {
+      version: 'detect',
+    },
   },
   extends: [
     'airbnb',
     'plugin:jest/recommended',
-    'jest-enzyme',
     'plugin:jsx-a11y/strict',
     'prettier',
     'prettier/react',
@@ -20,17 +22,9 @@ module.exports = {
     browser: true,
     node: true,
   },
-  settings: {
-    react: {
-      version: 'detect'
-    }
-  },
   plugins: ['react', 'react-hooks', 'prettier'],
   rules: {
-    'import/no-extraneous-dependencies': [
-      'error',
-      { peerDependencies: true },
-    ],
+    'import/no-extraneous-dependencies': ['error', { peerDependencies: true }],
     'prettier/prettier': ['error'],
     'react/jsx-wrap-multilines': ['error', { declaration: false, assignment: false }],
     'react/jsx-filename-extension': 'off',

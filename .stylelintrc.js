@@ -43,6 +43,11 @@ module.exports = {
     
     // why? trailing zeros align CSS properties for comparisons across lines
     "number-no-trailing-zeros": null,
+
+    // why? composes uses css variables and should not force classnames to be lowercase
+    'value-keyword-case': ['lower', {
+      ignoreProperties: ['composes'],
+    }]
   },
   ignoreFiles: [
     './coverage/**/*.css',

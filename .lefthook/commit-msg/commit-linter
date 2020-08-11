@@ -1,0 +1,22 @@
+#!/bin/bash
+
+result=$(npm run -s lint:commit-msg $1 2>&1)
+exitCode=$?
+
+if [ "$result" != "" ]; then
+  echo "-------------------------------------------------------------------------------------------"
+  echo "This project uses conventional commits, please make sure your commit message looks like:"
+  echo ""
+  echo "    type(scope?): subject"
+  echo ""
+  echo "i.e."
+  echo ""
+  echo "    chore: run tests on github"
+  echo "    fix(button): pass event handler correctly"
+  echo "    feat(table): add filter for columns"
+  echo ""
+  echo "Learn more at https://www.conventionalcommits.org."
+  echo "-------------------------------------------------------------------------------------------"
+  echo "$result"
+  exit $exitCode
+fi
