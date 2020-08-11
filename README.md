@@ -56,12 +56,16 @@ Examples can be found in `/examples`
 
 ## Releasing
 
-Releases are handled by [Auto](https://intuit.github.io/auto/). All you have to do is `npm run release` and you'll get:
+Releases are handled by [Auto](https://intuit.github.io/auto/). 
 
-* automatic changelog
-* bump npm version
-* publish to npm — based on your `npm login` or NPM_TOKEN in `.env`
-* make a GitHub release — based on your GH_TOKEN in `.env`
+1. Please tag your PRs "release" in order for Auto to find them.
+
+2. Then, all you have to do is `npm run release` and you'll get:
+
+  * automatic changelog
+  * bump npm version
+  * publish to npm — based on your `npm login` or NPM_TOKEN in `.env`
+  * make a GitHub release — based on your GH_TOKEN in `.env`
 
 This works with the magic described in [auto shipit docs](https://intuit.github.io/auto/docs/generated/shipit).
 
