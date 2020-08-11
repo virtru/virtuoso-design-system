@@ -12,7 +12,6 @@
 }
 
 .small {
-  padding: 25px 24px;
   border-radius: 3px;
   background-color: var(--vds-color-white);
   box-shadow: 0 0 4px 1px rgba(var(--vds-color-black), 0.3);
@@ -21,7 +20,6 @@
 }
 
 .large {
-  padding: 25px 24px;
   border-radius: 3px;
   background-color: var(--vds-color-white);
   box-shadow: 0 0 4px 1px rgba(var(--vds-color-black), 0.3);
@@ -30,26 +28,37 @@
 }
 
 .header {
+  border-radius: 3px 3px 0 0;
+  padding: 25px 24px 5px 24px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.title {
+.headerDark {
+  background-color: var(--vds-color-slate-darkest);
+  color: var(--vds-color-white);
+}
+
+.headerLight {
+  background-color: var(--vds-color-white);
   color: var(--vds-color-slate-darkest);
+}
+
+.title {
   font: var(--vds-font-heading-xxs);
   line-height: 24px;
 }
 
 .content {
-  margin-top: 12px;
+  padding: 5px 24px 25px 24px;
   font: var(--vds-font-sm);
 }
 
 .footer {
   display: flex;
   justify-content: flex-end;
-  margin-top: 24px;
+  margin: 24px;
 }
 
 .footer > *:not(:first-child) {
@@ -57,7 +66,6 @@
 }
 
 .closeButton {
-  color: var(--vds-color-slate-darkest);
   font-size: 16px;
   padding: 0;
   border: none;

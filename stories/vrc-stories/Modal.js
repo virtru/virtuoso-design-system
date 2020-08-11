@@ -86,6 +86,19 @@ storiesOf('Modal', module)
       </Modal>
     </Container>
   ))
+  .add('small - with content - dark header', () => (
+    <Container>
+      <Modal
+        title="Warning this is a Modal Title"
+        variant={Modal.VARIANT.SMALL}
+        headerTheme={Modal.HEADER_THEME.DARK}
+        footer={<ModalFooter />}
+        showCloseButton={false}
+      >
+        <ModalContentSmall />
+      </Modal>
+    </Container>
+  ))
   .add('large - no footer buttons', () => (
     <Container>
       <Modal
