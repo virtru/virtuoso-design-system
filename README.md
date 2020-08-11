@@ -1,6 +1,6 @@
 # Virtuoso Design System
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo enables using the Virtuoso Design System as front-end code (HTML, CSS, & JavaScript).
@@ -149,6 +149,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://linkedin.com/in/jrschumacher"><img src="https://avatars1.githubusercontent.com/u/46549?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ryan Schumacher</b></sub></a><br /><a href="https://github.com/virtru/virtuoso-design-system/commits?author=jrschumacher" title="Code">💻</a> <a href="https://github.com/virtru/virtuoso-design-system/commits?author=jrschumacher" title="Documentation">📖</a> <a href="https://github.com/virtru/virtuoso-design-system/commits?author=jrschumacher" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://avk.github.io/"><img src="https://avatars0.githubusercontent.com/u/44370126?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Arthur Klepchukov</b></sub></a><br /><a href="https://github.com/virtru/virtuoso-design-system/commits?author=avkvirtru" title="Code">💻</a> <a href="https://github.com/virtru/virtuoso-design-system/commits?author=avkvirtru" title="Documentation">📖</a></td>
   </tr>
 </table>
 
