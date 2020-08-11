@@ -25,10 +25,30 @@ module.exports = {
   plugins: ['react', 'react-hooks', 'prettier'],
   rules: {
     'import/no-extraneous-dependencies': ['error', { peerDependencies: true }],
+    'import/no-named-as-default': 'off', // https://stackoverflow.com/questions/44437203/how-do-i-resolve-eslint-import-no-named-as-default
+    'import/prefer-default-export': 'off',
+    'no-magic-numbers': [
+      'error',
+      {
+        ignoreArrayIndexes: true,
+        ignore: [-1, 0, 1],
+      },
+    ],
+    'no-underscore-dangle': 'off',
     'prettier/prettier': ['error'],
-    'react/jsx-wrap-multilines': ['error', { declaration: false, assignment: false }],
+    'react/jsx-curly-spacing': [
+      'error',
+      {
+        when: 'never',
+        children: true,
+      },
+    ],
     'react/jsx-filename-extension': 'off',
     'react/jsx-fragments': 'error',
+    // why? when developing reusable components which others will be expecting to build upon it helps reduce coding
+    'react/jsx-props-no-spreading': 'off',
+    'react/jsx-wrap-multilines': ['error', { declaration: false, assignment: false }],
+    'react-hooks/exhaustive-deps': 'warn',
     'require-jsdoc': [
       'error',
       {
@@ -37,25 +57,7 @@ module.exports = {
         },
       },
     ],
-    'no-underscore-dangle': 'off',
-    'import/no-named-as-default': 'off', // https://stackoverflow.com/questions/44437203/how-do-i-resolve-eslint-import-no-named-as-default
-    'react/jsx-curly-spacing': [
-      'error',
-      {
-        when: 'never',
-        children: true,
-      },
-    ],
-    'no-magic-numbers': [
-      'error',
-      {
-        ignoreArrayIndexes: true,
-        ignore: [-1, 0, 1],
-      },
-    ],
-    'import/prefer-default-export': 'off',
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
   },
   overrides: [
     {
