@@ -99,6 +99,34 @@ storiesOf('Modal', module)
       </Modal>
     </Container>
   ))
+  .add('small - with content - dark header info', () => (
+    <Container>
+      <Modal
+        title="Remove attribute From 'Full Name'"
+        variant={Modal.VARIANT.SMALL}
+        headerTheme={Modal.HEADER_THEME.DARK}
+        titleIcon={Modal.TITLE_ICON.INFO}
+        footer={<ModalFooter />}
+        showCloseButton={false}
+      >
+        <ModalContentSmall />
+      </Modal>
+    </Container>
+  ))
+  .add('small - with content - light header info', () => (
+    <Container>
+      <Modal
+        title="Remove attribute From 'Full Name'"
+        variant={Modal.VARIANT.SMALL}
+        headerTheme={Modal.HEADER_THEME.LIGHT}
+        titleIcon={Modal.TITLE_ICON.INFO}
+        footer={<ModalFooter />}
+        showCloseButton={false}
+      >
+        <ModalContentSmall />
+      </Modal>
+    </Container>
+  ))
   .add('large - no footer buttons', () => (
     <Container>
       <Modal

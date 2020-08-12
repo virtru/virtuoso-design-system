@@ -27,6 +27,10 @@
   width: 800px;
 }
 
+.titleIcon {
+  margin-right: 5px;
+}
+
 .header {
   border-radius: 3px 3px 0 0;
   padding: 25px 24px 5px 24px;
@@ -38,16 +42,25 @@
 .headerDark {
   background-color: var(--vds-color-slate-darkest);
   color: var(--vds-color-white);
+  fill:  var(--vds-color-white);
 }
 
 .headerLight {
   background-color: var(--vds-color-white);
   color: var(--vds-color-slate-darkest);
+  fill: var(--vds-color-slate-darkest);
 }
 
 .title {
+  display: flex;
+  align-items: center;
   font: var(--vds-font-heading-xxs);
+}
+
+.titleText {
+  margin-top: 2px;
   line-height: 24px;
+  font-size: 16px;
 }
 
 .content {
