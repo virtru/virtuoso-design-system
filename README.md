@@ -1,6 +1,6 @@
 # Virtuoso Design System
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo enables using the Virtuoso Design System as front-end code (HTML, CSS, & JavaScript).
@@ -159,6 +159,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://twitter.com/nathanab_"><img src="https://avatars0.githubusercontent.com/u/3252545?v=4?s=100" width="100px;" alt=""/><br /><sub><b>NathanAB</b></sub></a><br /><a href="https://github.com/virtru/virtuoso-design-system/commits?author=NathanAB" title="Code">💻</a> <a href="https://github.com/virtru/virtuoso-design-system/commits?author=NathanAB" title="Documentation">📖</a> <a href="https://github.com/virtru/virtuoso-design-system/commits?author=NathanAB" title="Tests">⚠️</a></td>
     <td align="center"><a href="http://alwaysmorehats.com/"><img src="https://avatars1.githubusercontent.com/u/1030358?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Stephen Smith</b></sub></a><br /><a href="https://github.com/virtru/virtuoso-design-system/commits?author=AlwaysMoreHats" title="Code">💻</a> <a href="https://github.com/virtru/virtuoso-design-system/commits?author=AlwaysMoreHats" title="Documentation">📖</a> <a href="https://github.com/virtru/virtuoso-design-system/commits?author=AlwaysMoreHats" title="Tests">⚠️</a></td>
     <td align="center"><a href="https://github.com/sergeyd-virtru"><img src="https://avatars2.githubusercontent.com/u/41566731?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sergey Diniovskiy</b></sub></a><br /><a href="https://github.com/virtru/virtuoso-design-system/commits?author=sergeyd-virtru" title="Code">💻</a> <a href="https://github.com/virtru/virtuoso-design-system/commits?author=sergeyd-virtru" title="Documentation">📖</a> <a href="https://github.com/virtru/virtuoso-design-system/commits?author=sergeyd-virtru" title="Tests">⚠️</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/Nnamdi101"><img src="https://avatars1.githubusercontent.com/u/17769444?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nnamdi101</b></sub></a><br /><a href="https://github.com/virtru/virtuoso-design-system/commits?author=Nnamdi101" title="Code">💻</a> <a href="https://github.com/virtru/virtuoso-design-system/commits?author=Nnamdi101" title="Documentation">📖</a> <a href="https://github.com/virtru/virtuoso-design-system/commits?author=Nnamdi101" title="Tests">⚠️</a></td>
   </tr>
 </table>
 
