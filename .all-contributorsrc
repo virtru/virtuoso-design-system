@@ -30,6 +30,116 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "kuguarpwnz",
+      "name": "Vlad Baranchuk",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/6388788?v=4",
+      "profile": "https://github.com/kuguarpwnz",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    },
+    {
+      "login": "svirtryu",
+      "name": "Shaw Yu",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/38223448?v=4",
+      "profile": "https://github.com/shawyu",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    },
+    {
+      "login": "NathanAB",
+      "name": "NathanAB",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/3252545?v=4",
+      "profile": "https://twitter.com/nathanab_",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    },
+    {
+      "login": "AlwaysMoreHats",
+      "name": "Stephen Smith",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1030358?v=4",
+      "profile": "http://alwaysmorehats.com/",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    },
+    {
+      "login": "sergeyd-virtru",
+      "name": "Sergey Diniovskiy",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/41566731?v=4",
+      "profile": "https://github.com/sergeyd-virtru",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    },
+    {
+      "login": "Nnamdi101",
+      "name": "Nnamdi101",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/17769444?v=4",
+      "profile": "https://github.com/Nnamdi101",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    },
+    {
+      "login": "ivanovSPvirtru",
+      "name": "ivanovSPvirtru",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/41641307?v=4",
+      "profile": "https://github.com/ivanovSPvirtru",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    },
+    {
+      "login": "suchak1",
+      "name": "Krish Suchak",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/42231639?v=4",
+      "profile": "https://github.com/suchak1",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    },
+    {
+      "login": "vtrepalin",
+      "name": "Viacheslav Trepalin",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/12185782?v=4",
+      "profile": "https://github.com/vtrepalin",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    },
+    {
+      "login": "ctang18",
+      "name": "CT",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/6336244?v=4",
+      "profile": "https://github.com/ctang18",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7
