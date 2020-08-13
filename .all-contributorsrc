@@ -37,7 +37,20 @@
       "avatar_url": "https://avatars0.githubusercontent.com/u/6388788?v=4",
       "profile": "https://github.com/kuguarpwnz",
       "contributions": [
-        "code"
+        "code",
+        "doc",
+        "test"
+      ]
+    },
+    {
+      "login": "svirtryu",
+      "name": "Shaw Yu",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/38223448?v=4",
+      "profile": "https://github.com/shawyu",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
       ]
     }
   ],
