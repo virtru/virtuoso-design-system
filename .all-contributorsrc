@@ -96,6 +96,17 @@
         "doc",
         "test"
       ]
+    },
+    {
+      "login": "ivanovSPvirtru",
+      "name": "ivanovSPvirtru",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/41641307?v=4",
+      "profile": "https://github.com/ivanovSPvirtru",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7
