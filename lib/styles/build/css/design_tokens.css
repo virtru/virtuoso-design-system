@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 08 Aug 2020 00:00:40 GMT
+ * Generated on Thu, 13 Aug 2020 21:49:49 GMT
  */
 
 :root {
@@ -54,20 +54,20 @@
   --vds-color-purple-darkest: #241C48;
   --vds-font-family-body: 'Open Sans', Helvetica, Arial, sans-serif;
   --vds-font-family-display: 'Raleway', Helvetica, Arial, sans-serif;
-  --vds-font-xxs: normal normal normal  normal var(--vds-font-size-xxs)/var(--vds-line-height-xxs) var(--vds-font-family-body);
-  --vds-font-xs: normal normal normal  normal var(--vds-font-size-xs)/var(--vds-line-height-xs) var(--vds-font-family-body);
-  --vds-font-sm: normal normal normal  normal var(--vds-font-size-sm)/var(--vds-line-height-sm) var(--vds-font-family-body);
-  --vds-font-sm-bold: normal normal bold    normal var(--vds-font-size-sm)/var(--vds-line-height-sm) var(--vds-font-family-body);
-  --vds-font-md: normal normal normal  normal var(--vds-font-size-md)/var(--vds-line-height-md) var(--vds-font-family-body);
-  --vds-font-md-bold: normal normal bold    normal var(--vds-font-size-md)/var(--vds-line-height-md) var(--vds-font-family-body);
+  --vds-font-xxs: normal normal normal  normal var(--vds-font-size-xxs) / var(--vds-line-height-xxs) var(--vds-font-family-body);
+  --vds-font-xs: normal normal normal  normal var(--vds-font-size-xs) / var(--vds-line-height-xs) var(--vds-font-family-body);
+  --vds-font-sm: normal normal normal  normal var(--vds-font-size-sm) / var(--vds-line-height-sm) var(--vds-font-family-body);
+  --vds-font-sm-bold: normal normal bold    normal var(--vds-font-size-sm) / var(--vds-line-height-sm) var(--vds-font-family-body);
+  --vds-font-md: normal normal normal  normal var(--vds-font-size-md) / var(--vds-line-height-md) var(--vds-font-family-body);
+  --vds-font-md-bold: normal normal bold    normal var(--vds-font-size-md) / var(--vds-line-height-md) var(--vds-font-family-body);
   --vds-font-body: var(--vds-font-md);
   --vds-font-body-bold: var(--vds-font-md-bold);
-  --vds-font-heading-xxs: normal normal bold normal var(--vds-font-size-heading-xxs)/var(--vds-line-height-heading-xxs) var(--vds-font-family-display);
-  --vds-font-heading-xs: normal normal bold normal var(--vds-font-size-heading-xs)/var(--vds-line-height-heading-xs) var(--vds-font-family-display);
-  --vds-font-heading-sm: normal normal bold normal var(--vds-font-size-heading-sm)/var(--vds-line-height-heading-sm) var(--vds-font-family-display);
-  --vds-font-heading-md: normal normal bold normal var(--vds-font-size-heading-md)/var(--vds-line-height-heading-md) var(--vds-font-family-display);
-  --vds-font-heading-lg: normal normal bold normal var(--vds-font-size-heading-lg)/var(--vds-line-height-heading-lg) var(--vds-font-family-display);
-  --vds-font-heading-xl: normal normal bold normal var(--vds-font-size-heading-xl)/var(--vds-line-height-heading-xl) var(--vds-font-family-display);
+  --vds-font-heading-xxs: normal normal bold normal var(--vds-font-size-heading-xxs) / var(--vds-line-height-heading-xxs) var(--vds-font-family-display);
+  --vds-font-heading-xs: normal normal bold normal var(--vds-font-size-heading-xs) / var(--vds-line-height-heading-xs) var(--vds-font-family-display);
+  --vds-font-heading-sm: normal normal bold normal var(--vds-font-size-heading-sm) / var(--vds-line-height-heading-sm) var(--vds-font-family-display);
+  --vds-font-heading-md: normal normal bold normal var(--vds-font-size-heading-md) / var(--vds-line-height-heading-md) var(--vds-font-family-display);
+  --vds-font-heading-lg: normal normal bold normal var(--vds-font-size-heading-lg) / var(--vds-line-height-heading-lg) var(--vds-font-family-display);
+  --vds-font-heading-xl: normal normal bold normal var(--vds-font-size-heading-xl) / var(--vds-line-height-heading-xl) var(--vds-font-family-display);
   --vds-font-scale-base: 1.6rem; /* assumes font-size 62.5% on html */
   --vds-font-scale-multiplier: 1.25; /* Major Third (4:5) modular scale https://www.modularscale.com/?16&px&1.25 */
   --vds-font-size-md: var(--vds-font-scale-base); /* 16/24px !!! consider --vds-font-* to set all font properties, not just font-size */
