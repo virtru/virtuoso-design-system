@@ -63,6 +63,17 @@
         "doc",
         "test"
       ]
+    },
+    {
+      "login": "AlwaysMoreHats",
+      "name": "Stephen Smith",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1030358?v=4",
+      "profile": "http://alwaysmorehats.com/",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7
