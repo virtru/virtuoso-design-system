@@ -118,6 +118,17 @@
         "doc",
         "test"
       ]
+    },
+    {
+      "login": "vtrepalin",
+      "name": "Viacheslav Trepalin",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/12185782?v=4",
+      "profile": "https://github.com/vtrepalin",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7
