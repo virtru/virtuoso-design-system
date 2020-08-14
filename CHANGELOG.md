@@ -1,3 +1,15 @@
+# v1.3.0 (Fri Aug 14 2020)
+
+#### 🚀 Enhancement
+
+- feat: add Modal header dark theme + title text info icon [#49](https://github.com/avkvirtru/virtuoso-design-system/pull/49) ([@aleonov-virtru](https://github.com/aleonov-virtru))
+
+#### Authors: 1
+
+- Anatoliy Leonov ([@aleonov-virtru](https://github.com/aleonov-virtru))
+
+---
+
 # v1.2.1 (Fri Aug 14 2020)
 
 #### 🐛 Bug Fix
