@@ -74,6 +74,16 @@ storiesOf('Modal', module)
       />
     </Container>
   ))
+  .add('small - no content dark', () => (
+    <Container>
+      <Modal
+        title="Warning this is a Modal Title"
+        variant={Modal.VARIANT.SMALL}
+        headerTheme={Modal.HEADER_THEME.DARK}
+        showCloseButton={false}
+      />
+    </Container>
+  ))
   .add('small - with content', () => (
     <Container>
       <Modal
@@ -132,6 +142,18 @@ storiesOf('Modal', module)
       <Modal
         title="This is an interactive modal frame... put stuff below in the pink area"
         variant={Modal.VARIANT.LARGE}
+        showCloseButton
+      >
+        <ModalContentLarge />
+      </Modal>
+    </Container>
+  ))
+  .add('large - no footer buttons dark', () => (
+    <Container>
+      <Modal
+        title="This is an interactive modal frame... put stuff below in the pink area"
+        variant={Modal.VARIANT.LARGE}
+        headerTheme={Modal.HEADER_THEME.DARK}
         showCloseButton
       >
         <ModalContentLarge />
