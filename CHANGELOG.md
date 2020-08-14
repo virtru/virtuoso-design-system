@@ -1,3 +1,27 @@
+# v1.2.1 (Fri Aug 14 2020)
+
+#### 🐛 Bug Fix
+
+- fix(design_tokens): add space between slash and font-size and line-height [#44](https://github.com/avkvirtru/virtuoso-design-system/pull/44) ([@jrschumacher](https://github.com/jrschumacher))
+- chore: resolve lint issues [#38](https://github.com/avkvirtru/virtuoso-design-system/pull/38) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:avkvirtru/virtuoso-design-system ([@avkvirtru](https://github.com/avkvirtru))
+- docs: update Releasing instructions for PR tagging ([@avkvirtru](https://github.com/avkvirtru))
+
+#### 📝 Documentation
+
+- chore: remove all-contributors [#43](https://github.com/avkvirtru/virtuoso-design-system/pull/43) ([@jrschumacher](https://github.com/jrschumacher))
+- Update contributors [#42](https://github.com/avkvirtru/virtuoso-design-system/pull/42) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 2
+
+- Arthur Klepchukov ([@avkvirtru](https://github.com/avkvirtru))
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v1.2.0 (Tue Aug 11 2020)
 
 #### 🚀 Enhancement
