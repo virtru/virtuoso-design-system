@@ -65,6 +65,19 @@ const printButtonTable = (size, children = 'Label') => (
           </Button>
         </td>
       </tr>
+      <tr>
+        <th>Warning</th>
+        <td>
+          <Button variant={Button.VARIANT.WARNING} size={size}>
+            {children}
+          </Button>
+        </td>
+        <td>
+          <Button variant={Button.VARIANT.WARNING} size={size} disabled>
+            {children}
+          </Button>
+        </td>
+      </tr>
     </tbody>
   </table>
 );

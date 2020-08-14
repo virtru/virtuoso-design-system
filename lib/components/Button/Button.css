@@ -55,6 +55,30 @@
   border-color: var(--vds-color-slate-lighter);
 }
 
+.warning {
+  composes: base;
+  border: 1px solid var(--vds-color-red-darker);
+  background-color: var(--vds-color-red-darker);
+  color: var(--vds-color-white);
+}
+
+.warning:hover,
+.warning:focus {
+  border: 1px solid var(--vds-color-red-darkest);
+  background-color: var(--vds-color-red-darkest);
+}
+
+.warning:disabled {
+  background-color: var(--vds-color-slate-lighter);
+  border-color: var(--vds-color-slate-lighter);
+}
+
+.warning:active {
+  background-color: var(--vds-color-slate-primary);
+  border-color: var(--vds-color-slate-primary);
+  color: var(--vds-color-white);
+}
+
 .secondary {
   composes: base;
   border: 1px solid var(--vds-color-slate-darker);
