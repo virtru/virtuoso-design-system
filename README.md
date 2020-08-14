@@ -1,6 +1,6 @@
 # Virtuoso Design System
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo enables using the Virtuoso Design System as front-end code (HTML, CSS, & JavaScript).
@@ -59,12 +59,16 @@ Examples can be found in `/examples`
 
 ## Releasing
 
-Releases are handled by [Auto](https://intuit.github.io/auto/). All you have to do is `npm run release` and you'll get:
+Releases are handled by [Auto](https://intuit.github.io/auto/). 
 
-* automatic changelog
-* bump npm version
-* publish to npm — based on your `npm login` or NPM_TOKEN in `.env`
-* make a GitHub release — based on your GH_TOKEN in `.env`
+1. Please tag your PRs "release" in order for Auto to find them.
+
+2. Then, all you have to do is `npm run release` and you'll get:
+
+  * automatic changelog
+  * bump npm version
+  * publish to npm — based on your `npm login` or NPM_TOKEN in `.env`
+  * make a GitHub release — based on your GH_TOKEN in `.env`
 
 This works with the magic described in [auto shipit docs](https://intuit.github.io/auto/docs/generated/shipit).
 
@@ -138,22 +142,3 @@ We recommend only approving new baselines once all unintended visual changes hav
 ---
 
 Copyright © 2020 Virtru Corporation
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://linkedin.com/in/jrschumacher"><img src="https://avatars1.githubusercontent.com/u/46549?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ryan Schumacher</b></sub></a><br /><a href="https://github.com/virtru/virtuoso-design-system/commits?author=jrschumacher" title="Code">💻</a> <a href="https://github.com/virtru/virtuoso-design-system/commits?author=jrschumacher" title="Documentation">📖</a> <a href="https://github.com/virtru/virtuoso-design-system/commits?author=jrschumacher" title="Tests">⚠️</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
