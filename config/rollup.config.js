@@ -25,9 +25,7 @@ module.exports = {
   external: ['react', 'prop-types'],
   plugins: [
     alias({
-      entries: [
-        { find: '@', replacement: path.join(__dirname, '..', 'lib') }
-      ],
+      entries: [{ find: '@', replacement: path.join(__dirname, '..', 'lib') }],
     }),
     postcss(postcssConfig),
     nodeResolve(),
@@ -40,8 +38,10 @@ module.exports = {
     reactSvg(),
     copy({
       targets: [
-        { src: 'lib/styles/build/**/*.{css,js}', dest: 'dist' }
-      ]
-    })
+        { src: 'lib/styles/build/**/*.{css,js}', dest: 'dist' },
+        { src: 'lib/styles/typography/fonts/', dest: 'dist' },
+        { src: 'lib/styles/typography/css/*.css', dest: 'dist/font-style' },
+      ],
+    }),
   ],
 };
