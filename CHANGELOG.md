@@ -41,8 +41,6 @@
 #### 🚀 Enhancement
 
 - feat(design tokens): style dictionary replaces css-in-js from virtru-design-params [#19](https://github.com/avkvirtru/virtuoso-design-system/pull/19) ([@avkvirtru](https://github.com/avkvirtru))
-- feat: add dark theme to header [#47](https://github.com/avkvirtru/virtuoso-design-system/pull/47) ([@aleonov-virtru](https://github.com/aleonov-virtru))
-- feat: add title icon to header [#47](https://github.com/avkvirtru/virtuoso-design-system/pull/47) ([@aleonov-virtru](https://github.com/aleonov-virtru))
 
 #### 🐛 Bug Fix
 
