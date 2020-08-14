@@ -74,6 +74,16 @@ storiesOf('Modal', module)
       />
     </Container>
   ))
+  .add('small - no content dark', () => (
+    <Container>
+      <Modal
+        title="Warning this is a Modal Title"
+        variant={Modal.VARIANT.SMALL}
+        headerTheme={Modal.HEADER_THEME.DARK}
+        showCloseButton={false}
+      />
+    </Container>
+  ))
   .add('small - with content', () => (
     <Container>
       <Modal
@@ -86,11 +96,64 @@ storiesOf('Modal', module)
       </Modal>
     </Container>
   ))
+  .add('small - with content - dark header', () => (
+    <Container>
+      <Modal
+        title="Warning this is a Modal Title"
+        variant={Modal.VARIANT.SMALL}
+        headerTheme={Modal.HEADER_THEME.DARK}
+        footer={<ModalFooter />}
+        showCloseButton={false}
+      >
+        <ModalContentSmall />
+      </Modal>
+    </Container>
+  ))
+  .add('small - with content - dark header info', () => (
+    <Container>
+      <Modal
+        title="Remove attribute From 'Full Name'"
+        variant={Modal.VARIANT.SMALL}
+        headerTheme={Modal.HEADER_THEME.DARK}
+        titleIcon={Modal.TITLE_ICON.INFO}
+        footer={<ModalFooter />}
+        showCloseButton={false}
+      >
+        <ModalContentSmall />
+      </Modal>
+    </Container>
+  ))
+  .add('small - with content - light header info', () => (
+    <Container>
+      <Modal
+        title="Remove attribute From 'Full Name'"
+        variant={Modal.VARIANT.SMALL}
+        headerTheme={Modal.HEADER_THEME.LIGHT}
+        titleIcon={Modal.TITLE_ICON.INFO}
+        footer={<ModalFooter />}
+        showCloseButton={false}
+      >
+        <ModalContentSmall />
+      </Modal>
+    </Container>
+  ))
   .add('large - no footer buttons', () => (
     <Container>
       <Modal
         title="This is an interactive modal frame... put stuff below in the pink area"
         variant={Modal.VARIANT.LARGE}
+        showCloseButton
+      >
+        <ModalContentLarge />
+      </Modal>
+    </Container>
+  ))
+  .add('large - no footer buttons dark', () => (
+    <Container>
+      <Modal
+        title="This is an interactive modal frame... put stuff below in the pink area"
+        variant={Modal.VARIANT.LARGE}
+        headerTheme={Modal.HEADER_THEME.DARK}
         showCloseButton
       >
         <ModalContentLarge />

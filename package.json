@@ -127,6 +127,7 @@
   "dependencies": {
     "animejs": "^3.0.1",
     "classnames": "^2.2.6",
+    "clsx": "^1.1.1",
     "prop-types": "^15.7.2",
     "react-select": "^3.0.4",
     "react-tabs": "^3.0.0",
