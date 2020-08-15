@@ -1,4 +1,4 @@
-name: Release
+name: Deploy Storybook
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  release:
+  deploy-storybook:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -38,5 +38,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
+          git config user.name "$(git --no-pager log --format=format:'%an' -n 1)"
+          git config user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
           npm ci
           npm run storybook:deploy
