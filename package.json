@@ -20,6 +20,7 @@
     "test:js": "jest",
     "test:vrt": "build-storybook && loki --require-reference --reactUri file:./storybook-static",
     "storybook": "start-storybook -p 6006",
+    "storybook:deploy": "storybook-to-ghpages --out .storybook-out",
     "style-dictionary:build": "style-dictionary build --config=./lib/styles/style_dict/config.js",
     "style-dictionary:clean": "style-dictionary clean --config=./lib/styles/style_dict/config.js",
     "lint": "run-p lint:js lint:style lint:commit-msg:last",
@@ -28,7 +29,8 @@
     "lint:commit-msg": "commitlint --edit",
     "prettify": "eslint . --fix",
     "release": "npx node-env-run --env .env-auto --exec 'auto shipit'",
-    "postrelease": "storybook-to-ghpages --out .storybook-out"
+    "postrelease": "npm run storybook:deploy",
+    "release:ci": "auto shipit"
   },
   "repository": {
     "type": "git",
