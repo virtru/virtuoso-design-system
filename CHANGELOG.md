@@ -1,3 +1,17 @@
+# v1.3.1 (Mon Aug 17 2020)
+
+#### 🐛 Bug Fix
+
+- build: fix deploy-storybook workflow [#55](https://github.com/avkvirtru/virtuoso-design-system/pull/55) ([@jrschumacher](https://github.com/jrschumacher))
+- build: add release workflow [#52](https://github.com/avkvirtru/virtuoso-design-system/pull/52) ([@jrschumacher](https://github.com/jrschumacher))
+- chore: export fonts and font stylesheets [#48](https://github.com/avkvirtru/virtuoso-design-system/pull/48) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 1
+
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v1.3.0 (Fri Aug 14 2020)
 
 #### 🚀 Enhancement
