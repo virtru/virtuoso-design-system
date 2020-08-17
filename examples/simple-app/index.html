@@ -1,6 +1,37 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple App Example | Virtuoso Design System </title>
+    
+    <!-- Approach A -->
+    <!-- why? use Design System CSS individually -->
+    <link 
+      rel="stylesheet" 
+      href="https://unpkg.com/virtuoso-design-system@latest/dist/design_tokens.css">
+    <link 
+      rel="stylesheet" 
+      href="https://unpkg.com/browse/virtuoso-design-system@latest/dist/font-style/open-sans.css">
+    <link 
+      rel="stylesheet" 
+      href="https://unpkg.com/browse/virtuoso-design-system@latest/dist/font-style/raleway.css">
+    
+    <!-- Approach B -->
+    <!-- why? if Art could wave a magic wand, all of the above CSS would be available as a single stylesheet -->
+    <!-- 
+    <link 
+      rel="stylesheet" 
+      href="https://unpkg.com/virtuoso-design-system@latest/dist/base.css">
+    -->
+    
+    <!-- why? styles for this example app -->
+    <link rel="stylesheet" href="index.css">
+  </head>
   <body>
+    <!-- why? where React components will render -->
     <div id="mount"></div>
+    
+    <!-- why? include all JavaScript dependencies -->
     <script src="./index.js"></script>
   </body>
 </html>

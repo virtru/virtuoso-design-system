@@ -1,0 +1,51 @@
+/*  
+ * Example styles using Virtuoso Design System (e.g. `var(--vds-*)`)
+ * https://avkvirtru.github.io/virtuoso-design-system/?path=/docs/basics-design-tokens--page
+ */
+ 
+html {
+  /* why? 62.5% = 10px = 1em / 1rem in most browsers */
+  font-size: 62.5%;
+}
+
+body {
+  font: var(--vds-font-body);
+}
+
+li {
+  margin-bottom: var(--vds-spacer-md);
+}
+
+.ex__spacer--margin {
+  margin-bottom: var(--vds-spacer-md);
+}
+
+.ex__spacer--padding {
+  padding: var(--vds-spacer-sm);
+}
+
+.ex__color--primaryBlue {
+  background-color: var(--vds-color-blue-primary);
+}
+
+.ex__color--primarySlate {
+  background-color: var(--vds-color-slate-primary);
+}
+
+.ex__border--rounded {
+  border-radius: var(--vds-border-radius-md);
+}
+
+.ex__shadow--hover {
+  box-shadow: var(--vds-shadow-hover);
+}
+
+.ex__head--xl { font: var(--vds-font-heading-xl); }
+.ex__head--lg { font: var(--vds-font-heading-lg); }
+.ex__head--md { font: var(--vds-font-heading-md); }
+.ex__head--sm { font: var(--vds-font-heading-sm); }
+.ex__head--xs { font: var(--vds-font-heading-xs); }
+.ex__head--xxs { font: var(--vds-font-heading-xxs); }
+
+.ex__body--md { font: var(--vds-font-md); }
+.ex__body--sm { font: var(--vds-font-sm); }
