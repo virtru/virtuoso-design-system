@@ -1,3 +1,15 @@
+# v1.3.2 (Mon Aug 17 2020)
+
+#### 🐛 Bug Fix
+
+- docs(example app): show design tokens & fonts in action [#60](https://github.com/avkvirtru/virtuoso-design-system/pull/60) ([@avkvirtru](https://github.com/avkvirtru))
+
+#### Authors: 1
+
+- Arthur Klepchukov ([@avkvirtru](https://github.com/avkvirtru))
+
+---
+
 # v1.3.1 (Mon Aug 17 2020)
 
 #### 🐛 Bug Fix
