@@ -97,6 +97,7 @@ storiesOf('Button', module)
         variant={select('Variant', variants, defaultVariant)}
         size={select('Size', sizes, defaultSize)}
         disabled={boolean('Disabled')}
+        danger={boolean('Danger')}
         fullWidth={boolean('Full Width')}
       >
         {text('Button label', 'Label')}
@@ -109,6 +110,7 @@ storiesOf('Button', module)
         variant={select('Variant', variants, defaultVariant)}
         size={select('Size', sizes, Button.SIZE.SQUARE)}
         disabled={boolean('Disabled')}
+        danger={boolean('Danger')}
         fullWidth={boolean('Full Width')}
       >
         <Icon />
