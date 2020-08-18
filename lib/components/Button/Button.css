@@ -39,9 +39,19 @@
   color: var(--vds-color-white);
 }
 
+.primary.danger {
+  border: 1px solid var(--vds-color-red-darker);
+  background-color: var(--vds-color-red-darker);
+}
+
 .primary:hover,
 .primary:focus {
   background-color: var(--vds-color-blue-darkest);
+}
+
+.primary.danger:hover,
+.primary.danger:focus {
+  background-color: var(--vds-color-red-darkest);
 }
 
 .primary:active {
@@ -61,9 +71,18 @@
   color: var(--vds-color-blue-darker);
 }
 
+.secondary.danger {
+  color: var(--vds-color-red-darker);
+}
+
 .secondary:hover,
 .secondary:focus {
   color: var(--vds-color-blue-darkest);
+}
+
+.secondary.danger:hover,
+.secondary.danger:focus {
+  color: var(--vds-color-red-darkest);
 }
 
 .secondary:active {

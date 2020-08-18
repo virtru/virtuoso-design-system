@@ -23,6 +23,7 @@ const printButtonTable = (size, children = 'Label') => (
         <th />
         <th>Enabled</th>
         <th>Disabled</th>
+        <th>Danger</th>
       </tr>
     </thead>
     <tbody>
@@ -35,6 +36,11 @@ const printButtonTable = (size, children = 'Label') => (
         </td>
         <td>
           <Button variant={Button.VARIANT.PRIMARY} size={size} disabled>
+            {children}
+          </Button>
+        </td>
+        <td>
+          <Button variant={Button.VARIANT.PRIMARY} size={size} danger>
             {children}
           </Button>
         </td>
@@ -51,6 +57,11 @@ const printButtonTable = (size, children = 'Label') => (
             {children}
           </Button>
         </td>
+        <td>
+          <Button variant={Button.VARIANT.SECONDARY} size={size} danger>
+            {children}
+          </Button>
+        </td>
       </tr>
       <tr>
         <th>Not Outlined</th>
@@ -61,6 +72,11 @@ const printButtonTable = (size, children = 'Label') => (
         </td>
         <td>
           <Button variant={Button.VARIANT.NO_OUTLINE} size={size} disabled>
+            {children}
+          </Button>
+        </td>
+        <td>
+          <Button variant={Button.VARIANT.NO_OUTLINE} size={size} danger>
             {children}
           </Button>
         </td>
@@ -81,6 +97,7 @@ storiesOf('Button', module)
         variant={select('Variant', variants, defaultVariant)}
         size={select('Size', sizes, defaultSize)}
         disabled={boolean('Disabled')}
+        danger={boolean('Danger')}
         fullWidth={boolean('Full Width')}
       >
         {text('Button label', 'Label')}
@@ -93,6 +110,7 @@ storiesOf('Button', module)
         variant={select('Variant', variants, defaultVariant)}
         size={select('Size', sizes, Button.SIZE.SQUARE)}
         disabled={boolean('Disabled')}
+        danger={boolean('Danger')}
         fullWidth={boolean('Full Width')}
       >
         <Icon />
