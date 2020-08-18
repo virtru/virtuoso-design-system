@@ -1,3 +1,16 @@
+# v1.4.0 (Tue Aug 18 2020)
+
+#### 🚀 Enhancement
+
+- [PLAT-675] feat: add danger button [#62](https://github.com/avkvirtru/virtuoso-design-system/pull/62) ([@anivle](https://github.com/anivle) [@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 2
+
+- Anatoliy Leonov ([@anivle](https://github.com/anivle))
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v1.3.2 (Mon Aug 17 2020)
 
 #### 🐛 Bug Fix
