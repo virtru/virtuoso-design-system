@@ -1,11 +1,12 @@
 {
-  "name": "simple-app",
+  "name": "virtuoso-design-system--simple-app",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/avkvirtru/virtuoso-design-system.git"
+    "url": "git+https://github.com/virtru/virtuoso-design-system.git",
+    "directory": "examples/simple-app"
   },
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "start": "parcel serve --no-cache index.html"
   },
