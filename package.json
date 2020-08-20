@@ -34,22 +34,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/avkvirtru/virtuoso-design-system.git"
+    "url": "git+https://github.com/virtru/virtuoso-design-system.git"
   },
   "keywords": [
     "Virtru",
     "design system",
     "React"
   ],
-  "contributors": [
-    "Arthur Klepchukov",
-    "Ryan Schumacher"
-  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/avkvirtru/virtuoso-design-system/issues"
+    "url": "https://github.com/virtru/virtuoso-design-system/issues"
   },
-  "homepage": "https://github.com/avkvirtru/virtuoso-design-system#readme",
+  "homepage": "https://github.com/virtru/virtuoso-design-system#readme",
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.2",
     "@auto-it/all-contributors": "^9.50.1",
