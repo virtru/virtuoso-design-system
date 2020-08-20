@@ -1,3 +1,15 @@
+# v1.6.0 (Thu Aug 20 2020)
+
+#### 🚀 Enhancement
+
+- style(layout): center content [#65](https://github.com/avkvirtru/virtuoso-design-system/pull/65) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 1
+
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v1.5.1 (Thu Aug 20 2020)
 
 #### 🐛 Bug Fix
