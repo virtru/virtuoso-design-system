@@ -21,7 +21,7 @@
 }
 
 .containerInner {
-  flex: auto;
   max-width: var(--vds-container-width-xl);
+  margin: 0 auto;
   padding: calc(var(--vds-spacer-xs) + var(--vds-spacer-xs));
 }
