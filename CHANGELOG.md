@@ -1,3 +1,15 @@
+# v1.5.1 (Thu Aug 20 2020)
+
+#### 🐛 Bug Fix
+
+- fix(use-match-media): support ssr window undefined [#64](https://github.com/avkvirtru/virtuoso-design-system/pull/64) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 1
+
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v1.5.0 (Thu Aug 20 2020)
 
 #### 🚀 Enhancement
