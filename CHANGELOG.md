@@ -1,3 +1,24 @@
+# v1.6.1 (Mon Aug 24 2020)
+
+#### 🐛 Bug Fix
+
+- Update README.md [#71](https://github.com/virtru/virtuoso-design-system/pull/71) ([@jrschumacher](https://github.com/jrschumacher))
+- Fix deploy-storybook [#70](https://github.com/virtru/virtuoso-design-system/pull/70) ([@jrschumacher](https://github.com/jrschumacher))
+- docs: update links to new repository home [#68](https://github.com/virtru/virtuoso-design-system/pull/68) ([@avkvirtru](https://github.com/avkvirtru))
+- chore: clean up package.json [#67](https://github.com/virtru/virtuoso-design-system/pull/67) ([@jrschumacher](https://github.com/jrschumacher))
+- docs: move to MIT license [#66](https://github.com/virtru/virtuoso-design-system/pull/66) ([@avkvirtru](https://github.com/avkvirtru))
+
+#### ⚠️ Pushed to `master`
+
+- chore: fix storybook again ([@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 2
+
+- Arthur Klepchukov ([@avkvirtru](https://github.com/avkvirtru))
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v1.6.1 (Mon Aug 24, 2020)
 
 #### 🐛 Bug Fix
