@@ -15,11 +15,6 @@
   line-height: var(--vds-line-height-body);
 }
 
-.container p {
-  font-size: var(--vds-font-size-p);
-  line-height: var(--vds-line-height-p);
-}
-
 .containerInner {
   max-width: var(--vds-container-width-xl);
   margin: 0 auto;
