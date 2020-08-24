@@ -5,11 +5,13 @@
 
 This repo enables using the Virtuoso Design System as front-end code (HTML, CSS, & JavaScript).
 
-[Dive into the docs.](https://avkvirtru.github.io/virtuoso-design-system/)
+# 📖 [Dive into the docs](https://virtru.github.io/virtuoso-design-system/)
+
+# 🤖 [Explore the code](https://github.com/virtru/virtuoso-design-system)
 
 ## Docs
 
-The documentation for Virtuoso is [hosted on GitHub Pages](https://avkvirtru.github.io/virtuoso-design-system/) and powered by [Storybook](https://storybook.js.org). 
+The documentation for Virtuoso is [hosted on GitHub Pages](https://virtru.github.io/virtuoso-design-system/) and powered by [Storybook](https://storybook.js.org). 
 
 To run storybook locally:
 

@@ -16,4 +16,4 @@ npm start
 
 *Step 2*
 
-Check out the variety of components supported through the [Virtuoso Design System Storybook](avkvirtru.github.io/virtuoso-design-system/) and start adding them to your app!
+Check out the variety of components supported through the [Virtuoso Design System Storybook](virtru.github.io/virtuoso-design-system/) and start adding them to your app!
