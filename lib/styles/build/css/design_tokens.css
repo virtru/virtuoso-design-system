@@ -97,7 +97,7 @@
   --vds-shadow-focus: var(--vds-shadow-hover);
   --vds-shadow-pressed: 0 1px 4px 1px rgba(45, 50, 59, 0.3);
   --vds-shadow-hover-error: 0 1px 4px 1px rgba(81, 88, 100, 0.3);
-  --vds-shadow-focus-error: var(--vds-shadow-hoverError);
+  --vds-shadow-focus-error: var(--vds-shadow-hover-error);
   --vds-spacer-xxs: 3px;
   --vds-spacer-xs: 6px;
   --vds-spacer-sm: 12px;
