@@ -1,15 +1,16 @@
 # Virtuoso Design System
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+![Validate PR](https://github.com/virtru/virtuoso-design-system/workflows/Validate%20PR/badge.svg) ![Release](https://github.com/virtru/virtuoso-design-system/workflows/Release/badge.svg) ![Deploy Storybook](https://github.com/virtru/virtuoso-design-system/workflows/Deploy%20Storybook/badge.svg)
+
 
 This repo enables using the Virtuoso Design System as front-end code (HTML, CSS, & JavaScript).
 
-[Dive into the docs.](https://avkvirtru.github.io/virtuoso-design-system/)
+# 📖 [Dive into the docs](https://virtru.github.io/virtuoso-design-system/)
+
+# 🤖 [Explore the code](https://github.com/virtru/virtuoso-design-system)
 
 ## Docs
 
-The documentation for Virtuoso is [hosted on GitHub Pages](https://avkvirtru.github.io/virtuoso-design-system/) and powered by [Storybook](https://storybook.js.org). 
+The documentation for Virtuoso is [hosted on GitHub Pages](https://virtru.github.io/virtuoso-design-system/) and powered by [Storybook](https://storybook.js.org). 
 
 To run storybook locally:
 

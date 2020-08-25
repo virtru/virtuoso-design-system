@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: '12'
 
-      - name: Cache node modules
+      - name: 💸 Cache node modules
         uses: actions/cache@v2
         with:
           # npm cache files are stored in `~/.npm` on Linux/macOS
@@ -33,12 +33,10 @@ jobs:
             ${{ runner.OS }}-node-
             ${{ runner.OS }}-
 
-      - name: Create Release
+      - name: 📦 Install deps
+        run: npm ci
+
+      - name: 🛳 Deploy Storybook
+        run: npx -p @storybook/storybook-deployer storybook-to-ghpages --ci
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          git config user.name "$(git --no-pager log --format=format:'%an' -n 1)"
-          git config user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
-          npm ci
-          npm run storybook:deploy
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GH_TOKEN }}
