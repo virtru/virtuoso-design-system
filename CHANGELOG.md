@@ -1,3 +1,16 @@
+# v1.6.8 (Tue Aug 25 2020)
+
+#### 🐛 Bug Fix
+
+- fix(layout): add displayName to work with expandChildren [#75](https://github.com/virtru/virtuoso-design-system/pull/75) ([@jrschumacher](https://github.com/jrschumacher))
+- fix(helpers:expand-children): use displayName to prevent mangling [#75](https://github.com/virtru/virtuoso-design-system/pull/75) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 1
+
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v1.6.1 (Tue Aug 25 2020)
 
 #### 🐛 Bug Fix
