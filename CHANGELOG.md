@@ -17,6 +17,8 @@
 - Arthur Klepchukov ([@avkvirtru](https://github.com/avkvirtru))
 - Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
 
+---
+
 # v1.6.1 (Mon Aug 24, 2020)
 
 #### 🐛 Bug Fix
