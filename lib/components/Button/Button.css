@@ -24,6 +24,11 @@
   box-shadow: 0 1px 4px 1px rgba(var(--vds-color-blue-darker), 0.3);
 }
 
+.danger:hover,
+.danger:focus {
+  box-shadow: 0 1px 4px 1px rgba(var(--vds-color-red-darker), 0.3);
+}
+
 .base:disabled {
   pointer-events: none;
 }
@@ -52,9 +57,11 @@
 .primary.danger:hover,
 .primary.danger:focus {
   background-color: var(--vds-color-red-darkest);
+  border-color: var(--vds-color-red-darkest);
 }
 
-.primary:active {
+.primary:active,
+.primary.danger:active {
   background-color: var(--vds-color-slate-primary);
   border-color: var(--vds-color-slate-primary);
   color: var(--vds-color-white);
@@ -83,9 +90,11 @@
 .secondary.danger:hover,
 .secondary.danger:focus {
   color: var(--vds-color-red-darkest);
+  border-color: var(--vds-color-red-darkest);
 }
 
-.secondary:active {
+.secondary:active,
+.secondary.danger:active {
   background-color: var(--vds-color-slate-primary);
   border-color: var(--vds-color-slate-primary);
   color: var(--vds-color-white);
@@ -102,14 +111,21 @@
 }
 
 .noOutline:hover,
-.noOutline:focus {
+.noOutline:focus,
+.noOutline.danger:hover,
+.noOutline.danger:focus {
   border-color: var(--vds-color-white);
 }
 
-.noOutline:active {
+.noOutline:active,
+.noOutline.danger:active {
   background-color: var(--vds-color-slate-lightest);
   border-color: var(--vds-color-slate-lightest);
   color: var(--vds-color-blue-darkest);
+}
+
+.noOutline.danger:active {
+  color: var(--vds-color-red-darkest);
 }
 
 .noOutline:disabled {
