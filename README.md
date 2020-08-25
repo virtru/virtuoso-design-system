@@ -1,4 +1,6 @@
 # Virtuoso Design System
+![Validate PR](https://github.com/virtru/virtuoso-design-system/workflows/Validate%20PR/badge.svg) ![Release](https://github.com/virtru/virtuoso-design-system/workflows/Release/badge.svg) ![Deploy Storybook](https://github.com/virtru/virtuoso-design-system/workflows/Deploy%20Storybook/badge.svg)
+
 
 This repo enables using the Virtuoso Design System as front-end code (HTML, CSS, & JavaScript).
 
