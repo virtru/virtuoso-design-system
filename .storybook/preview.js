@@ -54,25 +54,3 @@ addDecorator(Story => (
 ));
 
 addDecorator(withKnobs);
-
-addParameters({
-  options: {
-    storySort: (a, b) => {
-      const introRegex = /^Basics\|/;
-      // We want the Basic story at the top
-      if (introRegex.test(a[1].kind)) {
-        // Make sure Introduction is at the top
-        if (b[1].kind.match(/|Introduction$/) && introRegex.test(a[1].kind)) return 1;
-        return -1
-      } else if (introRegex.test(b[1].kind)) {
-        return 1
-      }
-
-      // Sort the other stories by ID
-      // https://github.com/storybookjs/storybook/issues/548#issuecomment-530305279
-      return a[1].kind === b[1].kind
-        ? 0
-        : a[1].id.localeCompare(b[1].id, { numeric: true })
-    },
-  },
-})
