@@ -61,6 +61,8 @@ addParameters({
       const introRegex = /^Basics\|/;
       // We want the Basic story at the top
       if (introRegex.test(a[1].kind)) {
+        // Make sure Introduction is at the top
+        if (b[1].kind.match(/|Introduction$/) && introRegex.test(a[1].kind)) return 1;
         return -1
       } else if (introRegex.test(b[1].kind)) {
         return 1

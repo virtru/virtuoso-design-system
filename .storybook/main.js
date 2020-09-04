@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  stories: ['../stories/**/*.stories.(js|mdx)', '../stories/vrc-stories/**/*.js'],
+  stories: ['../stories/**/*.stories.(js|mdx)', '../stories/vrc-stories/**/*.js', '../lib/components/**/*.stories.(js|mdx)'],
   addons: [
     '@storybook/addon-a11y',
     'storybook-design-token',
