@@ -18,7 +18,6 @@
 }
 
 .headerText {
-  flex-grow: 1;
   color: var(--vds-color-white);
 }
 
@@ -67,3 +66,5 @@
 .whitelabelLogo {
   display: none;
 }
+
+

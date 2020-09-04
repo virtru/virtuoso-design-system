@@ -4,5 +4,12 @@
     "paths": {
       "@/*": ["./lib/*"]
     }
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "storybook-static",
+    ".loki",
+    ".lefthook"
+  ]
 }
