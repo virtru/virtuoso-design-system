@@ -1,3 +1,21 @@
+# v1.7.0 (Tue Sep 08 2020)
+
+#### 🚀 Enhancement
+
+- chore: revert storybook dep loading [#79](https://github.com/virtru/virtuoso-design-system/pull/79) ([@jrschumacher](https://github.com/jrschumacher))
+- feat(layout): add menu support to header [#79](https://github.com/virtru/virtuoso-design-system/pull/79) ([@jrschumacher](https://github.com/jrschumacher))
+- feat(menu): enhance menu to add nav [#79](https://github.com/virtru/virtuoso-design-system/pull/79) ([@jrschumacher](https://github.com/jrschumacher))
+- feat(helpers): add choiceOfChoices helper for opts [#79](https://github.com/virtru/virtuoso-design-system/pull/79) ([@jrschumacher](https://github.com/jrschumacher))
+- feat(helpers): optimize expand children [#79](https://github.com/virtru/virtuoso-design-system/pull/79) ([@jrschumacher](https://github.com/jrschumacher))
+- chore: improve storybook config [#79](https://github.com/virtru/virtuoso-design-system/pull/79) ([@jrschumacher](https://github.com/jrschumacher))
+- chore: add babel transform-react-display-name [#79](https://github.com/virtru/virtuoso-design-system/pull/79) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 1
+
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v1.6.8 (Tue Aug 25 2020)
 
 #### 🐛 Bug Fix
