@@ -1,3 +1,15 @@
+# v1.8.1 (Tue Sep 08 2020)
+
+#### 🐛 Bug Fix
+
+- fix(layout): add key to menu generation [#80](https://github.com/virtru/virtuoso-design-system/pull/80) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 1
+
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v1.7.0 (Tue Sep 08 2020)
 
 #### 🚀 Enhancement
