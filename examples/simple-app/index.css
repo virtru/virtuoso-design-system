@@ -49,3 +49,7 @@ li {
 
 .ex__body--md { font: var(--vds-font-md); }
 .ex__body--sm { font: var(--vds-font-sm); }
+
+.ex__body--regular-weight { font-weight: var(--vds-font-weight-regular); }
+.ex__body--semibold-weight { font-weight: var(--vds-font-weight-semibold); }
+.ex__body--bold-weight { font-weight: var(--vds-font-weight-bold); }
