@@ -1,3 +1,15 @@
+# v1.9.0 (Tue Sep 29 2020)
+
+#### 🚀 Enhancement
+
+- feat(design tokens): add font weight tokens [#86](https://github.com/virtru/virtuoso-design-system/pull/86) ([@avkvirtru](https://github.com/avkvirtru))
+
+#### Authors: 1
+
+- Arthur Klepchukov ([@avkvirtru](https://github.com/avkvirtru))
+
+---
+
 # v1.8.1 (Tue Sep 08 2020)
 
 #### 🐛 Bug Fix
