@@ -1,0 +1,12 @@
+{
+  "vds": {
+    "font": {
+      "weight": {
+        "regular":  { "value": "400" },
+        "normal":   { "value": "{vds.font.weight.regular.value}" },
+        "semibold": { "value": "600" },
+        "bold":     { "value": "700" }
+      }
+    }
+  }
+}

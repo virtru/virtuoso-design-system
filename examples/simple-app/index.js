@@ -37,6 +37,11 @@ function SimpleApp() {
 
         <p className="ex__body--md">Body copy</p>
         <small className="ex__body--sm">Small text</small>
+        
+        <hr />  
+        <p className="ex__body--md ex__body--regular-weight">Regular weight</p>
+        <p className="ex__body--md ex__body--semibold-weight">Semibold weight</p>
+        <p className="ex__body--md ex__body--bold-weight">Bold weight</p>
       </section>
     </Layout>
   );
