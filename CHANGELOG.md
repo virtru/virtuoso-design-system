@@ -1,3 +1,20 @@
+# v1.10.0 (Wed Sep 30 2020)
+
+#### 🚀 Enhancement
+
+- feat(button): set default button variant and size [#81](https://github.com/virtru/virtuoso-design-system/pull/81) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### 🐛 Bug Fix
+
+- Update lib/components/Button/Button.js [#81](https://github.com/virtru/virtuoso-design-system/pull/81) ([@jrschumacher](https://github.com/jrschumacher))
+- Change default variant [#81](https://github.com/virtru/virtuoso-design-system/pull/81) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 1
+
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v1.9.0 (Tue Sep 29 2020)
 
 #### 🚀 Enhancement
