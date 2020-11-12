@@ -55,6 +55,17 @@ storiesOf('Select', module)
       </Container>
     );
   })
+  .add('with massage', () => {
+    const options = generateOptions(3);
+    const [selectedOption] = options;
+    const message = text('Info massage', 'Hello world');
+
+    return (
+      <Container>
+        <Select message={message} placeholder="Select an Option" options={options} value={selectedOption} />
+      </Container>
+    );
+  })
   .add('first option selected', () => {
     const options = generateOptions(3);
     const [selectedOption] = options;

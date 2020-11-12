@@ -18,6 +18,28 @@
   z-index: -1;
 }
 
+.text {
+  display: flex;
+  align-items: center;
+  color: var(--slateDarker);
+  font: var(--small);
+  margin-top: 6px;
+}
+
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.icon {
+  display: flex;
+}
+
+.description {
+  margin-left: 6px;
+}
+
 .container :global(.select__control)::before {
   content: '';
   position: absolute;
