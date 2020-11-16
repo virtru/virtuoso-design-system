@@ -1,7 +1,6 @@
 # Virtuoso Design System
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+![Validate PR](https://github.com/virtru/virtuoso-design-system/workflows/Validate%20PR/badge.svg) ![Release](https://github.com/virtru/virtuoso-design-system/workflows/Release/badge.svg) ![Deploy Storybook](https://github.com/virtru/virtuoso-design-system/workflows/Deploy%20Storybook/badge.svg)
+
 
 This repo enables using the Virtuoso Design System as front-end code (HTML, CSS, & JavaScript).
 

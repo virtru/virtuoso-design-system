@@ -1,0 +1,10 @@
+.container {
+  display: block;
+}
+
+.variant_nav {
+  padding-right: 25px;
+  font-size: 19px;
+  line-height: 22px;
+  color: var(--vds-color-white);
+}

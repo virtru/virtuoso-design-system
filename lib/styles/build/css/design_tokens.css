@@ -81,6 +81,10 @@
   --vds-font-size-heading-md: calc(var(--vds-font-size-heading-sm) * var(--vds-font-scale-multiplier)); /* 31/36px !!! consider --vds-font-* to set all font properties, not just font-size */
   --vds-font-size-heading-lg: calc(var(--vds-font-size-heading-md) * var(--vds-font-scale-multiplier)); /* 39/48px !!! consider --vds-font-* to set all font properties, not just font-size */
   --vds-font-size-heading-xl: calc(var(--vds-font-size-heading-lg) * var(--vds-font-scale-multiplier)); /* 49/54px !!! consider --vds-font-* to set all font properties, not just font-size */
+  --vds-font-weight-regular: 400;
+  --vds-font-weight-normal: var(--vds-font-weight-regular);
+  --vds-font-weight-semibold: 600;
+  --vds-font-weight-bold: 700;
   --vds-line-height-xxs: 1.50; /* 8/12px !!! consider --vds-font-* to set all font properties, not just line-height */
   --vds-line-height-xs: 1.50; /* 10/15px !!! consider --vds-font-* to set all font properties, not just line-height */
   --vds-line-height-sm: 1.38; /* 13/18px !!! consider --vds-font-* to set all font properties, not just line-height */
