@@ -21,7 +21,7 @@ storiesOf('Tooltip', module)
   .lokiSkip('default', () => (
     <Tooltip
       overlay={text('Overlay', '12/19/2016 10:42:00 PM')}
-      trigger={select('Trigger', triggers, Tooltip.TRIGGER.DEFAULT)}
+      trigger={select('Trigger', triggers, defaultTrigger)}
       variant={select('Variant', variants, defaultVariant)}
       position={select('Position', positions, defaultPosition)}
       arrowPosition={select('Arrow position', arrowPositions, defaultArrowPosition)}
