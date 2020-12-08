@@ -127,10 +127,13 @@
     "animejs": "^3.0.1",
     "classnames": "^2.2.6",
     "clsx": "^1.1.1",
+    "d3-geo": "^2.0.1",
     "prop-types": "^15.7.2",
     "react-select": "^3.0.4",
+    "react-simple-maps": "^2.3.0",
     "react-tabs": "^3.0.0",
-    "react-toggle": "^4.1.1"
+    "react-toggle": "^4.1.1",
+    "react-tooltip": "^4.2.11"
   },
   "peerDependencies": {
     "react": "^16.3",
