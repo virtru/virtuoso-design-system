@@ -5,9 +5,12 @@
   cursor: pointer;
   border: 1px gray solid;
   overflow: hidden;
-  font-family: var(--vds-font-family-body);
 }
 
 .marker:hover {
   opacity: 0.8;
+}
+
+.tooltip {
+  font-family: var(--vds-font-family-body);
 }
