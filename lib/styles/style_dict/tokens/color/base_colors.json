@@ -21,6 +21,7 @@
         "lightest":   { "value": "#DEEEFF" },
         "lighter":    { "value": "#B2D6FF" },
         "primary":    { "value": "#3668FF", "comment": "Core brand color" },
+        "dark":       { "value": "#164eb6" },
         "darker":     { "value": "#174EB6", "comment": "Buttons" },
         "darkest":    { "value": "#001E4A", "comment": "Headers" }
       },
