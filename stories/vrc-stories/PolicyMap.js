@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
 import { PolicyMap } from '@';
-import sampleGeoData from './assets/sampleGeo2.json';
+import sampleGeoData from './assets/sampleGeoIso2.json';
 
 const onCountryClick = (e) => {
   window.alert(JSON.stringify(e));

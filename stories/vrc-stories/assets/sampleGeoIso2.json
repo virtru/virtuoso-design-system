@@ -1,54 +1,54 @@
 [
   {
-    "id": "United States",
+    "id": "US",
     "value": 1510
   },
   {
-    "id": "Ukraine",
+    "id": "UA",
     "value": 230
   },
   {
-    "id": "France",
+    "id": "FR",
     "value": 560
   },
   {
-    "id": "United Kingdom",
+    "id": "UK",
     "value": 170
   },
   {
-    "id": "Germany",
+    "id": "DE",
     "value": 40
   },
   {
-    "id": "Italy",
+    "id": "IT",
     "value": 156
   },
   {
-    "id": "Singapore",
+    "id": "SG",
     "value": 1400
   },
   {
-    "id": "India",
+    "id": "IN",
     "value": 76
   },
   {
-    "id": "Spain",
+    "id": "ES",
     "value": 45
   },
   {
-    "id": "Portugal",
+    "id": "PT",
     "value": 16
   },
   {
-    "id": "Mexico",
+    "id": "MX",
     "value": 405
   },
   {
-    "id": "Canada",
+    "id": "CA",
     "value": 212
   },
   {
-    "id": "Congo",
+    "id": "CG",
     "value": 10000
   }
 ]
