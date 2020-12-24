@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, color, number } from '@storybook/addon-knobs';
 import numeral from 'numeral';
@@ -30,30 +30,39 @@ const Total = ({ total }) => {
   );
 };
 
+const Story = () => {
+  const [activeId, setActiveId] = useState(null);
+
+  const handleItemClick = (item) => {
+    setActiveId(item.isActive ? null : item.id);
+  };
+
+  const data = [
+    {
+      id: 'sdk',
+      label: text('First text', 'SDK'),
+      color: color('First color', '#c2b7fa'),
+      value: number('First value', 27000),
+    },
+    {
+      id: 'file',
+      label: text('Second text', 'Files'),
+      color: color('Second color', '#bae5b3'),
+      value: number('Second number', 35000),
+    },
+    {
+      id: 'email',
+      label: text('Third text', 'Email'),
+      color: color('Third color', '#ffbc76'),
+      value: number('Third number', 28000),
+    },
+  ].map((item) => ({ ...item, isActive: item.id === activeId }));
+
+  return <PieChart data={data} onItemClick={handleItemClick} renderTotal={Total} />;
+};
+
 storiesOf('PieChart', module).add('Default', () => (
   <div style={{ width: size, height: size }}>
-    <PieChart
-      data={[
-        {
-          id: 'sdk',
-          label: text('First text', 'SDK'),
-          color: color('First color', '#c2b7fa'),
-          value: number('First value', 27000),
-        },
-        {
-          id: 'file',
-          label: text('Second text', 'Files'),
-          color: color('Second color', '#bae5b3'),
-          value: number('Second number', 35000),
-        },
-        {
-          id: 'email',
-          label: text('Third text', 'Email'),
-          color: color('Third color', '#ffbc76'),
-          value: number('Third number', 28000),
-        },
-      ]}
-      renderTotal={Total}
-    />
+    <Story />
   </div>
 ));
