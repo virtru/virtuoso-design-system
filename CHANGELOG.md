@@ -1,3 +1,15 @@
+# v1.11.0 (Wed Dec 28 2020)
+
+#### 🚀 Enhancement
+
+- feat(chart-container): add chart container component [#95](https://github.com/virtru/virtuoso-design-system/pull/95) ([@suchak1](https://github.com/suchak1))
+
+#### Authors: 1
+
+- Krish Suchak ([@suchak1](https://github.com/suchak1))
+
+---
+
 # v1.10.0 (Wed Sep 30 2020)
 
 #### 🚀 Enhancement
