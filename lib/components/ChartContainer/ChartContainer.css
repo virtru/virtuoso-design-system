@@ -25,6 +25,20 @@
 
 .select {
   width: 250px;
+  margin-right: -4px;
+}
+
+.subtitleDefault {
+  font-size: 16px;
+  font-family: var(--vds-font-family-body);
+}
+
+.subtitleWithBack {
+  padding-left: 72px;
+}
+
+.subtitleNoBack {
+  padding-left: 18px;
 }
 
 .title {
