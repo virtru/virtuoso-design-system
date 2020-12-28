@@ -9,7 +9,7 @@ const onCountryClick = (e) => {
   window.alert(JSON.stringify(e));
 };
 
-storiesOf('PolicyMap', module).lokiSkip('default', () => {
+storiesOf('PolicyMap', module).add('default', () => {
   const [focus, setFocus] = useState(0);
   return (
     <PolicyMap
