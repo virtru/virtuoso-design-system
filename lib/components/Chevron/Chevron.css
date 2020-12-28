@@ -9,7 +9,7 @@
 
 .left {
   composes: _chevron;
-  transform: translateX(25%) rotate(225deg);
+  transform: translateX(25%) translateY(25%) rotate(225deg);
 }
 
 .right {
