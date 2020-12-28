@@ -5,7 +5,7 @@ import { boolean, number, text } from '@storybook/addon-knobs';
 
 import { Select } from '@';
 
-const generateOptions = count =>
+const generateOptions = (count) =>
   Array.from({ length: count }).map((_, index) => ({
     label: `Option ${index + 1}`,
     value: index,

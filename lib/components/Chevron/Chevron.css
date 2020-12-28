@@ -1,0 +1,46 @@
+._chevron {
+  display: inline-block;
+  border-style: solid;
+  border-left-width: 0 !important;
+  border-bottom-width: 0 !important;
+  margin: 1px;
+  content: '';
+}
+
+.left {
+  composes: _chevron;
+  transform: translateX(25%) rotate(225deg);
+}
+
+.right {
+  composes: _chevron;
+  transform: translateX(-25%) rotate(45deg);
+}
+
+.down {
+  composes: _chevron;
+  transform: rotate(135deg);
+}
+
+.up {
+  composes: _chevron;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+.thin {
+  border-width: 1px;
+  height: 4px;
+  width: 4px;
+}
+
+.thick {
+  border-width: 2px;
+  height: 5px;
+  width: 5px;
+}
+
+.thicker {
+  border-width: 1.5px;
+  height: 9px;
+  width: 9px;
+}

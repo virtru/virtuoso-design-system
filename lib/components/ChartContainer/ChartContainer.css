@@ -1,119 +1,34 @@
-.overlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(var(--vds-color-slate-darker), 0.5);
+.container {
+  border-radius: 5px;
+  border: 1px solid var(--vds-color-black);
+}
+
+.row {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  z-index: 1000;
-}
-
-.small {
-  border-radius: 3px;
-  background-color: var(--vds-color-white);
-  box-sizing: border-box;
-  width: 450px;
-}
-
-.large {
-  border-radius: 3px;
-  background-color: var(--vds-color-white);
-  box-sizing: border-box;
-  width: 800px;
-}
-
-.header {
-  border-radius: 3px 3px 0 0;
-  padding: 23px 24px 4px 24px;
-  display: flex;
+  padding: 18px 0 6px 0;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
-.headerDark {
-  background-color: var(--vds-color-slate-darkest);
-  color: var(--vds-color-white);
-  fill: var(--vds-color-white);
+.rowContent {
+  display: flex;
 }
 
-.headerLight {
-  background-color: var(--vds-color-white);
-  color: var(--vds-color-slate-darkest);
-  fill: var(--vds-color-slate-darkest);
+.leftItem {
+  padding-left: 18px;
+}
+
+.rightItem {
+  padding-right: 18px;
+}
+
+.select {
+  width: 250px;
 }
 
 .title {
   display: flex;
   align-items: center;
-  font: var(--vds-font-heading-xxs);
-}
-
-.titleIcon {
-  margin-right: 5px;
-}
-
-.titleText {
-  margin-top: 2px;
-  font-size: 16px;
-}
-
-.closeButton {
-  margin-top: 2px;
-  font-size: 16px;
-  padding: 0;
-  border: none;
-  outline: none;
-  background: transparent;
-}
-
-.headerLight .closeButton {
-  color: var(--vds-color-slate-darkest);
-}
-
-.headerDark .closeButton {
-  color: var(--vds-color-white);
-}
-
-.closeButton:active {
-  color: var(--vds-color-slate-primary);
-}
-
-.body {
-  padding: 0 24px 21px 24px;
-}
-
-.content {
-  margin-top: 8px;
-  font: var(--vds-font-sm);
-  padding-bottom: 4px;
-}
-
-.footer {
-  padding-top: 20px;
-  padding-bottom: 4px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.footer > *:not(:first-child) {
-  margin-left: 12px;
-}
-
-@media (--vds-screen-mobile) {
-  .small,
-  .large {
-    width: 327px;
-  }
-
-  .footer {
-    flex-direction: column;
-  }
-
-  .footer > *:not(:first-child) {
-    margin-left: 0;
-    margin-top: 12px;
-  }
+  height: 36px;
 }
