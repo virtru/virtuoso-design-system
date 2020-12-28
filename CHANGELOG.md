@@ -1,4 +1,4 @@
-# v1.11.0 (Wed Dec 28 2020)
+# v1.12.0 (Mon Dec 28 2020)
 
 #### 🚀 Enhancement
 
@@ -7,6 +7,30 @@
 #### Authors: 1
 
 - Krish Suchak ([@suchak1](https://github.com/suchak1))
+
+---
+
+# v1.11.2 (Mon Dec 28 2020)
+
+#### 🐛 Bug Fix
+
+- CORE-1981 Export pie chart [#94](https://github.com/virtru/virtuoso-design-system/pull/94) ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+#### Authors: 1
+
+- Vlad Baranchuk ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+---
+
+# v1.11.1 (Wed Dec 23 2020)
+
+#### 🚀 Enhancement
+
+- feat(pie-chart): add pie chart [#92](https://github.com/virtru/virtuoso-design-system/pull/92) ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+#### Authors: 1
+
+- Vlad Baranchuk ([@kuguarpwnz](https://github.com/kuguarpwnz))
 
 ---
 

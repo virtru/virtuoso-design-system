@@ -1,6 +1,6 @@
 {
   "name": "virtuoso-design-system",
-  "version": "1.11.0",
+  "version": "1.12.0",
   "description": "A set of reusable elements that enable Virtru designers and Virtru engineers to create consistent Virtru products.",
   "author": "Virtru CI <ci@virtru.com>",
   "main": "dist/bundle.cjs.js",
@@ -58,7 +58,7 @@
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.0.0",
     "@commitlint/cli": "^9.1.2",
-    "@commitlint/config-conventional": "^9.1.2",
+    "@commitlint/config-conventional": "^11.0.0",
     "@rollup/plugin-alias": "^3.1.1",
     "@rollup/plugin-babel": "^5.1.0",
     "@rollup/plugin-commonjs": "^14.0.0",
@@ -124,9 +124,13 @@
     "url-loader": "^2.0.0"
   },
   "dependencies": {
+    "@nivo/core": "^0.67.0",
+    "@nivo/pie": "^0.67.0",
     "animejs": "^3.0.1",
     "classnames": "^2.2.6",
     "clsx": "^1.1.1",
+    "d3-shape": "^2.0.0",
+    "numeral": "^2.0.6",
     "prop-types": "^15.7.2",
     "react-select": "^3.0.4",
     "react-tabs": "^3.0.0",
