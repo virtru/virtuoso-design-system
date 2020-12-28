@@ -1,3 +1,15 @@
+# v1.11.2 (Mon Dec 28 2020)
+
+#### 🐛 Bug Fix
+
+- CORE-1981 Export pie chart [#94](https://github.com/virtru/virtuoso-design-system/pull/94) ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+#### Authors: 1
+
+- Vlad Baranchuk ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+---
+
 # v1.11.1 (Wed Dec 23 2020)
 
 #### 🚀 Enhancement
