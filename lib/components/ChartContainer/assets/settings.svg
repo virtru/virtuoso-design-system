@@ -7,12 +7,12 @@
     <g id="Round-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Dash-User-Files" transform="translate(-1187.000000, -256.000000)">
             <g id="1" transform="translate(249.000000, 230.000000)">
-                <g id="Buttons/Icon/.Secondary/.Enabled" transform="translate(930.000000, 18.000000)">
-                    <g id="Security-settings-solid-18" transform="translate(8.000000, 8.000000)">
+                <g id="SettingsButtonEnabled" transform="translate(930.000000, 18.000000)">
+                    <g id="SecuritySettingsIcon" transform="translate(8.000000, 8.000000)">
                         <mask id="mask-2" fill="white">
                             <use xlink:href="#path-1"></use>
                         </mask>
-                        <use id="Icon" fill="#174EB6" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <use id="SettingsIcon" fill="#174EB6" fill-rule="nonzero" xlink:href="#path-1"></use>
                     </g>
                 </g>
             </g>
