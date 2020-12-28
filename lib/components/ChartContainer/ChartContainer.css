@@ -1,6 +1,7 @@
 .container {
   border-radius: 5px;
   border: 1px solid var(--vds-color-slate-darker);
+  color: var(--vds-color-slate-darkest);
 }
 
 .row {
