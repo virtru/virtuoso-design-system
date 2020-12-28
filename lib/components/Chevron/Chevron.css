@@ -14,7 +14,7 @@
 
 .right {
   composes: _chevron;
-  transform: translateX(-25%) rotate(45deg);
+  transform: translateX(-25%) translateY(25%) rotate(45deg);
 }
 
 .down {
@@ -40,7 +40,7 @@
 }
 
 .thicker {
-  border-width: 1.5px;
+  border-width: 1px;
   height: 9px;
   width: 9px;
 }
