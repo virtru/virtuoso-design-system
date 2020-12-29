@@ -1,0 +1,19 @@
+.barChartContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.bar {
+  cursor: pointer;
+  transform: translateX(-20) !important;
+}
+
+.bar:hover {
+  opacity: 0.8;
+}
+
+.barLabel {
+  fill: var(--vds-color-blue-darker);
+  font-family: var(--vds-font-family-body);
+  font-size: var(--vds-font-size-sm);
+}
