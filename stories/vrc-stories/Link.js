@@ -18,7 +18,7 @@ const defaultVariant = Link.VARIANT.NORMAL;
 const printLinkTable = (size, children = 'I am a Link') => (
   <table style={{ fontSize: '18px' }}>
     <tr>
-      <th></th>
+      <th />
       <th>Normal</th>
       <th>Disabled</th>
     </tr>
