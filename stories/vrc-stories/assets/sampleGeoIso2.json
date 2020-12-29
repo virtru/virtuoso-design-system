@@ -1,62 +1,62 @@
 [
   {
     "id": "US",
-    "value": 10510
+    "value": 105100
   },
   {
     "id": "UA",
-    "value": 230
+    "value": 2300
   },
   {
     "id": "FR",
-    "value": 560
+    "value": 5600
   },
   {
     "id": "GB",
-    "value": 170
+    "value": 1700
   },
   {
     "id": "DE",
-    "value": 40
+    "value": 400
   },
   {
     "id": "IT",
-    "value": 156
+    "value": 1560
   },
   {
     "id": "SG",
-    "value": 1400
+    "value": 14000
   },
   {
     "id": "IN",
-    "value": 76
+    "value": 760
   },
   {
     "id": "ES",
-    "value": 45
+    "value": 450
   },
   {
     "id": "PT",
-    "value": 16
+    "value": 160
   },
   {
     "id": "MX",
-    "value": 405
+    "value": 4050
   },
   {
     "id": "CA",
-    "value": 212
+    "value": 2120
   },
   {
     "id": "ZA",
-    "value": 156
+    "value": 1560
   },
   {
     "id": "BR",
-    "value": 430
+    "value": 4300
   },
   {
     "id": "TR",
-    "value": 14
+    "value": 140
   }
 ]

@@ -3,7 +3,7 @@
   max-width: 935px;
   height: 539px;
   cursor: pointer;
-  border: 1px gray solid;
+  border: 1px var(--vds-color-slate-darker) solid;
   overflow: hidden;
   position: relative;
 }
