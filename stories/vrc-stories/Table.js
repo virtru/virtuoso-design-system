@@ -117,7 +117,7 @@ storiesOf('Table', module)
     const isSortable = boolean('Sortable on Address', false);
     const isErrorShown = boolean('Table Error', false);
 
-    const isAllSelected = Object.values(selectedState).every((isTrue) => isTrue);
+    const isAllSelected = Object.values(selectedState).every(Boolean);
     const changeSort = () => setSortDirection(sortOrder[sortDirection]);
     const sortedData = [...data];
 
