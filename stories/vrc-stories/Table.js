@@ -59,9 +59,9 @@ const data = [
   },
 ];
 
-const makeLookup = (set, key, valueFn = x => x) => {
+const makeLookup = (set, key, valueFn = (x) => x) => {
   const lookup = {};
-  set.forEach(element => {
+  set.forEach((element) => {
     const name = element[key];
     lookup[name] = valueFn(element);
   });
@@ -91,8 +91,8 @@ const toggleSelectedReducer = (state, action) => {
   }
 };
 
-const createActions = dispatch => ({
-  toggle: address => dispatch({ type: actionTypes.TOGGLE, address }),
+const createActions = (dispatch) => ({
+  toggle: (address) => dispatch({ type: actionTypes.TOGGLE, address }),
   allOn: () => dispatch({ type: actionTypes.ALL_ON }),
   allOff: () => dispatch({ type: actionTypes.ALL_OFF }),
 });
@@ -113,11 +113,11 @@ storiesOf('Table', module)
     const mode = select('Interaction type', ['none', 'hover', 'clickable'], 'none');
     const isHoverable = mode === 'hover';
     const isClickable = mode === 'clickable';
-    const onClick = isClickable ? d => () => actions.toggle(d.address) : () => undefined;
+    const onClick = isClickable ? (d) => () => actions.toggle(d.address) : () => undefined;
     const isSortable = boolean('Sortable on Address', false);
     const isErrorShown = boolean('Table Error', false);
 
-    const isAllSelected = Object.values(selectedState).every(isTrue => isTrue);
+    const isAllSelected = Object.values(selectedState).every(Boolean);
     const changeSort = () => setSortDirection(sortOrder[sortDirection]);
     const sortedData = [...data];
 
@@ -170,7 +170,7 @@ storiesOf('Table', module)
                 </TD>
               </TR>
             )}
-            {sortedData.map(d => (
+            {sortedData.map((d) => (
               <StoryTR
                 key={d.address}
                 data={d}
@@ -196,7 +196,7 @@ storiesOf('Table', module)
           </TR>
         </THead>
         <TBody>
-          {data.map(d => (
+          {data.map((d) => (
             <StoryTR key={d.address} data={d} />
           ))}
         </TBody>
@@ -215,7 +215,7 @@ storiesOf('Table', module)
           </TR>
         </THead>
         <TBody>
-          {data.map(d => (
+          {data.map((d) => (
             <StoryTR key={d.address} data={d} highlightOnHover />
           ))}
         </TBody>
@@ -249,7 +249,7 @@ storiesOf('Table', module)
               </div>
             </TD>
           </TR>
-          {data.map(d => (
+          {data.map((d) => (
             <StoryTR key={d.address} data={d} highlightOnHover />
           ))}
         </TBody>
@@ -260,7 +260,7 @@ storiesOf('Table', module)
     const [selectedState, dispatch] = useReducer(toggleSelectedReducer, selectedLookup);
     const [sortDirection, setSortDirection] = useState(TH.SORT_DIRECTION.SORT_OFF);
     const actions = createActions(dispatch);
-    const isAllSelected = Object.values(selectedState).every(isTrue => isTrue);
+    const isAllSelected = Object.values(selectedState).every((isTrue) => isTrue);
     const changeSort = () => setSortDirection(sortOrder[sortDirection]);
     const sortedData = [...data];
 
@@ -280,7 +280,7 @@ storiesOf('Table', module)
             onClickAddress={changeSort}
           />
           <TBody>
-            {sortedData.map(d => (
+            {sortedData.map((d) => (
               <StoryTR
                 key={d.address}
                 data={d}
