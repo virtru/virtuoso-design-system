@@ -18,6 +18,7 @@ import styles from './styles.css';
 // import design tokens so webpack and storybook-design-token render them
 import manualTokens from '../lib/styles/tokens.css';
 import builtTokens from '../lib/styles/build/css/design_tokens.css';
+import '../lib/styles/typography/index.css';
 
 // configure storybook-design-token
 const cssReq = require.context('!!raw-loader!../lib/components', true, /.\.css$/);
