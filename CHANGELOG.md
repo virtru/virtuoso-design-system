@@ -1,3 +1,18 @@
+# v1.13.0 (Tue Dec 29 2020)
+
+#### 🚀 Enhancement
+
+- test: tooltip render trigger [#89](https://github.com/virtru/virtuoso-design-system/pull/89) ([@avkvirtru](https://github.com/avkvirtru))
+- fix: tooltip error state missing from test:vrt [#89](https://github.com/virtru/virtuoso-design-system/pull/89) ([@avkvirtru](https://github.com/avkvirtru))
+- fix: lint:js error 'defaultTrigger' is assigned a value but never used [#89](https://github.com/virtru/virtuoso-design-system/pull/89) ([@avkvirtru](https://github.com/avkvirtru))
+- feat: add error tooltip variant, visible on render [#89](https://github.com/virtru/virtuoso-design-system/pull/89) ([@avkvirtru](https://github.com/avkvirtru))
+
+#### Authors: 1
+
+- Arthur Klepchukov ([@avkvirtru](https://github.com/avkvirtru))
+
+---
+
 # v1.12.0 (Tue Dec 29 2020)
 
 #### 🚀 Enhancement
