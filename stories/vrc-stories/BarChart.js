@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { number } from '@storybook/addon-knobs';
 
 import BarChart from '@/components/BarChart/BarChart';
 
@@ -21,8 +22,12 @@ const onClick = (e) => {
   console.log(e);
 };
 
-storiesOf('BarChart', module).add('Default', () => (
-  <div style={{ width: 900, height: 500 }}>
-    <BarChart data={data} yLabel="Domains" onClick={onClick} />
-  </div>
-));
+storiesOf('BarChart', module).add('Default', () => {
+  const numBars = number('Number of bars to show', 10);
+  const dataToShow = data.slice(0, numBars);
+  return (
+    <div style={{ width: 900, height: 500 }}>
+      <BarChart data={dataToShow} yLabel="Domains" onClick={onClick} />
+    </div>
+  );
+});
