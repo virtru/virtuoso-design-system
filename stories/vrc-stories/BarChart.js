@@ -1,8 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React, { useState } from 'react';
+import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { text, color, number } from '@storybook/addon-knobs';
-import numeral from 'numeral';
 
 import BarChart from '@/components/BarChart/BarChart';
 

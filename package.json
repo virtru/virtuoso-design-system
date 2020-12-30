@@ -1,6 +1,6 @@
 {
   "name": "virtuoso-design-system",
-  "version": "1.11.2",
+  "version": "1.13.0",
   "description": "A set of reusable elements that enable Virtru designers and Virtru engineers to create consistent Virtru products.",
   "author": "Virtru CI <ci@virtru.com>",
   "main": "dist/bundle.cjs.js",
@@ -130,12 +130,15 @@
     "animejs": "^3.0.1",
     "classnames": "^2.2.6",
     "clsx": "^1.1.1",
+    "d3-geo": "^2.0.1",
     "d3-shape": "^2.0.0",
     "numeral": "^2.0.6",
     "prop-types": "^15.7.2",
     "react-select": "^3.0.4",
+    "react-simple-maps": "^2.3.0",
     "react-tabs": "^3.0.0",
-    "react-toggle": "^4.1.1"
+    "react-toggle": "^4.1.1",
+    "react-tooltip": "^4.2.11"
   },
   "peerDependencies": {
     "react": "^16.3",
