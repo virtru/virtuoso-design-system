@@ -23,7 +23,7 @@ const onClick = (e) => {
 };
 
 storiesOf('BarChart', module).add('Default', () => {
-  const numBars = number('Number of bars to show', 10);
+  const numBars = number('Number of bars to show', 10, { max: 10, min: 1 });
   const dataToShow = data.slice(0, numBars);
   return (
     <div style={{ width: 900, height: 500 }}>
