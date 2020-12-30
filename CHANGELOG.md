@@ -1,3 +1,20 @@
+# v1.14.0 (Wed Dec 30 2020)
+
+#### 🚀 Enhancement
+
+- feature: Add map component (CORE-2021) [#93](https://github.com/virtru/virtuoso-design-system/pull/93) ([@NathanAB](https://github.com/NathanAB))
+
+#### 🐛 Bug Fix
+
+- fix(chevron): center chevron for use in buttons - CORE-1984 [#98](https://github.com/virtru/virtuoso-design-system/pull/98) ([@suchak1](https://github.com/suchak1))
+
+#### Authors: 2
+
+- Krish Suchak ([@suchak1](https://github.com/suchak1))
+- NathanAB ([@NathanAB](https://github.com/NathanAB))
+
+---
+
 # v1.13.0 (Tue Dec 29 2020)
 
 #### 🚀 Enhancement
