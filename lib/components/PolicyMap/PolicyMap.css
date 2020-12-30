@@ -4,6 +4,7 @@
   height: 539px;
   cursor: pointer;
   border: 1px var(--vds-color-slate-darker) solid;
+  border-radius: 5px;
   overflow: hidden;
   position: relative;
 }
