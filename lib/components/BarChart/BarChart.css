@@ -3,13 +3,27 @@
   height: 100%;
 }
 
-.bar {
+.barContainer {
   cursor: pointer;
   transform: translateX(-20) !important;
 }
 
-.bar:hover {
+.barContainer:hover {
   opacity: 0.8;
+}
+
+.bar {
+  rx: 5;
+  ry: 5;
+  fill: var(--vds-color-blue-lighter);
+  stroke-width: 0;
+  stroke: var(--vds-color-blue-lighter);
+}
+
+.barEdges {
+  fill: var(--vds-color-blue-lighter);
+  stroke-width: 0;
+  stroke: var(--vds-color-blue-lighter);
 }
 
 .barLabel {
