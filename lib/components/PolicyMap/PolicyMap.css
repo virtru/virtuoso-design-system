@@ -1,0 +1,83 @@
+.container {
+  width: 100%;
+  max-width: 935px;
+  height: 539px;
+  cursor: pointer;
+  border: 1px var(--vds-color-slate-darker) solid;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container path:focus {
+  outline: none;
+}
+
+.marker:hover {
+  opacity: 0.8;
+}
+
+.tooltip {
+  font-family: var(--vds-font-family-body);
+}
+
+.legendContainer {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.legendList {
+  list-style: none;
+  padding: 0;
+}
+
+.legendList .legendListItem {
+  margin: 12px 0;
+}
+
+.legendListButton {
+  cursor: pointer;
+  outline: none;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  font-family: var(--vds-font-family-body);
+  font-size: var(--vds-font-size-sm);
+  font-weight: bold;
+}
+
+.legendListDisabled {
+  filter: grayscale();
+  opacity: 0.5;
+}
+
+.legendBox {
+  display: inline-block;
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.quartile1 {
+  background-color: var(--vds-color-blue-lightest);
+}
+
+.quartile2 {
+  background-color: var(--vds-color-blue-lighter);
+}
+
+.quartile3 {
+  background-color: var(--vds-color-blue-primary);
+}
+
+.quartile4 {
+  background-color: var(--vds-color-blue-dark);
+}
