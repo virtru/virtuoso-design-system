@@ -41,6 +41,7 @@
 
 .thicker {
   border-width: 2px;
+  border-radius: 1px;
   height: 9px;
   width: 9px;
 }
