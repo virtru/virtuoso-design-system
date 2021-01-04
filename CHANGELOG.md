@@ -1,3 +1,16 @@
+# v1.14.1 (Mon Jan 04 2021)
+
+#### 🐛 Bug Fix
+
+- fix(design tokens): missing CSS var for shadow hover error [#72](https://github.com/virtru/virtuoso-design-system/pull/72) ([@pflynn-virtru](https://github.com/pflynn-virtru) [@avkvirtru](https://github.com/avkvirtru))
+
+#### Authors: 2
+
+- Arthur Klepchukov ([@avkvirtru](https://github.com/avkvirtru))
+- Paul Flynn ([@pflynn-virtru](https://github.com/pflynn-virtru))
+
+---
+
 # v1.14.0 (Wed Dec 30 2020)
 
 #### 🚀 Enhancement
