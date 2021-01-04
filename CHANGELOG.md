@@ -1,3 +1,15 @@
+# v1.14.2 (Mon Jan 04 2021)
+
+#### 🐛 Bug Fix
+
+- fix(chart-component): select width - CORE-1984 [#99](https://github.com/virtru/virtuoso-design-system/pull/99) ([@suchak1](https://github.com/suchak1))
+
+#### Authors: 1
+
+- Krish Suchak ([@suchak1](https://github.com/suchak1))
+
+---
+
 # v1.14.1 (Mon Jan 04 2021)
 
 #### 🐛 Bug Fix
