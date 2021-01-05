@@ -1,6 +1,6 @@
 {
   "name": "virtuoso-design-system",
-  "version": "1.13.0",
+  "version": "1.14.2",
   "description": "A set of reusable elements that enable Virtru designers and Virtru engineers to create consistent Virtru products.",
   "author": "Virtru CI <ci@virtru.com>",
   "main": "dist/bundle.cjs.js",
@@ -62,6 +62,7 @@
     "@rollup/plugin-alias": "^3.1.1",
     "@rollup/plugin-babel": "^5.1.0",
     "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
     "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-actions": "^5.3.19",

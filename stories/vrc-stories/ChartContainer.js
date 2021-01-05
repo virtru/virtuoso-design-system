@@ -7,7 +7,7 @@ import ChartContainer from '@/components/ChartContainer/ChartContainer';
 
 storiesOf('ChartContainer', module)
   .lokiSkip('default', () => (
-    <div style={{ width: '1000px' }}>
+    <div style={{ width: '982px' }}>
       <ChartContainer
         title="How much data is being protected?"
         subtitle="Policies created by type"
@@ -28,7 +28,7 @@ storiesOf('ChartContainer', module)
     </div>
   ))
   .add('no select', () => (
-    <div style={{ width: '1000px' }}>
+    <div style={{ width: '982px' }}>
       <ChartContainer
         title="How much data is being protected?"
         subtitle="Policies created by type"
@@ -48,7 +48,7 @@ storiesOf('ChartContainer', module)
     </div>
   ))
   .add('no buttons', () => (
-    <div style={{ width: '1000px' }}>
+    <div style={{ width: '982px' }}>
       <ChartContainer
         title="How much data is being protected?"
         subtitle="Policies created by type"
@@ -67,7 +67,7 @@ storiesOf('ChartContainer', module)
     </div>
   ))
   .add('minimal', () => (
-    <div style={{ width: '1000px' }}>
+    <div style={{ width: '982px' }}>
       <ChartContainer
         title="How much data is being protected?"
         subtitle="Policies created by type"
