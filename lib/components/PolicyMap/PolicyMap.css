@@ -40,6 +40,7 @@
 }
 
 .legendListButton {
+  color: var(--vds-color-slate-darkest);
   cursor: pointer;
   outline: none;
   background: none;
@@ -53,17 +54,21 @@
   font-weight: bold;
 }
 
-.legendListDisabled {
-  filter: grayscale();
-  opacity: 0.5;
-}
-
 .legendBox {
   display: inline-block;
   border-radius: 2px;
   width: 18px;
   height: 18px;
   margin-right: 8px;
+}
+
+.legendListDisabled {
+  color: var(--vds-color-slate-lighter);
+}
+
+.legendListDisabled .legendBox {
+  filter: grayscale();
+  opacity: 0.5;
 }
 
 .quartile1 {
