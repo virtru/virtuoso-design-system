@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { number } from '@storybook/addon-knobs';
+import { number, text, boolean } from '@storybook/addon-knobs';
 
 import BarChart from '@/components/BarChart/BarChart';
 
@@ -24,10 +24,21 @@ const onClick = (e) => {
 
 storiesOf('BarChart', module).add('Default', () => {
   const numBars = number('Number of bars to show', 10, { max: 10, min: 1 });
+  const yLabel = text('Y Axis Label', 'Domains');
+  const xLabel = text('X Axis Label', '');
+  const yTicks = boolean('Render Y Axis Ticks?', false);
+  const xTicks = boolean('Render X Axis Ticks?', true);
   const dataToShow = data.slice(0, numBars);
   return (
     <div style={{ width: 900, height: 500 }}>
-      <BarChart data={dataToShow} yLabel="Domains" onClick={onClick} />
+      <BarChart
+        data={dataToShow}
+        yLabel={yLabel}
+        xLabel={xLabel}
+        yTicks={yTicks}
+        xTicks={xTicks}
+        onClick={onClick}
+      />
     </div>
   );
 });
