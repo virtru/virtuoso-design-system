@@ -24,6 +24,7 @@
   padding-right: 18px;
 }
 
+/* stylelint-disable-next-line plugin/selector-tag-no-without-class */
 .settings button:active use {
   fill: var(--vds-color-white);
 }
