@@ -24,7 +24,7 @@
   padding-right: 18px;
 }
 
-.settings button:active use{
+.settings button:active use {
   fill: var(--vds-color-white);
 }
 
