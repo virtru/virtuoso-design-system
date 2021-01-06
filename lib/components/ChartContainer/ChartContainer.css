@@ -24,25 +24,28 @@
   padding-right: 18px;
 }
 
+.settings button:active use{
+  fill: var(--vds-color-white);
+}
+
 .select {
-  width: 240px;
   margin-right: -4px;
 }
 
-.subtitleDefault {
-  font: var(--vds-font-md);
-}
-
-.subtitleWithBack {
+.withBack {
   padding-left: 72px;
 }
 
-.subtitleNoBack {
-  padding-left: 18px;
+.withNoBack {
+  padding-left: 24px;
 }
 
 .title {
   display: flex;
   align-items: center;
   height: 36px;
+}
+
+.content {
+  padding: 12px 24px 24px;
 }
