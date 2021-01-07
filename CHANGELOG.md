@@ -1,3 +1,15 @@
+# v1.14.3 (Thu Jan 07 2021)
+
+#### 🐛 Bug Fix
+
+- fix(policy-map): fix policy map legend colors [#100](https://github.com/virtru/virtuoso-design-system/pull/100) ([@NathanAB](https://github.com/NathanAB))
+
+#### Authors: 1
+
+- NathanAB ([@NathanAB](https://github.com/NathanAB))
+
+---
+
 # v1.14.2 (Mon Jan 04 2021)
 
 #### 🐛 Bug Fix
