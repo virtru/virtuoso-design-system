@@ -1,3 +1,15 @@
+# v1.15.0 (Mon Jan 11 2021)
+
+#### 🚀 Enhancement
+
+- feature: add bar chart component [#97](https://github.com/virtru/virtuoso-design-system/pull/97) ([@NathanAB](https://github.com/NathanAB))
+
+#### Authors: 1
+
+- NathanAB ([@NathanAB](https://github.com/NathanAB))
+
+---
+
 # v1.14.3 (Thu Jan 07 2021)
 
 #### 🐛 Bug Fix
