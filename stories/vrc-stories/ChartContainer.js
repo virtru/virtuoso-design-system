@@ -2,17 +2,17 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-
+import styles from 'lib/styles/build/js/design_tokens';
 import ChartContainer from '@/components/ChartContainer/ChartContainer';
 import Select from '@/components/Select/Select';
 
 const children = (
   <div
     style={{
-      background: '#F7E2FC',
+      background: styles.vds.color.red.lightest.value,
       width: '930px',
       height: '300px',
-      border: '1px solid #515864',
+      border: `1px solid ${styles.vds.color.slate.darker.value}`,
       borderRadius: '5px',
     }}
   />
