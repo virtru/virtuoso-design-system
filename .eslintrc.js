@@ -31,7 +31,7 @@ module.exports = {
       'error',
       {
         ignoreArrayIndexes: true,
-        ignore: [-1, 0, 1],
+        ignore: [-1, 0, 1, 2],
       },
     ],
     'no-underscore-dangle': 'off',
