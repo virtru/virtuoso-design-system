@@ -20,12 +20,6 @@
   padding-left: 18px;
 }
 
-.backButton {
-  display: flex;
-  justify-content: center;
-  color: blue;
-}
-
 .rightItem {
   padding-right: 18px;
 }
