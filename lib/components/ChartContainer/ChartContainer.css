@@ -20,6 +20,12 @@
   padding-left: 18px;
 }
 
+.backButton {
+  display: flex;
+  justify-content: center;
+  color: blue;
+}
+
 .rightItem {
   padding-right: 18px;
 }
@@ -30,7 +36,11 @@
 }
 
 .select {
-  margin-right: -4px;
+  padding-right: 14px;
+}
+
+.subtitle {
+  font: var(--vds-font-md);
 }
 
 .withBack {

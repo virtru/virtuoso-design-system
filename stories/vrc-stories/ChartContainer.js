@@ -18,9 +18,12 @@ const children = (
   />
 );
 const props = {
-  title: 'How much data is being protected?',
+  title: 'Where is my protected data going?',
   subtitle: (
-    <div style={{ fontSize: '1.6rem', fontFamily: 'Open Sans' }}> Policies created by type </div>
+    <>
+      <span> 30,212 recipients at </span>
+      <span style={{ fontWeight: styles.vds.font.weight.bold.value }}> company-one.com </span>
+    </>
   ),
 };
 
