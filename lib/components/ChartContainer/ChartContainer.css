@@ -24,25 +24,33 @@
   padding-right: 18px;
 }
 
-.select {
-  width: 240px;
-  margin-right: -4px;
+/* stylelint-disable-next-line plugin/selector-tag-no-without-class */
+.settings button:active use {
+  fill: var(--vds-color-white);
 }
 
-.subtitleDefault {
+.select {
+  padding-right: 14px;
+}
+
+.subtitle {
   font: var(--vds-font-md);
 }
 
-.subtitleWithBack {
+.withBack {
   padding-left: 72px;
 }
 
-.subtitleNoBack {
-  padding-left: 18px;
+.withNoBack {
+  padding-left: 24px;
 }
 
 .title {
   display: flex;
   align-items: center;
   height: 36px;
+}
+
+.content {
+  padding: 12px 24px 24px;
 }

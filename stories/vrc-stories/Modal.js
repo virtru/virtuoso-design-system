@@ -2,7 +2,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean, text } from '@storybook/addon-knobs';
-
+import styles from 'lib/styles/build/js/design_tokens';
 import { Button, Modal } from '@';
 
 // eslint-disable-next-line react/prop-types
@@ -24,7 +24,7 @@ const ModalFooter = () => (
 const ModalContentSmall = () => (
   <div
     style={{
-      color: '#2d323b',
+      color: styles.vds.color.slate.darkest.value,
       font: "normal 13px 'Open Sans', Helvetica, Arial, sans-serif",
       lineHeight: '18px',
     }}
@@ -37,7 +37,7 @@ const ModalContentSmall = () => (
 const ModalContentLarge = () => (
   <div
     style={{
-      background: '#F7E2FC',
+      background: styles.vds.color.red.lightest.value,
       padding: '20px',
       maxWidth: '800px',
       height: '300px',

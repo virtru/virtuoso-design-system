@@ -1,86 +1,82 @@
+/* eslint-disable no-alert */
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { object, text } from '@storybook/addon-knobs';
-
+import styles from 'lib/styles/build/js/design_tokens';
 import ChartContainer from '@/components/ChartContainer/ChartContainer';
+import Select from '@/components/Select/Select';
+
+const children = (
+  <div
+    style={{
+      background: styles.vds.color.red.lightest.value,
+      width: '930px',
+      height: '300px',
+      border: `1px solid ${styles.vds.color.slate.darker.value}`,
+      borderRadius: '5px',
+    }}
+  />
+);
+const props = {
+  title: 'Where is my protected data going?',
+  subtitle: (
+    <>
+      <span> 30,212 recipients at </span>
+      <span style={{ fontWeight: styles.vds.font.weight.bold.value }}> company-one.com </span>
+    </>
+  ),
+};
+
+const select = (
+  <div style={{ width: '240px' }}>
+    <Select
+      value="Select another domain"
+      options={[
+        { value: 'domain1', label: 'domain1.com' },
+        { value: 'domain2', label: 'domain2.com' },
+        { value: 'domain3', label: 'domain3.com' },
+      ]}
+      placeholder="Select another domain"
+    />
+  </div>
+);
 
 storiesOf('ChartContainer', module)
   .lokiSkip('default', () => (
-    <div style={{ width: '982px' }}>
-      <ChartContainer
-        title="How much data is being protected?"
-        subtitle="Policies created by type"
-        showSelect
-        onBackClick={() => {}}
-        onSettingsClick={() => {}}
-        value="Select another domain"
-        options={object('Options', [
-          { value: 'domain1', label: 'domain1.com' },
-          { value: 'domain2', label: 'domain2.com' },
-          { value: 'domain3', label: 'domain3.com' },
-        ])}
-        placeholder={text('Placeholder', 'Select another domain')}
-      >
-        {text('Inner content', 'I am inner html')}
-        {text('Inner content', 'I am inner html')}
-      </ChartContainer>
-    </div>
+    <ChartContainer
+      onBackClick={() => {
+        alert('back');
+      }}
+      onSettingsClick={() => {
+        alert('settings');
+      }}
+      select={select}
+      {...props}
+    >
+      {children}
+    </ChartContainer>
   ))
   .add('no select', () => (
-    <div style={{ width: '982px' }}>
-      <ChartContainer
-        title="How much data is being protected?"
-        subtitle="Policies created by type"
-        onBackClick={() => {}}
-        onSettingsClick={() => {}}
-        value="Select another domain"
-        options={object('Options', [
-          { value: 'domain1', label: 'domain1.com' },
-          { value: 'domain2', label: 'domain2.com' },
-          { value: 'domain3', label: 'domain3.com' },
-        ])}
-        placeholder={text('Placeholder', 'Select another domain')}
-      >
-        {text('Inner content', 'I am inner html')}
-        {text('Inner content', 'I am inner html')}
-      </ChartContainer>
-    </div>
+    <ChartContainer
+      onBackClick={() => {
+        alert('back');
+      }}
+      onSettingsClick={() => {
+        alert('settings');
+      }}
+      {...props}
+    >
+      {children}
+    </ChartContainer>
   ))
-  .add('no buttons', () => (
-    <div style={{ width: '982px' }}>
-      <ChartContainer
-        title="How much data is being protected?"
-        subtitle="Policies created by type"
-        showSelect
-        value="Select another domain"
-        options={object('Options', [
-          { value: 'domain1', label: 'domain1.com' },
-          { value: 'domain2', label: 'domain2.com' },
-          { value: 'domain3', label: 'domain3.com' },
-        ])}
-        placeholder={text('Placeholder', 'Select another domain')}
-      >
-        {text('Inner content', 'I am inner html')}
-        {text('Inner content', 'I am inner html')}
-      </ChartContainer>
-    </div>
+  .add('no back', () => (
+    <ChartContainer
+      onSettingsClick={() => {
+        alert('settings');
+      }}
+      {...props}
+    >
+      {children}
+    </ChartContainer>
   ))
-  .add('minimal', () => (
-    <div style={{ width: '982px' }}>
-      <ChartContainer
-        title="How much data is being protected?"
-        subtitle="Policies created by type"
-        value="Select another domain"
-        options={object('Options', [
-          { value: 'domain1', label: 'domain1.com' },
-          { value: 'domain2', label: 'domain2.com' },
-          { value: 'domain3', label: 'domain3.com' },
-        ])}
-        placeholder={text('Placeholder', 'Select another domain')}
-      >
-        {text('Inner content', 'I am inner html')}
-        {text('Inner content', 'I am inner html')}
-      </ChartContainer>
-    </div>
-  ));
+  .add('minimal', () => <ChartContainer {...props}>{children}</ChartContainer>);

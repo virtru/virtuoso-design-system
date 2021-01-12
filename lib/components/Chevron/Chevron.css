@@ -9,12 +9,12 @@
 
 .left {
   composes: _chevron;
-  transform: translateX(25%) translateY(15%) rotate(225deg);
+  transform: translateX(30%) translateY(15%) rotate(225deg);
 }
 
 .right {
   composes: _chevron;
-  transform: translateX(-25%) translateY(15%) rotate(45deg);
+  transform: translateX(-30%) translateY(15%) rotate(45deg);
 }
 
 .down {
