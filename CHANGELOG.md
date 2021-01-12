@@ -1,3 +1,15 @@
+# v1.15.1 (Tue Jan 12 2021)
+
+#### 🐛 Bug Fix
+
+- fix(chart-container): settings button - CORE-1984 [#101](https://github.com/virtru/virtuoso-design-system/pull/101) ([@suchak1](https://github.com/suchak1))
+
+#### Authors: 1
+
+- Krish Suchak ([@suchak1](https://github.com/suchak1))
+
+---
+
 # v1.15.0 (Mon Jan 11 2021)
 
 #### 🚀 Enhancement
