@@ -128,6 +128,7 @@
     "@nivo/bar": "^0.67.0",
     "@nivo/core": "^0.67.0",
     "@nivo/pie": "^0.67.0",
+    "@testing-library/user-event": "^12.6.0",
     "animejs": "^3.0.1",
     "classnames": "^2.2.6",
     "clsx": "^1.1.1",
