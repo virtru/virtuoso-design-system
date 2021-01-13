@@ -1,7 +1,7 @@
 _Please ensure to label (via GitHub labels) the PR with either patch, minor, or major._
 
 ### Proposed Changes
-_Please use the Jira Key followd by the changes_
+_Please use the Jira Key followed by the changes_
 
 - JIRAKEY-1234
   - Some change
