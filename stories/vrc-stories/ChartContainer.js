@@ -35,8 +35,18 @@ const select = (
         { value: 'domain1', label: 'domain1.com' },
         { value: 'domain2', label: 'domain2.com' },
         { value: 'domain3', label: 'domain3.com' },
+        { value: 'domain4', label: 'domain4.com' },
+        { value: 'domain5', label: 'domain5.com' },
+        { value: 'domain6', label: 'domain6-thisoneisreallylongand-goesonforever.com' },
+        { value: 'domain7', label: 'domain7.com' },
+        { value: 'domain8', label: 'domain8.com' },
+        { value: 'domain9', label: 'domain9.com' },
+        { value: 'domain10', label: 'domain10.com' },
+        { value: 'domain11', label: 'domain11.com' },
+        { value: 'domain12', label: 'domain12.com' },
       ]}
       placeholder="Select another domain"
+      isSearchable
     />
   </div>
 );
