@@ -1,3 +1,15 @@
+# v1.16.1 (Thu Jan 14 2021)
+
+#### 🐛 Bug Fix
+
+- fix(chevron): centering [#103](https://github.com/virtru/virtuoso-design-system/pull/103) ([@suchak1](https://github.com/suchak1))
+
+#### Authors: 1
+
+- Krish Suchak ([@suchak1](https://github.com/suchak1))
+
+---
+
 # v1.16.0 (Thu Jan 14 2021)
 
 #### 🚀 Enhancement
