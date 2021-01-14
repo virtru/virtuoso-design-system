@@ -24,12 +24,17 @@
   padding-right: 18px;
 }
 
-.settings button:active use{
+/* stylelint-disable-next-line plugin/selector-tag-no-without-class */
+.settings button:active use {
   fill: var(--vds-color-white);
 }
 
 .select {
-  margin-right: -4px;
+  padding-right: 14px;
+}
+
+.subtitle {
+  font: var(--vds-font-md);
 }
 
 .withBack {

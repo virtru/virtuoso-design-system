@@ -2,25 +2,28 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-
+import styles from 'lib/styles/build/js/design_tokens';
 import ChartContainer from '@/components/ChartContainer/ChartContainer';
 import Select from '@/components/Select/Select';
 
 const children = (
   <div
     style={{
-      background: '#F7E2FC',
+      background: styles.vds.color.red.lightest.value,
       width: '930px',
       height: '300px',
-      border: '1px solid #515864',
+      border: `1px solid ${styles.vds.color.slate.darker.value}`,
       borderRadius: '5px',
     }}
   />
 );
 const props = {
-  title: 'How much data is being protected?',
+  title: 'Where is my protected data going?',
   subtitle: (
-    <div style={{ fontSize: '1.6rem', fontFamily: 'Open Sans' }}> Policies created by type </div>
+    <>
+      <span> 30,212 recipients at </span>
+      <span style={{ fontWeight: styles.vds.font.weight.bold.value }}> company-one.com </span>
+    </>
   ),
 };
 
@@ -32,8 +35,18 @@ const select = (
         { value: 'domain1', label: 'domain1.com' },
         { value: 'domain2', label: 'domain2.com' },
         { value: 'domain3', label: 'domain3.com' },
+        { value: 'domain4', label: 'domain4.com' },
+        { value: 'domain5', label: 'domain5.com' },
+        { value: 'domain6', label: 'domain6-thisoneisreallylongand-goesonforever.com' },
+        { value: 'domain7', label: 'domain7.com' },
+        { value: 'domain8', label: 'domain8.com' },
+        { value: 'domain9', label: 'domain9.com' },
+        { value: 'domain10', label: 'domain10.com' },
+        { value: 'domain11', label: 'domain11.com' },
+        { value: 'domain12', label: 'domain12.com' },
       ]}
       placeholder="Select another domain"
+      isSearchable
     />
   </div>
 );

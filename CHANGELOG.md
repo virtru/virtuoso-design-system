@@ -1,3 +1,57 @@
+# v1.16.0 (Thu Jan 14 2021)
+
+#### 🚀 Enhancement
+
+- CCR-41: Make Chart container's Select searchable [#102](https://github.com/virtru/virtuoso-design-system/pull/102) (stykhenko@virtru.com [@STykhenko](https://github.com/STykhenko))
+
+#### 🐛 Bug Fix
+
+- chore: update pr template [#96](https://github.com/virtru/virtuoso-design-system/pull/96) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 3
+
+- [@STykhenko](https://github.com/STykhenko)
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+- Sergii Tykhenko (stykhenko@virtru.com)
+
+---
+
+# v1.15.1 (Tue Jan 12 2021)
+
+#### 🐛 Bug Fix
+
+- fix(chart-container): settings button - CORE-1984 [#101](https://github.com/virtru/virtuoso-design-system/pull/101) ([@suchak1](https://github.com/suchak1))
+
+#### Authors: 1
+
+- Krish Suchak ([@suchak1](https://github.com/suchak1))
+
+---
+
+# v1.15.0 (Mon Jan 11 2021)
+
+#### 🚀 Enhancement
+
+- feature: add bar chart component [#97](https://github.com/virtru/virtuoso-design-system/pull/97) ([@NathanAB](https://github.com/NathanAB))
+
+#### Authors: 1
+
+- NathanAB ([@NathanAB](https://github.com/NathanAB))
+
+---
+
+# v1.14.3 (Thu Jan 07 2021)
+
+#### 🐛 Bug Fix
+
+- fix(policy-map): fix policy map legend colors [#100](https://github.com/virtru/virtuoso-design-system/pull/100) ([@NathanAB](https://github.com/NathanAB))
+
+#### Authors: 1
+
+- NathanAB ([@NathanAB](https://github.com/NathanAB))
+
+---
+
 # v1.14.2 (Mon Jan 04 2021)
 
 #### 🐛 Bug Fix
