@@ -1,3 +1,15 @@
+# v1.17.0 (Wed Jan 27 2021)
+
+#### 🚀 Enhancement
+
+- fix: exported BarChart from components [#120](https://github.com/virtru/virtuoso-design-system/pull/120) ([@dillonthompson](https://github.com/dillonthompson))
+
+#### Authors: 1
+
+- Dillon Thompson ([@dillonthompson](https://github.com/dillonthompson))
+
+---
+
 # v1.16.1 (Thu Jan 14 2021)
 
 #### 🐛 Bug Fix
