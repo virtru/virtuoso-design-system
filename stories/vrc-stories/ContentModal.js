@@ -1,42 +1,34 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { boolean, text } from '@storybook/addon-knobs';
-import styles from 'lib/styles/build/js/design_tokens';
+import { text } from '@storybook/addon-knobs';
 import { Button, ContentModal } from '@';
-
-// eslint-disable-next-line react/prop-types
-const Container = ({ children }) => (
-  <div style={{ maxWidth: '400px', display: 'flex', flexGrow: '1' }}>{children}</div>
-);
 
 const ModalContentLarge = () => (
   <div
     style={{
-      background: styles.vds.color.white.value,
-      // padding: '20px',
+      // background: styles.vds.color.white.value,
       width: '1008',
-      height: '812px',
+      // height: '812px',
+      height: '200px',
     }}
   />
 );
 
 storiesOf('ContentModal', module).lokiSkip('default', () => {
-  const isOpened = boolean('ContentModal is opened', true);
-  const title = text('ContentModal title', 'Warning this is a ContentModal Title');
+  const titleKey = text('Filename:');
+  const titleValue = text('january-reports.pdf');
 
   return (
-    <Container>
-      {isOpened && (
-        <ContentModal
-          titleKey={title}
-          onRequestClose={() => alert('close')}
-          onRequestBack={() => alert('back')}
-        >
-          {' '}
-          {ModalContentLarge()}{' '}
-        </ContentModal>
-      )}
-    </Container>
+    <ContentModal
+      header={<Button variant={Button.VARIANT.SECONDARY} size={Button.SIZE.SQUARE} />}
+      titleKey={titleKey}
+      titleValue={titleValue}
+      onRequestClose={() => alert('close')}
+      onRequestBack={() => alert('back')}
+    >
+      {' '}
+      {ModalContentLarge()}{' '}
+    </ContentModal>
   );
 });
