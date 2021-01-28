@@ -14,6 +14,7 @@
     "build:watch": "npm run build -- --watch --watch.include 'lib/**'",
     "clean": "rimraf dist/*",
     "prepublishOnly": "npm run build",
+    "preinstall": "npm run build",
     "start": "npm run storybook",
     "test": "run-s test:*",
     "test-ci": "jest --ci --coverage",
