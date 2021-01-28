@@ -6,7 +6,7 @@ const commonjs = require('@rollup/plugin-commonjs');
 const postcss = require('rollup-plugin-postcss');
 const reactSvg = require('rollup-plugin-react-svg');
 const copy = require('rollup-plugin-copy');
-// const json = require('@rollup/plugin-json');
+const json = require('@rollup/plugin-json');
 const postcssConfig = require('./postcss.config');
 
 module.exports = {
@@ -44,6 +44,6 @@ module.exports = {
         { src: 'lib/styles/typography/css/*.css', dest: 'dist/font-style' },
       ],
     }),
-    // json(),
+    json(),
   ],
 };
