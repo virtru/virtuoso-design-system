@@ -29,7 +29,14 @@ module.exports = {
       entries: [{ find: '@', replacement: path.join(__dirname, '..', 'lib') }],
     }),
     postcss(postcssConfig),
-    nodeResolve(),
+    nodeResolve({
+      dedupe: [
+        'recompose',
+        '@nivo/core/recompose',
+        '@nivo/legends/recompose',
+        '@nivo/bar/recompose',
+      ],
+    }),
     babel({
       babelHelpers: 'bundled',
       extensions: ['.js', '.jsx', '.svg'],
