@@ -38,16 +38,22 @@
 .title {
   display: flex;
   align-items: center;
-  font: var(--vds-font-heading-xxs);
+  font: var(--vds-font-heading-md);
+  padding-bottom: 13px;
 }
 
-.titleIcon {
-  margin-right: 5px;
+.titleKey {
+  color: var(--vds-color-slate-primary);
 }
 
-.titleText {
-  margin-top: 2px;
-  font-size: 16px;
+.titleValue {
+  color: var(--vds-color-slate-darkest);
+}
+
+.subtitle {
+  font: var(--vds-font-md);
+  color: var(--vds-color-slate-darkest);
+  padding-bottom: 36px;
 }
 
 .backButton {
