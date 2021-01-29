@@ -20,12 +20,12 @@ const ModalContentLarge = () => (
       ))}
     </Tabs>
     <div
-      style={{
-        // background: styles.vds.color.white.value,
-        // width: '1008',
-        // height: '812px',
-        height: '568px',
-      }}
+    // style={{
+    // background: styles.vds.color.white.value,
+    // width: '1008',
+    // height: '812px',
+    // height: '568px',
+    // }}
     />
   </>
 );

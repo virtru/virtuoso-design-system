@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="26px" height="30px" viewBox="0 0 26 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
-    <title>6FCDDD99-B7CF-4435-94E0-1E1E8392C49A</title>
+    <title>B24AB84B-9BB9-41CB-9A1A-B475AA041DD5</title>
     <desc>Created with sketchtool.</desc>
     <defs>
         <linearGradient x1="23.965115%" y1="100%" x2="84.7222222%" y2="0%" id="linearGradient-1">
@@ -16,8 +16,8 @@
         </filter>
     </defs>
     <g id="File-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Appendix---Format-Specific-Icons" transform="translate(-162.000000, -360.000000)">
-            <g id="Attachment-Chip/Model/.Normal-Copy-2" transform="translate(150.000000, 348.000000)">
+        <g id="Appendix---Format-Specific-Icons" transform="translate(-432.000000, -360.000000)">
+            <g id="Attachment-Chip/Model/.Normal-Copy-9" transform="translate(420.000000, 348.000000)">
                 <g id="Attachment-Chip/Model/.Normal">
                     <g id="file-icon" transform="translate(12.000000, 12.000000)">
                         <path d="M15,0 L25,10 L25,26.5 C25,28.4329966 23.4329966,30 21.5,30 L3.5,30 C1.56700338,30 0,28.4329966 0,26.5 L0,3.5 C0,1.56700338 1.56700338,0 3.5,0 L15,0 Z" id="page" fill="url(#linearGradient-1)"></path>
@@ -26,12 +26,12 @@
                             <use fill="#393C44" fill-rule="evenodd" xlink:href="#path-2"></use>
                         </g>
                         <g id="File-Icon-Contents">
-                            <g id="Text-Color" transform="translate(0.000000, 10.000000)">
-                                <text id="File-Format" font-family="OpenSans-Bold, Open Sans" font-size="8" font-weight="bold" line-spacing="12" fill="#FFFFFF">
-                                    <tspan x="1.13867188" y="9">DOCX</tspan>
-                                </text>
-                                <rect id="Icon" fill="#3A9EF2" x="0" y="-10" width="25" height="30"></rect>
+                            <g id="Lock-Icon" transform="translate(5.700000, 7.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                <path d="M3.78512446,4.67038605 L3.78512446,4.07794662 C3.78512446,2.09829724 5.10183521,0.576071436 7.00177723,0.576071436 C8.89993353,0.576071436 10.2020226,2.09503151 10.2020226,4.07794662 L10.2020226,4.67038605 L10.5387917,4.67038605 C11.6433612,4.67038605 12.5387917,5.56581655 12.5387917,6.67038605 L12.5387917,11.4239286 C12.5387917,12.5284981 11.6433612,13.4239286 10.5387917,13.4239286 L3.46120834,13.4239286 C2.35663884,13.4239286 1.46120834,12.5284981 1.46120834,11.4239286 L1.46120834,6.67038605 C1.46120834,5.56581655 2.35663884,4.67038605 3.46120834,4.67038605 L3.78512446,4.67038605 Z M4.95179113,4.67038605 L9.03535589,4.67038605 L9.03535589,4.07794662 C9.03535589,2.70289626 8.21228529,1.74273812 7.00177723,1.74273812 C5.78679565,1.74273812 4.95179113,2.70807194 4.95179113,4.07794662 L4.95179113,4.67038605 Z M7.90753912,7.50429101 C7.90753912,8.68373478 7.14232342,9.27283761 6.56997004,9.54850752 L6.56997004,9.52213532 L6.56997004,7.09471721 L5.54407855,7.09471721 L5.54407855,10.8736174 L6.15622592,10.7550045 C7.1168855,10.5687895 8.93349357,9.64984855 8.93349357,7.50429101 C8.93349357,7.2258353 8.7038596,7.00000017 8.42051635,7.00000017 C8.13723605,7.00000017 7.90753912,7.2258353 7.90753912,7.50429101 Z" id="Icon"></path>
                             </g>
+                            <text id="File-Format" font-family="OpenSans-Bold, Open Sans" font-size="6" font-weight="bold" fill="#FFFFFF">
+                                <tspan x="3.97900391" y="27">DOCX</tspan>
+                            </text>
                         </g>
                     </g>
                 </g>
