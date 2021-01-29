@@ -48,7 +48,7 @@ storiesOf('ContentModal', module).lokiSkip('default', () => {
       title={title}
       subtitle={subtitle}
       onRequestClose={() => alert('close')}
-      onRequestBack={() => alert('back')}
+      // onRequestBack={() => alert('back')}
     >
       {ModalContentLarge()}
     </ContentModal>
