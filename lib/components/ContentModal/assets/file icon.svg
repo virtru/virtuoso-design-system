@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="30px" viewBox="0 0 26 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
+    <title>16339A0F-02E6-41E4-BD74-EC8FB8AB61F3</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="23.965115%" y1="100%" x2="84.7222222%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#969DA9" offset="0%"></stop>
+            <stop stop-color="#646A78" offset="100%"></stop>
+        </linearGradient>
+        <path d="M15,0 L21.3232233,0 C23.2562199,0 25,1.74378007 25,3.6767767 L25,10 L15,0 Z" id="path-2"></path>
+        <filter x="-20.0%" y="-30.0%" width="140.0%" height="140.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0967221467 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="File-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Appendix---Format-Specific-Icons" transform="translate(-162.000000, -290.000000)">
+            <g id="Attachment-Chip/Model/.Normal-Copy" transform="translate(150.000000, 278.000000)">
+                <g id="Attachment-Chip/Model/.Normal">
+                    <g id="file-icon" transform="translate(12.000000, 12.000000)">
+                        <path d="M15,0 L25,10 L25,26.5 C25,28.4329966 23.4329966,30 21.5,30 L3.5,30 C1.56700338,30 0,28.4329966 0,26.5 L0,3.5 C0,1.56700338 1.56700338,0 3.5,0 L15,0 Z" id="page" fill="url(#linearGradient-1)"></path>
+                        <g id="curl" transform="translate(20.000000, 5.000000) scale(-1, -1) translate(-20.000000, -5.000000) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use fill="#393C44" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                        <g id="File-Icon-Contents">
+                            <g id="Text-Color" transform="translate(0.000000, 10.000000)">
+                                <text id="File-Format" font-family="OpenSans-Bold, Open Sans" font-size="8" font-weight="bold" line-spacing="12" fill="#FFFFFF">
+                                    <tspan x="4.83203125" y="9">PDF</tspan>
+                                </text>
+                                <rect id="Icon" fill="#3A9EF2" x="0" y="-10" width="25" height="30"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

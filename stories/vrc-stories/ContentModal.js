@@ -6,26 +6,28 @@ import { Button, ContentModal, Tabs, Tab, TabPanel, TabList } from '@';
 
 const tabLabels = ['Activity Feed', 'Access Control', 'Security Options'];
 const ModalContentLarge = () => (
-  // <div
-  //   style={{
-  //     // background: styles.vds.color.white.value,
-  //     width: '1008',
-  //     // height: '812px',
-  //     height: '200px',
-  //   }}
-  // />
-  <Tabs size={Tabs.SIZE.SMALL}>
-    <TabList>
+  <>
+    <Tabs size={Tabs.SIZE.SMALL}>
+      <TabList>
+        {tabLabels.map((label) => (
+          <Tab>{label}</Tab>
+        ))}
+      </TabList>
       {tabLabels.map((label) => (
-        <Tab>{label}</Tab>
+        <TabPanel>
+          <div style={{ padding: '20px' }}>Content for tab {label}</div>
+        </TabPanel>
       ))}
-    </TabList>
-    {tabLabels.map((label) => (
-      <TabPanel>
-        <div style={{ padding: '20px' }}>Content for tab {label}</div>
-      </TabPanel>
-    ))}
-  </Tabs>
+    </Tabs>
+    <div
+      style={{
+        // background: styles.vds.color.white.value,
+        // width: '1008',
+        // height: '812px',
+        height: '568px',
+      }}
+    />
+  </>
 );
 
 storiesOf('ContentModal', module).lokiSkip('default', () => {
@@ -36,7 +38,13 @@ storiesOf('ContentModal', module).lokiSkip('default', () => {
   );
   return (
     <ContentModal
-      header={<Button variant={Button.VARIANT.SECONDARY} size={Button.SIZE.SQUARE} />}
+      header={
+        <>
+          {' '}
+          <Button variant={Button.VARIANT.SECONDARY} size={Button.SIZE.SQUARE} />{' '}
+          <Button variant={Button.VARIANT.SECONDARY} size={Button.SIZE.SQUARE} />
+        </>
+      }
       title={title}
       subtitle={subtitle}
       onRequestClose={() => alert('close')}

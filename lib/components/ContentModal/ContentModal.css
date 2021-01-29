@@ -27,17 +27,11 @@
 }
 
 .headerInner {
-  align-items: center;
-}
-
-.headerInner > *:not(:first-child) {
-  /* margin-left: 12px;
-  padding-left: 20px; */
+  display: flex;
 }
 
 .title {
   display: flex;
-  align-items: center;
   font: var(--vds-font-heading-md);
   padding-bottom: 13px;
 }
@@ -75,7 +69,6 @@
 }
 
 .body {
-  /* background-color: var(--vds-color-white); */
   padding: 0 36px 36px 36px;
 }
 
