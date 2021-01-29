@@ -5,7 +5,7 @@ import { text, object } from '@storybook/addon-knobs';
 import { Button, ContentModal, Tabs, Tab, TabPanel, TabList } from '@';
 
 const tabLabels = ['Activity Feed', 'Access Control', 'Security Options'];
-const ModalContentLarge = () => (
+const ModalContent = () => (
   <>
     <Tabs size={Tabs.SIZE.SMALL}>
       <TabList>
@@ -47,10 +47,12 @@ storiesOf('ContentModal', module).lokiSkip('default', () => {
       }
       title={title}
       subtitle={subtitle}
+      titleIcon={ContentModal.ICONS.DRIVE}
+      subtitleIcon={ContentModal.ICONS.ATTACHMENT}
       onRequestClose={() => alert('close')}
       // onRequestBack={() => alert('back')}
     >
-      {ModalContentLarge()}
+      {ModalContent()}
     </ContentModal>
   );
 });
