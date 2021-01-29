@@ -2,6 +2,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, object } from '@storybook/addon-knobs';
+import RevokeButton from '@/components/ContentModal/assets/revoke.svg';
 import { Button, ContentModal, Tabs, Tab, TabPanel, TabList } from '@';
 
 const tabLabels = ['Activity Feed', 'Access Control', 'Security Options'];
@@ -40,15 +41,15 @@ storiesOf('ContentModal', module).lokiSkip('default', () => {
     <ContentModal
       header={
         <>
-          {' '}
-          <Button variant={Button.VARIANT.SECONDARY} size={Button.SIZE.SQUARE} />{' '}
-          <Button variant={Button.VARIANT.SECONDARY} size={Button.SIZE.SQUARE} />
+          <Button variant={Button.VARIANT.SECONDARY} size={Button.SIZE.SQUARE}>
+            <RevokeButton />
+          </Button>
         </>
       }
       title={title}
       subtitle={subtitle}
-      titleIcon={ContentModal.ICONS.DRIVE}
-      subtitleIcon={ContentModal.ICONS.ATTACHMENT}
+      titleIcon={ContentModal.ICONS.DOCX}
+      subtitleIcon={ContentModal.ICONS.PDF}
       onRequestClose={() => alert('close')}
       // onRequestBack={() => alert('back')}
     >
