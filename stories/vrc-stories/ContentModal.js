@@ -2,7 +2,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, object } from '@storybook/addon-knobs';
-import RevokeButton from '@/components/ContentModal/assets/revoke.svg';
+// import RevokeButton from '@/components/ContentModal/assets/revoke.svg';
 import { Button, ContentModal, Tabs, Tab, TabPanel, TabList } from '@';
 
 const tabLabels = ['Activity Feed', 'Access Control', 'Security Options'];
@@ -37,19 +37,20 @@ storiesOf('ContentModal', module).lokiSkip('default', () => {
     'subtitle',
     'Google Drive file shared by khart@acmecorp.com on November 16, 2020, 7:16 am',
   );
+  // const RevokeIcon = ContentModal.ICONS.PDF;
   return (
     <ContentModal
       header={
         <>
           <Button variant={Button.VARIANT.SECONDARY} size={Button.SIZE.SQUARE}>
-            <RevokeButton />
+            {/* <RevokeIcon /> Revoke All Access */}
           </Button>
         </>
       }
       title={title}
       subtitle={subtitle}
-      titleIcon={ContentModal.ICONS.DOCX}
-      subtitleIcon={ContentModal.ICONS.PDF}
+      titleIcon={ContentModal.ICONS.EMAIL}
+      subtitleIcon={ContentModal.ICONS.ATTACHMENT}
       onRequestClose={() => alert('close')}
       // onRequestBack={() => alert('back')}
     >
