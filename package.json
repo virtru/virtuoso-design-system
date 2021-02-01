@@ -141,7 +141,8 @@
     "react-simple-maps": "^2.3.0",
     "react-tabs": "^3.0.0",
     "react-toggle": "^4.1.1",
-    "react-tooltip": "^4.2.11"
+    "react-tooltip": "^4.2.11",
+    "recompose": "^0.30.0"
   },
   "peerDependencies": {
     "react": "^16.3",
