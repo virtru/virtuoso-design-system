@@ -2,7 +2,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, object } from '@storybook/addon-knobs';
-// import RevokeButton from '@/components/ContentModal/assets/revoke.svg';
+
 import { Button, ContentModal, Tabs, Tab, TabPanel, TabList } from '@';
 
 const tabLabels = ['Activity Feed', 'Access Control', 'Security Options'];
@@ -20,14 +20,6 @@ const ModalContent = () => (
         </TabPanel>
       ))}
     </Tabs>
-    <div
-    // style={{
-    // background: styles.vds.color.white.value,
-    // width: '1008',
-    // height: '812px',
-    // height: '568px',
-    // }}
-    />
   </>
 );
 
@@ -37,22 +29,22 @@ storiesOf('ContentModal', module).lokiSkip('default', () => {
     'subtitle',
     'Google Drive file shared by khart@acmecorp.com on November 16, 2020, 7:16 am',
   );
-  // const RevokeIcon = ContentModal.ICONS.PDF;
+  const titleIcon = text('titleIcon', ContentModal.ICONS.PDF);
+  const subtitleIcon = text('subtitleIcon', ContentModal.ICONS.DRIVE);
+
   return (
     <ContentModal
       header={
         <>
-          <Button variant={Button.VARIANT.SECONDARY} size={Button.SIZE.SQUARE}>
-            {/* <RevokeIcon /> Revoke All Access */}
-          </Button>
+          <Button variant={Button.VARIANT.SECONDARY} size={Button.SIZE.SQUARE} />
         </>
       }
       title={title}
       subtitle={subtitle}
-      titleIcon={ContentModal.ICONS.EMAIL}
-      subtitleIcon={ContentModal.ICONS.ATTACHMENT}
+      titleIcon={titleIcon}
+      subtitleIcon={subtitleIcon}
       onRequestClose={() => alert('close')}
-      // onRequestBack={() => alert('back')}
+      onRequestBack={() => alert('back')}
     >
       {ModalContent()}
     </ContentModal>

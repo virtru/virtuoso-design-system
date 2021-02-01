@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>986B7E86-3C9D-4601-ACE9-B3A493FE065D</title>
+    <title>DriveIcon</title>
     <defs>
-        <radialGradient cx="5.64370159%" cy="-354.170378%" fx="5.64370159%" fy="-354.170378%" r="646.469825%" gradientTransform="translate(0.056437,-3.541704),scale(0.364983,1.000000),rotate(30.000468),translate(-0.056437,3.541704)" id="radialGradient-1">
+        <radialGradient cx="5.64370159%" cy="-354.170378%" fx="5.64370159%" fy="-354.170378%" r="646.469825%" gradientTransform="translate(0.056437,-3.541704),scale(0.364983,1.000000),rotate(30.000468),translate(-0.056437,3.541704)" id="DriveGradient1">
             <stop stop-color="#3668FF" offset="0%"></stop>
             <stop stop-color="#3668FF" offset="65%"></stop>
             <stop stop-color="#3668FF" offset="90.99%"></stop>
             <stop stop-color="#3668FF" offset="100%"></stop>
         </radialGradient>
-        <radialGradient cx="-15.5985891%" cy="-89.0326675%" fx="-15.5985891%" fy="-89.0326675%" r="345.035961%" gradientTransform="translate(-0.155986,-0.890327),scale(0.837780,1.000000),rotate(30.000468),translate(0.155986,0.890327)" id="radialGradient-2">
+        <radialGradient cx="-15.5985891%" cy="-89.0326675%" fx="-15.5985891%" fy="-89.0326675%" r="345.035961%" gradientTransform="translate(-0.155986,-0.890327),scale(0.837780,1.000000),rotate(30.000468),translate(0.155986,0.890327)" id="DriveGradient2">
             <stop stop-color="#FDB81E" offset="0%"></stop>
             <stop stop-color="#FDB81E" offset="100%"></stop>
         </radialGradient>
     </defs>
-    <g id="Round-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Dash-Policy-Modal" transform="translate(-160.000000, -294.000000)" fill-rule="nonzero">
-            <g id="Group" transform="translate(100.000000, 149.000000)">
-                <g id="modal-metadata" transform="translate(60.000000, 96.000000)">
+    <g id="Drive-Round-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Drive-Dash-Policy-Modal" transform="translate(-160.000000, -294.000000)" fill-rule="nonzero">
+            <g id="DriveGroup" transform="translate(100.000000, 149.000000)">
+                <g id="drive-modal-metadata" transform="translate(60.000000, 96.000000)">
                     <g id="x-Partner/icon/Google/Drive-24" transform="translate(0.000000, 49.000000)">
                         <g id="Google-Drive-Logo" transform="translate(1.000000, 2.000000)">
-                            <polygon id="Shape" fill="#008550" points="3.83021583 19.1827338 0 12.5510791 7.16978417 0.126618705 11 6.75827338"></polygon>
-                            <polygon id="Shape" fill="url(#radialGradient-1)" points="3.83021583 19.1827338 7.66043165 12.5510791 22 12.5510791 18.1697842 19.1827338"></polygon>
-                            <polygon id="Shape" fill="url(#radialGradient-2)" points="22 12.5510791 14.3395683 12.5510791 7.16978417 0.126618705 14.8302158 0.126618705"></polygon>
-                            <polygon id="Shape" fill="#1B66AA" points="11 12.5510791 7.66043165 12.5510791 9.32230216 9.65467626 3.83021583 19.1827338"></polygon>
-                            <polygon id="Shape" fill="#FDB81E" points="14.3395683 12.5510791 22 12.5510791 12.6776978 9.65467626"></polygon>
-                            <polygon id="Shape" fill="#008550" points="9.32230216 9.65467626 11 6.75827338 7.16978417 0.126618705"></polygon>
+                            <polygon id="DriveShape" fill="#008550" points="3.83021583 19.1827338 0 12.5510791 7.16978417 0.126618705 11 6.75827338"></polygon>
+                            <polygon id="DriveShape" fill="url(#DriveGradient1)" points="3.83021583 19.1827338 7.66043165 12.5510791 22 12.5510791 18.1697842 19.1827338"></polygon>
+                            <polygon id="DriveShape" fill="url(#DriveGradient2)" points="22 12.5510791 14.3395683 12.5510791 7.16978417 0.126618705 14.8302158 0.126618705"></polygon>
+                            <polygon id="DriveShape" fill="#1B66AA" points="11 12.5510791 7.66043165 12.5510791 9.32230216 9.65467626 3.83021583 19.1827338"></polygon>
+                            <polygon id="DriveShape" fill="#FDB81E" points="14.3395683 12.5510791 22 12.5510791 12.6776978 9.65467626"></polygon>
+                            <polygon id="DriveShape" fill="#008550" points="9.32230216 9.65467626 11 6.75827338 7.16978417 0.126618705"></polygon>
                         </g>
                     </g>
                 </g>

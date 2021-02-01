@@ -34,6 +34,7 @@
   display: flex;
   font: var(--vds-font-heading-md);
   padding-bottom: 13px;
+  height: 36px;
 }
 
 .titleKey {
@@ -45,9 +46,10 @@
 }
 
 .subtitle {
+  display: flex;
   font: var(--vds-font-md);
   color: var(--vds-color-slate-darkest);
-  padding-bottom: 36px;
+  padding-bottom: 30px;
 }
 
 .headerButtonDisabled {
@@ -84,3 +86,10 @@
   padding: 24px;
 }
 
+.titleIcon {
+  padding: 3px 15px 0 0;
+}
+
+.subtitleIcon {
+  padding-right: 5px;
+}
