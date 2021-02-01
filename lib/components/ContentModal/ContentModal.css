@@ -34,7 +34,6 @@
   display: flex;
   font: var(--vds-font-heading-md);
   padding-bottom: 13px;
-  height: 36px;
 }
 
 .titleKey {

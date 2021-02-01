@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, object } from '@storybook/addon-knobs';
 
-import { Button, ContentModal, Tabs, Tab, TabPanel, TabList } from '@';
+import { Button, ContentModal, Tabs, Tab, TabPanel, TabList, Icon } from '@';
 
 const tabLabels = ['Activity Feed', 'Access Control', 'Security Options'];
 const ModalContent = () => (
@@ -29,16 +29,12 @@ storiesOf('ContentModal', module).lokiSkip('default', () => {
     'subtitle',
     'Google Drive file shared by khart@acmecorp.com on November 16, 2020, 7:16 am',
   );
-  const titleIcon = text('titleIcon', ContentModal.ICONS.PDF);
-  const subtitleIcon = text('subtitleIcon', ContentModal.ICONS.DRIVE);
+  const titleIcon = text('titleIcon', Icon.TYPES.PDF);
+  const subtitleIcon = text('subtitleIcon', Icon.TYPES.DRIVE);
 
   return (
     <ContentModal
-      header={
-        <>
-          <Button variant={Button.VARIANT.SECONDARY} size={Button.SIZE.SQUARE} />
-        </>
-      }
+      header={<Button variant={Button.VARIANT.SECONDARY} size={Button.SIZE.SQUARE} />}
       title={title}
       subtitle={subtitle}
       titleIcon={titleIcon}
