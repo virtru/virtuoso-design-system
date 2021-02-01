@@ -45,11 +45,18 @@
   color: var(--vds-color-slate-darkest);
 }
 
-.subtitle {
+.subtitleDefault {
   display: flex;
   font: var(--vds-font-md);
   color: var(--vds-color-slate-darkest);
+}
+
+.subtitleWithIcon {
   padding-bottom: 30px;
+}
+
+.subtitleWithoutIcon {
+  padding-bottom: 36px;
 }
 
 .headerButtonDisabled {
