@@ -16,3 +16,4 @@ coverage
 lefthook-local.yml
 report.*.json
 examples/simple-app/design_tokens+local.css
+.cache

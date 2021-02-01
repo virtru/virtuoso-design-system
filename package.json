@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "auto": "auto",
-    "build": "rollup --config config/rollup.config.js",
+    "build": "parcel build lib/index.js",
     "build:watch": "npm run build -- --watch --watch.include 'lib/**'",
     "clean": "rimraf dist/*",
     "prepublishOnly": "npm run build",
@@ -98,8 +98,9 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.3.0",
     "jest-dom": "^4.0.0",
-    "loki": "^0.20.3",
+    "loki": "^0.27.0",
     "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
     "postcss-custom-media": "^7.0.8",
     "postcss-custom-properties": "^8.0.10",
     "postcss-hexrgba": "^1.0.1",
@@ -126,9 +127,9 @@
     "url-loader": "^2.0.0"
   },
   "dependencies": {
-    "@nivo/bar": "^0.66.0",
-    "@nivo/core": "^0.66.0",
-    "@nivo/pie": "^0.66.0",
+    "@nivo/bar": "^0.67.0",
+    "@nivo/core": "^0.67.0",
+    "@nivo/pie": "^0.67.0",
     "@testing-library/user-event": "^12.6.0",
     "animejs": "^3.0.1",
     "classnames": "^2.2.6",
@@ -141,8 +142,7 @@
     "react-simple-maps": "^2.3.0",
     "react-tabs": "^3.0.0",
     "react-toggle": "^4.1.1",
-    "react-tooltip": "^4.2.11",
-    "recompose": "^0.30.0"
+    "react-tooltip": "^4.2.11"
   },
   "peerDependencies": {
     "react": "^16.3",
