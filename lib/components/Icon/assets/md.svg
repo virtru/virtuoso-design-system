@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="26px" height="30px" viewBox="0 0 26 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="25px" height="30px" viewBox="0 0 25 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>MdIcon</title>
     <defs>
-        <path d="M15,0 L21.3232233,0 C23.2562199,0 25,1.74378007 25,3.6767767 L25,10 L15,0 Z" id="MdPath"></path>
+        <path d="M14,7.10542736e-15 L20.3232233,7.10542736e-15 C22.2562199,7.10542736e-15 24,1.74378007 24,3.6767767 L24,10 L14,7.10542736e-15 Z" id="MdPath"></path>
         <filter x="-20.0%" y="-30.0%" width="140.0%" height="140.0%" filterUnits="objectBoundingBox" id="MdFilter">
             <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0967221467 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
     </defs>
-    <g id="Md-File-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Md-Individual-Chips" transform="translate(-67.000000, -337.000000)">
-            <g id="Original-MD" transform="translate(67.000000, 337.000000)">
-                <path d="M14.7928932,0.5 L24.5,10.2071068 L24.5,26.5 C24.5,27.3284271 24.1642136,28.0784271 23.6213203,28.6213203 C23.0784271,29.1642136 22.3284271,29.5 21.5,29.5 L21.5,29.5 L3.5,29.5 C2.67157288,29.5 1.92157288,29.1642136 1.37867966,28.6213203 C0.835786438,28.0784271 0.5,27.3284271 0.5,26.5 L0.5,26.5 L0.5,3.5 C0.5,2.67157288 0.835786438,1.92157288 1.37867966,1.37867966 C1.92157288,0.835786438 2.67157288,0.5 3.5,0.5 L3.5,0.5 L14.7928932,0.5 Z" id="MdPage" stroke="#B1B8C4" fill="#FFFFFF"></path>
-                <g id="MdCurl" transform="translate(20.000000, 5.000000) scale(-1, -1) translate(-20.000000, -5.000000) ">
-                    <use fill="black" fill-opacity="1" filter="url(#MdFilter)" xlink:href="#MdPath"></use>
-                    <use fill="#767D92" fill-rule="evenodd" xlink:href="#MdPath"></use>
-                </g>
-                <g id="Md-Text-Color" transform="translate(0.000000, 10.000000)">
-                    <text id="Md-File-Format" font-family="OpenSans-Bold, Open Sans" font-size="8" font-weight="bold" line-spacing="12" fill="#B1B8C4">
-                        <tspan x="5.76757812" y="9">MD</tspan>
-                    </text>
+    <g id="MdIcons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Md-File-Type-Icons" transform="translate(-374.000000, -160.000000)">
+            <g id="Md-row-1-icons" transform="translate(74.000000, 160.000000)">
+                <g id="MD" transform="translate(300.000000, 0.000000)">
+                    <path d="M13.7928932,0.5 L23.5,10.2071068 L23.5,26.5 C23.5,27.3308348 23.178153,28.0838496 22.6551851,28.6286078 C22.1394543,29.1658275 21.4275107,29.5 20.64,29.5 L20.64,29.5 L3.36,29.5 C2.57248933,29.5 1.86054572,29.1658275 1.34481488,28.6286078 C0.821846959,28.0838496 0.5,27.3308348 0.5,26.5 L0.5,26.5 L0.5,3.5 C0.5,2.66916525 0.821846959,1.91615043 1.34481488,1.37139218 C1.86054572,0.834172547 2.57248933,0.5 3.36,0.5 L3.36,0.5 L13.7928932,0.5 Z" id="page-MD" stroke="#B1B8C4" fill="#FFFFFF"></path>
+                    <g id="curl-MD" transform="translate(19.000000, 5.000000) scale(-1, -1) translate(-19.000000, -5.000000) ">
+                        <use fill="black" fill-opacity="1" filter="url(#MdFilter)" xlink:href="#MdPath"></use>
+                        <use fill="#767D92" fill-rule="evenodd" xlink:href="#MdPath"></use>
+                    </g>
+                    <path d="M7.16835937,19 L7.16835937,16.34375 C7.16835937,16.0390625 7.14361979,15.4309896 7.09414062,14.5195312 L7.09414062,14.5195312 L7.12929687,14.5195312 L8.50429687,19 L9.61367187,19 L11.0863281,14.5273438 L11.1214844,14.5273438 C11.0902344,15.2460938 11.0726562,15.6888021 11.06875,15.8554688 C11.0648437,16.0221354 11.0628906,16.1692708 11.0628906,16.296875 L11.0628906,16.296875 L11.0628906,19 L12.1917969,19 L12.1917969,13.2890625 L10.5433594,13.2890625 L9.10976562,17.65625 L9.08632812,17.65625 L7.73476562,13.2890625 L6.08632812,13.2890625 L6.08632812,19 L7.16835937,19 Z M15.1464844,19 C16.156901,19 16.9296875,18.75 17.4648437,18.25 C18,17.75 18.2675781,17.0299479 18.2675781,16.0898438 C18.2675781,15.2070312 18.0097656,14.5195312 17.4941406,14.0273438 C16.9785156,13.5351562 16.2545573,13.2890625 15.3222656,13.2890625 L15.3222656,13.2890625 L13.5292969,13.2890625 L13.5292969,19 L15.1464844,19 Z M15.2597656,18 L14.7402344,18 L14.7402344,14.28125 L15.3847656,14.28125 C16.468099,14.28125 17.0097656,14.8945312 17.0097656,16.1210938 C17.0097656,17.3736979 16.4264323,18 15.2597656,18 L15.2597656,18 Z" fill="#B1B8C4" fill-rule="nonzero"></path>
                 </g>
             </g>
         </g>
