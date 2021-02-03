@@ -4,6 +4,9 @@
 
 This repo enables using the Virtuoso Design System as front-end code (HTML, CSS, & JavaScript).
 
+This project is not a common place for library reuse. For instance charts and graphs should be added to the app directly.
+For charting we suggest [nivo charts](https://nivo.rocks).
+
 # 📖 [Dive into the docs](https://virtru.github.io/virtuoso-design-system/)
 
 # 🤖 [Explore the code](https://github.com/virtru/virtuoso-design-system)
