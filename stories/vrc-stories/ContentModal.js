@@ -29,16 +29,16 @@ storiesOf('ContentModal', module).lokiSkip('default', () => {
     'subtitle',
     'Google Drive file shared by khart@acmecorp.com on November 16, 2020, 7:16 am',
   );
-  const titleIcon = text('titleIcon', Icon.TYPES.PDF);
-  const subtitleIcon = text('subtitleIcon', Icon.TYPES.DRIVE);
+  const titleIconName = text('Title Icon', Icon.NAMES.PDF);
+  const subtitleIconName = text('Subtitle Icon', Icon.NAMES.DRIVE);
 
   return (
     <ContentModal
       header={<Button variant={Button.VARIANT.SECONDARY} size={Button.SIZE.SQUARE} />}
       title={title}
       subtitle={subtitle}
-      titleIcon={titleIcon}
-      subtitleIcon={subtitleIcon}
+      titleIconName={titleIconName}
+      subtitleIconName={subtitleIconName}
       onRequestClose={() => alert('close')}
       onRequestBack={() => alert('back')}
     >

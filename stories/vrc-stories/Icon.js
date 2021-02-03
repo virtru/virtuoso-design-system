@@ -6,7 +6,7 @@ import { text } from '@storybook/addon-knobs';
 import { Icon } from '@';
 
 storiesOf('Icon', module).lokiSkip('default', () => {
-  const iconName = text('Icon type', Icon.TYPES.PDF);
+  const iconName = text('Icon name', Icon.NAMES.PDF);
 
-  return <Icon type={iconName} />;
+  return <Icon name={iconName} />;
 });
