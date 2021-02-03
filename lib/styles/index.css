@@ -1,2 +1,10 @@
 @import './tokens.css';
 @import './build/css/design_tokens.css';
+
+:root {
+  /* z-index constants */
+  --neg-importance: -1;
+  --low-importance: 1;
+  --med-importance: 2;
+  --high-importance: 3;
+}
