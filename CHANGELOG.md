@@ -1,3 +1,15 @@
+# v1.17.1 (Wed Feb 03 2021)
+
+#### 🐛 Bug Fix
+
+- Patch/remove barchart [#122](https://github.com/virtru/virtuoso-design-system/pull/122) ([@dillonthompson](https://github.com/dillonthompson))
+
+#### Authors: 1
+
+- Dillon Thompson ([@dillonthompson](https://github.com/dillonthompson))
+
+---
+
 # v1.17.0 (Wed Jan 27 2021)
 
 #### 🚀 Enhancement
