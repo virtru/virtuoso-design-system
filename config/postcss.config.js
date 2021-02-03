@@ -10,11 +10,19 @@ module.exports = {
     postcssImport(),
     postcssCustomProperties({
       preserve: false,
-      importFrom: ['lib/styles/tokens.css', 'lib/styles/build/css/design_tokens.css'],
+      importFrom: [
+        'lib/styles/tokens.css',
+        'lib/styles/common.css',
+        'lib/styles/build/css/design_tokens.css',
+      ],
     }),
     postcssHexRgba,
     postcssCustomMedia({
-      importFrom: ['lib/styles/tokens.css', 'lib/styles/build/css/design_tokens.css'],
+      importFrom: [
+        'lib/styles/tokens.css',
+        'lib/styles/common.css',
+        'lib/styles/build/css/design_tokens.css',
+      ],
     }),
   ],
   extract: path.resolve('dist/styles.css'),
