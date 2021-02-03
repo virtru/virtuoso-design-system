@@ -13,7 +13,7 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "virtuoso-design-system": "git+ssh://git@github.com/virtru/virtuoso-design-system.git#patch/remove-barchart"
+    "virtuoso-design-system": "latest"
   },
   "devDependencies": {
     "parcel": "^2.0.0-beta.1"
