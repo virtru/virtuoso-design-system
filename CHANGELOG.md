@@ -1,3 +1,15 @@
+# v1.18.0 (Thu Feb 04 2021)
+
+#### 🚀 Enhancement
+
+- feat: add content modal - CCR-17 [#121](https://github.com/virtru/virtuoso-design-system/pull/121) ([@suchak1](https://github.com/suchak1))
+
+#### Authors: 1
+
+- Krish Suchak ([@suchak1](https://github.com/suchak1))
+
+---
+
 # v1.17.1 (Wed Feb 03 2021)
 
 #### 🐛 Bug Fix
