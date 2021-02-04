@@ -20,6 +20,10 @@
   padding-left: 18px;
 }
 
+.chevron {
+  transform: translateY(15%);
+}
+
 .rightItem {
   padding-right: 18px;
 }

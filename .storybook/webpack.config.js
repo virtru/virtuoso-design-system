@@ -76,7 +76,21 @@ module.exports = async ({ config }) => {
     })
     .concat({
       test: /\.svg$/,
-      use: 'react-svg-loader'
+      use: [
+        "babel-loader",
+        {
+          loader: "react-svg-loader",
+          options: {
+            svgo: {
+              plugins: [
+                { removeTitle: false },
+                { cleanupIDs: false },
+              ],
+              floatPrecision: 2
+            }
+          }
+        }
+      ]
     });
 
   return config;

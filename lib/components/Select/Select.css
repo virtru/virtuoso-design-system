@@ -15,7 +15,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: var(--neg-importance);
 }
 
 .container :global(.select__control)::before {
@@ -26,7 +26,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: var(--neg-importance);
   visibility: hidden;
 }
 

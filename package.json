@@ -13,6 +13,7 @@
     "build": "rollup --config config/rollup.config.js",
     "build:watch": "npm run build -- --watch --watch.include 'lib/**'",
     "clean": "rimraf dist/*",
+    "prepare": "npm run build",
     "prepublishOnly": "npm run build",
     "prepare": "npm run build",
     "start": "npm run storybook",

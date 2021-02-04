@@ -36,7 +36,13 @@ module.exports = {
       exclude: 'node_modules/**',
     }),
     commonjs(),
-    reactSvg(),
+    reactSvg({
+      // svgo options
+      svgo: {
+        plugins: [{ removeTitle: false }, { cleanupIDs: false }], // passed to svgo
+        multipass: true,
+      },
+    }),
     copy({
       targets: [
         { src: 'lib/styles/build/**/*.{css,js}', dest: 'dist' },

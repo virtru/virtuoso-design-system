@@ -1,0 +1,101 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(var(--vds-color-slate-darker), 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--high-importance);
+}
+
+.large {
+  border-radius: 5px;
+  background-color: var(--vds-color-slate-lightest);
+  box-shadow: 0 0 4px 1px rgba(var(--vds-color-black), 0.3);
+  box-sizing: border-box;
+  width: 1080px;
+}
+
+.headerOuter {
+  padding: 22px 36px 14px 36px;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerInner {
+  display: flex;
+}
+
+.title {
+  display: flex;
+  font: var(--vds-font-heading-md);
+  padding-bottom: 13px;
+}
+
+.titleKey {
+  color: var(--vds-color-slate-primary);
+}
+
+.titleValue {
+  color: var(--vds-color-slate-darkest);
+}
+
+.subtitleDefault {
+  display: flex;
+  font: var(--vds-font-md);
+  color: var(--vds-color-slate-darkest);
+}
+
+.subtitleWithIcon {
+  padding-bottom: 30px;
+}
+
+.subtitleWithoutIcon {
+  padding-bottom: 36px;
+}
+
+.headerButtonDisabled {
+  color: var(--vds-color-slate-lighter);
+}
+
+.backButton {
+  margin-left: 6px;
+}
+
+.headerButtonDefault {
+  padding: 0;
+  height: 36px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.headerButtonEnabled {
+  color: var(--vds-color-slate-darkest);
+}
+
+.headerButtonEnabled:active {
+  color: var(--vds-color-slate-primary);
+}
+
+.body {
+  padding: 0 36px 36px 36px;
+}
+
+.content {
+  background-color: var(--vds-color-white);
+  padding: 24px;
+}
+
+.titleIcon {
+  padding: 3px 15px 0 0;
+}
+
+.subtitleIcon {
+  padding-right: 6px;
+}
