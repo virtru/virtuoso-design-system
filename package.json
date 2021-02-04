@@ -1,6 +1,6 @@
 {
   "name": "virtuoso-design-system",
-  "version": "1.17.1",
+  "version": "1.18.0",
   "description": "A set of reusable elements that enable Virtru designers and Virtru engineers to create consistent Virtru products.",
   "author": "Virtru CI <ci@virtru.com>",
   "main": "dist/bundle.cjs.js",
@@ -15,7 +15,6 @@
     "clean": "rimraf dist/*",
     "prepare": "npm run build",
     "prepublishOnly": "npm run build",
-    "prepare": "npm run build",
     "start": "npm run storybook",
     "test": "run-s test:*",
     "test-ci": "jest --ci --coverage",
