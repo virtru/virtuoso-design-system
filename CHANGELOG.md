@@ -1,3 +1,15 @@
+# v1.18.1 (Mon Feb 08 2021)
+
+#### 🐛 Bug Fix
+
+- fix: chevron spacing - CCR-130 [#123](https://github.com/virtru/virtuoso-design-system/pull/123) ([@suchak1](https://github.com/suchak1))
+
+#### Authors: 1
+
+- Krish Suchak ([@suchak1](https://github.com/suchak1))
+
+---
+
 # v1.18.0 (Thu Feb 04 2021)
 
 #### 🚀 Enhancement
