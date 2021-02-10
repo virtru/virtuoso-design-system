@@ -12,11 +12,15 @@
 }
 
 .large {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
   border-radius: 5px;
   background-color: var(--vds-color-slate-lightest);
   box-shadow: 0 0 4px 1px rgba(var(--vds-color-black), 0.3);
   box-sizing: border-box;
   width: 1080px;
+  min-height: 265px;
 }
 
 .headerOuter {
@@ -84,7 +88,8 @@
 }
 
 .body {
-  padding: 0 36px 36px 36px;
+  margin: 0 36px 36px 36px;
+  overflow-y: scroll;
 }
 
 .content {
