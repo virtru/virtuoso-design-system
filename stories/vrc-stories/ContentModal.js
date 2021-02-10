@@ -41,7 +41,7 @@ const getContentHeight = (title, subtitle, offset = 0) => {
   const bottomContentPadding = 24;
   const titleAndSubtitle = 133;
   const overlayTopMargin = 70;
-  const overlayBottomMargin = 20;
+  const overlayBottomMargin = 15;
   const nonContentSpace =
     fullHeaderHeight +
     bottomModalMargin +
