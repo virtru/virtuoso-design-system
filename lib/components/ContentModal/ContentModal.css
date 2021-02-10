@@ -13,7 +13,7 @@
 
 .container {
   position: absolute;
-  top: 20px;
+  top: 70px;
   bottom: 20px;
   border-radius: 5px;
   background-color: var(--vds-color-slate-lightest);
