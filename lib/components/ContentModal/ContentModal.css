@@ -37,8 +37,10 @@
 .title {
   display: flex;
   font: var(--vds-font-heading-md);
-  height: 40px;
+  min-height: 40px;
   margin-bottom: 9px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .titleKey {
@@ -53,6 +55,8 @@
   display: flex;
   font: var(--vds-font-md);
   color: var(--vds-color-slate-darkest);
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .subtitleWithIcon {
