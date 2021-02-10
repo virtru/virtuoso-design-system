@@ -119,8 +119,8 @@ storiesOf('ContentModal', module)
         subtitle={subtitle}
         titleIconName={titleIconName}
         subtitleIconName={subtitleIconName}
-        onRequestClose={() => alert('close')}
-        onRequestBack={() => alert('back')}
+        onCloseClick={() => alert('close')}
+        onBackClick={() => alert('back')}
       >
         {ModalContentTabs(contentStyle)}
       </ContentModal>
