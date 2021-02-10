@@ -18,17 +18,20 @@ import {
   TBody,
 } from '@';
 
-const getContentHeight = (varHeight = '0') => `calc( 100vh - 40px - 265px - ${varHeight}px)`;
-
-const noSubtitle = {
-  height: 'calc( 100vh - 40px - 265px)',
+const getVarHeight = (title, subtitle, offset = 0) => {
+  let varHeight = offset;
+  const subtitleHeight = 60;
+  const titleHeight = 49;
+  if (title && !subtitle) {
+    varHeight -= subtitleHeight;
+  } else if (!title && subtitle) {
+    varHeight -= titleHeight;
+  } else if (!title && !subtitle) {
+    varHeight -= titleHeight + subtitleHeight;
+  }
+  return varHeight;
 };
-
-const contentStyle = {
-  overflowY: 'scroll',
-  // - overlay margins, rest of modal (base), tabs
-  height: 'calc( 100vh - 40px - 265px - 36px)',
-};
+const getContentHeight = (varHeight = 0) => `calc( 100vh - 40px - 265px - ${varHeight}px)`;
 
 const sample = [
   { event: 'Activation Started', details: 'by user@domain.com', date: '2021-07-03' },
@@ -38,7 +41,7 @@ const sample = [
 const data = new Array(100).fill(sample).flat();
 
 const tabLabels = ['Activity Feed', 'Access Control', 'Security Options'];
-const ModalContentTabs = () => (
+const ModalContentTabs = (contentStyle) => (
   <>
     <Tabs size={Tabs.SIZE.SMALL}>
       <TabList>
@@ -80,15 +83,7 @@ const ModalContentTabs = () => (
   </>
 );
 
-const ModalContentPinkBox = () => (
-  <div
-    style={{
-      background: styles.vds.color.red.lightest.value,
-      width: '100%',
-      height: 'calc( 100vh - 40px - 265px)',
-    }}
-  />
-);
+const ModalContentPinkBox = (contentStyle) => <div style={contentStyle} />;
 
 storiesOf('ContentModal', module)
   .lokiSkip('default', () => {
@@ -99,6 +94,11 @@ storiesOf('ContentModal', module)
     );
     const titleIconName = text('Title Icon', Icon.NAMES.PDF);
     const subtitleIconName = text('Subtitle Icon', Icon.NAMES.DRIVE);
+    const tabHeight = 36;
+    const contentStyle = {
+      overflowY: 'scroll',
+      height: getContentHeight(getVarHeight(title, subtitle, tabHeight)),
+    };
 
     return (
       <ContentModal
@@ -110,12 +110,21 @@ storiesOf('ContentModal', module)
         onRequestClose={() => alert('close')}
         onRequestBack={() => alert('back')}
       >
-        {ModalContentTabs()}
+        {ModalContentTabs(contentStyle)}
       </ContentModal>
     );
   })
-  .add('no icons', () => (
-    <ContentModal title={{ value: 'Random Title' }} subtitle="Random subtitle">
-      {ModalContentPinkBox()}
-    </ContentModal>
-  ));
+  .add('no icons', () => {
+    const title2 = object('Title', { value: 'Random Title' });
+    const subtitle2 = text('Subtitle', 'Random subtitle');
+    const contentStyle = {
+      background: styles.vds.color.red.lightest.value,
+      width: '100%',
+      height: getContentHeight(getVarHeight(title2, subtitle2)),
+    };
+    return (
+      <ContentModal title={title2} subtitle={subtitle2}>
+        {ModalContentPinkBox(contentStyle)}
+      </ContentModal>
+    );
+  });
