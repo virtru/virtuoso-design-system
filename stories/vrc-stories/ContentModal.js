@@ -18,21 +18,6 @@ import {
   TBody,
 } from '@';
 
-const getVarHeight = (title, subtitle, offset = 0) => {
-  let varHeight = offset;
-  const subtitleHeight = 60;
-  const titleHeight = 49;
-  if (title && !subtitle) {
-    varHeight -= subtitleHeight;
-  } else if (!title && subtitle) {
-    varHeight -= titleHeight;
-  } else if (!title && !subtitle) {
-    varHeight -= titleHeight + subtitleHeight;
-  }
-  return varHeight;
-};
-const getContentHeight = (varHeight = 0) => `calc( 100vh - 40px - 265px - ${varHeight}px)`;
-
 const sample = [
   { event: 'Activation Started', details: 'by user@domain.com', date: '2021-07-03' },
   { event: 'Secure File Encrypted', details: 'by user@domain.com', date: '2020-05-02' },
@@ -97,7 +82,7 @@ storiesOf('ContentModal', module)
     const tabHeight = 36;
     const contentStyle = {
       overflowY: 'scroll',
-      height: getContentHeight(getVarHeight(title, subtitle, tabHeight)),
+      height: `calc( 100vh + ${ContentModal.getContentHeight(title, subtitle, tabHeight)}px)`,
     };
 
     return (
@@ -120,7 +105,7 @@ storiesOf('ContentModal', module)
     const contentStyle = {
       background: styles.vds.color.red.lightest.value,
       width: '100%',
-      height: getContentHeight(getVarHeight(title2, subtitle2)),
+      height: `calc( 100vh + ${ContentModal.getContentHeight(title2, subtitle2)}px)`,
     };
     return (
       <ContentModal title={title2} subtitle={subtitle2}>
