@@ -21,6 +21,7 @@
   box-sizing: border-box;
   width: 1080px;
   min-height: 265px;
+  overflow: hidden;
 }
 
 .headerOuter {

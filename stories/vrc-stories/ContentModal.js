@@ -23,7 +23,7 @@ const sample = [
   { event: 'Secure File Encrypted', details: 'by user@domain.com', date: '2020-05-02' },
   { event: 'Secure Email Sent', details: 'by user@domain.com', date: '2019-07-01' },
 ];
-const data = new Array(100).fill(sample).flat();
+const data = new Array(10).fill(sample).flat();
 
 const getContentHeight = (title, subtitle, offset = 0) => {
   let varHeight = offset;
