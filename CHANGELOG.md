@@ -1,3 +1,15 @@
+# v1.18.2 (Mon Feb 15 2021)
+
+#### 🐛 Bug Fix
+
+- CCR-98 Remove min-width for the tooltip [#126](https://github.com/virtru/virtuoso-design-system/pull/126) ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+#### Authors: 1
+
+- Vlad Baranchuk ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+---
+
 # v1.18.1 (Mon Feb 08 2021)
 
 #### 🐛 Bug Fix
