@@ -5,7 +5,8 @@ const postcssCustomProperties = require('postcss-custom-properties');
 const postcssCustomMedia = require('postcss-custom-media');
 
 module.exports = {
-  modules: true,
+  autoModules: false,
+  modules: { generateScopedName: '[hash:base64]' },
   plugins: [
     postcssImport(),
     postcssCustomProperties({
