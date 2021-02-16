@@ -1,3 +1,15 @@
+# v1.19.0 (Tue Feb 16 2021)
+
+#### 🚀 Enhancement
+
+- CCR-98 Use use '[hash:base64]' classnames for production [#127](https://github.com/virtru/virtuoso-design-system/pull/127) ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+#### Authors: 1
+
+- Vlad Baranchuk ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+---
+
 # v1.18.3 (Tue Feb 16 2021)
 
 #### 🐛 Bug Fix
