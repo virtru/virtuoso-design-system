@@ -1,3 +1,15 @@
+# v1.18.3 (Tue Feb 16 2021)
+
+#### 🐛 Bug Fix
+
+- [CCR-124] chore: add data-testids to various elements [#125](https://github.com/virtru/virtuoso-design-system/pull/125) ([@ttdmayshark](https://github.com/ttdmayshark))
+
+#### Authors: 1
+
+- Tristan Mayshark ([@ttdmayshark](https://github.com/ttdmayshark))
+
+---
+
 # v1.18.2 (Mon Feb 15 2021)
 
 #### 🐛 Bug Fix
