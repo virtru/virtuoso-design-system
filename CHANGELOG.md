@@ -1,3 +1,15 @@
+# v1.19.1 (Wed Feb 17 2021)
+
+#### 🐛 Bug Fix
+
+- fix: use color for chart slice testid selector [#128](https://github.com/virtru/virtuoso-design-system/pull/128) ([@ttdmayshark](https://github.com/ttdmayshark))
+
+#### Authors: 1
+
+- Tristan Mayshark ([@ttdmayshark](https://github.com/ttdmayshark))
+
+---
+
 # v1.19.0 (Tue Feb 16 2021)
 
 #### 🚀 Enhancement
