@@ -105,10 +105,8 @@
 }
 
 .contentHeader {
-  background-color: var(--vds-color-white);
   position: absolute;
-  width: 984px;
-  margin-left: 24px;
+  width: 960px;
 }
 
 .titles {

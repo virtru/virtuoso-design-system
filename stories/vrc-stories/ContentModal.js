@@ -92,6 +92,7 @@ storiesOf('ContentModal', module)
     <ContentModal
       title={{ value: 'Random Title' }}
       subtitle="Random subtitle"
+      contentHeader={TabLabels()}
       render={(children) => (
         <div style={{ overflow: 'auto' }}>
           <Tabs size={Tabs.SIZE.SMALL}> {children} </Tabs>
