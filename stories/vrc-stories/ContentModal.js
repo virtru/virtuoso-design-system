@@ -25,33 +25,6 @@ const sample = [
 ];
 const data = new Array(10).fill(sample).flat();
 
-const getContentHeight = (title, subtitle, offset = 0) => {
-  let varHeight = offset;
-  const subtitleHeight = 60;
-  const titleHeight = 49;
-  if (title && !subtitle) {
-    varHeight -= subtitleHeight;
-  } else if (!title && subtitle) {
-    varHeight -= titleHeight;
-  } else if (!title && !subtitle) {
-    varHeight -= titleHeight + subtitleHeight;
-  }
-  const fullHeaderHeight = 72;
-  const bottomModalMargin = 36;
-  const bottomContentPadding = 24;
-  const titleAndSubtitle = 133;
-  const overlayTopMargin = 70;
-  const overlayBottomMargin = 15;
-  const nonContentSpace =
-    fullHeaderHeight +
-    bottomModalMargin +
-    bottomContentPadding +
-    titleAndSubtitle +
-    overlayTopMargin +
-    overlayBottomMargin;
-  return -varHeight - nonContentSpace;
-};
-
 const tabLabels = ['Activity Feed', 'Access Control', 'Security Options'];
 const ModalContentTabs = (contentStyle) => (
   <>
@@ -106,10 +79,10 @@ storiesOf('ContentModal', module)
     );
     const titleIconName = text('Title Icon', Icon.NAMES.PDF);
     const subtitleIconName = text('Subtitle Icon', Icon.NAMES.DRIVE);
-    const tabHeight = 36;
+    // const tabHeight = 36;
     const contentStyle = {
-      overflowY: 'scroll',
-      height: `calc( 100vh + ${getContentHeight(title, subtitle, tabHeight)}px)`,
+      // overflowY: 'scroll',
+      // height: `calc( 100vh + ${getContentHeight(title, subtitle, tabHeight)}px)`,
     };
 
     return (
@@ -131,8 +104,7 @@ storiesOf('ContentModal', module)
     const subtitle2 = text('Subtitle', 'Random subtitle');
     const contentStyle = {
       background: styles.vds.color.red.lightest.value,
-      width: '100%',
-      height: `calc( 100vh + ${getContentHeight(title2, subtitle2)}px)`,
+      // width: '100%',
     };
     return (
       <ContentModal title={title2} subtitle={subtitle2}>
