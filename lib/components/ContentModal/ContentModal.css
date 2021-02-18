@@ -11,15 +11,11 @@
   overflow: hidden;
 }
 
-/* ______________ */
-
 .title {
+  margin: 1px 0 9px;
   display: flex;
   font: var(--vds-font-heading-md);
   min-height: 40px;
-  margin-bottom: 9px;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .titleKey {
@@ -39,11 +35,11 @@
 }
 
 .subtitleWithIcon {
-  /* margin-bottom: 30px; */
+  margin-bottom: 30px;
 }
 
 .subtitleWithoutIcon {
-  /* margin-bottom: 36px; */
+  margin-bottom: 36px;
 }
 
 .headerButtonDisabled {
@@ -71,15 +67,6 @@
   color: var(--vds-color-slate-primary);
 }
 
-/* .body {
-  margin: 0 36px 36px 36px;
-}
-
-.content {
-  background-color: var(--vds-color-white);
-  padding: 24px;
-} */
-
 .titleIcon {
   padding: 3px 15px 0 0;
 }
@@ -88,8 +75,6 @@
   padding-right: 6px;
 }
 
-
-/* __________ */
 .modal {
   display: flex;
   flex-direction: column;
@@ -103,6 +88,7 @@
   box-sizing: border-box;
   padding: 22px 36px 36px;
   width: 1080px;
+  min-height: 280px;
 }
 
 .header {
@@ -113,19 +99,17 @@
 }
 
 .inner {
-  /* overflow: auto; */
+  padding: 0 24px;
+  border-radius: 3px;
   background-color: var(--vds-color-white);
-  padding: 24px;
 }
 
 .titles {
-  /* overflow: hidden; */
-  padding: 24px;
-  background-color: var(--vds-color-white);
+  padding-top: 24px;
 }
 
 .content {
   overflow: auto;
-  padding: 24px;
   background-color: var(--vds-color-white);
+  padding-bottom: 24px;
 }
