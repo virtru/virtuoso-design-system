@@ -104,11 +104,17 @@
   background-color: var(--vds-color-white);
 }
 
+.contentHeader {
+  background-color: var(--vds-color-white);
+  position: absolute;
+  width: 984px;
+  margin-left: 24px;
+}
+
 .titles {
   padding-top: 24px;
 }
 
 .content {
   overflow: auto;
-  background-color: var(--vds-color-white);
 }
