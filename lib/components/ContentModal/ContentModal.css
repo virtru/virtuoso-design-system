@@ -111,5 +111,4 @@
 .content {
   overflow: auto;
   background-color: var(--vds-color-white);
-  padding-bottom: 24px;
 }
