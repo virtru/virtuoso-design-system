@@ -44,27 +44,33 @@ const TabContentList = () => (
   </div>
 );
 
-storiesOf('ContentModal', module).lokiSkip('default', () => {
-  const title = object('Title', { key: 'Filename', value: 'january-reports.pdf' });
-  const subtitle = text(
-    'Subtitle',
-    'Google Drive file shared by khart@acmecorp.com on November 16, 2020, 7:16 am',
-  );
-  const titleIconName = text('Title Icon', Icon.NAMES.PDF);
-  const subtitleIconName = text('Subtitle Icon', Icon.NAMES.DRIVE);
+storiesOf('ContentModal', module)
+  .lokiSkip('default', () => {
+    const title = object('Title', { key: 'Filename', value: 'january-reports.pdf' });
+    const subtitle = text(
+      'Subtitle',
+      'Google Drive file shared by khart@acmecorp.com on November 16, 2020, 7:16 am',
+    );
+    const titleIconName = text('Title Icon', Icon.NAMES.PDF);
+    const subtitleIconName = text('Subtitle Icon', Icon.NAMES.DRIVE);
 
-  return (
-    <ContentModal
-      modalHeader={<Button variant={Button.VARIANT.SECONDARY} size={Button.SIZE.SQUARE} />}
-      title={title}
-      subtitle={subtitle}
-      titleIconName={titleIconName}
-      subtitleIconName={subtitleIconName}
-      onCloseClick={() => alert('close')}
-      onBackClick={() => alert('back')}
-      contentHeader={TabLabels()}
-    >
+    return (
+      <ContentModal
+        modalHeader={<Button variant={Button.VARIANT.SECONDARY} size={Button.SIZE.SQUARE} />}
+        title={title}
+        subtitle={subtitle}
+        titleIconName={titleIconName}
+        subtitleIconName={subtitleIconName}
+        onCloseClick={() => alert('close')}
+        onBackClick={() => alert('back')}
+        contentHeader={TabLabels()}
+      >
+        {TabContentList()}
+      </ContentModal>
+    );
+  })
+  .add('minimal', () => (
+    <ContentModal title={{ value: 'Random Title' }} subtitle="Random subtitle">
       {TabContentList()}
     </ContentModal>
-  );
-});
+  ));
