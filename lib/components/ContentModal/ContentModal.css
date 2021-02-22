@@ -104,15 +104,12 @@
   background-color: var(--vds-color-white);
 }
 
-.contentHeader {
-  position: absolute;
-  width: 960px;
-}
-
 .titles {
   padding-top: 24px;
 }
 
 .content {
-  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
