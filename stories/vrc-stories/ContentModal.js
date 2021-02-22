@@ -35,7 +35,7 @@ const TabLabels = () => (
 );
 const TabContentList = () => (
   <TabPanel>
-    <div style={{ marginTop: '35px' }}>
+    <div style={{ marginTop: '-1px' }}>
       <Table isScrollableBody>
         <THead>
           <TR>
@@ -79,9 +79,9 @@ storiesOf('ContentModal', module)
         onBackClick={() => alert('back')}
         contentHeader={TabLabels()}
         render={(children) => (
-          <div style={{ overflow: 'auto' }}>
-            <Tabs size={Tabs.SIZE.SMALL}> {children} </Tabs>
-          </div>
+          <Tabs size={Tabs.SIZE.SMALL} scrollable>
+            {children}
+          </Tabs>
         )}
       >
         {TabContentList()}
@@ -94,9 +94,9 @@ storiesOf('ContentModal', module)
       subtitle="Random subtitle"
       contentHeader={TabLabels()}
       render={(children) => (
-        <div style={{ overflow: 'auto' }}>
-          <Tabs size={Tabs.SIZE.SMALL}> {children} </Tabs>
-        </div>
+        <Tabs size={Tabs.SIZE.SMALL} scrollable>
+          {children}
+        </Tabs>
       )}
     >
       {TabContentList()}
