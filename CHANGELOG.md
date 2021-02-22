@@ -1,3 +1,16 @@
+# v1.19.2 (Mon Feb 22 2021)
+
+#### 🐛 Bug Fix
+
+- fix: add absolute positioning to content modal - CCR-17 [#124](https://github.com/virtru/virtuoso-design-system/pull/124) ([@suchak1](https://github.com/suchak1) [@kuguarpwnz](https://github.com/kuguarpwnz))
+
+#### Authors: 2
+
+- Krish Suchak ([@suchak1](https://github.com/suchak1))
+- Vlad Baranchuk ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+---
+
 # v1.19.1 (Wed Feb 17 2021)
 
 #### 🐛 Bug Fix
