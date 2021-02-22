@@ -57,3 +57,18 @@
 .container :global(.react-tabs__tab:focus) {
   outline: none;
 }
+
+.scrollable {
+  overflow: hidden;
+}
+
+.scrollable :global(.react-tabs) {
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollable :global(.react-tabs__tab-panel) {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}

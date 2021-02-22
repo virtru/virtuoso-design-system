@@ -1,39 +1,21 @@
 .overlay {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 54px;
   bottom: 0;
   left: 0;
-  background-color: rgba(var(--vds-color-slate-darker), 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: var(--high-importance);
+  right: 0;
+  background-color: var(--vds-color-ghosted);
 }
 
-.large {
-  border-radius: 5px;
-  background-color: var(--vds-color-slate-lightest);
-  box-shadow: 0 0 4px 1px rgba(var(--vds-color-black), 0.3);
-  box-sizing: border-box;
-  width: 1080px;
-}
-
-.headerOuter {
-  padding: 22px 36px 14px 36px;
-  height: 36px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.headerInner {
-  display: flex;
+.noOverflow {
+  overflow: hidden;
 }
 
 .title {
+  margin: 1px 0 9px;
   display: flex;
   font: var(--vds-font-heading-md);
-  padding-bottom: 13px;
+  min-height: 40px;
 }
 
 .titleKey {
@@ -48,14 +30,16 @@
   display: flex;
   font: var(--vds-font-md);
   color: var(--vds-color-slate-darkest);
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .subtitleWithIcon {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .subtitleWithoutIcon {
-  padding-bottom: 36px;
+  margin-bottom: 36px;
 }
 
 .headerButtonDisabled {
@@ -83,19 +67,49 @@
   color: var(--vds-color-slate-primary);
 }
 
-.body {
-  padding: 0 36px 36px 36px;
-}
-
-.content {
-  background-color: var(--vds-color-white);
-  padding: 24px;
-}
-
 .titleIcon {
   padding: 3px 15px 0 0;
 }
 
 .subtitleIcon {
   padding-right: 6px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--vds-color-slate-lightest);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 22px 36px 36px;
+  width: 1080px;
+  min-height: 280px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.inner {
+  padding: 0 24px;
+  border-radius: 3px;
+  background-color: var(--vds-color-white);
+}
+
+.titles {
+  padding-top: 24px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
