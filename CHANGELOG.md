@@ -1,3 +1,15 @@
+# v1.19.3 (Tue Feb 23 2021)
+
+#### 🐛 Bug Fix
+
+- fix: use better selector for pie element [#131](https://github.com/virtru/virtuoso-design-system/pull/131) ([@ttdmayshark](https://github.com/ttdmayshark))
+
+#### Authors: 1
+
+- Tristan Mayshark ([@ttdmayshark](https://github.com/ttdmayshark))
+
+---
+
 # v1.19.2 (Mon Feb 22 2021)
 
 #### 🐛 Bug Fix
