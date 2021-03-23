@@ -27,7 +27,7 @@ function parseShareURL(url) {
 export function Panel() {
   const { storyId } = useStorybookState();
   const shareDescriptor = useParameter(PARAM_KEY);
-
+  debugger;
   return React.useMemo(() => {
     if (!shareDescriptor) return null;
 
