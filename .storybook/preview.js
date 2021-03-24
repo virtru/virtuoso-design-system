@@ -34,10 +34,11 @@ addParameters({
       css: cssTokenFiles,
     }
   },
-  
-  options: {
+  docs: {
     // configure @storybook/theming
     theme: virtuosoTheme,
+  },
+  options: {
 
     /**
      * id to select an addon panel
