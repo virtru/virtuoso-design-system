@@ -155,6 +155,22 @@
   min-height: 36px;
 }
 
+.header {
+  composes: base;
+  color: var(--vds-color-white);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 0;
+  background: transparent;
+  font-size: 1.3rem;
+  line-height: normal;
+  font-weight: 600;
+}
+
+.header:focus {
+  border: 1px solid var(--vds-color-blue-darker);
+}
+
 /* stylelint-disable-next-line plugin/selector-tag-no-without-class */
 .base svg {
   vertical-align: middle;
