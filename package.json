@@ -136,7 +136,7 @@
     "d3-shape": "^2.0.0",
     "numeral": "^2.0.6",
     "prop-types": "^15.7.2",
-    "react-select": "^3.0.4",
+    "react-select": "^4.3.0",
     "react-simple-maps": "^2.3.0",
     "react-tabs": "^3.0.0",
     "react-toggle": "^4.1.1",
