@@ -50,7 +50,7 @@
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.2",
     "@auto-it/all-contributors": "^9.50.1",
-    "@auto-it/conventional-commits": "^9.50.1",
+    "@auto-it/conventional-commits": "^10.22.1",
     "@auto-it/first-time-contributor": "^9.50.1",
     "@auto-it/jira": "^9.50.1",
     "@babel/cli": "^7.8.4",
