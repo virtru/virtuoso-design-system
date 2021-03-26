@@ -3,6 +3,8 @@
   color: var(--vds-color-white);
   position: relative;
   padding: 10px 6px;
+  font-size: var(--vds-font-size-sm);
+  line-height: var(--vds-line-height-sm);
 }
 
 .iconWrapper {
@@ -21,8 +23,6 @@
 
 .email {
   font-weight: 600;
-  font-size: var(--vds-font-size-sm);
-  line-height: var(--vds-line-height-sm);
   margin-right: 8px;
 }
 
@@ -40,8 +40,6 @@
 
 .text {
   color: var(--vds-color-slate-darker);
-  font-size: 1.3rem;
-  line-height: 1.8rem;
   font-weight: normal;
 }
 
