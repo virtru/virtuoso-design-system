@@ -1,3 +1,36 @@
+# v1.19.4 (Tue Apr 13 2021)
+
+#### 🐛 Bug Fix
+
+- fix(contentmodal): z-index and data-testid - CCR-267 [#156](https://github.com/virtru/virtuoso-design-system/pull/156) ([@suchak1](https://github.com/suchak1))
+- chore: add dependabot config [#138](https://github.com/virtru/virtuoso-design-system/pull/138) ([@jrschumacher](https://github.com/jrschumacher))
+- chore: add codeql analysis [#132](https://github.com/virtru/virtuoso-design-system/pull/132) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### 📝 Documentation
+
+- doc: update PR template [#130](https://github.com/virtru/virtuoso-design-system/pull/130) ([@avkvirtru](https://github.com/avkvirtru))
+
+#### 🔩 Dependency Updates
+
+- chore(deps-dev): bump eslint-plugin-prettier from 3.1.4 to 3.3.1 [#148](https://github.com/virtru/virtuoso-design-system/pull/148) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps-dev): bump babel-loader from 8.1.0 to 8.2.2 [#142](https://github.com/virtru/virtuoso-design-system/pull/142) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps-dev): bump stylelint from 13.6.1 to 13.12.0 [#143](https://github.com/virtru/virtuoso-design-system/pull/143) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps-dev): bump rollup-plugin-copy from 3.3.0 to 3.4.0 [#146](https://github.com/virtru/virtuoso-design-system/pull/146) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): bump alex-page/github-project-automation-plus from v0.2.4 to v0.5.1 [#139](https://github.com/virtru/virtuoso-design-system/pull/139) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): bump actions/setup-node from v2-beta to v2.1.5 [#140](https://github.com/virtru/virtuoso-design-system/pull/140) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): bump elliptic from 6.5.3 to 6.5.4 [#137](https://github.com/virtru/virtuoso-design-system/pull/137) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): bump actions/cache from v2 to v2.1.4 [#141](https://github.com/virtru/virtuoso-design-system/pull/141) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): bump pug-code-gen from 2.0.2 to 2.0.3 [#135](https://github.com/virtru/virtuoso-design-system/pull/135) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 4
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Arthur Klepchukov ([@avkvirtru](https://github.com/avkvirtru))
+- Krish Suchak ([@suchak1](https://github.com/suchak1))
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v1.19.3 (Tue Feb 23 2021)
 
 #### 🐛 Bug Fix
