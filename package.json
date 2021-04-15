@@ -143,8 +143,8 @@
     "react-tooltip": "^4.2.11"
   },
   "peerDependencies": {
-    "react": "^16.3",
-    "react-dom": "^16.3"
+    "react": ">=16.3",
+    "react-dom": ">=16.3"
   },
   "loki": {
     "configurations": {
