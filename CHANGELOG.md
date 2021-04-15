@@ -1,3 +1,16 @@
+# v1.19.8 (Thu Apr 15 2021)
+
+#### 🐛 Bug Fix
+
+- chore(deps): changed react, react-dom peer dependencies [#162](https://github.com/virtru/virtuoso-design-system/pull/162) (okorobka@virtru.com [@korobko-virtru](https://github.com/korobko-virtru))
+
+#### Authors: 2
+
+- [@korobko-virtru](https://github.com/korobko-virtru)
+- Alex Korobko (okorobka@virtru.com)
+
+---
+
 # v1.19.4 (Wed Apr 14 2021)
 
 #### 🐛 Bug Fix
