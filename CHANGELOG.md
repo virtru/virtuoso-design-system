@@ -1,3 +1,15 @@
+# v1.19.9 (Tue Apr 20 2021)
+
+#### 🐛 Bug Fix
+
+- CCR-77 Fix disabled state for Button and ChartContainer [#165](https://github.com/virtru/virtuoso-design-system/pull/165) ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+#### Authors: 1
+
+- Vlad Baranchuk ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+---
+
 # v1.19.8 (Thu Apr 15 2021)
 
 #### 🐛 Bug Fix
