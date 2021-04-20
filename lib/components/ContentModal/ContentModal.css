@@ -5,6 +5,7 @@
   left: 0;
   right: 0;
   background-color: var(--vds-color-ghosted);
+  z-index: var(--high-importance);
 }
 
 .noOverflow {
