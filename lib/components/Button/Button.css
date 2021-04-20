@@ -100,8 +100,11 @@
   color: var(--vds-color-white);
 }
 
+/* stylelint-disable-next-line plugin/selector-tag-no-without-class */
+.secondary:disabled svg *,
 .secondary:disabled {
   color: var(--vds-color-slate-lighter);
+  fill: var(--vds-color-slate-lighter);
   border-color: var(--vds-color-slate-lighter);
 }
 
