@@ -1,3 +1,15 @@
+# v1.19.11 (Wed Apr 21 2021)
+
+#### 🐛 Bug Fix
+
+- CCR-77 Fix chart container disabled title color [#166](https://github.com/virtru/virtuoso-design-system/pull/166) ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+#### Authors: 1
+
+- Vlad Baranchuk ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+---
+
 # v1.19.9 (Tue Apr 20 2021)
 
 #### 🐛 Bug Fix
