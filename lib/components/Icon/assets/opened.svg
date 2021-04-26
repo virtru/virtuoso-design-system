@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>4942D625-0C81-4A3A-A822-68603BAEB7F4</title>
+    <title>OpenedIcon</title>
     <defs>
-        <path d="M7.00058338,0 L7.00058338,1 L8.00066672,1 L8.00066672,2 L10.9999167,2 L10.9999167,4.999 L12,4.999 L12,11 L10.9999167,11 L10.9999167,12 L0.999083257,12 L0.999083257,11 L-8.8817842e-16,11 L-8.8817842e-16,4.999 L0.999083257,4.999 L0.999083257,2 L3.99933328,2 L3.99933328,1 L5.0004167,1 L5.0004167,0 L7.00058338,0 Z M8.00066672,6.999 L9.00075006,6.999 L9.00075006,5.999 L9.99983332,5.999 L9.99983332,3 L1.9991666,3 L1.9991666,5.999 L2.99924994,5.999 L2.99924994,6.999 L3.99933328,6.999 L3.99933328,8 L4.00033336,8 L4.00033336,7 L5.0004167,7 L5.0004167,8 L7,8 L7,7 L8,7 L8.00066672,6.999 Z" id="path-1"></path>
+        <path d="M7.00058338,0 L7.00058338,1 L8.00066672,1 L8.00066672,2 L10.9999167,2 L10.9999167,4.999 L12,4.999 L12,11 L10.9999167,11 L10.9999167,12 L0.999083257,12 L0.999083257,11 L-8.8817842e-16,11 L-8.8817842e-16,4.999 L0.999083257,4.999 L0.999083257,2 L3.99933328,2 L3.99933328,1 L5.0004167,1 L5.0004167,0 L7.00058338,0 Z M8.00066672,6.999 L9.00075006,6.999 L9.00075006,5.999 L9.99983332,5.999 L9.99983332,3 L1.9991666,3 L1.9991666,5.999 L2.99924994,5.999 L2.99924994,6.999 L3.99933328,6.999 L3.99933328,8 L4.00033336,8 L4.00033336,7 L5.0004167,7 L5.0004167,8 L7,8 L7,7 L8,7 L8.00066672,6.999 Z" id="OpenedPath"></path>
     </defs>
-    <g id="Modals" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="V2-Email-&amp;-Files---Email-Modal-Recipients" transform="translate(-932.000000, -538.000000)">
-            <g id="Group" transform="translate(99.000000, 70.000000)">
-                <g id="modal-content" transform="translate(60.000000, 205.000000)">
-                    <g id="status" transform="translate(773.000000, 84.000000)">
-                        <g id="Primitive/Icon---Ancillary/read-receipt-open-12-Copy-9" transform="translate(0.000000, 179.000000)">
-                            <mask id="mask-2" fill="white">
-                                <use xlink:href="#path-1"></use>
+    <g id="OpenedModal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="OpenedEmailFiles" transform="translate(-932.000000, -538.000000)">
+            <g id="OpenedGroup" transform="translate(99.000000, 70.000000)">
+                <g id="OpenedContent" transform="translate(60.000000, 205.000000)">
+                    <g id="OpenedStatus" transform="translate(773.000000, 84.000000)">
+                        <g id="OpenedIcon" transform="translate(0.000000, 179.000000)">
+                            <mask id="OpenedMask" fill="white">
+                                <use xlink:href="#OpenedPath"></use>
                             </mask>
-                            <use id="read-receipt-open-12" fill="#A7A9AC" xlink:href="#path-1"></use>
-                            <g id="Color" mask="url(#mask-2)" fill="#60AE04">
-                                <rect id="Rectangle-2" x="0" y="0" width="12" height="12"></rect>
+                            <use id="read-receipt-open-12" fill="#A7A9AC" xlink:href="#OpenedPath"></use>
+                            <g id="OpenedColor" mask="url(#OpenedMask)" fill="#60AE04">
+                                <rect id="OpenedRectangle" x="0" y="0" width="12" height="12"></rect>
                             </g>
                         </g>
                     </g>
