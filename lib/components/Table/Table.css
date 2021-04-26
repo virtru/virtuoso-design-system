@@ -8,3 +8,7 @@
   overflow-y: auto;
   height: 100%;
 }
+
+.fixed {
+  table-layout: fixed;
+}
