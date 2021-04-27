@@ -2,12 +2,5 @@
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
-}
-
-.menuLeftAlignWrapper {
-  align-self: flex-start;
-}
-
-.menuRightAlignWrapper {
-  align-self: flex-end;
+  align-items: center;
 }

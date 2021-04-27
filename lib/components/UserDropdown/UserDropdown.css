@@ -1,0 +1,45 @@
+.dropdownWrapper {
+  background-color: var(--vds-color-blue-darkest);
+  color: var(--vds-color-white);
+  position: relative;
+  padding: 10px 6px;
+  font-size: var(--vds-font-size-sm);
+  line-height: var(--vds-line-height-sm);
+}
+
+.iconWrapper {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emailWrapper {
+  margin: 0 0 0 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.email {
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.signoutWrapper {
+  border: 1px solid var(--vds-color-slate-lighter);
+  position: absolute;
+  background: var(--vds-color-white);
+  box-shadow: 0 4px 8px 4px rgba(var(--vds-color-black), 0.15);
+  border-radius: 3px;
+  box-sizing: border-box;
+  z-index: 2;
+  right: 0;
+  top: 54px;
+}
+
+.text {
+  color: var(--vds-color-slate-darker);
+  font-weight: normal;
+}
+
