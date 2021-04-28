@@ -1,3 +1,15 @@
+# v1.20.0 (Mon Apr 26 2021)
+
+#### 🚀 Enhancement
+
+- CCR-300 Add fixed table layout [#169](https://github.com/virtru/virtuoso-design-system/pull/169) ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+#### Authors: 1
+
+- Vlad Baranchuk ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+---
+
 # v1.19.11 (Wed Apr 21 2021)
 
 #### 🐛 Bug Fix

@@ -1,6 +1,6 @@
 {
   "name": "virtuoso-design-system",
-  "version": "1.19.12",
+  "version": "1.20.0",
   "description": "A set of reusable elements that enable Virtru designers and Virtru engineers to create consistent Virtru products.",
   "author": "Virtru CI <ci@virtru.com>",
   "main": "dist/bundle.cjs.js",
@@ -50,7 +50,7 @@
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.2",
     "@auto-it/all-contributors": "^9.50.1",
-    "@auto-it/conventional-commits": "^9.50.1",
+    "@auto-it/conventional-commits": "^10.25.1",
     "@auto-it/first-time-contributor": "^9.50.1",
     "@auto-it/jira": "^9.50.1",
     "@babel/cli": "^7.8.4",
