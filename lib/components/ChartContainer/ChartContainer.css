@@ -58,6 +58,10 @@
   height: 36px;
 }
 
+.disabledTitle {
+  color: var(--vds-color-slate-lighter);
+}
+
 .content {
   padding: 12px 24px 24px;
 }

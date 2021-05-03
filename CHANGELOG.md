@@ -1,3 +1,65 @@
+# v1.21.0 (Wed Apr 28 2021)
+
+#### 🚀 Enhancement
+
+- feat: add access control icons - CCR-23 [#170](https://github.com/virtru/virtuoso-design-system/pull/170) ([@suchak1](https://github.com/suchak1))
+
+#### 🐛 Bug Fix
+
+- fix: revert auto major version [#174](https://github.com/virtru/virtuoso-design-system/pull/174) ([@suchak1](https://github.com/suchak1))
+- CCR-291 Make content modal height 100% [#173](https://github.com/virtru/virtuoso-design-system/pull/173) ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+#### 🔩 Dependency Updates
+
+- chore(deps-dev): bump @auto-it/conventional-commits from 9.50.1 to 10.25.1 [#163](https://github.com/virtru/virtuoso-design-system/pull/163) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): bump y18n from 4.0.0 to 4.0.1 [#153](https://github.com/virtru/virtuoso-design-system/pull/153) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): bump gitlog from 4.0.0 to 4.0.4 [#158](https://github.com/virtru/virtuoso-design-system/pull/158) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): bump alex-page/github-project-automation-plus from v0.5.1 to v0.6.0 [#168](https://github.com/virtru/virtuoso-design-system/pull/168) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 3
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Krish Suchak ([@suchak1](https://github.com/suchak1))
+- Vlad Baranchuk ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+---
+
+# v1.20.0 (Mon Apr 26 2021)
+
+#### 🚀 Enhancement
+
+- CCR-300 Add fixed table layout [#169](https://github.com/virtru/virtuoso-design-system/pull/169) ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+#### Authors: 1
+
+- Vlad Baranchuk ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+---
+
+# v1.19.11 (Wed Apr 21 2021)
+
+#### 🐛 Bug Fix
+
+- CCR-77 Fix chart container disabled title color [#166](https://github.com/virtru/virtuoso-design-system/pull/166) ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+#### Authors: 1
+
+- Vlad Baranchuk ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+---
+
+# v1.19.9 (Tue Apr 20 2021)
+
+#### 🐛 Bug Fix
+
+- CCR-77 Fix disabled state for Button and ChartContainer [#165](https://github.com/virtru/virtuoso-design-system/pull/165) ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+#### Authors: 1
+
+- Vlad Baranchuk ([@kuguarpwnz](https://github.com/kuguarpwnz))
+
+---
+
 # v1.19.8 (Thu Apr 15 2021)
 
 #### 🐛 Bug Fix
