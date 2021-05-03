@@ -1,3 +1,15 @@
+# v1.21.1 (Mon May 03 2021)
+
+#### 🐛 Bug Fix
+
+- fix: npm audit [#164](https://github.com/virtru/virtuoso-design-system/pull/164) ([@suchak1](https://github.com/suchak1))
+
+#### Authors: 1
+
+- Krish Suchak ([@suchak1](https://github.com/suchak1))
+
+---
+
 # v1.21.0 (Wed Apr 28 2021)
 
 #### 🚀 Enhancement
