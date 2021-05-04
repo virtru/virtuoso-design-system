@@ -70,6 +70,7 @@ module.exports = async ({ config }) => {
           options: {
             limit: 8192,
             fallback: 'file-loader',
+            esModule: false
           },
         },
       ],

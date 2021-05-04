@@ -86,37 +86,14 @@ const printButtonTable = (size, children = 'Label') => (
 );
 
 storiesOf('Button', module)
-  .addParameters({
-    abstract: {
-      shareId: 'b97555e2-2cd2-4a35-b1b8-cd5e3a85c243',
+  .addParameters(
+    {
+      abstract: {
+        shareId: 'b97555e2-2cd2-4a35-b1b8-cd5e3a85c243',
+      },
     },
-  })
-  .lokiSkip('default', () => (
-    <Container>
-      <Button
-        variant={select('Variant', variants, defaultVariant)}
-        size={select('Size', sizes, defaultSize)}
-        disabled={boolean('Disabled')}
-        danger={boolean('Danger')}
-        fullWidth={boolean('Full Width')}
-      >
-        {text('Button label', 'Label')}
-      </Button>
-    </Container>
-  ))
-  .lokiSkip('default with icon', () => (
-    <Container>
-      <Button
-        variant={select('Variant', variants, defaultVariant)}
-        size={select('Size', sizes, Button.SIZE.SQUARE)}
-        disabled={boolean('Disabled')}
-        danger={boolean('Danger')}
-        fullWidth={boolean('Full Width')}
-      >
-        <Icon />
-      </Button>
-    </Container>
-  ))
+    { loki: { skip: true } },
+  )
   .add('large', () => printButtonTable(Button.SIZE.LARGE))
   .add('medium', () => printButtonTable(Button.SIZE.MEDIUM))
   .add('small', () => printButtonTable(Button.SIZE.SMALL))
