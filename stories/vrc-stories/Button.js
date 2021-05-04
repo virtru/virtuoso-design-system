@@ -1,20 +1,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { text, boolean, select } from '@storybook/addon-knobs';
 import Icon from './assets/icon.svg';
 
 import { Button } from '@';
-
-// eslint-disable-next-line react/prop-types
-const Container = ({ children }) => (
-  <div style={{ maxWidth: '400px', display: 'flex', flexGrow: '1' }}>{children}</div>
-);
-
-const variants = Object.values(Button.VARIANT);
-const sizes = Object.values(Button.SIZE);
-const defaultVariant = Button.VARIANT.SECONDARY;
-const defaultSize = Button.SIZE.MEDIUM;
 
 const printButtonTable = (size, children = 'Label') => (
   <table>
