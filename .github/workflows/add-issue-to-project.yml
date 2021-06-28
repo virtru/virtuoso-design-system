@@ -8,7 +8,7 @@ jobs:
   add-issue-to-project:
     runs-on: ubuntu-latest
     steps:
-      - uses: alex-page/github-project-automation-plus@v0.6.0
+      - uses: alex-page/github-project-automation-plus@v0.8.0
         if: contains(github.event.issue.milestone.title, 'v1.0')
         with:
           project: Kanban
