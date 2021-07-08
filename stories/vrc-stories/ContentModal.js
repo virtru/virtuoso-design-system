@@ -10,11 +10,6 @@ import {
   TabPanel,
   Icon,
   Table,
-  TR,
-  TH,
-  TD,
-  THead,
-  TBody,
 } from '@';
 
 const sample = [
@@ -22,6 +17,24 @@ const sample = [
   { event: 'Secure File Encrypted', details: 'by user@domain.com', date: '2020-05-02' },
   { event: 'Secure Email Sent', details: 'by user@domain.com', date: '2019-07-01' },
 ];
+const columns = [
+  {
+    title: 'Event',
+    dataIndex: 'event',
+    key: '0',
+  },
+  {
+    title: 'Details',
+    dataIndex: 'details',
+    key: '1',
+  },
+  {
+    title: 'Date',
+    dataIndex: 'date',
+    key: '2',
+  },
+];
+
 const data = new Array(10).fill(sample).flat();
 
 const tabLabels = ['Activity Feed'];
@@ -36,24 +49,7 @@ const TabLabels = () => (
 const TabContentList = () => (
   <TabPanel>
     <div style={{ marginTop: '-1px' }}>
-      <Table isScrollableBody>
-        <THead>
-          <TR>
-            <TH>Event</TH>
-            <TH>Details</TH>
-            <TH>Date</TH>
-          </TR>
-        </THead>
-        <TBody>
-          {data.map((d) => (
-            <TR>
-              <TD>{d.event}</TD>
-              <TD>{d.details}</TD>
-              <TD>{d.date}</TD>
-            </TR>
-          ))}
-        </TBody>
-      </Table>
+      <Table columns={columns} dataSource={data} pagination={false} />
     </div>
   </TabPanel>
 );

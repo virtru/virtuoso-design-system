@@ -51,6 +51,7 @@ module.exports = async ({ config }) => {
       test: /\.css$/,
       include: [
         path.join(__dirname, '..', 'node_modules', '@storybook'),
+        path.join(__dirname, '..', 'node_modules', 'antd'),
       ],
       use: [
         {
