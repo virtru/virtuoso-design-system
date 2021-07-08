@@ -1,16 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, object } from '@storybook/addon-knobs';
-import {
-  Button,
-  ContentModal,
-  Tabs,
-  Tab,
-  TabList,
-  TabPanel,
-  Icon,
-  Table,
-} from '@';
+import { Button, ContentModal, Tabs, Tab, TabList, TabPanel, Icon, Table } from '@';
 
 const sample = [
   { event: 'Activation Started', details: 'by user@domain.com', date: '2021-07-03' },

@@ -1,6 +1,5 @@
 .table {
   width: 100%;
-  border-collapse: collapse;
   font-size: 13px;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
@@ -8,10 +7,6 @@
 .table :global(.ant-table-row) {
   color: #2D323B;
   border-top-color: #F3F5F7;
-}
-
-.table :global(.ant-table-disable-hover-row:hover > td) {
-  background: inherit !important;
 }
 
 .table :global(.ant-table-thead > tr > th) {
@@ -23,16 +18,11 @@
   font-size: 13px;
 }
 
+.table :global(.ant-table-disable-hover-row:hover > td) {
+  background: inherit !important;
+}
+
 .table :global(.ant-table-tbody > tr.ant-table-focus-row > td),
 .table :global(.ant-table-tbody > tr.ant-table-row:focus > td) {
-    background: #fafafa;
-}
-
-.scrollableBody {
-  overflow-y: auto;
-  height: 100%;
-}
-
-.fixed {
-  table-layout: fixed;
+  background: #FAFAFA;
 }
