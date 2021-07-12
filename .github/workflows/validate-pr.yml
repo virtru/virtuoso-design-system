@@ -78,7 +78,7 @@ jobs:
             ${{ runner.OS }}-node-
             ${{ runner.OS }}-
       - run: npm ci
-      - run: npm audit
+      - run: npm audit --production
   test-ci:
     needs: setup
     runs-on: ubuntu-latest
