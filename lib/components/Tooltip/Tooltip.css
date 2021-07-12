@@ -31,6 +31,12 @@
   color: var(--vds-color-white);
 }
 
+.container-informative {
+  background-color: var(--vds-color-white);
+  box-shadow: var(--vds-shadow-hover);
+  color: var(--vds-color-slate-darkest);
+}
+
 .container-error {
   background-color: var(--vds-color-red-lightest);
   border: 1px solid var(--vds-color-red-darker);
@@ -93,6 +99,7 @@
 }
 
 .arrow-default { border-color: var(--vds-color-slate-darkest); }
+.arrow-informative { border-color: var(--vds-color-slate-lightest);}
 .arrow-error { border-color: var(--vds-color-red-darker); }
 
 ._arrow {

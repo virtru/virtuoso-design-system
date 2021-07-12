@@ -39,4 +39,15 @@ storiesOf('Tooltip', module)
     >
       <button type="button">Renders an error</button>
     </Tooltip>
+  ))
+  .add('informative', () => (
+    <Tooltip
+      overlay={text('Overlay', 'A thoughtful and informative tooltip.')}
+      trigger={select('Trigger', triggers, Tooltip.TRIGGER.DEFAULT)}
+      variant={select('Variant', variants, Tooltip.VARIANT.INFORMATIVE)}
+      position={select('Position', positions, defaultPosition)}
+      arrowPosition={select('Arrow position', arrowPositions, defaultArrowPosition)}
+    >
+      <button type="button">Renders Informative Toolip</button>
+    </Tooltip>
   ));
