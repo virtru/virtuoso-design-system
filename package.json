@@ -53,7 +53,7 @@
     "@auto-it/conventional-commits": "^9.50.1",
     "@auto-it/first-time-contributor": "^9.50.1",
     "@auto-it/jira": "^9.50.1",
-    "@babel/cli": "^7.8.4",
+    "@babel/cli": "^7.14.5",
     "@babel/core": "^7.11.1",
     "@babel/plugin-transform-react-display-name": "^7.10.4",
     "@babel/preset-env": "^7.11.0",
@@ -98,7 +98,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.3.0",
     "jest-dom": "^4.0.0",
-    "loki": "^0.20.3",
+    "loki": "^0.28.1",
     "npm-run-all": "^4.1.5",
     "postcss-custom-media": "^7.0.8",
     "postcss-custom-properties": "^8.0.10",
@@ -126,7 +126,7 @@
     "url-loader": "^2.0.0"
   },
   "dependencies": {
-    "@nivo/core": "^0.67.0",
+    "@nivo/core": "^0.72.0",
     "@nivo/pie": "^0.67.0",
     "@testing-library/user-event": "^12.6.0",
     "animejs": "^3.0.1",
