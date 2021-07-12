@@ -99,7 +99,7 @@
 }
 
 .arrow-default { border-color: var(--vds-color-slate-darkest); }
-.arrow-informative { border-color: var(--vds-color-slate-lightest);}
+.arrow-informative { border-color: var(--vds-color-slate-lightest); }
 .arrow-error { border-color: var(--vds-color-red-darker); }
 
 ._arrow {
