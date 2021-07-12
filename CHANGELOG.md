@@ -1,5 +1,9 @@
 # v1.21.1 (Mon May 03 2021)
 
+#### 🚀 Enhancement
+
+- feat: add informative tooltip variant - CORE-3163 [#192](https://github.com/virtru/virtuoso-design-system/pull/192) ([@feannyn](https://github.com/feannyn))
+
 #### 🐛 Bug Fix
 
 - fix: npm audit [#164](https://github.com/virtru/virtuoso-design-system/pull/164) ([@suchak1](https://github.com/suchak1))
