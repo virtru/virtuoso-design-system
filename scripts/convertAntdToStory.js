@@ -1,0 +1,102 @@
+/* eslint-disable no-await-in-loop, no-console */
+
+const path = require('path');
+const glob = require('glob');
+const fs = require('fs-extra');
+const showdown = require('showdown');
+
+converter = new showdown.Converter();
+
+function escapeUnsafeChar(unsafe) {
+  return unsafe
+    .replace(/{/g, "&#123;")
+    .replace(/}/g, "&#125;")
+}
+
+function getDemo(content) {
+  const lines = content.split(/[\n\r]/);
+  let extension;
+
+  const tsxStartLine = lines.findIndex(line => {
+    const lines = line.replace(/\s/g).toLowerCase();
+    if (lines.includes('```tsx')) {
+      extension = 'tsx';
+      return true;
+    }
+    if (lines.includes('```jsx')) {
+      extension = 'jsx';
+      return true;
+    }
+    return false;
+  });
+
+  if (tsxStartLine < 0) {
+    return null;
+  }
+
+  const description = content.substring(
+    content.indexOf("## en-US") + 1,
+    content.indexOf("```")
+  ).trim();
+
+  const tsxEndLine = lines.findIndex(
+    (line, index) => index > tsxStartLine && line.trim() === '```',
+  );
+
+  let script = lines.slice(tsxStartLine + 1, tsxEndLine).join('\n');
+
+  // insert React & ReactDOM
+  if (!script.includes('import React') && !script.includes('import * as React')) {
+    script = `import React from 'react';\n${script}`;
+  }
+  script = `import ReactDOM from 'react-dom';\n${script}`;
+  script = `import { storiesOf } from '@storybook/react';\n${script}`;
+  script = `import 'antd/dist/antd.less';\n${script}`;
+
+  // Replace antd
+  // script = script.replace(`from 'antd'`, `from '..'`);
+
+  // Add path
+  script = `/* eslint-disabled */\n${script}`;
+
+  return { script, extension, description };
+}
+
+
+(async () => {
+  console.time('Execution...');
+
+  const demoFiles = glob.sync(path.join(process.cwd(), 'lib/components/**/demo/*.md'));
+
+  let tmpFolder = path.resolve('stories/vrc-stories');
+
+  for (let i = 0; i < demoFiles.length; i += 1) {
+    const demoPath = demoFiles[i];
+
+    const content = await fs.readFile(demoPath, 'utf8');
+    let { script, extension, description } = getDemo(content, demoPath);
+
+    const dirs = path.dirname(demoPath).split(path.sep);
+
+    if (script) {
+      await fs.ensureDir(path.join(
+        tmpFolder,
+        dirs[dirs.length - 2],
+      ));
+
+      script = script.replace(
+        'ReactDOM.render(',
+        `storiesOf('${dirs[dirs.length - 2]}', module).add('${path.basename(demoPath).replace(/\..*/, '')}', () => `
+      );
+
+      // script = script.replace(/mountNode+,?\n?/g, `{ docs: { page: () => (<span>${escapeUnsafeChar(description)}</span>) } }`);
+      script = script.replace(/mountNode+,?\n?/g, `{ docs: { page: () => (<>${escapeUnsafeChar(converter.makeHtml(description))}</>) } }`);
+
+      const file = path.join(
+        tmpFolder,
+        `${dirs[dirs.length - 2]}/${path.basename(demoPath).replace(/\..*/, '')}.${extension}`,
+      );
+      await fs.writeFile(file, script, 'utf8');
+    }
+  }
+})();

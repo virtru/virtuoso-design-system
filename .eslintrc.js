@@ -3,11 +3,6 @@ module.exports = {
   parserOptions: {
     allowImportExportEverywhere: true,
   },
-  settings: {
-    import/resolver: {
-      babel-module: {}
-    }
-  },
   extends: [
     'airbnb',
     'plugin:jest/recommended',
@@ -21,11 +16,15 @@ module.exports = {
     node: true,
   },
   settings: {
+    'import/resolver': {
+      'babel-module': {}
+    },
     react: {
       version: 'detect'
     }
   },
   plugins: ['react', 'react-hooks', 'prettier'],
+  ignorePatterns: ["*.md"],
   rules: {
     'import/no-extraneous-dependencies': [
       'error',
