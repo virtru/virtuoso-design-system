@@ -7,10 +7,12 @@ const showdown = require('showdown');
 
 const converter = new showdown.Converter();
 
+// eslint-disable-next-line require-jsdoc
 function escapeUnsafeChar(unsafe) {
   return unsafe.replace(/{/g, '&#123;').replace(/}/g, '&#125;');
 }
 
+// eslint-disable-next-line require-jsdoc
 function getDemo(content) {
   const lines = content.split(/[\n\r]/);
   let extension;
@@ -25,6 +27,7 @@ function getDemo(content) {
       extension = 'jsx';
       return true;
     }
+    extension = null;
     return false;
   });
 
@@ -46,15 +49,8 @@ function getDemo(content) {
   if (!script.includes('import React') && !script.includes('import * as React')) {
     script = `import React from 'react';\n${script}`;
   }
-  script = `import ReactDOM from 'react-dom';\n${script}`;
   script = `import { storiesOf } from '@storybook/react';\n${script}`;
   script = `import 'antd/dist/antd.less';\n${script}`;
-
-  // Replace antd
-  // script = script.replace(`from 'antd'`, `from '..'`);
-
-  // Add path
-  script = `/* eslint-disabled */\n${script}`;
 
   return { script, extension, description };
 }
@@ -70,6 +66,7 @@ function getDemo(content) {
     const demoPath = demoFiles[i];
 
     const content = await fs.readFile(demoPath, 'utf8');
+    // eslint-disable-next-line prefer-const
     let { script, extension, description } = getDemo(content, demoPath);
 
     const dirs = path.dirname(demoPath).split(path.sep);
