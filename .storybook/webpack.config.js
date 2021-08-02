@@ -50,7 +50,6 @@ module.exports = async ({ config }) => {
     .concat({
       test: /\.css$/,
       include: [
-        path.join(__dirname, '..', 'node_modules', 'virtru-typography'),
         path.join(__dirname, '..', 'node_modules', '@storybook'),
       ],
       use: [
@@ -74,7 +73,8 @@ module.exports = async ({ config }) => {
           },
         },
       ],
-    }).concat({
+    })
+    .concat({
       test: /\.(ts|tsx|jsx)$/,
       include: path.resolve(__dirname, "../stories"),
       use: [
@@ -91,9 +91,23 @@ module.exports = async ({ config }) => {
     })
     .concat({
       test: /\.svg$/,
-      use: 'react-svg-loader'
+      use: [
+        "babel-loader",
+        {
+          loader: "react-svg-loader",
+          options: {
+            svgo: {
+              plugins: [
+                { removeTitle: false },
+                { cleanupIDs: false },
+              ],
+              floatPrecision: 2
+            }
+          }
+        }
+      ]
     })
-    .concat(      {
+    .concat({
       test: /\.less$/i,
       include: [
         path.join(__dirname, '..', 'node_modules', 'antd'),

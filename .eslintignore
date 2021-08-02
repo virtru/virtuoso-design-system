@@ -10,3 +10,4 @@ buildkite-scripts/
 dist/
 storybook-static/
 devops-ansible/
+lib/styles/**

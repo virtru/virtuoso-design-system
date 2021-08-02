@@ -9,7 +9,7 @@
 }
 
 .headerCell {
-  font-family: var(--fontPrimary);
+  font-family: var(--vds-font-family-body);
   font-weight: 600;
   text-align: left;
   padding: 8px 5px;

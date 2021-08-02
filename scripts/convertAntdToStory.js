@@ -5,25 +5,23 @@ const glob = require('glob');
 const fs = require('fs-extra');
 const showdown = require('showdown');
 
-converter = new showdown.Converter();
+const converter = new showdown.Converter();
 
 function escapeUnsafeChar(unsafe) {
-  return unsafe
-    .replace(/{/g, "&#123;")
-    .replace(/}/g, "&#125;")
+  return unsafe.replace(/{/g, '&#123;').replace(/}/g, '&#125;');
 }
 
 function getDemo(content) {
   const lines = content.split(/[\n\r]/);
   let extension;
 
-  const tsxStartLine = lines.findIndex(line => {
-    const lines = line.replace(/\s/g).toLowerCase();
-    if (lines.includes('```tsx')) {
+  const tsxStartLine = lines.findIndex((line) => {
+    const changedLine = line.replace(/\s/g).toLowerCase();
+    if (changedLine.includes('```tsx')) {
       extension = 'tsx';
       return true;
     }
-    if (lines.includes('```jsx')) {
+    if (changedLine.includes('```jsx')) {
       extension = 'jsx';
       return true;
     }
@@ -34,10 +32,9 @@ function getDemo(content) {
     return null;
   }
 
-  const description = content.substring(
-    content.indexOf("## en-US") + 1,
-    content.indexOf("```")
-  ).trim();
+  const description = content
+    .substring(content.indexOf('## en-US') + 1, content.indexOf('```'))
+    .trim();
 
   const tsxEndLine = lines.findIndex(
     (line, index) => index > tsxStartLine && line.trim() === '```',
@@ -62,13 +59,12 @@ function getDemo(content) {
   return { script, extension, description };
 }
 
-
 (async () => {
   console.time('Execution...');
 
   const demoFiles = glob.sync(path.join(process.cwd(), 'lib/components/**/demo/*.md'));
 
-  let tmpFolder = path.resolve('stories/vrc-stories');
+  const tmpFolder = path.resolve('stories/vrc-stories');
 
   for (let i = 0; i < demoFiles.length; i += 1) {
     const demoPath = demoFiles[i];
@@ -79,18 +75,19 @@ function getDemo(content) {
     const dirs = path.dirname(demoPath).split(path.sep);
 
     if (script) {
-      await fs.ensureDir(path.join(
-        tmpFolder,
-        dirs[dirs.length - 2],
-      ));
+      await fs.ensureDir(path.join(tmpFolder, dirs[dirs.length - 2]));
 
       script = script.replace(
         'ReactDOM.render(',
-        `storiesOf('${dirs[dirs.length - 2]}', module).add('${path.basename(demoPath).replace(/\..*/, '')}', () => `
+        `storiesOf('${dirs[dirs.length - 2]}', module).add('${path
+          .basename(demoPath)
+          .replace(/\..*/, '')}', () => `,
       );
 
-      // script = script.replace(/mountNode+,?\n?/g, `{ docs: { page: () => (<span>${escapeUnsafeChar(description)}</span>) } }`);
-      script = script.replace(/mountNode+,?\n?/g, `{ docs: { page: () => (<>${escapeUnsafeChar(converter.makeHtml(description))}</>) } }`);
+      script = script.replace(
+        /mountNode+,?\n?/g,
+        `{ docs: { page: () => (<>${escapeUnsafeChar(converter.makeHtml(description))}</>) } }`,
+      );
 
       const file = path.join(
         tmpFolder,

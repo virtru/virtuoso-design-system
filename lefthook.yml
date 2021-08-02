@@ -1,19 +1,19 @@
 commit-msg:
-  commands:
-    lint-commit-msg:
-      run: npm run lint:commit-msg:edit
+  scripts:
+    commit-linter:
+      runner: bash
 pre-commit:
   parallel: true
   commands:
     lint-js:
-      files: git diff --name-only HEAD @{push}
+      files: git diff --name-only HEAD master
       glob: "*.{js,jsx}"
-      run: npm run lint:js
+      run: npm run lint:js -- {files}
     lint-style:
-      files: git diff --name-only HEAD @{push}
+      files: git diff --name-only HEAD master
       glob: "*.css"
       run: npm run lint:style
     test-js:
-      files: git diff --name-only HEAD @{push}
+      files: git diff --name-only HEAD master
       glob: "*.{js,jsx}"
       run: npm run test:js

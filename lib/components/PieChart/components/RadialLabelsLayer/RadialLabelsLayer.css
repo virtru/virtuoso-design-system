@@ -1,0 +1,16 @@
+.label {
+  fill: var(--vds-color-slate-darkest);
+  font: var(--vds-font-sm);
+  font-weight: 300;
+  user-select: none;
+  cursor: pointer;
+}
+
+.active {
+  font: var(--vds-font-sm-bold);
+  font-weight: 600;
+}
+
+.line {
+  stroke: var(--vds-color-slate-darkest);
+}

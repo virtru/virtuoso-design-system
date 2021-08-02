@@ -5,6 +5,8 @@ const { babel } = require('@rollup/plugin-babel');
 const commonjs = require('@rollup/plugin-commonjs');
 const postcss = require('rollup-plugin-postcss');
 const reactSvg = require('rollup-plugin-react-svg');
+const copy = require('rollup-plugin-copy');
+const json = require('@rollup/plugin-json');
 const postcssConfig = require('./postcss.config');
 
 module.exports = {
@@ -24,9 +26,7 @@ module.exports = {
   external: ['react', 'prop-types'],
   plugins: [
     alias({
-      entries: [
-        { find: '@', replacement: path.join(__dirname, '..', 'lib') }
-      ],
+      entries: [{ find: '@', replacement: path.join(__dirname, '..', 'lib') }],
     }),
     postcss(postcssConfig),
     nodeResolve(),
@@ -36,6 +36,20 @@ module.exports = {
       exclude: 'node_modules/**',
     }),
     commonjs(),
-    reactSvg(),
+    reactSvg({
+      // svgo options
+      svgo: {
+        plugins: [{ removeTitle: false }, { cleanupIDs: false }], // passed to svgo
+        multipass: true,
+      },
+    }),
+    copy({
+      targets: [
+        { src: 'lib/styles/build/**/*.{css,js}', dest: 'dist' },
+        { src: 'lib/styles/typography/fonts/', dest: 'dist' },
+        { src: 'lib/styles/typography/css/*.css', dest: 'dist/font-style' },
+      ],
+    }),
+    json(),
   ],
 };

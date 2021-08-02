@@ -1,0 +1,63 @@
+{
+  "vds": {
+    "font": {
+      "scale": {
+        "base": { 
+          "value": "1.6rem", 
+          "comment": "assumes font-size 62.5% on html"
+        },
+        "multiplier": {
+          "value": "1.25",
+          "comment": "Major Third (4:5) modular scale https://www.modularscale.com/?16&px&1.25"
+        }
+      },
+
+      "size": {
+        "md": {
+          "value": "{vds.font.scale.base.value}",
+          "comment": "16/24px !!! consider --vds-font-* to set all font properties, not just font-size"
+        },
+        "sm": {
+          "value": "calc({vds.font.size.md.value} / {vds.font.scale.multiplier.value})",
+          "comment": "13/18px !!! consider --vds-font-* to set all font properties, not just font-size"
+        },
+        "xs": {
+          "value": "calc({vds.font.size.sm.value} / {vds.font.scale.multiplier.value})",
+          "comment": "10/15px !!! consider --vds-font-* to set all font properties, not just font-size"
+        },
+        "xxs": {
+          "value": "calc({vds.font.size.xs.value} / {vds.font.scale.multiplier.value})",
+          "comment": "8/12px !!! consider --vds-font-* to set all font properties, not just font-size"
+        },
+        "body": {
+          "value": "{vds.font.size.md.value}",
+          "comment": " !!! consider --vds-font-* to set all font properties, not just font-size"
+        },
+        "heading-xxs": {
+          "value": "{vds.font.scale.base.value}",
+          "comment": "16/24px !!! consider --vds-font-* to set all font properties, not just font-size"
+        },
+        "heading-xs": {
+          "value": "calc({vds.font.size.heading-xxs.value} * {vds.font.scale.multiplier.value})",
+          "comment": "20/24px !!! consider --vds-font-* to set all font properties, not just font-size"
+        },
+        "heading-sm": {
+          "value": "calc({vds.font.size.heading-xs.value} * {vds.font.scale.multiplier.value})",
+          "comment": "25/30px !!! consider --vds-font-* to set all font properties, not just font-size"
+        },
+        "heading-md": {
+          "value": "calc({vds.font.size.heading-sm.value} * {vds.font.scale.multiplier.value})",
+          "comment": "31/36px !!! consider --vds-font-* to set all font properties, not just font-size"
+        },
+        "heading-lg": {
+          "value": "calc({vds.font.size.heading-md.value} * {vds.font.scale.multiplier.value})",
+          "comment": "39/48px !!! consider --vds-font-* to set all font properties, not just font-size"
+        },
+        "heading-xl": {
+          "value": "calc({vds.font.size.heading-lg.value} * {vds.font.scale.multiplier.value})",
+          "comment": "49/54px !!! consider --vds-font-* to set all font properties, not just font-size"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "vds": {
+    "font": {
+      "family": {
+        "body":     { "value": "'Open Sans', Helvetica, Arial, sans-serif" },
+        "display":  { "value": "'Raleway', Helvetica, Arial, sans-serif" }
+      }
+    }
+  }
+}

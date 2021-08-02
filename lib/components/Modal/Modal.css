@@ -4,60 +4,66 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(var(--slateDarker), 0.5);
+  background-color: rgba(var(--vds-color-slate-darker), 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: var(--high-importance);
 }
 
 .small {
-  padding: 25px 24px;
   border-radius: 3px;
-  background-color: var(--white);
-  box-shadow: 0 0 4px 1px rgba(var(--black), 0.3);
+  background-color: var(--vds-color-white);
+  box-shadow: 0 0 4px 1px rgba(var(--vds-color-black), 0.3);
   box-sizing: border-box;
   width: 450px;
 }
 
 .large {
-  padding: 25px 24px;
   border-radius: 3px;
-  background-color: var(--white);
-  box-shadow: 0 0 4px 1px rgba(var(--black), 0.3);
+  background-color: var(--vds-color-white);
+  box-shadow: 0 0 4px 1px rgba(var(--vds-color-black), 0.3);
   box-sizing: border-box;
   width: 800px;
 }
 
 .header {
+  border-radius: 3px 3px 0 0;
+  padding: 23px 24px 4px 24px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
+.headerDark {
+  background-color: var(--vds-color-slate-darkest);
+  color: var(--vds-color-white);
+  fill: var(--vds-color-white);
+}
+
+.headerLight {
+  background-color: var(--vds-color-white);
+  color: var(--vds-color-slate-darkest);
+  fill: var(--vds-color-slate-darkest);
+}
+
 .title {
-  color: var(--slateDarkest);
-  font: var(--heading-xxs);
-  line-height: 24px;
-}
-
-.content {
-  margin-top: 12px;
-  font: var(--small);
-}
-
-.footer {
   display: flex;
-  justify-content: flex-end;
-  margin-top: 24px;
+  align-items: center;
+  font: var(--vds-font-heading-xxs);
 }
 
-.footer > *:not(:first-child) {
-  margin-left: 12px;
+.titleIcon {
+  margin-right: 5px;
+}
+
+.titleText {
+  margin-top: 2px;
+  font-size: 16px;
 }
 
 .closeButton {
-  color: var(--slateDarkest);
+  margin-top: 2px;
   font-size: 16px;
   padding: 0;
   border: none;
@@ -65,11 +71,40 @@
   background: transparent;
 }
 
-.closeButton:active {
-  color: var(--slatePrimary);
+.headerLight .closeButton {
+  color: var(--vds-color-slate-darkest);
 }
 
-@media (--screenMobile) {
+.headerDark .closeButton {
+  color: var(--vds-color-white);
+}
+
+.closeButton:active {
+  color: var(--vds-color-slate-primary);
+}
+
+.body {
+  padding: 0 24px 21px 24px;
+}
+
+.content {
+  margin-top: 8px;
+  font: var(--vds-font-sm);
+  padding-bottom: 4px;
+}
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 4px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer > *:not(:first-child) {
+  margin-left: 12px;
+}
+
+@media (--vds-screen-mobile) {
   .small,
   .large {
     width: 327px;

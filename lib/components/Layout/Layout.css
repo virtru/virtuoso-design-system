@@ -1,0 +1,22 @@
+/* TODO: Ryan please triage or fix */
+/* stylelint-disable plugin/selector-tag-no-without-class */
+.container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container,
+.container a,
+.container p {
+  font-family: var(--vds-font-family-body);
+  font-size: var(--vds-font-size-body);
+  line-height: var(--vds-line-height-body);
+}
+
+.containerInner {
+  max-width: var(--vds-container-width-xl);
+  margin: 0 auto;
+  padding: calc(var(--vds-spacer-xs) + var(--vds-spacer-xs));
+}

@@ -1,6 +1,6 @@
 .chevron {
   display: flex;
-  fill: var(--slateDarkest);
+  fill: var(--vds-color-slate-darkest);
 }
 
 .inverted {
@@ -8,5 +8,5 @@
 }
 
 .disabled {
-  fill: var(--slateLighter);
+  fill: var(--vds-color-slate-lighter);
 }

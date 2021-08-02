@@ -1,5 +1,5 @@
 .base {
-  font-family: var(--fontSecondary);
+  font-family: var(--vds-font-family-display);
   font-weight: bold;
 }
 

@@ -1,14 +1,15 @@
 {
-  "presets": [
-    "@babel/preset-env",
-    "@babel/preset-react"
-  ],
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
   "plugins": [
-    ["module-resolver", {
-      "root": ["./"],
-      "alias": {
-        "@": "./lib"
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@": "./lib"
+        }
       }
-    }]
+    ],
+    "@babel/plugin-transform-react-display-name"
   ]
 }

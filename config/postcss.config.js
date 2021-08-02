@@ -5,21 +5,25 @@ const postcssCustomProperties = require('postcss-custom-properties');
 const postcssCustomMedia = require('postcss-custom-media');
 
 module.exports = {
-  modules: true,
+  autoModules: false,
+  modules: { generateScopedName: '[hash:base64]' },
   plugins: [
     postcssImport(),
     postcssCustomProperties({
       preserve: false,
       importFrom: [
         'lib/styles/tokens.css',
-        'node_modules/virtru-design-params/src/colors/colors.css',
-        'node_modules/virtru-design-params/src/text/text.css',
-        'node_modules/virtru-design-params/src/typography/typography.css',
+        'lib/styles/common.css',
+        'lib/styles/build/css/design_tokens.css',
       ],
     }),
     postcssHexRgba,
     postcssCustomMedia({
-      importFrom: ['node_modules/virtru-design-params/src/screen/screen.css'],
+      importFrom: [
+        'lib/styles/tokens.css',
+        'lib/styles/common.css',
+        'lib/styles/build/css/design_tokens.css',
+      ],
     }),
   ],
   extract: path.resolve('dist/styles.css'),

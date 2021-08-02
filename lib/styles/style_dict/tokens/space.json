@@ -1,0 +1,20 @@
+{
+  "vds": {
+    "spacer": {
+      "xxs":  { "value": "3px" },
+      "xs":   { "value": "6px" },
+      "sm":   { "value": "12px" },
+      "md":   { "value": "24px", "comment": "Default spacer to establish typographic rhythm with line height" },
+      "lg":   { "value": "48px" },
+      "xl":   { "value": "72px" },
+
+      "tapFriendly":   { "value": "48px" }
+    },
+    
+    "container": {
+      "width": {
+        "xl": { "value": "1024px" }
+      }
+    }
+  }
+}

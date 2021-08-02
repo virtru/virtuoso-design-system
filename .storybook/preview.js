@@ -12,12 +12,14 @@ import { themes } from '@storybook/theming';
 import virtuosoTheme from './virtuosoTheme.js';
 
 import 'loki/configure-react';
-import 'virtru-typography';
 
 import styles from './styles.css';
 
 // import design tokens so webpack and storybook-design-token render them
-import tokens from '../lib/styles/tokens.css';
+import '../lib/styles/tokens.css';
+import '../lib/styles/common.css';
+import '../lib/styles/build/css/design_tokens.css';
+import '../lib/styles/typography/index.css';
 
 // configure storybook-design-token
 const cssReq = require.context('!!raw-loader!../lib/components', true, /.\.css$/);

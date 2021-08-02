@@ -1,5 +1,5 @@
 .base {
-  font-family: var(--fontPrimary);
+  font-family: var(--vds-font-family-body);
 }
 
 .normal {
