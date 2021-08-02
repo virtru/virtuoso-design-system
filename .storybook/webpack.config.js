@@ -1,5 +1,5 @@
 const path = require('path');
-
+const { getThemeVariables } = require('antd/dist/theme');
 
 module.exports = async ({ config }) => {
   config.resolve = {
@@ -118,6 +118,21 @@ module.exports = async ({ config }) => {
         {
           loader: "less-loader",
           options: {
+            modifyVars: {
+              'primary-color': '#164EB6',
+              'primary-1': '#DEEEFF',
+              'primary-2': '#B2D6FF',
+              'primary-5': '#3668FF',
+              'primary-6': '#3668FF', // Core brand color
+              'primary-7': '#164EB6',
+              'success-color': '#75B749', // Primary green
+              'error-color': '#A70A0E', // Primary red
+              'btn-primary-bg': '#164EB6',
+              'disabled-bg': '#C6CBD4',
+              'btn-disable-border': '#C6CBD4',
+              'btn-disable-color': '#FFFFFF',
+              'btn-default-ghost-color': '#164EB6',
+            },
             javascriptEnabled: true,
           }
         },
