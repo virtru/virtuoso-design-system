@@ -1,5 +1,4 @@
 const path = require('path');
-const { getThemeVariables } = require('antd/dist/theme');
 
 module.exports = async ({ config }) => {
   config.resolve = {
@@ -82,8 +81,6 @@ module.exports = async ({ config }) => {
         {
           loader: require.resolve('react-docgen-typescript-loader'),
           options: {
-            // Provide the path to your tsconfig.json so that your stories can
-            // display types from outside each individual story.
             tsconfigPath: path.resolve(__dirname, "../tsconfig.json"),
           },
         },
