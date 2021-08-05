@@ -3,6 +3,7 @@
     "target": "es6",
     "lib": ["dom", "es2017"],
     "allowJs": true,
+    "checkJs": false,
     "strictNullChecks": true,
     "module": "esnext",
     "moduleResolution": "node",

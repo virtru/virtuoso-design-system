@@ -5,10 +5,10 @@ const postcssCustomProperties = require('postcss-custom-properties');
 const postcssCustomMedia = require('postcss-custom-media');
 
 module.exports = {
-  autoModules: false,
-  modules: { generateScopedName: '[hash:base64]' },
+  // autoModules: false,
+  // modules: { generateScopedName: '[hash:base64]' },
   plugins: [
-    postcssImport(),
+    // postcssImport(),
     postcssCustomProperties({
       preserve: false,
       importFrom: [
@@ -17,7 +17,7 @@ module.exports = {
         'lib/styles/build/css/design_tokens.css',
       ],
     }),
-    postcssHexRgba,
+    // postcssHexRgba,
     postcssCustomMedia({
       importFrom: [
         'lib/styles/tokens.css',
@@ -25,6 +25,16 @@ module.exports = {
         'lib/styles/build/css/design_tokens.css',
       ],
     }),
+  ],
+  use: [
+    [
+      'sass',
+      'less',
+      {
+        javascriptEnabled: true,
+        // modifyVars: themeVariables,
+      },
+    ],
   ],
   extract: path.resolve('dist/styles.css'),
 };

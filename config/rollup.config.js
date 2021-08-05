@@ -1,3 +1,5 @@
+import less from 'rollup-plugin-less';
+
 const path = require('path');
 const alias = require('@rollup/plugin-alias');
 const { nodeResolve } = require('@rollup/plugin-node-resolve');
@@ -10,7 +12,7 @@ const json = require('@rollup/plugin-json');
 const postcssConfig = require('./postcss.config');
 
 module.exports = {
-  input: 'lib/components/index.js',
+  input: 'lib/index.js',
   output: [
     {
       file: 'dist/bundle.esm.js',
@@ -23,52 +25,17 @@ module.exports = {
       sourcemap: true,
     },
   ],
-  external: ['react', 'prop-types'],
+  external: ['react', 'react-proptypes'],
   plugins: [
-    alias({
-      entries: [{ find: '@', replacement: path.join(__dirname, '..', 'lib') }],
-    }),
-    postcss({
-      ...postcssConfig,
-      use: [
-        'sass',
-        [
-          'less',
-          {
-            javascriptEnabled: true,
-            modifyVars: {
-              'primary-color': '#164EB6',
-              'primary-1': '#DEEEFF',
-              'primary-2': '#B2D6FF',
-              'primary-5': '#3668FF',
-              'primary-6': '#3668FF', // Core brand color
-              'primary-7': '#164EB6',
-              'success-color': '#75B749', // Primary green
-              'error-color': '#A70A0E', // Primary red
-              'btn-primary-bg': '#164EB6',
-              'disabled-bg': '#C6CBD4',
-              'btn-disable-border': '#C6CBD4',
-              'btn-disable-color': '#FFFFFF',
-              'btn-default-ghost-color': '#164EB6',
-            },
-          },
-        ],
-      ],
-    }),
     nodeResolve(),
+    json(),
+    postcss(postcssConfig),
     babel({
-      babelHelpers: 'bundled',
-      extensions: ['.js', '.jsx', '.svg'],
-      exclude: 'node_modules/**',
-      // plugins: [['import', { libraryName: 'antd', style: true }]],
+      plugins: [['import', { libraryName: 'antd', style: true }]],
+      exclude: ['node_modules/**'],
     }),
-    commonjs(),
-    reactSvg({
-      // svgo options
-      svgo: {
-        plugins: [{ removeTitle: false }, { cleanupIDs: false }], // passed to svgo
-        multipass: true,
-      },
+    commonjs({
+      include: 'node_modules/**',
     }),
     copy({
       targets: [
@@ -77,6 +44,5 @@ module.exports = {
         { src: 'lib/styles/typography/css/*.css', dest: 'dist/font-style' },
       ],
     }),
-    json(),
   ],
 };

@@ -15,7 +15,7 @@ function escapeUnsafeChar(unsafe) {
 // eslint-disable-next-line require-jsdoc
 function getDemo(content) {
   const lines = content.split(/[\n\r]/);
-  let extension;
+  let extension = null;
 
   const tsxStartLine = lines.findIndex((line) => {
     const changedLine = line.replace(/\s/g).toLowerCase();
@@ -27,7 +27,6 @@ function getDemo(content) {
       extension = 'jsx';
       return true;
     }
-    extension = null;
     return false;
   });
 
@@ -51,6 +50,14 @@ function getDemo(content) {
   }
   script = `import { storiesOf } from '@storybook/react';\n${script}`;
   script = `import 'antd/dist/antd.less';\n${script}`;
+
+  if (extension === 'jsx') {
+    script = script.replace(': React.FC', '');
+  }
+
+  if (extension === 'tsx') {
+    script = script.replace('= [];', '= Array();');
+  }
 
   return { script, extension, description };
 }
