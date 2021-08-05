@@ -1,30 +1,30 @@
-const path = require('path');
+// const path = require('path');
 // const postcssHexRgba = require('postcss-hexrgba');
 // const postcssImport = require('postcss-import');
-const postcssCustomProperties = require('postcss-custom-properties');
-const postcssCustomMedia = require('postcss-custom-media');
+// const postcssCustomProperties = require('postcss-custom-properties');
+// const postcssCustomMedia = require('postcss-custom-media');
 
 module.exports = {
-  // autoModules: false,
-  // modules: { generateScopedName: '[hash:base64]' },
+  autoModules: false,
+  modules: { generateScopedName: '[hash:base64]' },
   plugins: [
     // postcssImport(),
-    postcssCustomProperties({
-      preserve: false,
-      importFrom: [
-        'lib/styles/tokens.css',
-        'lib/styles/common.css',
-        'lib/styles/build/css/design_tokens.css',
-      ],
-    }),
+    // postcssCustomProperties({
+    //   preserve: false,
+    //   importFrom: [
+    //     'lib/styles/tokens.css',
+    //     'lib/styles/common.css',
+    //     'lib/styles/build/css/design_tokens.css',
+    //   ],
+    // }),
     // postcssHexRgba,
-    postcssCustomMedia({
-      importFrom: [
-        'lib/styles/tokens.css',
-        'lib/styles/common.css',
-        'lib/styles/build/css/design_tokens.css',
-      ],
-    }),
+    // postcssCustomMedia({
+    //   importFrom: [
+    //     'lib/styles/tokens.css',
+    //     'lib/styles/common.css',
+    //     'lib/styles/build/css/design_tokens.css',
+    //   ],
+    // }),
   ],
   use: [
     [
@@ -36,5 +36,5 @@ module.exports = {
       },
     ],
   ],
-  extract: path.resolve('dist/styles.css'),
+  extract: true,
 };
