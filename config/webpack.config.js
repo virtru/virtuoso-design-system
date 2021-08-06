@@ -112,7 +112,8 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: 'lib/styles/build/**/*.{css,js}', to: 'dist' },
+        { from: 'lib/styles/build/css/design_tokens.css', to: 'dist' },
+        { from: 'lib/styles/build/js/design_tokens.js', to: 'dist' },
         { from: 'lib/styles/typography/fonts/', to: 'dist' },
         { from: 'lib/styles/typography/css/*.css', to: 'dist/font-style' },
       ],
