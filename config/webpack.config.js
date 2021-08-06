@@ -1,8 +1,12 @@
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
+  mode: 'development',
   entry: path.resolve(__dirname, '../lib/index.js'),
+  externals: [nodeExternals()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, '../lib'),
@@ -55,6 +59,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
+        exclude: /node_modules/,
         use: [
           'babel-loader',
           {
@@ -71,7 +76,6 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        include: [path.join(__dirname, '../lib/components'), path.join(__dirname, '../lib')],
         use: {
           loader: 'babel-loader',
           options: {
@@ -111,6 +115,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new CopyPlugin({
       patterns: [
         { from: 'lib/styles/build/**/*.{css,js}', to: '[name].[ext]' },
@@ -119,7 +124,9 @@ module.exports = {
       ],
     }),
   ],
-  // output: {
-  //   path: path.resolve(__dirname, '../dist'),
-  // },
+  output: {
+    libraryTarget: 'commonjs',
+    filename: 'index.js',
+    path: path.resolve(__dirname, '../dist'),
+  },
 };

@@ -84,6 +84,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-module-name-mapper": "^1.2.0",
     "babel-plugin-module-resolver": "^4.0.0",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "copy-webpack-plugin": "^6.3.2",
     "css-loader": "^2.1.1",
     "eslint": "^7.6.0",
@@ -125,7 +126,8 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-selector-tag-no-without-class": "^2.0.0",
     "url-loader": "^2.0.0",
-    "webpack-cli": "^4.7.2"
+    "webpack-cli": "^4.7.2",
+    "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
     "@nivo/core": "^0.67.0",
