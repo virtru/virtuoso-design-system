@@ -6,6 +6,7 @@ const { nodeResolve } = require('@rollup/plugin-node-resolve');
 const { babel } = require('@rollup/plugin-babel');
 const commonjs = require('@rollup/plugin-commonjs');
 const postcss = require('rollup-plugin-postcss');
+const url = require('@rollup/plugin-url');
 // const reactSvg = require('rollup-plugin-react-svg');
 // const copy = require('rollup-plugin-copy');
 const json = require('@rollup/plugin-json');
@@ -34,6 +35,7 @@ module.exports = {
       plugins: [['import', { libraryName: 'antd', style: true }]],
       exclude: ['node_modules/**'],
     }),
+    url(),
     commonjs({
       include: 'node_modules/**',
     }),
