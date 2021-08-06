@@ -71,6 +71,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
+        include: [path.join(__dirname, '../lib/components'), path.join(__dirname, '../lib')],
         use: {
           loader: 'babel-loader',
           options: {
