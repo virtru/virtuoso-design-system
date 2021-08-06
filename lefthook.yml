@@ -5,10 +5,6 @@ commit-msg:
 pre-commit:
   parallel: true
   commands:
-    lint-js:
-      files: git diff --name-only HEAD master
-      glob: "*.{js,jsx}"
-      run: npm run lint:js -- {files}
     lint-style:
       files: git diff --name-only HEAD master
       glob: "*.css"

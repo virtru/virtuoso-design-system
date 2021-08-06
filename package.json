@@ -3,14 +3,14 @@
   "version": "1.21.1",
   "description": "A set of reusable elements that enable Virtru designers and Virtru engineers to create consistent Virtru products.",
   "author": "Virtru CI <ci@virtru.com>",
-  "main": "dist/bundle.cjs.js",
-  "module": "dist/bundle.esm.js",
+  "main": "dist/main.js",
+  "module": "dist/main.js",
   "files": [
     "/dist"
   ],
   "scripts": {
     "auto": "auto",
-    "build": "rollup --config config/rollup.config.js",
+    "build": "webpack --config config/webpack.config.js",
     "build:watch": "npm run build -- --watch --watch.include 'lib/**'",
     "clean": "rimraf dist/*",
     "prepare": "npm run build",
@@ -84,6 +84,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-module-name-mapper": "^1.2.0",
     "babel-plugin-module-resolver": "^4.0.0",
+    "copy-webpack-plugin": "^6.3.2",
     "css-loader": "^2.1.1",
     "eslint": "^7.6.0",
     "eslint-config-airbnb": "^18.2.0",
@@ -123,7 +124,8 @@
     "stylelint-config-css-modules": "^2.2.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-selector-tag-no-without-class": "^2.0.0",
-    "url-loader": "^2.0.0"
+    "url-loader": "^2.0.0",
+    "webpack-cli": "^4.7.2"
   },
   "dependencies": {
     "@nivo/core": "^0.67.0",
