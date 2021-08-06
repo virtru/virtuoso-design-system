@@ -1,12 +1,10 @@
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   mode: 'development',
   entry: path.resolve(__dirname, '../lib/index.js'),
-  externals: [nodeExternals()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, '../lib'),
