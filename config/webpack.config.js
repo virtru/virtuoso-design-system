@@ -9,7 +9,6 @@ module.exports = {
     alias: {
       '@': path.resolve(__dirname, '../lib'),
     },
-    extensions: ['.js', '.jsx', '.css', '.png', '.jpg', '.gif', '.jpeg', '.less'],
   },
   module: {
     rules: [
@@ -123,8 +122,9 @@ module.exports = {
     }),
   ],
   output: {
-    libraryTarget: 'umd',
     filename: 'index.js',
+    libraryTarget: 'commonjs2',
     path: path.resolve(__dirname, '../dist'),
+    library: 'virtuoso-design-system',
   },
 };
