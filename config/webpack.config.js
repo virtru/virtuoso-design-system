@@ -123,7 +123,7 @@ module.exports = {
     }),
   ],
   output: {
-    libraryTarget: 'commonjs',
+    libraryTarget: 'umd',
     filename: 'index.js',
     path: path.resolve(__dirname, '../dist'),
   },
