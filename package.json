@@ -3,14 +3,14 @@
   "version": "1.21.1",
   "description": "A set of reusable elements that enable Virtru designers and Virtru engineers to create consistent Virtru products.",
   "author": "Virtru CI <ci@virtru.com>",
-  "main": "dist/bundle.cjs.js",
-  "module": "dist/bundle.esm.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "files": [
     "/dist"
   ],
   "scripts": {
     "auto": "auto",
-    "build": "rollup --config config/rollup.config.js",
+    "build": "webpack --config config/webpack.config.js",
     "build:watch": "npm run build -- --watch --watch.include 'lib/**'",
     "build:antDstories": "node ./scripts/convertAntdToStory.js",
     "clean": "rimraf dist/*",
@@ -96,6 +96,8 @@
     "babel-plugin-module-resolver": "^4.0.0",
     "classnames": "^2.3.1",
     "common-js": "^0.3.8",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^6.3.2",
     "css-loader": "^2.1.1",
     "eslint": "^7.6.0",
     "eslint-config-airbnb": "^18.2.0",
@@ -165,7 +167,9 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-selector-tag-no-without-class": "^2.0.0",
     "ts-loader": "^6.2.2",
-    "url-loader": "^2.0.0"
+    "url-loader": "^2.0.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
