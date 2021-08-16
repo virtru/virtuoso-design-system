@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "auto": "auto",
-    "build": "rollup --config config/rollup.config.js",
+    "build": "webpack --config config/webpack.config.js",
     "build:watch": "npm run build -- --watch --watch.include 'lib/**'",
     "build:antDstories": "node ./scripts/convertAntdToStory.js",
     "clean": "rimraf dist/*",
@@ -93,6 +93,8 @@
     "babel-plugin-module-name-mapper": "^1.2.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "classnames": "^2.3.1",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^2.1.1",
     "eslint": "^7.6.0",
     "eslint-config-airbnb": "^18.2.0",
