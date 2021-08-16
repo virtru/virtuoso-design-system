@@ -6,7 +6,6 @@ const fs = require('fs-extra');
 const showdown = require('showdown');
 
 const converter = new showdown.Converter();
-
 // eslint-disable-next-line require-jsdoc
 function escapeUnsafeChar(unsafe) {
   return unsafe.replace(/{/g, '&#123;').replace(/}/g, '&#125;');
@@ -63,7 +62,7 @@ function getDemo(content) {
 }
 
 (async () => {
-  console.time('Execution...');
+  console.log(path.join(process.cwd(), 'lib/components/**/demo/*.md'));
 
   const demoFiles = glob.sync(path.join(process.cwd(), 'lib/components/**/demo/*.md'));
 
@@ -95,9 +94,9 @@ function getDemo(content) {
 
       const file = path.join(
         tmpFolder,
-        tmpFolder,
         `${dirs[dirs.length - 2]}/${path.basename(demoPath).replace(/\..*/, '')}.${extension}`,
       );
+
       await fs.writeFile(file, script, 'utf8');
     }
   }
