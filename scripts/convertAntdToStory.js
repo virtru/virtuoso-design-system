@@ -52,6 +52,14 @@ function getDemo(content) {
   script = `import { storiesOf } from '@storybook/react';\n${script}`;
   script = `import 'antd/dist/antd.less';\n${script}`;
 
+  if (extension === 'jsx') {
+    script = script.replace(': React.FC', '');
+  }
+
+  if (extension === 'tsx') {
+    script = script.replace('= [];', '= Array();');
+  }
+
   return { script, extension, description };
 }
 
