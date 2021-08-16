@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+      "lib": ["dom", "es2017"],
+      "allowJs": true,
+      "checkJs": false,
+      "strictNullChecks": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "experimentalDecorators": true,
+      "jsx": "react",
+      "noUnusedParameters": false,
+      "noUnusedLocals": false,
+      "noImplicitAny": false,
+      "skipLibCheck": true
+  },
+  "include": [
+    "../stories/vrc-stories/**/*"
+  ]
+}
