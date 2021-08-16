@@ -13,6 +13,10 @@ body {
   height: 100%;
 }
 
+code {
+  background: #b4fff5;
+}
+
 :global(#root) {
   height: 100%;
 }
@@ -23,6 +27,8 @@ body {
   justify-content: center;
   background: transparent;
   height: 100%;
+  flex-direction: column;
+  padding: 50px;
 
   /*
     As soon as loki introduces some way
