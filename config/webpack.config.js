@@ -110,6 +110,16 @@ module.exports = {
       },
     ],
   },
+  externals: {
+    react: {
+      root: 'React',
+      commonjs2: 'react',
+    },
+    'react-dom': {
+      root: 'ReactDOM',
+      commonjs2: 'react-dom',
+    },
+  },
   plugins: [
     // new CleanWebpackPlugin(),
     // new CopyPlugin({
