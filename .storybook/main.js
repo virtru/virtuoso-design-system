@@ -8,8 +8,8 @@ module.exports = {
     // Load stories in MDX format (@storybook/addon-docs)
     '../stories/**/*.stories.(js|mdx)',
     // include stories from virtru-react-components
-    '../stories/vrc-stories/*.(js|mdx)',
-    '../lib/components/**/*.stories.(js|mdx)',
+    '../stories/vrc-stories/*.(js|mdx|ts|tsx)',
+    '../stories/vrc-stories/**/*.(ts|tsx|jsx)',
   ],
   addons: [
     '@storybook/addon-a11y',

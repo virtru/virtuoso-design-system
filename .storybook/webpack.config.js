@@ -1,12 +1,12 @@
 const path = require('path');
-
+const { getThemeVariables } = require('antd/dist/theme');
 
 module.exports = async ({ config }) => {
   config.resolve = {
     alias: {
       '@': path.resolve(__dirname, '../lib'),
     },
-    extensions: ['.js', '.jsx', '.css', '.png', '.jpg', '.gif', '.jpeg'],
+    extensions: ['.js', '.jsx', '.css', '.png', '.jpg', '.gif', '.jpeg', '.ts', '.tsx'],
   };
 
   config.module.rules = config.module.rules
@@ -75,6 +75,21 @@ module.exports = async ({ config }) => {
       ],
     })
     .concat({
+      test: /\.(ts|tsx|jsx)$/,
+      include: path.resolve(__dirname, "../stories"),
+      use: [
+        require.resolve("ts-loader"),
+        {
+          loader: require.resolve('react-docgen-typescript-loader'),
+          options: {
+            // Provide the path to your tsconfig.json so that your stories can
+            // display types from outside each individual story.
+            tsconfigPath: path.resolve(__dirname, "../tsconfig.json"),
+          },
+        },
+      ],
+    })
+    .concat({
       test: /\.svg$/,
       use: [
         "babel-loader",
@@ -91,7 +106,38 @@ module.exports = async ({ config }) => {
           }
         }
       ]
-    });
+    })
+    .concat({
+      test: /\.less$/i,
+      include: [
+        path.join(__dirname, '..', 'node_modules', 'antd'),
+      ],
+      loader: [
+        "style-loader",
+        "css-loader",
+        {
+          loader: "less-loader",
+          options: {
+            modifyVars: {
+              'primary-color': '#164EB6',
+              'primary-1': '#DEEEFF',
+              'primary-2': '#B2D6FF',
+              'primary-5': '#3668FF',
+              'primary-6': '#3668FF', // Core brand color
+              'primary-7': '#164EB6',
+              'success-color': '#75B749', // Primary green
+              'error-color': '#A70A0E', // Primary red
+              'btn-primary-bg': '#164EB6',
+              'disabled-bg': '#C6CBD4',
+              'btn-disable-border': '#C6CBD4',
+              'btn-disable-color': '#FFFFFF',
+              'btn-default-ghost-color': '#164EB6',
+            },
+            javascriptEnabled: true,
+          }
+        },
+      ],
+    },);
 
   return config;
 };

@@ -11,3 +11,4 @@ dist/
 storybook-static/
 devops-ansible/
 lib/styles/**
+stories/**
