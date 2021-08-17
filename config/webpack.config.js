@@ -1,5 +1,6 @@
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
@@ -12,36 +13,26 @@ module.exports = {
   // },
   module: {
     rules: [
-      // {
-      //   test: /\.css$/,
-      //   include: [
-      //     path.join(__dirname),
-      //     path.join(__dirname, '../lib/styles'),
-      //     path.join(__dirname, '../lib/components'),
-      //   ],
-      //   use: [
-      //     {
-      //       loader: 'style-loader',
-      //     },
-      //     {
-      //       loader: 'css-loader',
-      //       options: {
-      //         sourceMap: true,
-      //         importLoaders: 1,
-      //         modules: true,
-      //         localIdentName: '[name]__[local]--[hash:base64:5]',
-      //       },
-      //     },
-      //     {
-      //       loader: 'postcss-loader',
-      //       options: {
-      //         config: {
-      //           path: path.join(__dirname, '../config/postcss.config.js'),
-      //         },
-      //       },
-      //     },
-      //   ],
-      // },
+      {
+        test: /\.css$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'style-loader',
+          'css-loader',
+        ],
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Compiles Sass to CSS
+          'sass-loader',
+        ],
+      },
       // {
       //   test: /\.(png|jpg|gif|woff|woff2|eot|ttf)$/,
       //   use: [
@@ -56,7 +47,7 @@ module.exports = {
       // },
       {
         test: /\.(js|jsx)$/,
-        // exclude: /node_modules/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
@@ -64,39 +55,67 @@ module.exports = {
               '@babel/preset-env',
               '@babel/preset-react',
             ],
+            plugins: [
+              [
+                'import',
+                {
+                  libraryName: 'antd',
+                  libraryDirectory: 'es',
+                  style: true,
+                },
+                'antd',
+              ],
+              '@babel/plugin-transform-react-jsx',
+            ],
           },
         },
       },
-      // {
-      //   test: /\.less$/i,
-      //   include: [path.join(__dirname, '..', 'node_modules', 'antd')],
-      //   loader: [
-      //     'style-loader',
-      //     'css-loader',
-      //     {
-      //       loader: 'less-loader',
-      //       options: {
-      //         modifyVars: {
-      //           'primary-color': '#164EB6',
-      //           'primary-1': '#DEEEFF',
-      //           'primary-2': '#B2D6FF',
-      //           'primary-5': '#3668FF',
-      //           'primary-6': '#3668FF', // Core brand color
-      //           'primary-7': '#164EB6',
-      //           'success-color': '#75B749', // Primary green
-      //           'error-color': '#A70A0E', // Primary red
-      //           'btn-primary-bg': '#164EB6',
-      //           'disabled-bg': '#C6CBD4',
-      //           'btn-disable-border': '#C6CBD4',
-      //           'btn-disable-color': '#FFFFFF',
-      //           'btn-default-ghost-color': '#164EB6',
-      //         },
-      //         javascriptEnabled: true,
-      //       },
-      //     },
-      //   ],
-      // },
+      {
+        test: /\.less$/i,
+        include: [path.join(__dirname, '..', 'node_modules', 'antd')],
+        loader: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'less-loader',
+            options: {
+              modifyVars: {
+                'primary-color': '#164EB6',
+                'primary-1': '#DEEEFF',
+                'primary-2': '#B2D6FF',
+                'primary-5': '#3668FF',
+                'primary-6': '#3668FF', // Core brand color
+                'primary-7': '#164EB6',
+                'success-color': '#75B749', // Primary green
+                'error-color': '#A70A0E', // Primary red
+                'btn-primary-bg': '#164EB6',
+                'disabled-bg': '#C6CBD4',
+                'btn-disable-border': '#C6CBD4',
+                'btn-disable-color': '#FFFFFF',
+                'btn-default-ghost-color': '#164EB6',
+              },
+              javascriptEnabled: true,
+            },
+          },
+        ],
+      },
     ],
+  },
+  externals: {
+    react: {
+      root: 'React',
+      commonjs2: 'react',
+      commonjs: 'react',
+      amd: 'react',
+      umd: 'react',
+    },
+    'react-dom': {
+      root: 'ReactDOM',
+      commonjs2: 'react-dom',
+      commonjs: 'react-dom',
+      amd: 'react-dom',
+      umd: 'react-dom',
+    },
   },
   plugins: [
     // new CleanWebpackPlugin(),
@@ -110,7 +129,7 @@ module.exports = {
   ],
   output: {
     filename: 'bundle.cjs.js',
-    libraryTarget: 'commonjs2',
+    libraryTarget: 'umd',
     path: path.resolve(__dirname, '../dist'),
     library: 'virtuoso-design-system',
   },
