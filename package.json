@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "auto": "auto",
-    "build": "webpack --config config/webpack.config.js",
+    "build": "rollup --config config/rollup.config.js",
     "build:watch": "npm run build -- --watch --watch.include 'lib/**'",
     "build:antDstories": "node ./scripts/convertAntdToStory.js",
     "clean": "rimraf dist/*",
