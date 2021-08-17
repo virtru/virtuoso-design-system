@@ -114,10 +114,16 @@ module.exports = {
     react: {
       root: 'React',
       commonjs2: 'react',
+      commonjs: 'react',
+      amd: 'react',
+      umd: 'react',
     },
     'react-dom': {
       root: 'ReactDOM',
       commonjs2: 'react-dom',
+      commonjs: 'react-dom',
+      amd: 'react-dom',
+      umd: 'react-dom',
     },
   },
   plugins: [
@@ -132,7 +138,7 @@ module.exports = {
   ],
   output: {
     filename: 'bundle.cjs.js',
-    libraryTarget: 'commonjs2',
+    libraryTarget: 'umd',
     path: path.resolve(__dirname, '../dist'),
     library: 'virtuoso-design-system',
   },
