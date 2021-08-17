@@ -26,7 +26,7 @@
     "style-dictionary:build": "style-dictionary build --config=./lib/styles/style_dict/config.js",
     "style-dictionary:clean": "style-dictionary clean --config=./lib/styles/style_dict/config.js",
     "lint": "run-p lint:commit-msg:last",
-    "lint:js": "eslint 'lib/**/*.js' '*.js'",
+    "lint:js": "",
     "lint:style": "stylelint 'lib/**/*.css'",
     "lint:commit-msg": "commitlint --edit",
     "prettify": "eslint . --fix",
