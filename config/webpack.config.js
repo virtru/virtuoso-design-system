@@ -56,6 +56,7 @@ module.exports = {
               '@babel/preset-react',
             ],
             plugins: [
+              '@babel/plugin-transform-react-jsx',
               [
                 'import',
                 {
@@ -65,7 +66,15 @@ module.exports = {
                 },
                 'antd',
               ],
-              '@babel/plugin-transform-react-jsx',
+              [
+                'import',
+                {
+                  libraryName: 'virtuoso-design-system',
+                  libraryDirectory: 'dist',
+                  style: true,
+                },
+                'virtuoso-design-system',
+              ],
             ],
           },
         },
@@ -129,7 +138,7 @@ module.exports = {
   ],
   output: {
     filename: 'bundle.cjs.js',
-    libraryTarget: 'umd',
+    libraryTarget: 'commonjs2',
     path: path.resolve(__dirname, '../dist'),
     library: 'virtuoso-design-system',
   },
