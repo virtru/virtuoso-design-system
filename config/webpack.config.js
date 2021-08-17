@@ -47,7 +47,7 @@ module.exports = {
       // },
       {
         test: /\.(js|jsx)$/,
-        // exclude: /node_modules/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
@@ -56,7 +56,6 @@ module.exports = {
               '@babel/preset-react',
             ],
             plugins: [
-              '@babel/plugin-transform-react-jsx',
               [
                 'import',
                 {
@@ -66,15 +65,7 @@ module.exports = {
                 },
                 'antd',
               ],
-              [
-                'import',
-                {
-                  libraryName: 'virtuoso-design-system',
-                  libraryDirectory: 'dist',
-                  style: true,
-                },
-                'virtuoso-design-system',
-              ],
+              '@babel/plugin-transform-react-jsx',
             ],
           },
         },
