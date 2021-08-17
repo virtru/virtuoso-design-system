@@ -5,11 +5,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: path.resolve(__dirname, '../lib/index.js'),
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, '../lib'),
-    },
-  },
+  // resolve: {
+  //   alias: {
+  //     '@': path.resolve(__dirname, '../lib'),
+  //   },
+  // },
   module: {
     rules: [
       // {
@@ -42,25 +42,28 @@ module.exports = {
       //     },
       //   ],
       // },
-      {
-        test: /\.(png|jpg|gif|woff|woff2|eot|ttf)$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192,
-              fallback: 'file-loader',
-            },
-          },
-        ],
-      },
+      // {
+      //   test: /\.(png|jpg|gif|woff|woff2|eot|ttf)$/,
+      //   use: [
+      //     {
+      //       loader: 'url-loader',
+      //       options: {
+      //         limit: 8192,
+      //         fallback: 'file-loader',
+      //       },
+      //     },
+      //   ],
+      // },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
+            presets: [
+              '@babel/preset-env',
+              // '@babel/preset-react',
+            ],
           },
         },
       },
@@ -96,14 +99,14 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(),
-    new CopyPlugin({
-      patterns: [
-        { from: 'lib/styles/build/**/*.{css,js}', to: '[name].[ext]' },
-        { from: 'lib/styles/typography/fonts/' },
-        { from: 'lib/styles/typography/css/*.css', to: 'font-style/[name].[ext]' },
-      ],
-    }),
+    // new CleanWebpackPlugin(),
+    // new CopyPlugin({
+    //   patterns: [
+    //     { from: 'lib/styles/build/**/*.{css,js}', to: '[name].[ext]' },
+    //     { from: 'lib/styles/typography/fonts/' },
+    //     { from: 'lib/styles/typography/css/*.css', to: 'font-style/[name].[ext]' },
+    //   ],
+    // }),
   ],
   output: {
     filename: 'bundle.cjs.js',
