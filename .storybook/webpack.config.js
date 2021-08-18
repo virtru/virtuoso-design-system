@@ -129,6 +129,12 @@ module.exports = async ({ config }) => {
               'btn-disable-border': '#C6CBD4',
               'btn-disable-color': '#FFFFFF',
               'btn-default-ghost-color': '#164EB6',
+              'font-family': "'Open Sans', Helvetica, Arial, sans-serif",
+              'btn-font-weight': '700',
+              'border-radius-base': '3px',
+              'font-size-base': '13px',
+              'padding-md': '19px',
+              'height-base': '36px'
             },
             javascriptEnabled: true,
           }

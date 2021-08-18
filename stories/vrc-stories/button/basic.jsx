@@ -5,7 +5,7 @@ import { Button } from 'antd';
 
 storiesOf('button', module).add('basic', () => 
   <>
-    <Button type="primary">Primary Button</Button>
+    <Button type="primary">Label</Button>
     <Button>Default Button</Button>
     <Button type="dashed">Dashed Button</Button>
     <br />
