@@ -5,7 +5,7 @@ import { Pagination } from 'antd';
 
 storiesOf('pagination', module).add('simple', () => 
   <>
-    <Pagination simple defaultCurrent={2} total={50} />
+    <Pagination simple defaultCurrent={2} total={50} showTotal={total => `Total ${total} items`}/>
     <br />
     <Pagination disabled simple defaultCurrent={2} total={50} />
   </>,

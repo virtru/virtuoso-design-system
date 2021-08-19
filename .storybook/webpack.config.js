@@ -119,8 +119,8 @@ module.exports = async ({ config }) => {
               'primary-color': '#164EB6',
               'primary-1': '#DEEEFF',
               'primary-2': '#B2D6FF',
-              'primary-5': '#3668FF',
-              'primary-6': '#3668FF', // Core brand color
+              'primary-5': '#011D4A',
+              'primary-6': '#011D4A', // Core brand color
               'primary-7': '#164EB6',
               'success-color': '#75B749', // Primary green
               'error-color': '#A70A0E', // Primary red
@@ -130,11 +130,27 @@ module.exports = async ({ config }) => {
               'btn-disable-color': '#FFFFFF',
               'btn-default-ghost-color': '#164EB6',
               'font-family': "'Open Sans', Helvetica, Arial, sans-serif",
+              // for buttons
               'btn-font-weight': '700',
               'border-radius-base': '3px',
               'font-size-base': '13px',
               'padding-md': '19px',
-              'height-base': '36px'
+              'height-base': '36px',
+              // for header
+              'layout-header-background': '#011D4A',
+              'layout-trigger-background': '#011D4A',
+              'layout-body-background': '#FFFFFF',
+              'menu-item-active-bg': '#011D4A',
+              'menu-highlight-color': '#011D4A',
+              'menu-text-color': '#FFFFFF',
+              'layout-header-color': '#FFFFFF',
+              'layout-header-padding': '0 24px',
+              'menu-item-font-size': '16px',
+              'layout-header-height': '54px',
+              'menu-item-color': '#FFFFFF',
+              'menu-item-height': '50px',
+              'link-color': '#011D4A',
+              'text-selection-bg': '#011D4A'
             },
             javascriptEnabled: true,
           }
