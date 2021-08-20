@@ -1,19 +1,50 @@
 import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu, Breadcrumb, Dropdown, Button } from 'antd';
+import { DownOutlined, UserOutlined } from '@ant-design/icons';
 import Logo from '../../../lib/assets/logo.svg';
 
 const { Header, Content, Footer } = Layout;
+
+function handleMenuClick(e) {
+  message.info('Click on menu item.');
+  console.log('click', e);
+}
+
+const menu = (
+  <Menu onClick={handleMenuClick} defaultOpenKeys={['users']} mode="inline">
+    <Menu.ItemGroup key="users" title="Signed-in Users">
+    <Menu.Item key="1" icon={<UserOutlined />}>
+      abc@virtru.com
+    </Menu.Item>
+    <Menu.Item key="2" icon={<UserOutlined />}>
+      xyz@virtru.com
+    </Menu.Item>
+    </Menu.ItemGroup>
+    <Menu.Divider></Menu.Divider>
+    <Menu.Item key="3" >Sign in as different user</Menu.Item>
+    <Menu.Item key="4" >Sign out</Menu.Item>
+  </Menu>
+);
 
 storiesOf('layout', module).add('top', () => 
   <Layout className="layout">
     <Header><div style={{display: 'flex', alignItems: 'center'}}>
       <Logo style={{fill: 'white', height: '20px'}}/> 
+      {/* consider using divider component w vertical prop here */}
       <div style={{height: '25px', margin: '0 0 0 12px', width: '1px', background: 'white'}}></div>
       <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
         <Menu.Item key={0}><span style={{fontWeight: '500'}}>Control Center</span></Menu.Item>
+        <Menu.Item key={1}><Dropdown overlay={menu} trigger={['click']}>
+    <Button ghost style={{border: '0', color: 'white'}}>
+    <UserOutlined />
+    ksuchak@virtru.com
+    <DownOutlined />
+    </Button>
+    </Dropdown></Menu.Item> 
       </Menu> </div>
+      
     </Header>
     <Content style={{ padding: '0 50px' }}>
       <Breadcrumb style={{ margin: '16px 0' }}>

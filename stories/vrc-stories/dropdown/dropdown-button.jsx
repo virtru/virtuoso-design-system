@@ -4,6 +4,8 @@ import React from 'react';
 import { Menu, Dropdown, Button, message, Space, Tooltip } from 'antd';
 import { DownOutlined, UserOutlined } from '@ant-design/icons';
 
+const { SubMenu } = Menu;
+
 function handleButtonClick(e) {
   message.info('Click on left button.');
   console.log('click left button', e);
@@ -15,16 +17,18 @@ function handleMenuClick(e) {
 }
 
 const menu = (
-  <Menu onClick={handleMenuClick}>
+  <Menu onClick={handleMenuClick} defaultOpenKeys={['users']} mode="inline">
+    <Menu.ItemGroup key="users" title="Signed-in Users">
     <Menu.Item key="1" icon={<UserOutlined />}>
-      1st menu item
+      abc@virtru.com
     </Menu.Item>
     <Menu.Item key="2" icon={<UserOutlined />}>
-      2nd menu item
+      xyz@virtru.com
     </Menu.Item>
-    <Menu.Item key="3" icon={<UserOutlined />}>
-      3rd menu item
-    </Menu.Item>
+    </Menu.ItemGroup>
+    <Menu.Divider></Menu.Divider>
+    <Menu.Item key="3" >Sign in as different user</Menu.Item>
+    <Menu.Item key="4" >Sign out</Menu.Item>
   </Menu>
 );
 
@@ -54,6 +58,13 @@ storiesOf('dropdown', module).add('dropdown-button', () =>
       <Button>
         Button <DownOutlined />
       </Button>
+    </Dropdown>
+    <Dropdown overlay={menu} trigger={['click']}>
+    <Button>
+    <UserOutlined />
+    ksuchak@virtru.com
+    <DownOutlined />
+    </Button>
     </Dropdown>
   </Space>,
   { docs: { page: () => (<><h1 id="enus">en-US</h1>

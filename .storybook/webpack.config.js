@@ -128,7 +128,6 @@ module.exports = async ({ config }) => {
               'disabled-bg': '#C6CBD4',
               'btn-disable-border': '#C6CBD4',
               'btn-disable-color': '#FFFFFF',
-              'btn-default-ghost-color': '#164EB6',
               'font-family': "'Open Sans', Helvetica, Arial, sans-serif",
               // for buttons
               'btn-font-weight': '700',
@@ -148,11 +147,15 @@ module.exports = async ({ config }) => {
               'layout-header-padding': '0 24px',
               'menu-item-font-size': '16px',
               'layout-header-height': '54px',
-              'menu-item-color': '#FFFFFF',
               'menu-dark-item-active-bg': '#011D4A',
               // pagination
               'pagination-item-size': '18px',
-              'pagination-item-size-sm': '18px'
+              'pagination-item-size-sm': '18px',
+              // dropdown
+              'menu-item-group-title-color': '#515864',
+              'menu-item-color': '#515864',
+              'dropdown-font-size': '1.3rem',
+              'dropdown-line-height': '1.8rem',
             },
             javascriptEnabled: true,
           }
