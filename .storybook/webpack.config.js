@@ -133,9 +133,9 @@ module.exports = async ({ config }) => {
               // for buttons
               'btn-font-weight': '700',
               'border-radius-base': '3px',
-              'font-size-base': '13px',
-              'padding-md': '19px',
-              'height-base': '36px',
+              'btn-font-size-sm': '13px',
+              'btn-padding-horizontal-base': '18px',
+              'btn-height-base': '36px',
               // for header
               'layout-header-background': '#011D4A',
               'layout-trigger-background': '#011D4A',
@@ -149,7 +149,10 @@ module.exports = async ({ config }) => {
               'menu-item-font-size': '16px',
               'layout-header-height': '54px',
               'menu-item-color': '#FFFFFF',
-              'menu-dark-item-active-bg': '#011D4A'
+              'menu-dark-item-active-bg': '#011D4A',
+              // pagination
+              'pagination-item-size': '18px',
+              'pagination-item-size-sm': '18px'
             },
             javascriptEnabled: true,
           }

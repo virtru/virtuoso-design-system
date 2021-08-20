@@ -2,47 +2,38 @@ import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Pagination } from 'antd';
-import { RightOutlined } from '@ant-design/icons';
+import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 
 storiesOf('pagination', module).add('total', () => 
   <>
     <Pagination
-      total={85}
-      showTotal={total => `Total ${total} items`}
-      defaultPageSize={20}
+      total={89}
+      showTotal={total => <span style={{fontWeight: '300'}}>{`Total ${total} items`}</span>}
+      defaultPageSize={25}
       defaultCurrent={1}
+      showSizeChanger={false}
+      showLessItems
+      size="small"
     />
     <br />
     <Pagination
-      total={85}
-      showTotal={(total, range) => `${range[0]}-${range[1]} of ${total} items`}
-      defaultPageSize={20}
+      total={89}
+      showTotal={(total, range) => <span style={{fontWeight: '300'}}>{`${range[0]} - ${range[1]}\u00A0\u00A0of\u00A0\u00A0${total}`}</span>}
+      defaultPageSize={25}
       defaultCurrent={1}
       showSizeChanger={false}
-      itemRender={(current, type, originalElement) => {
-        let chevron = {
-          display: 'inline-block',
-          borderStyle: 'solid',
-          // borderLeftWidth: '0 !important',
-          // borderBottomWidth: '0 !important',
-          margin: '1px',
-          content: '',
-          // borderWidth: '2px',
-          // borderRadius: '1px',
-          height: '9px',
-          width: '9px'
-        }
+      showLessItems
+      size="small"
+      // itemRender={(_, type, originalElement) => {
+      //   if (type === 'prev') {
+      //     return <span style={{}}><LeftOutlined style={{fontSize: '18px'}}/></span>
+      //   }
+      //   if (type === 'next') {
+      //     return <span style={{}}><RightOutlined style={{fontSize: '18px'}}/></span>
+      //   }
 
-        if (type === 'prev') {
-          chevron.transform = 'translateX(25%) rotate(225deg)';
-          return <span style={chevron}/>;
-        }
-        if (type === 'next') {
-          return <RightOutlined style={{fontSize: '20px'}}/>
-        }
-
-        return originalElement;
-      }}
+      //   return originalElement;
+      // }}
     />
   </>,
   { docs: { page: () => (<><h1 id="enus">en-US</h1>
