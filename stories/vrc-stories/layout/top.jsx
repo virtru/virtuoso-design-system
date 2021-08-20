@@ -9,9 +9,10 @@ const { Header, Content, Footer } = Layout;
 storiesOf('layout', module).add('top', () => 
   <Layout className="layout">
     <Header><div style={{display: 'flex', alignItems: 'center'}}>
-      <Logo style={{fill: 'white', height: '20px'}}/> <span style={{paddingBottom: '5px', paddingLeft: '12px', fontSize: '25px', 'fontWeight': '50'}}>|</span>
+      <Logo style={{fill: 'white', height: '20px'}}/> 
+      <div style={{height: '25px', margin: '0 0 0 12px', width: '1px', background: 'white'}}></div>
       <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-        <Menu.Item key={0}><span style={{color: 'white', fontWeight: '500', fontFamily: 'Raleway'}}>Control Center</span></Menu.Item>
+        <Menu.Item key={0}><span style={{fontWeight: '500'}}>Control Center</span></Menu.Item>
       </Menu> </div>
     </Header>
     <Content style={{ padding: '0 50px' }}>

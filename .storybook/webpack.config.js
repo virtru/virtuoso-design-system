@@ -141,16 +141,15 @@ module.exports = async ({ config }) => {
               'layout-trigger-background': '#011D4A',
               'layout-body-background': '#FFFFFF',
               'menu-item-active-bg': '#011D4A',
+              'menu-item-padding-horizontal': '12px',
               'menu-highlight-color': '#011D4A',
-              'menu-text-color': '#FFFFFF',
+              'menu-dark-color': '#FFFFFF',
               'layout-header-color': '#FFFFFF',
               'layout-header-padding': '0 24px',
               'menu-item-font-size': '16px',
               'layout-header-height': '54px',
               'menu-item-color': '#FFFFFF',
-              'menu-item-height': '50px',
-              'link-color': '#011D4A',
-              'text-selection-bg': '#011D4A'
+              'menu-dark-item-active-bg': '#011D4A'
             },
             javascriptEnabled: true,
           }
