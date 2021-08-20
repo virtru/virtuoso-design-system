@@ -8,7 +8,7 @@ storiesOf('pagination', module).add('total', () =>
   <>
     <Pagination
       total={89}
-      showTotal={total => <span style={{fontWeight: '300'}}>{`Total ${total} items`}</span>}
+      showTotal={total => <span style={{fontWeight: '300', paddingRight: '15px'}}>{`Total ${total} items`}</span>}
       defaultPageSize={25}
       defaultCurrent={1}
       showSizeChanger={false}
@@ -18,7 +18,7 @@ storiesOf('pagination', module).add('total', () =>
     <br />
     <Pagination
       total={89}
-      showTotal={(total, range) => <span style={{fontWeight: '300'}}>{`${range[0]} - ${range[1]}\u00A0\u00A0of\u00A0\u00A0${total}`}</span>}
+      showTotal={(total, range) => <span style={{fontWeight: '300', paddingRight: '15px'}}>{`${range[0]} - ${range[1]}\u00A0\u00A0of\u00A0\u00A0${total}`}</span>}
       defaultPageSize={25}
       defaultCurrent={1}
       showSizeChanger={false}

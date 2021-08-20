@@ -156,6 +156,8 @@ module.exports = async ({ config }) => {
               'menu-item-color': '#515864',
               'dropdown-font-size': '1.3rem',
               'dropdown-line-height': '1.8rem',
+              'dropdown-vertical-padding': '8px',
+              'padding-sm': '24px'
             },
             javascriptEnabled: true,
           }
