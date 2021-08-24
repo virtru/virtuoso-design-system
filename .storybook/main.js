@@ -7,9 +7,12 @@ module.exports = {
     // Load stories in JS format
     // Load stories in MDX format (@storybook/addon-docs)
     '../stories/**/*.stories.@(js|mdx)',
-    // include stories from virtru-react-components
-    '../stories/vrc-stories/*.@(js|mdx|ts|tsx)',
-    '../stories/vrc-stories/**/*.@(ts|tsx|jsx)',
+    // include antd stories
+    '../stories/antd/*.@(js|mdx|ts|tsx)',
+    '../stories/antd/**/*.@(ts|tsx|jsx)',
+    // include virtru stories
+    '../stories/virtru/*.@(js|mdx|ts|tsx)',
+    '../stories/virtru/**/*.@(ts|tsx|jsx)',
   ],
   addons: [
     '@storybook/addon-a11y',

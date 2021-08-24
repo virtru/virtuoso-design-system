@@ -67,7 +67,7 @@ function getDemo(content) {
 
   const demoFiles = glob.sync(path.join(process.cwd(), 'lib/components/**/demo/*.md'));
 
-  const tmpFolder = path.resolve('stories/vrc-stories');
+  const tmpFolder = path.resolve('stories/antd');
 
   for (let i = 0; i < demoFiles.length; i += 1) {
     const demoPath = demoFiles[i];
@@ -83,7 +83,7 @@ function getDemo(content) {
 
       script = script.replace(
         'ReactDOM.render(',
-        `storiesOf('${dirs[dirs.length - 2]}', module).add('${path
+        `storiesOf(antd/'${dirs[dirs.length - 2]}', module).add('${path
           .basename(demoPath)
           .replace(/\..*/, '')}', () => `,
       );

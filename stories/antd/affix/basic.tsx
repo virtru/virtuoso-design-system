@@ -26,3 +26,7 @@ const Demo: React.FC = () => {
 
 storiesOf('affix', module).add('basic', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>The simplest usage.</p></>) } });
+
+export default {
+  title: 'antd/affix',
+};

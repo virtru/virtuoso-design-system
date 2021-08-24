@@ -39,7 +39,11 @@ addParameters({
     theme: virtuosoTheme,
   },
   options: {
-
+    // storySort: {
+    //   method: 'alphabetical',
+    //   order: ['Introduction', 'Basics'],
+    //   locales: 'en-US',
+    // },
     /**
      * id to select an addon panel
      * @type {String}

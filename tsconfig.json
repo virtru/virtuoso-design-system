@@ -16,7 +16,8 @@
     "skipLibCheck": true
   },
   "include": [
-    "stories/vrc-stories/**/*",
+    "stories/antd/**/*",
+    "stories/virtru/**/*",
     ".storybook/**/*"
   ]
 }
