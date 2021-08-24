@@ -10,4 +10,5 @@ buildkite-scripts/
 dist/
 storybook-static/
 devops-ansible/
-lib/**
+lib/styles/**
+stories/antd/**
