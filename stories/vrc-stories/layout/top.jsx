@@ -14,7 +14,7 @@ function handleMenuClick(e) {
 
 const menu = (
   <Menu onClick={handleMenuClick} defaultOpenKeys={['users']} mode="inline">
-    <Menu.ItemGroup key="users" title="Signed-in Users">
+    <Menu.ItemGroup key="users" title="Signed-in Users" style={{ fontSize: '1.3rem', color: 'black' }}>
     <Menu.Item key="1" icon={<UserOutlined />}>
       abc@virtru.com
     </Menu.Item>
@@ -35,9 +35,9 @@ storiesOf('layout', module).add('top', () =>
       {/* consider using divider component w vertical prop here */}
       <div style={{height: '25px', margin: '0 0 0 12px', width: '1px', background: 'white'}}></div>
       <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-        <Menu.Item key={0}><span style={{fontWeight: '500'}}>Control Center</span></Menu.Item>
+        <Menu.Item key={0}><span style={{fontWeight: '600'}}>Control Center</span></Menu.Item>
         <Menu.Item key={1}><Dropdown overlay={menu} trigger={['click']}>
-    <Button ghost style={{border: '0', color: 'white'}}>
+    <Button ghost style={{border: '0', color: 'white', fontWeight: '600'}}>
     <UserOutlined />
     ksuchak@virtru.com
     <DownOutlined />

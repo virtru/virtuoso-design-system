@@ -129,13 +129,15 @@ module.exports = async ({ config }) => {
               'btn-disable-border': '#C6CBD4',
               'btn-disable-color': '#FFFFFF',
               'font-family': "'Open Sans', Helvetica, Arial, sans-serif",
-              // for buttons
+              'text-color': '#2D323B',
+              'text-color-secondary': '#515864',
+              // buttons
               'btn-font-weight': '700',
               'border-radius-base': '3px',
               'btn-font-size-sm': '13px',
               'btn-padding-horizontal-base': '18px',
               'btn-height-base': '36px',
-              // for header
+              // header
               'layout-header-background': '#011D4A',
               'layout-trigger-background': '#011D4A',
               'layout-body-background': '#FFFFFF',
@@ -154,10 +156,20 @@ module.exports = async ({ config }) => {
               // dropdown
               'menu-item-group-title-color': '#515864',
               'menu-item-color': '#515864',
+              'menu-item-group-title-font-size': '1.3rem',
               'dropdown-font-size': '1.3rem',
               'dropdown-line-height': '1.8rem',
               'dropdown-vertical-padding': '8px',
-              'padding-sm': '24px'
+              'control-padding-horizontal': '24px',
+              // table
+              'table-header-color': '#2D323B',
+              'table-selected-row-bg': '#F3F5F7',
+              'table-row-hover-bg': '#F3F5F7',
+              'table-font-size': '13px',
+              'table-header-bg': '@component-background',
+              'table-padding-vertical': '7px',
+              'table-border-color': '#F3F5F7'
+              // layout (left)
             },
             javascriptEnabled: true,
           }

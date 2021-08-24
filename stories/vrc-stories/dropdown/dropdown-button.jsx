@@ -18,7 +18,7 @@ function handleMenuClick(e) {
 
 const menu = (
   <Menu onClick={handleMenuClick} defaultOpenKeys={['users']} mode="inline">
-    <Menu.ItemGroup key="users" title="Signed-in Users">
+    <Menu.ItemGroup key="users" title="Signed-in Users" style={{ fontSize: '1.3rem', color: '#515864' }}>
     <Menu.Item key="1" icon={<UserOutlined />}>
       abc@virtru.com
     </Menu.Item>

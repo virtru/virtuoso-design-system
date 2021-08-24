@@ -2,7 +2,6 @@ import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Pagination } from 'antd';
-import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 
 storiesOf('pagination', module).add('total', () => 
   <>

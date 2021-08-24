@@ -52,6 +52,8 @@ const columns = [
   },
 ];
 
+columns.forEach(x => x.title = <span style={{ fontWeight: '600' }}>{x.title}</span>);
+
 const data = [
   {
     key: '1',
