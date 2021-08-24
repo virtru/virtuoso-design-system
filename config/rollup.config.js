@@ -1,4 +1,4 @@
-// import less from 'rollup-plugin-less';
+import less from 'rollup-plugin-less';
 
 // const path = require('path');
 // const alias = require('@rollup/plugin-alias');
@@ -32,6 +32,15 @@ module.exports = {
     nodeResolve(),
     json(),
     peerDepsExternal(),
+    less({
+      insert: true,
+      include: [
+        '**/*.less',
+        '**/*.css',
+        'node_modules/antd/dist/antd.css',
+        'node_modules/antd/dist/antd.css',
+      ],
+    }),
     postcss(postcssConfig),
     babel({
       plugins: [['import', { libraryName: 'antd', style: true }]],
