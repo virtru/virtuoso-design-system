@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Descriptions, Badge } from 'antd';
 
-storiesOf('descriptions', module).add('border', () => 
+storiesOf('antd/descriptions', module).add('border', () => 
   <Descriptions title="User Info" bordered>
     <Descriptions.Item label="Product">Cloud Database</Descriptions.Item>
     <Descriptions.Item label="Billing Mode">Prepaid</Descriptions.Item>

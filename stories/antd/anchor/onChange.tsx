@@ -9,7 +9,7 @@ const onChange = (link: string) => {
   console.log('Anchor:OnChange', link);
 };
 
-storiesOf('anchor', module).add('onChange', () => 
+storiesOf('antd/anchor', module).add('onChange', () => 
   <Anchor affix={false} onChange={onChange}>
     <Link href="#components-anchor-demo-basic" title="Basic demo" />
     <Link href="#components-anchor-demo-static" title="Static demo" />

@@ -89,5 +89,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('select', module).add('select-users', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/select', module).add('select-users', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>A complete multiple select sample with remote search, debounce fetch, ajax callback order flow, and loading state.</p></>) } });

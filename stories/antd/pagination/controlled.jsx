@@ -20,5 +20,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('pagination', module).add('controlled', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/pagination', module).add('controlled', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Controlled page number.</p></>) } });

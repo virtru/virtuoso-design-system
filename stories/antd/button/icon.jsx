@@ -4,7 +4,7 @@ import React from 'react';
 import { Button, Tooltip } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 
-storiesOf('button', module).add('icon', () => 
+storiesOf('antd/button', module).add('icon', () => 
   <>
     <Tooltip title="search">
       <Button type="primary" shape="circle" icon={<SearchOutlined />} />

@@ -55,5 +55,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('descriptions', module).add('style', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/descriptions', module).add('style', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Customize label &amp; wrapper style</p></>) } });

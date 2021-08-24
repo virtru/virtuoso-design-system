@@ -18,7 +18,7 @@ function handleChange(value) {
   console.log(`selected ${value}`);
 }
 
-storiesOf('select', module).add('big-data', () => 
+storiesOf('antd/select', module).add('big-data', () => 
   <>
     <Title level={3}>Ant Design 4.0</Title>
     <Title level={4}>{options.length} Items</Title>

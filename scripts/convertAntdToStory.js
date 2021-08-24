@@ -83,7 +83,7 @@ function getDemo(content) {
 
       script = script.replace(
         'ReactDOM.render(',
-        `storiesOf(antd/'${dirs[dirs.length - 2]}', module).add('${path
+        `storiesOf('antd/${dirs[dirs.length - 2]}', module).add('${path
           .basename(demoPath)
           .replace(/\..*/, '')}', () => `,
       );

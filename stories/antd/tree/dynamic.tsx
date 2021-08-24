@@ -60,5 +60,5 @@ const Demo: React.FC<{}> = () => {
   return <Tree loadData={onLoadData} treeData={treeData} />;
 };
 
-storiesOf('tree', module).add('dynamic', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tree', module).add('dynamic', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>To load data asynchronously when click to expand a treeNode.</p></>) } });

@@ -27,5 +27,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('tag', module).add('controlled', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tag', module).add('controlled', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>By using the <code>visible</code> prop, you can control the close state of Tag.</p></>) } });

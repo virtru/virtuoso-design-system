@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { SmileTwoTone, HeartTwoTone, CheckCircleTwoTone } from '@ant-design/icons';
 
-storiesOf('icon', module).add('two-tone', () => 
+storiesOf('antd/Icon', module).add('two-tone', () => 
   <div className="icons-list">
     <SmileTwoTone />
     <HeartTwoTone twoToneColor="#eb2f96" />

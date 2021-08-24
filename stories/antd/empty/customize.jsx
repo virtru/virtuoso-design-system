@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Empty, Button } from 'antd';
 
-storiesOf('empty', module).add('customize', () => 
+storiesOf('antd/empty', module).add('customize', () => 
   <Empty
     image="https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg"
     imageStyle={{

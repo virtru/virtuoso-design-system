@@ -13,5 +13,5 @@ function SpaceSplit() {
   );
 }
 
-storiesOf('space', module).add('split', () => <SpaceSplit />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/space', module).add('split', () => <SpaceSplit />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Crowded components split.</p></>) } });

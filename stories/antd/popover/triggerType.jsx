@@ -10,7 +10,7 @@ const content = (
   </div>
 );
 
-storiesOf('popover', module).add('triggerType', () => 
+storiesOf('antd/popover', module).add('triggerType', () => 
   <div>
     <Popover content={content} title="Title" trigger="hover">
       <Button>Hover me</Button>

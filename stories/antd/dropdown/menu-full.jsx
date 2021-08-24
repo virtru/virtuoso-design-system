@@ -39,7 +39,7 @@ const menu = (
   </Menu>
 );
 
-storiesOf('dropdown', module).add('menu-full', () => 
+storiesOf('antd/dropdown', module).add('menu-full', () => 
   <Dropdown overlay={menu}>
     <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
       Hover to check menu style <DownOutlined />

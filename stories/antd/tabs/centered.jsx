@@ -19,5 +19,5 @@ const Demo = () => (
   </Tabs>
 );
 
-storiesOf('tabs', module).add('centered', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tabs', module).add('centered', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Centered tabs.</p></>) } });

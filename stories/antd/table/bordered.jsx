@@ -42,7 +42,7 @@ const data = [
   },
 ];
 
-storiesOf('table', module).add('bordered', () => 
+storiesOf('antd/table', module).add('bordered', () => 
   <Table
     columns={columns}
     dataSource={data}

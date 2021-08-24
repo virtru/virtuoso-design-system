@@ -69,7 +69,7 @@ for (let i = 0; i < 20; i += 1) {
   });
 }
 
-storiesOf('table', module).add('summary', () => 
+storiesOf('antd/table', module).add('summary', () => 
   <>
     <Table
       columns={columns}

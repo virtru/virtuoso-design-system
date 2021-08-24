@@ -56,5 +56,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('transfer', module).add('search', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/transfer', module).add('search', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Transfer with a search box.</p></>) } });

@@ -64,5 +64,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('button', module).add('loading', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/button', module).add('loading', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>A loading indicator can be added to a button by setting the <code>loading</code> property on the <code>Button</code>.</p></>) } });

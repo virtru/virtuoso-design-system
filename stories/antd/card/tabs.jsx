@@ -84,5 +84,5 @@ class TabsCard extends React.Component {
   }
 }
 
-storiesOf('card', module).add('tabs', () => <TabsCard />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/card', module).add('tabs', () => <TabsCard />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>More content can be hosted.</p></>) } });

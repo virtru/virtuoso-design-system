@@ -125,5 +125,5 @@ class PicturesWall extends React.Component {
   }
 }
 
-storiesOf('upload', module).add('file-type', () => <PicturesWall />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/upload', module).add('file-type', () => <PicturesWall />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Displays the corresponding by default by type icon</p></>) } });

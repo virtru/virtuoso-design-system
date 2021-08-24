@@ -5,7 +5,7 @@ import { DatePicker, Space } from 'antd';
 
 const { RangePicker } = DatePicker;
 
-storiesOf('date-picker', module).add('range-picker', () => 
+storiesOf('antd/date-picker', module).add('range-picker', () => 
   <Space direction="vertical" size={12}>
     <RangePicker />
     <RangePicker showTime />

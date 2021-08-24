@@ -23,5 +23,5 @@ const Demo = () => (
   </Tabs>
 );
 
-storiesOf('tabs', module).add('basic', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tabs', module).add('basic', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Default activate first tab.</p></>) } });

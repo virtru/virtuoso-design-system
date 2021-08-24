@@ -50,5 +50,5 @@ class CitySwitcher extends React.Component {
   }
 }
 
-storiesOf('cascader', module).add('custom-trigger', () => <CitySwitcher />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/cascader', module).add('custom-trigger', () => <CitySwitcher />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Separate trigger button and result.</p></>) } });

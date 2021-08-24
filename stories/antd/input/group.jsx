@@ -155,6 +155,6 @@ const App = () => (
   </div>
 );
 
-storiesOf('input', module).add('group', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/Input', module).add('group', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Input.Group example.</p>
 <p>Note: You don't need <code>Col</code> to control the width in the <code>compact</code> mode.</p></>) } });

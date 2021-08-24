@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Popconfirm } from 'antd';
 
-storiesOf('popconfirm', module).add('locale', () => 
+storiesOf('antd/popconfirm', module).add('locale', () => 
   <Popconfirm title="Are you sure？" okText="Yes" cancelText="No">
     <a href="#">Delete</a>
   </Popconfirm>,

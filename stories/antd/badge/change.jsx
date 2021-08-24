@@ -64,5 +64,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('badge', module).add('change', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/badge', module).add('change', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>The count will be animated as it changes.</p></>) } });

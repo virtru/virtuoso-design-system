@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Result, Button } from 'antd';
 
-storiesOf('result', module).add('warning', () => 
+storiesOf('antd/result', module).add('warning', () => 
   <Result
     status="warning"
     title="There are some problems with your operation."

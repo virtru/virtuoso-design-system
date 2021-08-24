@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Space, Button, Popconfirm } from 'antd';
 
-storiesOf('space', module).add('debug', () => 
+storiesOf('antd/space', module).add('debug', () => 
   <Space>
     <>
       Button

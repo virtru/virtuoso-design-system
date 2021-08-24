@@ -127,5 +127,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('table', module).add('pagination', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('pagination', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Table pagination settings.</p></>) } });

@@ -18,7 +18,7 @@ const routes = [
   },
 ];
 
-storiesOf('page-header', module).add('breadcrumb', () => 
+storiesOf('antd/page-header', module).add('breadcrumb', () => 
   <PageHeader
     className="site-page-header"
     title="Title"

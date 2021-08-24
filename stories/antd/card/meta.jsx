@@ -6,7 +6,7 @@ import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/ico
 
 const { Meta } = Card;
 
-storiesOf('card', module).add('meta', () => 
+storiesOf('antd/card', module).add('meta', () => 
   <Card
     style={{ width: 300 }}
     cover={

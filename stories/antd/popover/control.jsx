@@ -33,5 +33,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('popover', module).add('control', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/popover', module).add('control', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use <code>visible</code> prop to control the display of the card.</p></>) } });

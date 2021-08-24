@@ -23,7 +23,7 @@ const menu = (
   </Menu>
 );
 
-storiesOf('dropdown', module).add('placement', () => 
+storiesOf('antd/dropdown', module).add('placement', () => 
   <Space direction="vertical">
     <Space wrap>
       <Dropdown overlay={menu} placement="bottomLeft">

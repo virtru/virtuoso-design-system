@@ -80,7 +80,7 @@ for (let i = 0; i < 100; i++) {
   });
 }
 
-storiesOf('table', module).add('fixed-columns-header', () => 
+storiesOf('antd/table', module).add('fixed-columns-header', () => 
   <Table columns={columns} dataSource={data} scroll={{ x: 1500, y: 300 }} />,
   { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>A Solution for displaying large amounts of data with long columns.</p>

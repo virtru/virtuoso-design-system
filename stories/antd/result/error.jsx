@@ -6,7 +6,7 @@ import { CloseCircleOutlined } from '@ant-design/icons';
 
 const { Paragraph, Text } = Typography;
 
-storiesOf('result', module).add('error', () => 
+storiesOf('antd/result', module).add('error', () => 
   <Result
     status="error"
     title="Submission Failed"

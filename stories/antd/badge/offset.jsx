@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Badge } from 'antd';
 
-storiesOf('badge', module).add('offset', () => 
+storiesOf('antd/badge', module).add('offset', () => 
   <>
     <Badge count={5} offset={[10, 10]}>
       <a href="#" className="head-example" />

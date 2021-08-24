@@ -15,7 +15,7 @@ const formItemLayout = {
   },
 };
 
-storiesOf('auto-complete', module).add('form-debug', () => 
+storiesOf('antd/auto-complete', module).add('form-debug', () => 
   <Form style={{ margin: '0 auto' }} {...formItemLayout}>
     <Form.Item label="单独 AutoComplete">
       <AutoComplete />

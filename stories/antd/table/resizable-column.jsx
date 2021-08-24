@@ -117,5 +117,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('table', module).add('resizable-column', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('resizable-column', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Implement resizable column by integrate with <a href="https://github.com/STRML/react-resizable">react-resizable</a>. When sort needed, you can use <a href="https://codesandbox.io/s/zrj8xvyzxx">additional mark</a> to prevent resize trigger sort.</p></>) } });

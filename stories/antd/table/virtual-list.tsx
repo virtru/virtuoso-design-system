@@ -122,7 +122,7 @@ const columns = [
 
 const data = Array.from({ length: 100000 }, (_, key) => ({ key }));
 
-storiesOf('table', module).add('virtual-list', () => 
+storiesOf('antd/table', module).add('virtual-list', () => 
   <VirtualTable columns={columns} dataSource={data} scroll={{ y: 300, x: '100vw' }} />,
   { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Integrate virtual scroll with <code>react-window</code> to achieve a high performance table of 100,000 data.</p></>) } });

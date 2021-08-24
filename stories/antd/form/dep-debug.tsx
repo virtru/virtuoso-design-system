@@ -32,5 +32,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('form', module).add('dep-debug', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/form', module).add('dep-debug', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Buggy!</p></>) } });

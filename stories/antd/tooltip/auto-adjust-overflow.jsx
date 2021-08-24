@@ -10,7 +10,7 @@ const wrapStyles = {
   border: '1px solid #e9e9e9',
 };
 
-storiesOf('tooltip', module).add('auto-adjust-overflow', () => 
+storiesOf('antd/tooltip', module).add('auto-adjust-overflow', () => 
   <div style={wrapStyles}>
     <Tooltip
       placement="left"

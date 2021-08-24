@@ -82,7 +82,7 @@ class DecimalStep extends React.Component {
   }
 }
 
-storiesOf('slider', module).add('input-number', () => 
+storiesOf('antd/slider', module).add('input-number', () => 
   <div>
     <IntegerStep />
     <DecimalStep />

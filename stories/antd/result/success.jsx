@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Result, Button } from 'antd';
 
-storiesOf('result', module).add('success', () => 
+storiesOf('antd/result', module).add('success', () => 
   <Result
     status="success"
     title="Successfully Purchased Cloud Server ECS!"

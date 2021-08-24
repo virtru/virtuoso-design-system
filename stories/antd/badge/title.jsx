@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Badge } from 'antd';
 
-storiesOf('badge', module).add('title', () => 
+storiesOf('antd/badge', module).add('title', () => 
   <div>
     <Badge count={5} title="Custom hover text">
       <a href="#" className="head-example" />

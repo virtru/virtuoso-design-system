@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Divider } from 'antd';
 
-storiesOf('divider', module).add('customize-style', () => 
+storiesOf('antd/divider', module).add('customize-style', () => 
   <>
     <Divider style={{ borderWidth: 2, borderColor: '#7cb305' }} />
     <Divider style={{ borderColor: '#7cb305' }} dashed />

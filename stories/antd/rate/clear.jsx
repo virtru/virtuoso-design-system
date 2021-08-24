@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Rate } from 'antd';
 
-storiesOf('rate', module).add('clear', () => 
+storiesOf('antd/rate', module).add('clear', () => 
   <>
     <Rate defaultValue={3} />
     <span className="ant-rate-text">allowClear: true</span>

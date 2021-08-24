@@ -74,5 +74,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('transfer', module).add('oneWay', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/transfer', module).add('oneWay', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use <code>oneWay</code> to makes Transfer to one way style.</p></>) } });

@@ -20,7 +20,7 @@ const ThrowError: React.FC = () => {
   );
 };
 
-storiesOf('alert', module).add('error-boundary', () => 
+storiesOf('antd/alert', module).add('error-boundary', () => 
   <ErrorBoundary>
     <ThrowError />
   </ErrorBoundary>,

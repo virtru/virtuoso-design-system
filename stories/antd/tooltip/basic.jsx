@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Tooltip } from 'antd';
 
-storiesOf('tooltip', module).add('basic', () => 
+storiesOf('antd/tooltip', module).add('basic', () => 
   <Tooltip title="prompt text">
     <span>Tooltip will show on mouse enter.</span>
   </Tooltip>,

@@ -36,5 +36,5 @@ const App = () => {
   );
 };
 
-storiesOf('checkbox', module).add('check-all', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/checkbox', module).add('check-all', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>The <code>indeterminate</code> property can help you to achieve a 'check all' effect.</p></>) } });

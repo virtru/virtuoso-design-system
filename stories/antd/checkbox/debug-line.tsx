@@ -8,7 +8,7 @@ const sharedStyle: React.CSSProperties = {
   marginBottom: 16,
 };
 
-storiesOf('checkbox', module).add('debug-line', () => 
+storiesOf('antd/checkbox', module).add('debug-line', () => 
   <div>
     <Space style={sharedStyle} align="center">
       <Checkbox value="light" />

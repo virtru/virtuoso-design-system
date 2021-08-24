@@ -46,7 +46,7 @@ const data = [
   },
 ];
 
-storiesOf('table', module).add('expand', () => 
+storiesOf('antd/table', module).add('expand', () => 
   <Table
     columns={columns}
     expandable={{

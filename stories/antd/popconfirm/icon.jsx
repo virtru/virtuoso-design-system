@@ -4,7 +4,7 @@ import React from 'react';
 import { Popconfirm } from 'antd';
 import { QuestionCircleOutlined } from '@ant-design/icons';
 
-storiesOf('popconfirm', module).add('icon', () => 
+storiesOf('antd/popconfirm', module).add('icon', () => 
   <Popconfirm title="Are you sure？" icon={<QuestionCircleOutlined style={{ color: 'red' }} />}>
     <a href="#">Delete</a>
   </Popconfirm>,

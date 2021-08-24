@@ -21,7 +21,7 @@ function onSearch(val) {
   console.log('search:', val);
 }
 
-storiesOf('select', module).add('search', () => 
+storiesOf('antd/select', module).add('search', () => 
   <Select
     showSearch
     style={{ width: 200 }}

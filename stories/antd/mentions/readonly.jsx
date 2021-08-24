@@ -28,5 +28,5 @@ function App() {
   );
 }
 
-storiesOf('mentions', module).add('readonly', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/mentions', module).add('readonly', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Configurate <code>disabled</code> and <code>readOnly</code>.</p></>) } });

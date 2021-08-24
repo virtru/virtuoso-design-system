@@ -5,7 +5,7 @@ import { DatePicker, Space } from 'antd';
 
 const { RangePicker } = DatePicker;
 
-storiesOf('date-picker', module).add('extra-footer', () => 
+storiesOf('antd/date-picker', module).add('extra-footer', () => 
   <Space direction="vertical" size={12}>
     <DatePicker renderExtraFooter={() => 'extra footer'} />
     <DatePicker renderExtraFooter={() => 'extra footer'} showTime />

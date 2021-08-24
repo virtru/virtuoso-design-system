@@ -123,7 +123,7 @@ class DraggableTabs extends React.Component {
   }
 }
 
-storiesOf('tabs', module).add('custom-tab-bar-node', () => 
+storiesOf('antd/tabs', module).add('custom-tab-bar-node', () => 
   <DraggableTabs>
     <TabPane tab="tab 1" key="1">
       Content of Tab Pane 1

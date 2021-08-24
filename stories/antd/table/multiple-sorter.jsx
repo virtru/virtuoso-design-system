@@ -69,5 +69,5 @@ function onChange(pagination, filters, sorter, extra) {
   console.log('params', pagination, filters, sorter, extra);
 }
 
-storiesOf('table', module).add('multiple-sorter', () => <Table columns={columns} dataSource={data} onChange={onChange} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('multiple-sorter', () => <Table columns={columns} dataSource={data} onChange={onChange} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p><code>column.sorter</code> support <code>multiple</code> to config the priority of sort columns. Though <code>sorter.compare</code> to customize compare function. You can also leave it empty to use the interactive only.</p></>) } });

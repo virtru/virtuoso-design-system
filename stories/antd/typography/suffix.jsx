@@ -39,5 +39,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('typography', module).add('suffix', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/typography', module).add('suffix', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>add suffix ellipsis support.</p></>) } });

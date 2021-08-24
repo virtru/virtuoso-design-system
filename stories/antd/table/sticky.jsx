@@ -80,7 +80,7 @@ for (let i = 0; i < 100; i++) {
   });
 }
 
-storiesOf('table', module).add('sticky', () => 
+storiesOf('antd/table', module).add('sticky', () => 
   <Table
     columns={columns}
     dataSource={data}

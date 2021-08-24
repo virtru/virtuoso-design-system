@@ -12,7 +12,7 @@ function handleChange(value) {
   console.log(`selected ${value}`);
 }
 
-storiesOf('select', module).add('suffix', () => 
+storiesOf('antd/select', module).add('suffix', () => 
   <>
     <Select
       suffixIcon={smileIcon}

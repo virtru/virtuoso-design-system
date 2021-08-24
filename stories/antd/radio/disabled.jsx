@@ -32,5 +32,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('radio', module).add('disabled', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/radio', module).add('disabled', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Radio unavailable.</p></>) } });

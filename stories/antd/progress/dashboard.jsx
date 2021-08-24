@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Progress } from 'antd';
 
-storiesOf('progress', module).add('dashboard', () => 
+storiesOf('antd/progress', module).add('dashboard', () => 
   <>
     <Progress type="dashboard" percent={75} />
     <Progress type="dashboard" percent={75} gapDegree={30} />

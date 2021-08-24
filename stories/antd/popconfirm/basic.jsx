@@ -13,7 +13,7 @@ function cancel(e) {
   message.error('Click on No');
 }
 
-storiesOf('popconfirm', module).add('basic', () => 
+storiesOf('antd/popconfirm', module).add('basic', () => 
   <Popconfirm
     title="Are you sure to delete this task?"
     onConfirm={confirm}

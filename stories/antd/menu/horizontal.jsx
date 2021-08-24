@@ -46,5 +46,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('menu', module).add('horizontal', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/menu', module).add('horizontal', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Horizontal top navigation menu.</p></>) } });

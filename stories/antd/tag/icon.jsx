@@ -9,7 +9,7 @@ import {
   LinkedinOutlined,
 } from '@ant-design/icons';
 
-storiesOf('tag', module).add('icon', () => 
+storiesOf('antd/tag', module).add('icon', () => 
   <>
     <Tag icon={<TwitterOutlined />} color="#55acee">
       Twitter

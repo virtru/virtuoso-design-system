@@ -7,7 +7,7 @@ function onChange(value) {
   console.log('changed', value);
 }
 
-storiesOf('input-number', module).add('formatter', () => 
+storiesOf('antd/input-number', module).add('formatter', () => 
   <>
     <InputNumber
       defaultValue={1000}

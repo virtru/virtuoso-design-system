@@ -70,5 +70,5 @@ const App = () => {
   );
 };
 
-storiesOf('mentions', module).add('form', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/mentions', module).add('form', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Controlled mode, for example, to work with <code>Form</code>.</p></>) } });

@@ -35,5 +35,5 @@ const App = () => {
   );
 };
 
-storiesOf('steps', module).add('steps-in-steps', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/steps', module).add('steps-in-steps', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Test style of Steps inside Steps.</p></>) } });

@@ -13,5 +13,5 @@ const success = () => {
   });
 };
 
-storiesOf('message', module).add('custom-style', () => <Button onClick={success}>Customized style</Button>, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/message', module).add('custom-style', () => <Button onClick={success}>Customized style</Button>, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>The <code>style</code> and <code>className</code> are available to customize Message.</p></>) } });

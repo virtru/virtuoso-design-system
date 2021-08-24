@@ -115,6 +115,6 @@ const data = [
   },
 ];
 
-storiesOf('table', module).add('colspan-rowspan', () => <Table columns={columns} dataSource={data} bordered />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('colspan-rowspan', () => <Table columns={columns} dataSource={data} bordered />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Table column title supports <code>colSpan</code> that set in <code>column</code>.</p>
 <p>Table cell supports <code>colSpan</code> and <code>rowSpan</code> that set in render return object. When each of them is set to <code>0</code>, the cell will not be rendered.</p></>) } });

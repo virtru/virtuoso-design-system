@@ -12,7 +12,7 @@ const customIcons = {
   5: <SmileOutlined />,
 };
 
-storiesOf('rate', module).add('character-function', () => 
+storiesOf('antd/rate', module).add('character-function', () => 
   <>
     <Rate defaultValue={2} character={({ index }) => index + 1} />
     <br />

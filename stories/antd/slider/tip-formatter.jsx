@@ -7,7 +7,7 @@ function formatter(value) {
   return `${value}%`;
 }
 
-storiesOf('slider', module).add('tip-formatter', () => 
+storiesOf('antd/slider', module).add('tip-formatter', () => 
   <>
     <Slider tipFormatter={formatter} />
     <Slider tipFormatter={null} />

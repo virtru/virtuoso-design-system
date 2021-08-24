@@ -73,5 +73,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('table', module).add('row-selection-and-operation', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('row-selection-and-operation', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>To perform operations and clear selections after selecting some rows, use <code>rowSelection.selectedRowKeys</code> to control selected rows.</p></>) } });

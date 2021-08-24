@@ -546,5 +546,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('config-provider', module).add('direction', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/config-provider', module).add('direction', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Components which support rtl direction are listed here, you can toggle the direction in the demo.</p></>) } });

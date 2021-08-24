@@ -109,5 +109,5 @@ class SortableTable extends React.Component {
   }
 }
 
-storiesOf('table', module).add('drag-sorting-handler', () => <SortableTable />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('drag-sorting-handler', () => <SortableTable />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Alternatively you can implement drag sorting with handler using <a href="https://github.com/clauderic/react-sortable-hoc">react-sortable-hoc</a>.</p></>) } });

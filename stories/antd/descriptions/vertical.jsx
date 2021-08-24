@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Descriptions } from 'antd';
 
-storiesOf('descriptions', module).add('vertical', () => 
+storiesOf('antd/descriptions', module).add('vertical', () => 
   <Descriptions title="User Info" layout="vertical">
     <Descriptions.Item label="UserName">Zhou Maomao</Descriptions.Item>
     <Descriptions.Item label="Telephone">1810000000</Descriptions.Item>

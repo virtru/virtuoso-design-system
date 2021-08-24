@@ -7,7 +7,7 @@ function onChange(value: string) {
   console.log('changed', value);
 }
 
-storiesOf('input-number', module).add('digit', () => 
+storiesOf('antd/input-number', module).add('digit', () => 
   <InputNumber<string>
     style={{ width: 200 }}
     defaultValue="1"

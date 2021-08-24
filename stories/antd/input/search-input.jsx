@@ -17,7 +17,7 @@ const suffix = (
 
 const onSearch = value => console.log(value);
 
-storiesOf('input', module).add('search-input', () => 
+storiesOf('antd/Input', module).add('search-input', () => 
   <Space direction="vertical">
     <Search placeholder="input search text" onSearch={onSearch} style={{ width: 200 }} />
     <Search placeholder="input search text" allowClear onSearch={onSearch} style={{ width: 200 }} />

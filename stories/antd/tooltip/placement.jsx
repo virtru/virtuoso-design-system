@@ -7,7 +7,7 @@ const text = <span>prompt text</span>;
 
 const buttonWidth = 70;
 
-storiesOf('tooltip', module).add('placement', () => 
+storiesOf('antd/tooltip', module).add('placement', () => 
   <div className="demo">
     <div style={{ marginLeft: buttonWidth, whiteSpace: 'nowrap' }}>
       <Tooltip placement="topLeft" title={text}>

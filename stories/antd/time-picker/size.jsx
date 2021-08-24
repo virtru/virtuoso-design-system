@@ -4,7 +4,7 @@ import React from 'react';
 import { TimePicker } from 'antd';
 import moment from 'moment';
 
-storiesOf('time-picker', module).add('size', () => 
+storiesOf('antd/time-picker', module).add('size', () => 
   <>
     <TimePicker defaultValue={moment('12:08:23', 'HH:mm:ss')} size="large" />
     <TimePicker defaultValue={moment('12:08:23', 'HH:mm:ss')} />

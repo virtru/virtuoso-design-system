@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Avatar } from 'antd';
 
-storiesOf('avatar', module).add('fallback', () => 
+storiesOf('antd/avatar', module).add('fallback', () => 
   <>
     <Avatar shape="circle" src="http://abc.com/not-exist.jpg">
       A

@@ -45,7 +45,7 @@ const Content = ({ children, extra }) => (
   </div>
 );
 
-storiesOf('page-header', module).add('responsive', () => 
+storiesOf('antd/page-header', module).add('responsive', () => 
   <>
     <PageHeader
       className="site-page-header-responsive"

@@ -9,7 +9,7 @@ function handleChange(value) {
   console.log(`selected ${value}`);
 }
 
-storiesOf('select', module).add('basic', () => 
+storiesOf('antd/select', module).add('basic', () => 
   <>
     <Select defaultValue="lucy" style={{ width: 120 }} onChange={handleChange}>
       <Option value="jack">Jack</Option>

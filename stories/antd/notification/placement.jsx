@@ -18,7 +18,7 @@ const openNotification = placement => {
   });
 };
 
-storiesOf('notification', module).add('placement', () => 
+storiesOf('antd/notification', module).add('placement', () => 
   <div>
     <Space>
       <Button type="primary" onClick={() => openNotification('topLeft')}>

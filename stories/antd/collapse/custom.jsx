@@ -12,7 +12,7 @@ const text = `
   it can be found as a welcome guest in many households across the world.
 `;
 
-storiesOf('collapse', module).add('custom', () => 
+storiesOf('antd/collapse', module).add('custom', () => 
   <Collapse
     bordered={false}
     defaultActiveKey={['1']}

@@ -21,5 +21,5 @@ function countDown() {
   }, secondsToGo * 1000);
 }
 
-storiesOf('modal', module).add('manual', () => <Button onClick={countDown}>Open modal to close in 5s</Button>, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/modal', module).add('manual', () => <Button onClick={countDown}>Open modal to close in 5s</Button>, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Manually updating and destroying a modal from <code>Modal.method</code>.</p></>) } });

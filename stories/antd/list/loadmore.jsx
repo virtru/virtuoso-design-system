@@ -105,5 +105,5 @@ class LoadMoreList extends React.Component {
   }
 }
 
-storiesOf('list', module).add('loadmore', () => <LoadMoreList />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/list', module).add('loadmore', () => <LoadMoreList />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Load more list with <code>loadMore</code> property.</p></>) } });

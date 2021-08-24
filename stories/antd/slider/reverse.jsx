@@ -24,5 +24,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('slider', module).add('reverse', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/slider', module).add('reverse', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Using <code>reverse</code> to render slider reversely.</p></>) } });

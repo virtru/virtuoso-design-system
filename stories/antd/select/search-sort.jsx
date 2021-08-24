@@ -5,7 +5,7 @@ import { Select } from 'antd';
 
 const { Option } = Select;
 
-storiesOf('select', module).add('search-sort', () => 
+storiesOf('antd/select', module).add('search-sort', () => 
   <Select
     showSearch
     style={{ width: 200 }}

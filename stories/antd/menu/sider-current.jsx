@@ -47,5 +47,5 @@ const Sider = () => {
   );
 };
 
-storiesOf('menu', module).add('sider-current', () => <Sider />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/menu', module).add('sider-current', () => <Sider />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Click the menu and you will see that all the other menus gets collapsed to keep the entire menu compact.</p></>) } });

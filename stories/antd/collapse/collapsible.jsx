@@ -11,7 +11,7 @@ const text = `
   it can be found as a welcome guest in many households across the world.
 `;
 
-storiesOf('collapse', module).add('collapsible', () => 
+storiesOf('antd/collapse', module).add('collapsible', () => 
   <Space direction="vertical">
     <Collapse collapsible="header" defaultActiveKey={['1']}>
       <Panel header="This panel can only be collapsed by clicking text" key="1">

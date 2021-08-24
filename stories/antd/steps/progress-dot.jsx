@@ -5,7 +5,7 @@ import { Steps, Divider } from 'antd';
 
 const { Step } = Steps;
 
-storiesOf('steps', module).add('progress-dot', () => 
+storiesOf('antd/steps', module).add('progress-dot', () => 
   <>
     <Steps progressDot current={1}>
       <Step title="Finished" description="This is a description." />

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Badge, Card, Space } from 'antd';
 
-storiesOf('badge', module).add('ribbon-debug', () => 
+storiesOf('antd/badge', module).add('ribbon-debug', () => 
   <Space direction="vertical" style={{ width: '100%' }}>
     <Badge.Ribbon text="啦啦啦啦">
       <Card>推开窗户举起望远镜</Card>

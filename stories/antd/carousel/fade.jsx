@@ -11,7 +11,7 @@ const contentStyle = {
   background: '#364d79',
 };
 
-storiesOf('carousel', module).add('fade', () => 
+storiesOf('antd/carousel', module).add('fade', () => 
   <Carousel effect="fade">
     <div>
       <h3 style={contentStyle}>1</h3>

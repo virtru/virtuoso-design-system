@@ -11,7 +11,7 @@ const contentStyle = {
   background: '#364d79',
 };
 
-storiesOf('carousel', module).add('autoplay', () => 
+storiesOf('antd/carousel', module).add('autoplay', () => 
   <Carousel autoplay>
     <div>
       <h3 style={contentStyle}>1</h3>

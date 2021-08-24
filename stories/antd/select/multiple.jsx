@@ -14,7 +14,7 @@ function handleChange(value) {
   console.log(`selected ${value}`);
 }
 
-storiesOf('select', module).add('multiple', () => 
+storiesOf('antd/select', module).add('multiple', () => 
   <>
     <Select
       mode="multiple"

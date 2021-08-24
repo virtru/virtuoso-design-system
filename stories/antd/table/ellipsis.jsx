@@ -67,7 +67,7 @@ const data = [
   },
 ];
 
-storiesOf('table', module).add('ellipsis', () => <Table columns={columns} dataSource={data} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('ellipsis', () => <Table columns={columns} dataSource={data} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Ellipsis cell content via setting <code>column.ellipsis</code>.</p>
 <blockquote>
   <p>Cannot ellipsis table header with sorters and filters for now.</p>

@@ -44,5 +44,5 @@ const Complete: React.FC = () => {
   );
 };
 
-storiesOf('auto-complete', module).add('basic', () => <Complete />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/auto-complete', module).add('basic', () => <Complete />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Basic Usage, set data source of autocomplete with <code>options</code> property.</p></>) } });

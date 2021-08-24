@@ -31,7 +31,7 @@ const props = {
   },
 };
 
-storiesOf('upload', module).add('transform-file', () => 
+storiesOf('antd/upload', module).add('transform-file', () => 
   <>
     <Upload {...props}>
       <Button icon={<UploadOutlined />}>Upload</Button>

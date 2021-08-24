@@ -11,7 +11,7 @@ const data = [
   'Los Angeles battles huge wildfires.',
 ];
 
-storiesOf('list', module).add('simple', () => 
+storiesOf('antd/list', module).add('simple', () => 
   <>
     <Divider orientation="left">Default Size</Divider>
     <List

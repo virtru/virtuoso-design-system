@@ -16,5 +16,5 @@ const Demo: React.FC = () => {
   );
 };
 
-storiesOf('affix', module).add('target', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/affix', module).add('target', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Set a <code>target</code> for 'Affix', which is listen to scroll event of target element (default is <code>window</code>).</p></>) } });

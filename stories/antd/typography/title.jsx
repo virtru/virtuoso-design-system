@@ -5,7 +5,7 @@ import { Typography } from 'antd';
 
 const { Title } = Typography;
 
-storiesOf('typography', module).add('title', () => 
+storiesOf('antd/typography', module).add('title', () => 
   <>
     <Title>h1. Ant Design</Title>
     <Title level={2}>h2. Ant Design</Title>

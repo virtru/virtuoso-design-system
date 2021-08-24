@@ -56,5 +56,5 @@ const App: React.FC = () => {
   );
 };
 
-storiesOf('avatar', module).add('toggle-debug', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/avatar', module).add('toggle-debug', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Text inside Avatar should be set a proper font size when toggle it's visibility.</p></>) } });

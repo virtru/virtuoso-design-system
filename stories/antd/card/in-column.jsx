@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Card, Col, Row } from 'antd';
 
-storiesOf('card', module).add('in-column', () => 
+storiesOf('antd/card', module).add('in-column', () => 
   <div className="site-card-wrapper">
     <Row gutter={16}>
       <Col span={8}>

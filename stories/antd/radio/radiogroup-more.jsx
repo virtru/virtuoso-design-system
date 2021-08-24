@@ -33,5 +33,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('radio', module).add('radiogroup-more', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/radio', module).add('radiogroup-more', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Vertical Radio.Group, with more radios.</p></>) } });

@@ -47,7 +47,7 @@ function displayRender(label) {
   return label[label.length - 1];
 }
 
-storiesOf('cascader', module).add('hover', () => 
+storiesOf('antd/cascader', module).add('hover', () => 
   <Cascader
     options={options}
     expandTrigger="hover"

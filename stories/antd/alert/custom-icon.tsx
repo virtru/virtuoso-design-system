@@ -6,7 +6,7 @@ import { SmileOutlined } from '@ant-design/icons';
 
 const icon = <SmileOutlined />;
 
-storiesOf('alert', module).add('custom-icon', () => 
+storiesOf('antd/alert', module).add('custom-icon', () => 
   <>
     <Alert icon={icon} message="showIcon = false" type="success" />
     <Alert icon={icon} message="Success Tips" type="success" showIcon />

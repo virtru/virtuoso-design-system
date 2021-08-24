@@ -53,5 +53,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('typography', module).add('interactive', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/typography', module).add('interactive', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Provide additional interactive capacity of editable and copyable.</p></>) } });

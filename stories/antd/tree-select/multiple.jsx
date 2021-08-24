@@ -42,5 +42,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('tree-select', module).add('multiple', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tree-select', module).add('multiple', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Multiple selection usage.</p></>) } });

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Alert } from 'antd';
 
-storiesOf('alert', module).add('icon', () => 
+storiesOf('antd/alert', module).add('icon', () => 
   <>
     <Alert message="Success Tips" type="success" showIcon />
     <Alert message="Informational Notes" type="info" showIcon />

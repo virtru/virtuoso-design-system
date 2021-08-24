@@ -43,5 +43,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('drawer', module).add('render-in-current', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/drawer', module).add('render-in-current', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Render in current dom. custom container, check getContainer.</p></>) } });

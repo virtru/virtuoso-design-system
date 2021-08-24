@@ -5,7 +5,7 @@ import { Typography, Space } from 'antd';
 
 const { Text, Link } = Typography;
 
-storiesOf('typography', module).add('text', () => 
+storiesOf('antd/typography', module).add('text', () => 
   <Space direction="vertical">
     <Text>Ant Design (default)</Text>
     <Text type="secondary">Ant Design (secondary)</Text>

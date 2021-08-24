@@ -13,7 +13,7 @@ const content = (
 
 const buttonWidth = 70;
 
-storiesOf('popover', module).add('placement', () => 
+storiesOf('antd/popover', module).add('placement', () => 
   <div className="demo">
     <div style={{ marginLeft: buttonWidth, whiteSpace: 'nowrap' }}>
       <Popover placement="topLeft" title={text} content={content} trigger="click">

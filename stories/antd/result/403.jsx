@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Result, Button } from 'antd';
 
-storiesOf('result', module).add('403', () => 
+storiesOf('antd/result', module).add('403', () => 
   <Result
     status="403"
     title="403"

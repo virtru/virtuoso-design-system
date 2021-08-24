@@ -49,5 +49,5 @@ class Sider extends React.Component {
   }
 }
 
-storiesOf('menu', module).add('inline', () => <Sider />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/menu', module).add('inline', () => <Sider />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Vertical menu with inline submenus.</p></>) } });

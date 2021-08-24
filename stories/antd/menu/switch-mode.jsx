@@ -68,5 +68,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('menu', module).add('switch-mode', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/menu', module).add('switch-mode', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Show the dynamic switching mode (between <code>inline</code> and <code>vertical</code>).</p></>) } });

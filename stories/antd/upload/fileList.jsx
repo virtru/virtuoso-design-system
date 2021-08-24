@@ -49,7 +49,7 @@ class MyUpload extends React.Component {
   }
 }
 
-storiesOf('upload', module).add('fileList', () => <MyUpload />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/upload', module).add('fileList', () => <MyUpload />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>You can gain full control over filelist by configuring <code>fileList</code>. You can accomplish all kinds of customed functions. The following shows two circumstances:</p>
 <ol>
 <li><p>limit the number of uploaded files.</p></li>

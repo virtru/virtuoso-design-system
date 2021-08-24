@@ -4,7 +4,7 @@ import React from 'react';
 import { Input } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
-storiesOf('input', module).add('size', () => 
+storiesOf('antd/Input', module).add('size', () => 
   <>
     <Input size="large" placeholder="large size" prefix={<UserOutlined />} />
     <br />

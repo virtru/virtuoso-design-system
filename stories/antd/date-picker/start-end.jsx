@@ -78,7 +78,7 @@ class DateRange extends React.Component {
   }
 }
 
-storiesOf('date-picker', module).add('start-end', () => <DateRange />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/date-picker', module).add('start-end', () => <DateRange />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>When <code>RangePicker</code> does not satisfied your requirements, try to implement similar functionality with two <code>DatePicker</code>.</p>
 <blockquote>
   <ul>

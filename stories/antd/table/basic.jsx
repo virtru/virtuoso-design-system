@@ -52,8 +52,6 @@ const columns = [
   },
 ];
 
-columns.forEach(x => x.title = <span style={{ fontWeight: '600' }}>{x.title}</span>);
-
 const data = [
   {
     key: '1',
@@ -78,5 +76,5 @@ const data = [
   },
 ];
 
-storiesOf('table', module).add('basic', () => <Table columns={columns} dataSource={data} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('basic', () => <Table columns={columns} dataSource={data} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Simple table with actions.</p></>) } });

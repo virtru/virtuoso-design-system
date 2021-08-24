@@ -7,7 +7,7 @@ const { Link } = Anchor;
 
 const getCurrentAnchor = () => '#components-anchor-demo-static';
 
-storiesOf('anchor', module).add('customizeHighlight', () => 
+storiesOf('antd/anchor', module).add('customizeHighlight', () => 
   <Anchor affix={false} getCurrentAnchor={getCurrentAnchor}>
     <Link href="#components-anchor-demo-basic" title="Basic demo" />
     <Link href="#components-anchor-demo-static" title="Static demo" />

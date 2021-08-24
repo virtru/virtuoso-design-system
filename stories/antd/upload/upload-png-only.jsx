@@ -23,5 +23,5 @@ const Uploader = () => {
   );
 };
 
-storiesOf('upload', module).add('upload-png-only', () => <Uploader />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/upload', module).add('upload-png-only', () => <Uploader />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p><code>beforeUpload</code> only prevent upload behavior when return false or reject promise, the prevented file would still show in file list. Here is the example you can keep prevented files out of list by return <code>UPLOAD.LIST_IGNORE</code>.</p></>) } });

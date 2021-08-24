@@ -41,5 +41,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('select', module).add('responsive', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/select', module).add('responsive', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Auto collapse to tag with responsive case. Not recommend use in large form case since responsive calculation has a perf cost.</p></>) } });

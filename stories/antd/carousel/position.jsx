@@ -44,5 +44,5 @@ const PositionCarouselDemo = () => {
   );
 };
 
-storiesOf('carousel', module).add('position', () => <PositionCarouselDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/carousel', module).add('position', () => <PositionCarouselDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>There are 4 position options available.</p></>) } });

@@ -11,7 +11,7 @@ const text = `
   it can be found as a welcome guest in many households across the world.
 `;
 
-storiesOf('collapse', module).add('accordion', () => 
+storiesOf('antd/collapse', module).add('accordion', () => 
   <Collapse accordion>
     <Panel header="This is panel header 1" key="1">
       <p>{text}</p>

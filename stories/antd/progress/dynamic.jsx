@@ -38,5 +38,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('progress', module).add('dynamic', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/progress', module).add('dynamic', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>A dynamic progress bar is better.</p></>) } });

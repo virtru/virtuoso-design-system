@@ -32,5 +32,5 @@ const App = () => {
   );
 };
 
-storiesOf('transfer', module).add('custom-select-all-labels', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/transfer', module).add('custom-select-all-labels', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Custom the labels for select all checkboxs.</p></>) } });

@@ -139,5 +139,5 @@ class EditableTagGroup extends React.Component {
   }
 }
 
-storiesOf('tag', module).add('control', () => <EditableTagGroup />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tag', module).add('control', () => <EditableTagGroup />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Generating a set of Tags by array, you can add and remove dynamically.</p></>) } });

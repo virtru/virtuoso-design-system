@@ -25,5 +25,5 @@ class Rater extends React.Component {
   }
 }
 
-storiesOf('rate', module).add('text', () => <Rater />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/rate', module).add('text', () => <Rater />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Add copywriting in rate components.</p></>) } });

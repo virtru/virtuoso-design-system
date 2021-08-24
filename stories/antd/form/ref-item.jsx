@@ -42,5 +42,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('form', module).add('ref-item', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/form', module).add('ref-item', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use <code>ref</code> first!</p></>) } });

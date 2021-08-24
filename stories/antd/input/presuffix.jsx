@@ -4,7 +4,7 @@ import React from 'react';
 import { Input, Tooltip } from 'antd';
 import { InfoCircleOutlined, UserOutlined } from '@ant-design/icons';
 
-storiesOf('input', module).add('presuffix', () => 
+storiesOf('antd/Input', module).add('presuffix', () => 
   <>
     <Input
       placeholder="Enter your username"

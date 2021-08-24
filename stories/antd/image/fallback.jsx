@@ -14,5 +14,5 @@ function ImageDemo() {
   );
 }
 
-storiesOf('image', module).add('fallback', () => <ImageDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/image', module).add('fallback', () => <ImageDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Load failed to display image placeholder.</p></>) } });

@@ -17,7 +17,7 @@ const formItemLayout = {
   },
 };
 
-storiesOf('form', module).add('validate-static', () => 
+storiesOf('antd/form', module).add('validate-static', () => 
   <Form {...formItemLayout}>
     <Form.Item
       label="Fail"

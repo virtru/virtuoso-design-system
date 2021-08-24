@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Spin, Alert } from 'antd';
 
-storiesOf('spin', module).add('tip', () => 
+storiesOf('antd/spin', module).add('tip', () => 
   <Spin tip="Loading...">
     <Alert
       message="Alert message title"

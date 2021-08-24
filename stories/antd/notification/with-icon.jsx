@@ -11,7 +11,7 @@ const openNotificationWithIcon = type => {
   });
 };
 
-storiesOf('notification', module).add('with-icon', () => 
+storiesOf('antd/notification', module).add('with-icon', () => 
   <Space>
     <Button onClick={() => openNotificationWithIcon('success')}>Success</Button>
     <Button onClick={() => openNotificationWithIcon('info')}>Info</Button>

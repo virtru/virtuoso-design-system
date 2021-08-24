@@ -58,5 +58,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('typography', module).add('ellipsis-debug', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/typography', module).add('ellipsis-debug', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Multiple line ellipsis support.</p></>) } });

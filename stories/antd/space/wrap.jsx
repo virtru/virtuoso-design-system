@@ -12,5 +12,5 @@ const Demo = () => (
   </Space>
 );
 
-storiesOf('space', module).add('wrap', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/space', module).add('wrap', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Auto wrap line.</p></>) } });

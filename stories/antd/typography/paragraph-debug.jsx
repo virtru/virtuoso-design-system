@@ -5,7 +5,7 @@ import { Typography } from 'antd';
 
 const { Title, Paragraph, Text } = Typography;
 
-storiesOf('typography', module).add('paragraph-debug', () => 
+storiesOf('antd/typography', module).add('paragraph-debug', () => 
   <>
     <Title>Introduction</Title>
     <Paragraph>

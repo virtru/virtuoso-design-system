@@ -72,7 +72,7 @@ const Demo = () => {
   );
 };
 
-storiesOf('form', module).add('complex-form-control', () => <Demo />, { docs: { page: () => (<><pre><code class="diff language-diff">- &lt;Form.Item label="Field" name="field"&gt;
+storiesOf('antd/form', module).add('complex-form-control', () => <Demo />, { docs: { page: () => (<><pre><code class="diff language-diff">- &lt;Form.Item label="Field" name="field"&gt;
 -   &lt;Input /&gt;
 - &lt;/Form.Item&gt;
 + &lt;Form.Item label="Field"&gt;

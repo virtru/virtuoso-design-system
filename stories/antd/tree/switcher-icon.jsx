@@ -71,5 +71,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('tree', module).add('switcher-icon', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tree', module).add('switcher-icon', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>customize collapse/expand icon of tree node</p></>) } });

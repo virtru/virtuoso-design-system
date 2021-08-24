@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Button } from 'antd';
 
-storiesOf('button', module).add('ghost', () => 
+storiesOf('antd/button', module).add('ghost', () => 
   <div className="site-button-ghost-wrapper">
     <Button type="primary" ghost>
       Primary

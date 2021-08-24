@@ -48,5 +48,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('tabs', module).add('size', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tabs', module).add('size', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Large size tabs are usually used in page header, and small size could be used in Modal.</p></>) } });

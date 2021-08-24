@@ -109,5 +109,5 @@ function NestedTable() {
   );
 }
 
-storiesOf('table', module).add('nest-table-border-debug', () => <NestedTable />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('nest-table-border-debug', () => <NestedTable />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>To see if bordered style applied to other tables.</p></>) } });

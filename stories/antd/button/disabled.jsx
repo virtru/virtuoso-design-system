@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Button } from 'antd';
 
-storiesOf('button', module).add('disabled', () => 
+storiesOf('antd/button', module).add('disabled', () => 
   <>
     <Button type="primary">Primary</Button>
     <Button type="primary" disabled>

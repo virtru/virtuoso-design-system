@@ -28,5 +28,5 @@ class PendingTimeLine extends React.Component {
   }
 }
 
-storiesOf('timeline', module).add('pending', () => <PendingTimeLine />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/timeline', module).add('pending', () => <PendingTimeLine />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>When the timeline is incomplete and ongoing, put a ghost node at last. Set <code>pending</code> as truthy value to enable displaying pending item. You can customize the pending content by passing a React Element. Meanwhile, <code>pendingDot=&#123;a React Element&#125;</code> is used to customize the dot of the pending item. <code>reverse=&#123;true&#125;</code> is used for reversing nodes.</p></>) } });

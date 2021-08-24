@@ -5,7 +5,7 @@ import { Row, Col, Divider } from 'antd';
 
 const style = { background: '#0092ff', padding: '8px 0' };
 
-storiesOf('grid', module).add('gutter', () => 
+storiesOf('antd/grid', module).add('gutter', () => 
   <>
     <Divider orientation="left">Horizontal</Divider>
     <Row gutter={16}>

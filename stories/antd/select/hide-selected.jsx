@@ -35,5 +35,5 @@ class SelectWithHiddenSelectedOptions extends React.Component {
   }
 }
 
-storiesOf('select', module).add('hide-selected', () => <SelectWithHiddenSelectedOptions />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/select', module).add('hide-selected', () => <SelectWithHiddenSelectedOptions />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Hide already selected options in the dropdown.</p></>) } });

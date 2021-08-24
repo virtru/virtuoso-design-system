@@ -27,5 +27,5 @@ function showConfirm() {
   }
 }
 
-storiesOf('modal', module).add('confirm-router', () => <Button onClick={showConfirm}>Confirm</Button>, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/modal', module).add('confirm-router', () => <Button onClick={showConfirm}>Confirm</Button>, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p><code>Modal.destroyAll()</code> will destroy all confirmation modal dialogs. Usually, you can use it in router change event to destroy confirm modal dialog automatically.</p></>) } });

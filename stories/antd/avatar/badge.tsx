@@ -4,7 +4,7 @@ import React from 'react';
 import { Avatar, Badge } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
-storiesOf('avatar', module).add('badge', () => 
+storiesOf('antd/avatar', module).add('badge', () => 
   <>
     <span className="avatar-item">
       <Badge count={1}>

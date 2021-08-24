@@ -64,5 +64,5 @@ class Sider extends React.Component {
   }
 }
 
-storiesOf('menu', module).add('style-debug', () => <Sider />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/menu', module).add('style-debug', () => <Sider />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>buggy!</p></>) } });

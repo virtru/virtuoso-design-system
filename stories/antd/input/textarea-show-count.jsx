@@ -9,5 +9,5 @@ const onChange = e => {
   console.log('Change:', e.target.value);
 };
 
-storiesOf('input', module).add('textarea-show-count', () => <TextArea showCount maxLength={100} onChange={onChange} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/Input', module).add('textarea-show-count', () => <TextArea showCount maxLength={100} onChange={onChange} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Show character counting.</p></>) } });

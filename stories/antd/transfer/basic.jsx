@@ -49,5 +49,5 @@ const App = () => {
   );
 };
 
-storiesOf('transfer', module).add('basic', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/transfer', module).add('basic', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>The most basic usage of <code>Transfer</code> involves providing the source data and target keys arrays, plus the rendering and some callback functions.</p></>) } });

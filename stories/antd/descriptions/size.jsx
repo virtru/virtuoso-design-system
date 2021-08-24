@@ -70,5 +70,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('descriptions', module).add('size', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/descriptions', module).add('size', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Custom sizes to fit in a variety of containers.</p></>) } });

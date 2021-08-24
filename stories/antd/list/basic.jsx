@@ -18,7 +18,7 @@ const data = [
   },
 ];
 
-storiesOf('list', module).add('basic', () => 
+storiesOf('antd/list', module).add('basic', () => 
   <List
     itemLayout="horizontal"
     dataSource={data}

@@ -15,7 +15,7 @@ const warning = () => {
   message.warning('This is a warning message');
 };
 
-storiesOf('message', module).add('other', () => 
+storiesOf('antd/message', module).add('other', () => 
   <Space>
     <Button onClick={success}>Success</Button>
     <Button onClick={error}>Error</Button>

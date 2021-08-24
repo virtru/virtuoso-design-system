@@ -15,7 +15,7 @@ const text = `
   it can be found as a welcome guest in many households across the world.
 `;
 
-storiesOf('collapse', module).add('mix', () => 
+storiesOf('antd/collapse', module).add('mix', () => 
   <Collapse onChange={callback}>
     <Panel header="This is panel header 1" key="1">
       <Collapse defaultActiveKey="1">

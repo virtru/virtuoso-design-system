@@ -175,7 +175,7 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('tree', module).add('drag-debug', () => <Demo />, { docs: { page: () => (<><hr />
+storiesOf('antd/tree', module).add('drag-debug', () => <Demo />, { docs: { page: () => (<><hr />
 <p>order: 98
 title:
   zh-CN: Drag Debug

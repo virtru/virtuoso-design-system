@@ -13,7 +13,7 @@ const openNotification = () => {
   });
 };
 
-storiesOf('notification', module).add('custom-icon', () => 
+storiesOf('antd/notification', module).add('custom-icon', () => 
   <Button type="primary" onClick={openNotification}>
     Open the notification box
   </Button>,

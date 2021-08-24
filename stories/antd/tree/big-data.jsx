@@ -24,5 +24,5 @@ for (let i = 0; i < 100; i += 1) {
 
 const Demo = () => <Tree defaultExpandAll height={400} treeData={treeData} />;
 
-storiesOf('tree', module).add('big-data', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tree', module).add('big-data', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Plenty of tree nodes.</p></>) } });

@@ -61,5 +61,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('popover', module).add('hover-with-click', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/popover', module).add('hover-with-click', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>The following example shows how to create a popover which can be hovered and clicked.</p></>) } });

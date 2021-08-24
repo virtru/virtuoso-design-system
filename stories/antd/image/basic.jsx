@@ -12,5 +12,5 @@ function ImageDemo() {
   );
 }
 
-storiesOf('image', module).add('basic', () => <ImageDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/image', module).add('basic', () => <ImageDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Click the image to zoom in.</p></>) } });

@@ -49,5 +49,5 @@ function Demo() {
   );
 }
 
-storiesOf('steps', module).add('progress-debug', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/steps', module).add('progress-debug', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Buggy!</p></>) } });

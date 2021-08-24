@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Tag, Divider } from 'antd';
 
-storiesOf('tag', module).add('colorful-inverse', () => 
+storiesOf('antd/tag', module).add('colorful-inverse', () => 
   <>
     <Divider orientation="left">Presets Inverse</Divider>
     <div>

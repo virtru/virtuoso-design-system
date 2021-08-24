@@ -29,7 +29,7 @@ for (let i = 0; i < 200; i += 1) {
   });
 }
 
-storiesOf('table', module).add('narrow', () => 
+storiesOf('antd/table', module).add('narrow', () => 
   <div style={{ width: 300 }}>
     <Table columns={columns} dataSource={data} size="small" pagination={{ defaultCurrent: 13 }} />
   </div>,

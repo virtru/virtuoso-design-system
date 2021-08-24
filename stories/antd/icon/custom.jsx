@@ -58,7 +58,7 @@ const HeartIcon = props => <Icon component={HeartSvg} {...props} />;
 
 const PandaIcon = props => <Icon component={PandaSvg} {...props} />;
 
-storiesOf('icon', module).add('custom', () => 
+storiesOf('antd/Icon', module).add('custom', () => 
   <div className="custom-icons-list">
     <HeartIcon style={{ color: 'hotpink' }} />
     <PandaIcon style={{ fontSize: '32px' }} />

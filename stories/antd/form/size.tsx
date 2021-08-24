@@ -86,5 +86,5 @@ const FormSizeDemo = () => {
   );
 };
 
-storiesOf('form', module).add('size', () => <FormSizeDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/form', module).add('size', () => <FormSizeDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Set component size, only works for antd components.</p></>) } });

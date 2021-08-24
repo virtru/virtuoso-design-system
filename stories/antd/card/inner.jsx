@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Card } from 'antd';
 
-storiesOf('card', module).add('inner', () => 
+storiesOf('antd/card', module).add('inner', () => 
   <Card title="Card title">
     <Card type="inner" title="Inner Card title" extra={<a href="#">More</a>}>
       Inner Card content

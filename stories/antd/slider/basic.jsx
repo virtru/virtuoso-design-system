@@ -24,5 +24,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('slider', module).add('basic', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/slider', module).add('basic', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Basic slider. When <code>range</code> is <code>true</code>, display as dual thumb mode. When <code>disable</code> is <code>true</code>, the slider will not be interactable.</p></>) } });

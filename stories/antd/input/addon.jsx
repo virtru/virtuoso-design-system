@@ -21,7 +21,7 @@ const selectAfter = (
   </Select>
 );
 
-storiesOf('input', module).add('addon', () => 
+storiesOf('antd/Input', module).add('addon', () => 
   <Space direction="vertical">
     <Input addonBefore="http://" addonAfter=".com" defaultValue="mysite" />
     <Input addonBefore={selectBefore} addonAfter={selectAfter} defaultValue="mysite" />

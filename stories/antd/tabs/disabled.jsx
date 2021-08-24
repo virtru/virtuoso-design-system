@@ -5,7 +5,7 @@ import { Tabs } from 'antd';
 
 const { TabPane } = Tabs;
 
-storiesOf('tabs', module).add('disabled', () => 
+storiesOf('antd/tabs', module).add('disabled', () => 
   <Tabs defaultActiveKey="1">
     <TabPane tab="Tab 1" key="1">
       Tab 1

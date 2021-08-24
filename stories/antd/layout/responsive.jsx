@@ -6,7 +6,7 @@ import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/i
 
 const { Header, Content, Footer, Sider } = Layout;
 
-storiesOf('layout', module).add('responsive', () => 
+storiesOf('antd/layout', module).add('responsive', () => 
   <Layout>
     <Sider
       breakpoint="lg"

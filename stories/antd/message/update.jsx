@@ -12,7 +12,7 @@ const openMessage = () => {
   }, 1000);
 };
 
-storiesOf('message', module).add('update', () => 
+storiesOf('antd/message', module).add('update', () => 
   <Button type="primary" onClick={openMessage}>
     Open the message box
   </Button>,

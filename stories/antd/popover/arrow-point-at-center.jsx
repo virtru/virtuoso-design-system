@@ -10,7 +10,7 @@ const content = (
   </>
 );
 
-storiesOf('popover', module).add('arrow-point-at-center', () => 
+storiesOf('antd/popover', module).add('arrow-point-at-center', () => 
   <>
     <Popover placement="topLeft" title="Title" content={content}>
       <Button>Align edge / 边缘对齐</Button>

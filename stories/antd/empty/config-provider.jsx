@@ -83,5 +83,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('empty', module).add('config-provider', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/empty', module).add('config-provider', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use ConfigProvider set global Empty style.</p></>) } });

@@ -13,7 +13,7 @@ function onSelect(option) {
   console.log('select', option);
 }
 
-storiesOf('mentions', module).add('basic', () => 
+storiesOf('antd/mentions', module).add('basic', () => 
   <Mentions
     style={{ width: '100%' }}
     onChange={onChange}

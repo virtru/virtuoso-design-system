@@ -11,7 +11,7 @@ function onChange(dates, dateStrings) {
   console.log('From: ', dateStrings[0], ', to: ', dateStrings[1]);
 }
 
-storiesOf('date-picker', module).add('presetted-ranges', () => 
+storiesOf('antd/date-picker', module).add('presetted-ranges', () => 
   <Space direction="vertical" size={12}>
     <RangePicker
       ranges={{

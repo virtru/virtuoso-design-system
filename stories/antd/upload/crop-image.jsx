@@ -48,5 +48,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('upload', module).add('crop-image', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/upload', module).add('crop-image', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use <a href="https://github.com/nanxiaobei/antd-img-crop">antd-img-crop</a> to crop image before uploading.</p></>) } });

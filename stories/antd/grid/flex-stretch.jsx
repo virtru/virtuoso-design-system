@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Row, Col, Divider } from 'antd';
 
-storiesOf('grid', module).add('flex-stretch', () => 
+storiesOf('antd/grid', module).add('flex-stretch', () => 
   <>
     <Divider orientation="left">Percentage columns</Divider>
     <Row>

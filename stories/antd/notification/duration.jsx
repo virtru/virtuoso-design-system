@@ -13,7 +13,7 @@ const openNotification = () => {
   notification.open(args);
 };
 
-storiesOf('notification', module).add('duration', () => 
+storiesOf('antd/notification', module).add('duration', () => 
   <Button type="primary" onClick={openNotification}>
     Open the notification box
   </Button>,

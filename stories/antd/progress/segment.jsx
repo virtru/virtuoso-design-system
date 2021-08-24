@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Tooltip, Progress } from 'antd';
 
-storiesOf('progress', module).add('segment', () => 
+storiesOf('antd/progress', module).add('segment', () => 
   <>
     <Tooltip title="3 done / 3 in progress / 4 to do">
       <Progress percent={60} success={{ percent: 30 }} />

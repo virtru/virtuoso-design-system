@@ -34,5 +34,5 @@ function TimelimeLabelDemo() {
   );
 }
 
-storiesOf('timeline', module).add('label', () => <TimelimeLabelDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/timeline', module).add('label', () => <TimelimeLabelDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use <code>label</code> show time alone.</p></>) } });

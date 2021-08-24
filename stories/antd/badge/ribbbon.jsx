@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Badge, Card } from 'antd';
 
-storiesOf('badge', module).add('ribbbon', () => 
+storiesOf('antd/badge', module).add('ribbbon', () => 
   <>
     <Badge.Ribbon text="Hippies">
       <Card title="Pushes open the window" size="small">

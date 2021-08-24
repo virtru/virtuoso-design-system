@@ -20,5 +20,5 @@ const App = () => {
   );
 };
 
-storiesOf('input-number', module).add('keyboard', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/input-number', module).add('keyboard', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Control keyboard behavior by <code>keyboard</code>.</p></>) } });

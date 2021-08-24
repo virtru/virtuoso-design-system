@@ -48,7 +48,7 @@ function dropdownRender(menus) {
   );
 }
 
-storiesOf('cascader', module).add('custom-dropdown', () => 
+storiesOf('antd/cascader', module).add('custom-dropdown', () => 
   <Cascader options={options} dropdownRender={dropdownRender} placeholder="Please select" />,
   { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Customize the dropdown menu via <code>dropdownRender</code>.</p></>) } });

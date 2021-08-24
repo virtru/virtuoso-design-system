@@ -60,6 +60,6 @@ class App extends React.Component {
   }
 }
 
-storiesOf('transfer', module).add('advanced', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/transfer', module).add('advanced', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Advanced Usage of Transfer.</p>
 <p>You can customize the labels of the transfer buttons, the width and height of the columns, and what should be displayed in the footer.</p></>) } });

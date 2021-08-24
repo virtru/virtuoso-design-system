@@ -78,5 +78,5 @@ const App = () => {
   return <TreeTransfer dataSource={treeData} targetKeys={targetKeys} onChange={onChange} />;
 };
 
-storiesOf('transfer', module).add('tree-transfer', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/transfer', module).add('tree-transfer', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Customize render list with Tree component.</p></>) } });

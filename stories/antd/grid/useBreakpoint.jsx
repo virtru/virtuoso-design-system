@@ -21,5 +21,5 @@ function UseBreakpointDemo() {
   );
 }
 
-storiesOf('grid', module).add('useBreakpoint', () => <UseBreakpointDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/grid', module).add('useBreakpoint', () => <UseBreakpointDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use <code>useBreakpoint</code> Hook provide personalized layout.</p></>) } });

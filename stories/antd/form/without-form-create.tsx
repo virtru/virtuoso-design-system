@@ -58,5 +58,5 @@ const RawForm = () => {
   );
 };
 
-storiesOf('form', module).add('without-form-create', () => <RawForm />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/form', module).add('without-form-create', () => <RawForm />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p><code>Form</code> will collect and validate form data automatically. But if you don't need this feature or the default behavior cannot satisfy your business, you can handle form data manually.</p></>) } });

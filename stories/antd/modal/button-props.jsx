@@ -49,5 +49,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('modal', module).add('button-props', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/modal', module).add('button-props', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Passing <code>okButtonProps</code> and <code>cancelButtonProps</code> will customize the OK button and cancel button props.</p></>) } });

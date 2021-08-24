@@ -41,7 +41,7 @@ const props = {
   },
 };
 
-storiesOf('upload', module).add('upload-custom-action-icon', () => 
+storiesOf('antd/upload', module).add('upload-custom-action-icon', () => 
   <Upload {...props}>
     <Button icon={<UploadOutlined />}>Upload</Button>
   </Upload>,

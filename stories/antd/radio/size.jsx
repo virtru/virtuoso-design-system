@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Radio } from 'antd';
 
-storiesOf('radio', module).add('size', () => 
+storiesOf('antd/radio', module).add('size', () => 
   <>
     <Radio.Group defaultValue="a" size="large">
       <Radio.Button value="a">Hangzhou</Radio.Button>

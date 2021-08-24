@@ -70,5 +70,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('tabs', module).add('extra', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tabs', module).add('extra', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>You can add extra actions to the right or left or even both side of Tabs.</p></>) } });

@@ -39,5 +39,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('mentions', module).add('prefix', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/mentions', module).add('prefix', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Customize Trigger Token by <code>prefix</code> props. Default to <code>@</code>, <code>Array&lt;string&gt;</code> also supported.</p></>) } });

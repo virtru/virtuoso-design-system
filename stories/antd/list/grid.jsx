@@ -18,7 +18,7 @@ const data = [
   },
 ];
 
-storiesOf('list', module).add('grid', () => 
+storiesOf('antd/list', module).add('grid', () => 
   <List
     grid={{ gutter: 16, column: 4 }}
     dataSource={data}

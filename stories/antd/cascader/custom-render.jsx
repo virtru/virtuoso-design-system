@@ -58,7 +58,7 @@ const displayRender = (labels, selectedOptions) =>
     return <span key={option.value}>{label} / </span>;
   });
 
-storiesOf('cascader', module).add('custom-render', () => 
+storiesOf('antd/cascader', module).add('custom-render', () => 
   <Cascader
     options={options}
     defaultValue={['zhejiang', 'hangzhou', 'xihu']}

@@ -94,7 +94,7 @@ class App extends React.Component {
   }
 }
 
-storiesOf('table', module).add('ajax', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('ajax', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>This example shows how to fetch and present data from a remote server, and how to implement filtering and sorting in server side by sending related parameters to server.</p>
 <p>Setting <code>rowSelection.preserveSelectedRowKeys</code> to keep the <code>key</code> when enable selection.</p>
 <p><strong>Note, this example use <a href="https://randomuser.me">Mock API</a> that you can look up in Network Console.</strong></p></>) } });

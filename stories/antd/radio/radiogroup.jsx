@@ -21,5 +21,5 @@ const App = () => {
   );
 };
 
-storiesOf('radio', module).add('radiogroup', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/radio', module).add('radiogroup', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>A group of radio components.</p></>) } });

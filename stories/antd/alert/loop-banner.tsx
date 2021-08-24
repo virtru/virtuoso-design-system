@@ -4,7 +4,7 @@ import React from 'react';
 import { Alert } from 'antd';
 import TextLoop from 'react-text-loop';
 
-storiesOf('alert', module).add('loop-banner', () => 
+storiesOf('antd/alert', module).add('loop-banner', () => 
   <Alert
     banner
     message={

@@ -22,5 +22,5 @@ function ImageDemo() {
   );
 }
 
-storiesOf('image', module).add('preview-mask', () => <ImageDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/image', module).add('preview-mask', () => <ImageDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Custom preview mask.</p></>) } });

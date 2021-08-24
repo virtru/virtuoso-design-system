@@ -7,7 +7,7 @@ function onPanelChange(value, mode) {
   console.log(value, mode);
 }
 
-storiesOf('calendar', module).add('customize-header', () => 
+storiesOf('antd/calendar', module).add('customize-header', () => 
   <div className="site-calendar-customize-header-wrapper">
     <Calendar
       fullscreen={false}

@@ -27,5 +27,5 @@ const Complete: React.FC = () => {
   );
 };
 
-storiesOf('auto-complete', module).add('options', () => <Complete />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/auto-complete', module).add('options', () => <Complete />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>You could pass <code>AutoComplete.Option</code> as children of <code>AutoComplete</code>, instead of using <code>options</code>。</p></>) } });

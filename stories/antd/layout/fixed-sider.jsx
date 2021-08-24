@@ -15,7 +15,7 @@ import {
 
 const { Header, Content, Footer, Sider } = Layout;
 
-storiesOf('layout', module).add('fixed-sider', () => 
+storiesOf('antd/layout', module).add('fixed-sider', () => 
   <Layout>
     <Sider
       style={{

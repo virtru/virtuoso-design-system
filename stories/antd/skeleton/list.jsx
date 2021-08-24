@@ -80,5 +80,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('skeleton', module).add('list', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/skeleton', module).add('list', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use skeleton in list component.</p></>) } });

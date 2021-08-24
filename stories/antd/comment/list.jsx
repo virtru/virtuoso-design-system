@@ -41,7 +41,7 @@ const data = [
   },
 ];
 
-storiesOf('comment', module).add('list', () => 
+storiesOf('antd/comment', module).add('list', () => 
   <List
     className="comment-list"
     header={`${data.length} replies`}

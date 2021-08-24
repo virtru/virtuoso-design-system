@@ -6,7 +6,7 @@ import { AppleOutlined, AndroidOutlined } from '@ant-design/icons';
 
 const { TabPane } = Tabs;
 
-storiesOf('tabs', module).add('icon', () => 
+storiesOf('antd/tabs', module).add('icon', () => 
   <Tabs defaultActiveKey="2">
     <TabPane
       tab={

@@ -4,7 +4,7 @@ import React from 'react';
 import { Switch } from 'antd';
 import { CloseOutlined, CheckOutlined } from '@ant-design/icons';
 
-storiesOf('switch', module).add('text', () => 
+storiesOf('antd/switch', module).add('text', () => 
   <>
     <Switch checkedChildren="开启" unCheckedChildren="关闭" defaultChecked />
     <br />

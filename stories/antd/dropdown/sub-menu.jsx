@@ -23,7 +23,7 @@ const menu = (
   </Menu>
 );
 
-storiesOf('dropdown', module).add('sub-menu', () => 
+storiesOf('antd/dropdown', module).add('sub-menu', () => 
   <Dropdown overlay={menu}>
     <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
       Cascading menu <DownOutlined />

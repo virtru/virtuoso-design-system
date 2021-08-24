@@ -31,5 +31,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('input', module).add('textarea-resize', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/Input', module).add('textarea-resize', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>For multi-line input.</p></>) } });

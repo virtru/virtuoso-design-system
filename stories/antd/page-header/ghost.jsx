@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { PageHeader, Button, Descriptions } from 'antd';
 
-storiesOf('page-header', module).add('ghost', () => 
+storiesOf('antd/page-header', module).add('ghost', () => 
   <div className="site-page-header-ghost-wrapper">
     <PageHeader
       ghost={false}

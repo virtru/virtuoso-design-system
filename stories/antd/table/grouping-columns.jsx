@@ -102,7 +102,7 @@ for (let i = 0; i < 100; i++) {
   });
 }
 
-storiesOf('table', module).add('grouping-columns', () => 
+storiesOf('antd/table', module).add('grouping-columns', () => 
   <Table
     columns={columns}
     dataSource={data}

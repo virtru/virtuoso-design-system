@@ -121,5 +121,5 @@ const DragSortingTable = () => {
   );
 };
 
-storiesOf('table', module).add('drag-sorting', () => <DragSortingTable />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('drag-sorting', () => <DragSortingTable />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>By using custom components, we can integrate table with react-dnd to implement drag sorting.</p></>) } });

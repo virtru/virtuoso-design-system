@@ -31,5 +31,5 @@ const App: React.FC = () => {
   );
 };
 
-storiesOf('drawer', module).add('basic-right', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/drawer', module).add('basic-right', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Basic drawer.</p></>) } });

@@ -23,7 +23,7 @@ const menu = (
   </Menu>
 );
 
-storiesOf('breadcrumb', module).add('overlay', () => 
+storiesOf('antd/breadcrumb', module).add('overlay', () => 
   <Breadcrumb>
     <Breadcrumb.Item>Ant Design</Breadcrumb.Item>
     <Breadcrumb.Item>

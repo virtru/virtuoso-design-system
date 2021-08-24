@@ -149,5 +149,5 @@ class DrawerForm extends React.Component {
   }
 }
 
-storiesOf('drawer', module).add('form-in-drawer', () => <DrawerForm />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/drawer', module).add('form-in-drawer', () => <DrawerForm />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use a form in Drawer with a submit button.</p></>) } });

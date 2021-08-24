@@ -59,5 +59,5 @@ const SelectSizesDemo = () => {
   );
 };
 
-storiesOf('select', module).add('size', () => <SelectSizesDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/select', module).add('size', () => <SelectSizesDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>The height of the input field for the select defaults to 32px. If size is set to large, the height will be 40px, and if set to small, 24px.</p></>) } });

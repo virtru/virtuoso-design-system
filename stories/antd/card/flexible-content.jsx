@@ -5,7 +5,7 @@ import { Card } from 'antd';
 
 const { Meta } = Card;
 
-storiesOf('card', module).add('flexible-content', () => 
+storiesOf('antd/card', module).add('flexible-content', () => 
   <Card
     hoverable
     style={{ width: 240 }}

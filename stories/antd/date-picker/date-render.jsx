@@ -5,7 +5,7 @@ import { DatePicker, Space } from 'antd';
 
 const { RangePicker } = DatePicker;
 
-storiesOf('date-picker', module).add('date-render', () => 
+storiesOf('antd/date-picker', module).add('date-render', () => 
   <Space direction="vertical" size={12}>
     <DatePicker
       dateRender={current => {

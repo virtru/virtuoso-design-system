@@ -15,5 +15,5 @@ function ImageDemo() {
   );
 }
 
-storiesOf('image', module).add('previewSrc', () => <ImageDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/image', module).add('previewSrc', () => <ImageDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>You can set different preview image.</p></>) } });

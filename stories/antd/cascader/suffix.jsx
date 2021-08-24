@@ -43,7 +43,7 @@ function onChange(value) {
   console.log(value);
 }
 
-storiesOf('cascader', module).add('suffix', () => 
+storiesOf('antd/cascader', module).add('suffix', () => 
   <>
     <Cascader
       suffixIcon={<SmileOutlined />}

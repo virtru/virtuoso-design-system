@@ -9,7 +9,7 @@ const onChange = e => {
   console.log(e);
 };
 
-storiesOf('input', module).add('allowClear', () => 
+storiesOf('antd/Input', module).add('allowClear', () => 
   <>
     <Input placeholder="input with clear icon" allowClear onChange={onChange} />
     <br />

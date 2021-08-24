@@ -90,5 +90,5 @@ function NestedTable() {
   );
 }
 
-storiesOf('table', module).add('nested-table', () => <NestedTable />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('nested-table', () => <NestedTable />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Showing more detailed info of every row.</p></>) } });

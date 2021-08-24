@@ -145,5 +145,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('table', module).add('custom-filter-panel', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('custom-filter-panel', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Implement a customized column search example via <code>filterDropdown</code>.</p></>) } });

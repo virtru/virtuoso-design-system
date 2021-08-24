@@ -4,7 +4,7 @@ import React from 'react';
 import { Upload, Button, Space } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
 
-storiesOf('upload', module).add('max-count', () => 
+storiesOf('antd/upload', module).add('max-count', () => 
   <Space direction="vertical" style={{ width: '100%' }} size="large">
     <Upload
       action="https://www.mocky.io/v2/5cc8019d300000980a055e76"

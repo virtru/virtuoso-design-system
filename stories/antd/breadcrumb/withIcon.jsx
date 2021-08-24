@@ -4,7 +4,7 @@ import React from 'react';
 import { Breadcrumb } from 'antd';
 import { HomeOutlined, UserOutlined } from '@ant-design/icons';
 
-storiesOf('breadcrumb', module).add('withIcon', () => 
+storiesOf('antd/breadcrumb', module).add('withIcon', () => 
   <Breadcrumb>
     <Breadcrumb.Item href="">
       <HomeOutlined />

@@ -107,5 +107,5 @@ const FormPage = () => (
   </Form>
 );
 
-storiesOf('upload', module).add('upload-with-aliyun-oss', () => <FormPage />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/upload', module).add('upload-with-aliyun-oss', () => <FormPage />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use Aliyun OSS upload example.</p></>) } });

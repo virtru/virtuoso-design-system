@@ -18,5 +18,5 @@ function ImageDemo() {
   );
 }
 
-storiesOf('image', module).add('previewGroup', () => <ImageDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/image', module).add('previewGroup', () => <ImageDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Click the left and right switch buttons to preview multiple images.</p></>) } });

@@ -107,5 +107,5 @@ class EditableTagGroup extends React.Component {
   }
 }
 
-storiesOf('tag', module).add('animation', () => <EditableTagGroup />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tag', module).add('animation', () => <EditableTagGroup />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Animating the Tag by using <a href="https://github.com/react-component/tween-one">rc-tween-one</a>.</p></>) } });

@@ -12,7 +12,7 @@ function preventDefault(e) {
   console.log('Clicked! But prevent default.');
 }
 
-storiesOf('tag', module).add('basic', () => 
+storiesOf('antd/tag', module).add('basic', () => 
   <>
     <Tag>Tag 1</Tag>
     <Tag>

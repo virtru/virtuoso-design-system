@@ -24,5 +24,5 @@ const FormSizeDemo = () => {
     </div>
   );
 };
-storiesOf('config-provider', module).add('prefixCls', () => <FormSizeDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/config-provider', module).add('prefixCls', () => <FormSizeDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Config component and icon prefixCls.</p></>) } });

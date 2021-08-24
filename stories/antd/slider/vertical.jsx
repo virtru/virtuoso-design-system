@@ -21,7 +21,7 @@ const marks = {
   },
 };
 
-storiesOf('slider', module).add('vertical', () => 
+storiesOf('antd/slider', module).add('vertical', () => 
   <>
     <div style={style}>
       <Slider vertical defaultValue={30} />

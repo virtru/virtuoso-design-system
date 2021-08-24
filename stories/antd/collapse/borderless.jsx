@@ -12,7 +12,7 @@ const text = (
   </p>
 );
 
-storiesOf('collapse', module).add('borderless', () => 
+storiesOf('antd/collapse', module).add('borderless', () => 
   <Collapse bordered={false} defaultActiveKey={['1']}>
     <Panel header="This is panel header 1" key="1">
       {text}

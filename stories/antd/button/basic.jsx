@@ -3,9 +3,9 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Button } from 'antd';
 
-storiesOf('button', module).add('basic', () => 
+storiesOf('antd/button', module).add('basic', () => 
   <>
-    <Button type="primary">Label</Button>
+    <Button type="primary">Primary Button</Button>
     <Button>Default Button</Button>
     <Button type="dashed">Dashed Button</Button>
     <br />

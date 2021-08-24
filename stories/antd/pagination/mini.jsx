@@ -7,7 +7,7 @@ function showTotal(total) {
   return `Total ${total} items`;
 }
 
-storiesOf('pagination', module).add('mini', () => 
+storiesOf('antd/pagination', module).add('mini', () => 
   <>
     <Pagination size="small" total={50} />
     <Pagination size="small" total={50} showSizeChanger showQuickJumper />

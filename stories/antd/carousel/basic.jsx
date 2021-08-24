@@ -15,7 +15,7 @@ const contentStyle = {
   background: '#364d79',
 };
 
-storiesOf('carousel', module).add('basic', () => 
+storiesOf('antd/carousel', module).add('basic', () => 
   <Carousel afterChange={onChange}>
     <div>
       <h3 style={contentStyle}>1</h3>

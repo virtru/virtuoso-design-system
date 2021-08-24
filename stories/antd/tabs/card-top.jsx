@@ -5,7 +5,7 @@ import { Tabs } from 'antd';
 
 const { TabPane } = Tabs;
 
-storiesOf('tabs', module).add('card-top', () => 
+storiesOf('antd/tabs', module).add('card-top', () => 
   <div className="card-container">
     <Tabs type="card">
       <TabPane tab="Tab Title 1" key="1">

@@ -43,5 +43,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('tabs', module).add('position', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tabs', module).add('position', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Tab's position: left, right, top or bottom. Will auto switch to <code>top</code> in mobile.</p></>) } });

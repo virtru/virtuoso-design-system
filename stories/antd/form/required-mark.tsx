@@ -45,5 +45,5 @@ const FormLayoutDemo = () => {
   );
 };
 
-storiesOf('form', module).add('required-mark', () => <FormLayoutDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/form', module).add('required-mark', () => <FormLayoutDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Switch required or optional style with <code>requiredMark</code>.</p></>) } });

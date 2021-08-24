@@ -21,5 +21,5 @@ function SpaceCustomizeSize() {
   );
 }
 
-storiesOf('space', module).add('customize', () => <SpaceCustomizeSize />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/space', module).add('customize', () => <SpaceCustomizeSize />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Custom spacing size.</p></>) } });

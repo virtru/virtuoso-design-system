@@ -21,5 +21,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('input-number', module).add('out-of-range', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/input-number', module).add('out-of-range', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Show warning style when <code>value</code> is out of range by control.</p></>) } });

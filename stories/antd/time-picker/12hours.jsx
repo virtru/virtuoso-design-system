@@ -7,7 +7,7 @@ function onChange(time, timeString) {
   console.log(time, timeString);
 }
 
-storiesOf('time-picker', module).add('12hours', () => 
+storiesOf('antd/time-picker', module).add('12hours', () => 
   <>
     <TimePicker use12Hours onChange={onChange} />
     <TimePicker use12Hours format="h:mm:ss A" onChange={onChange} style={{ width: 140 }} />

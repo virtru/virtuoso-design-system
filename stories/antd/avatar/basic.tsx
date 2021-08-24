@@ -4,7 +4,7 @@ import React from 'react';
 import { Avatar } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
-storiesOf('avatar', module).add('basic', () => 
+storiesOf('antd/avatar', module).add('basic', () => 
   <>
     <div>
       <Avatar size={64} icon={<UserOutlined />} />

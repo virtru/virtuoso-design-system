@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Row, Col } from 'antd';
 
-storiesOf('grid', module).add('offset', () => 
+storiesOf('antd/grid', module).add('offset', () => 
   <>
     <Row>
       <Col span={8}>col-8</Col>

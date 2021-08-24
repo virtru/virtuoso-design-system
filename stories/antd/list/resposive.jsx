@@ -24,7 +24,7 @@ const data = [
   },
 ];
 
-storiesOf('list', module).add('resposive', () => 
+storiesOf('antd/list', module).add('resposive', () => 
   <List
     grid={{
       gutter: 16,

@@ -9,7 +9,7 @@ function handleChange(value) {
   console.log(`selected ${value}`);
 }
 
-storiesOf('select', module).add('debug', () => 
+storiesOf('antd/select', module).add('debug', () => 
   <div
     style={{
       width: 500,

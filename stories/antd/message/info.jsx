@@ -7,7 +7,7 @@ const info = () => {
   message.info('This is a normal message');
 };
 
-storiesOf('message', module).add('info', () => 
+storiesOf('antd/message', module).add('info', () => 
   <Button type="primary" onClick={info}>
     Display normal message
   </Button>,

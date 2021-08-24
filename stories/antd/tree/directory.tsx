@@ -44,5 +44,5 @@ const Demo: React.FC<{}> = () => {
   );
 };
 
-storiesOf('tree', module).add('directory', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tree', module).add('directory', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Built-in directory tree. <code>multiple</code> support <code>ctrl(Windows)</code> / <code>command(Mac)</code> selection.</p></>) } });

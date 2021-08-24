@@ -4,7 +4,7 @@ import React from 'react';
 import { Result, Button } from 'antd';
 import { SmileOutlined } from '@ant-design/icons';
 
-storiesOf('result', module).add('customIcon', () => 
+storiesOf('antd/result', module).add('customIcon', () => 
   <Result
     icon={<SmileOutlined />}
     title="Great, we have done all the operations!"

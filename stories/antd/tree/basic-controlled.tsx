@@ -86,5 +86,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('tree', module).add('basic-controlled', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tree', module).add('basic-controlled', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Controlled mode lets parent nodes reflect the status of child nodes more intelligently.</p></>) } });

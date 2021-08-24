@@ -81,5 +81,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('table', module).add('row-selection-custom', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('row-selection-custom', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use <code>rowSelection.selections</code> custom selections, default no select dropdown, show default selections via setting to <code>true</code>.</p></>) } });

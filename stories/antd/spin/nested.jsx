@@ -29,5 +29,5 @@ class Card extends React.Component {
   }
 }
 
-storiesOf('spin', module).add('nested', () => <Card />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/spin', module).add('nested', () => <Card />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Embedding content into <code>Spin</code> will set it into loading state.</p></>) } });

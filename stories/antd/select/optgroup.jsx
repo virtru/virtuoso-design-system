@@ -9,7 +9,7 @@ function handleChange(value) {
   console.log(`selected ${value}`);
 }
 
-storiesOf('select', module).add('optgroup', () => 
+storiesOf('antd/select', module).add('optgroup', () => 
   <Select defaultValue="lucy" style={{ width: 200 }} onChange={handleChange}>
     <OptGroup label="Manager">
       <Option value="jack">Jack</Option>

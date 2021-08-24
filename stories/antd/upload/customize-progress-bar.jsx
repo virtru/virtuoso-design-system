@@ -30,7 +30,7 @@ const props = {
   },
 };
 
-storiesOf('upload', module).add('customize-progress-bar', () => 
+storiesOf('antd/upload', module).add('customize-progress-bar', () => 
   <Upload {...props}>
     <Button icon={<UploadOutlined />}>Click to Upload</Button>
   </Upload>,

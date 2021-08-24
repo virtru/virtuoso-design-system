@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Tooltip, Button } from 'antd';
 
-storiesOf('tooltip', module).add('arrow-point-at-center', () => 
+storiesOf('antd/tooltip', module).add('arrow-point-at-center', () => 
   <>
     <Tooltip placement="topLeft" title="Prompt Text">
       <Button>Align edge / 边缘对齐</Button>

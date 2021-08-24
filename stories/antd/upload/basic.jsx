@@ -22,7 +22,7 @@ const props = {
   },
 };
 
-storiesOf('upload', module).add('basic', () => 
+storiesOf('antd/upload', module).add('basic', () => 
   <Upload {...props}>
     <Button icon={<UploadOutlined />}>Click to Upload</Button>
   </Upload>,

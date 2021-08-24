@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Divider } from 'antd';
 
-storiesOf('divider', module).add('plain', () => 
+storiesOf('antd/divider', module).add('plain', () => 
   <>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista

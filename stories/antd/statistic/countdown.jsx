@@ -16,7 +16,7 @@ function onChange(val) {
   }
 }
 
-storiesOf('statistic', module).add('countdown', () => 
+storiesOf('antd/statistic', module).add('countdown', () => 
   <Row gutter={16}>
     <Col span={12}>
       <Countdown title="Countdown" value={deadline} onFinish={onFinish} />

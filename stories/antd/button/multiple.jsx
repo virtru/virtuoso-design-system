@@ -15,7 +15,7 @@ const menu = (
   </Menu>
 );
 
-storiesOf('button', module).add('multiple', () => 
+storiesOf('antd/button', module).add('multiple', () => 
   <>
     <Button type="primary">primary</Button>
     <Button>secondary</Button>

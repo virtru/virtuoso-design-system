@@ -54,7 +54,7 @@ const Home = withRouter(props => {
   );
 });
 
-storiesOf('breadcrumb', module).add('router-4', () => 
+storiesOf('antd/breadcrumb', module).add('router-4', () => 
   <Router>
     <Home />
   </Router>,

@@ -18,5 +18,5 @@ const App: React.FC = () => {
   );
 };
 
-storiesOf('alert', module).add('smooth-closed', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/alert', module).add('smooth-closed', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Smoothly unmount Alert upon close.</p></>) } });

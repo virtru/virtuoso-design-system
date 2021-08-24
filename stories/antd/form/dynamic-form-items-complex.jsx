@@ -92,5 +92,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('form', module).add('dynamic-form-items-complex', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/form', module).add('dynamic-form-items-complex', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>This example demonstrates the case that a form contains multiple form controls.</p></>) } });

@@ -23,5 +23,5 @@ function dig(path = '0', level = 3) {
 
 const treeData = dig();
 
-storiesOf('tree', module).add('virtual-scroll', () => <Tree treeData={treeData} height={233} defaultExpandAll />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tree', module).add('virtual-scroll', () => <Tree treeData={treeData} height={233} defaultExpandAll />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use virtual list through <code>height</code> prop.</p></>) } });

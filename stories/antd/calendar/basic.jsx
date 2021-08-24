@@ -7,5 +7,5 @@ function onPanelChange(value, mode) {
   console.log(value.format('YYYY-MM-DD'), mode);
 }
 
-storiesOf('calendar', module).add('basic', () => <Calendar onPanelChange={onPanelChange} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/calendar', module).add('basic', () => <Calendar onPanelChange={onPanelChange} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>A basic calendar component with Year/Month switch.</p></>) } });

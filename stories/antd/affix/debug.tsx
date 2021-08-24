@@ -20,5 +20,5 @@ const Demo: React.FC = () => {
   );
 };
 
-storiesOf('affix', module).add('debug', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/affix', module).add('debug', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>DEBUG</p></>) } });

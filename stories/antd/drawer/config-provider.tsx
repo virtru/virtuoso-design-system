@@ -34,5 +34,5 @@ const App: React.FC = () => {
   );
 };
 
-storiesOf('drawer', module).add('config-provider', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/drawer', module).add('config-provider', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>config by ConfigProvider.</p></>) } });

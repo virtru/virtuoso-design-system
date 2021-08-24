@@ -30,7 +30,7 @@ const ListItem = () => (
   </List.Item>
 );
 
-storiesOf('list', module).add('grid-test', () => 
+storiesOf('antd/list', module).add('grid-test', () => 
   <>
     <List
       grid={{ gutter: 16, column: 4 }}

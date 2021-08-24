@@ -68,5 +68,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('tree-select', module).add('checkable', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tree-select', module).add('checkable', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Multiple and checkable.</p></>) } });

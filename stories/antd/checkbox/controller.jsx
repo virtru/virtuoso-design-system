@@ -57,5 +57,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('checkbox', module).add('controller', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/checkbox', module).add('controller', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Communicated with other components.</p></>) } });

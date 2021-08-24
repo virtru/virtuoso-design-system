@@ -10,7 +10,7 @@ const content = (
   </div>
 );
 
-storiesOf('popover', module).add('basic', () => 
+storiesOf('antd/popover', module).add('basic', () => 
   <Popover content={content} title="Title">
     <Button type="primary">Hover me</Button>
   </Popover>,

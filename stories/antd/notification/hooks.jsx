@@ -50,5 +50,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('notification', module).add('hooks', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/notification', module).add('hooks', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use <code>notification.useNotification</code> to get <code>contextHolder</code> with context accessible issue.</p></>) } });

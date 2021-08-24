@@ -5,7 +5,7 @@ import { Mentions } from 'antd';
 
 const { Option } = Mentions;
 
-storiesOf('mentions', module).add('placement', () => 
+storiesOf('antd/mentions', module).add('placement', () => 
   <Mentions style={{ width: '100%' }} placement="top">
     <Option value="afc163">afc163</Option>
     <Option value="zombieJ">zombieJ</Option>

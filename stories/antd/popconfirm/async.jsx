@@ -41,5 +41,5 @@ const App = () => {
   );
 };
 
-storiesOf('popconfirm', module).add('async', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/popconfirm', module).add('async', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Asynchronously close a popconfirm when a the OK button is pressed. For example, you can use this pattern when you submit a form.</p></>) } });

@@ -14,7 +14,7 @@ const style = {
   fontSize: 14,
 };
 
-storiesOf('back-top', module).add('custom', () => 
+storiesOf('antd/back-top', module).add('custom', () => 
   <div style={{ height: '600vh', padding: 8 }}>
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>

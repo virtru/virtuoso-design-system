@@ -144,5 +144,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('transfer', module).add('table-transfer', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/transfer', module).add('table-transfer', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Customize render list with Table component.</p></>) } });

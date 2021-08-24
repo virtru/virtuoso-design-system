@@ -5,7 +5,7 @@ import { Input } from 'antd';
 
 const { Search } = Input;
 
-storiesOf('input', module).add('search-input-loading', () => 
+storiesOf('antd/Input', module).add('search-input-loading', () => 
   <>
     <Search placeholder="input search loading default" loading />
     <br />

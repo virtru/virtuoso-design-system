@@ -63,5 +63,5 @@ class SiderDemo extends React.Component {
   }
 }
 
-storiesOf('layout', module).add('custom-trigger', () => <SiderDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/layout', module).add('custom-trigger', () => <SiderDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>If you want to use a customized trigger, you can hide the default one by setting <code>trigger=&#123;null&#125;</code>.</p></>) } });

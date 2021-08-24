@@ -34,5 +34,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('tree-select', module).add('basic', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tree-select', module).add('basic', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>The most basic usage.</p></>) } });

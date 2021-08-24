@@ -5,7 +5,7 @@ import { Steps } from 'antd';
 
 const { Step } = Steps;
 
-storiesOf('steps', module).add('vertical', () => 
+storiesOf('antd/steps', module).add('vertical', () => 
   <Steps direction="vertical" current={1}>
     <Step title="Finished" description="This is a description." />
     <Step title="In Progress" description="This is a description." />

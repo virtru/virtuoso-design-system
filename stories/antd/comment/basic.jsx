@@ -64,5 +64,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('comment', module).add('basic', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/comment', module).add('basic', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>A basic comment with author, avatar, time and actions.</p></>) } });

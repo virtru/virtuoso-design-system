@@ -11,7 +11,7 @@ function onAfterChange(value) {
   console.log('onAfterChange: ', value);
 }
 
-storiesOf('slider', module).add('event', () => 
+storiesOf('antd/slider', module).add('event', () => 
   <>
     <Slider defaultValue={30} onChange={onChange} onAfterChange={onAfterChange} />
     <Slider

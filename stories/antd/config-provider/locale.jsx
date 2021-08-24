@@ -152,5 +152,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('config-provider', module).add('locale', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/config-provider', module).add('locale', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Components which need localization support are listed here, you can toggle the language in the demo.</p></>) } });

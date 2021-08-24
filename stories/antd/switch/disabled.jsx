@@ -21,5 +21,5 @@ const App = () => {
   );
 };
 
-storiesOf('switch', module).add('disabled', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/switch', module).add('disabled', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Disabled state of <code>Switch</code>.</p></>) } });

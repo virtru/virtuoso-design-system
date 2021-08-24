@@ -19,7 +19,7 @@ const optionsWithDisabled = [
   { label: 'Orange', value: 'Orange', disabled: false },
 ];
 
-storiesOf('checkbox', module).add('group', () => 
+storiesOf('antd/checkbox', module).add('group', () => 
   <>
     <Checkbox.Group options={plainOptions} defaultValue={['Apple']} onChange={onChange} />
     <br />

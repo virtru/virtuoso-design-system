@@ -7,7 +7,7 @@ function onChange(value) {
   console.log('changed', value);
 }
 
-storiesOf('input-number', module).add('size', () => 
+storiesOf('antd/input-number', module).add('size', () => 
   <div className="site-input-number-wrapper">
     <InputNumber size="large" min={1} max={100000} defaultValue={3} onChange={onChange} />
     <InputNumber min={1} max={100000} defaultValue={3} onChange={onChange} />

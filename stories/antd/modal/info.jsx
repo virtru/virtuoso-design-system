@@ -36,7 +36,7 @@ function warning() {
   });
 }
 
-storiesOf('modal', module).add('info', () => 
+storiesOf('antd/modal', module).add('info', () => 
   <Space>
     <Button onClick={info}>Info</Button>
     <Button onClick={success}>Success</Button>

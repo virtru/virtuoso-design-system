@@ -29,5 +29,5 @@ class IconSlider extends React.Component {
   }
 }
 
-storiesOf('slider', module).add('icon-slider', () => <IconSlider min={0} max={20} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/slider', module).add('icon-slider', () => <IconSlider min={0} max={20} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>You can add an icon beside the slider to make it meaningful.</p></>) } });

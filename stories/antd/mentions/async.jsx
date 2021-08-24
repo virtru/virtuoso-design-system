@@ -62,5 +62,5 @@ class AsyncMention extends React.Component {
   }
 }
 
-storiesOf('mentions', module).add('async', () => <AsyncMention />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/mentions', module).add('async', () => <AsyncMention />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>async</p></>) } });

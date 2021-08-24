@@ -7,7 +7,7 @@ function onShowSizeChange(current, pageSize) {
   console.log(current, pageSize);
 }
 
-storiesOf('pagination', module).add('changer', () => 
+storiesOf('antd/pagination', module).add('changer', () => 
   <>
     <Pagination
       showSizeChanger

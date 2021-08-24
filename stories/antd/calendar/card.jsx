@@ -7,7 +7,7 @@ function onPanelChange(value, mode) {
   console.log(value, mode);
 }
 
-storiesOf('calendar', module).add('card', () => 
+storiesOf('antd/calendar', module).add('card', () => 
   <div className="site-calendar-demo-card">
     <Calendar fullscreen={false} onPanelChange={onPanelChange} />
   </div>,

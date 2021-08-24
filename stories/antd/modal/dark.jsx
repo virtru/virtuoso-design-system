@@ -578,5 +578,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('modal', module).add('dark', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/modal', module).add('dark', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Basic modal.</p></>) } });

@@ -4,7 +4,7 @@ import React from 'react';
 import { Tag } from 'antd';
 import { CloseCircleOutlined } from '@ant-design/icons';
 
-storiesOf('tag', module).add('customize', () => 
+storiesOf('antd/tag', module).add('customize', () => 
   <>
     <Tag closable closeIcon="关 闭">
       Tag1

@@ -101,7 +101,7 @@ const Content = ({ children, extraContent }) => (
   </Row>
 );
 
-storiesOf('page-header', module).add('content', () => 
+storiesOf('antd/page-header', module).add('content', () => 
   <PageHeader
     title="Title"
     className="site-page-header"

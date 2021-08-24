@@ -7,7 +7,7 @@ function onChange(date, dateString) {
   console.log(date, dateString);
 }
 
-storiesOf('date-picker', module).add('basic', () => 
+storiesOf('antd/date-picker', module).add('basic', () => 
   <Space direction="vertical">
     <DatePicker onChange={onChange} />
     <DatePicker onChange={onChange} picker="week" />

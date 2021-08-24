@@ -17,7 +17,7 @@ const customDot = (dot, { status, index }) => (
   </Popover>
 );
 
-storiesOf('steps', module).add('customized-progress-dot', () => 
+storiesOf('antd/steps', module).add('customized-progress-dot', () => 
   <Steps current={1} progressDot={customDot}>
     <Step title="Finished" description="You can hover on the dot." />
     <Step title="In Progress" description="You can hover on the dot." />

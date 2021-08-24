@@ -77,5 +77,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('tabs', module).add('custom-add-trigger', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tabs', module).add('custom-add-trigger', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Hide default plus icon, and bind event for customized trigger.</p></>) } });

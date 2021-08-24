@@ -30,7 +30,7 @@ for (let i = 0; i < 100; i++) {
   });
 }
 
-storiesOf('table', module).add('fixed-header', () => 
+storiesOf('antd/table', module).add('fixed-header', () => 
   <Table columns={columns} dataSource={data} pagination={{ pageSize: 50 }} scroll={{ y: 240 }} />,
   { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Display large amounts of data in scrollable view.</p>

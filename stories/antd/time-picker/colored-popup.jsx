@@ -8,7 +8,7 @@ const onChange = (time, timeString) => {
   console.log(time, timeString);
 };
 
-storiesOf('time-picker', module).add('colored-popup', () => 
+storiesOf('antd/time-picker', module).add('colored-popup', () => 
   <TimePicker
     onChange={onChange}
     defaultOpenValue={moment('00:00:00', 'HH:mm:ss')}

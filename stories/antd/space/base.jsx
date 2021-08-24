@@ -21,5 +21,5 @@ function SpaceDemo() {
   );
 }
 
-storiesOf('space', module).add('base', () => <SpaceDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/space', module).add('base', () => <SpaceDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Crowded components horizontal spacing.</p></>) } });

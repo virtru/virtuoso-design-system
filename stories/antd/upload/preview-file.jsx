@@ -19,7 +19,7 @@ const props = {
   },
 };
 
-storiesOf('upload', module).add('preview-file', () => 
+storiesOf('antd/upload', module).add('preview-file', () => 
   <Upload {...props}>
     <Button icon={<UploadOutlined />}>Upload</Button>
   </Upload>,

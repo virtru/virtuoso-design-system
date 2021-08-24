@@ -14,7 +14,7 @@ function onOk(value) {
   console.log('onOk: ', value);
 }
 
-storiesOf('date-picker', module).add('time', () => 
+storiesOf('antd/date-picker', module).add('time', () => 
   <Space direction="vertical" size={12}>
     <DatePicker showTime onChange={onChange} onOk={onOk} />
     <RangePicker

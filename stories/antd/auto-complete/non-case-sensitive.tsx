@@ -20,5 +20,5 @@ const Complete: React.FC = () => (
   />
 );
 
-storiesOf('auto-complete', module).add('non-case-sensitive', () => <Complete />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/auto-complete', module).add('non-case-sensitive', () => <Complete />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>A non-case-sensitive AutoComplete</p></>) } });

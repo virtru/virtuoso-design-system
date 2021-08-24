@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Row, Col } from 'antd';
 
-storiesOf('grid', module).add('responsive', () => 
+storiesOf('antd/grid', module).add('responsive', () => 
   <Row>
     <Col xs={2} sm={4} md={6} lg={8} xl={10}>
       Col

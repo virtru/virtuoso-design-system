@@ -76,5 +76,5 @@ const TimeRelatedForm = () => {
   );
 };
 
-storiesOf('form', module).add('time-related-controls', () => <TimeRelatedForm />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/form', module).add('time-related-controls', () => <TimeRelatedForm />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>The <code>value</code> of time-related components is a <code>moment</code> object, which we need to pre-process it before we submit to server.</p></>) } });

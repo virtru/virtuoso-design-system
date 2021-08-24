@@ -181,5 +181,5 @@ const EditableTable = () => {
   );
 };
 
-storiesOf('table', module).add('edit-row', () => <EditableTable />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('edit-row', () => <EditableTable />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Table with editable rows.</p></>) } });

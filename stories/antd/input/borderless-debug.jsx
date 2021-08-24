@@ -5,7 +5,7 @@ import { Input } from 'antd';
 
 const { TextArea } = Input;
 
-storiesOf('input', module).add('borderless-debug', () => 
+storiesOf('antd/Input', module).add('borderless-debug', () => 
   <div style={{ backgroundColor: 'rgba(0, 0, 128, .2)' }}>
     <Input placeholder="Unbordered" bordered={false} />
     <Input placeholder="Unbordered" bordered={false} size="large" />

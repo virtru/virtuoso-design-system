@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Card } from 'antd';
 
-storiesOf('card', module).add('basic', () => 
+storiesOf('antd/card', module).add('basic', () => 
   <>
     <Card title="Default size card" extra={<a href="#">More</a>} style={{ width: 300 }}>
       <p>Card content</p>

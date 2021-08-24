@@ -20,7 +20,7 @@ const colors = [
 ];
 const customColors = ['#f50', '#2db7f5', '#87d068', '#108ee9'];
 
-storiesOf('tooltip', module).add('colorful', () => 
+storiesOf('antd/tooltip', module).add('colorful', () => 
   <>
     <Divider orientation="left">Presets</Divider>
     <div>

@@ -32,7 +32,7 @@ const data = [
   },
 ];
 
-storiesOf('table', module).add('jsx', () => 
+storiesOf('antd/table', module).add('jsx', () => 
   <Table dataSource={data}>
     <ColumnGroup title="Name">
       <Column title="First Name" dataIndex="firstName" key="firstName" />

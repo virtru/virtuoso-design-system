@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Row, Col, Divider } from 'antd';
 
-storiesOf('grid', module).add('flex-order', () => 
+storiesOf('antd/grid', module).add('flex-order', () => 
   <>
     <Divider orientation="left">Normal</Divider>
     <Row>

@@ -75,5 +75,5 @@ const DynamicRule = () => {
   );
 };
 
-storiesOf('form', module).add('dynamic-rule', () => <DynamicRule />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/form', module).add('dynamic-rule', () => <DynamicRule />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Perform different check rules according to different situations.</p></>) } });

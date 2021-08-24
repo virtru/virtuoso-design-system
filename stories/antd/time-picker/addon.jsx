@@ -27,5 +27,5 @@ class TimePickerAddonDemo extends React.Component {
   }
 }
 
-storiesOf('time-picker', module).add('addon', () => <TimePickerAddonDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/time-picker', module).add('addon', () => <TimePickerAddonDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Render addon contents to time picker panel's bottom.</p></>) } });

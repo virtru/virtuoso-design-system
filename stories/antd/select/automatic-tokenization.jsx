@@ -14,7 +14,7 @@ function handleChange(value) {
   console.log(`selected ${value}`);
 }
 
-storiesOf('select', module).add('automatic-tokenization', () => 
+storiesOf('antd/select', module).add('automatic-tokenization', () => 
   <Select mode="tags" style={{ width: '100%' }} onChange={handleChange} tokenSeparators={[',']}>
     {children}
   </Select>,

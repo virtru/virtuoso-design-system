@@ -60,5 +60,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('popconfirm', module).add('dynamic-trigger', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/popconfirm', module).add('dynamic-trigger', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Make it pop up under some conditions.</p></>) } });

@@ -5,7 +5,7 @@ import { Layout } from 'antd';
 
 const { Header, Footer, Sider, Content } = Layout;
 
-storiesOf('layout', module).add('basic', () => 
+storiesOf('antd/layout', module).add('basic', () => 
   <>
     <Layout>
       <Header>Header</Header>

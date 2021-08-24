@@ -81,5 +81,5 @@ class SearchInput extends React.Component {
   }
 }
 
-storiesOf('select', module).add('search-box', () => <SearchInput placeholder="input search text" style={{ width: 200 }} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/select', module).add('search-box', () => <SearchInput placeholder="input search text" style={{ width: 200 }} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Search with remote data.</p></>) } });

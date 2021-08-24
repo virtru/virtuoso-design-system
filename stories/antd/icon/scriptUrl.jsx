@@ -10,7 +10,7 @@ const IconFont = createFromIconfontCN({
   ],
 });
 
-storiesOf('icon', module).add('scriptUrl', () => 
+storiesOf('antd/Icon', module).add('scriptUrl', () => 
   <div className="icons-list">
     <IconFont type="icon-javascript" />
     <IconFont type="icon-java" />

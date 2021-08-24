@@ -8,7 +8,7 @@ const gridStyle = {
   textAlign: 'center',
 };
 
-storiesOf('card', module).add('grid-card', () => 
+storiesOf('antd/card', module).add('grid-card', () => 
   <Card title="Card Title">
     <Card.Grid style={gridStyle}>Content</Card.Grid>
     <Card.Grid hoverable={false} style={gridStyle}>

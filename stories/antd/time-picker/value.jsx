@@ -13,5 +13,5 @@ const Demo = () => {
   return <TimePicker value={value} onChange={onChange} />;
 };
 
-storiesOf('time-picker', module).add('value', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/time-picker', module).add('value', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p><code>value</code> and <code>onChange</code> should be used together,</p></>) } });

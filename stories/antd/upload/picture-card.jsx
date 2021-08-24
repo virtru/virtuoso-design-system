@@ -106,5 +106,5 @@ class PicturesWall extends React.Component {
   }
 }
 
-storiesOf('upload', module).add('picture-card', () => <PicturesWall />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/upload', module).add('picture-card', () => <PicturesWall />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>After users upload picture, the thumbnail will be shown in list. The upload button will disappear when count meets limitation.</p></>) } });

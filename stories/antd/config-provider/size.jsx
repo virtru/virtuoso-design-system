@@ -97,5 +97,5 @@ const FormSizeDemo = () => {
     </div>
   );
 };
-storiesOf('config-provider', module).add('size', () => <FormSizeDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/config-provider', module).add('size', () => <FormSizeDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Config component default size.</p></>) } });

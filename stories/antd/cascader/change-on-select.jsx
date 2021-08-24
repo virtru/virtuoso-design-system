@@ -42,5 +42,5 @@ function onChange(value) {
   console.log(value);
 }
 
-storiesOf('cascader', module).add('change-on-select', () => <Cascader options={options} onChange={onChange} changeOnSelect />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/cascader', module).add('change-on-select', () => <Cascader options={options} onChange={onChange} changeOnSelect />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Allow only select parent options.</p></>) } });

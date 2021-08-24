@@ -94,5 +94,5 @@ class InfiniteListExample extends React.Component {
   }
 }
 
-storiesOf('list', module).add('infinite-load', () => <InfiniteListExample />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/list', module).add('infinite-load', () => <InfiniteListExample />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>The example of infinite load with <a href="https://github.com/CassetteRocks/react-infinite-scroller">react-infinite-scroller</a>.</p></>) } });

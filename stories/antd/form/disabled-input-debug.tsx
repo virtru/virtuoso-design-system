@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Form, Input } from 'antd';
 
-storiesOf('form', module).add('disabled-input-debug', () => 
+storiesOf('antd/form', module).add('disabled-input-debug', () => 
   <Form>
     <Form.Item label="Normal0">
       <Input placeholder="unavailable choice" value="Buggy!" />

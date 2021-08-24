@@ -121,5 +121,5 @@ const DragSortingUpload = () => {
   );
 };
 
-storiesOf('upload', module).add('drag-sorting', () => <DragSortingUpload />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/upload', module).add('drag-sorting', () => <DragSortingUpload />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>By using <code>itemRender</code>, we can integrate upload with react-dnd to implement drag sorting of uploadList.</p></>) } });

@@ -32,5 +32,5 @@ const App = () => {
   return <Table rowSelection={rowSelection} columns={columns} dataSource={data} />;
 };
 
-storiesOf('table', module).add('row-selection-custom-debug', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('row-selection-custom-debug', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Customize selection group.</p></>) } });

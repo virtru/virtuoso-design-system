@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Spin } from 'antd';
 
-storiesOf('spin', module).add('inside', () => 
+storiesOf('antd/spin', module).add('inside', () => 
   <div className="example">
     <Spin />
   </div>,

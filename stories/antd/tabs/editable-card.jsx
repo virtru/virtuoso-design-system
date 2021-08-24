@@ -85,5 +85,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('tabs', module).add('editable-card', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tabs', module).add('editable-card', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Only card type Tabs support adding &amp; closable. +Use <code>closable=&#123;false&#125;</code> to disable close.</p></>) } });

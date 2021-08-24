@@ -54,5 +54,5 @@ const App = () => {
   );
 };
 
-storiesOf('transfer', module).add('large-data', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/transfer', module).add('large-data', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>large count of items with pagination.</p></>) } });

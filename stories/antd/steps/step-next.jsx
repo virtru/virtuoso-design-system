@@ -60,5 +60,5 @@ const App = () => {
   );
 };
 
-storiesOf('steps', module).add('step-next', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/steps', module).add('step-next', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Cooperate with the content and buttons, to represent the progress of a process.</p></>) } });

@@ -7,7 +7,7 @@ function onChange(pageNumber) {
   console.log('Page: ', pageNumber);
 }
 
-storiesOf('pagination', module).add('jump', () => 
+storiesOf('antd/pagination', module).add('jump', () => 
   <>
     <Pagination showQuickJumper defaultCurrent={2} total={500} onChange={onChange} />
     <br />

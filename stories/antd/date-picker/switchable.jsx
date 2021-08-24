@@ -28,5 +28,5 @@ function SwitchablePicker() {
   );
 }
 
-storiesOf('date-picker', module).add('switchable', () => <SwitchablePicker />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/date-picker', module).add('switchable', () => <SwitchablePicker />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Switch in different types of pickers by Select.</p></>) } });

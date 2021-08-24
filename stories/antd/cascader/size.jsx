@@ -42,7 +42,7 @@ function onChange(value) {
   console.log(value);
 }
 
-storiesOf('cascader', module).add('size', () => 
+storiesOf('antd/cascader', module).add('size', () => 
   <>
     <Cascader size="large" options={options} onChange={onChange} />
     <br />

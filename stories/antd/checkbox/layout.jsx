@@ -7,7 +7,7 @@ function onChange(checkedValues) {
   console.log('checked = ', checkedValues);
 }
 
-storiesOf('checkbox', module).add('layout', () => 
+storiesOf('antd/checkbox', module).add('layout', () => 
   <Checkbox.Group style={{ width: '100%' }} onChange={onChange}>
     <Row>
       <Col span={8}>

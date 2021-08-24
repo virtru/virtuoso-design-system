@@ -4,7 +4,7 @@ import React from 'react';
 import { Statistic, Card, Row, Col } from 'antd';
 import { ArrowUpOutlined, ArrowDownOutlined } from '@ant-design/icons';
 
-storiesOf('statistic', module).add('card', () => 
+storiesOf('antd/statistic', module).add('card', () => 
   <div className="site-statistic-demo-card">
     <Row gutter={16}>
       <Col span={12}>

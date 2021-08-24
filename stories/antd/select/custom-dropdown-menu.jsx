@@ -59,5 +59,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('select', module).add('custom-dropdown-menu', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/select', module).add('custom-dropdown-menu', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Customize the dropdown menu via <code>dropdownRender</code>.</p></>) } });

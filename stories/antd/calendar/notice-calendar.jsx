@@ -63,7 +63,7 @@ function monthCellRender(value) {
   ) : null;
 }
 
-storiesOf('calendar', module).add('notice-calendar', () => 
+storiesOf('antd/calendar', module).add('notice-calendar', () => 
   <Calendar dateCellRender={dateCellRender} monthCellRender={monthCellRender} />,
   { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>This component can be rendered by using <code>dateCellRender</code> and <code>monthCellRender</code> with the data you need.</p></>) } });

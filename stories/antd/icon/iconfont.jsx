@@ -7,7 +7,7 @@ const IconFont = createFromIconfontCN({
   scriptUrl: '//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js',
 });
 
-storiesOf('icon', module).add('iconfont', () => 
+storiesOf('antd/Icon', module).add('iconfont', () => 
   <div className="icons-list">
     <IconFont type="icon-tuichu" />
     <IconFont type="icon-facebook" />

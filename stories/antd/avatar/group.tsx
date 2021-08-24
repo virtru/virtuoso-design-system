@@ -39,5 +39,5 @@ const Demo = () => (
   </>
 );
 
-storiesOf('avatar', module).add('group', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/avatar', module).add('group', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Avatar group display.</p></>) } });

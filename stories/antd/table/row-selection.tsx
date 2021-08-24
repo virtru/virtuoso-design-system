@@ -93,7 +93,7 @@ const Demo = () => {
   );
 };
 
-storiesOf('table', module).add('row-selection', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('row-selection', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Rows can be selectable by making first column as a selectable column. You can use <code>rowSelection.type</code> to set selection type. Default is <code>checkbox</code>.</p>
 <blockquote>
   <p>selection happens when clicking checkbox by default. You can see <a href="https://codesandbox.io/s/000vqw38rl">https://codesandbox.io/s/000vqw38rl</a> if you need row-click selection behavior.</p>

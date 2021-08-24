@@ -28,5 +28,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('input-number', module).add('disabled', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/input-number', module).add('disabled', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Click the button to toggle between available and disabled states.</p></>) } });

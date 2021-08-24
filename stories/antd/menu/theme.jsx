@@ -70,5 +70,5 @@ class Sider extends React.Component {
   }
 }
 
-storiesOf('menu', module).add('theme', () => <Sider />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/menu', module).add('theme', () => <Sider />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>There are two built-in themes: <code>light</code> and <code>dark</code>. The default value is <code>light</code>.</p></>) } });

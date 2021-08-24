@@ -49,5 +49,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('tree-select', module).add('treeData', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tree-select', module).add('treeData', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>The tree structure can be populated using <code>treeData</code> property. This is a quick and easy way to provide the tree content.</p></>) } });

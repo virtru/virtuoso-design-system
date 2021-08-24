@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Space, Button } from 'antd';
 
-storiesOf('space', module).add('align', () => 
+storiesOf('antd/space', module).add('align', () => 
   <div className="space-align-container">
     <div className="space-align-block">
       <Space align="center">

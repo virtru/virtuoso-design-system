@@ -33,5 +33,5 @@ const Demo = () => (
   </div>
 );
 
-storiesOf('descriptions', module).add('responsive', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/descriptions', module).add('responsive', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Responsive configuration enables perfect presentation on small screen devices.</p></>) } });

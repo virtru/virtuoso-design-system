@@ -250,5 +250,5 @@ const RegistrationForm = () => {
   );
 };
 
-storiesOf('form', module).add('register', () => <RegistrationForm />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/form', module).add('register', () => <RegistrationForm />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Fill in this form to create a new account for you.</p></>) } });

@@ -193,5 +193,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('form', module).add('validate-other', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/form', module).add('validate-other', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Demonstration of validation configuration for form controls which are not shown in the demos above.</p></>) } });

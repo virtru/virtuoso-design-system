@@ -240,5 +240,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('table', module).add('dynamic-settings', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('dynamic-settings', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Select different settings to see the result.</p></>) } });

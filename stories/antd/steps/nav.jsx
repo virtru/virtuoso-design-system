@@ -73,5 +73,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('steps', module).add('nav', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/steps', module).add('nav', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Navigation steps.</p></>) } });

@@ -9,7 +9,7 @@ function handleChange(value) {
   console.log(`selected ${value}`);
 }
 
-storiesOf('select', module).add('option-label-prop', () => 
+storiesOf('antd/select', module).add('option-label-prop', () => 
   <Select
     mode="multiple"
     style={{ width: '100%' }}

@@ -119,7 +119,7 @@ class App extends React.Component {
   }
 }
 
-storiesOf('table', module).add('reset-filter', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('reset-filter', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Control filters and sorters by <code>filteredValue</code> and <code>sortOrder</code>.</p>
 <blockquote>
   <ol>

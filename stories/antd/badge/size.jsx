@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Badge } from 'antd';
 
-storiesOf('badge', module).add('size', () => 
+storiesOf('antd/badge', module).add('size', () => 
   <>
     <Badge size="default" count={5}>
       <a href="#" className="head-example" />

@@ -67,5 +67,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('input', module).add('focus', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/Input', module).add('focus', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Focus with additional option.</p></>) } });

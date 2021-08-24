@@ -3,9 +3,9 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Pagination } from 'antd';
 
-storiesOf('pagination', module).add('simple', () => 
+storiesOf('antd/pagination', module).add('simple', () => 
   <>
-    <Pagination simple defaultCurrent={2} total={50} showTotal={total => `Total ${total} items`}/>
+    <Pagination simple defaultCurrent={2} total={50} />
     <br />
     <Pagination disabled simple defaultCurrent={2} total={50} />
   </>,

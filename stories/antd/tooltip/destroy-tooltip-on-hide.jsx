@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Tooltip } from 'antd';
 
-storiesOf('tooltip', module).add('destroy-tooltip-on-hide', () => 
+storiesOf('antd/tooltip', module).add('destroy-tooltip-on-hide', () => 
   <Tooltip destroyTooltipOnHide={{ keepParent: false }} title="prompt text">
     <span>Tooltip will destroy when hidden.</span>
   </Tooltip>,

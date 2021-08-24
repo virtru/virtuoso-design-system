@@ -85,5 +85,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('upload', module).add('upload-manually', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/upload', module).add('upload-manually', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Upload files manually after <code>beforeUpload</code> returns <code>false</code>.</p></>) } });

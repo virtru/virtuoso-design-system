@@ -38,5 +38,5 @@ const Complete: React.FC = () => {
   );
 };
 
-storiesOf('auto-complete', module).add('custom', () => <Complete />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/auto-complete', module).add('custom', () => <Complete />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Customize Input Component</p></>) } });

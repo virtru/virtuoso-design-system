@@ -50,7 +50,7 @@ const data = [
   },
 ];
 
-storiesOf('table', module).add('fixed-columns', () => <Table columns={columns} dataSource={data} scroll={{ x: 1300 }} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('fixed-columns', () => <Table columns={columns} dataSource={data} scroll={{ x: 1300 }} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>To fix some columns and scroll inside other columns, and you must set <code>scroll.x</code> meanwhile.</p>
 <blockquote>
   <p>Specify the width of columns if header and cell do not align properly. If specified width is not working or have gutter between columns, please try to leave one column at least without width to fit fluid layout, or make sure no <a href="https://github.com/ant-design/ant-design/issues/13825#issuecomment-449889241">long word to break table layout</a>.</p>

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Affix, Button } from 'antd';
 
-storiesOf('affix', module).add('on-change', () => 
+storiesOf('antd/affix', module).add('on-change', () => 
   <Affix offsetTop={120} onChange={affixed => console.log(affixed)}>
     <Button>120px to affix top</Button>
   </Affix>,

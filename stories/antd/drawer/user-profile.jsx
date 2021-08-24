@@ -154,5 +154,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('drawer', module).add('user-profile', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/drawer', module).add('user-profile', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use Drawer to quickly preview details of an object, such as those in a list.</p></>) } });

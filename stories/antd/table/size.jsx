@@ -38,7 +38,7 @@ const data = [
   },
 ];
 
-storiesOf('table', module).add('size', () => 
+storiesOf('antd/table', module).add('size', () => 
   <div>
     <h4>Middle size table</h4>
     <Table columns={columns} dataSource={data} size="middle" />

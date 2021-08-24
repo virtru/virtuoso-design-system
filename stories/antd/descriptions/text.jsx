@@ -35,7 +35,7 @@ const columns = [
     key: 'address',
   },
 ];
-storiesOf('descriptions', module).add('text', () => 
+storiesOf('antd/descriptions', module).add('text', () => 
   <Descriptions title="User Info" column={2}>
     <Descriptions.Item label="Product">Cloud Database</Descriptions.Item>
     <Descriptions.Item label={<div style={{ display: 'flex' }}>Billing Mode</div>}>

@@ -4,7 +4,7 @@ import React from 'react';
 import { Badge } from 'antd';
 import { ClockCircleOutlined } from '@ant-design/icons';
 
-storiesOf('badge', module).add('basic', () => 
+storiesOf('antd/badge', module).add('basic', () => 
   <div>
     <Badge count={5}>
       <a href="#" className="head-example" />

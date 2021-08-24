@@ -15,7 +15,7 @@ const EllipsisMiddle = ({ suffixCount, children }) => {
   );
 };
 
-storiesOf('typography', module).add('ellipsis-middle', () => 
+storiesOf('antd/typography', module).add('ellipsis-middle', () => 
   <EllipsisMiddle suffixCount={12}>
     In the process of internal desktop applications development, many different design specs and
     implementations would be involved, which might cause designers and developers difficulties and

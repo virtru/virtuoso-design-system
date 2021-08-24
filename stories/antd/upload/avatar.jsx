@@ -67,7 +67,7 @@ class Avatar extends React.Component {
   }
 }
 
-storiesOf('upload', module).add('avatar', () => <Avatar />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/upload', module).add('avatar', () => <Avatar />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Click to upload user's avatar, and validate size and format of picture with <code>beforeUpload</code>.</p>
 <blockquote>
   <p>The return value of function <code>beforeUpload</code> can be a Promise to check asynchronously. <a href="https://upload-react-component.vercel.app/demo/before-upload#beforeupload">demo</a></p>

@@ -6,5 +6,5 @@ import moment from 'moment';
 
 const format = 'HH:mm';
 
-storiesOf('time-picker', module).add('hide-column', () => <TimePicker defaultValue={moment('12:08', format)} format={format} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/time-picker', module).add('hide-column', () => <TimePicker defaultValue={moment('12:08', format)} format={format} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>While part of <code>format</code> is omitted, the corresponding column in panel will disappear, too.</p></>) } });

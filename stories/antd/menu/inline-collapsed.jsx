@@ -67,6 +67,6 @@ class App extends React.Component {
   }
 }
 
-storiesOf('menu', module).add('inline-collapsed', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/menu', module).add('inline-collapsed', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Inline menu could be collapsed.</p>
 <p>Here is <a href="/components/layout/#components-layout-demo-side">a complete demo</a> with sider layout.</p></>) } });

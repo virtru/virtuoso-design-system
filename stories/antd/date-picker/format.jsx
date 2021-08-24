@@ -13,7 +13,7 @@ const dateFormatList = ['DD/MM/YYYY', 'DD/MM/YY'];
 
 const customFormat = value => `custom format: ${value.format(dateFormat)}`;
 
-storiesOf('date-picker', module).add('format', () => 
+storiesOf('antd/date-picker', module).add('format', () => 
   <Space direction="vertical" size={12}>
     <DatePicker defaultValue={moment('2015/01/01', dateFormat)} format={dateFormat} />
     <DatePicker defaultValue={moment('01/01/2015', dateFormatList[0])} format={dateFormatList} />

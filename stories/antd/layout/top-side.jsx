@@ -7,7 +7,7 @@ import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
 
-storiesOf('layout', module).add('top-side', () => 
+storiesOf('antd/layout', module).add('top-side', () => 
   <Layout>
     <Header className="header">
       <div className="logo" />

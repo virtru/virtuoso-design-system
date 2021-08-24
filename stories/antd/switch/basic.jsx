@@ -7,5 +7,5 @@ function onChange(checked) {
   console.log(`switch to ${checked}`);
 }
 
-storiesOf('switch', module).add('basic', () => <Switch defaultChecked onChange={onChange} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/switch', module).add('basic', () => <Switch defaultChecked onChange={onChange} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>The most basic usage.</p></>) } });

@@ -39,5 +39,5 @@ const Demo = () => (
   </>
 );
 
-storiesOf('progress', module).add('gradient-line', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/progress', module).add('gradient-line', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>A package of <code>linear-gradient</code>. It is recommended to only pass two colors.</p></>) } });

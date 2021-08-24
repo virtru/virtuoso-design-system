@@ -94,5 +94,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('comment', module).add('editor', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/comment', module).add('editor', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Comment can be used as an editor, so the user can customize the contents of the component.</p></>) } });

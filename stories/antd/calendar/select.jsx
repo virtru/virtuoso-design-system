@@ -34,5 +34,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('calendar', module).add('select', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/calendar', module).add('select', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>A basic calendar component with Year/Month switch.</p></>) } });

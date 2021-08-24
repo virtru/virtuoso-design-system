@@ -3,5 +3,5 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Empty } from 'antd';
 
-storiesOf('empty', module).add('basic', () => <Empty />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/empty', module).add('basic', () => <Empty />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Simplest Usage.</p></>) } });

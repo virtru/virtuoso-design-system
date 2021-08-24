@@ -21,7 +21,7 @@ function getGroup(props) {
   );
 }
 
-storiesOf('button', module).add('legacy-group', () => 
+storiesOf('antd/button', module).add('legacy-group', () => 
   <>
     {getGroup({ size: 'small' })}
     <br />

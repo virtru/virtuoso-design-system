@@ -39,6 +39,6 @@ const App = () => {
   );
 };
 
-storiesOf('select', module).add('coordinate', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/select', module).add('coordinate', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Coordinating the selection of provinces and cities is a common use case and demonstrates how selection can be coordinated.</p>
 <p>Using the <a href="/components/cascader">Cascader</a> component is strongly recommended instead as it is more flexible and capable.</p></>) } });

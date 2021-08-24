@@ -32,5 +32,5 @@ class PickerSizesDemo extends React.Component {
   }
 }
 
-storiesOf('date-picker', module).add('size', () => <PickerSizesDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/date-picker', module).add('size', () => <PickerSizesDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>The input box comes in three sizes. <code>default</code> will be used if <code>size</code> is omitted.</p></>) } });

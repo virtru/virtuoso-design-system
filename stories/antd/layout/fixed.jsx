@@ -5,7 +5,7 @@ import { Layout, Menu, Breadcrumb } from 'antd';
 
 const { Header, Content, Footer } = Layout;
 
-storiesOf('layout', module).add('fixed', () => 
+storiesOf('antd/layout', module).add('fixed', () => 
   <Layout>
     <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
       <div className="logo" />

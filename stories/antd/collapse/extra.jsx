@@ -69,5 +69,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('collapse', module).add('extra', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/collapse', module).add('extra', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>More than one panel can be expanded at a time, the first panel is initialized to be active in this case.</p></>) } });

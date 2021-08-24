@@ -32,5 +32,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('space', module).add('gap-in-line', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/space', module).add('gap-in-line', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Debug usage</p></>) } });

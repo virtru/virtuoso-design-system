@@ -71,7 +71,7 @@ const AdvancedSearchForm = () => {
   );
 };
 
-storiesOf('form', module).add('advanced-search', () => 
+storiesOf('antd/form', module).add('advanced-search', () => 
   <div>
     <AdvancedSearchForm />
     <div className="search-result-list">Search Result List</div>

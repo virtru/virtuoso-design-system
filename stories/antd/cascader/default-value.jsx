@@ -42,7 +42,7 @@ function onChange(value) {
   console.log(value);
 }
 
-storiesOf('cascader', module).add('default-value', () => 
+storiesOf('antd/cascader', module).add('default-value', () => 
   <Cascader
     defaultValue={['zhejiang', 'hangzhou', 'xihu']}
     options={options}

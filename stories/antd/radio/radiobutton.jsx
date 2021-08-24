@@ -7,7 +7,7 @@ function onChange(e) {
   console.log(`radio checked:${e.target.value}`);
 }
 
-storiesOf('radio', module).add('radiobutton', () => 
+storiesOf('antd/radio', module).add('radiobutton', () => 
   <>
     <Radio.Group onChange={onChange} defaultValue="a">
       <Radio.Button value="a">Hangzhou</Radio.Button>

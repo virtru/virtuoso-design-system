@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { PageHeader, Tag, Button, Statistic, Descriptions, Row } from 'antd';
 
-storiesOf('page-header', module).add('actions', () => 
+storiesOf('antd/page-header', module).add('actions', () => 
   <>
     <PageHeader
       className="site-page-header"

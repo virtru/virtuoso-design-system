@@ -24,7 +24,7 @@ const ExampleComment = ({ children }) => (
   </Comment>
 );
 
-storiesOf('comment', module).add('nested', () => 
+storiesOf('antd/comment', module).add('nested', () => 
   <ExampleComment>
     <ExampleComment>
       <ExampleComment />

@@ -71,7 +71,7 @@ function showPropsConfirm() {
   });
 }
 
-storiesOf('modal', module).add('confirm', () => 
+storiesOf('antd/modal', module).add('confirm', () => 
   <Space>
     <Button onClick={showConfirm}>Confirm</Button>
     <Button onClick={showPromiseConfirm}>With promise</Button>

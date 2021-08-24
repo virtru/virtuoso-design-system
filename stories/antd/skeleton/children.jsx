@@ -36,5 +36,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('skeleton', module).add('children', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/skeleton', module).add('children', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Skeleton contains sub component.</p></>) } });

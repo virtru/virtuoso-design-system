@@ -22,5 +22,5 @@ const AnchorExample: React.FC = () => {
   );
 };
 
-storiesOf('anchor', module).add('targetOffset', () => <AnchorExample />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/anchor', module).add('targetOffset', () => <AnchorExample />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Anchor target scroll to screen center.</p></>) } });

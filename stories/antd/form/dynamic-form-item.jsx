@@ -104,5 +104,5 @@ const DynamicFieldSet = () => {
   );
 };
 
-storiesOf('form', module).add('dynamic-form-item', () => <DynamicFieldSet />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/form', module).add('dynamic-form-item', () => <DynamicFieldSet />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Add or remove form items dynamically. <code>add</code> function support config initial value.</p></>) } });

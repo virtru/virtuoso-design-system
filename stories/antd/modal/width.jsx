@@ -26,5 +26,5 @@ const App = () => {
   );
 };
 
-storiesOf('modal', module).add('width', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/modal', module).add('width', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use <code>width</code> to set the width of the modal dialog.</p></>) } });

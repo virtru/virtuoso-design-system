@@ -62,7 +62,7 @@ class ControlledRangePicker extends React.Component {
   }
 }
 
-storiesOf('date-picker', module).add('mode', () => 
+storiesOf('antd/date-picker', module).add('mode', () => 
   <Space direction="vertical" size={12}>
     <ControlledDatePicker />
     <ControlledRangePicker />

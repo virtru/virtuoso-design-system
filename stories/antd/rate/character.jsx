@@ -4,7 +4,7 @@ import React from 'react';
 import { Rate } from 'antd';
 import { HeartOutlined } from '@ant-design/icons';
 
-storiesOf('rate', module).add('character', () => 
+storiesOf('antd/rate', module).add('character', () => 
   <>
     <Rate character={<HeartOutlined />} allowHalf />
     <br />

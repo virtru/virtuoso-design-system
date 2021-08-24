@@ -24,7 +24,7 @@ function tagRender(props) {
   );
 }
 
-storiesOf('select', module).add('custom-tag-render', () => 
+storiesOf('antd/select', module).add('custom-tag-render', () => 
   <Select
     mode="multiple"
     showArrow

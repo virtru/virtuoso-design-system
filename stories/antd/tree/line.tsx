@@ -109,5 +109,5 @@ const Demo: React.FC<{}> = () => {
   );
 };
 
-storiesOf('tree', module).add('line', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tree', module).add('line', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Tree with connected line between nodes, turn on by <code>showLine</code>, customize the preseted icon by <code>switcherIcon</code>.</p></>) } });

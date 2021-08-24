@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Badge } from 'antd';
 
-storiesOf('badge', module).add('status', () => 
+storiesOf('antd/badge', module).add('status', () => 
   <div>
     <Badge status="success" />
     <Badge status="error" />

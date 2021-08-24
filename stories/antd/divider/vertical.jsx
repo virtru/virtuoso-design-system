@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Divider } from 'antd';
 
-storiesOf('divider', module).add('vertical', () => 
+storiesOf('antd/divider', module).add('vertical', () => 
   <>
     Text
     <Divider type="vertical" />

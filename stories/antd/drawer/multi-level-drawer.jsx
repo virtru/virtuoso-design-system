@@ -61,5 +61,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('drawer', module).add('multi-level-drawer', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/drawer', module).add('multi-level-drawer', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Open a new drawer on top of an existing drawer to handle multi branch tasks.</p></>) } });

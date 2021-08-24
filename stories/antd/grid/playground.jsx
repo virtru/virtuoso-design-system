@@ -100,5 +100,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('grid', module).add('playground', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/grid', module).add('playground', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>A simple playground for column count and gutter.</p></>) } });

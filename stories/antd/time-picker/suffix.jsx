@@ -9,7 +9,7 @@ function onChange(time, timeString) {
   console.log(time, timeString);
 }
 
-storiesOf('time-picker', module).add('suffix', () => 
+storiesOf('antd/time-picker', module).add('suffix', () => 
   <TimePicker
     suffixIcon={<SmileOutlined />}
     onChange={onChange}

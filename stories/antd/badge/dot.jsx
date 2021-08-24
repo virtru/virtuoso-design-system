@@ -4,7 +4,7 @@ import React from 'react';
 import { Badge } from 'antd';
 import { NotificationOutlined } from '@ant-design/icons';
 
-storiesOf('badge', module).add('dot', () => 
+storiesOf('antd/badge', module).add('dot', () => 
   <div>
     <Badge dot>
       <NotificationOutlined />

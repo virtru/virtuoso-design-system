@@ -53,5 +53,5 @@ const HorizontalLoginForm = () => {
   );
 };
 
-storiesOf('form', module).add('inline-login', () => <HorizontalLoginForm />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/form', module).add('inline-login', () => <HorizontalLoginForm />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Inline login form is often used in navigation bar.</p></>) } });

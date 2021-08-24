@@ -73,7 +73,7 @@ class SiderDemo extends React.Component {
   }
 }
 
-storiesOf('layout', module).add('custom-trigger-debug', () => <SiderDemo />, { docs: { page: () => (<><hr />
+storiesOf('antd/layout', module).add('custom-trigger-debug', () => <SiderDemo />, { docs: { page: () => (<><hr />
 <p>order: 99
 title:
   zh-CN: 自定义触发器 Debug

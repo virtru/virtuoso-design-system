@@ -91,7 +91,7 @@ function onChange(pagination, filters, sorter, extra) {
   console.log('params', pagination, filters, sorter, extra);
 }
 
-storiesOf('table', module).add('head', () => <Table columns={columns} dataSource={data} onChange={onChange} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('head', () => <Table columns={columns} dataSource={data} onChange={onChange} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use <code>filters</code> to generate filter menu in columns, <code>onFilter</code> to determine filtered result, and <code>filterMultiple</code> to indicate whether it's multiple or single selection.</p>
 <p>Uses <code>defaultFilteredValue</code> to make a column filtered by default.</p>
 <p>Use <code>sorter</code> to make a column sortable. <code>sorter</code> can be a function of the type <code>function(a, b) &#123; ... &#125;</code> for sorting data locally.</p>

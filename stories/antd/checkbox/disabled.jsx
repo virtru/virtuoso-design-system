@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Checkbox } from 'antd';
 
-storiesOf('checkbox', module).add('disabled', () => 
+storiesOf('antd/checkbox', module).add('disabled', () => 
   <>
     <Checkbox defaultChecked={false} disabled />
     <br />

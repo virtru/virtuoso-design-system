@@ -133,5 +133,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('form', module).add('form-context', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/form', module).add('form-context', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use <code>Form.Provider</code> to process data between forms. In this case, submit button is in the Modal which is out of Form. You can use <code>form.submit</code> to submit form. Besides, we recommend native <code>&lt;Button htmlType="submit" /&gt;</code> to submit a form.</p></>) } });

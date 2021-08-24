@@ -38,5 +38,5 @@ const App = () => {
   );
 };
 
-storiesOf('date-picker', module).add('select-in-range', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/date-picker', module).add('select-in-range', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>A example shows how to select a dynamic range by using <code>onCalendarChange</code> and <code>disabledDate</code>.</p></>) } });

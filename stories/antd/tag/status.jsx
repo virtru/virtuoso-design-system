@@ -11,7 +11,7 @@ import {
   MinusCircleOutlined,
 } from '@ant-design/icons';
 
-storiesOf('tag', module).add('status', () => 
+storiesOf('antd/tag', module).add('status', () => 
   <>
     <Divider orientation="left">Without icon</Divider>
     <div>

@@ -92,5 +92,5 @@ const data = [
   },
 ];
 
-storiesOf('table', module).add('ellipsis-custom-tooltip', () => <Table columns={columns} dataSource={data} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('ellipsis-custom-tooltip', () => <Table columns={columns} dataSource={data} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Ellipsis cell content via setting <code>column.ellipsis.showTitle</code>, use <code>Tooltip</code> instead of the html title attribute.</p></>) } });

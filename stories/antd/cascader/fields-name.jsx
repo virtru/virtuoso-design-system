@@ -42,7 +42,7 @@ function onChange(value) {
   console.log(value);
 }
 
-storiesOf('cascader', module).add('fields-name', () => 
+storiesOf('antd/cascader', module).add('fields-name', () => 
   <Cascader
     fieldNames={{ label: 'name', value: 'code', children: 'items' }}
     options={options}

@@ -39,5 +39,5 @@ const Autoset: React.FC = () => {
   );
 };
 
-storiesOf('avatar', module).add('dynamic', () => <Autoset />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/avatar', module).add('dynamic', () => <Autoset />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>For letter type Avatar, when the letters are too long to display, the font size can be automatically adjusted according to the width of the Avatar. You can also use <code>gap</code> to set the unit distance between left and right sides.</p></>) } });

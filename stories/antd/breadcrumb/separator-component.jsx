@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Breadcrumb } from 'antd';
 
-storiesOf('breadcrumb', module).add('separator-component', () => 
+storiesOf('antd/breadcrumb', module).add('separator-component', () => 
   <Breadcrumb separator="">
     <Breadcrumb.Item>Location</Breadcrumb.Item>
     <Breadcrumb.Separator>:</Breadcrumb.Separator>

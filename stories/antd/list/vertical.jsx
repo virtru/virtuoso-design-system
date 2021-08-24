@@ -24,7 +24,7 @@ const IconText = ({ icon, text }) => (
   </Space>
 );
 
-storiesOf('list', module).add('vertical', () => 
+storiesOf('antd/list', module).add('vertical', () => 
   <List
     itemLayout="vertical"
     size="large"

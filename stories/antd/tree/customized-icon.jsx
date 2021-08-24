@@ -30,7 +30,7 @@ const treeData = [
   },
 ];
 
-storiesOf('tree', module).add('customized-icon', () => 
+storiesOf('antd/tree', module).add('customized-icon', () => 
   <Tree
     showIcon
     defaultExpandAll

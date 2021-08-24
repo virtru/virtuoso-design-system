@@ -67,5 +67,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('skeleton', module).add('element', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/skeleton', module).add('element', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Skeleton Button, Avatar, Input and Image.</p></>) } });

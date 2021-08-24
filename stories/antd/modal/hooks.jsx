@@ -61,5 +61,5 @@ const App = () => {
   );
 };
 
-storiesOf('modal', module).add('hooks', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/modal', module).add('hooks', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Use <code>Modal.useModal</code> to get <code>contextHolder</code> with context accessible issue.</p></>) } });

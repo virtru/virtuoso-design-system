@@ -42,7 +42,7 @@ function disabledRangeTime(_, type) {
   };
 }
 
-storiesOf('date-picker', module).add('disabled-date', () => 
+storiesOf('antd/date-picker', module).add('disabled-date', () => 
   <Space direction="vertical" size={12}>
     <DatePicker
       format="YYYY-MM-DD HH:mm:ss"

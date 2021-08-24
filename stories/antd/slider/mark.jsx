@@ -15,7 +15,7 @@ const marks = {
   },
 };
 
-storiesOf('slider', module).add('mark', () => 
+storiesOf('antd/slider', module).add('mark', () => 
   <>
     <h4>included=true</h4>
     <Slider marks={marks} defaultValue={37} />

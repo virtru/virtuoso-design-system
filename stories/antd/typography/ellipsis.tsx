@@ -45,5 +45,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('typography', module).add('ellipsis', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/typography', module).add('ellipsis', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Multiple line ellipsis support. You can use <code>tooltip</code> to config ellipsis tooltip. Recommend <code>expandable</code> when have lots of content.</p></>) } });

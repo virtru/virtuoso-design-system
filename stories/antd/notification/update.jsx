@@ -20,7 +20,7 @@ const openNotification = () => {
   }, 1000);
 };
 
-storiesOf('notification', module).add('update', () => 
+storiesOf('antd/notification', module).add('update', () => 
   <Button type="primary" onClick={openNotification}>
     Open the notification box
   </Button>,

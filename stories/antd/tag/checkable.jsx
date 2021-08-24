@@ -38,7 +38,7 @@ class HotTags extends React.Component {
   }
 }
 
-storiesOf('tag', module).add('checkable', () => <HotTags />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tag', module).add('checkable', () => <HotTags />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p><code>CheckableTag</code> works like Checkbox, click it to toggle checked state.</p>
 <blockquote>
   <p>it is an absolute controlled component and has no uncontrolled mode.</p>

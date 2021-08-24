@@ -9,5 +9,5 @@ const success = () => {
   setTimeout(hide, 2500);
 };
 
-storiesOf('message', module).add('loading', () => <Button onClick={success}>Display a loading indicator</Button>, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/message', module).add('loading', () => <Button onClick={success}>Display a loading indicator</Button>, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Display a global loading indicator, which is dismissed by itself asynchronously.</p></>) } });

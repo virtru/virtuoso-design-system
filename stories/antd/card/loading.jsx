@@ -55,5 +55,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('card', module).add('loading', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/card', module).add('loading', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Shows a loading indicator while the contents of the card is being fetched.</p></>) } });

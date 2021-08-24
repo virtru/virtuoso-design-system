@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Breadcrumb } from 'antd';
 
-storiesOf('breadcrumb', module).add('basic', () => 
+storiesOf('antd/breadcrumb', module).add('basic', () => 
   <Breadcrumb>
     <Breadcrumb.Item>Home</Breadcrumb.Item>
     <Breadcrumb.Item>

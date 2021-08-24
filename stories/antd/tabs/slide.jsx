@@ -38,5 +38,5 @@ class SlidingTabsDemo extends React.Component {
   }
 }
 
-storiesOf('tabs', module).add('slide', () => <SlidingTabsDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tabs', module).add('slide', () => <SlidingTabsDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>In order to fit in more tabs, they can slide left and right (or up and down).</p></>) } });

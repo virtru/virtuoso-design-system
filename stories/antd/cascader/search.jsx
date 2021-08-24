@@ -51,7 +51,7 @@ function filter(inputValue, path) {
   return path.some(option => option.label.toLowerCase().indexOf(inputValue.toLowerCase()) > -1);
 }
 
-storiesOf('cascader', module).add('search', () => 
+storiesOf('antd/cascader', module).add('search', () => 
   <Cascader
     options={options}
     onChange={onChange}

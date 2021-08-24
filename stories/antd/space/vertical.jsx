@@ -18,6 +18,6 @@ function SpaceVertical() {
   );
 }
 
-storiesOf('space', module).add('vertical', () => <SpaceVertical />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/space', module).add('vertical', () => <SpaceVertical />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Crowded components vertical spacing.</p>
 <p>Can set <code>width: 100%</code> to fill a row.</p></>) } });

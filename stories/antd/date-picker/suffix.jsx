@@ -11,7 +11,7 @@ function onChange(date, dateString) {
   console.log(date, dateString);
 }
 
-storiesOf('date-picker', module).add('suffix', () => 
+storiesOf('antd/date-picker', module).add('suffix', () => 
   <Space direction="vertical" size={12}>
     <DatePicker suffixIcon={smileIcon} onChange={onChange} />
     <DatePicker suffixIcon={smileIcon} onChange={onChange} picker="month" />

@@ -132,5 +132,5 @@ class SearchTree extends React.Component {
   }
 }
 
-storiesOf('tree', module).add('search', () => <SearchTree />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tree', module).add('search', () => <SearchTree />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Searchable Tree.</p></>) } });

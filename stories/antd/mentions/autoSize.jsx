@@ -5,7 +5,7 @@ import { Mentions } from 'antd';
 
 const { Option } = Mentions;
 
-storiesOf('mentions', module).add('autoSize', () => 
+storiesOf('antd/mentions', module).add('autoSize', () => 
   <Mentions autoSize style={{ width: '100%' }}>
     <Option value="afc163">afc163</Option>
     <Option value="zombieJ">zombieJ</Option>

@@ -15,7 +15,7 @@ const text = `
   it can be found as a welcome guest in many households across the world.
 `;
 
-storiesOf('collapse', module).add('noarrow', () => 
+storiesOf('antd/collapse', module).add('noarrow', () => 
   <Collapse defaultActiveKey={['1']} onChange={callback}>
     <Panel header="This is panel header with arrow icon" key="1">
       <p>{text}</p>

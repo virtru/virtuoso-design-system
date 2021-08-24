@@ -56,5 +56,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('drawer', module).add('placement', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/drawer', module).add('placement', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>The Drawer can appear from any edge of the screen.</p></>) } });

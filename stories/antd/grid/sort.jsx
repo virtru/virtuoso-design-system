@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Row, Col } from 'antd';
 
-storiesOf('grid', module).add('sort', () => 
+storiesOf('antd/grid', module).add('sort', () => 
   <Row>
     <Col span={18} push={6}>
       col-18 col-push-6

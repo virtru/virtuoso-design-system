@@ -16,7 +16,7 @@ const handleClick = (
   console.log(link);
 };
 
-storiesOf('anchor', module).add('onClick', () => 
+storiesOf('antd/anchor', module).add('onClick', () => 
   <Anchor affix={false} onClick={handleClick}>
     <Link href="#components-anchor-demo-basic" title="Basic demo" />
     <Link href="#components-anchor-demo-static" title="Static demo" />

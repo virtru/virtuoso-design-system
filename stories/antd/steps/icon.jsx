@@ -6,7 +6,7 @@ import { UserOutlined, SolutionOutlined, LoadingOutlined, SmileOutlined } from '
 
 const { Step } = Steps;
 
-storiesOf('steps', module).add('icon', () => 
+storiesOf('antd/steps', module).add('icon', () => 
   <Steps>
     <Step status="finish" title="Login" icon={<UserOutlined />} />
     <Step status="finish" title="Verification" icon={<SolutionOutlined />} />

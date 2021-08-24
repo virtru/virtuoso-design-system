@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Progress } from 'antd';
 
-storiesOf('progress', module).add('circle', () => 
+storiesOf('antd/progress', module).add('circle', () => 
   <>
     <Progress type="circle" percent={75} />
     <Progress type="circle" percent={70} status="exception" />

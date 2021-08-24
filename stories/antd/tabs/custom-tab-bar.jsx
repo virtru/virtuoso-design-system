@@ -14,7 +14,7 @@ const renderTabBar = (props, DefaultTabBar) => (
   </Sticky>
 );
 
-storiesOf('tabs', module).add('custom-tab-bar', () => 
+storiesOf('antd/tabs', module).add('custom-tab-bar', () => 
   <StickyContainer>
     <Tabs defaultActiveKey="1" renderTabBar={renderTabBar}>
       <TabPane tab="Tab 1" key="1" style={{ height: 200 }}>

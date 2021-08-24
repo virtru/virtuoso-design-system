@@ -47,7 +47,7 @@ const LazyOptions = () => {
   return <Cascader options={options} loadData={loadData} onChange={onChange} changeOnSelect />;
 };
 
-storiesOf('cascader', module).add('lazy', () => <LazyOptions />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/cascader', module).add('lazy', () => <LazyOptions />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Load options lazily with <code>loadData</code>.</p>
 <blockquote>
   <p>Note: <code>loadData</code> cannot work with <code>showSearch</code>.</p>

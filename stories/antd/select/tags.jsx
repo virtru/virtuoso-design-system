@@ -14,7 +14,7 @@ function handleChange(value) {
   console.log(`selected ${value}`);
 }
 
-storiesOf('select', module).add('tags', () => 
+storiesOf('antd/select', module).add('tags', () => 
   <Select mode="tags" style={{ width: '100%' }} placeholder="Tags Mode" onChange={handleChange}>
     {children}
   </Select>,

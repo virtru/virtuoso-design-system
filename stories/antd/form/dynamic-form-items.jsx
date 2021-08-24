@@ -52,5 +52,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('form', module).add('dynamic-form-items', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/form', module).add('dynamic-form-items', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Nest dynamic field need extends <code>field</code>. Pass <code>field.name</code> and <code>field.fieldKey</code> to nest item.</p></>) } });

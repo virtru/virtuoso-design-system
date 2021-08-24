@@ -65,5 +65,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('transfer', module).add('custom-item', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/transfer', module).add('custom-item', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Custom each Transfer Item, and in this way you can render a complex datasource.</p></>) } });

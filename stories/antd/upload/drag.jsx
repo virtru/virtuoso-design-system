@@ -26,7 +26,7 @@ const props = {
   },
 };
 
-storiesOf('upload', module).add('drag', () => 
+storiesOf('antd/upload', module).add('drag', () => 
   <Dragger {...props}>
     <p className="ant-upload-drag-icon">
       <InboxOutlined />

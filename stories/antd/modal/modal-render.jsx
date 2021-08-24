@@ -104,5 +104,5 @@ class App extends React.Component {
   }
 }
 
-storiesOf('modal', module).add('modal-render', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/modal', module).add('modal-render', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Custom modal content render. use <code>react-draggable</code> implements draggable.</p></>) } });

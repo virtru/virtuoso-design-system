@@ -4,7 +4,7 @@ import React from 'react';
 import { Input, Space } from 'antd';
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 
-storiesOf('input', module).add('password-input', () => 
+storiesOf('antd/Input', module).add('password-input', () => 
   <Space direction="vertical">
     <Input.Password placeholder="input password" />
     <Input.Password

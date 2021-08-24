@@ -9,7 +9,7 @@ function handleChange(value) {
   console.log(value); // { value: "lucy", key: "lucy", label: "Lucy (101)" }
 }
 
-storiesOf('select', module).add('label-in-value', () => 
+storiesOf('antd/select', module).add('label-in-value', () => 
   <Select
     labelInValue
     defaultValue={{ value: 'lucy' }}

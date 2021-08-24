@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { PageHeader } from 'antd';
 
-storiesOf('page-header', module).add('basic', () => 
+storiesOf('antd/page-header', module).add('basic', () => 
   <PageHeader
     className="site-page-header"
     onBack={() => null}

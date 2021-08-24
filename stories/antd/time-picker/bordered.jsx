@@ -5,7 +5,7 @@ import { TimePicker } from 'antd';
 
 const { RangePicker } = TimePicker;
 
-storiesOf('time-picker', module).add('bordered', () => 
+storiesOf('antd/time-picker', module).add('bordered', () => 
   <>
     <TimePicker bordered={false} />
     <RangePicker bordered={false} />

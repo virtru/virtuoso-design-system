@@ -19,7 +19,7 @@ const colors = [
   'lime',
 ];
 
-storiesOf('badge', module).add('colorful', () => 
+storiesOf('antd/badge', module).add('colorful', () => 
   <>
     <Divider orientation="left">Presets</Divider>
     <div>

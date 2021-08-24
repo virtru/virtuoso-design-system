@@ -5,7 +5,7 @@ import { Row, Col, Divider } from 'antd';
 
 const DemoBox = props => <p className={`height-${props.value}`}>{props.children}</p>;
 
-storiesOf('grid', module).add('flex-align', () => 
+storiesOf('antd/grid', module).add('flex-align', () => 
   <>
     <Divider orientation="left">Align Top</Divider>
     <Row justify="center" align="top">

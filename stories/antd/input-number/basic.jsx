@@ -7,5 +7,5 @@ function onChange(value) {
   console.log('changed', value);
 }
 
-storiesOf('input-number', module).add('basic', () => <InputNumber min={1} max={10} defaultValue={3} onChange={onChange} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/input-number', module).add('basic', () => <InputNumber min={1} max={10} defaultValue={3} onChange={onChange} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Numeric-only input box.</p></>) } });

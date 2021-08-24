@@ -117,6 +117,6 @@ function TreeData() {
   );
 }
 
-storiesOf('table', module).add('tree-data', () => <TreeData />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/table', module).add('tree-data', () => <TreeData />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Display tree structure data in Table when there is field key <code>children</code> in dataSource, try to customize <code>childrenColumnName</code> property to avoid tree table structure.</p>
 <p>You can control the indent width by setting <code>indentSize</code>.</p></>) } });

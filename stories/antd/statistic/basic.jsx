@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Statistic, Row, Col, Button } from 'antd';
 
-storiesOf('statistic', module).add('basic', () => 
+storiesOf('antd/statistic', module).add('basic', () => 
   <Row gutter={16}>
     <Col span={12}>
       <Statistic title="Active Users" value={112893} />

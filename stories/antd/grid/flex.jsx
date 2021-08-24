@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Row, Col, Divider } from 'antd';
 
-storiesOf('grid', module).add('flex', () => 
+storiesOf('antd/grid', module).add('flex', () => 
   <>
     <Divider orientation="left">sub-element align left</Divider>
     <Row justify="start">

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Switch } from 'antd';
 
-storiesOf('switch', module).add('size', () => 
+storiesOf('antd/switch', module).add('size', () => 
   <>
     <Switch defaultChecked />
     <br />

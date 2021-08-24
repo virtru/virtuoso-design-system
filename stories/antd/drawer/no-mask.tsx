@@ -31,5 +31,5 @@ const App: React.FC = () => {
   );
 };
 
-storiesOf('drawer', module).add('no-mask', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/drawer', module).add('no-mask', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Remove mask.</p></>) } });

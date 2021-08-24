@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Result, Button } from 'antd';
 
-storiesOf('result', module).add('info', () => 
+storiesOf('antd/result', module).add('info', () => 
   <Result
     title="Your operation has been executed"
     extra={

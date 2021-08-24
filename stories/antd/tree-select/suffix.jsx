@@ -44,5 +44,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('tree-select', module).add('suffix', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tree-select', module).add('suffix', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>The most basic usage.</p></>) } });

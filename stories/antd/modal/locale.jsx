@@ -52,7 +52,7 @@ function confirm() {
   });
 }
 
-storiesOf('modal', module).add('locale', () => 
+storiesOf('antd/modal', module).add('locale', () => 
   <Space>
     <LocalizedModal />
     <Button onClick={confirm}>Confirm</Button>

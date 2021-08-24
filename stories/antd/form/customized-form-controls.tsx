@@ -99,7 +99,7 @@ const Demo = () => {
   );
 };
 
-storiesOf('form', module).add('customized-form-controls', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/form', module).add('customized-form-controls', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Customized or third-party form controls can be used in Form, too. Controls must follow these conventions:</p>
 <blockquote>
   <ul>

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Tag, Divider } from 'antd';
 
-storiesOf('tag', module).add('colorful', () => 
+storiesOf('antd/tag', module).add('colorful', () => 
   <>
     <Divider orientation="left">Presets</Divider>
     <div>

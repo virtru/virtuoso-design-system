@@ -52,5 +52,5 @@ const NormalLoginForm = () => {
   );
 };
 
-storiesOf('form', module).add('normal-login', () => <NormalLoginForm />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/form', module).add('normal-login', () => <NormalLoginForm />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Normal login form which can contain more elements.</p></>) } });

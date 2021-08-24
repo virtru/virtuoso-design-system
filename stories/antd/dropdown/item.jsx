@@ -23,7 +23,7 @@ const menu = (
   </Menu>
 );
 
-storiesOf('dropdown', module).add('item', () => 
+storiesOf('antd/dropdown', module).add('item', () => 
   <Dropdown overlay={menu}>
     <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
       Hover me <DownOutlined />

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Pagination } from 'antd';
 
-storiesOf('pagination', module).add('all', () => 
+storiesOf('antd/pagination', module).add('all', () => 
   <>
     <Pagination
       total={85}

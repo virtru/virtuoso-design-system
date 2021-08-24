@@ -38,5 +38,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('steps', module).add('clickable', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/steps', module).add('clickable', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Setting <code>onChange</code> makes Steps clickable.</p></>) } });

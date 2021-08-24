@@ -11,7 +11,7 @@ const menu = (
   </Menu>
 );
 
-storiesOf('dropdown', module).add('context-menu', () => 
+storiesOf('antd/dropdown', module).add('context-menu', () => 
   <Dropdown overlay={menu} trigger={['contextMenu']}>
     <div
       className="site-dropdown-context-menu"

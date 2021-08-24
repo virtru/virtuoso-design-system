@@ -10,7 +10,7 @@ function handleClick(e) {
   console.log('click', e);
 }
 
-storiesOf('menu', module).add('vertical', () => 
+storiesOf('antd/menu', module).add('vertical', () => 
   <Menu onClick={handleClick} style={{ width: 256 }} mode="vertical">
     <SubMenu key="sub1" icon={<MailOutlined />} title="Navigation One">
       <Menu.ItemGroup title="Item 1">

@@ -32,5 +32,5 @@ class Card extends React.Component {
   }
 }
 
-storiesOf('spin', module).add('delayAndDebounce', () => <Card />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/spin', module).add('delayAndDebounce', () => <Card />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Specifies a delay for loading state. If <code>spinning</code> ends during delay, loading status won't appear.</p></>) } });

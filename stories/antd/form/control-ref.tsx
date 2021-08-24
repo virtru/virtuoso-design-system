@@ -94,5 +94,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('form', module).add('control-ref', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/form', module).add('control-ref', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>We recommend use <code>Form.useForm</code> to create data control. If you are using class component, you can get it by <code>ref</code>.</p></>) } });

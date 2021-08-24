@@ -9,7 +9,7 @@ function confirm() {
   message.info('Clicked on Yes.');
 }
 
-storiesOf('popconfirm', module).add('placement', () => 
+storiesOf('antd/popconfirm', module).add('placement', () => 
   <div className="demo">
     <div style={{ marginLeft: 70, whiteSpace: 'nowrap' }}>
       <Popconfirm placement="topLeft" title={text} onConfirm={confirm} okText="Yes" cancelText="No">

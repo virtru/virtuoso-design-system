@@ -27,5 +27,5 @@ const Demo = () => {
   );
 };
 
-storiesOf('badge', module).add('no-wrapper', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/badge', module).add('no-wrapper', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Used in standalone when children is empty.</p></>) } });

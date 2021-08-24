@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Radio, Badge } from 'antd';
 
-storiesOf('radio', module).add('badge', () => 
+storiesOf('antd/radio', module).add('badge', () => 
   <Radio.Group buttonStyle="solid">
     <Badge count={1}>
       <Radio.Button value={1}>Click Me</Radio.Button>

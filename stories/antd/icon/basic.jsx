@@ -9,7 +9,7 @@ import {
   LoadingOutlined,
 } from '@ant-design/icons';
 
-storiesOf('icon', module).add('basic', () => 
+storiesOf('antd/Icon', module).add('basic', () => 
   <div className="icons-list">
     <HomeOutlined />
     <SettingFilled />

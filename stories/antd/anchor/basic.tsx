@@ -5,7 +5,7 @@ import { Anchor } from 'antd';
 
 const { Link } = Anchor;
 
-storiesOf('anchor', module).add('basic', () => 
+storiesOf('antd/anchor', module).add('basic', () => 
   <Anchor>
     <Link href="#components-anchor-demo-basic" title="Basic demo" />
     <Link href="#components-anchor-demo-static" title="Static demo" />

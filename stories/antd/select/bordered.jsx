@@ -5,7 +5,7 @@ import { Select } from 'antd';
 
 const { Option } = Select;
 
-storiesOf('select', module).add('bordered', () => 
+storiesOf('antd/select', module).add('bordered', () => 
   <>
     <Select defaultValue="lucy" style={{ width: 120 }} bordered={false}>
       <Option value="jack">Jack</Option>

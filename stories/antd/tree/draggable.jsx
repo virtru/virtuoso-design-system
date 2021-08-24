@@ -124,5 +124,5 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('tree', module).add('draggable', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
+storiesOf('antd/tree', module).add('draggable', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>Drag treeNode to insert after the other treeNode or insert into the other parent TreeNode.</p></>) } });
