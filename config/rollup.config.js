@@ -7,6 +7,7 @@ const { babel } = require('@rollup/plugin-babel');
 const commonjs = require('@rollup/plugin-commonjs');
 const postcss = require('rollup-plugin-postcss');
 const url = require('@rollup/plugin-url');
+const peerDepsExternal = require('rollup-plugin-peer-deps-external');
 // const reactSvg = require('rollup-plugin-react-svg');
 // const copy = require('rollup-plugin-copy');
 const json = require('@rollup/plugin-json');
@@ -30,6 +31,7 @@ module.exports = {
   plugins: [
     nodeResolve(),
     json(),
+    peerDepsExternal(),
     postcss(postcssConfig),
     babel({
       plugins: [['import', { libraryName: 'antd', style: true }]],
