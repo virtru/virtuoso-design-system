@@ -1,4 +1,5 @@
 const path = require('path');
+const modifyVars = require('../lib/styles/antd');
 
 module.exports = async ({ config }) => {
   config.resolve = {
@@ -116,62 +117,7 @@ module.exports = async ({ config }) => {
         {
           loader: "less-loader",
           options: {
-            modifyVars: {
-              'primary-color': '#164EB6',
-              'primary-1': '#DEEEFF',
-              'primary-2': '#B2D6FF',
-              'primary-5': '#011D4A',
-              'primary-6': '#011D4A', // Core brand color
-              'primary-7': '#164EB6',
-              'success-color': '#75B749', // Primary green
-              'error-color': '#A70A0E', // Primary red
-              'btn-primary-bg': '#164EB6',
-              'disabled-bg': '#C6CBD4',
-              'btn-disable-border': '#C6CBD4',
-              'btn-disable-color': '#FFFFFF',
-              'font-family': "'Open Sans', Helvetica, Arial, sans-serif",
-              'text-color': '#2D323B',
-              'text-color-secondary': '#515864',
-              // buttons
-              'btn-font-weight': '700',
-              'border-radius-base': '3px',
-              'btn-font-size-sm': '13px',
-              'btn-padding-horizontal-base': '18px',
-              'btn-height-base': '36px',
-              // header
-              'layout-header-background': '#011D4A',
-              'layout-trigger-background': '#011D4A',
-              'layout-body-background': '#FFFFFF',
-              'menu-item-active-bg': '#011D4A',
-              'menu-item-padding-horizontal': '12px',
-              'menu-highlight-color': '#011D4A',
-              'menu-dark-color': '#FFFFFF',
-              'layout-header-color': '#FFFFFF',
-              'layout-header-padding': '0 24px',
-              'menu-item-font-size': '16px',
-              'layout-header-height': '54px',
-              'menu-dark-item-active-bg': '#011D4A',
-              // pagination
-              'pagination-item-size': '18px',
-              'pagination-item-size-sm': '18px',
-              // dropdown
-              'menu-item-group-title-color': '#515864',
-              'menu-item-color': '#515864',
-              'menu-item-group-title-font-size': '1.3rem',
-              'dropdown-font-size': '1.3rem',
-              'dropdown-line-height': '1.8rem',
-              'dropdown-vertical-padding': '8px',
-              'control-padding-horizontal': '24px',
-              // table
-              'table-header-color': '#2D323B',
-              'table-selected-row-bg': '#F3F5F7',
-              'table-row-hover-bg': '#F3F5F7',
-              'table-font-size': '13px',
-              'table-header-bg': '@component-background',
-              'table-padding-vertical': '7px',
-              'table-border-color': '#F3F5F7'
-              // layout (left)
-            },
+            modifyVars,
             javascriptEnabled: true,
           }
         },
