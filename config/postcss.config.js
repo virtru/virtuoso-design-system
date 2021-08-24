@@ -28,6 +28,6 @@ module.exports = {
     // }),
   ],
   extensions: ['.css', '.scss', '.less'],
-  use: ['sass', ['less', { javascriptEnabled: true, modifyVars }]],
+  use: [['less', { javascriptEnabled: true, modifyVars }]],
   extract: true,
 };
