@@ -3,6 +3,7 @@
 // const postcssImport = require('postcss-import');
 // const postcssCustomProperties = require('postcss-custom-properties');
 // const postcssCustomMedia = require('postcss-custom-media');
+const modifyVars = require('../lib/styles/antd');
 
 module.exports = {
   autoModules: false,
@@ -26,15 +27,7 @@ module.exports = {
     //   ],
     // }),
   ],
-  use: [
-    [
-      'sass',
-      'less',
-      {
-        javascriptEnabled: true,
-        // modifyVars: themeVariables,
-      },
-    ],
-  ],
+  extensions: ['.css', '.scss', '.less'],
+  use: ['sass', ['less', { javascriptEnabled: true, modifyVars }]],
   extract: true,
 };
