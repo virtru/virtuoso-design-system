@@ -9,23 +9,6 @@ module.exports = async ({ config }) => {
     extensions: ['.js', '.jsx', '.css', '.png', '.jpg', '.gif', '.jpeg', '.ts', '.tsx'],
   };
 
-  config.externals = {
-    react: {
-      root: 'React',
-      commonjs2: 'react',
-      commonjs: 'react',
-      amd: 'react',
-      umd: 'react',
-    },
-    'react-dom': {
-      root: 'ReactDOM',
-      commonjs2: 'react-dom',
-      commonjs: 'react-dom',
-      amd: 'react-dom',
-      umd: 'react-dom',
-    },
-  };
-
   config.module.rules = config.module.rules
     .filter(rule => {
       if (rule && rule.test && typeof rule.test.test === 'function') {
