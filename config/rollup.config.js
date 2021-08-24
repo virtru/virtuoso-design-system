@@ -15,10 +15,18 @@ const postcssConfig = require('./postcss.config');
 
 module.exports = {
   input: 'lib/index.js',
-  output: {
-    file: 'dist/index.js',
-    format: 'cjs',
-  },
+  output: [
+    {
+      file: 'dist/bundle.esm.js',
+      format: 'esm',
+      sourcemap: true,
+    },
+    {
+      file: 'dist/bundle.cjs.js',
+      format: 'cjs',
+      sourcemap: true,
+    },
+  ],
   external: ['react', 'react-proptypes'],
   plugins: [
     nodeResolve(),

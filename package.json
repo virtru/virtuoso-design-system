@@ -4,6 +4,7 @@
   "description": "A set of reusable elements that enable Virtru designers and Virtru engineers to create consistent Virtru products.",
   "author": "Virtru CI <ci@virtru.com>",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "files": [
     "/dist"
   ],
