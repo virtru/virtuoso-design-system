@@ -43,14 +43,14 @@ module.exports = {
     json(),
     peerDepsExternal(),
     less({
-      extensions: ['.css', '.less'],
+      extensions: ['.less'],
       inject: true,
       insert: true,
       include: [
         '**/*.less',
-        '**/*.css',
-        'node_modules/antd',
-        'node_modules/antd/dist/antd.css',
+        // '**/*.css',
+        // 'node_modules/antd',
+        // 'node_modules/antd/dist/antd.css',
         'node_modules/antd/dist/antd.less',
         'node_modules/antd/lib/style/**/*.less',
       ],
