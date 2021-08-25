@@ -72,7 +72,7 @@ module.exports = {
         { src: 'lib/styles/build/js/design_tokens.js', dest: 'dist/build/js' },
         { src: 'lib/styles/build/**/*.{css,js}', dest: 'dist' },
         { src: 'lib/styles/typography/fonts/', dest: 'dist' },
-        { src: 'lib/styles/typography/css/*.css', dest: 'dist/font-style' },
+        { src: 'lib/styles/typography/css/*.css', dest: 'dist' },
       ],
     }),
   ],
