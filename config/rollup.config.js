@@ -49,7 +49,7 @@ module.exports = {
         '**/*.less',
         '**/*.css',
         'node_modules/antd/dist/antd.css',
-        'node_modules/antd/dist/antd.css',
+        'node_modules/antd/dist/antd.less',
         'node_modules/antd/lib/style/**/*.less',
       ],
       option: { javascriptEnabled: true, modifyVars },
