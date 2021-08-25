@@ -1,4 +1,5 @@
 import less from 'rollup-plugin-less';
+import * as modifyVars from '../lib/styles/antd';
 
 // const path = require('path');
 // const alias = require('@rollup/plugin-alias');
@@ -12,7 +13,6 @@ const peerDepsExternal = require('rollup-plugin-peer-deps-external');
 // const copy = require('rollup-plugin-copy');
 const json = require('@rollup/plugin-json');
 const postcssConfig = require('./postcss.config');
-const modifyVars = require('../lib/styles/antd');
 
 module.exports = {
   input: 'lib/index.js',
