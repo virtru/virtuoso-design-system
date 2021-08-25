@@ -37,6 +37,7 @@ module.exports = {
     },
     // Make antd library styles to be external to current project
     /^antd[.]*/,
+    'lib/styles/antd.js',
   ],
   plugins: [
     nodeResolve(),
