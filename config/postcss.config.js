@@ -28,6 +28,9 @@ module.exports = {
     // }),
   ],
   extensions: ['.css', '.scss', '.less'],
-  use: [['css', { javascriptEnabled: true, modifyVars }]],
+  use: [
+    ['css', { javascriptEnabled: true, modifyVars }],
+    ['less', { javascriptEnabled: true, modifyVars }],
+  ],
   extract: true,
 };
