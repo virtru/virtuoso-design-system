@@ -27,7 +27,15 @@ module.exports = {
       sourcemap: true,
     },
   ],
-  external: ['react', 'react-proptypes'],
+  external: [
+    {
+      react: 'react',
+      'react-dom': 'react-dom',
+      classnames: 'classnames',
+    },
+    // Make antd library styles to be external to current project
+    /^antd[.]*/,
+  ],
   plugins: [
     nodeResolve(),
     json(),
