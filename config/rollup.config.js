@@ -33,6 +33,7 @@ module.exports = {
       react: 'react',
       'react-dom': 'react-dom',
       classnames: 'classnames',
+      antd: 'antd',
     },
     // Make antd library styles to be external to current project
     /^antd[.]*/,
@@ -48,6 +49,7 @@ module.exports = {
       include: [
         '**/*.less',
         '**/*.css',
+        'node_modules/antd',
         'node_modules/antd/dist/antd.css',
         'node_modules/antd/dist/antd.less',
         'node_modules/antd/lib/style/**/*.less',
