@@ -1,6 +1,4 @@
 import less from 'rollup-plugin-less';
-import * as modifyVars from '../lib/styles/antd';
-
 // const path = require('path');
 // const alias = require('@rollup/plugin-alias');
 const { nodeResolve } = require('@rollup/plugin-node-resolve');
@@ -10,8 +8,9 @@ const postcss = require('rollup-plugin-postcss');
 const url = require('@rollup/plugin-url');
 const peerDepsExternal = require('rollup-plugin-peer-deps-external');
 // const reactSvg = require('rollup-plugin-react-svg');
-// const copy = require('rollup-plugin-copy');
+const copy = require('rollup-plugin-copy');
 const json = require('@rollup/plugin-json');
+const modifyVars = require('../lib/styles/antd');
 const postcssConfig = require('./postcss.config');
 
 module.exports = {
@@ -67,12 +66,13 @@ module.exports = {
     commonjs({
       include: 'node_modules/**',
     }),
-    // copy({
-    //   targets: [
-    //     { src: 'lib/styles/build/**/*.{css,js}', dest: 'dist' },
-    //     { src: 'lib/styles/typography/fonts/', dest: 'dist' },
-    //     { src: 'lib/styles/typography/css/*.css', dest: 'dist/font-style' },
-    //   ],
-    // }),
+    copy({
+      targets: [
+        { src: 'lib/styles/antd.js', dest: 'dist' },
+        { src: 'lib/styles/build/**/*.{css,js}', dest: 'dist' },
+        { src: 'lib/styles/typography/fonts/', dest: 'dist' },
+        { src: 'lib/styles/typography/css/*.css', dest: 'dist/font-style' },
+      ],
+    }),
   ],
 };
