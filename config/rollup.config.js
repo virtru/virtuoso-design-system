@@ -12,6 +12,7 @@ const peerDepsExternal = require('rollup-plugin-peer-deps-external');
 // const copy = require('rollup-plugin-copy');
 const json = require('@rollup/plugin-json');
 const postcssConfig = require('./postcss.config');
+const modifyVars = require('../lib/styles/antd');
 
 module.exports = {
   input: 'lib/index.js',
@@ -41,6 +42,8 @@ module.exports = {
     json(),
     peerDepsExternal(),
     less({
+      extensions: ['.css', '.less'],
+      inject: true,
       insert: true,
       include: [
         '**/*.less',
@@ -49,9 +52,11 @@ module.exports = {
         'node_modules/antd/dist/antd.css',
         'node_modules/antd/lib/style/**',
       ],
+      option: { javascriptEnabled: true, modifyVars },
     }),
     postcss(postcssConfig),
     babel({
+      babelHelpers: 'bundled',
       plugins: [['import', { libraryName: 'antd', style: true }]],
       exclude: ['node_modules/**'],
     }),
