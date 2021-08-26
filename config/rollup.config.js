@@ -8,6 +8,7 @@ const postcss = require('rollup-plugin-postcss');
 const url = require('@rollup/plugin-url');
 const peerDepsExternal = require('rollup-plugin-peer-deps-external');
 const reactSvg = require('rollup-plugin-react-svg');
+import svgr from '@svgr/rollup';
 const copy = require('rollup-plugin-copy');
 const json = require('@rollup/plugin-json');
 const modifyVars = require('../lib/styles/antd');
@@ -66,13 +67,14 @@ module.exports = {
     commonjs({
       include: 'node_modules/**',
     }),
-    reactSvg({
-      // svgo options
-      svgo: {
-        plugins: [{ removeTitle: false }, { cleanupIDs: false }], // passed to svgo
-        multipass: true,
-      },
-    }),
+    // reactSvg({
+    //   // svgo options
+    //   svgo: {
+    //     plugins: [{ removeTitle: false }, { cleanupIDs: false }], // passed to svgo
+    //     multipass: true,
+    //   },
+    // }),
+    svgr(),
     copy({
       targets: [
         { src: 'lib/styles/antd.js', dest: 'dist' },
