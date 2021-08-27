@@ -2,42 +2,59 @@ import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Layout, Menu, Breadcrumb, Dropdown, Button } from 'antd';
-// import { default as Header } from '../../../lib/components/layout/header';
+import { DownOutlined, UserOutlined } from '@ant-design/icons';
 import components from '@';
+import * as tokens from '../../../lib/styles/build/js/design_tokens';
 
 const { Header } = components;
 const { Content, Footer } = Layout;
+const { vds } = tokens;
 
 function handleMenuClick(e) {
   message.info('Click on menu item.');
   console.log('click', e);
 }
 
-// const menu = (
-//   <Menu onClick={handleMenuClick} defaultOpenKeys={['users']} mode="inline">
-//     <Menu.ItemGroup
-//       key="users"
-//       title="Signed-in Users"
-//       style={{ fontSize: '1.3rem', color: 'black' }}
-//     >
-//       <Menu.Item key="1" icon={<UserOutlined />}>
-//         abc@virtru.com
-//       </Menu.Item>
-//       <Menu.Item key="2" icon={<UserOutlined />}>
-//         xyz@virtru.com
-//       </Menu.Item>
-//     </Menu.ItemGroup>
-//     <Menu.Divider />
-//     <Menu.Item key="3">Sign in as different user</Menu.Item>
-//     <Menu.Item key="4">Sign out</Menu.Item>
-//   </Menu>
-// );
+const menu = (
+  <Menu onClick={handleMenuClick} defaultOpenKeys={['users']} mode="inline">
+    <Menu.ItemGroup
+      key="users"
+      title="Signed-in Users"
+      style={{ fontSize: '1.3rem', color: 'black' }}
+    >
+      <Menu.Item key="1" icon={<UserOutlined />}>
+        abc@virtru.com
+      </Menu.Item>
+      <Menu.Item key="2" icon={<UserOutlined />}>
+        xyz@virtru.com
+      </Menu.Item>
+    </Menu.ItemGroup>
+    <Menu.Divider />
+    <Menu.Item key="3">Sign in as different user</Menu.Item>
+    <Menu.Item key="4">Sign out</Menu.Item>
+  </Menu>
+);
 
 storiesOf('virtru/layout', module).add(
   'top',
   () => (
     <Layout className="layout">
-      <Header appName="Control Center" />
+      <Header appName="Control Center">
+        <Dropdown overlay={menu} trigger={['click']}>
+          <Button
+            ghost
+            style={{
+              border: '0',
+              color: vds.color.white.value,
+              fontWeight: vds.font.weight.semibold.value,
+            }}
+          >
+            <UserOutlined />
+            ksuchak@virtru.com
+            <DownOutlined />
+          </Button>
+        </Dropdown>
+      </Header>
       <Content style={{ padding: '0 50px' }}>
         <Breadcrumb style={{ margin: '16px 0' }}>
           <Breadcrumb.Item>Home</Breadcrumb.Item>

@@ -1,13 +1,13 @@
 import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { Menu, Dropdown, Button, message, Space, Tooltip } from 'antd';
+import { Menu, Dropdown, message, Space, Tooltip } from 'antd';
 import { DownOutlined, UserOutlined } from '@ant-design/icons';
 
 const { SubMenu } = Menu;
 
-// import components from '@';
-// const { Menu, Dropdown, Button, message, Space, Tooltip, Tag } = components;
+import components from '@';
+const { Button } = components;
 
 function handleButtonClick(e) {
   message.info('Click on left button.');
