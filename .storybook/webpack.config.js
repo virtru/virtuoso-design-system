@@ -37,7 +37,7 @@ module.exports = async ({ config }) => {
             sourceMap: true,
             importLoaders: 1,
             modules: true,
-            localIdentName: '[name]__[local]--[hash:base64:5]',
+            localIdentName: '[name]__[local]',
           },
         },
         {

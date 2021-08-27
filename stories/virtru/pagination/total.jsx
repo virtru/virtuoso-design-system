@@ -1,9 +1,7 @@
 import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import components from '@';
-
-const { Pagination } = components;
+import { Pagination } from 'antd';
 
 storiesOf('virtru/pagination', module).add('total', () => 
   <>

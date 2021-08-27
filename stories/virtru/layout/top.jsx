@@ -3,10 +3,9 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Layout, Menu, Breadcrumb, Dropdown, Button } from 'antd';
 import { DownOutlined, UserOutlined } from '@ant-design/icons';
-import components from '@';
 import * as tokens from '../../../lib/styles/build/js/design_tokens';
+import { Header } from '../../../lib/index';
 
-const { Header } = components;
 const { Content, Footer } = Layout;
 const { vds } = tokens;
 
