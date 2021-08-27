@@ -6,6 +6,9 @@ import { DownOutlined, UserOutlined } from '@ant-design/icons';
 
 const { SubMenu } = Menu;
 
+// import components from '@';
+// const { Menu, Dropdown, Button, message, Space, Tooltip, Tag } = components;
+
 function handleButtonClick(e) {
   message.info('Click on left button.');
   console.log('click left button', e);

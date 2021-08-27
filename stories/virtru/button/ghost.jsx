@@ -1,7 +1,9 @@
 import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { Button } from 'antd';
+import components from '@';
+
+const { Button } = components;
 
 storiesOf('virtru/button', module).add('ghost', () => 
   <div className="site-button-ghost-wrapper">
