@@ -1,4 +1,5 @@
 import less from 'rollup-plugin-less';
+import svgr from '@svgr/rollup';
 // const path = require('path');
 // const alias = require('@rollup/plugin-alias');
 const { nodeResolve } = require('@rollup/plugin-node-resolve');
@@ -8,7 +9,6 @@ const postcss = require('rollup-plugin-postcss');
 const url = require('@rollup/plugin-url');
 const peerDepsExternal = require('rollup-plugin-peer-deps-external');
 const reactSvg = require('rollup-plugin-react-svg');
-import svgr from '@svgr/rollup';
 const copy = require('rollup-plugin-copy');
 const json = require('@rollup/plugin-json');
 const modifyVars = require('../lib/styles/antd');
@@ -82,6 +82,12 @@ module.exports = {
         { src: 'lib/styles/build/**/*.{css,js}', dest: 'dist' },
         { src: 'lib/styles/typography/fonts/', dest: 'dist' },
         { src: 'lib/styles/typography/css/*.css', dest: 'dist' },
+        {
+          src: 'lib/components/**/*.js',
+          dest: 'dist',
+          rename: (_, extension, fullPath) =>
+            `${fullPath.substr(fullPath.indexOf('components/'))}`,
+        },
       ],
     }),
   ],
