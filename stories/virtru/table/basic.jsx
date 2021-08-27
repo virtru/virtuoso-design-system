@@ -2,9 +2,9 @@ import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Tag, Space } from 'antd';
-import components from '@';
+import { Table } from '../../../lib/index';
 
-const { Table } = components;
+// const { Table } = components;
 
 const columns = [
   {

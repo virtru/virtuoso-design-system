@@ -2,9 +2,10 @@ import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Layout, Menu, Breadcrumb, Dropdown, Button } from 'antd';
-import { default as Header } from '../../../lib/components/layout/header';
+// import { default as Header } from '../../../lib/components/layout/header';
+import components from '@';
 
-console.log('header', Header);
+const { Header } = components;
 const { Content, Footer } = Layout;
 
 function handleMenuClick(e) {

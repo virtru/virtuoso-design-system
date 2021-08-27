@@ -2,6 +2,9 @@ const path = require('path');
 const modifyVars = require('../lib/styles/antd');
 
 module.exports = async ({ config }) => {
+  // config.optimization = {
+  //   sideEffects: true,
+  // };
   config.resolve = {
     alias: {
       '@': path.resolve(__dirname, '../lib'),
