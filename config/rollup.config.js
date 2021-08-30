@@ -1,14 +1,12 @@
 import less from 'rollup-plugin-less';
 import svgr from '@svgr/rollup';
-// const path = require('path');
-// const alias = require('@rollup/plugin-alias');
+
 const { nodeResolve } = require('@rollup/plugin-node-resolve');
 const { babel } = require('@rollup/plugin-babel');
 const commonjs = require('@rollup/plugin-commonjs');
 const postcss = require('rollup-plugin-postcss');
 const url = require('@rollup/plugin-url');
 const peerDepsExternal = require('rollup-plugin-peer-deps-external');
-const reactSvg = require('rollup-plugin-react-svg');
 const copy = require('rollup-plugin-copy');
 const json = require('@rollup/plugin-json');
 const modifyVars = require('../lib/styles/antd');
@@ -49,9 +47,6 @@ module.exports = {
       insert: true,
       include: [
         '**/*.less',
-        // '**/*.css',
-        // 'node_modules/antd',
-        // 'node_modules/antd/dist/antd.css',
         'node_modules/antd/dist/antd.less',
         'node_modules/antd/lib/style/**/*.less',
       ],
@@ -67,13 +62,6 @@ module.exports = {
     commonjs({
       include: 'node_modules/**',
     }),
-    // reactSvg({
-    //   // svgo options
-    //   svgo: {
-    //     plugins: [{ removeTitle: false }, { cleanupIDs: false }], // passed to svgo
-    //     multipass: true,
-    //   },
-    // }),
     svgr(),
     copy({
       targets: [
@@ -85,8 +73,7 @@ module.exports = {
         {
           src: 'lib/components/**/*.js',
           dest: 'dist',
-          rename: (_, extension, fullPath) =>
-            `${fullPath.substr(fullPath.indexOf('components/'))}`,
+          rename: (_, __, fullPath) => `${fullPath.substr(fullPath.indexOf('components/'))}`,
         },
       ],
     }),
