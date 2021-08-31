@@ -66,7 +66,10 @@ module.exports = {
     copy({
       targets: [
         { src: 'lib/styles/antd.js', dest: 'dist/x' },
-        { src: 'lib/styles/build/js/design_tokens.js', dest: 'dist/x/build/js' },
+        {
+          src: 'lib/styles/build/js/design_tokens.js',
+          dest: ['dist/x/build/js', 'styles/build/js'],
+        },
         { src: 'lib/styles/build/**/*.{css,js}', dest: 'dist/x' },
         { src: 'lib/styles/typography/fonts/', dest: 'dist/x' },
         { src: 'lib/styles/typography/css/*.css', dest: 'dist/x' },
