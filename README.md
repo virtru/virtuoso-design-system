@@ -82,7 +82,7 @@ A static version of the Storybook docs are generated automatically before we pub
 
 
 
-## Development &  Testing
+## Development & Testing & Updating
 
 To develop new components make sure to:
 
