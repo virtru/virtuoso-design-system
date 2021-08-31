@@ -1,14 +1,14 @@
 import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { Table, Tag, Space } from 'antd';
+import { Table, Tag, Space } from '@';
 
 const columns = [
   {
     title: 'Name',
     dataIndex: 'name',
     key: 'name',
-    render: text => <a>{text}</a>,
+    render: (text) => <a>{text}</a>,
   },
   {
     title: 'Age',
@@ -24,9 +24,9 @@ const columns = [
     title: 'Tags',
     key: 'tags',
     dataIndex: 'tags',
-    render: tags => (
+    render: (tags) => (
       <>
-        {tags.map(tag => {
+        {tags.map((tag) => {
           let color = tag.length > 5 ? 'geekblue' : 'green';
           if (tag === 'loser') {
             color = 'volcano';
@@ -52,8 +52,6 @@ const columns = [
   },
 ];
 
-columns.forEach(x => x.title = <span style={{ fontWeight: '600' }}>{x.title}</span>);
-
 const data = [
   {
     key: '1',
@@ -78,5 +76,17 @@ const data = [
   },
 ];
 
-storiesOf('virtru/table', module).add('basic', () => <Table columns={columns} dataSource={data} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Simple table with actions.</p></>) } });
+storiesOf('virtru/table', module).add(
+  'basic',
+  () => <Table columns={columns} dataSource={data} x/>,
+  {
+    docs: {
+      page: () => (
+        <>
+          <h1 id="enus">en-US</h1>
+          <p>Simple table with actions.</p>
+        </>
+      ),
+    },
+  },
+);
