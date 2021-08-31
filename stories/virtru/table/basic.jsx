@@ -1,9 +1,7 @@
 import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import components from '@';
-
-const { Table, Tag, Space } = components;
+import { Table, Tag, Space } from '@';
 
 const columns = [
   {

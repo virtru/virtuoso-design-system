@@ -1,14 +1,10 @@
 import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { Layout, Dropdown, Breadcrumb } from 'antd';
 import { DownOutlined, UserOutlined } from '@ant-design/icons';
+import { Layout, Dropdown, Breadcrumb, Header, Button, Menu } from '@';
 import * as tokens from '../../../lib/styles/build/js/design_tokens';
-import components from '@';
 
-const { Header, Button, Menu } = components;
-
-const { Content, Footer } = Layout;
 const { vds } = tokens;
 
 function handleMenuClick(e) {
@@ -56,15 +52,6 @@ storiesOf('virtru/layout', module).add(
           </Button>
         </Dropdown>
       </Header>
-      <Content style={{ padding: '0 50px' }}>
-        <Breadcrumb style={{ margin: '16px 0' }}>
-          <Breadcrumb.Item>Home</Breadcrumb.Item>
-          <Breadcrumb.Item>List</Breadcrumb.Item>
-          <Breadcrumb.Item>App</Breadcrumb.Item>
-        </Breadcrumb>
-        <div className="site-layout-content">Content</div>
-      </Content>
-      <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
     </Layout>
   ),
   {

@@ -1,11 +1,8 @@
 import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { Dropdown } from 'antd';
+import { Button, Menu, Space, Tooltip, Dropdown } from '@';
 import { DownOutlined, UserOutlined } from '@ant-design/icons';
-import components from '@';
-
-const { Button, Menu, Space, Tooltip } = components;
 
 function handleButtonClick(e) {
   alert('Click on left button.');
