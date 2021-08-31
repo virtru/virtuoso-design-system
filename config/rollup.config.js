@@ -16,12 +16,12 @@ module.exports = {
   input: 'lib/index.js',
   output: [
     {
-      file: 'dist/bundle.esm.js',
+      file: 'dist/x/bundle.esm.js',
       format: 'esm',
       sourcemap: true,
     },
     {
-      file: 'dist/bundle.cjs.js',
+      file: 'dist/x/bundle.cjs.js',
       format: 'cjs',
       sourcemap: true,
     },
@@ -65,14 +65,14 @@ module.exports = {
     svgr(),
     copy({
       targets: [
-        { src: 'lib/styles/antd.js', dest: 'dist' },
-        { src: 'lib/styles/build/js/design_tokens.js', dest: 'dist/build/js' },
-        { src: 'lib/styles/build/**/*.{css,js}', dest: 'dist' },
-        { src: 'lib/styles/typography/fonts/', dest: 'dist' },
-        { src: 'lib/styles/typography/css/*.css', dest: 'dist' },
+        { src: 'lib/styles/antd.js', dest: 'dist/x' },
+        { src: 'lib/styles/build/js/design_tokens.js', dest: 'dist/x/build/js' },
+        { src: 'lib/styles/build/**/*.{css,js}', dest: 'dist/x' },
+        { src: 'lib/styles/typography/fonts/', dest: 'dist/x' },
+        { src: 'lib/styles/typography/css/*.css', dest: 'dist/x' },
         {
           src: 'lib/components/**/*.js',
-          dest: 'dist',
+          dest: 'dist/x',
           rename: (_, __, fullPath) => `${fullPath.substr(fullPath.indexOf('components/'))}`,
         },
       ],
