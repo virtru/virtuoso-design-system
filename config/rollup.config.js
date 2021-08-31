@@ -55,7 +55,7 @@ module.exports = {
     postcss(postcssConfig),
     babel({
       babelHelpers: 'bundled',
-      plugins: [['import', { libraryName: 'antd', style: true }]],
+      plugins: [['import', { libraryName: 'antd' }]],
       exclude: ['node_modules/**'],
     }),
     url(),
