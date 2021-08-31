@@ -1,3 +1,19 @@
+# v2.0.0 (Tue Aug 31 2021)
+
+#### 💥 Breaking Change
+
+- feat: add antd (CCR-408) [#204](https://github.com/virtru/virtuoso-design-system/pull/204) (okorobka@virtru.com [@dillonthompson](https://github.com/dillonthompson) [@ivanovSPvirtru](https://github.com/ivanovSPvirtru) sivanov [@suchak1](https://github.com/suchak1))
+
+#### Authors: 5
+
+- [@ivanovSPvirtru](https://github.com/ivanovSPvirtru)
+- Alex Korobko (okorobka@virtru.com)
+- Dillon Thompson ([@dillonthompson](https://github.com/dillonthompson))
+- Krish Suchak ([@suchak1](https://github.com/suchak1))
+- sivanov (sivanov)
+
+---
+
 # v1.21.1 (Mon May 03 2021)
 
 #### 🐛 Bug Fix
