@@ -1,10 +1,12 @@
 import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { Layout, Menu, Breadcrumb, Dropdown, Button } from 'antd';
+import { Layout, Dropdown, Breadcrumb } from 'antd';
 import { DownOutlined, UserOutlined } from '@ant-design/icons';
 import * as tokens from '../../../lib/styles/build/js/design_tokens';
-import { Header } from '../../../lib/index';
+import components from '@';
+
+const { Header, Button, Menu } = components;
 
 const { Content, Footer } = Layout;
 const { vds } = tokens;
