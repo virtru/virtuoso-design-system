@@ -1,7 +1,7 @@
 import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { Pagination } from 'antd';
+import { Pagination } from '@';
 
 storiesOf('virtru/pagination', module).add('total', () => 
   <>

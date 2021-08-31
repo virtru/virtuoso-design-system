@@ -1,7 +1,7 @@
 import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { Button } from 'antd';
+import { Button } from '@';
 
 storiesOf('virtru/button', module).add('danger', () => 
   <>

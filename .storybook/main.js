@@ -4,13 +4,10 @@ module.exports = {
   stories: [
     // Make Introduction appear first in list of stories.
     '../stories/Intro.stories.@(js|mdx)',
-    // Load stories in JS format
-    // Load stories in MDX format (@storybook/addon-docs)
-    '../stories/**/*.stories.@(js|mdx)',
-    // include antd stories
+    // // include antd stories
     '../stories/antd/*.@(js|mdx|ts|tsx)',
     '../stories/antd/**/*.@(ts|tsx|jsx)',
-    // include virtru stories
+    // // include virtru stories
     '../stories/virtru/*.@(js|mdx|ts|tsx)',
     '../stories/virtru/**/*.@(ts|tsx|jsx)',
   ],

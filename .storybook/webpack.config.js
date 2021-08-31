@@ -91,20 +91,9 @@ module.exports = async ({ config }) => {
     .concat({
       test: /\.svg$/,
       use: [
-        "babel-loader",
-        {
-          loader: "react-svg-loader",
-          options: {
-            svgo: {
-              plugins: [
-                { removeTitle: false },
-                { cleanupIDs: false },
-              ],
-              floatPrecision: 2
-            }
-          }
-        }
-      ]
+        '@svgr/webpack', 
+        'url-loader'
+      ],
     })
     .concat({
       test: /\.less$/i,
