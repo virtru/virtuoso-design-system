@@ -21,9 +21,49 @@ To run storybook locally:
 npm run storybook
 ```
 
+## Installing
 
+> 🚨 Virtuoso is still a work in progress and installation instructions are limited.
 
+### Create-React-App
 
+To install with [Create React App](https://create-react-app.dev) you will need to use [Craco](https://github.com/gsoft-inc/craco) (Create React App Configuration Override).
+
+1. Install Craco `npm i --save-dev craco`
+2. Install Craco-Antd plugin `npm i --save-dev craco-antd`
+3. Install Virtuoso and Antd `npm i --save virtuoso-design-system antd`
+4. Create a `.cracorc.js` and add the config
+5. Use Virtuoso
+
+Config:
+```js
+// .cracorc.js
+// https://github.com/gsoft-inc/craco/blob/master/packages/craco/README.md#configuration
+const { when, whenDev, whenProd, whenTest, ESLINT_MODES, POSTCSS_MODES } = require("@craco/craco");
+const CracoAntDesignPlugin = require("craco-antd");
+const VirtuosoTheme = require('virtuoso-design-system/dist/antd')
+
+module.exports = {
+  plugins: [
+    {
+      plugin: CracoAntDesignPlugin,
+      options: {
+        customizeTheme: VirtuosoTheme
+      }
+    }
+  ],
+} 
+```
+
+Example:
+```
+import React from 'react';
+import { Button } from 'virtuoso-design-system';
+
+export default function MyComponment() {
+ return <Button>Hi there!</Button>
+}
+```
 
 ## Design Tokens
 
