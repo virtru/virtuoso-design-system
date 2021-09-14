@@ -1,3 +1,15 @@
+# v3.0.1 (Tue Sep 14 2021)
+
+#### 🐛 Bug Fix
+
+- docs: explain install for create-react-apps [#207](https://github.com/virtru/virtuoso-design-system/pull/207) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 1
+
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v2.0.0 (Tue Aug 31 2021)
 
 #### 💥 Breaking Change
