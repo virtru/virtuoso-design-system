@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Layout } from 'virtuoso-design-system';
-import 'virtuoso-design-system/dist/styles.css';
+import { Layout } from './bundle.esm.js';
+import './bundle.esm.css';
 
 /* eslint-disable require-jsdoc */
 function SimpleApp() {
