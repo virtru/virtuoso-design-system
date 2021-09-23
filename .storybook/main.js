@@ -15,6 +15,7 @@ module.exports = {
     '../stories/antd/**/*.@(ts|tsx|jsx)',
   ],
   addons: [
+    '@storybook/addon-essentials',
     '@storybook/addon-controls',
     '@storybook/addon-actions',
     '@storybook/addon-a11y',
