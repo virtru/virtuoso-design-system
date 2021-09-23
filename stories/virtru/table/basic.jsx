@@ -78,7 +78,7 @@ const data = [
 
 storiesOf('virtru/table', module).add(
   'basic',
-  () => <Table columns={columns} dataSource={data} x/>,
+  () => <Table columns={columns} dataSource={data} />,
   {
     docs: {
       page: () => (

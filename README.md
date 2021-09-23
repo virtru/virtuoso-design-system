@@ -32,12 +32,12 @@ To install with [Create React App](https://create-react-app.dev) you will need t
 1. Install Craco `npm i --save-dev craco`
 2. Install Craco-Antd plugin `npm i --save-dev craco-antd`
 3. Install Virtuoso and Antd `npm i --save virtuoso-design-system antd`
-4. Create a `.cracorc.js` and add the config
+4. Create a `craco.config.js` and add the config
 5. Use Virtuoso
 
 Config:
 ```js
-// .cracorc.js
+// craco.config.js
 // https://github.com/gsoft-inc/craco/blob/master/packages/craco/README.md#configuration
 const { when, whenDev, whenProd, whenTest, ESLINT_MODES, POSTCSS_MODES } = require("@craco/craco");
 const CracoAntDesignPlugin = require("craco-antd");
@@ -53,6 +53,21 @@ module.exports = {
     }
   ],
 } 
+```
+Update the existing calls to react-scripts in the scripts section of your package.json file to use the craco CLI:
+
+```
+/* package.json */
+
+"scripts": {
+-   "start": "react-scripts start",
++   "start": "craco start",
+-   "build": "react-scripts build",
++   "build": "craco build"
+-   "test": "react-scripts test",
++   "test": "craco test"
+}
+
 ```
 
 Example:

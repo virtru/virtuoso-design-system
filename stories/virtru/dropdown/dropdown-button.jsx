@@ -30,7 +30,7 @@ const menu = (
   </Menu>
 );
 
-storiesOf('virtru/dropdown', module).add('dropdown-button', () => 
+storiesOf('virtru/dropdown', module).add('dropdown-button', () =>
   <Space wrap>
     <Dropdown.Button onClick={handleButtonClick} overlay={menu}>
       Dropdown
@@ -64,6 +64,18 @@ storiesOf('virtru/dropdown', module).add('dropdown-button', () =>
     <DownOutlined />
     </Button>
     </Dropdown>
+    <Menu activeKey='/dashboard/settings' selectedKeys={[ '/dashboard/settings' ]} mode="inline">
+      <Menu.Item key="#/email">
+        <span >Email</span>
+      </Menu.Item>
+
+      <Menu.Item key="/dashboard/settings">
+        <span >Settings</span>
+      </Menu.Item>
+      <Menu.Item key="/dashboard/audit">
+        <span >Audit</span>
+      </Menu.Item>
+    </Menu>
   </Space>,
   { docs: { page: () => (<><h1 id="enus">en-US</h1>
 <p>A button is on the left, and a related functional menu is on the right. You can set the icon property to modify the icon of right.</p></>) } });
