@@ -67,5 +67,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/Input', module).add('focus', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Focus with additional option.</p></>) } });
+storiesOf('Components/Ant Design/Input', module).add('focus', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input/" target="_blank">
+                  documentation on Input component
+                </a>.
+              </>
+            ) }
+        });

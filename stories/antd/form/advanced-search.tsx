@@ -71,11 +71,20 @@ const AdvancedSearchForm = () => {
   );
 };
 
-storiesOf('antd/form', module).add('advanced-search', () => 
+storiesOf('Components/Ant Design/Form', module).add('advanced-search', () => 
   <div>
     <AdvancedSearchForm />
     <div className="search-result-list">Search Result List</div>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Three columns layout is often used for advanced searching of data table.</p>
-<p>Because the width of label is not fixed, you may need to adjust it by customizing its style.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

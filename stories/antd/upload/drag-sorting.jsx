@@ -121,5 +121,15 @@ const DragSortingUpload = () => {
   );
 };
 
-storiesOf('antd/upload', module).add('drag-sorting', () => <DragSortingUpload />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>By using <code>itemRender</code>, we can integrate upload with react-dnd to implement drag sorting of uploadList.</p></>) } });
+storiesOf('Components/Ant Design/Upload', module).add('drag-sorting', () => <DragSortingUpload />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/upload/" target="_blank">
+                  documentation on Upload component
+                </a>.
+              </>
+            ) }
+        });

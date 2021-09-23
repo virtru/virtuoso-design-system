@@ -12,7 +12,7 @@ function preventDefault(e) {
   console.log('Clicked! But prevent default.');
 }
 
-storiesOf('antd/tag', module).add('basic', () => 
+storiesOf('Components/Ant Design/Tag', module).add('basic', () => 
   <>
     <Tag>Tag 1</Tag>
     <Tag>
@@ -25,5 +25,15 @@ storiesOf('antd/tag', module).add('basic', () =>
       Prevent Default
     </Tag>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Usage of basic Tag, and it could be closable by set <code>closable</code> property. Closable Tag supports <code>onClose</code> events.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tag/" target="_blank">
+                  documentation on Tag component
+                </a>.
+              </>
+            ) }
+        });

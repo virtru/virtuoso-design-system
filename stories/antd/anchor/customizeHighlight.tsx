@@ -7,7 +7,7 @@ const { Link } = Anchor;
 
 const getCurrentAnchor = () => '#components-anchor-demo-static';
 
-storiesOf('antd/anchor', module).add('customizeHighlight', () => 
+storiesOf('Components/Ant Design/Anchor', module).add('customizeHighlight', () => 
   <Anchor affix={false} getCurrentAnchor={getCurrentAnchor}>
     <Link href="#components-anchor-demo-basic" title="Basic demo" />
     <Link href="#components-anchor-demo-static" title="Static demo" />
@@ -16,5 +16,15 @@ storiesOf('antd/anchor', module).add('customizeHighlight', () =>
       <Link href="#Link-Props" title="Link Props" />
     </Link>
   </Anchor>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Customize the anchor highlight.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/anchor/" target="_blank">
+                  documentation on Anchor component
+                </a>.
+              </>
+            ) }
+        });

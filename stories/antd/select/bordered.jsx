@@ -5,7 +5,7 @@ import { Select } from 'antd';
 
 const { Option } = Select;
 
-storiesOf('antd/select', module).add('bordered', () => 
+storiesOf('Components/Ant Design/Select', module).add('bordered', () => 
   <>
     <Select defaultValue="lucy" style={{ width: 120 }} bordered={false}>
       <Option value="jack">Jack</Option>
@@ -16,5 +16,15 @@ storiesOf('antd/select', module).add('bordered', () =>
       <Option value="lucy">Lucy</Option>
     </Select>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Bordered-less style component.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/select/" target="_blank">
+                  documentation on Select component
+                </a>.
+              </>
+            ) }
+        });

@@ -4,7 +4,7 @@ import React from 'react';
 import { Avatar } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
-storiesOf('antd/avatar', module).add('basic', () => 
+storiesOf('Components/Ant Design/Avatar', module).add('basic', () => 
   <>
     <div>
       <Avatar size={64} icon={<UserOutlined />} />
@@ -19,5 +19,15 @@ storiesOf('antd/avatar', module).add('basic', () =>
       <Avatar shape="square" size="small" icon={<UserOutlined />} />
     </div>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Three sizes and two shapes are available.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/avatar/" target="_blank">
+                  documentation on Avatar component
+                </a>.
+              </>
+            ) }
+        });

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Button } from '@';
 
-storiesOf('virtru/button', module).add('disabled', () => 
+storiesOf('Components/Button', module).add('disabled', () => 
   <>
     <Button type="primary">Primary</Button>
     <Button type="primary" disabled>

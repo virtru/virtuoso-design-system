@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Button } from '@';
 
-storiesOf('virtru/button', module).add('basic', () => 
+storiesOf('Components/Button', module).add('basic', () => 
   <>
     <Button type="primary">Label</Button>
     <Button>Default Button</Button>

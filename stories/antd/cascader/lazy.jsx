@@ -47,8 +47,15 @@ const LazyOptions = () => {
   return <Cascader options={options} loadData={loadData} onChange={onChange} changeOnSelect />;
 };
 
-storiesOf('antd/cascader', module).add('lazy', () => <LazyOptions />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Load options lazily with <code>loadData</code>.</p>
-<blockquote>
-  <p>Note: <code>loadData</code> cannot work with <code>showSearch</code>.</p>
-</blockquote></>) } });
+storiesOf('Components/Ant Design/Cascader', module).add('lazy', () => <LazyOptions />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/cascader/" target="_blank">
+                  documentation on Cascader component
+                </a>.
+              </>
+            ) }
+        });

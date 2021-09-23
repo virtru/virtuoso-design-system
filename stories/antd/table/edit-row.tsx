@@ -181,5 +181,15 @@ const EditableTable = () => {
   );
 };
 
-storiesOf('antd/table', module).add('edit-row', () => <EditableTable />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Table with editable rows.</p></>) } });
+storiesOf('Components/Ant Design/Table', module).add('edit-row', () => <EditableTable />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

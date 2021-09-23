@@ -43,5 +43,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/drawer', module).add('render-in-current', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Render in current dom. custom container, check getContainer.</p></>) } });
+storiesOf('Components/Ant Design/Drawer', module).add('render-in-current', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/drawer/" target="_blank">
+                  documentation on Drawer component
+                </a>.
+              </>
+            ) }
+        });

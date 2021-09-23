@@ -50,6 +50,15 @@ class ButtonSize extends React.Component {
   }
 }
 
-storiesOf('antd/button', module).add('size', () => <ButtonSize />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Ant Design supports a default button size as well as a large and small size.</p>
-<p>If a large or small button is desired, set the <code>size</code> property to either <code>large</code> or <code>small</code> respectively. Omit the <code>size</code> property for a button with the default size.</p></>) } });
+storiesOf('Components/Ant Design/Button', module).add('size', () => <ButtonSize />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/button/" target="_blank">
+                  documentation on Button component
+                </a>.
+              </>
+            ) }
+        });

@@ -76,5 +76,15 @@ const TimeRelatedForm = () => {
   );
 };
 
-storiesOf('antd/form', module).add('time-related-controls', () => <TimeRelatedForm />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The <code>value</code> of time-related components is a <code>moment</code> object, which we need to pre-process it before we submit to server.</p></>) } });
+storiesOf('Components/Ant Design/Form', module).add('time-related-controls', () => <TimeRelatedForm />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

@@ -85,5 +85,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/upload', module).add('upload-manually', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Upload files manually after <code>beforeUpload</code> returns <code>false</code>.</p></>) } });
+storiesOf('Components/Ant Design/Upload', module).add('upload-manually', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/upload/" target="_blank">
+                  documentation on Upload component
+                </a>.
+              </>
+            ) }
+        });

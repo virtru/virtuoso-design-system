@@ -44,5 +44,15 @@ const Complete: React.FC = () => {
   );
 };
 
-storiesOf('antd/auto-complete', module).add('basic', () => <Complete />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Basic Usage, set data source of autocomplete with <code>options</code> property.</p></>) } });
+storiesOf('Components/Ant Design/Auto Complete', module).add('basic', () => <Complete />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/auto-complete/" target="_blank">
+                  documentation on Auto Complete component
+                </a>.
+              </>
+            ) }
+        });

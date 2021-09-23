@@ -5,11 +5,21 @@ import { Steps } from 'antd';
 
 const { Step } = Steps;
 
-storiesOf('antd/steps', module).add('small-size', () => 
+storiesOf('Components/Ant Design/Steps', module).add('small-size', () => 
   <Steps size="small" current={1}>
     <Step title="Finished" />
     <Step title="In Progress" />
     <Step title="Waiting" />
   </Steps>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>By setting like this: <code>&lt;Steps size="small"&gt;</code>, you can get a mini version.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/steps/" target="_blank">
+                  documentation on Steps component
+                </a>.
+              </>
+            ) }
+        });

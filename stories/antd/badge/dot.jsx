@@ -4,7 +4,7 @@ import React from 'react';
 import { Badge } from 'antd';
 import { NotificationOutlined } from '@ant-design/icons';
 
-storiesOf('antd/badge', module).add('dot', () => 
+storiesOf('Components/Ant Design/Badge', module).add('dot', () => 
   <div>
     <Badge dot>
       <NotificationOutlined />
@@ -16,5 +16,15 @@ storiesOf('antd/badge', module).add('dot', () =>
       <a href="#">Link something</a>
     </Badge>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>This will simply display a red badge, without a specific count. If count equals 0, it won't display the dot.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/badge/" target="_blank">
+                  documentation on Badge component
+                </a>.
+              </>
+            ) }
+        });

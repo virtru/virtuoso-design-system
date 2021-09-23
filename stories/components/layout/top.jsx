@@ -32,7 +32,7 @@ const menu = (
   </Menu>
 );
 
-storiesOf('virtru/layout', module).add(
+storiesOf('Components/Layout/x', module).add(
   'top',
   () => (
     <Layout className="layout">

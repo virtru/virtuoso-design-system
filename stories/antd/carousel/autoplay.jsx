@@ -11,7 +11,7 @@ const contentStyle = {
   background: '#364d79',
 };
 
-storiesOf('antd/carousel', module).add('autoplay', () => 
+storiesOf('Components/Ant Design/Carousel', module).add('autoplay', () => 
   <Carousel autoplay>
     <div>
       <h3 style={contentStyle}>1</h3>
@@ -26,5 +26,15 @@ storiesOf('antd/carousel', module).add('autoplay', () =>
       <h3 style={contentStyle}>4</h3>
     </div>
   </Carousel>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Timing of scrolling to the next card/picture.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/carousel/" target="_blank">
+                  documentation on Carousel component
+                </a>.
+              </>
+            ) }
+        });

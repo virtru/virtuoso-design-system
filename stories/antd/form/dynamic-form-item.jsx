@@ -104,5 +104,15 @@ const DynamicFieldSet = () => {
   );
 };
 
-storiesOf('antd/form', module).add('dynamic-form-item', () => <DynamicFieldSet />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Add or remove form items dynamically. <code>add</code> function support config initial value.</p></>) } });
+storiesOf('Components/Ant Design/Form', module).add('dynamic-form-item', () => <DynamicFieldSet />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

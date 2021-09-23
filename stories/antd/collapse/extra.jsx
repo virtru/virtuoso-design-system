@@ -69,5 +69,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/collapse', module).add('extra', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>More than one panel can be expanded at a time, the first panel is initialized to be active in this case.</p></>) } });
+storiesOf('Components/Ant Design/Collapse', module).add('extra', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/collapse/" target="_blank">
+                  documentation on Collapse component
+                </a>.
+              </>
+            ) }
+        });

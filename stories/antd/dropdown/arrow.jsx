@@ -23,7 +23,7 @@ const menu = (
   </Menu>
 );
 
-storiesOf('antd/dropdown', module).add('arrow', () => 
+storiesOf('Components/Ant Design/Dropdown', module).add('arrow', () => 
   <>
     <Dropdown overlay={menu} placement="bottomLeft" arrow>
       <Button>bottomLeft</Button>
@@ -45,5 +45,15 @@ storiesOf('antd/dropdown', module).add('arrow', () =>
       <Button>topRight</Button>
     </Dropdown>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>You could display an arrow.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/dropdown/" target="_blank">
+                  documentation on Dropdown component
+                </a>.
+              </>
+            ) }
+        });

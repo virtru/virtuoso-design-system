@@ -94,5 +94,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/form', module).add('control-ref', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>We recommend use <code>Form.useForm</code> to create data control. If you are using class component, you can get it by <code>ref</code>.</p></>) } });
+storiesOf('Components/Ant Design/Form', module).add('control-ref', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

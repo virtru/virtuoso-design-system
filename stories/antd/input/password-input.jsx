@@ -4,7 +4,7 @@ import React from 'react';
 import { Input, Space } from 'antd';
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 
-storiesOf('antd/Input', module).add('password-input', () => 
+storiesOf('Components/Ant Design/Input', module).add('password-input', () => 
   <Space direction="vertical">
     <Input.Password placeholder="input password" />
     <Input.Password
@@ -12,5 +12,15 @@ storiesOf('antd/Input', module).add('password-input', () =>
       iconRender={visible => (visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />)}
     />
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Input type of password.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input/" target="_blank">
+                  documentation on Input component
+                </a>.
+              </>
+            ) }
+        });

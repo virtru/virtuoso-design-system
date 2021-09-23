@@ -41,9 +41,19 @@ const props = {
   },
 };
 
-storiesOf('antd/upload', module).add('upload-custom-action-icon', () => 
+storiesOf('Components/Ant Design/Upload', module).add('upload-custom-action-icon', () => 
   <Upload {...props}>
     <Button icon={<UploadOutlined />}>Upload</Button>
   </Upload>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use <code>showUploadList</code> for custom action icons of files.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/upload/" target="_blank">
+                  documentation on Upload component
+                </a>.
+              </>
+            ) }
+        });

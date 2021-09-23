@@ -24,5 +24,15 @@ const Demo: React.FC = () => {
   );
 };
 
-storiesOf('antd/affix', module).add('basic', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The simplest usage.</p></>) } });
+storiesOf('Components/Ant Design/Affix', module).add('basic', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/affix/" target="_blank">
+                  documentation on Affix component
+                </a>.
+              </>
+            ) }
+        });

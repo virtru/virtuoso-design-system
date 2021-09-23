@@ -23,5 +23,15 @@ const Uploader = () => {
   );
 };
 
-storiesOf('antd/upload', module).add('upload-png-only', () => <Uploader />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p><code>beforeUpload</code> only prevent upload behavior when return false or reject promise, the prevented file would still show in file list. Here is the example you can keep prevented files out of list by return <code>UPLOAD.LIST_IGNORE</code>.</p></>) } });
+storiesOf('Components/Ant Design/Upload', module).add('upload-png-only', () => <Uploader />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/upload/" target="_blank">
+                  documentation on Upload component
+                </a>.
+              </>
+            ) }
+        });

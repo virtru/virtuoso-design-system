@@ -139,6 +139,15 @@ class VirtualizedExample extends React.Component {
   }
 }
 
-storiesOf('antd/list', module).add('infinite-virtualized-load', () => <VirtualizedExample />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>An example of infinite list &amp; virtualized loading using <a href="https://github.com/bvaughn/react-virtualized">react-virtualized</a>. <a href="https://blog.jscrambler.com/optimizing-react-rendering-through-virtualization/">Learn more</a>.</p>
-<p><code>Virtualized</code> rendering is a technique to mount big sets of data. It reduces the amount of rendered DOM nodes by tracking and hiding whatever isn't currently visible.</p></>) } });
+storiesOf('Components/Ant Design/List', module).add('infinite-virtualized-load', () => <VirtualizedExample />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/list/" target="_blank">
+                  documentation on List component
+                </a>.
+              </>
+            ) }
+        });

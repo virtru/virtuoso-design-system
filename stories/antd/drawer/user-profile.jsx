@@ -154,5 +154,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/drawer', module).add('user-profile', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use Drawer to quickly preview details of an object, such as those in a list.</p></>) } });
+storiesOf('Components/Ant Design/Drawer', module).add('user-profile', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/drawer/" target="_blank">
+                  documentation on Drawer component
+                </a>.
+              </>
+            ) }
+        });

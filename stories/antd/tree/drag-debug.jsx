@@ -175,9 +175,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/tree', module).add('drag-debug', () => <Demo />, { docs: { page: () => (<><hr />
-<p>order: 98
-title:
-  zh-CN: Drag Debug
-  en-US: Drag Debug</p>
-<h2 id="debugtrue">debug: true</h2></>) } });
+storiesOf('Components/Ant Design/Tree', module).add('drag-debug', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tree/" target="_blank">
+                  documentation on Tree component
+                </a>.
+              </>
+            ) }
+        });

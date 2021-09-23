@@ -5,7 +5,7 @@ import { Steps, Divider } from 'antd';
 
 const { Step } = Steps;
 
-storiesOf('antd/steps', module).add('progress-dot', () => 
+storiesOf('Components/Ant Design/Steps', module).add('progress-dot', () => 
   <>
     <Steps progressDot current={1}>
       <Step title="Finished" description="This is a description." />
@@ -21,5 +21,15 @@ storiesOf('antd/steps', module).add('progress-dot', () =>
       <Step title="Waiting" description="This is a description." />
     </Steps>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Steps with progress dot style.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/steps/" target="_blank">
+                  documentation on Steps component
+                </a>.
+              </>
+            ) }
+        });

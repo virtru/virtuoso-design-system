@@ -55,5 +55,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/card', module).add('loading', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Shows a loading indicator while the contents of the card is being fetched.</p></>) } });
+storiesOf('Components/Ant Design/Card', module).add('loading', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/card/" target="_blank">
+                  documentation on Card component
+                </a>.
+              </>
+            ) }
+        });

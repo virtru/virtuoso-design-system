@@ -41,5 +41,15 @@ class OverlayVisible extends React.Component {
   }
 }
 
-storiesOf('antd/dropdown', module).add('overlay-visible', () => <OverlayVisible />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The default is to close the menu when you click on menu items, this feature can be turned off.</p></>) } });
+storiesOf('Components/Ant Design/Dropdown', module).add('overlay-visible', () => <OverlayVisible />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/dropdown/" target="_blank">
+                  documentation on Dropdown component
+                </a>.
+              </>
+            ) }
+        });

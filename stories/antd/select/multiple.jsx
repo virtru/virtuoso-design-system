@@ -14,7 +14,7 @@ function handleChange(value) {
   console.log(`selected ${value}`);
 }
 
-storiesOf('antd/select', module).add('multiple', () => 
+storiesOf('Components/Ant Design/Select', module).add('multiple', () => 
   <>
     <Select
       mode="multiple"
@@ -38,5 +38,15 @@ storiesOf('antd/select', module).add('multiple', () =>
       {children}
     </Select>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Multiple selection, selecting from existing items.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/select/" target="_blank">
+                  documentation on Select component
+                </a>.
+              </>
+            ) }
+        });

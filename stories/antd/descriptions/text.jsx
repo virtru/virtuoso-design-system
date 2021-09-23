@@ -35,7 +35,7 @@ const columns = [
     key: 'address',
   },
 ];
-storiesOf('antd/descriptions', module).add('text', () => 
+storiesOf('Components/Ant Design/Descriptions', module).add('text', () => 
   <Descriptions title="User Info" column={2}>
     <Descriptions.Item label="Product">Cloud Database</Descriptions.Item>
     <Descriptions.Item label={<div style={{ display: 'flex' }}>Billing Mode</div>}>
@@ -70,5 +70,15 @@ storiesOf('antd/descriptions', module).add('text', () =>
       <Table size="small" pagination={false} dataSource={dataSource} columns={columns} />
     </Descriptions.Item>
   </Descriptions>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Descriptions with border and background color.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/descriptions/" target="_blank">
+                  documentation on Descriptions component
+                </a>.
+              </>
+            ) }
+        });

@@ -46,5 +46,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/menu', module).add('horizontal', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Horizontal top navigation menu.</p></>) } });
+storiesOf('Components/Ant Design/Menu', module).add('horizontal', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/menu/" target="_blank">
+                  documentation on Menu component
+                </a>.
+              </>
+            ) }
+        });

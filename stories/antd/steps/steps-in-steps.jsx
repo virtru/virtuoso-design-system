@@ -35,5 +35,15 @@ const App = () => {
   );
 };
 
-storiesOf('antd/steps', module).add('steps-in-steps', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Test style of Steps inside Steps.</p></>) } });
+storiesOf('Components/Ant Design/Steps', module).add('steps-in-steps', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/steps/" target="_blank">
+                  documentation on Steps component
+                </a>.
+              </>
+            ) }
+        });

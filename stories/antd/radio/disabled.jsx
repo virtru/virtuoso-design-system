@@ -32,5 +32,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/radio', module).add('disabled', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Radio unavailable.</p></>) } });
+storiesOf('Components/Ant Design/Radio', module).add('disabled', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/radio/" target="_blank">
+                  documentation on Radio component
+                </a>.
+              </>
+            ) }
+        });

@@ -33,5 +33,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/popover', module).add('control', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use <code>visible</code> prop to control the display of the card.</p></>) } });
+storiesOf('Components/Ant Design/Popover', module).add('control', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/popover/" target="_blank">
+                  documentation on Popover component
+                </a>.
+              </>
+            ) }
+        });

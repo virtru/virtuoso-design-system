@@ -39,12 +39,21 @@ const menu = (
   </Menu>
 );
 
-storiesOf('antd/dropdown', module).add('menu-full', () => 
+storiesOf('Components/Ant Design/Dropdown', module).add('menu-full', () => 
   <Dropdown overlay={menu}>
     <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
       Hover to check menu style <DownOutlined />
     </a>
   </Dropdown>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>This demo was created for debugging Menu styles inside Dropdown.</p>
-<p><a href="https://github.com/ant-design/ant-design/pull/19150">#19150</a></p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/dropdown/" target="_blank">
+                  documentation on Dropdown component
+                </a>.
+              </>
+            ) }
+        });

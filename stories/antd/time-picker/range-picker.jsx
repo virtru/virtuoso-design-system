@@ -3,5 +3,15 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { TimePicker } from 'antd';
 
-storiesOf('antd/time-picker', module).add('range-picker', () => <TimePicker.RangePicker />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use time range picker with <code>TimePicker.RangePicker</code>.</p></>) } });
+storiesOf('Components/Ant Design/Time Picker', module).add('range-picker', () => <TimePicker.RangePicker />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/time-picker/" target="_blank">
+                  documentation on Time Picker component
+                </a>.
+              </>
+            ) }
+        });

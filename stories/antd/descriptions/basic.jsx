@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Descriptions } from 'antd';
 
-storiesOf('antd/descriptions', module).add('basic', () => 
+storiesOf('Components/Ant Design/Descriptions', module).add('basic', () => 
   <Descriptions title="User Info">
     <Descriptions.Item label="UserName">Zhou Maomao</Descriptions.Item>
     <Descriptions.Item label="Telephone">1810000000</Descriptions.Item>
@@ -13,5 +13,15 @@ storiesOf('antd/descriptions', module).add('basic', () =>
       No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China
     </Descriptions.Item>
   </Descriptions>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Simplest Usage.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/descriptions/" target="_blank">
+                  documentation on Descriptions component
+                </a>.
+              </>
+            ) }
+        });

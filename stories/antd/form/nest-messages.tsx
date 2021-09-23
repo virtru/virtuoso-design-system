@@ -52,5 +52,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/form', module).add('nest-messages', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p><code>name</code> prop support nest data structure. Customize validate message template with <code>validateMessages</code> or <code>message</code>. Ref <a href="https://github.com/react-component/field-form/blob/master/src/utils/messages.ts">here</a> about message template.</p></>) } });
+storiesOf('Components/Ant Design/Form', module).add('nest-messages', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

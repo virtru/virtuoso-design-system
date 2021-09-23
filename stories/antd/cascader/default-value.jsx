@@ -42,11 +42,21 @@ function onChange(value) {
   console.log(value);
 }
 
-storiesOf('antd/cascader', module).add('default-value', () => 
+storiesOf('Components/Ant Design/Cascader', module).add('default-value', () => 
   <Cascader
     defaultValue={['zhejiang', 'hangzhou', 'xihu']}
     options={options}
     onChange={onChange}
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Specifies default value by an array.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/cascader/" target="_blank">
+                  documentation on Cascader component
+                </a>.
+              </>
+            ) }
+        });

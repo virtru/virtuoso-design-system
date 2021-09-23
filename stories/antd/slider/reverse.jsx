@@ -24,5 +24,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/slider', module).add('reverse', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Using <code>reverse</code> to render slider reversely.</p></>) } });
+storiesOf('Components/Ant Design/Slider', module).add('reverse', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/slider/" target="_blank">
+                  documentation on Slider component
+                </a>.
+              </>
+            ) }
+        });

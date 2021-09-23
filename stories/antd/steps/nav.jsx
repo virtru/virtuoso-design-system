@@ -73,5 +73,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/steps', module).add('nav', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Navigation steps.</p></>) } });
+storiesOf('Components/Ant Design/Steps', module).add('nav', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/steps/" target="_blank">
+                  documentation on Steps component
+                </a>.
+              </>
+            ) }
+        });

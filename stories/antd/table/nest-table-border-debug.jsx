@@ -109,5 +109,15 @@ function NestedTable() {
   );
 }
 
-storiesOf('antd/table', module).add('nest-table-border-debug', () => <NestedTable />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>To see if bordered style applied to other tables.</p></>) } });
+storiesOf('Components/Ant Design/Table', module).add('nest-table-border-debug', () => <NestedTable />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

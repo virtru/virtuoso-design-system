@@ -30,7 +30,7 @@ const ListItem = () => (
   </List.Item>
 );
 
-storiesOf('antd/list', module).add('grid-test', () => 
+storiesOf('Components/Ant Design/List', module).add('grid-test', () => 
   <>
     <List
       grid={{ gutter: 16, column: 4 }}
@@ -55,5 +55,15 @@ storiesOf('antd/list', module).add('grid-test', () =>
       )}
     />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Test List <code>grid</code> for some edge cases.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/list/" target="_blank">
+                  documentation on List component
+                </a>.
+              </>
+            ) }
+        });

@@ -193,5 +193,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/form', module).add('validate-other', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Demonstration of validation configuration for form controls which are not shown in the demos above.</p></>) } });
+storiesOf('Components/Ant Design/Form', module).add('validate-other', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

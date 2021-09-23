@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Space, Button } from 'antd';
 
-storiesOf('antd/space', module).add('align', () => 
+storiesOf('Components/Ant Design/Space', module).add('align', () => 
   <div className="space-align-container">
     <div className="space-align-block">
       <Space align="center">
@@ -34,5 +34,15 @@ storiesOf('antd/space', module).add('align', () =>
       </Space>
     </div>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Config item align.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/space/" target="_blank">
+                  documentation on Space component
+                </a>.
+              </>
+            ) }
+        });

@@ -77,5 +77,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/tabs', module).add('custom-add-trigger', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Hide default plus icon, and bind event for customized trigger.</p></>) } });
+storiesOf('Components/Ant Design/Tabs', module).add('custom-add-trigger', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tabs/" target="_blank">
+                  documentation on Tabs component
+                </a>.
+              </>
+            ) }
+        });

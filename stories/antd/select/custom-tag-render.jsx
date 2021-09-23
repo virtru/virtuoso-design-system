@@ -24,7 +24,7 @@ function tagRender(props) {
   );
 }
 
-storiesOf('antd/select', module).add('custom-tag-render', () => 
+storiesOf('Components/Ant Design/Select', module).add('custom-tag-render', () => 
   <Select
     mode="multiple"
     showArrow
@@ -33,5 +33,15 @@ storiesOf('antd/select', module).add('custom-tag-render', () =>
     style={{ width: '100%' }}
     options={options}
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Allows for custom rendering of tags.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/select/" target="_blank">
+                  documentation on Select component
+                </a>.
+              </>
+            ) }
+        });

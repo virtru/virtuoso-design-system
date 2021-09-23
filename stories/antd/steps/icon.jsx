@@ -6,12 +6,22 @@ import { UserOutlined, SolutionOutlined, LoadingOutlined, SmileOutlined } from '
 
 const { Step } = Steps;
 
-storiesOf('antd/steps', module).add('icon', () => 
+storiesOf('Components/Ant Design/Steps', module).add('icon', () => 
   <Steps>
     <Step status="finish" title="Login" icon={<UserOutlined />} />
     <Step status="finish" title="Verification" icon={<SolutionOutlined />} />
     <Step status="process" title="Pay" icon={<LoadingOutlined />} />
     <Step status="wait" title="Done" icon={<SmileOutlined />} />
   </Steps>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>You can use your own custom icons by setting the property <code>icon</code> for <code>Steps.Step</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/steps/" target="_blank">
+                  documentation on Steps component
+                </a>.
+              </>
+            ) }
+        });

@@ -21,7 +21,7 @@ const marks = {
   },
 };
 
-storiesOf('antd/slider', module).add('vertical', () => 
+storiesOf('Components/Ant Design/Slider', module).add('vertical', () => 
   <>
     <div style={style}>
       <Slider vertical defaultValue={30} />
@@ -33,5 +33,15 @@ storiesOf('antd/slider', module).add('vertical', () =>
       <Slider vertical range marks={marks} defaultValue={[26, 37]} />
     </div>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The vertical Slider.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/slider/" target="_blank">
+                  documentation on Slider component
+                </a>.
+              </>
+            ) }
+        });

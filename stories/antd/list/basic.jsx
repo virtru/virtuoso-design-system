@@ -18,7 +18,7 @@ const data = [
   },
 ];
 
-storiesOf('antd/list', module).add('basic', () => 
+storiesOf('Components/Ant Design/List', module).add('basic', () => 
   <List
     itemLayout="horizontal"
     dataSource={data}
@@ -32,5 +32,15 @@ storiesOf('antd/list', module).add('basic', () =>
       </List.Item>
     )}
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Basic list.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/list/" target="_blank">
+                  documentation on List component
+                </a>.
+              </>
+            ) }
+        });

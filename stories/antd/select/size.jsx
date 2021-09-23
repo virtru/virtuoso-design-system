@@ -59,5 +59,15 @@ const SelectSizesDemo = () => {
   );
 };
 
-storiesOf('antd/select', module).add('size', () => <SelectSizesDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The height of the input field for the select defaults to 32px. If size is set to large, the height will be 40px, and if set to small, 24px.</p></>) } });
+storiesOf('Components/Ant Design/Select', module).add('size', () => <SelectSizesDemo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/select/" target="_blank">
+                  documentation on Select component
+                </a>.
+              </>
+            ) }
+        });

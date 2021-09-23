@@ -9,7 +9,7 @@ function callback(key) {
   console.log(key);
 }
 
-storiesOf('antd/tabs', module).add('card', () => 
+storiesOf('Components/Ant Design/Tabs', module).add('card', () => 
   <Tabs onChange={callback} type="card">
     <TabPane tab="Tab 1" key="1">
       Content of Tab Pane 1
@@ -21,5 +21,15 @@ storiesOf('antd/tabs', module).add('card', () =>
       Content of Tab Pane 3
     </TabPane>
   </Tabs>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Another type of Tabs, which doesn't support vertical mode.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tabs/" target="_blank">
+                  documentation on Tabs component
+                </a>.
+              </>
+            ) }
+        });

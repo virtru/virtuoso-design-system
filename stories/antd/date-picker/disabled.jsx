@@ -7,7 +7,7 @@ import moment from 'moment';
 const { RangePicker } = DatePicker;
 
 const dateFormat = 'YYYY-MM-DD';
-storiesOf('antd/date-picker', module).add('disabled', () => 
+storiesOf('Components/Ant Design/Date Picker', module).add('disabled', () => 
   <Space direction="vertical" size={12}>
     <DatePicker defaultValue={moment('2015-06-06', dateFormat)} disabled />
     <DatePicker picker="month" defaultValue={moment('2015-06', 'YYYY-MM')} disabled />
@@ -20,5 +20,15 @@ storiesOf('antd/date-picker', module).add('disabled', () =>
       disabled={[false, true]}
     />
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A disabled state of the <code>DatePicker</code>. You can also set as array to disable one of input.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/date-picker/" target="_blank">
+                  documentation on Date Picker component
+                </a>.
+              </>
+            ) }
+        });

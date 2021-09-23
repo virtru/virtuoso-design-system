@@ -53,5 +53,15 @@ const HorizontalLoginForm = () => {
   );
 };
 
-storiesOf('antd/form', module).add('inline-login', () => <HorizontalLoginForm />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Inline login form is often used in navigation bar.</p></>) } });
+storiesOf('Components/Ant Design/Form', module).add('inline-login', () => <HorizontalLoginForm />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

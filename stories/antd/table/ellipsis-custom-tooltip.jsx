@@ -92,5 +92,15 @@ const data = [
   },
 ];
 
-storiesOf('antd/table', module).add('ellipsis-custom-tooltip', () => <Table columns={columns} dataSource={data} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Ellipsis cell content via setting <code>column.ellipsis.showTitle</code>, use <code>Tooltip</code> instead of the html title attribute.</p></>) } });
+storiesOf('Components/Ant Design/Table', module).add('ellipsis-custom-tooltip', () => <Table columns={columns} dataSource={data} />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

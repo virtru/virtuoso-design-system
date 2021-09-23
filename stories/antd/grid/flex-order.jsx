@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Row, Col, Divider } from 'antd';
 
-storiesOf('antd/grid', module).add('flex-order', () => 
+storiesOf('Components/Ant Design/Grid', module).add('flex-order', () => 
   <>
     <Divider orientation="left">Normal</Divider>
     <Row>
@@ -36,5 +36,15 @@ storiesOf('antd/grid', module).add('flex-order', () =>
       </Col>
     </Row>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>To change the element sort by <code>order</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/grid/" target="_blank">
+                  documentation on Grid component
+                </a>.
+              </>
+            ) }
+        });

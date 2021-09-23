@@ -7,7 +7,7 @@ import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 
-storiesOf('antd/layout', module).add('top-side-2', () => 
+storiesOf('Components/Ant Design/Layout', module).add('top-side-2', () => 
   <Layout>
     <Header className="header">
       <div className="logo" />
@@ -64,5 +64,15 @@ storiesOf('antd/layout', module).add('top-side-2', () =>
       </Layout>
     </Layout>
   </Layout>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Both the top navigation and the sidebar, commonly used in application site.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/layout/" target="_blank">
+                  documentation on Layout component
+                </a>.
+              </>
+            ) }
+        });

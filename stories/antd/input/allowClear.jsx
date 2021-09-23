@@ -9,12 +9,22 @@ const onChange = e => {
   console.log(e);
 };
 
-storiesOf('antd/Input', module).add('allowClear', () => 
+storiesOf('Components/Ant Design/Input', module).add('allowClear', () => 
   <>
     <Input placeholder="input with clear icon" allowClear onChange={onChange} />
     <br />
     <br />
     <TextArea placeholder="textarea with clear icon" allowClear onChange={onChange} />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Input box with the remove icon, click the icon to delete everything.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input/" target="_blank">
+                  documentation on Input component
+                </a>.
+              </>
+            ) }
+        });

@@ -21,7 +21,7 @@ function getGroup(props) {
   );
 }
 
-storiesOf('antd/button', module).add('legacy-group', () => 
+storiesOf('Components/Ant Design/Button', module).add('legacy-group', () => 
   <>
     {getGroup({ size: 'small' })}
     <br />
@@ -29,5 +29,15 @@ storiesOf('antd/button', module).add('legacy-group', () =>
     <br />
     {getGroup({ size: 'large' })}
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Debug usage</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/button/" target="_blank">
+                  documentation on Button component
+                </a>.
+              </>
+            ) }
+        });

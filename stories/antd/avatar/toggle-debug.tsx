@@ -56,5 +56,15 @@ const App: React.FC = () => {
   );
 };
 
-storiesOf('antd/avatar', module).add('toggle-debug', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Text inside Avatar should be set a proper font size when toggle it's visibility.</p></>) } });
+storiesOf('Components/Ant Design/Avatar', module).add('toggle-debug', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/avatar/" target="_blank">
+                  documentation on Avatar component
+                </a>.
+              </>
+            ) }
+        });

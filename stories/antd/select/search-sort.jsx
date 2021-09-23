@@ -5,7 +5,7 @@ import { Select } from 'antd';
 
 const { Option } = Select;
 
-storiesOf('antd/select', module).add('search-sort', () => 
+storiesOf('Components/Ant Design/Select', module).add('search-sort', () => 
   <Select
     showSearch
     style={{ width: 200 }}
@@ -25,5 +25,15 @@ storiesOf('antd/select', module).add('search-sort', () =>
     <Option value="5">Resolved</Option>
     <Option value="6">Cancelled</Option>
   </Select>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Search the options with sorting.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/select/" target="_blank">
+                  documentation on Select component
+                </a>.
+              </>
+            ) }
+        });

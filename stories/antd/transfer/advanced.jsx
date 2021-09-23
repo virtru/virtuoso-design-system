@@ -60,6 +60,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/transfer', module).add('advanced', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Advanced Usage of Transfer.</p>
-<p>You can customize the labels of the transfer buttons, the width and height of the columns, and what should be displayed in the footer.</p></>) } });
+storiesOf('Components/Ant Design/Transfer', module).add('advanced', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/transfer/" target="_blank">
+                  documentation on Transfer component
+                </a>.
+              </>
+            ) }
+        });

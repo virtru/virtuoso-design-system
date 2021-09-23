@@ -107,5 +107,15 @@ const FormPage = () => (
   </Form>
 );
 
-storiesOf('antd/upload', module).add('upload-with-aliyun-oss', () => <FormPage />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use Aliyun OSS upload example.</p></>) } });
+storiesOf('Components/Ant Design/Upload', module).add('upload-with-aliyun-oss', () => <FormPage />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/upload/" target="_blank">
+                  documentation on Upload component
+                </a>.
+              </>
+            ) }
+        });

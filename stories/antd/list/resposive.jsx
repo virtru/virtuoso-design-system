@@ -24,7 +24,7 @@ const data = [
   },
 ];
 
-storiesOf('antd/list', module).add('resposive', () => 
+storiesOf('Components/Ant Design/List', module).add('resposive', () => 
   <List
     grid={{
       gutter: 16,
@@ -42,5 +42,15 @@ storiesOf('antd/list', module).add('resposive', () =>
       </List.Item>
     )}
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Responsive grid list. The size property the is as same as <a href="/components/grid/#Col">Layout Grid</a>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/list/" target="_blank">
+                  documentation on List component
+                </a>.
+              </>
+            ) }
+        });

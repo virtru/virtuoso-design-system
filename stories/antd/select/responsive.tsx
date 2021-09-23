@@ -41,5 +41,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/select', module).add('responsive', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Auto collapse to tag with responsive case. Not recommend use in large form case since responsive calculation has a perf cost.</p></>) } });
+storiesOf('Components/Ant Design/Select', module).add('responsive', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/select/" target="_blank">
+                  documentation on Select component
+                </a>.
+              </>
+            ) }
+        });

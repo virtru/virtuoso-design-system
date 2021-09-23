@@ -23,5 +23,15 @@ function dig(path = '0', level = 3) {
 
 const treeData = dig();
 
-storiesOf('antd/tree', module).add('virtual-scroll', () => <Tree treeData={treeData} height={233} defaultExpandAll />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use virtual list through <code>height</code> prop.</p></>) } });
+storiesOf('Components/Ant Design/Tree', module).add('virtual-scroll', () => <Tree treeData={treeData} height={233} defaultExpandAll />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tree/" target="_blank">
+                  documentation on Tree component
+                </a>.
+              </>
+            ) }
+        });

@@ -32,7 +32,7 @@ const data = [
   },
 ];
 
-storiesOf('antd/table', module).add('jsx', () => 
+storiesOf('Components/Ant Design/Table', module).add('jsx', () => 
   <Table dataSource={data}>
     <ColumnGroup title="Name">
       <Column title="First Name" dataIndex="firstName" key="firstName" />
@@ -65,8 +65,15 @@ storiesOf('antd/table', module).add('jsx', () =>
       )}
     />
   </Table>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Using JSX style API (introduced in 2.5.0)</p>
-<blockquote>
-  <p>Since this is just a syntax sugar for the prop <code>columns</code>, you can't compose <code>Column</code> and <code>ColumnGroup</code> with other Components.</p>
-</blockquote></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

@@ -20,5 +20,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/pagination', module).add('controlled', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Controlled page number.</p></>) } });
+storiesOf('Components/Ant Design/Pagination', module).add('controlled', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/pagination/" target="_blank">
+                  documentation on Pagination component
+                </a>.
+              </>
+            ) }
+        });

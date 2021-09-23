@@ -36,12 +36,22 @@ function warning() {
   });
 }
 
-storiesOf('antd/modal', module).add('info', () => 
+storiesOf('Components/Ant Design/Modal', module).add('info', () => 
   <Space>
     <Button onClick={info}>Info</Button>
     <Button onClick={success}>Success</Button>
     <Button onClick={error}>Error</Button>
     <Button onClick={warning}>Warning</Button>
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>In the various types of information modal dialog, only one button to close dialog is provided.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/modal/" target="_blank">
+                  documentation on Modal component
+                </a>.
+              </>
+            ) }
+        });

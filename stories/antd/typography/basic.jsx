@@ -8,7 +8,7 @@ const { Title, Paragraph, Text, Link } = Typography;
 const blockContent = `AntV 是蚂蚁金服全新一代数据可视化解决方案，致力于提供一套简单方便、专业可靠、不限可能的数据可视化最佳实践。得益于丰富的业务场景和用户需求挑战，AntV 经历多年积累与不断打磨，已支撑整个阿里集团内外 20000+ 业务系统，通过了日均千万级 UV 产品的严苛考验。
 我们正在基础图表，图分析，图编辑，地理空间可视化，智能可视化等各个可视化的领域耕耘，欢迎同路人一起前行。`;
 
-storiesOf('antd/typography', module).add('basic', () => 
+storiesOf('Components/Ant Design/Typography', module).add('basic', () => 
   <Typography>
     <Title>Introduction</Title>
     <Paragraph>
@@ -91,5 +91,15 @@ storiesOf('antd/typography', module).add('basic', () =>
       按<Text keyboard>Esc</Text>键退出阅读……
     </Paragraph>
   </Typography>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Display the document sample.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/typography/" target="_blank">
+                  documentation on Typography component
+                </a>.
+              </>
+            ) }
+        });

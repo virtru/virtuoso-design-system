@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Divider } from 'antd';
 
-storiesOf('antd/divider', module).add('plain', () => 
+storiesOf('Components/Ant Design/Divider', module).add('plain', () => 
   <>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
@@ -29,5 +29,15 @@ storiesOf('antd/divider', module).add('plain', () =>
       probare, quae sunt a te dicta? Refert tamen, quo modo.
     </p>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>You can use non-heading style of divider text by setting <code>plain</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/divider/" target="_blank">
+                  documentation on Divider component
+                </a>.
+              </>
+            ) }
+        });

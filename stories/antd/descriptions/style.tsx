@@ -55,5 +55,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/descriptions', module).add('style', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Customize label &amp; wrapper style</p></>) } });
+storiesOf('Components/Ant Design/Descriptions', module).add('style', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/descriptions/" target="_blank">
+                  documentation on Descriptions component
+                </a>.
+              </>
+            ) }
+        });

@@ -15,7 +15,7 @@ const formItemLayout = {
   },
 };
 
-storiesOf('antd/auto-complete', module).add('form-debug', () => 
+storiesOf('Components/Ant Design/Auto Complete', module).add('form-debug', () => 
   <Form style={{ margin: '0 auto' }} {...formItemLayout}>
     <Form.Item label="单独 AutoComplete">
       <AutoComplete />
@@ -62,9 +62,15 @@ storiesOf('antd/auto-complete', module).add('form-debug', () =>
       </Input.Group>
     </Form.Item>
   </Form>,
-  { docs: { page: () => (<><hr />
-<p>order: 999
-title:
-  zh-CN: 在 Form 中 Debug
-  en-US: Debug in Form</p>
-<h2 id="debugtrue">debug: true</h2></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/auto-complete/" target="_blank">
+                  documentation on Auto Complete component
+                </a>.
+              </>
+            ) }
+        });

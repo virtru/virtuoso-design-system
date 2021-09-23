@@ -36,5 +36,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/skeleton', module).add('children', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Skeleton contains sub component.</p></>) } });
+storiesOf('Components/Ant Design/Skeleton', module).add('children', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/skeleton/" target="_blank">
+                  documentation on Skeleton component
+                </a>.
+              </>
+            ) }
+        });

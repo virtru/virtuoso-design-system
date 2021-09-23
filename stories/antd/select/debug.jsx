@@ -9,7 +9,7 @@ function handleChange(value) {
   console.log(`selected ${value}`);
 }
 
-storiesOf('antd/select', module).add('debug', () => 
+storiesOf('Components/Ant Design/Select', module).add('debug', () => 
   <div
     style={{
       width: 500,
@@ -48,5 +48,15 @@ storiesOf('antd/select', module).add('debug', () =>
     <span className="debug-align">AntDesign</span>
     <Button>222</Button>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Basic Usage.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/select/" target="_blank">
+                  documentation on Select component
+                </a>.
+              </>
+            ) }
+        });

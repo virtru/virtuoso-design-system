@@ -35,9 +35,19 @@ const props = {
   ],
 };
 
-storiesOf('antd/upload', module).add('defaultFileList', () => 
+storiesOf('Components/Ant Design/Upload', module).add('defaultFileList', () => 
   <Upload {...props}>
     <Button icon={<UploadOutlined />}>Upload</Button>
   </Upload>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use <code>defaultFileList</code> for uploaded files when page init.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/upload/" target="_blank">
+                  documentation on Upload component
+                </a>.
+              </>
+            ) }
+        });

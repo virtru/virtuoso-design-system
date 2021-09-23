@@ -99,11 +99,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/form', module).add('customized-form-controls', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Customized or third-party form controls can be used in Form, too. Controls must follow these conventions:</p>
-<blockquote>
-  <ul>
-  <li>It has a controlled property <code>value</code> or other name which is equal to the value of <a href="https://ant.design/components/form/#Form.Item"><code>valuePropName</code></a>.</li>
-  <li>It has event <code>onChange</code> or an event which name is equal to the value of <a href="https://ant.design/components/form/#Form.Item"><code>trigger</code></a>.</li>
-  </ul>
-</blockquote></>) } });
+storiesOf('Components/Ant Design/Form', module).add('customized-form-controls', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

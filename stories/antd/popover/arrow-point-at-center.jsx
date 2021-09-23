@@ -10,7 +10,7 @@ const content = (
   </>
 );
 
-storiesOf('antd/popover', module).add('arrow-point-at-center', () => 
+storiesOf('Components/Ant Design/Popover', module).add('arrow-point-at-center', () => 
   <>
     <Popover placement="topLeft" title="Title" content={content}>
       <Button>Align edge / 边缘对齐</Button>
@@ -19,5 +19,15 @@ storiesOf('antd/popover', module).add('arrow-point-at-center', () =>
       <Button>Arrow points to center / 箭头指向中心</Button>
     </Popover>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The arrow points to the center of the target element, which set <code>arrowPointAtCenter</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/popover/" target="_blank">
+                  documentation on Popover component
+                </a>.
+              </>
+            ) }
+        });

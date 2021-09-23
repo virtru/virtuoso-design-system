@@ -35,5 +35,15 @@ class SelectWithHiddenSelectedOptions extends React.Component {
   }
 }
 
-storiesOf('antd/select', module).add('hide-selected', () => <SelectWithHiddenSelectedOptions />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Hide already selected options in the dropdown.</p></>) } });
+storiesOf('Components/Ant Design/Select', module).add('hide-selected', () => <SelectWithHiddenSelectedOptions />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/select/" target="_blank">
+                  documentation on Select component
+                </a>.
+              </>
+            ) }
+        });

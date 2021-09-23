@@ -5,7 +5,7 @@ import { DatePicker, Space } from 'antd';
 
 const { RangePicker } = DatePicker;
 
-storiesOf('antd/date-picker', module).add('range-picker', () => 
+storiesOf('Components/Ant Design/Date Picker', module).add('range-picker', () => 
   <Space direction="vertical" size={12}>
     <RangePicker />
     <RangePicker showTime />
@@ -13,5 +13,15 @@ storiesOf('antd/date-picker', module).add('range-picker', () =>
     <RangePicker picker="month" />
     <RangePicker picker="year" />
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Set range picker type by <code>picker</code> prop.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/date-picker/" target="_blank">
+                  documentation on Date Picker component
+                </a>.
+              </>
+            ) }
+        });

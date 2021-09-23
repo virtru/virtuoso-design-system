@@ -3,5 +3,15 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Empty } from 'antd';
 
-storiesOf('antd/empty', module).add('description', () => <Empty description={false} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Simplest Usage with no description.</p></>) } });
+storiesOf('Components/Ant Design/Empty', module).add('description', () => <Empty description={false} />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/empty/" target="_blank">
+                  documentation on Empty component
+                </a>.
+              </>
+            ) }
+        });

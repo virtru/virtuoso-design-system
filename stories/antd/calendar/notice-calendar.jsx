@@ -63,7 +63,17 @@ function monthCellRender(value) {
   ) : null;
 }
 
-storiesOf('antd/calendar', module).add('notice-calendar', () => 
+storiesOf('Components/Ant Design/Calendar', module).add('notice-calendar', () => 
   <Calendar dateCellRender={dateCellRender} monthCellRender={monthCellRender} />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>This component can be rendered by using <code>dateCellRender</code> and <code>monthCellRender</code> with the data you need.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/calendar/" target="_blank">
+                  documentation on Calendar component
+                </a>.
+              </>
+            ) }
+        });

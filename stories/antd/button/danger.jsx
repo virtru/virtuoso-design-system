@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Button } from 'antd';
 
-storiesOf('antd/button', module).add('danger', () => 
+storiesOf('Components/Ant Design/Button', module).add('danger', () => 
   <>
     <Button type="primary" danger>
       Primary
@@ -19,5 +19,15 @@ storiesOf('antd/button', module).add('danger', () =>
       Link
     </Button>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p><code>danger</code> is a property of button after antd 4.0.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/button/" target="_blank">
+                  documentation on Button component
+                </a>.
+              </>
+            ) }
+        });

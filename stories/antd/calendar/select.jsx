@@ -34,5 +34,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/calendar', module).add('select', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A basic calendar component with Year/Month switch.</p></>) } });
+storiesOf('Components/Ant Design/Calendar', module).add('select', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/calendar/" target="_blank">
+                  documentation on Calendar component
+                </a>.
+              </>
+            ) }
+        });

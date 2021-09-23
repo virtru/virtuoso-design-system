@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { PageHeader, Tag, Button, Statistic, Descriptions, Row } from 'antd';
 
-storiesOf('antd/page-header', module).add('actions', () => 
+storiesOf('Components/Ant Design/Page Header', module).add('actions', () => 
   <>
     <PageHeader
       className="site-page-header"
@@ -58,5 +58,15 @@ storiesOf('antd/page-header', module).add('actions', () =>
       </Row>
     </PageHeader>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use the operating area and customize the sub-nodes, suitable for use in the need to display some complex information to help users quickly understand the information and operations of this page.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/page-header/" target="_blank">
+                  documentation on Page Header component
+                </a>.
+              </>
+            ) }
+        });

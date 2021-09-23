@@ -3,5 +3,15 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Rate } from 'antd';
 
-storiesOf('antd/rate', module).add('basic', () => <Rate />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The simplest usage.</p></>) } });
+storiesOf('Components/Ant Design/Rate', module).add('basic', () => <Rate />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/rate/" target="_blank">
+                  documentation on Rate component
+                </a>.
+              </>
+            ) }
+        });

@@ -45,5 +45,15 @@ const FormLayoutDemo = () => {
   );
 };
 
-storiesOf('antd/form', module).add('required-mark', () => <FormLayoutDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Switch required or optional style with <code>requiredMark</code>.</p></>) } });
+storiesOf('Components/Ant Design/Form', module).add('required-mark', () => <FormLayoutDemo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

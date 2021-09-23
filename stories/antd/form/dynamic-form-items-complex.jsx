@@ -92,5 +92,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/form', module).add('dynamic-form-items-complex', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>This example demonstrates the case that a form contains multiple form controls.</p></>) } });
+storiesOf('Components/Ant Design/Form', module).add('dynamic-form-items-complex', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

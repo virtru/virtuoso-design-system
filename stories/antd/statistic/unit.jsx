@@ -4,7 +4,7 @@ import React from 'react';
 import { Statistic, Row, Col } from 'antd';
 import { LikeOutlined } from '@ant-design/icons';
 
-storiesOf('antd/statistic', module).add('unit', () => 
+storiesOf('Components/Ant Design/Statistic', module).add('unit', () => 
   <Row gutter={16}>
     <Col span={12}>
       <Statistic title="Feedback" value={1128} prefix={<LikeOutlined />} />
@@ -13,5 +13,15 @@ storiesOf('antd/statistic', module).add('unit', () =>
       <Statistic title="Unmerged" value={93} suffix="/ 100" />
     </Col>
   </Row>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Add unit through <code>prefix</code> and <code>suffix</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/statistic/" target="_blank">
+                  documentation on Statistic component
+                </a>.
+              </>
+            ) }
+        });

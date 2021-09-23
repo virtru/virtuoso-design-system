@@ -97,5 +97,15 @@ const FormSizeDemo = () => {
     </div>
   );
 };
-storiesOf('antd/config-provider', module).add('size', () => <FormSizeDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Config component default size.</p></>) } });
+storiesOf('Components/Ant Design/Config Provider', module).add('size', () => <FormSizeDemo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/config-provider/" target="_blank">
+                  documentation on Config Provider component
+                </a>.
+              </>
+            ) }
+        });

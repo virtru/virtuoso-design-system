@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Result, Button } from 'antd';
 
-storiesOf('antd/result', module).add('success', () => 
+storiesOf('Components/Ant Design/Result', module).add('success', () => 
   <Result
     status="success"
     title="Successfully Purchased Cloud Server ECS!"
@@ -15,5 +15,15 @@ storiesOf('antd/result', module).add('success', () =>
       <Button key="buy">Buy Again</Button>,
     ]}
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Show successful results.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/result/" target="_blank">
+                  documentation on Result component
+                </a>.
+              </>
+            ) }
+        });

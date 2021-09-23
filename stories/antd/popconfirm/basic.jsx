@@ -13,7 +13,7 @@ function cancel(e) {
   message.error('Click on No');
 }
 
-storiesOf('antd/popconfirm', module).add('basic', () => 
+storiesOf('Components/Ant Design/Popconfirm', module).add('basic', () => 
   <Popconfirm
     title="Are you sure to delete this task?"
     onConfirm={confirm}
@@ -23,5 +23,15 @@ storiesOf('antd/popconfirm', module).add('basic', () =>
   >
     <a href="#">Delete</a>
   </Popconfirm>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The basic example.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/popconfirm/" target="_blank">
+                  documentation on Popconfirm component
+                </a>.
+              </>
+            ) }
+        });

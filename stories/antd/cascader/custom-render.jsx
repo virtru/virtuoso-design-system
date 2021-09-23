@@ -58,12 +58,22 @@ const displayRender = (labels, selectedOptions) =>
     return <span key={option.value}>{label} / </span>;
   });
 
-storiesOf('antd/cascader', module).add('custom-render', () => 
+storiesOf('Components/Ant Design/Cascader', module).add('custom-render', () => 
   <Cascader
     options={options}
     defaultValue={['zhejiang', 'hangzhou', 'xihu']}
     displayRender={displayRender}
     style={{ width: '100%' }}
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>For instance, add an external link after the selected value.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/cascader/" target="_blank">
+                  documentation on Cascader component
+                </a>.
+              </>
+            ) }
+        });

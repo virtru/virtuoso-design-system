@@ -7,5 +7,15 @@ function onChange(value) {
   console.log('changed', value);
 }
 
-storiesOf('antd/input-number', module).add('basic', () => <InputNumber min={1} max={10} defaultValue={3} onChange={onChange} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Numeric-only input box.</p></>) } });
+storiesOf('Components/Ant Design/Input Number', module).add('basic', () => <InputNumber min={1} max={10} defaultValue={3} onChange={onChange} />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input-number/" target="_blank">
+                  documentation on Input Number component
+                </a>.
+              </>
+            ) }
+        });

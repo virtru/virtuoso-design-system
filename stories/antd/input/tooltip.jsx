@@ -84,5 +84,15 @@ class NumericInputDemo extends React.Component {
   }
 }
 
-storiesOf('antd/Input', module).add('tooltip', () => <NumericInputDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>You can use the Input in conjunction with <a href="/components/tooltip">Tooltip</a> component to create a Numeric Input, which can provide a good experience for extra-long content display.</p></>) } });
+storiesOf('Components/Ant Design/Input', module).add('tooltip', () => <NumericInputDemo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input/" target="_blank">
+                  documentation on Input component
+                </a>.
+              </>
+            ) }
+        });

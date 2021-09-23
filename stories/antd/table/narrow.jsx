@@ -29,9 +29,19 @@ for (let i = 0; i < 200; i += 1) {
   });
 }
 
-storiesOf('antd/table', module).add('narrow', () => 
+storiesOf('Components/Ant Design/Table', module).add('narrow', () => 
   <div style={{ width: 300 }}>
     <Table columns={columns} dataSource={data} size="small" pagination={{ defaultCurrent: 13 }} />
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>There are two compacted table sizes: <code>middle</code> and <code>small</code>. The <code>small</code> size is used in Modals only.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

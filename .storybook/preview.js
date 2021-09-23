@@ -7,7 +7,6 @@ import {
   addDecorator,
 } from '@storybook/react';
 import { withA11y } from '@storybook/addon-a11y';
-import { withKnobs } from '@storybook/addon-knobs';
 import { themes } from '@storybook/theming';
 import virtuosoTheme from './virtuosoTheme.js';
 
@@ -39,11 +38,11 @@ addParameters({
     theme: virtuosoTheme,
   },
   options: {
-    // storySort: {
-    //   method: 'alphabetical',
-    //   order: ['Introduction', 'Basics'],
-    //   locales: 'en-US',
-    // },
+    storySort: {
+      method: 'alphabetical',
+      order: ['Design', ['Introduction', 'For Designers 🎨', 'For Engineers 🧰', 'Design Tokens', 'Stickersheets'], 'Components', ['*', 'Ant Design']],
+      locales: 'en-US',
+    },
     /**
      * id to select an addon panel
      * @type {String}
@@ -59,5 +58,3 @@ addDecorator(Story => (
     <Story />
   </div>
 ));
-
-addDecorator(withKnobs);

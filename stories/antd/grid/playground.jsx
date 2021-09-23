@@ -100,5 +100,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/grid', module).add('playground', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A simple playground for column count and gutter.</p></>) } });
+storiesOf('Components/Ant Design/Grid', module).add('playground', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/grid/" target="_blank">
+                  documentation on Grid component
+                </a>.
+              </>
+            ) }
+        });

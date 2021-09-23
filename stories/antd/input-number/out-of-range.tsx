@@ -21,5 +21,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/input-number', module).add('out-of-range', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Show warning style when <code>value</code> is out of range by control.</p></>) } });
+storiesOf('Components/Ant Design/Input Number', module).add('out-of-range', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input-number/" target="_blank">
+                  documentation on Input Number component
+                </a>.
+              </>
+            ) }
+        });

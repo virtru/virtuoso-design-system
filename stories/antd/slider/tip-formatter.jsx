@@ -7,10 +7,20 @@ function formatter(value) {
   return `${value}%`;
 }
 
-storiesOf('antd/slider', module).add('tip-formatter', () => 
+storiesOf('Components/Ant Design/Slider', module).add('tip-formatter', () => 
   <>
     <Slider tipFormatter={formatter} />
     <Slider tipFormatter={null} />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use <code>tipFormatter</code> to format content of <code>Tooltip</code>. If <code>tipFormatter</code> is null, hide it.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/slider/" target="_blank">
+                  documentation on Slider component
+                </a>.
+              </>
+            ) }
+        });

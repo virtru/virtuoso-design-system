@@ -7,7 +7,7 @@ const onClose = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
   console.log(e, 'I was closed.');
 };
 
-storiesOf('antd/alert', module).add('closable', () => 
+storiesOf('Components/Ant Design/Alert', module).add('closable', () => 
   <>
     <Alert
       message="Warning Text Warning Text Warning TextW arning Text Warning Text Warning TextWarning Text"
@@ -23,5 +23,15 @@ storiesOf('antd/alert', module).add('closable', () =>
       onClose={onClose}
     />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>To show close button.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/alert/" target="_blank">
+                  documentation on Alert component
+                </a>.
+              </>
+            ) }
+        });

@@ -5,5 +5,15 @@ import { Input } from 'antd';
 
 const { TextArea } = Input;
 
-storiesOf('antd/Input', module).add('textarea', () => <TextArea rows={4} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>For multi-line input.</p></>) } });
+storiesOf('Components/Ant Design/Input', module).add('textarea', () => <TextArea rows={4} />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input/" target="_blank">
+                  documentation on Input component
+                </a>.
+              </>
+            ) }
+        });

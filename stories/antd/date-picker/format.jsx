@@ -13,7 +13,7 @@ const dateFormatList = ['DD/MM/YYYY', 'DD/MM/YY'];
 
 const customFormat = value => `custom format: ${value.format(dateFormat)}`;
 
-storiesOf('antd/date-picker', module).add('format', () => 
+storiesOf('Components/Ant Design/Date Picker', module).add('format', () => 
   <Space direction="vertical" size={12}>
     <DatePicker defaultValue={moment('2015/01/01', dateFormat)} format={dateFormat} />
     <DatePicker defaultValue={moment('01/01/2015', dateFormatList[0])} format={dateFormatList} />
@@ -24,5 +24,15 @@ storiesOf('antd/date-picker', module).add('format', () =>
     />
     <DatePicker defaultValue={moment('2015/01/01', dateFormat)} format={customFormat} />
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>We can set the date format by <code>format</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/date-picker/" target="_blank">
+                  documentation on Date Picker component
+                </a>.
+              </>
+            ) }
+        });

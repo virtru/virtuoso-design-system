@@ -8,7 +8,7 @@ const sharedStyle: React.CSSProperties = {
   marginBottom: 16,
 };
 
-storiesOf('antd/checkbox', module).add('debug-line', () => 
+storiesOf('Components/Ant Design/Checkbox', module).add('debug-line', () => 
   <div>
     <Space style={sharedStyle} align="center">
       <Checkbox value="light" />
@@ -46,5 +46,15 @@ storiesOf('antd/checkbox', module).add('debug-line', () =>
       <Radio value="little">Little</Radio>
     </div>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Same line</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/checkbox/" target="_blank">
+                  documentation on Checkbox component
+                </a>.
+              </>
+            ) }
+        });

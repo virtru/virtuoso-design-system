@@ -3,5 +3,15 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { TimePicker } from 'antd';
 
-storiesOf('antd/time-picker', module).add('interval-options', () => <TimePicker minuteStep={15} secondStep={10} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Show stepped options by <code>hourStep</code> <code>minuteStep</code> <code>secondStep</code>.</p></>) } });
+storiesOf('Components/Ant Design/Time Picker', module).add('interval-options', () => <TimePicker minuteStep={15} secondStep={10} />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/time-picker/" target="_blank">
+                  documentation on Time Picker component
+                </a>.
+              </>
+            ) }
+        });

@@ -6,7 +6,7 @@ import { SmileOutlined } from '@ant-design/icons';
 
 const icon = <SmileOutlined />;
 
-storiesOf('antd/alert', module).add('custom-icon', () => 
+storiesOf('Components/Ant Design/Alert', module).add('custom-icon', () => 
   <>
     <Alert icon={icon} message="showIcon = false" type="success" />
     <Alert icon={icon} message="Success Tips" type="success" showIcon />
@@ -42,5 +42,15 @@ storiesOf('antd/alert', module).add('custom-icon', () =>
       showIcon
     />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A relevant icon makes information clearer and more friendly.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/alert/" target="_blank">
+                  documentation on Alert component
+                </a>.
+              </>
+            ) }
+        });

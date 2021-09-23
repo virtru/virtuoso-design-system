@@ -7,11 +7,21 @@ function onChange(value) {
   console.log('changed', value);
 }
 
-storiesOf('antd/input-number', module).add('size', () => 
+storiesOf('Components/Ant Design/Input Number', module).add('size', () => 
   <div className="site-input-number-wrapper">
     <InputNumber size="large" min={1} max={100000} defaultValue={3} onChange={onChange} />
     <InputNumber min={1} max={100000} defaultValue={3} onChange={onChange} />
     <InputNumber size="small" min={1} max={100000} defaultValue={3} onChange={onChange} />
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>There are three sizes available to a numeric input box. By default, the size is <code>32px</code>. The two additional sizes are <code>large</code> and <code>small</code> which means <code>40px</code> and <code>24px</code>, respectively.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input-number/" target="_blank">
+                  documentation on Input Number component
+                </a>.
+              </>
+            ) }
+        });

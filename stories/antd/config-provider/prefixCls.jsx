@@ -24,5 +24,15 @@ const FormSizeDemo = () => {
     </div>
   );
 };
-storiesOf('antd/config-provider', module).add('prefixCls', () => <FormSizeDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Config component and icon prefixCls.</p></>) } });
+storiesOf('Components/Ant Design/Config Provider', module).add('prefixCls', () => <FormSizeDemo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/config-provider/" target="_blank">
+                  documentation on Config Provider component
+                </a>.
+              </>
+            ) }
+        });

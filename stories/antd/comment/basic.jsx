@@ -64,5 +64,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/comment', module).add('basic', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A basic comment with author, avatar, time and actions.</p></>) } });
+storiesOf('Components/Ant Design/Comment', module).add('basic', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/comment/" target="_blank">
+                  documentation on Comment component
+                </a>.
+              </>
+            ) }
+        });

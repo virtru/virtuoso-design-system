@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Button } from 'antd';
 
-storiesOf('antd/button', module).add('block', () => 
+storiesOf('Components/Ant Design/Button', module).add('block', () => 
   <>
     <Button type="primary" block>
       Primary
@@ -16,5 +16,15 @@ storiesOf('antd/button', module).add('block', () =>
       Link
     </Button>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p><code>block</code> property will make the button fit to its parent width.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/button/" target="_blank">
+                  documentation on Button component
+                </a>.
+              </>
+            ) }
+        });

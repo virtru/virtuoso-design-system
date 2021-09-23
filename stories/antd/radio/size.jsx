@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Radio } from 'antd';
 
-storiesOf('antd/radio', module).add('size', () => 
+storiesOf('Components/Ant Design/Radio', module).add('size', () => 
   <>
     <Radio.Group defaultValue="a" size="large">
       <Radio.Button value="a">Hangzhou</Radio.Button>
@@ -24,5 +24,15 @@ storiesOf('antd/radio', module).add('size', () =>
       <Radio.Button value="d">Chengdu</Radio.Button>
     </Radio.Group>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>There are three sizes available: large, medium, and small. It can coordinate with input box.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/radio/" target="_blank">
+                  documentation on Radio component
+                </a>.
+              </>
+            ) }
+        });

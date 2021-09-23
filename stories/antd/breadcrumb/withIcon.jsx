@@ -4,7 +4,7 @@ import React from 'react';
 import { Breadcrumb } from 'antd';
 import { HomeOutlined, UserOutlined } from '@ant-design/icons';
 
-storiesOf('antd/breadcrumb', module).add('withIcon', () => 
+storiesOf('Components/Ant Design/Breadcrumb', module).add('withIcon', () => 
   <Breadcrumb>
     <Breadcrumb.Item href="">
       <HomeOutlined />
@@ -15,5 +15,15 @@ storiesOf('antd/breadcrumb', module).add('withIcon', () =>
     </Breadcrumb.Item>
     <Breadcrumb.Item>Application</Breadcrumb.Item>
   </Breadcrumb>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The icon should be placed in front of the text.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/breadcrumb/" target="_blank">
+                  documentation on Breadcrumb component
+                </a>.
+              </>
+            ) }
+        });

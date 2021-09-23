@@ -42,12 +42,22 @@ function onChange(value) {
   console.log(value);
 }
 
-storiesOf('antd/cascader', module).add('fields-name', () => 
+storiesOf('Components/Ant Design/Cascader', module).add('fields-name', () => 
   <Cascader
     fieldNames={{ label: 'name', value: 'code', children: 'items' }}
     options={options}
     onChange={onChange}
     placeholder="Please select"
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Custom field names.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/cascader/" target="_blank">
+                  documentation on Cascader component
+                </a>.
+              </>
+            ) }
+        });

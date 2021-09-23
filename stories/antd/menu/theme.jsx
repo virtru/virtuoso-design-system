@@ -70,5 +70,15 @@ class Sider extends React.Component {
   }
 }
 
-storiesOf('antd/menu', module).add('theme', () => <Sider />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>There are two built-in themes: <code>light</code> and <code>dark</code>. The default value is <code>light</code>.</p></>) } });
+storiesOf('Components/Ant Design/Menu', module).add('theme', () => <Sider />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/menu/" target="_blank">
+                  documentation on Menu component
+                </a>.
+              </>
+            ) }
+        });

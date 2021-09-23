@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Form, Input } from 'antd';
 
-storiesOf('antd/form', module).add('disabled-input-debug', () => 
+storiesOf('Components/Ant Design/Form', module).add('disabled-input-debug', () => 
   <Form>
     <Form.Item label="Normal0">
       <Input placeholder="unavailable choice" value="Buggy!" />
@@ -42,5 +42,15 @@ storiesOf('antd/form', module).add('disabled-input-debug', () =>
       <Input placeholder="unavailable choice" disabled prefix="人民币" value="50" />
     </Form.Item>
   </Form>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Test disabled Input with validate state</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

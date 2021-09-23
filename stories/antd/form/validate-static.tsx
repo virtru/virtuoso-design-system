@@ -17,7 +17,7 @@ const formItemLayout = {
   },
 };
 
-storiesOf('antd/form', module).add('validate-static', () => 
+storiesOf('Components/Ant Design/Form', module).add('validate-static', () => 
   <Form {...formItemLayout}>
     <Form.Item
       label="Fail"
@@ -116,10 +116,15 @@ storiesOf('antd/form', module).add('validate-static', () =>
       <Input.Password allowClear placeholder="with input password and allowClear" />
     </Form.Item>
   </Form>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>We provide properties like <code>validateStatus</code> <code>help</code> <code>hasFeedback</code> to customize your own validate status and message, without using Form.</p>
-<ol>
-<li><code>validateStatus</code>: validate status of form components which could be 'success', 'warning', 'error', 'validating'.</li>
-<li><code>hasFeedback</code>: display feed icon of input control</li>
-<li><code>help</code>: display validate message.</li>
-</ol></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Card } from 'antd';
 
-storiesOf('antd/card', module).add('border-less', () => 
+storiesOf('Components/Ant Design/Card', module).add('border-less', () => 
   <div className="site-card-border-less-wrapper">
     <Card title="Card title" bordered={false} style={{ width: 300 }}>
       <p>Card content</p>
@@ -11,5 +11,15 @@ storiesOf('antd/card', module).add('border-less', () =>
       <p>Card content</p>
     </Card>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A borderless card on a gray background.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/card/" target="_blank">
+                  documentation on Card component
+                </a>.
+              </>
+            ) }
+        });

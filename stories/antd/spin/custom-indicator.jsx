@@ -6,5 +6,15 @@ import { LoadingOutlined } from '@ant-design/icons';
 
 const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
 
-storiesOf('antd/spin', module).add('custom-indicator', () => <Spin indicator={antIcon} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use custom loading indicator.</p></>) } });
+storiesOf('Components/Ant Design/Spin', module).add('custom-indicator', () => <Spin indicator={antIcon} />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/spin/" target="_blank">
+                  documentation on Spin component
+                </a>.
+              </>
+            ) }
+        });

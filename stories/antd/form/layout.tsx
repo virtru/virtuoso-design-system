@@ -58,5 +58,15 @@ const FormLayoutDemo = () => {
   );
 };
 
-storiesOf('antd/form', module).add('layout', () => <FormLayoutDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>There are three layout for form: <code>horizontal</code>, <code>vertical</code>, <code>inline</code>.</p></>) } });
+storiesOf('Components/Ant Design/Form', module).add('layout', () => <FormLayoutDemo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

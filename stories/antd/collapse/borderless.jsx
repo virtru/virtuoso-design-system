@@ -12,7 +12,7 @@ const text = (
   </p>
 );
 
-storiesOf('antd/collapse', module).add('borderless', () => 
+storiesOf('Components/Ant Design/Collapse', module).add('borderless', () => 
   <Collapse bordered={false} defaultActiveKey={['1']}>
     <Panel header="This is panel header 1" key="1">
       {text}
@@ -24,5 +24,15 @@ storiesOf('antd/collapse', module).add('borderless', () =>
       {text}
     </Panel>
   </Collapse>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A borderless style of Collapse.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/collapse/" target="_blank">
+                  documentation on Collapse component
+                </a>.
+              </>
+            ) }
+        });

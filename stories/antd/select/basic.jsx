@@ -9,7 +9,7 @@ function handleChange(value) {
   console.log(`selected ${value}`);
 }
 
-storiesOf('antd/select', module).add('basic', () => 
+storiesOf('Components/Ant Design/Select', module).add('basic', () => 
   <>
     <Select defaultValue="lucy" style={{ width: 120 }} onChange={handleChange}>
       <Option value="jack">Jack</Option>
@@ -29,5 +29,15 @@ storiesOf('antd/select', module).add('basic', () =>
       <Option value="lucy">Lucy</Option>
     </Select>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Basic Usage.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/select/" target="_blank">
+                  documentation on Select component
+                </a>.
+              </>
+            ) }
+        });

@@ -82,10 +82,20 @@ class DecimalStep extends React.Component {
   }
 }
 
-storiesOf('antd/slider', module).add('input-number', () => 
+storiesOf('Components/Ant Design/Slider', module).add('input-number', () => 
   <div>
     <IntegerStep />
     <DecimalStep />
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Synchronize with <a href="/components/input-number/">InputNumber</a> component.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/slider/" target="_blank">
+                  documentation on Slider component
+                </a>.
+              </>
+            ) }
+        });

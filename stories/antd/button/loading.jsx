@@ -64,5 +64,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/button', module).add('loading', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A loading indicator can be added to a button by setting the <code>loading</code> property on the <code>Button</code>.</p></>) } });
+storiesOf('Components/Ant Design/Button', module).add('loading', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/button/" target="_blank">
+                  documentation on Button component
+                </a>.
+              </>
+            ) }
+        });

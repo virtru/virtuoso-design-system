@@ -28,5 +28,15 @@ function SwitchablePicker() {
   );
 }
 
-storiesOf('antd/date-picker', module).add('switchable', () => <SwitchablePicker />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Switch in different types of pickers by Select.</p></>) } });
+storiesOf('Components/Ant Design/Date Picker', module).add('switchable', () => <SwitchablePicker />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/date-picker/" target="_blank">
+                  documentation on Date Picker component
+                </a>.
+              </>
+            ) }
+        });

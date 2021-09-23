@@ -7,7 +7,7 @@ function onChange(e) {
   console.log(`radio checked:${e.target.value}`);
 }
 
-storiesOf('antd/radio', module).add('radiobutton', () => 
+storiesOf('Components/Ant Design/Radio', module).add('radiobutton', () => 
   <>
     <Radio.Group onChange={onChange} defaultValue="a">
       <Radio.Button value="a">Hangzhou</Radio.Button>
@@ -30,5 +30,15 @@ storiesOf('antd/radio', module).add('radiobutton', () =>
       <Radio.Button value="d">Chengdu</Radio.Button>
     </Radio.Group>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The combination of radio button style.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/radio/" target="_blank">
+                  documentation on Radio component
+                </a>.
+              </>
+            ) }
+        });

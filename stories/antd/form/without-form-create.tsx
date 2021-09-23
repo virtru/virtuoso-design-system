@@ -58,5 +58,15 @@ const RawForm = () => {
   );
 };
 
-storiesOf('antd/form', module).add('without-form-create', () => <RawForm />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p><code>Form</code> will collect and validate form data automatically. But if you don't need this feature or the default behavior cannot satisfy your business, you can handle form data manually.</p></>) } });
+storiesOf('Components/Ant Design/Form', module).add('without-form-create', () => <RawForm />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

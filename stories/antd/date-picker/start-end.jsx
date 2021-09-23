@@ -78,11 +78,15 @@ class DateRange extends React.Component {
   }
 }
 
-storiesOf('antd/date-picker', module).add('start-end', () => <DateRange />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>When <code>RangePicker</code> does not satisfied your requirements, try to implement similar functionality with two <code>DatePicker</code>.</p>
-<blockquote>
-  <ul>
-  <li>Use the <code>disabledDate</code> property to limit the start and end dates.</li>
-  <li>Improve user experience with <code>open</code> and <code>onOpenChange</code>.</li>
-  </ul>
-</blockquote></>) } });
+storiesOf('Components/Ant Design/Date Picker', module).add('start-end', () => <DateRange />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/date-picker/" target="_blank">
+                  documentation on Date Picker component
+                </a>.
+              </>
+            ) }
+        });

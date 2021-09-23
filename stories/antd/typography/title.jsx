@@ -5,7 +5,7 @@ import { Typography } from 'antd';
 
 const { Title } = Typography;
 
-storiesOf('antd/typography', module).add('title', () => 
+storiesOf('Components/Ant Design/Typography', module).add('title', () => 
   <>
     <Title>h1. Ant Design</Title>
     <Title level={2}>h2. Ant Design</Title>
@@ -13,5 +13,15 @@ storiesOf('antd/typography', module).add('title', () =>
     <Title level={4}>h4. Ant Design</Title>
     <Title level={5}>h5. Ant Design</Title>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Display title in different level.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/typography/" target="_blank">
+                  documentation on Typography component
+                </a>.
+              </>
+            ) }
+        });

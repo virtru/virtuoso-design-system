@@ -12,7 +12,7 @@ function handleChange(value) {
   console.log(`selected ${value}`);
 }
 
-storiesOf('antd/select', module).add('suffix', () => 
+storiesOf('Components/Ant Design/Select', module).add('suffix', () => 
   <>
     <Select
       suffixIcon={smileIcon}
@@ -31,5 +31,15 @@ storiesOf('antd/select', module).add('suffix', () =>
       <Option value="lucy">Lucy</Option>
     </Select>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Basic Usage.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/select/" target="_blank">
+                  documentation on Select component
+                </a>.
+              </>
+            ) }
+        });

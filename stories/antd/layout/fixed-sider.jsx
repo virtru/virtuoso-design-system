@@ -15,7 +15,7 @@ import {
 
 const { Header, Content, Footer, Sider } = Layout;
 
-storiesOf('antd/layout', module).add('fixed-sider', () => 
+storiesOf('Components/Ant Design/Layout', module).add('fixed-sider', () => 
   <Layout>
     <Sider
       style={{
@@ -157,5 +157,15 @@ storiesOf('antd/layout', module).add('fixed-sider', () =>
       <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
     </Layout>
   </Layout>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>When dealing with long content, a fixed sider can provide a better user experience.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/layout/" target="_blank">
+                  documentation on Layout component
+                </a>.
+              </>
+            ) }
+        });

@@ -11,7 +11,7 @@ const data = [
   'Los Angeles battles huge wildfires.',
 ];
 
-storiesOf('antd/list', module).add('simple', () => 
+storiesOf('Components/Ant Design/List', module).add('simple', () => 
   <>
     <Divider orientation="left">Default Size</Divider>
     <List
@@ -44,7 +44,15 @@ storiesOf('antd/list', module).add('simple', () =>
       renderItem={item => <List.Item>{item}</List.Item>}
     />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Ant Design supports a default list size as well as a large and small size.</p>
-<p>If a large or small list is desired, set the size property to either large or small respectively. Omit the size property for a list with the default size.</p>
-<p>Customizing the header and footer of list by setting <code>header</code> and <code>footer</code> property.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/list/" target="_blank">
+                  documentation on List component
+                </a>.
+              </>
+            ) }
+        });

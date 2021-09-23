@@ -13,7 +13,7 @@ const content = (
 
 const buttonWidth = 70;
 
-storiesOf('antd/popover', module).add('placement', () => 
+storiesOf('Components/Ant Design/Popover', module).add('placement', () => 
   <div className="demo">
     <div style={{ marginLeft: buttonWidth, whiteSpace: 'nowrap' }}>
       <Popover placement="topLeft" title={text} content={content} trigger="click">
@@ -60,5 +60,15 @@ storiesOf('antd/popover', module).add('placement', () =>
       </Popover>
     </div>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>There are 12 <code>placement</code> options available.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/popover/" target="_blank">
+                  documentation on Popover component
+                </a>.
+              </>
+            ) }
+        });

@@ -50,5 +50,15 @@ class CitySwitcher extends React.Component {
   }
 }
 
-storiesOf('antd/cascader', module).add('custom-trigger', () => <CitySwitcher />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Separate trigger button and result.</p></>) } });
+storiesOf('Components/Ant Design/Cascader', module).add('custom-trigger', () => <CitySwitcher />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/cascader/" target="_blank">
+                  documentation on Cascader component
+                </a>.
+              </>
+            ) }
+        });

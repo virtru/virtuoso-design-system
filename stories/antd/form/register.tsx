@@ -250,5 +250,15 @@ const RegistrationForm = () => {
   );
 };
 
-storiesOf('antd/form', module).add('register', () => <RegistrationForm />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Fill in this form to create a new account for you.</p></>) } });
+storiesOf('Components/Ant Design/Form', module).add('register', () => <RegistrationForm />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

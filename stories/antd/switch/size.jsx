@@ -3,11 +3,21 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Switch } from 'antd';
 
-storiesOf('antd/switch', module).add('size', () => 
+storiesOf('Components/Ant Design/Switch', module).add('size', () => 
   <>
     <Switch defaultChecked />
     <br />
     <Switch size="small" defaultChecked />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p><code>size="small"</code> represents a small sized switch.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/switch/" target="_blank">
+                  documentation on Switch component
+                </a>.
+              </>
+            ) }
+        });

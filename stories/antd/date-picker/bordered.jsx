@@ -5,7 +5,7 @@ import { DatePicker, Space } from 'antd';
 
 const { RangePicker } = DatePicker;
 
-storiesOf('antd/date-picker', module).add('bordered', () => 
+storiesOf('Components/Ant Design/Date Picker', module).add('bordered', () => 
   <Space direction="vertical" size={12}>
     <DatePicker bordered={false} />
     <DatePicker picker="week" bordered={false} />
@@ -16,5 +16,15 @@ storiesOf('antd/date-picker', module).add('bordered', () =>
     <RangePicker picker="month" bordered={false} />
     <RangePicker picker="year" bordered={false} />
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Bordered-less style component.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/date-picker/" target="_blank">
+                  documentation on Date Picker component
+                </a>.
+              </>
+            ) }
+        });

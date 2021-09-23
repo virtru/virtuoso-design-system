@@ -7,9 +7,19 @@ const info = () => {
   message.info('This is a normal message');
 };
 
-storiesOf('antd/message', module).add('info', () => 
+storiesOf('Components/Ant Design/Message', module).add('info', () => 
   <Button type="primary" onClick={info}>
     Display normal message
   </Button>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Normal message for information.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/message/" target="_blank">
+                  documentation on Message component
+                </a>.
+              </>
+            ) }
+        });

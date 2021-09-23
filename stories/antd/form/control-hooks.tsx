@@ -87,8 +87,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/form', module).add('control-hooks', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Call form method with <code>Form.useForm</code>.</p>
-<blockquote>
-  <p>Note that <code>useForm</code> is a <a href="https://reactjs.org/docs/hooks-intro.html">React Hooks</a> that only works in functional component.</p>
-</blockquote></>) } });
+storiesOf('Components/Ant Design/Form', module).add('control-hooks', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

@@ -12,5 +12,15 @@ const Demo = () => (
   </Space>
 );
 
-storiesOf('antd/space', module).add('wrap', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Auto wrap line.</p></>) } });
+storiesOf('Components/Ant Design/Space', module).add('wrap', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/space/" target="_blank">
+                  documentation on Space component
+                </a>.
+              </>
+            ) }
+        });

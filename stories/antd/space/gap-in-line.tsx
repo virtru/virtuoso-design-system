@@ -32,5 +32,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/space', module).add('gap-in-line', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Debug usage</p></>) } });
+storiesOf('Components/Ant Design/Space', module).add('gap-in-line', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/space/" target="_blank">
+                  documentation on Space component
+                </a>.
+              </>
+            ) }
+        });

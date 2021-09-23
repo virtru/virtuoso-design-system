@@ -124,5 +124,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/tree', module).add('draggable', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Drag treeNode to insert after the other treeNode or insert into the other parent TreeNode.</p></>) } });
+storiesOf('Components/Ant Design/Tree', module).add('draggable', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tree/" target="_blank">
+                  documentation on Tree component
+                </a>.
+              </>
+            ) }
+        });

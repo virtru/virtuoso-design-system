@@ -19,7 +19,7 @@ const optionsWithDisabled = [
   { label: 'Orange', value: 'Orange', disabled: false },
 ];
 
-storiesOf('antd/checkbox', module).add('group', () => 
+storiesOf('Components/Ant Design/Checkbox', module).add('group', () => 
   <>
     <Checkbox.Group options={plainOptions} defaultValue={['Apple']} onChange={onChange} />
     <br />
@@ -34,5 +34,15 @@ storiesOf('antd/checkbox', module).add('group', () =>
       onChange={onChange}
     />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Generate a group of checkboxes from an array.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/checkbox/" target="_blank">
+                  documentation on Checkbox component
+                </a>.
+              </>
+            ) }
+        });

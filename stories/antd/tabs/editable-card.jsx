@@ -85,5 +85,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/tabs', module).add('editable-card', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Only card type Tabs support adding &amp; closable. +Use <code>closable=&#123;false&#125;</code> to disable close.</p></>) } });
+storiesOf('Components/Ant Design/Tabs', module).add('editable-card', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tabs/" target="_blank">
+                  documentation on Tabs component
+                </a>.
+              </>
+            ) }
+        });

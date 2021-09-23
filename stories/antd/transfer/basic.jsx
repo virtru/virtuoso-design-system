@@ -49,5 +49,15 @@ const App = () => {
   );
 };
 
-storiesOf('antd/transfer', module).add('basic', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The most basic usage of <code>Transfer</code> involves providing the source data and target keys arrays, plus the rendering and some callback functions.</p></>) } });
+storiesOf('Components/Ant Design/Transfer', module).add('basic', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/transfer/" target="_blank">
+                  documentation on Transfer component
+                </a>.
+              </>
+            ) }
+        });

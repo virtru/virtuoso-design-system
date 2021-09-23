@@ -5,7 +5,7 @@ import { Tabs } from 'antd';
 
 const { TabPane } = Tabs;
 
-storiesOf('antd/tabs', module).add('disabled', () => 
+storiesOf('Components/Ant Design/Tabs', module).add('disabled', () => 
   <Tabs defaultActiveKey="1">
     <TabPane tab="Tab 1" key="1">
       Tab 1
@@ -17,5 +17,15 @@ storiesOf('antd/tabs', module).add('disabled', () =>
       Tab 3
     </TabPane>
   </Tabs>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Disabled a tab.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tabs/" target="_blank">
+                  documentation on Tabs component
+                </a>.
+              </>
+            ) }
+        });

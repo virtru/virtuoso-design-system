@@ -11,12 +11,22 @@ const openNotificationWithIcon = type => {
   });
 };
 
-storiesOf('antd/notification', module).add('with-icon', () => 
+storiesOf('Components/Ant Design/Notification', module).add('with-icon', () => 
   <Space>
     <Button onClick={() => openNotificationWithIcon('success')}>Success</Button>
     <Button onClick={() => openNotificationWithIcon('info')}>Info</Button>
     <Button onClick={() => openNotificationWithIcon('warning')}>Warning</Button>
     <Button onClick={() => openNotificationWithIcon('error')}>Error</Button>
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A notification box with a icon at the left side.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/notification/" target="_blank">
+                  documentation on Notification component
+                </a>.
+              </>
+            ) }
+        });

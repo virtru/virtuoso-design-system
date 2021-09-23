@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Badge } from 'antd';
 
-storiesOf('antd/badge', module).add('title', () => 
+storiesOf('Components/Ant Design/Badge', module).add('title', () => 
   <div>
     <Badge count={5} title="Custom hover text">
       <a href="#" className="head-example" />
@@ -12,5 +12,15 @@ storiesOf('antd/badge', module).add('title', () =>
       <a href="#" className="head-example" />
     </Badge>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The badge will display <code>title</code> when hovered over, instead of <code>count</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/badge/" target="_blank">
+                  documentation on Badge component
+                </a>.
+              </>
+            ) }
+        });

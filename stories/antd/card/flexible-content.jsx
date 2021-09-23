@@ -5,7 +5,7 @@ import { Card } from 'antd';
 
 const { Meta } = Card;
 
-storiesOf('antd/card', module).add('flexible-content', () => 
+storiesOf('Components/Ant Design/Card', module).add('flexible-content', () => 
   <Card
     hoverable
     style={{ width: 240 }}
@@ -13,5 +13,15 @@ storiesOf('antd/card', module).add('flexible-content', () =>
   >
     <Meta title="Europe Street beat" description="www.instagram.com" />
   </Card>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>You can use <code>Card.Meta</code> to support more flexible content.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/card/" target="_blank">
+                  documentation on Card component
+                </a>.
+              </>
+            ) }
+        });

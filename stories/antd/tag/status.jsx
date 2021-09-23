@@ -11,7 +11,7 @@ import {
   MinusCircleOutlined,
 } from '@ant-design/icons';
 
-storiesOf('antd/tag', module).add('status', () => 
+storiesOf('Components/Ant Design/Tag', module).add('status', () => 
   <>
     <Divider orientation="left">Without icon</Divider>
     <div>
@@ -43,5 +43,15 @@ storiesOf('antd/tag', module).add('status', () =>
       </Tag>
     </div>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>We preset five different colors, you can set color property such as <code>success</code>,<code>processing</code>,<code>error</code>,<code>default</code> and <code>warning</code> to indicate specific status.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tag/" target="_blank">
+                  documentation on Tag component
+                </a>.
+              </>
+            ) }
+        });

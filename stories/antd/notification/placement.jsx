@@ -18,7 +18,7 @@ const openNotification = placement => {
   });
 };
 
-storiesOf('antd/notification', module).add('placement', () => 
+storiesOf('Components/Ant Design/Notification', module).add('placement', () => 
   <div>
     <Space>
       <Button type="primary" onClick={() => openNotification('topLeft')}>
@@ -42,5 +42,15 @@ storiesOf('antd/notification', module).add('placement', () =>
       </Button>
     </Space>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A notification box can appear from the <code>topRight</code>, <code>bottomRight</code>, <code>bottomLeft</code> or <code>topLeft</code> of the viewport.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/notification/" target="_blank">
+                  documentation on Notification component
+                </a>.
+              </>
+            ) }
+        });

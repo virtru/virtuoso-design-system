@@ -39,5 +39,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/mentions', module).add('prefix', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Customize Trigger Token by <code>prefix</code> props. Default to <code>@</code>, <code>Array&lt;string&gt;</code> also supported.</p></>) } });
+storiesOf('Components/Ant Design/Mentions', module).add('prefix', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/mentions/" target="_blank">
+                  documentation on Mentions component
+                </a>.
+              </>
+            ) }
+        });

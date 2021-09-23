@@ -53,5 +53,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/typography', module).add('interactive', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Provide additional interactive capacity of editable and copyable.</p></>) } });
+storiesOf('Components/Ant Design/Typography', module).add('interactive', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/typography/" target="_blank">
+                  documentation on Typography component
+                </a>.
+              </>
+            ) }
+        });

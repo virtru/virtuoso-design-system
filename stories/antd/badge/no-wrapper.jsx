@@ -27,5 +27,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/badge', module).add('no-wrapper', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Used in standalone when children is empty.</p></>) } });
+storiesOf('Components/Ant Design/Badge', module).add('no-wrapper', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/badge/" target="_blank">
+                  documentation on Badge component
+                </a>.
+              </>
+            ) }
+        });

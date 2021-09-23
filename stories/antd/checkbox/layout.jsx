@@ -7,7 +7,7 @@ function onChange(checkedValues) {
   console.log('checked = ', checkedValues);
 }
 
-storiesOf('antd/checkbox', module).add('layout', () => 
+storiesOf('Components/Ant Design/Checkbox', module).add('layout', () => 
   <Checkbox.Group style={{ width: '100%' }} onChange={onChange}>
     <Row>
       <Col span={8}>
@@ -27,5 +27,15 @@ storiesOf('antd/checkbox', module).add('layout', () =>
       </Col>
     </Row>
   </Checkbox.Group>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>We can use Checkbox and Grid in Checkbox.Group, to implement complex layout.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/checkbox/" target="_blank">
+                  documentation on Checkbox component
+                </a>.
+              </>
+            ) }
+        });

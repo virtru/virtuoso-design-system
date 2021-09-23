@@ -105,5 +105,15 @@ class LoadMoreList extends React.Component {
   }
 }
 
-storiesOf('antd/list', module).add('loadmore', () => <LoadMoreList />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Load more list with <code>loadMore</code> property.</p></>) } });
+storiesOf('Components/Ant Design/List', module).add('loadmore', () => <LoadMoreList />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/list/" target="_blank">
+                  documentation on List component
+                </a>.
+              </>
+            ) }
+        });

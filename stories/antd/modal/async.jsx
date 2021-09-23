@@ -44,5 +44,15 @@ const App = () => {
   );
 };
 
-storiesOf('antd/modal', module).add('async', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Asynchronously close a modal dialog when a the OK button is pressed. For example, you can use this pattern when you submit a form.</p></>) } });
+storiesOf('Components/Ant Design/Modal', module).add('async', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/modal/" target="_blank">
+                  documentation on Modal component
+                </a>.
+              </>
+            ) }
+        });

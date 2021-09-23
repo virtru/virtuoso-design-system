@@ -13,5 +13,15 @@ function itemRender(current, type, originalElement) {
   return originalElement;
 }
 
-storiesOf('antd/pagination', module).add('itemRender', () => <Pagination total={500} itemRender={itemRender} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use text link for prev and next button.</p></>) } });
+storiesOf('Components/Ant Design/Pagination', module).add('itemRender', () => <Pagination total={500} itemRender={itemRender} />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/pagination/" target="_blank">
+                  documentation on Pagination component
+                </a>.
+              </>
+            ) }
+        });

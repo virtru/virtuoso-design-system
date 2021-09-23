@@ -6,7 +6,7 @@ import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/ico
 
 const { Meta } = Card;
 
-storiesOf('antd/card', module).add('meta', () => 
+storiesOf('Components/Ant Design/Card', module).add('meta', () => 
   <Card
     style={{ width: 300 }}
     cover={
@@ -27,5 +27,15 @@ storiesOf('antd/card', module).add('meta', () =>
       description="This is the description"
     />
   </Card>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A Card that supports <code>cover</code>, <code>avatar</code>, <code>title</code> and <code>description</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/card/" target="_blank">
+                  documentation on Card component
+                </a>.
+              </>
+            ) }
+        });

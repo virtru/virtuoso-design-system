@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Button } from 'antd';
 
-storiesOf('antd/button', module).add('basic', () => 
+storiesOf('Components/Ant Design/Button', module).add('basic', () => 
   <>
     <Button type="primary">Primary Button</Button>
     <Button>Default Button</Button>
@@ -12,5 +12,15 @@ storiesOf('antd/button', module).add('basic', () =>
     <Button type="text">Text Button</Button>
     <Button type="link">Link Button</Button>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>There are <code>primary</code> button, <code>default</code> button, <code>dashed</code> button, <code>text</code> button and <code>link</code> button in antd.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/button/" target="_blank">
+                  documentation on Button component
+                </a>.
+              </>
+            ) }
+        });

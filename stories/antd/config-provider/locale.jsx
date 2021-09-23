@@ -152,5 +152,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/config-provider', module).add('locale', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Components which need localization support are listed here, you can toggle the language in the demo.</p></>) } });
+storiesOf('Components/Ant Design/Config Provider', module).add('locale', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/config-provider/" target="_blank">
+                  documentation on Config Provider component
+                </a>.
+              </>
+            ) }
+        });

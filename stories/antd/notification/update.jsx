@@ -20,9 +20,19 @@ const openNotification = () => {
   }, 1000);
 };
 
-storiesOf('antd/notification', module).add('update', () => 
+storiesOf('Components/Ant Design/Notification', module).add('update', () => 
   <Button type="primary" onClick={openNotification}>
     Open the notification box
   </Button>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Update content with unique key.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/notification/" target="_blank">
+                  documentation on Notification component
+                </a>.
+              </>
+            ) }
+        });

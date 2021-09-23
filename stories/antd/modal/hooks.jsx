@@ -61,5 +61,15 @@ const App = () => {
   );
 };
 
-storiesOf('antd/modal', module).add('hooks', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use <code>Modal.useModal</code> to get <code>contextHolder</code> with context accessible issue.</p></>) } });
+storiesOf('Components/Ant Design/Modal', module).add('hooks', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/modal/" target="_blank">
+                  documentation on Modal component
+                </a>.
+              </>
+            ) }
+        });

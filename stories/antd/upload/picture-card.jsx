@@ -106,5 +106,15 @@ class PicturesWall extends React.Component {
   }
 }
 
-storiesOf('antd/upload', module).add('picture-card', () => <PicturesWall />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>After users upload picture, the thumbnail will be shown in list. The upload button will disappear when count meets limitation.</p></>) } });
+storiesOf('Components/Ant Design/Upload', module).add('picture-card', () => <PicturesWall />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/upload/" target="_blank">
+                  documentation on Upload component
+                </a>.
+              </>
+            ) }
+        });

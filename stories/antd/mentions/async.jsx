@@ -62,5 +62,15 @@ class AsyncMention extends React.Component {
   }
 }
 
-storiesOf('antd/mentions', module).add('async', () => <AsyncMention />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>async</p></>) } });
+storiesOf('Components/Ant Design/Mentions', module).add('async', () => <AsyncMention />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/mentions/" target="_blank">
+                  documentation on Mentions component
+                </a>.
+              </>
+            ) }
+        });

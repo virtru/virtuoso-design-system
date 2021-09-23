@@ -32,5 +32,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/form', module).add('dep-debug', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Buggy!</p></>) } });
+storiesOf('Components/Ant Design/Form', module).add('dep-debug', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

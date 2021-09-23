@@ -28,5 +28,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/input-number', module).add('disabled', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Click the button to toggle between available and disabled states.</p></>) } });
+storiesOf('Components/Ant Design/Input Number', module).add('disabled', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input-number/" target="_blank">
+                  documentation on Input Number component
+                </a>.
+              </>
+            ) }
+        });

@@ -25,11 +25,21 @@ const menu = (
   </Menu>
 );
 
-storiesOf('antd/dropdown', module).add('basic', () => 
+storiesOf('Components/Ant Design/Dropdown', module).add('basic', () => 
   <Dropdown overlay={menu}>
     <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
       Hover me <DownOutlined />
     </a>
   </Dropdown>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The most basic dropdown menu.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/dropdown/" target="_blank">
+                  documentation on Dropdown component
+                </a>.
+              </>
+            ) }
+        });

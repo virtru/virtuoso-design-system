@@ -11,7 +11,7 @@ const contentStyle = {
   background: '#364d79',
 };
 
-storiesOf('antd/carousel', module).add('fade', () => 
+storiesOf('Components/Ant Design/Carousel', module).add('fade', () => 
   <Carousel effect="fade">
     <div>
       <h3 style={contentStyle}>1</h3>
@@ -26,5 +26,15 @@ storiesOf('antd/carousel', module).add('fade', () =>
       <h3 style={contentStyle}>4</h3>
     </div>
   </Carousel>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Slides use fade for transition.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/carousel/" target="_blank">
+                  documentation on Carousel component
+                </a>.
+              </>
+            ) }
+        });

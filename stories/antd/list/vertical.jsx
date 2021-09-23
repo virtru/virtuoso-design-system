@@ -24,7 +24,7 @@ const IconText = ({ icon, text }) => (
   </Space>
 );
 
-storiesOf('antd/list', module).add('vertical', () => 
+storiesOf('Components/Ant Design/List', module).add('vertical', () => 
   <List
     itemLayout="vertical"
     size="large"
@@ -65,5 +65,15 @@ storiesOf('antd/list', module).add('vertical', () =>
       </List.Item>
     )}
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Set the <code>itemLayout</code> property to <code>vertical</code> to create a vertical list.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/list/" target="_blank">
+                  documentation on List component
+                </a>.
+              </>
+            ) }
+        });

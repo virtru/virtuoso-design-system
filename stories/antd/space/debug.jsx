@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Space, Button, Popconfirm } from 'antd';
 
-storiesOf('antd/space', module).add('debug', () => 
+storiesOf('Components/Ant Design/Space', module).add('debug', () => 
   <Space>
     <>
       Button
@@ -23,5 +23,15 @@ storiesOf('antd/space', module).add('debug', () =>
     {null}
     {undefined}
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Debug usage</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/space/" target="_blank">
+                  documentation on Space component
+                </a>.
+              </>
+            ) }
+        });

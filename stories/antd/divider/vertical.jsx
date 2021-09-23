@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Divider } from 'antd';
 
-storiesOf('antd/divider', module).add('vertical', () => 
+storiesOf('Components/Ant Design/Divider', module).add('vertical', () => 
   <>
     Text
     <Divider type="vertical" />
@@ -11,5 +11,15 @@ storiesOf('antd/divider', module).add('vertical', () =>
     <Divider type="vertical" />
     <a href="#">Link</a>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use <code>type="vertical"</code> make it vertical.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/divider/" target="_blank">
+                  documentation on Divider component
+                </a>.
+              </>
+            ) }
+        });

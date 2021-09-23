@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Divider } from 'antd';
 
-storiesOf('antd/divider', module).add('with-text', () => 
+storiesOf('Components/Ant Design/Divider', module).add('with-text', () => 
   <>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
@@ -25,5 +25,15 @@ storiesOf('antd/divider', module).add('with-text', () =>
       probare, quae sunt a te dicta? Refert tamen, quo modo.
     </p>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Divider with inner title, set <code>orientation="left/right"</code> to align it.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/divider/" target="_blank">
+                  documentation on Divider component
+                </a>.
+              </>
+            ) }
+        });

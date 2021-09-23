@@ -15,7 +15,7 @@ const text = `
   it can be found as a welcome guest in many households across the world.
 `;
 
-storiesOf('antd/collapse', module).add('basic', () => 
+storiesOf('Components/Ant Design/Collapse', module).add('basic', () => 
   <Collapse defaultActiveKey={['1']} onChange={callback}>
     <Panel header="This is panel header 1" key="1">
       <p>{text}</p>
@@ -27,5 +27,15 @@ storiesOf('antd/collapse', module).add('basic', () =>
       <p>{text}</p>
     </Panel>
   </Collapse>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>By default, any number of panels can be expanded at a time. The first panel is expanded in this example.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/collapse/" target="_blank">
+                  documentation on Collapse component
+                </a>.
+              </>
+            ) }
+        });

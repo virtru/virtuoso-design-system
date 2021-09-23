@@ -70,5 +70,15 @@ const App = () => {
   );
 };
 
-storiesOf('antd/mentions', module).add('form', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Controlled mode, for example, to work with <code>Form</code>.</p></>) } });
+storiesOf('Components/Ant Design/Mentions', module).add('form', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/mentions/" target="_blank">
+                  documentation on Mentions component
+                </a>.
+              </>
+            ) }
+        });

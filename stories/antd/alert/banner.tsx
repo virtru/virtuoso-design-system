@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Alert } from 'antd';
 
-storiesOf('antd/alert', module).add('banner', () => 
+storiesOf('Components/Ant Design/Alert', module).add('banner', () => 
   <>
     <Alert message="Warning text" banner />
     <br />
@@ -17,5 +17,15 @@ storiesOf('antd/alert', module).add('banner', () =>
     <br />
     <Alert type="error" message="Error text" banner />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Display Alert as a banner at top of page.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/alert/" target="_blank">
+                  documentation on Alert component
+                </a>.
+              </>
+            ) }
+        });

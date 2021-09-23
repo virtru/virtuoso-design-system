@@ -38,5 +38,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/steps', module).add('clickable', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Setting <code>onChange</code> makes Steps clickable.</p></>) } });
+storiesOf('Components/Ant Design/Steps', module).add('clickable', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/steps/" target="_blank">
+                  documentation on Steps component
+                </a>.
+              </>
+            ) }
+        });

@@ -86,5 +86,15 @@ const FormSizeDemo = () => {
   );
 };
 
-storiesOf('antd/form', module).add('size', () => <FormSizeDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Set component size, only works for antd components.</p></>) } });
+storiesOf('Components/Ant Design/Form', module).add('size', () => <FormSizeDemo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

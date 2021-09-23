@@ -14,5 +14,15 @@ function ImageDemo() {
   );
 }
 
-storiesOf('antd/image', module).add('fallback', () => <ImageDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Load failed to display image placeholder.</p></>) } });
+storiesOf('Components/Ant Design/Image', module).add('fallback', () => <ImageDemo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/image/" target="_blank">
+                  documentation on Image component
+                </a>.
+              </>
+            ) }
+        });

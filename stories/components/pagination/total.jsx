@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Pagination } from '@';
 
-storiesOf('virtru/pagination', module).add('total', () => 
+storiesOf('Components/Pagination', module).add('total', () => 
   <>
     <Pagination
       total={89}

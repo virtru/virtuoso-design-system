@@ -9,5 +9,15 @@ const success = () => {
   setTimeout(hide, 2500);
 };
 
-storiesOf('antd/message', module).add('loading', () => <Button onClick={success}>Display a loading indicator</Button>, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Display a global loading indicator, which is dismissed by itself asynchronously.</p></>) } });
+storiesOf('Components/Ant Design/Message', module).add('loading', () => <Button onClick={success}>Display a loading indicator</Button>, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/message/" target="_blank">
+                  documentation on Message component
+                </a>.
+              </>
+            ) }
+        });

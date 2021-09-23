@@ -27,5 +27,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/tag', module).add('controlled', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>By using the <code>visible</code> prop, you can control the close state of Tag.</p></>) } });
+storiesOf('Components/Ant Design/Tag', module).add('controlled', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tag/" target="_blank">
+                  documentation on Tag component
+                </a>.
+              </>
+            ) }
+        });

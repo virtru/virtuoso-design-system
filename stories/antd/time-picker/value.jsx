@@ -13,5 +13,15 @@ const Demo = () => {
   return <TimePicker value={value} onChange={onChange} />;
 };
 
-storiesOf('antd/time-picker', module).add('value', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p><code>value</code> and <code>onChange</code> should be used together,</p></>) } });
+storiesOf('Components/Ant Design/Time Picker', module).add('value', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/time-picker/" target="_blank">
+                  documentation on Time Picker component
+                </a>.
+              </>
+            ) }
+        });

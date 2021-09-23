@@ -59,7 +59,7 @@ const options = [
   },
 ];
 
-storiesOf('antd/Input', module).add('align', () => 
+storiesOf('Components/Ant Design/Input', module).add('align', () => 
   <>
     <Mentions style={{ width: 100 }} rows={1} />
     <Input.TextArea rows={1} style={{ width: 100 }} />
@@ -94,9 +94,15 @@ storiesOf('antd/Input', module).add('align', () =>
     <Input style={narrowStyle} />
     <Input style={narrowStyle} defaultValue="1" suffix="Y" />
   </>,
-  { docs: { page: () => (<><hr />
-<p>order: 99
-title:
-  zh-CN: 文本对齐
-  en-US: Text Align</p>
-<h2 id="debugtrue">debug: true</h2></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input/" target="_blank">
+                  documentation on Input component
+                </a>.
+              </>
+            ) }
+        });

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Row, Col } from 'antd';
 
-storiesOf('antd/grid', module).add('basic', () => 
+storiesOf('Components/Ant Design/Grid', module).add('basic', () => 
   <>
     <Row>
       <Col span={24}>col</Col>
@@ -24,6 +24,15 @@ storiesOf('antd/grid', module).add('basic', () =>
       <Col span={6}>col-6</Col>
     </Row>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>From the stack to the horizontal arrangement.</p>
-<p>You can create a basic grid system by using a single set of <code>Row</code> and <code>Col</code> grid assembly, all of the columns (Col) must be placed in <code>Row</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/grid/" target="_blank">
+                  documentation on Grid component
+                </a>.
+              </>
+            ) }
+        });

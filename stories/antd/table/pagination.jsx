@@ -127,5 +127,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/table', module).add('pagination', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Table pagination settings.</p></>) } });
+storiesOf('Components/Ant Design/Table', module).add('pagination', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

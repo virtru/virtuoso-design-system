@@ -5,7 +5,7 @@ import { Layout, Menu, Breadcrumb } from 'antd';
 
 const { Header, Content, Footer } = Layout;
 
-storiesOf('antd/layout', module).add('fixed', () => 
+storiesOf('Components/Ant Design/Layout', module).add('fixed', () => 
   <Layout>
     <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
       <div className="logo" />
@@ -27,5 +27,15 @@ storiesOf('antd/layout', module).add('fixed', () =>
     </Content>
     <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
   </Layout>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Fixed Header is generally used to fix the top navigation to facilitate page switching.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/layout/" target="_blank">
+                  documentation on Layout component
+                </a>.
+              </>
+            ) }
+        });

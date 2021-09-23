@@ -13,9 +13,19 @@ const openNotification = () => {
   notification.open(args);
 };
 
-storiesOf('antd/notification', module).add('duration', () => 
+storiesOf('Components/Ant Design/Notification', module).add('duration', () => 
   <Button type="primary" onClick={openNotification}>
     Open the notification box
   </Button>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p><code>Duration</code> can be used to specify how long the notification stays open. After the duration time elapses, the notification closes automatically. If not specified, default value is 4.5 seconds. If you set the value to 0, the notification box will never close automatically.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/notification/" target="_blank">
+                  documentation on Notification component
+                </a>.
+              </>
+            ) }
+        });

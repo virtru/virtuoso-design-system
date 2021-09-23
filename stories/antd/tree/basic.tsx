@@ -55,5 +55,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/tree', module).add('basic', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The most basic usage, tell you how to use checkable, selectable, disabled, defaultExpandKeys, and etc.</p></>) } });
+storiesOf('Components/Ant Design/Tree', module).add('basic', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tree/" target="_blank">
+                  documentation on Tree component
+                </a>.
+              </>
+            ) }
+        });

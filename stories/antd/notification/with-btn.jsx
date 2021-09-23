@@ -26,9 +26,19 @@ const openNotification = () => {
   });
 };
 
-storiesOf('antd/notification', module).add('with-btn', () => 
+storiesOf('Components/Ant Design/Notification', module).add('with-btn', () => 
   <Button type="primary" onClick={openNotification}>
     Open the notification box
   </Button>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>To customize the style or font of the close button.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/notification/" target="_blank">
+                  documentation on Notification component
+                </a>.
+              </>
+            ) }
+        });

@@ -15,7 +15,7 @@ const contentStyle = {
   background: '#364d79',
 };
 
-storiesOf('antd/carousel', module).add('basic', () => 
+storiesOf('Components/Ant Design/Carousel', module).add('basic', () => 
   <Carousel afterChange={onChange}>
     <div>
       <h3 style={contentStyle}>1</h3>
@@ -30,5 +30,15 @@ storiesOf('antd/carousel', module).add('basic', () =>
       <h3 style={contentStyle}>4</h3>
     </div>
   </Carousel>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Basic usage.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/carousel/" target="_blank">
+                  documentation on Carousel component
+                </a>.
+              </>
+            ) }
+        });

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Row, Col } from 'antd';
 
-storiesOf('antd/grid', module).add('offset', () => 
+storiesOf('Components/Ant Design/Grid', module).add('offset', () => 
   <>
     <Row>
       <Col span={8}>col-8</Col>
@@ -25,5 +25,15 @@ storiesOf('antd/grid', module).add('offset', () =>
       </Col>
     </Row>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p><code>offset</code> can set the column to the right side. For example, using <code>offset = &#123;4&#125;</code> can set the element shifted to the right four columns width.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/grid/" target="_blank">
+                  documentation on Grid component
+                </a>.
+              </>
+            ) }
+        });

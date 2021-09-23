@@ -44,5 +44,15 @@ const PositionCarouselDemo = () => {
   );
 };
 
-storiesOf('antd/carousel', module).add('position', () => <PositionCarouselDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>There are 4 position options available.</p></>) } });
+storiesOf('Components/Ant Design/Carousel', module).add('position', () => <PositionCarouselDemo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/carousel/" target="_blank">
+                  documentation on Carousel component
+                </a>.
+              </>
+            ) }
+        });

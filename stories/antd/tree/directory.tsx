@@ -44,5 +44,15 @@ const Demo: React.FC<{}> = () => {
   );
 };
 
-storiesOf('antd/tree', module).add('directory', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Built-in directory tree. <code>multiple</code> support <code>ctrl(Windows)</code> / <code>command(Mac)</code> selection.</p></>) } });
+storiesOf('Components/Ant Design/Tree', module).add('directory', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tree/" target="_blank">
+                  documentation on Tree component
+                </a>.
+              </>
+            ) }
+        });

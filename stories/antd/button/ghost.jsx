@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Button } from 'antd';
 
-storiesOf('antd/button', module).add('ghost', () => 
+storiesOf('Components/Ant Design/Button', module).add('ghost', () => 
   <div className="site-button-ghost-wrapper">
     <Button type="primary" ghost>
       Primary
@@ -13,5 +13,15 @@ storiesOf('antd/button', module).add('ghost', () =>
       Dashed
     </Button>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p><code>ghost</code> property will make button's background transparent, it is commonly used in colored background.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/button/" target="_blank">
+                  documentation on Button component
+                </a>.
+              </>
+            ) }
+        });

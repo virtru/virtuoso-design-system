@@ -29,5 +29,15 @@ class Card extends React.Component {
   }
 }
 
-storiesOf('antd/spin', module).add('nested', () => <Card />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Embedding content into <code>Spin</code> will set it into loading state.</p></>) } });
+storiesOf('Components/Ant Design/Spin', module).add('nested', () => <Card />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/spin/" target="_blank">
+                  documentation on Spin component
+                </a>.
+              </>
+            ) }
+        });
