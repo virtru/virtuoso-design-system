@@ -7,19 +7,16 @@ import {
   addDecorator,
 } from '@storybook/react';
 import { withA11y } from '@storybook/addon-a11y';
-import { withKnobs } from '@storybook/addon-knobs';
 import { themes } from '@storybook/theming';
 import virtuosoTheme from './virtuosoTheme.js';
 
 import 'loki/configure-react';
 
+// Custom storybook styles
 import styles from './styles.css';
 
-// import design tokens so webpack and storybook-design-token render them
-import '../lib/styles/tokens.css';
-import '../lib/styles/common.css';
-import '../lib/styles/build/css/design_tokens.css';
-import '../lib/styles/typography/index.css';
+// Virtuoso styles
+import '../lib/styles';
 
 // configure storybook-design-token
 const cssReq = require.context('!!raw-loader!../lib/components', true, /.\.css$/);
@@ -39,11 +36,11 @@ addParameters({
     theme: virtuosoTheme,
   },
   options: {
-    // storySort: {
-    //   method: 'alphabetical',
-    //   order: ['Introduction', 'Basics'],
-    //   locales: 'en-US',
-    // },
+    storySort: {
+      method: 'alphabetical',
+      order: ['Design', ['Introduction', 'For Designers 🎨', 'For Engineers 🧰', 'Design Tokens', 'Stickersheets'], 'Components', ['*', 'Ant Design']],
+      locales: 'en-US',
+    },
     /**
      * id to select an addon panel
      * @type {String}
@@ -59,5 +56,3 @@ addDecorator(Story => (
     <Story />
   </div>
 ));
-
-addDecorator(withKnobs);

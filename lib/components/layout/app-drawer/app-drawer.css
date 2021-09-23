@@ -1,0 +1,46 @@
+.vds-app-drawer {
+  float: left;
+  color: var(--vds-color-white-value);
+  margin: 12px 24px 16px 0;
+  height: 31px;
+  font-size: x-large;
+  line-height: 0;
+}
+
+.vds-app-drawer:hover {
+  color: rgba(255, 255, 255, 0.65);
+  cursor: pointer;
+}
+
+.vds-app-drawer-header {
+  margin-top: -10px;
+}
+
+.vds-app-drawer-header-title {
+  height: 20px;
+  display: inline-block;
+  font-size: medium;
+}
+
+.vds-app-drawer-body {
+  margin: 20px 40px 30px 40px;
+}
+
+.vds-app-drawer-app-icon {
+  display: inline-block;
+  font-size: 64px;
+  line-height: 0;
+}
+
+.vds-app-drawer-app-detail {
+  display: inline-block;
+}
+
+.vds-app-drawer-app-detail-title {
+  font-size: large;
+  color: var(--vds-color-blue-darkest);
+}
+
+.vds-app-drawer-app-action {
+  padding-top: 30px;
+}

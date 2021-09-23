@@ -21,5 +21,15 @@ function UseBreakpointDemo() {
   );
 }
 
-storiesOf('antd/grid', module).add('useBreakpoint', () => <UseBreakpointDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use <code>useBreakpoint</code> Hook provide personalized layout.</p></>) } });
+storiesOf('Components/Ant Design/Grid', module).add('useBreakpoint', () => <UseBreakpointDemo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/grid/" target="_blank">
+                  documentation on Grid component
+                </a>.
+              </>
+            ) }
+        });

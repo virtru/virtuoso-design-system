@@ -7,5 +7,15 @@ function onChange(e) {
   console.log(`checked = ${e.target.checked}`);
 }
 
-storiesOf('antd/checkbox', module).add('basic', () => <Checkbox onChange={onChange}>Checkbox</Checkbox>, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Basic usage of checkbox.</p></>) } });
+storiesOf('Components/Ant Design/Checkbox', module).add('basic', () => <Checkbox onChange={onChange}>Checkbox</Checkbox>, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/checkbox/" target="_blank">
+                  documentation on Checkbox component
+                </a>.
+              </>
+            ) }
+        });

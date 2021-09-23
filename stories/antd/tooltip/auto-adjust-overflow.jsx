@@ -10,7 +10,7 @@ const wrapStyles = {
   border: '1px solid #e9e9e9',
 };
 
-storiesOf('antd/tooltip', module).add('auto-adjust-overflow', () => 
+storiesOf('Components/Ant Design/Tooltip', module).add('auto-adjust-overflow', () => 
   <div style={wrapStyles}>
     <Tooltip
       placement="left"
@@ -29,5 +29,15 @@ storiesOf('antd/tooltip', module).add('auto-adjust-overflow', () =>
       <Button>Ignore / 不处理</Button>
     </Tooltip>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Adjust placement automatically when tooltip is invisible.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tooltip/" target="_blank">
+                  documentation on Tooltip component
+                </a>.
+              </>
+            ) }
+        });

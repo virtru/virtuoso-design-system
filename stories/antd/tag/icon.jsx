@@ -9,7 +9,7 @@ import {
   LinkedinOutlined,
 } from '@ant-design/icons';
 
-storiesOf('antd/tag', module).add('icon', () => 
+storiesOf('Components/Ant Design/Tag', module).add('icon', () => 
   <>
     <Tag icon={<TwitterOutlined />} color="#55acee">
       Twitter
@@ -24,6 +24,15 @@ storiesOf('antd/tag', module).add('icon', () =>
       LinkedIn
     </Tag>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p><code>Tag</code> components can contain an <code>Icon</code>. This is done by setting the <code>icon</code> property or placing an <code>Icon</code> component within the <code>Tag</code>.</p>
-<p>If you want specific control over the positioning and placement of the <code>Icon</code>, then that should be done by placing the <code>Icon</code> component within the <code>Tag</code> rather than using the <code>icon</code> property.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tag/" target="_blank">
+                  documentation on Tag component
+                </a>.
+              </>
+            ) }
+        });

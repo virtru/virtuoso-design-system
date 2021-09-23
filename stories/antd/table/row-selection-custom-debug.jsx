@@ -32,5 +32,15 @@ const App = () => {
   return <Table rowSelection={rowSelection} columns={columns} dataSource={data} />;
 };
 
-storiesOf('antd/table', module).add('row-selection-custom-debug', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Customize selection group.</p></>) } });
+storiesOf('Components/Ant Design/Table', module).add('row-selection-custom-debug', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

@@ -34,5 +34,15 @@ function TimelimeLabelDemo() {
   );
 }
 
-storiesOf('antd/timeline', module).add('label', () => <TimelimeLabelDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use <code>label</code> show time alone.</p></>) } });
+storiesOf('Components/Ant Design/Timeline', module).add('label', () => <TimelimeLabelDemo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/timeline/" target="_blank">
+                  documentation on Timeline component
+                </a>.
+              </>
+            ) }
+        });

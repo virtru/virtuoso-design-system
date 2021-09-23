@@ -7,11 +7,21 @@ function onChange(pageNumber) {
   console.log('Page: ', pageNumber);
 }
 
-storiesOf('antd/pagination', module).add('jump', () => 
+storiesOf('Components/Ant Design/Pagination', module).add('jump', () => 
   <>
     <Pagination showQuickJumper defaultCurrent={2} total={500} onChange={onChange} />
     <br />
     <Pagination showQuickJumper defaultCurrent={2} total={500} onChange={onChange} disabled />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Jump to a page directly.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/pagination/" target="_blank">
+                  documentation on Pagination component
+                </a>.
+              </>
+            ) }
+        });

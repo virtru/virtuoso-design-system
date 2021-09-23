@@ -65,7 +65,7 @@ function getDemo(content) {
 (async () => {
   console.time('Execution...');
 
-  const demoFiles = glob.sync(path.join(process.cwd(), 'lib/components/**/demo/*.md'));
+  const demoFiles = glob.sync(path.join(process.cwd(), 'lib/vendor/antd/**/demo/*.md'));
 
   const tmpFolder = path.resolve('stories/antd');
 
@@ -81,16 +81,33 @@ function getDemo(content) {
     if (script) {
       await fs.ensureDir(path.join(tmpFolder, dirs[dirs.length - 2]));
 
+      const componentDir = dirs[dirs.length - 2];
+      const componentName = componentDir
+        .split('-')
+        .map((name) => name.substring(0, 1).toUpperCase() + name.substring(1))
+        .join(' ');
+
       script = script.replace(
         'ReactDOM.render(',
-        `storiesOf('antd/${dirs[dirs.length - 2]}', module).add('${path
+        `storiesOf('Components/Ant Design/${componentName}', module).add('${path
           .basename(demoPath)
           .replace(/\..*/, '')}', () => `,
       );
 
       script = script.replace(
         /mountNode+,?\n?/g,
-        `{ docs: { page: () => (<>${escapeUnsafeChar(converter.makeHtml(description))}</>) } }`,
+        `{
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/${componentDir}/" target="_blank">
+                  documentation on ${componentName} component
+                </a>.
+              </>
+            ) }
+        }`,
       );
 
       const file = path.join(

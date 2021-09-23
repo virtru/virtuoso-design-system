@@ -240,5 +240,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/table', module).add('dynamic-settings', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Select different settings to see the result.</p></>) } });
+storiesOf('Components/Ant Design/Table', module).add('dynamic-settings', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

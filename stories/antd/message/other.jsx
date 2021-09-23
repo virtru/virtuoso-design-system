@@ -15,11 +15,21 @@ const warning = () => {
   message.warning('This is a warning message');
 };
 
-storiesOf('antd/message', module).add('other', () => 
+storiesOf('Components/Ant Design/Message', module).add('other', () => 
   <Space>
     <Button onClick={success}>Success</Button>
     <Button onClick={error}>Error</Button>
     <Button onClick={warning}>Warning</Button>
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Messages of success, error and warning types.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/message/" target="_blank">
+                  documentation on Message component
+                </a>.
+              </>
+            ) }
+        });

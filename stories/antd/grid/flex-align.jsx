@@ -5,7 +5,7 @@ import { Row, Col, Divider } from 'antd';
 
 const DemoBox = props => <p className={`height-${props.value}`}>{props.children}</p>;
 
-storiesOf('antd/grid', module).add('flex-align', () => 
+storiesOf('Components/Ant Design/Grid', module).add('flex-align', () => 
   <>
     <Divider orientation="left">Align Top</Divider>
     <Row justify="center" align="top">
@@ -55,5 +55,15 @@ storiesOf('antd/grid', module).add('flex-align', () =>
       </Col>
     </Row>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Child elements vertically aligned.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/grid/" target="_blank">
+                  documentation on Grid component
+                </a>.
+              </>
+            ) }
+        });

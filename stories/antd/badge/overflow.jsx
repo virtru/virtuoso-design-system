@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Badge } from 'antd';
 
-storiesOf('antd/badge', module).add('overflow', () => 
+storiesOf('Components/Ant Design/Badge', module).add('overflow', () => 
   <div>
     <Badge count={99}>
       <a href="#" className="head-example" />
@@ -18,6 +18,15 @@ storiesOf('antd/badge', module).add('overflow', () =>
       <a href="#" className="head-example" />
     </Badge>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p><code>mountNode,
-#123;overflowCount&#125;+</code> is displayed when count is larger than <code>overflowCount</code>. The default value of <code>overflowCount</code> is <code>99</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/badge/" target="_blank">
+                  documentation on Badge component
+                </a>.
+              </>
+            ) }
+        });

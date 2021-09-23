@@ -52,10 +52,20 @@ function confirm() {
   });
 }
 
-storiesOf('antd/modal', module).add('locale', () => 
+storiesOf('Components/Ant Design/Modal', module).add('locale', () => 
   <Space>
     <LocalizedModal />
     <Button onClick={confirm}>Confirm</Button>
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>To customize the text of the buttons, you need to set <code>okText</code> and <code>cancelText</code> props.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/modal/" target="_blank">
+                  documentation on Modal component
+                </a>.
+              </>
+            ) }
+        });

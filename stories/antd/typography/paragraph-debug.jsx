@@ -5,7 +5,7 @@ import { Typography } from 'antd';
 
 const { Title, Paragraph, Text } = Typography;
 
-storiesOf('antd/typography', module).add('paragraph-debug', () => 
+storiesOf('Components/Ant Design/Typography', module).add('paragraph-debug', () => 
   <>
     <Title>Introduction</Title>
     <Paragraph>
@@ -97,5 +97,15 @@ storiesOf('antd/typography', module).add('paragraph-debug', () =>
       </ol>
     </Paragraph>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Display the title and paragraph.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/typography/" target="_blank">
+                  documentation on Typography component
+                </a>.
+              </>
+            ) }
+        });

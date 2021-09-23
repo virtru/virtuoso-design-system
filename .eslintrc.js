@@ -1,28 +1,23 @@
 module.exports = {
-  parser: 'babel-eslint',
+  root: true,
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     allowImportExportEverywhere: true,
   },
-  settings: {
-    'import/resolver': {
-      'babel-module': {},
-    },
-    react: {
-      version: 'detect',
-    },
-  },
+  settings: {},
   extends: [
     'airbnb',
     'plugin:jest/recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:jsx-a11y/strict',
     'prettier',
-    'prettier/react',
   ],
   env: {
     browser: true,
     node: true,
+    es2020: true,
   },
-  plugins: ['react', 'react-hooks', 'prettier'],
+  plugins: ['react', 'react-hooks', 'prettier', '@typescript-eslint'],
   rules: {
     'import/no-extraneous-dependencies': ['error', { peerDependencies: true }],
     'import/no-named-as-default': 'off', // https://stackoverflow.com/questions/44437203/how-do-i-resolve-eslint-import-no-named-as-default
@@ -35,6 +30,8 @@ module.exports = {
       },
     ],
     'no-underscore-dangle': 'off',
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'error',
     'prettier/prettier': ['error'],
     'react/jsx-curly-spacing': [
       'error',

@@ -10,7 +10,7 @@ function handleClick(e) {
   console.log('click', e);
 }
 
-storiesOf('antd/menu', module).add('vertical', () => 
+storiesOf('Components/Ant Design/Menu', module).add('vertical', () => 
   <Menu onClick={handleClick} style={{ width: 256 }} mode="vertical">
     <SubMenu key="sub1" icon={<MailOutlined />} title="Navigation One">
       <Menu.ItemGroup title="Item 1">
@@ -37,5 +37,15 @@ storiesOf('antd/menu', module).add('vertical', () =>
       <Menu.Item key="12">Option 12</Menu.Item>
     </SubMenu>
   </Menu>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Submenus open as pop-ups.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/menu/" target="_blank">
+                  documentation on Menu component
+                </a>.
+              </>
+            ) }
+        });

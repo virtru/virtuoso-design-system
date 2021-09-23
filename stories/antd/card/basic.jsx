@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Card } from 'antd';
 
-storiesOf('antd/card', module).add('basic', () => 
+storiesOf('Components/Ant Design/Card', module).add('basic', () => 
   <>
     <Card title="Default size card" extra={<a href="#">More</a>} style={{ width: 300 }}>
       <p>Card content</p>
@@ -16,5 +16,15 @@ storiesOf('antd/card', module).add('basic', () =>
       <p>Card content</p>
     </Card>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A basic card containing a title, content and an extra corner content. Supports two sizes: <code>default</code> and <code>small</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/card/" target="_blank">
+                  documentation on Card component
+                </a>.
+              </>
+            ) }
+        });

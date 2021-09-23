@@ -4,7 +4,7 @@ import React from 'react';
 import { Switch } from 'antd';
 import { CloseOutlined, CheckOutlined } from '@ant-design/icons';
 
-storiesOf('antd/switch', module).add('text', () => 
+storiesOf('Components/Ant Design/Switch', module).add('text', () => 
   <>
     <Switch checkedChildren="开启" unCheckedChildren="关闭" defaultChecked />
     <br />
@@ -16,5 +16,15 @@ storiesOf('antd/switch', module).add('text', () =>
       defaultChecked
     />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>With text and icon.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/switch/" target="_blank">
+                  documentation on Switch component
+                </a>.
+              </>
+            ) }
+        });

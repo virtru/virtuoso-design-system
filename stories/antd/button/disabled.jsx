@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Button } from 'antd';
 
-storiesOf('antd/button', module).add('disabled', () => 
+storiesOf('Components/Ant Design/Button', module).add('disabled', () => 
   <>
     <Button type="primary">Primary</Button>
     <Button type="primary" disabled>
@@ -53,5 +53,15 @@ storiesOf('antd/button', module).add('disabled', () =>
       </Button>
     </div>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>To mark a button as disabled, add the <code>disabled</code> property to the <code>Button</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/button/" target="_blank">
+                  documentation on Button component
+                </a>.
+              </>
+            ) }
+        });

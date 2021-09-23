@@ -18,6 +18,15 @@ function SpaceVertical() {
   );
 }
 
-storiesOf('antd/space', module).add('vertical', () => <SpaceVertical />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Crowded components vertical spacing.</p>
-<p>Can set <code>width: 100%</code> to fill a row.</p></>) } });
+storiesOf('Components/Ant Design/Space', module).add('vertical', () => <SpaceVertical />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/space/" target="_blank">
+                  documentation on Space component
+                </a>.
+              </>
+            ) }
+        });

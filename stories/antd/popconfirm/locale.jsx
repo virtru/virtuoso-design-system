@@ -3,9 +3,19 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Popconfirm } from 'antd';
 
-storiesOf('antd/popconfirm', module).add('locale', () => 
+storiesOf('Components/Ant Design/Popconfirm', module).add('locale', () => 
   <Popconfirm title="Are you sure？" okText="Yes" cancelText="No">
     <a href="#">Delete</a>
   </Popconfirm>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Set <code>okText</code> and <code>cancelText</code> props to customize the button's labels.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/popconfirm/" target="_blank">
+                  documentation on Popconfirm component
+                </a>.
+              </>
+            ) }
+        });

@@ -5,7 +5,7 @@ import { Input } from 'antd';
 
 const { Search } = Input;
 
-storiesOf('antd/Input', module).add('search-input-loading', () => 
+storiesOf('Components/Ant Design/Input', module).add('search-input-loading', () => 
   <>
     <Search placeholder="input search loading default" loading />
     <br />
@@ -15,5 +15,15 @@ storiesOf('antd/Input', module).add('search-input-loading', () =>
     <br />
     <Search placeholder="input search text" enterButton="Search" size="large" loading />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Search loading when onSearch.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input/" target="_blank">
+                  documentation on Input component
+                </a>.
+              </>
+            ) }
+        });

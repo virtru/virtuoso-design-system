@@ -37,5 +37,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/Input', module).add('autosize-textarea', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p><code>autoSize</code> prop for a <code>textarea</code> type of <code>Input</code> makes the height to automatically adjust based on the content. An option object can be provided to <code>autoSize</code> to specify the minimum and maximum number of lines the textarea will automatically adjust.</p></>) } });
+storiesOf('Components/Ant Design/Input', module).add('autosize-textarea', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input/" target="_blank">
+                  documentation on Input component
+                </a>.
+              </>
+            ) }
+        });

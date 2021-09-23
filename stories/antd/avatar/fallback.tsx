@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Avatar } from 'antd';
 
-storiesOf('antd/avatar', module).add('fallback', () => 
+storiesOf('Components/Ant Design/Avatar', module).add('fallback', () => 
   <>
     <Avatar shape="circle" src="http://abc.com/not-exist.jpg">
       A
@@ -12,5 +12,15 @@ storiesOf('antd/avatar', module).add('fallback', () =>
       ABC
     </Avatar>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>图片不存在时，会回退到 <code>src</code>。</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/avatar/" target="_blank">
+                  documentation on Avatar component
+                </a>.
+              </>
+            ) }
+        });

@@ -89,5 +89,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/select', module).add('select-users', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A complete multiple select sample with remote search, debounce fetch, ajax callback order flow, and loading state.</p></>) } });
+storiesOf('Components/Ant Design/Select', module).add('select-users', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/select/" target="_blank">
+                  documentation on Select component
+                </a>.
+              </>
+            ) }
+        });

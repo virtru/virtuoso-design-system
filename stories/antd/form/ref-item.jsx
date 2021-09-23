@@ -42,5 +42,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/form', module).add('ref-item', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use <code>ref</code> first!</p></>) } });
+storiesOf('Components/Ant Design/Form', module).add('ref-item', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

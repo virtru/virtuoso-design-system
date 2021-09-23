@@ -72,22 +72,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/form', module).add('complex-form-control', () => <Demo />, { docs: { page: () => (<><pre><code class="diff language-diff">- &lt;Form.Item label="Field" name="field"&gt;
--   &lt;Input /&gt;
-- &lt;/Form.Item&gt;
-+ &lt;Form.Item label="Field"&gt;
-+   &lt;Form.Item name="field" noStyle&gt;&lt;Input /&gt;&lt;/Form.Item&gt; // 直接包裹才会绑定表单
-+   &lt;span&gt;description&lt;/span&gt;
-+ &lt;/Form.Item&gt;
-</code></pre>
-<p>这里展示了三种典型场景：</p>
-<ul>
-<li><code>Username</code>：输入框后面有描述文案或其他组件，在 <code>Form.Item</code> 内使用 <code>&lt;Form.Item name="field" noStyle /&gt;</code> 去绑定对应子控件。</li>
-<li><code>Address</code>：有两个控件，在 <code>Form.Item</code> 内使用两个 <code>&lt;Form.Item name="field" noStyle /&gt;</code> 分别绑定对应控件。</li>
-<li><code>BirthDate</code>：有两个内联控件，错误信息展示各自控件下，使用两个 <code>&lt;Form.Item name="field" /&gt;</code> 分别绑定对应控件，并修改 <code>style</code> 使其内联布局。</li>
-</ul>
-<blockquote>
-  <p>注意，在 label 对应的 Form.Item 上不要在指定 <code>name</code> 属性，这个 Item 只作为布局作用。</p>
-</blockquote>
-<p>更复杂的封装复用方式可以参考下面的 <code>自定义表单控件</code> 演示。</p>
-<p>#</p></>) } });
+storiesOf('Components/Ant Design/Form', module).add('complex-form-control', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

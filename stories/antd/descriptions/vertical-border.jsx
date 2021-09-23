@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Descriptions, Badge } from 'antd';
 
-storiesOf('antd/descriptions', module).add('vertical-border', () => 
+storiesOf('Components/Ant Design/Descriptions', module).add('vertical-border', () => 
   <Descriptions title="User Info" layout="vertical" bordered>
     <Descriptions.Item label="Product">Cloud Database</Descriptions.Item>
     <Descriptions.Item label="Billing Mode">Prepaid</Descriptions.Item>
@@ -32,5 +32,15 @@ storiesOf('antd/descriptions', module).add('vertical-border', () =>
       Region: East China 1<br />
     </Descriptions.Item>
   </Descriptions>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Descriptions with border and background color.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/descriptions/" target="_blank">
+                  documentation on Descriptions component
+                </a>.
+              </>
+            ) }
+        });

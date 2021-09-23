@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Tag, Divider } from 'antd';
 
-storiesOf('antd/tag', module).add('colorful', () => 
+storiesOf('Components/Ant Design/Tag', module).add('colorful', () => 
   <>
     <Divider orientation="left">Presets</Divider>
     <div>
@@ -27,5 +27,15 @@ storiesOf('antd/tag', module).add('colorful', () =>
       <Tag color="#108ee9">#108ee9</Tag>
     </div>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>We preset a series of colorful tag styles for use in different situations. You can also set it to a hex color string for custom color.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tag/" target="_blank">
+                  documentation on Tag component
+                </a>.
+              </>
+            ) }
+        });

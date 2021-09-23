@@ -4,7 +4,7 @@ import React from 'react';
 import { Timeline } from 'antd';
 import { ClockCircleOutlined } from '@ant-design/icons';
 
-storiesOf('antd/timeline', module).add('alternate', () => 
+storiesOf('Components/Ant Design/Timeline', module).add('alternate', () => 
   <Timeline mode="alternate">
     <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
     <Timeline.Item color="green">Solve initial network problems 2015-09-01</Timeline.Item>
@@ -19,5 +19,15 @@ storiesOf('antd/timeline', module).add('alternate', () =>
       Technical testing 2015-09-01
     </Timeline.Item>
   </Timeline>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Alternate timeline.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/timeline/" target="_blank">
+                  documentation on Timeline component
+                </a>.
+              </>
+            ) }
+        });

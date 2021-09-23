@@ -20,7 +20,7 @@ const colors = [
 ];
 const customColors = ['#f50', '#2db7f5', '#87d068', '#108ee9'];
 
-storiesOf('antd/tooltip', module).add('colorful', () => 
+storiesOf('Components/Ant Design/Tooltip', module).add('colorful', () => 
   <>
     <Divider orientation="left">Presets</Divider>
     <div>
@@ -39,5 +39,15 @@ storiesOf('antd/tooltip', module).add('colorful', () =>
       ))}
     </div>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>We preset a series of colorful Tooltip styles for use in different situations.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tooltip/" target="_blank">
+                  documentation on Tooltip component
+                </a>.
+              </>
+            ) }
+        });

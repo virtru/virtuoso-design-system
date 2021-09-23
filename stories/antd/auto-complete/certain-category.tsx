@@ -61,5 +61,15 @@ const Complete: React.FC = () => (
   </AutoComplete>
 );
 
-storiesOf('antd/auto-complete', module).add('certain-category', () => <Complete />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Demonstration of <a href="https://ant.design/docs/spec/reaction#Lookup-Patterns">Lookup Patterns: Certain Category</a>. Basic Usage, set options of autocomplete with <code>options</code> property.</p></>) } });
+storiesOf('Components/Ant Design/Auto Complete', module).add('certain-category', () => <Complete />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/auto-complete/" target="_blank">
+                  documentation on Auto Complete component
+                </a>.
+              </>
+            ) }
+        });

@@ -33,5 +33,15 @@ const Demo = () => (
   </div>
 );
 
-storiesOf('antd/descriptions', module).add('responsive', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Responsive configuration enables perfect presentation on small screen devices.</p></>) } });
+storiesOf('Components/Ant Design/Descriptions', module).add('responsive', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/descriptions/" target="_blank">
+                  documentation on Descriptions component
+                </a>.
+              </>
+            ) }
+        });

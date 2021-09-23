@@ -16,7 +16,7 @@ const handleClick = (
   console.log(link);
 };
 
-storiesOf('antd/anchor', module).add('onClick', () => 
+storiesOf('Components/Ant Design/Anchor', module).add('onClick', () => 
   <Anchor affix={false} onClick={handleClick}>
     <Link href="#components-anchor-demo-basic" title="Basic demo" />
     <Link href="#components-anchor-demo-static" title="Static demo" />
@@ -25,5 +25,15 @@ storiesOf('antd/anchor', module).add('onClick', () =>
       <Link href="#Link-Props" title="Link Props" />
     </Link>
   </Anchor>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Clicking on an anchor does not record history.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/anchor/" target="_blank">
+                  documentation on Anchor component
+                </a>.
+              </>
+            ) }
+        });

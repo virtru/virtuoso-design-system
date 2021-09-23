@@ -11,7 +11,7 @@ function onChange(dates, dateStrings) {
   console.log('From: ', dateStrings[0], ', to: ', dateStrings[1]);
 }
 
-storiesOf('antd/date-picker', module).add('presetted-ranges', () => 
+storiesOf('Components/Ant Design/Date Picker', module).add('presetted-ranges', () => 
   <Space direction="vertical" size={12}>
     <RangePicker
       ranges={{
@@ -30,5 +30,15 @@ storiesOf('antd/date-picker', module).add('presetted-ranges', () =>
       onChange={onChange}
     />
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>We can set preset ranges to RangePicker to improve user experience.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/date-picker/" target="_blank">
+                  documentation on Date Picker component
+                </a>.
+              </>
+            ) }
+        });

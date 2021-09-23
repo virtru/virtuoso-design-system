@@ -21,7 +21,7 @@ function onSearch(val) {
   console.log('search:', val);
 }
 
-storiesOf('antd/select', module).add('search', () => 
+storiesOf('Components/Ant Design/Select', module).add('search', () => 
   <Select
     showSearch
     style={{ width: 200 }}
@@ -39,5 +39,15 @@ storiesOf('antd/select', module).add('search', () =>
     <Option value="lucy">Lucy</Option>
     <Option value="tom">Tom</Option>
   </Select>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Search the options while expanded.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/select/" target="_blank">
+                  documentation on Select component
+                </a>.
+              </>
+            ) }
+        });

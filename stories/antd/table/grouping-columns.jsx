@@ -102,7 +102,7 @@ for (let i = 0; i < 100; i++) {
   });
 }
 
-storiesOf('antd/table', module).add('grouping-columns', () => 
+storiesOf('Components/Ant Design/Table', module).add('grouping-columns', () => 
   <Table
     columns={columns}
     dataSource={data}
@@ -110,5 +110,15 @@ storiesOf('antd/table', module).add('grouping-columns', () =>
     size="middle"
     scroll={{ x: 'calc(700px + 50%)', y: 240 }}
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Group table head with <code>columns[n].children</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

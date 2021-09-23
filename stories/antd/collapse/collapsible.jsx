@@ -11,7 +11,7 @@ const text = `
   it can be found as a welcome guest in many households across the world.
 `;
 
-storiesOf('antd/collapse', module).add('collapsible', () => 
+storiesOf('Components/Ant Design/Collapse', module).add('collapsible', () => 
   <Space direction="vertical">
     <Collapse collapsible="header" defaultActiveKey={['1']}>
       <Panel header="This panel can only be collapsed by clicking text" key="1">
@@ -24,5 +24,15 @@ storiesOf('antd/collapse', module).add('collapsible', () =>
       </Panel>
     </Collapse>
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Specify the trigger area of collapsible by <code>collapsible</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/collapse/" target="_blank">
+                  documentation on Collapse component
+                </a>.
+              </>
+            ) }
+        });

@@ -4,7 +4,7 @@ import React from 'react';
 import { Avatar, Badge } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
-storiesOf('antd/avatar', module).add('badge', () => 
+storiesOf('Components/Ant Design/Avatar', module).add('badge', () => 
   <>
     <span className="avatar-item">
       <Badge count={1}>
@@ -17,5 +17,15 @@ storiesOf('antd/avatar', module).add('badge', () =>
       </Badge>
     </span>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Usually used for reminders and notifications.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/avatar/" target="_blank">
+                  documentation on Avatar component
+                </a>.
+              </>
+            ) }
+        });

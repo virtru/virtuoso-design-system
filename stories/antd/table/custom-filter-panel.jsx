@@ -145,5 +145,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/table', module).add('custom-filter-panel', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Implement a customized column search example via <code>filterDropdown</code>.</p></>) } });
+storiesOf('Components/Ant Design/Table', module).add('custom-filter-panel', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

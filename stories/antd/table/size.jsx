@@ -38,12 +38,22 @@ const data = [
   },
 ];
 
-storiesOf('antd/table', module).add('size', () => 
+storiesOf('Components/Ant Design/Table', module).add('size', () => 
   <div>
     <h4>Middle size table</h4>
     <Table columns={columns} dataSource={data} size="middle" />
     <h4>Small size table</h4>
     <Table columns={columns} dataSource={data} size="small" />
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>There are two compacted table sizes: <code>middle</code> and <code>small</code>. The <code>small</code> size is used in Modals only.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

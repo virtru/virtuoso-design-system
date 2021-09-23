@@ -80,7 +80,7 @@ for (let i = 0; i < 100; i++) {
   });
 }
 
-storiesOf('antd/table', module).add('sticky', () => 
+storiesOf('Components/Ant Design/Table', module).add('sticky', () => 
   <Table
     columns={columns}
     dataSource={data}
@@ -100,5 +100,15 @@ storiesOf('antd/table', module).add('sticky', () =>
     )}
     sticky
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>For long table，need to scroll to view the header and scroll bar，then you can now set the fixed header and scroll bar to follow the page.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

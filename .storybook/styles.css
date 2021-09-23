@@ -14,7 +14,8 @@ body {
 }
 
 code {
-  background: #b4fff5;
+  /* Disable: Messes up error codes in React */
+  /* background: #b4fff5; */
 }
 
 :global(#root) {

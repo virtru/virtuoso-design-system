@@ -7,7 +7,7 @@ function onPanelChange(value, mode) {
   console.log(value, mode);
 }
 
-storiesOf('antd/calendar', module).add('customize-header', () => 
+storiesOf('Components/Ant Design/Calendar', module).add('customize-header', () => 
   <div className="site-calendar-customize-header-wrapper">
     <Calendar
       fullscreen={false}
@@ -87,5 +87,15 @@ storiesOf('antd/calendar', module).add('customize-header', () =>
       onPanelChange={onPanelChange}
     />
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Customize Calendar header content.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/calendar/" target="_blank">
+                  documentation on Calendar component
+                </a>.
+              </>
+            ) }
+        });

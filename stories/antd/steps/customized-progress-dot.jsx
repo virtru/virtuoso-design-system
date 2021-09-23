@@ -17,12 +17,22 @@ const customDot = (dot, { status, index }) => (
   </Popover>
 );
 
-storiesOf('antd/steps', module).add('customized-progress-dot', () => 
+storiesOf('Components/Ant Design/Steps', module).add('customized-progress-dot', () => 
   <Steps current={1} progressDot={customDot}>
     <Step title="Finished" description="You can hover on the dot." />
     <Step title="In Progress" description="You can hover on the dot." />
     <Step title="Waiting" description="You can hover on the dot." />
     <Step title="Waiting" description="You can hover on the dot." />
   </Steps>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>You can customize the display for Steps with progress dot style.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/steps/" target="_blank">
+                  documentation on Steps component
+                </a>.
+              </>
+            ) }
+        });

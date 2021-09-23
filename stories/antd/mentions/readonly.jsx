@@ -28,5 +28,15 @@ function App() {
   );
 }
 
-storiesOf('antd/mentions', module).add('readonly', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Configurate <code>disabled</code> and <code>readOnly</code>.</p></>) } });
+storiesOf('Components/Ant Design/Mentions', module).add('readonly', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/mentions/" target="_blank">
+                  documentation on Mentions component
+                </a>.
+              </>
+            ) }
+        });

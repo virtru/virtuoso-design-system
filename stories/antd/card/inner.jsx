@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Card } from 'antd';
 
-storiesOf('antd/card', module).add('inner', () => 
+storiesOf('Components/Ant Design/Card', module).add('inner', () => 
   <Card title="Card title">
     <Card type="inner" title="Inner Card title" extra={<a href="#">More</a>}>
       Inner Card content
@@ -17,5 +17,15 @@ storiesOf('antd/card', module).add('inner', () =>
       Inner Card content
     </Card>
   </Card>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>It can be placed inside the ordinary card to display the information of the multilevel structure.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/card/" target="_blank">
+                  documentation on Card component
+                </a>.
+              </>
+            ) }
+        });

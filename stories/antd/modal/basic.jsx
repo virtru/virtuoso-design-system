@@ -32,5 +32,15 @@ const App = () => {
   );
 };
 
-storiesOf('antd/modal', module).add('basic', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Basic modal.</p></>) } });
+storiesOf('Components/Ant Design/Modal', module).add('basic', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/modal/" target="_blank">
+                  documentation on Modal component
+                </a>.
+              </>
+            ) }
+        });

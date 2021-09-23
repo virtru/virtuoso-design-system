@@ -16,7 +16,7 @@ function onChange(val) {
   }
 }
 
-storiesOf('antd/statistic', module).add('countdown', () => 
+storiesOf('Components/Ant Design/Statistic', module).add('countdown', () => 
   <Row gutter={16}>
     <Col span={12}>
       <Countdown title="Countdown" value={deadline} onFinish={onFinish} />
@@ -31,5 +31,15 @@ storiesOf('antd/statistic', module).add('countdown', () =>
       <Countdown title="Countdown" value={Date.now() + 10 * 1000} onChange={onChange} />
     </Col>
   </Row>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Countdown component.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/statistic/" target="_blank">
+                  documentation on Statistic component
+                </a>.
+              </>
+            ) }
+        });

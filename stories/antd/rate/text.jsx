@@ -25,5 +25,15 @@ class Rater extends React.Component {
   }
 }
 
-storiesOf('antd/rate', module).add('text', () => <Rater />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Add copywriting in rate components.</p></>) } });
+storiesOf('Components/Ant Design/Rate', module).add('text', () => <Rater />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/rate/" target="_blank">
+                  documentation on Rate component
+                </a>.
+              </>
+            ) }
+        });

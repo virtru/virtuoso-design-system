@@ -32,5 +32,15 @@ class Card extends React.Component {
   }
 }
 
-storiesOf('antd/spin', module).add('delayAndDebounce', () => <Card />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Specifies a delay for loading state. If <code>spinning</code> ends during delay, loading status won't appear.</p></>) } });
+storiesOf('Components/Ant Design/Spin', module).add('delayAndDebounce', () => <Card />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/spin/" target="_blank">
+                  documentation on Spin component
+                </a>.
+              </>
+            ) }
+        });

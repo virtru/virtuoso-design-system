@@ -54,9 +54,19 @@ const Home = withRouter(props => {
   );
 });
 
-storiesOf('antd/breadcrumb', module).add('router-4', () => 
+storiesOf('Components/Ant Design/Breadcrumb', module).add('router-4', () => 
   <Router>
     <Home />
   </Router>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Used together with <code>react-router@4+</code> or other router.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/breadcrumb/" target="_blank">
+                  documentation on Breadcrumb component
+                </a>.
+              </>
+            ) }
+        });

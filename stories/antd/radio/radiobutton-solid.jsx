@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Radio } from 'antd';
 
-storiesOf('antd/radio', module).add('radiobutton-solid', () => 
+storiesOf('Components/Ant Design/Radio', module).add('radiobutton-solid', () => 
   <>
     <Radio.Group defaultValue="a" buttonStyle="solid">
       <Radio.Button value="a">Hangzhou</Radio.Button>
@@ -20,5 +20,15 @@ storiesOf('antd/radio', module).add('radiobutton-solid', () =>
       <Radio.Button value="d">Chengdu</Radio.Button>
     </Radio.Group>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Solid radio button style.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/radio/" target="_blank">
+                  documentation on Radio component
+                </a>.
+              </>
+            ) }
+        });

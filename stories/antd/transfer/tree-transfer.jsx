@@ -78,5 +78,15 @@ const App = () => {
   return <TreeTransfer dataSource={treeData} targetKeys={targetKeys} onChange={onChange} />;
 };
 
-storiesOf('antd/transfer', module).add('tree-transfer', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Customize render list with Tree component.</p></>) } });
+storiesOf('Components/Ant Design/Transfer', module).add('tree-transfer', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/transfer/" target="_blank">
+                  documentation on Transfer component
+                </a>.
+              </>
+            ) }
+        });

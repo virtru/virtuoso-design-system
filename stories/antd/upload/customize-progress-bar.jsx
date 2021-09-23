@@ -30,9 +30,19 @@ const props = {
   },
 };
 
-storiesOf('antd/upload', module).add('customize-progress-bar', () => 
+storiesOf('Components/Ant Design/Upload', module).add('customize-progress-bar', () => 
   <Upload {...props}>
     <Button icon={<UploadOutlined />}>Click to Upload</Button>
   </Upload>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use <code>progress</code> for customize progress bar.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/upload/" target="_blank">
+                  documentation on Upload component
+                </a>.
+              </>
+            ) }
+        });

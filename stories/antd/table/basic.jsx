@@ -76,5 +76,15 @@ const data = [
   },
 ];
 
-storiesOf('antd/table', module).add('basic', () => <Table columns={columns} dataSource={data} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Simple table with actions.</p></>) } });
+storiesOf('Components/Ant Design/Table', module).add('basic', () => <Table columns={columns} dataSource={data} />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

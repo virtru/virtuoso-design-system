@@ -7,7 +7,7 @@ function onChange(value: string) {
   console.log('changed', value);
 }
 
-storiesOf('antd/input-number', module).add('digit', () => 
+storiesOf('Components/Ant Design/Input Number', module).add('digit', () => 
   <InputNumber<string>
     style={{ width: 200 }}
     defaultValue="1"
@@ -17,5 +17,15 @@ storiesOf('antd/input-number', module).add('digit', () =>
     onChange={onChange}
     stringMode
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use <code>stringMode</code> to support high precision decimals support. <code>onChange</code> will return string value instead. You need polyfill of BigInt if browser not support.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input-number/" target="_blank">
+                  documentation on Input Number component
+                </a>.
+              </>
+            ) }
+        });

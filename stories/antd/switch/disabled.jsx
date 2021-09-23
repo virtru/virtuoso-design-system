@@ -21,5 +21,15 @@ const App = () => {
   );
 };
 
-storiesOf('antd/switch', module).add('disabled', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Disabled state of <code>Switch</code>.</p></>) } });
+storiesOf('Components/Ant Design/Switch', module).add('disabled', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/switch/" target="_blank">
+                  documentation on Switch component
+                </a>.
+              </>
+            ) }
+        });

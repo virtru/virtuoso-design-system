@@ -70,5 +70,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/tabs', module).add('extra', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>You can add extra actions to the right or left or even both side of Tabs.</p></>) } });
+storiesOf('Components/Ant Design/Tabs', module).add('extra', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tabs/" target="_blank">
+                  documentation on Tabs component
+                </a>.
+              </>
+            ) }
+        });

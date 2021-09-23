@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Result, Button } from 'antd';
 
-storiesOf('antd/result', module).add('info', () => 
+storiesOf('Components/Ant Design/Result', module).add('info', () => 
   <Result
     title="Your operation has been executed"
     extra={
@@ -12,5 +12,15 @@ storiesOf('antd/result', module).add('info', () =>
       </Button>
     }
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Show processing results.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/result/" target="_blank">
+                  documentation on Result component
+                </a>.
+              </>
+            ) }
+        });

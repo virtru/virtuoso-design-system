@@ -4,7 +4,7 @@ import React from 'react';
 import { Rate } from 'antd';
 import { HeartOutlined } from '@ant-design/icons';
 
-storiesOf('antd/rate', module).add('character', () => 
+storiesOf('Components/Ant Design/Rate', module).add('character', () => 
   <>
     <Rate character={<HeartOutlined />} allowHalf />
     <br />
@@ -12,5 +12,15 @@ storiesOf('antd/rate', module).add('character', () =>
     <br />
     <Rate character="好" allowHalf />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Replace the default star to other character like alphabet, digit, iconfont or even Chinese word.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/rate/" target="_blank">
+                  documentation on Rate component
+                </a>.
+              </>
+            ) }
+        });

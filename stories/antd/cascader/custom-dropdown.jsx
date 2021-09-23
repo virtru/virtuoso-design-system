@@ -48,7 +48,17 @@ function dropdownRender(menus) {
   );
 }
 
-storiesOf('antd/cascader', module).add('custom-dropdown', () => 
+storiesOf('Components/Ant Design/Cascader', module).add('custom-dropdown', () => 
   <Cascader options={options} dropdownRender={dropdownRender} placeholder="Please select" />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Customize the dropdown menu via <code>dropdownRender</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/cascader/" target="_blank">
+                  documentation on Cascader component
+                </a>.
+              </>
+            ) }
+        });

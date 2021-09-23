@@ -14,7 +14,7 @@ const style = {
   fontSize: 14,
 };
 
-storiesOf('antd/back-top', module).add('custom', () => 
+storiesOf('Components/Ant Design/Back Top', module).add('custom', () => 
   <div style={{ height: '600vh', padding: 8 }}>
     <div>Scroll to bottom</div>
     <div>Scroll to bottom</div>
@@ -27,5 +27,15 @@ storiesOf('antd/back-top', module).add('custom', () =>
       <div style={style}>UP</div>
     </BackTop>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>You can customize the style of the button, just note the size limit: no more than <code>40px * 40px</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/back-top/" target="_blank">
+                  documentation on Back Top component
+                </a>.
+              </>
+            ) }
+        });

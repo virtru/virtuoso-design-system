@@ -18,12 +18,22 @@ const routes = [
   },
 ];
 
-storiesOf('antd/page-header', module).add('breadcrumb', () => 
+storiesOf('Components/Ant Design/Page Header', module).add('breadcrumb', () => 
   <PageHeader
     className="site-page-header"
     title="Title"
     breadcrumb={{ routes }}
     subTitle="This is a subtitle"
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>With breadcrumbs, it is suitable for deeper pages, allowing users to navigate quickly.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/page-header/" target="_blank">
+                  documentation on Page Header component
+                </a>.
+              </>
+            ) }
+        });

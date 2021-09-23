@@ -7,5 +7,15 @@ function onChange(checked) {
   console.log(`switch to ${checked}`);
 }
 
-storiesOf('antd/switch', module).add('basic', () => <Switch defaultChecked onChange={onChange} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The most basic usage.</p></>) } });
+storiesOf('Components/Ant Design/Switch', module).add('basic', () => <Switch defaultChecked onChange={onChange} />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/switch/" target="_blank">
+                  documentation on Switch component
+                </a>.
+              </>
+            ) }
+        });

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Alert } from 'antd';
 
-storiesOf('antd/alert', module).add('icon', () => 
+storiesOf('Components/Ant Design/Alert', module).add('icon', () => 
   <>
     <Alert message="Success Tips" type="success" showIcon />
     <Alert message="Informational Notes" type="info" showIcon />
@@ -35,5 +35,15 @@ storiesOf('antd/alert', module).add('icon', () =>
       showIcon
     />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A relevant icon will make information clearer and more friendly.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/alert/" target="_blank">
+                  documentation on Alert component
+                </a>.
+              </>
+            ) }
+        });

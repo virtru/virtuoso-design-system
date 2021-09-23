@@ -5,11 +5,21 @@ import { Steps } from 'antd';
 
 const { Step } = Steps;
 
-storiesOf('antd/steps', module).add('vertical', () => 
+storiesOf('Components/Ant Design/Steps', module).add('vertical', () => 
   <Steps direction="vertical" current={1}>
     <Step title="Finished" description="This is a description." />
     <Step title="In Progress" description="This is a description." />
     <Step title="Waiting" description="This is a description." />
   </Steps>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A simple step bar in the vertical direction.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/steps/" target="_blank">
+                  documentation on Steps component
+                </a>.
+              </>
+            ) }
+        });

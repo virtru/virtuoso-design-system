@@ -32,5 +32,15 @@ const App = () => {
   );
 };
 
-storiesOf('antd/transfer', module).add('custom-select-all-labels', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Custom the labels for select all checkboxs.</p></>) } });
+storiesOf('Components/Ant Design/Transfer', module).add('custom-select-all-labels', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/transfer/" target="_blank">
+                  documentation on Transfer component
+                </a>.
+              </>
+            ) }
+        });

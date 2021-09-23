@@ -19,7 +19,7 @@ const colors = [
   'lime',
 ];
 
-storiesOf('antd/badge', module).add('colorful', () => 
+storiesOf('Components/Ant Design/Badge', module).add('colorful', () => 
   <>
     <Divider orientation="left">Presets</Divider>
     <div>
@@ -40,5 +40,15 @@ storiesOf('antd/badge', module).add('colorful', () =>
       <Badge color="#108ee9" text="#108ee9" />
     </div>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>We preset a series of colorful Badge styles for use in different situations. You can also set it to a hex color string for custom color.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/badge/" target="_blank">
+                  documentation on Badge component
+                </a>.
+              </>
+            ) }
+        });

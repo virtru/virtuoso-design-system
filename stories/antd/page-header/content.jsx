@@ -101,7 +101,7 @@ const Content = ({ children, extraContent }) => (
   </Row>
 );
 
-storiesOf('antd/page-header', module).add('content', () => 
+storiesOf('Components/Ant Design/Page Header', module).add('content', () => 
   <PageHeader
     title="Title"
     className="site-page-header"
@@ -130,5 +130,15 @@ storiesOf('antd/page-header', module).add('content', () =>
       {content}
     </Content>
   </PageHeader>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Show all props provided by PageHeader.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/page-header/" target="_blank">
+                  documentation on Page Header component
+                </a>.
+              </>
+            ) }
+        });

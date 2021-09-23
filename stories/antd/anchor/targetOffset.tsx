@@ -22,5 +22,15 @@ const AnchorExample: React.FC = () => {
   );
 };
 
-storiesOf('antd/anchor', module).add('targetOffset', () => <AnchorExample />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Anchor target scroll to screen center.</p></>) } });
+storiesOf('Components/Ant Design/Anchor', module).add('targetOffset', () => <AnchorExample />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/anchor/" target="_blank">
+                  documentation on Anchor component
+                </a>.
+              </>
+            ) }
+        });

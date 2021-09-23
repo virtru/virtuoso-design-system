@@ -6,7 +6,7 @@ import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/i
 
 const { Header, Content, Footer, Sider } = Layout;
 
-storiesOf('antd/layout', module).add('responsive', () => 
+storiesOf('Components/Ant Design/Layout', module).add('responsive', () => 
   <Layout>
     <Sider
       breakpoint="lg"
@@ -44,8 +44,15 @@ storiesOf('antd/layout', module).add('responsive', () =>
       <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
     </Layout>
   </Layout>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Layout.Sider supports responsive layout.</p>
-<blockquote>
-  <p>Note: You can get a responsive layout by setting <code>breakpoint</code>, the Sider will collapse to the width of <code>collapsedWidth</code> when window width is below the <code>breakpoint</code>. And a special trigger will appear if the <code>collapsedWidth</code> is set to 0.</p>
-</blockquote></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/layout/" target="_blank">
+                  documentation on Layout component
+                </a>.
+              </>
+            ) }
+        });

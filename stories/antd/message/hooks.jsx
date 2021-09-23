@@ -25,5 +25,15 @@ function Demo() {
   );
 }
 
-storiesOf('antd/message', module).add('hooks', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use <code>message.useMessage</code> to get <code>contextHolder</code> with context accessible issue.</p></>) } });
+storiesOf('Components/Ant Design/Message', module).add('hooks', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/message/" target="_blank">
+                  documentation on Message component
+                </a>.
+              </>
+            ) }
+        });

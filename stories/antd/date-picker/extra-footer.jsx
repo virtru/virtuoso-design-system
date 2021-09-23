@@ -5,7 +5,7 @@ import { DatePicker, Space } from 'antd';
 
 const { RangePicker } = DatePicker;
 
-storiesOf('antd/date-picker', module).add('extra-footer', () => 
+storiesOf('Components/Ant Design/Date Picker', module).add('extra-footer', () => 
   <Space direction="vertical" size={12}>
     <DatePicker renderExtraFooter={() => 'extra footer'} />
     <DatePicker renderExtraFooter={() => 'extra footer'} showTime />
@@ -13,5 +13,15 @@ storiesOf('antd/date-picker', module).add('extra-footer', () =>
     <RangePicker renderExtraFooter={() => 'extra footer'} showTime />
     <DatePicker renderExtraFooter={() => 'extra footer'} picker="month" />
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Render extra footer in panel for customized requirements.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/date-picker/" target="_blank">
+                  documentation on Date Picker component
+                </a>.
+              </>
+            ) }
+        });

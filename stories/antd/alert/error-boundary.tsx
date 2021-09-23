@@ -20,9 +20,19 @@ const ThrowError: React.FC = () => {
   );
 };
 
-storiesOf('antd/alert', module).add('error-boundary', () => 
+storiesOf('Components/Ant Design/Alert', module).add('error-boundary', () => 
   <ErrorBoundary>
     <ThrowError />
   </ErrorBoundary>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>ErrorBoundary Component for making error handling easier in <a href="https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html">React</a>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/alert/" target="_blank">
+                  documentation on Alert component
+                </a>.
+              </>
+            ) }
+        });

@@ -7,5 +7,15 @@ const success = () => {
   message.success('This is a prompt message for success, and it will disappear in 10 seconds', 10);
 };
 
-storiesOf('antd/message', module).add('duration', () => <Button onClick={success}>Customized display duration</Button>, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Customize message display duration from default <code>3s</code> to <code>10s</code>.</p></>) } });
+storiesOf('Components/Ant Design/Message', module).add('duration', () => <Button onClick={success}>Customized display duration</Button>, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/message/" target="_blank">
+                  documentation on Message component
+                </a>.
+              </>
+            ) }
+        });

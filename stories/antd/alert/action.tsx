@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Alert, Button, Space } from 'antd';
 
-storiesOf('antd/alert', module).add('action', () => 
+storiesOf('Components/Ant Design/Alert', module).add('action', () => 
   <>
     <Alert
       message="Success Tips"
@@ -56,5 +56,15 @@ storiesOf('antd/alert', module).add('action', () =>
       closable
     />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Custom action.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/alert/" target="_blank">
+                  documentation on Alert component
+                </a>.
+              </>
+            ) }
+        });

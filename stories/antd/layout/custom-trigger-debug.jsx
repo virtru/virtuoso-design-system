@@ -73,11 +73,15 @@ class SiderDemo extends React.Component {
   }
 }
 
-storiesOf('antd/layout', module).add('custom-trigger-debug', () => <SiderDemo />, { docs: { page: () => (<><hr />
-<p>order: 99
-title:
-  zh-CN: 自定义触发器 Debug
-  en-US: Custom trigger debug</p>
-<h2 id="debugtrue">debug: true</h2>
-<h2 id="zhcn">zh-CN</h2>
-<p>修改内容前，请尝试此 Demo 查看样式是否抖动。</p></>) } });
+storiesOf('Components/Ant Design/Layout', module).add('custom-trigger-debug', () => <SiderDemo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/layout/" target="_blank">
+                  documentation on Layout component
+                </a>.
+              </>
+            ) }
+        });

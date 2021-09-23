@@ -12,11 +12,21 @@ const customIcons = {
   5: <SmileOutlined />,
 };
 
-storiesOf('antd/rate', module).add('character-function', () => 
+storiesOf('Components/Ant Design/Rate', module).add('character-function', () => 
   <>
     <Rate defaultValue={2} character={({ index }) => index + 1} />
     <br />
     <Rate defaultValue={3} character={({ index }) => customIcons[index + 1]} />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Can customize each character using <code>(RateProps) =&gt; ReactNode</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/rate/" target="_blank">
+                  documentation on Rate component
+                </a>.
+              </>
+            ) }
+        });

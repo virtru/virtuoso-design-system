@@ -15,11 +15,21 @@ const menu = (
   </Menu>
 );
 
-storiesOf('antd/button', module).add('multiple', () => 
+storiesOf('Components/Ant Design/Button', module).add('multiple', () => 
   <>
     <Button type="primary">primary</Button>
     <Button>secondary</Button>
     <Dropdown.Button overlay={menu}>Actions</Dropdown.Button>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>If you need several buttons, we recommend that you use 1 primary button + n secondary buttons, and if there are more than three operations, you can group some of them into <a href="/components/dropdown/#components-dropdown-demo-dropdown-button">Dropdown.Button</a>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/button/" target="_blank">
+                  documentation on Button component
+                </a>.
+              </>
+            ) }
+        });

@@ -14,9 +14,19 @@ function handleChange(value) {
   console.log(`selected ${value}`);
 }
 
-storiesOf('antd/select', module).add('tags', () => 
+storiesOf('Components/Ant Design/Select', module).add('tags', () => 
   <Select mode="tags" style={{ width: '100%' }} placeholder="Tags Mode" onChange={handleChange}>
     {children}
   </Select>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Select with tags, transform input to tag (scroll the menu).</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/select/" target="_blank">
+                  documentation on Select component
+                </a>.
+              </>
+            ) }
+        });

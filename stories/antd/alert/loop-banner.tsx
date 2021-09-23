@@ -4,7 +4,7 @@ import React from 'react';
 import { Alert } from 'antd';
 import TextLoop from 'react-text-loop';
 
-storiesOf('antd/alert', module).add('loop-banner', () => 
+storiesOf('Components/Ant Design/Alert', module).add('loop-banner', () => 
   <Alert
     banner
     message={
@@ -16,5 +16,15 @@ storiesOf('antd/alert', module).add('loop-banner', () =>
       </TextLoop>
     }
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Show a loop banner by using with <a href="https://npmjs.com/package/react-text-loop">react-text-loop</a>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/alert/" target="_blank">
+                  documentation on Alert component
+                </a>.
+              </>
+            ) }
+        });

@@ -4,9 +4,19 @@ import React from 'react';
 import { Upload, Button } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
 
-storiesOf('antd/upload', module).add('directory', () => 
+storiesOf('Components/Ant Design/Upload', module).add('directory', () => 
   <Upload action="https://www.mocky.io/v2/5cc8019d300000980a055e76" directory>
     <Button icon={<UploadOutlined />}>Upload Directory</Button>
   </Upload>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>You can select and upload a whole directory.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/upload/" target="_blank">
+                  documentation on Upload component
+                </a>.
+              </>
+            ) }
+        });

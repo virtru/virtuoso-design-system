@@ -36,5 +36,15 @@ const App = () => {
   );
 };
 
-storiesOf('antd/checkbox', module).add('check-all', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The <code>indeterminate</code> property can help you to achieve a 'check all' effect.</p></>) } });
+storiesOf('Components/Ant Design/Checkbox', module).add('check-all', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/checkbox/" target="_blank">
+                  documentation on Checkbox component
+                </a>.
+              </>
+            ) }
+        });

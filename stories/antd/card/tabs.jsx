@@ -84,5 +84,15 @@ class TabsCard extends React.Component {
   }
 }
 
-storiesOf('antd/card', module).add('tabs', () => <TabsCard />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>More content can be hosted.</p></>) } });
+storiesOf('Components/Ant Design/Card', module).add('tabs', () => <TabsCard />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/card/" target="_blank">
+                  documentation on Card component
+                </a>.
+              </>
+            ) }
+        });

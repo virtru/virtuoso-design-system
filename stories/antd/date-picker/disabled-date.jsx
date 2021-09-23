@@ -42,7 +42,7 @@ function disabledRangeTime(_, type) {
   };
 }
 
-storiesOf('antd/date-picker', module).add('disabled-date', () => 
+storiesOf('Components/Ant Design/Date Picker', module).add('disabled-date', () => 
   <Space direction="vertical" size={12}>
     <DatePicker
       format="YYYY-MM-DD HH:mm:ss"
@@ -62,5 +62,15 @@ storiesOf('antd/date-picker', module).add('disabled-date', () =>
       format="YYYY-MM-DD HH:mm:ss"
     />
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Disabled part of dates and time by <code>disabledDate</code> and <code>disabledTime</code> respectively, and <code>disabledTime</code> only works with <code>showTime</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/date-picker/" target="_blank">
+                  documentation on Date Picker component
+                </a>.
+              </>
+            ) }
+        });

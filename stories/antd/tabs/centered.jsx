@@ -19,5 +19,15 @@ const Demo = () => (
   </Tabs>
 );
 
-storiesOf('antd/tabs', module).add('centered', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Centered tabs.</p></>) } });
+storiesOf('Components/Ant Design/Tabs', module).add('centered', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tabs/" target="_blank">
+                  documentation on Tabs component
+                </a>.
+              </>
+            ) }
+        });

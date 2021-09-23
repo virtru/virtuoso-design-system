@@ -18,5 +18,15 @@ const App: React.FC = () => {
   );
 };
 
-storiesOf('antd/alert', module).add('smooth-closed', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Smoothly unmount Alert upon close.</p></>) } });
+storiesOf('Components/Ant Design/Alert', module).add('smooth-closed', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/alert/" target="_blank">
+                  documentation on Alert component
+                </a>.
+              </>
+            ) }
+        });

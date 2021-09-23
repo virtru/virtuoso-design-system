@@ -4,11 +4,21 @@ import React from 'react';
 import { Result, Button } from 'antd';
 import { SmileOutlined } from '@ant-design/icons';
 
-storiesOf('antd/result', module).add('customIcon', () => 
+storiesOf('Components/Ant Design/Result', module).add('customIcon', () => 
   <Result
     icon={<SmileOutlined />}
     title="Great, we have done all the operations!"
     extra={<Button type="primary">Next</Button>}
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Custom icon.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/result/" target="_blank">
+                  documentation on Result component
+                </a>.
+              </>
+            ) }
+        });

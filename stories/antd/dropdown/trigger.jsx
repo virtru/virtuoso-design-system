@@ -17,11 +17,21 @@ const menu = (
   </Menu>
 );
 
-storiesOf('antd/dropdown', module).add('trigger', () => 
+storiesOf('Components/Ant Design/Dropdown', module).add('trigger', () => 
   <Dropdown overlay={menu} trigger={['click']}>
     <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
       Click me <DownOutlined />
     </a>
   </Dropdown>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The default trigger mode is <code>hover</code>, you can change it to <code>click</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/dropdown/" target="_blank">
+                  documentation on Dropdown component
+                </a>.
+              </>
+            ) }
+        });

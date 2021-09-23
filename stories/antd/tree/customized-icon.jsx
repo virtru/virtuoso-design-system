@@ -30,7 +30,7 @@ const treeData = [
   },
 ];
 
-storiesOf('antd/tree', module).add('customized-icon', () => 
+storiesOf('Components/Ant Design/Tree', module).add('customized-icon', () => 
   <Tree
     showIcon
     defaultExpandAll
@@ -38,5 +38,15 @@ storiesOf('antd/tree', module).add('customized-icon', () =>
     switcherIcon={<DownOutlined />}
     treeData={treeData}
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>You can customize icons for different nodes.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tree/" target="_blank">
+                  documentation on Tree component
+                </a>.
+              </>
+            ) }
+        });

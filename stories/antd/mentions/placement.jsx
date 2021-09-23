@@ -5,11 +5,21 @@ import { Mentions } from 'antd';
 
 const { Option } = Mentions;
 
-storiesOf('antd/mentions', module).add('placement', () => 
+storiesOf('Components/Ant Design/Mentions', module).add('placement', () => 
   <Mentions style={{ width: '100%' }} placement="top">
     <Option value="afc163">afc163</Option>
     <Option value="zombieJ">zombieJ</Option>
     <Option value="yesmeck">yesmeck</Option>
   </Mentions>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Change the suggestions placement.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/mentions/" target="_blank">
+                  documentation on Mentions component
+                </a>.
+              </>
+            ) }
+        });

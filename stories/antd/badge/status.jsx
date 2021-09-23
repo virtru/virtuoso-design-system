@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Badge } from 'antd';
 
-storiesOf('antd/badge', module).add('status', () => 
+storiesOf('Components/Ant Design/Badge', module).add('status', () => 
   <div>
     <Badge status="success" />
     <Badge status="error" />
@@ -21,5 +21,15 @@ storiesOf('antd/badge', module).add('status', () =>
     <br />
     <Badge status="warning" text="Warning" />
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Standalone badge with status.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/badge/" target="_blank">
+                  documentation on Badge component
+                </a>.
+              </>
+            ) }
+        });

@@ -3,10 +3,20 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Progress } from 'antd';
 
-storiesOf('antd/progress', module).add('format', () => 
+storiesOf('Components/Ant Design/Progress', module).add('format', () => 
   <>
     <Progress type="circle" percent={75} format={percent => `${percent} Days`} />
     <Progress type="circle" percent={100} format={() => 'Done'} />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>You can set a custom text by setting the <code>format</code> prop.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/progress/" target="_blank">
+                  documentation on Progress component
+                </a>.
+              </>
+            ) }
+        });

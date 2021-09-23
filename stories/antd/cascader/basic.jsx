@@ -42,7 +42,17 @@ function onChange(value) {
   console.log(value);
 }
 
-storiesOf('antd/cascader', module).add('basic', () => 
+storiesOf('Components/Ant Design/Cascader', module).add('basic', () => 
   <Cascader options={options} onChange={onChange} placeholder="Please select" />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Cascade selection box for selecting province/city/district.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/cascader/" target="_blank">
+                  documentation on Cascader component
+                </a>.
+              </>
+            ) }
+        });

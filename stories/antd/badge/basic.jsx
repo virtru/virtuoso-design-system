@@ -4,7 +4,7 @@ import React from 'react';
 import { Badge } from 'antd';
 import { ClockCircleOutlined } from '@ant-design/icons';
 
-storiesOf('antd/badge', module).add('basic', () => 
+storiesOf('Components/Ant Design/Badge', module).add('basic', () => 
   <div>
     <Badge count={5}>
       <a href="#" className="head-example" />
@@ -16,5 +16,15 @@ storiesOf('antd/badge', module).add('basic', () =>
       <a href="#" className="head-example" />
     </Badge>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Simplest Usage. Badge will be hidden when <code>count</code> is <code>0</code>, but we can use <code>showZero</code> to show it.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/badge/" target="_blank">
+                  documentation on Badge component
+                </a>.
+              </>
+            ) }
+        });

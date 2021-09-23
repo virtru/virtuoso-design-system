@@ -1,0 +1,30 @@
+.vds-layout-header-logo {
+  float: left;
+  width: 100px;
+  padding-right: 15px;
+  margin: 15px 15px 0 15px;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-right: 1px solid white;
+}
+
+.vds-layout-header-appDrawer {
+  float: left;
+}
+
+.vds-layout-header-appname {
+  display: inline-block;
+  color: var(--vds-color-white-value);
+  font-size: 1.5em;
+}
+
+.vds-layout-header-userAction {
+  float: right;
+}

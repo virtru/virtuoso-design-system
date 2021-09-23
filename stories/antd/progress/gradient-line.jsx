@@ -39,5 +39,15 @@ const Demo = () => (
   </>
 );
 
-storiesOf('antd/progress', module).add('gradient-line', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A package of <code>linear-gradient</code>. It is recommended to only pass two colors.</p></>) } });
+storiesOf('Components/Ant Design/Progress', module).add('gradient-line', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/progress/" target="_blank">
+                  documentation on Progress component
+                </a>.
+              </>
+            ) }
+        });

@@ -21,5 +21,15 @@ function SpaceDemo() {
   );
 }
 
-storiesOf('antd/space', module).add('base', () => <SpaceDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Crowded components horizontal spacing.</p></>) } });
+storiesOf('Components/Ant Design/Space', module).add('base', () => <SpaceDemo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/space/" target="_blank">
+                  documentation on Space component
+                </a>.
+              </>
+            ) }
+        });

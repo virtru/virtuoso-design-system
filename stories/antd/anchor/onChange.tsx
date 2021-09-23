@@ -9,7 +9,7 @@ const onChange = (link: string) => {
   console.log('Anchor:OnChange', link);
 };
 
-storiesOf('antd/anchor', module).add('onChange', () => 
+storiesOf('Components/Ant Design/Anchor', module).add('onChange', () => 
   <Anchor affix={false} onChange={onChange}>
     <Link href="#components-anchor-demo-basic" title="Basic demo" />
     <Link href="#components-anchor-demo-static" title="Static demo" />
@@ -18,5 +18,15 @@ storiesOf('antd/anchor', module).add('onChange', () =>
       <Link href="#Link-Props" title="Link Props" />
     </Link>
   </Anchor>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Listening for anchor link change.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/anchor/" target="_blank">
+                  documentation on Anchor component
+                </a>.
+              </>
+            ) }
+        });

@@ -94,5 +94,15 @@ class InfiniteListExample extends React.Component {
   }
 }
 
-storiesOf('antd/list', module).add('infinite-load', () => <InfiniteListExample />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The example of infinite load with <a href="https://github.com/CassetteRocks/react-infinite-scroller">react-infinite-scroller</a>.</p></>) } });
+storiesOf('Components/Ant Design/List', module).add('infinite-load', () => <InfiniteListExample />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/list/" target="_blank">
+                  documentation on List component
+                </a>.
+              </>
+            ) }
+        });

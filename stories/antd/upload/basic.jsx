@@ -22,9 +22,19 @@ const props = {
   },
 };
 
-storiesOf('antd/upload', module).add('basic', () => 
+storiesOf('Components/Ant Design/Upload', module).add('basic', () => 
   <Upload {...props}>
     <Button icon={<UploadOutlined />}>Click to Upload</Button>
   </Upload>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Classic mode. File selection dialog pops up when upload button is clicked.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/upload/" target="_blank">
+                  documentation on Upload component
+                </a>.
+              </>
+            ) }
+        });

@@ -5,7 +5,7 @@ import { Anchor } from 'antd';
 
 const { Link } = Anchor;
 
-storiesOf('antd/anchor', module).add('static', () => 
+storiesOf('Components/Ant Design/Anchor', module).add('static', () => 
   <Anchor affix={false}>
     <Link href="#components-anchor-demo-basic" title="Basic demo" />
     <Link href="#components-anchor-demo-static" title="Static demo" />
@@ -14,5 +14,15 @@ storiesOf('antd/anchor', module).add('static', () =>
       <Link href="#Link-Props" title="Link Props" />
     </Link>
   </Anchor>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Do not change state when page is scrolling.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/anchor/" target="_blank">
+                  documentation on Anchor component
+                </a>.
+              </>
+            ) }
+        });

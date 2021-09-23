@@ -68,5 +68,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/menu', module).add('switch-mode', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Show the dynamic switching mode (between <code>inline</code> and <code>vertical</code>).</p></>) } });
+storiesOf('Components/Ant Design/Menu', module).add('switch-mode', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/menu/" target="_blank">
+                  documentation on Menu component
+                </a>.
+              </>
+            ) }
+        });

@@ -18,7 +18,7 @@ function handleChange(value) {
   console.log(`selected ${value}`);
 }
 
-storiesOf('antd/select', module).add('big-data', () => 
+storiesOf('Components/Ant Design/Select', module).add('big-data', () => 
   <>
     <Title level={3}>Ant Design 4.0</Title>
     <Title level={4}>{options.length} Items</Title>
@@ -40,5 +40,15 @@ storiesOf('antd/select', module).add('big-data', () =>
       style={{ width: '100%', height: 300 }}
     />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Select use <a href="https://github.com/react-component/virtual-list">virtual scroll</a> which get better performance <a href="https://codesandbox.io/s/beautiful-banzai-m72lv">than 3.0</a>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/select/" target="_blank">
+                  documentation on Select component
+                </a>.
+              </>
+            ) }
+        });

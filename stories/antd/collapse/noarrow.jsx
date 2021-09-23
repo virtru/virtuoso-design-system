@@ -15,7 +15,7 @@ const text = `
   it can be found as a welcome guest in many households across the world.
 `;
 
-storiesOf('antd/collapse', module).add('noarrow', () => 
+storiesOf('Components/Ant Design/Collapse', module).add('noarrow', () => 
   <Collapse defaultActiveKey={['1']} onChange={callback}>
     <Panel header="This is panel header with arrow icon" key="1">
       <p>{text}</p>
@@ -24,5 +24,15 @@ storiesOf('antd/collapse', module).add('noarrow', () =>
       <p>{text}</p>
     </Panel>
   </Collapse>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>You can hide the arrow icon by passing <code>showArrow=&#123;false&#125;</code> to <code>CollapsePanel</code> component.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/collapse/" target="_blank">
+                  documentation on Collapse component
+                </a>.
+              </>
+            ) }
+        });

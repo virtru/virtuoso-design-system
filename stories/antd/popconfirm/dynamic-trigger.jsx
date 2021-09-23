@@ -60,5 +60,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/popconfirm', module).add('dynamic-trigger', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Make it pop up under some conditions.</p></>) } });
+storiesOf('Components/Ant Design/Popconfirm', module).add('dynamic-trigger', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/popconfirm/" target="_blank">
+                  documentation on Popconfirm component
+                </a>.
+              </>
+            ) }
+        });

@@ -45,7 +45,7 @@ const Content = ({ children, extra }) => (
   </div>
 );
 
-storiesOf('antd/page-header', module).add('responsive', () => 
+storiesOf('Components/Ant Design/Page Header', module).add('responsive', () => 
   <>
     <PageHeader
       className="site-page-header-responsive"
@@ -69,5 +69,15 @@ storiesOf('antd/page-header', module).add('responsive', () =>
       <Content extra={extraContent}>{renderContent()}</Content>
     </PageHeader>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Under different screen sizes, there should be different performance</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/page-header/" target="_blank">
+                  documentation on Page Header component
+                </a>.
+              </>
+            ) }
+        });

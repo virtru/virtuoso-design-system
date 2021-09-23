@@ -9,7 +9,7 @@ function handleChange(value) {
   console.log(value); // { value: "lucy", key: "lucy", label: "Lucy (101)" }
 }
 
-storiesOf('antd/select', module).add('label-in-value', () => 
+storiesOf('Components/Ant Design/Select', module).add('label-in-value', () => 
   <Select
     labelInValue
     defaultValue={{ value: 'lucy' }}
@@ -19,6 +19,15 @@ storiesOf('antd/select', module).add('label-in-value', () =>
     <Option value="jack">Jack (100)</Option>
     <Option value="lucy">Lucy (101)</Option>
   </Select>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>As a default behavior, the <code>onChange</code> callback can only get the <code>value</code> of the selected item. The <code>labelInValue</code> prop can be used to get the <code>label</code> property of the selected item.</p>
-<p>The <code>label</code> of the selected item will be packed as an object for passing to the <code>onChange</code> callback.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/select/" target="_blank">
+                  documentation on Select component
+                </a>.
+              </>
+            ) }
+        });

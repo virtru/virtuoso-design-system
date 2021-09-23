@@ -3,5 +3,15 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Spin } from 'antd';
 
-storiesOf('antd/spin', module).add('basic', () => <Spin />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A simple loading status.</p></>) } });
+storiesOf('Components/Ant Design/Spin', module).add('basic', () => <Spin />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/spin/" target="_blank">
+                  documentation on Spin component
+                </a>.
+              </>
+            ) }
+        });

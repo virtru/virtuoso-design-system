@@ -10,5 +10,15 @@ const success = () => {
     .then(() => message.info('Loading finished is finished', 2.5));
 };
 
-storiesOf('antd/message', module).add('thenable', () => <Button onClick={success}>Display sequential messages</Button>, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p><code>message</code> provides a promise interface for <code>onClose</code>. The above example will display a new message when the old message is about to close.</p></>) } });
+storiesOf('Components/Ant Design/Message', module).add('thenable', () => <Button onClick={success}>Display sequential messages</Button>, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/message/" target="_blank">
+                  documentation on Message component
+                </a>.
+              </>
+            ) }
+        });

@@ -27,5 +27,15 @@ const Complete: React.FC = () => {
   );
 };
 
-storiesOf('antd/auto-complete', module).add('options', () => <Complete />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>You could pass <code>AutoComplete.Option</code> as children of <code>AutoComplete</code>, instead of using <code>options</code>。</p></>) } });
+storiesOf('Components/Ant Design/Auto Complete', module).add('options', () => <Complete />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/auto-complete/" target="_blank">
+                  documentation on Auto Complete component
+                </a>.
+              </>
+            ) }
+        });

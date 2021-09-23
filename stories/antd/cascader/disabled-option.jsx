@@ -43,5 +43,15 @@ function onChange(value) {
   console.log(value);
 }
 
-storiesOf('antd/cascader', module).add('disabled-option', () => <Cascader options={options} onChange={onChange} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Disable option by specifying the <code>disabled</code> property in <code>options</code>.</p></>) } });
+storiesOf('Components/Ant Design/Cascader', module).add('disabled-option', () => <Cascader options={options} onChange={onChange} />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/cascader/" target="_blank">
+                  documentation on Cascader component
+                </a>.
+              </>
+            ) }
+        });

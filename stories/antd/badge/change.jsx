@@ -64,5 +64,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/badge', module).add('change', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The count will be animated as it changes.</p></>) } });
+storiesOf('Components/Ant Design/Badge', module).add('change', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/badge/" target="_blank">
+                  documentation on Badge component
+                </a>.
+              </>
+            ) }
+        });

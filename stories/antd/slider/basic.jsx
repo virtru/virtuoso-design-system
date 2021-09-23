@@ -24,5 +24,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/slider', module).add('basic', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Basic slider. When <code>range</code> is <code>true</code>, display as dual thumb mode. When <code>disable</code> is <code>true</code>, the slider will not be interactable.</p></>) } });
+storiesOf('Components/Ant Design/Slider', module).add('basic', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/slider/" target="_blank">
+                  documentation on Slider component
+                </a>.
+              </>
+            ) }
+        });

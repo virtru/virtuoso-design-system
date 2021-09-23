@@ -6,7 +6,7 @@ import { AppleOutlined, AndroidOutlined } from '@ant-design/icons';
 
 const { TabPane } = Tabs;
 
-storiesOf('antd/tabs', module).add('icon', () => 
+storiesOf('Components/Ant Design/Tabs', module).add('icon', () => 
   <Tabs defaultActiveKey="2">
     <TabPane
       tab={
@@ -31,5 +31,15 @@ storiesOf('antd/tabs', module).add('icon', () =>
       Tab 2
     </TabPane>
   </Tabs>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The Tab with Icon.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tabs/" target="_blank">
+                  documentation on Tabs component
+                </a>.
+              </>
+            ) }
+        });

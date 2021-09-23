@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Empty, Button } from 'antd';
 
-storiesOf('antd/empty', module).add('customize', () => 
+storiesOf('Components/Ant Design/Empty', module).add('customize', () => 
   <Empty
     image="https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg"
     imageStyle={{
@@ -17,5 +17,15 @@ storiesOf('antd/empty', module).add('customize', () =>
   >
     <Button type="primary">Create Now</Button>
   </Empty>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Customize image source, image size, description and extra content.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/empty/" target="_blank">
+                  documentation on Empty component
+                </a>.
+              </>
+            ) }
+        });

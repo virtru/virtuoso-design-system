@@ -5,7 +5,7 @@ import { DatePicker, Space } from 'antd';
 
 const { RangePicker } = DatePicker;
 
-storiesOf('antd/date-picker', module).add('date-render', () => 
+storiesOf('Components/Ant Design/Date Picker', module).add('date-render', () => 
   <Space direction="vertical" size={12}>
     <DatePicker
       dateRender={current => {
@@ -36,5 +36,15 @@ storiesOf('antd/date-picker', module).add('date-render', () =>
       }}
     />
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>We can customize the rendering of date cells in the calendar by providing a <code>dateRender</code> function to <code>DatePicker</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/date-picker/" target="_blank">
+                  documentation on Date Picker component
+                </a>.
+              </>
+            ) }
+        });

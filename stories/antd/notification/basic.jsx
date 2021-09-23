@@ -14,9 +14,19 @@ const openNotification = () => {
   });
 };
 
-storiesOf('antd/notification', module).add('basic', () => 
+storiesOf('Components/Ant Design/Notification', module).add('basic', () => 
   <Button type="primary" onClick={openNotification}>
     Open the notification box
   </Button>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The simplest usage that close the notification box after 4.5s.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/notification/" target="_blank">
+                  documentation on Notification component
+                </a>.
+              </>
+            ) }
+        });

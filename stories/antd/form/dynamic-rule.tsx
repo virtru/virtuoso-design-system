@@ -75,5 +75,15 @@ const DynamicRule = () => {
   );
 };
 
-storiesOf('antd/form', module).add('dynamic-rule', () => <DynamicRule />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Perform different check rules according to different situations.</p></>) } });
+storiesOf('Components/Ant Design/Form', module).add('dynamic-rule', () => <DynamicRule />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

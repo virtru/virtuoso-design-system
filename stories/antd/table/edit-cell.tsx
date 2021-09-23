@@ -236,5 +236,15 @@ class EditableTable extends React.Component<EditableTableProps, EditableTableSta
   }
 }
 
-storiesOf('antd/table', module).add('edit-cell', () => <EditableTable />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Table with editable cells. When work with <code>shouldCellUpdate</code>, please take care of <a href="https://github.com/ant-design/ant-design/issues/29243">closure</a>.</p></>) } });
+storiesOf('Components/Ant Design/Table', module).add('edit-cell', () => <EditableTable />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

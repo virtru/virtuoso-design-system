@@ -8,7 +8,17 @@ function onChange(time, timeString) {
   console.log(time, timeString);
 }
 
-storiesOf('antd/time-picker', module).add('basic', () => 
+storiesOf('Components/Ant Design/Time Picker', module).add('basic', () => 
   <TimePicker onChange={onChange} defaultOpenValue={moment('00:00:00', 'HH:mm:ss')} />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Click <code>TimePicker</code>, and then we could select or input a time in panel.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/time-picker/" target="_blank">
+                  documentation on Time Picker component
+                </a>.
+              </>
+            ) }
+        });

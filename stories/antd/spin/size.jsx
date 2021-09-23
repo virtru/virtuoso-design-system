@@ -3,11 +3,21 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Spin, Space } from 'antd';
 
-storiesOf('antd/spin', module).add('size', () => 
+storiesOf('Components/Ant Design/Spin', module).add('size', () => 
   <Space size="middle">
     <Spin size="small" />
     <Spin />
     <Spin size="large" />
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A small <code>Spin</code> is used for loading text, default sized <code>Spin</code> for loading a card-level block, and large <code>Spin</code> used for loading a <strong>page</strong>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/spin/" target="_blank">
+                  documentation on Spin component
+                </a>.
+              </>
+            ) }
+        });

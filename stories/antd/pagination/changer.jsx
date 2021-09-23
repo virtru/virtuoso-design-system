@@ -7,7 +7,7 @@ function onShowSizeChange(current, pageSize) {
   console.log(current, pageSize);
 }
 
-storiesOf('antd/pagination', module).add('changer', () => 
+storiesOf('Components/Ant Design/Pagination', module).add('changer', () => 
   <>
     <Pagination
       showSizeChanger
@@ -24,5 +24,15 @@ storiesOf('antd/pagination', module).add('changer', () =>
       disabled
     />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Change <code>pageSize</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/pagination/" target="_blank">
+                  documentation on Pagination component
+                </a>.
+              </>
+            ) }
+        });

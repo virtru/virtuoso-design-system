@@ -42,7 +42,7 @@ const data = [
   },
 ];
 
-storiesOf('antd/table', module).add('bordered', () => 
+storiesOf('Components/Ant Design/Table', module).add('bordered', () => 
   <Table
     columns={columns}
     dataSource={data}
@@ -50,5 +50,15 @@ storiesOf('antd/table', module).add('bordered', () =>
     title={() => 'Header'}
     footer={() => 'Footer'}
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Add border, title and footer for table.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

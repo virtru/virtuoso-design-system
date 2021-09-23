@@ -11,7 +11,7 @@ function onAfterChange(value) {
   console.log('onAfterChange: ', value);
 }
 
-storiesOf('antd/slider', module).add('event', () => 
+storiesOf('Components/Ant Design/Slider', module).add('event', () => 
   <>
     <Slider defaultValue={30} onChange={onChange} onAfterChange={onAfterChange} />
     <Slider
@@ -22,5 +22,15 @@ storiesOf('antd/slider', module).add('event', () =>
       onAfterChange={onAfterChange}
     />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The <code>onChange</code> callback function will fire when the user changes the slider's value. The <code>onAfterChange</code> callback function will fire when <code>onmouseup</code> fired.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/slider/" target="_blank">
+                  documentation on Slider component
+                </a>.
+              </>
+            ) }
+        });

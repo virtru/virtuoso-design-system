@@ -13,7 +13,7 @@ function onSelect(option) {
   console.log('select', option);
 }
 
-storiesOf('antd/mentions', module).add('basic', () => 
+storiesOf('Components/Ant Design/Mentions', module).add('basic', () => 
   <Mentions
     style={{ width: '100%' }}
     onChange={onChange}
@@ -24,5 +24,15 @@ storiesOf('antd/mentions', module).add('basic', () =>
     <Option value="zombieJ">zombieJ</Option>
     <Option value="yesmeck">yesmeck</Option>
   </Mentions>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Basic usage.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/mentions/" target="_blank">
+                  documentation on Mentions component
+                </a>.
+              </>
+            ) }
+        });

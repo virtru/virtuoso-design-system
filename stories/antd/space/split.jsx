@@ -13,5 +13,15 @@ function SpaceSplit() {
   );
 }
 
-storiesOf('antd/space', module).add('split', () => <SpaceSplit />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Crowded components split.</p></>) } });
+storiesOf('Components/Ant Design/Space', module).add('split', () => <SpaceSplit />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/space/" target="_blank">
+                  documentation on Space component
+                </a>.
+              </>
+            ) }
+        });

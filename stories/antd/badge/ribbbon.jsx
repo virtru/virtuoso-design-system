@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Badge, Card } from 'antd';
 
-storiesOf('antd/badge', module).add('ribbbon', () => 
+storiesOf('Components/Ant Design/Badge', module).add('ribbbon', () => 
   <>
     <Badge.Ribbon text="Hippies">
       <Card title="Pushes open the window" size="small">
@@ -46,5 +46,15 @@ storiesOf('antd/badge', module).add('ribbbon', () =>
       </Card>
     </Badge.Ribbon>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use ribbon badge.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/badge/" target="_blank">
+                  documentation on Badge component
+                </a>.
+              </>
+            ) }
+        });

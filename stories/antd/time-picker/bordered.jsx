@@ -5,10 +5,20 @@ import { TimePicker } from 'antd';
 
 const { RangePicker } = TimePicker;
 
-storiesOf('antd/time-picker', module).add('bordered', () => 
+storiesOf('Components/Ant Design/Time Picker', module).add('bordered', () => 
   <>
     <TimePicker bordered={false} />
     <RangePicker bordered={false} />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Bordered-less style component.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/time-picker/" target="_blank">
+                  documentation on Time Picker component
+                </a>.
+              </>
+            ) }
+        });

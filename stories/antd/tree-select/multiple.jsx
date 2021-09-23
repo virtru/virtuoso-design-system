@@ -42,5 +42,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/tree-select', module).add('multiple', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Multiple selection usage.</p></>) } });
+storiesOf('Components/Ant Design/Tree Select', module).add('multiple', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tree-select/" target="_blank">
+                  documentation on Tree Select component
+                </a>.
+              </>
+            ) }
+        });

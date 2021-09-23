@@ -119,12 +119,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/table', module).add('reset-filter', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Control filters and sorters by <code>filteredValue</code> and <code>sortOrder</code>.</p>
-<blockquote>
-  <ol>
-  <li>Defining <code>filteredValue</code> or <code>sortOrder</code> means that it is in the controlled mode.</li>
-  <li>Make sure <code>sortOrder</code> is assigned for only one column.</li>
-  <li><code>column.key</code> is required.</li>
-  </ol>
-</blockquote></>) } });
+storiesOf('Components/Ant Design/Table', module).add('reset-filter', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

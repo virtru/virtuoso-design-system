@@ -42,7 +42,7 @@ function onChange(value) {
   console.log(value);
 }
 
-storiesOf('antd/cascader', module).add('size', () => 
+storiesOf('Components/Ant Design/Cascader', module).add('size', () => 
   <>
     <Cascader size="large" options={options} onChange={onChange} />
     <br />
@@ -54,5 +54,15 @@ storiesOf('antd/cascader', module).add('size', () =>
     <br />
     <br />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Cascade selection box of different sizes.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/cascader/" target="_blank">
+                  documentation on Cascader component
+                </a>.
+              </>
+            ) }
+        });

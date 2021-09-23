@@ -34,5 +34,15 @@ const App: React.FC = () => {
   );
 };
 
-storiesOf('antd/drawer', module).add('config-provider', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>config by ConfigProvider.</p></>) } });
+storiesOf('Components/Ant Design/Drawer', module).add('config-provider', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/drawer/" target="_blank">
+                  documentation on Drawer component
+                </a>.
+              </>
+            ) }
+        });

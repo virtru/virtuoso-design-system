@@ -46,7 +46,7 @@ const data = [
   },
 ];
 
-storiesOf('antd/table', module).add('expand', () => 
+storiesOf('Components/Ant Design/Table', module).add('expand', () => 
   <Table
     columns={columns}
     expandable={{
@@ -55,5 +55,15 @@ storiesOf('antd/table', module).add('expand', () =>
     }}
     dataSource={data}
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>When there's too much information to show and the table can't display all at once.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

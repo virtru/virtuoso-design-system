@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Tag, Divider } from 'antd';
 
-storiesOf('antd/tag', module).add('colorful-inverse', () => 
+storiesOf('Components/Ant Design/Tag', module).add('colorful-inverse', () => 
   <>
     <Divider orientation="left">Presets Inverse</Divider>
     <div>
@@ -20,5 +20,15 @@ storiesOf('antd/tag', module).add('colorful-inverse', () =>
       <Tag color="purple-inverse">purple</Tag>
     </div>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Internal inverse color tag</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tag/" target="_blank">
+                  documentation on Tag component
+                </a>.
+              </>
+            ) }
+        });

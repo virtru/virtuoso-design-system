@@ -31,5 +31,15 @@ const App: React.FC = () => {
   );
 };
 
-storiesOf('antd/drawer', module).add('no-mask', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Remove mask.</p></>) } });
+storiesOf('Components/Ant Design/Drawer', module).add('no-mask', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/drawer/" target="_blank">
+                  documentation on Drawer component
+                </a>.
+              </>
+            ) }
+        });

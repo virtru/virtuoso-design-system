@@ -21,7 +21,7 @@ const selectAfter = (
   </Select>
 );
 
-storiesOf('antd/Input', module).add('addon', () => 
+storiesOf('Components/Ant Design/Input', module).add('addon', () => 
   <Space direction="vertical">
     <Input addonBefore="http://" addonAfter=".com" defaultValue="mysite" />
     <Input addonBefore={selectBefore} addonAfter={selectAfter} defaultValue="mysite" />
@@ -32,5 +32,15 @@ storiesOf('antd/Input', module).add('addon', () =>
       defaultValue="mysite"
     />
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Using pre &amp; post tabs example.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input/" target="_blank">
+                  documentation on Input component
+                </a>.
+              </>
+            ) }
+        });

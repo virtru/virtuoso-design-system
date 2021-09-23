@@ -23,7 +23,7 @@ const menu = (
   </Menu>
 );
 
-storiesOf('antd/breadcrumb', module).add('overlay', () => 
+storiesOf('Components/Ant Design/Breadcrumb', module).add('overlay', () => 
   <Breadcrumb>
     <Breadcrumb.Item>Ant Design</Breadcrumb.Item>
     <Breadcrumb.Item>
@@ -34,5 +34,15 @@ storiesOf('antd/breadcrumb', module).add('overlay', () =>
     </Breadcrumb.Item>
     <Breadcrumb.Item>Button</Breadcrumb.Item>
   </Breadcrumb>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Breadcrumbs support drop down menu.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/breadcrumb/" target="_blank">
+                  documentation on Breadcrumb component
+                </a>.
+              </>
+            ) }
+        });

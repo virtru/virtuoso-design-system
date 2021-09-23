@@ -80,5 +80,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/skeleton', module).add('list', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use skeleton in list component.</p></>) } });
+storiesOf('Components/Ant Design/Skeleton', module).add('list', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/skeleton/" target="_blank">
+                  documentation on Skeleton component
+                </a>.
+              </>
+            ) }
+        });

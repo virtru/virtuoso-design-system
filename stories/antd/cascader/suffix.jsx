@@ -43,7 +43,7 @@ function onChange(value) {
   console.log(value);
 }
 
-storiesOf('antd/cascader', module).add('suffix', () => 
+storiesOf('Components/Ant Design/Cascader', module).add('suffix', () => 
   <>
     <Cascader
       suffixIcon={<SmileOutlined />}
@@ -66,5 +66,15 @@ storiesOf('antd/cascader', module).add('suffix', () =>
     <br />
     <Cascader expandIcon="ab" options={options} onChange={onChange} placeholder="Please select" />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use <code>suffixIcon</code> to customize the selection box suffix icon, and use <code>expandIcon</code> to customize the current item expand icon.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/cascader/" target="_blank">
+                  documentation on Cascader component
+                </a>.
+              </>
+            ) }
+        });

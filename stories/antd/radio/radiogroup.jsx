@@ -21,5 +21,15 @@ const App = () => {
   );
 };
 
-storiesOf('antd/radio', module).add('radiogroup', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A group of radio components.</p></>) } });
+storiesOf('Components/Ant Design/Radio', module).add('radiogroup', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/radio/" target="_blank">
+                  documentation on Radio component
+                </a>.
+              </>
+            ) }
+        });

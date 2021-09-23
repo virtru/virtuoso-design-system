@@ -7,7 +7,7 @@ const text = <span>prompt text</span>;
 
 const buttonWidth = 70;
 
-storiesOf('antd/tooltip', module).add('placement', () => 
+storiesOf('Components/Ant Design/Tooltip', module).add('placement', () => 
   <div className="demo">
     <div style={{ marginLeft: buttonWidth, whiteSpace: 'nowrap' }}>
       <Tooltip placement="topLeft" title={text}>
@@ -54,5 +54,15 @@ storiesOf('antd/tooltip', module).add('placement', () =>
       </Tooltip>
     </div>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>There are 12 placement options available.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tooltip/" target="_blank">
+                  documentation on Tooltip component
+                </a>.
+              </>
+            ) }
+        });

@@ -71,7 +71,7 @@ function showPropsConfirm() {
   });
 }
 
-storiesOf('antd/modal', module).add('confirm', () => 
+storiesOf('Components/Ant Design/Modal', module).add('confirm', () => 
   <Space>
     <Button onClick={showConfirm}>Confirm</Button>
     <Button onClick={showPromiseConfirm}>With promise</Button>
@@ -82,5 +82,15 @@ storiesOf('antd/modal', module).add('confirm', () =>
       With extra props
     </Button>
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use <code>confirm()</code> to show a confirmation modal dialog. Let onCancel/onOk function return a promise object to delay closing the dialog.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/modal/" target="_blank">
+                  documentation on Modal component
+                </a>.
+              </>
+            ) }
+        });

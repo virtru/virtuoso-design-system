@@ -71,5 +71,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/tree', module).add('switcher-icon', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>customize collapse/expand icon of tree node</p></>) } });
+storiesOf('Components/Ant Design/Tree', module).add('switcher-icon', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tree/" target="_blank">
+                  documentation on Tree component
+                </a>.
+              </>
+            ) }
+        });

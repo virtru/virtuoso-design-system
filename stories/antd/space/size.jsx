@@ -25,6 +25,15 @@ function SpaceSize() {
   );
 }
 
-storiesOf('antd/space', module).add('size', () => <SpaceSize />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p><code>large</code>, <code>middle</code> and <code>small</code> preset sizes.</p>
-<p>Set the size to <code>large</code> and <code>middle</code> by setting size to large and middle respectively. If <code>size</code> is not set, the spacing is <code>small</code>.</p></>) } });
+storiesOf('Components/Ant Design/Space', module).add('size', () => <SpaceSize />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/space/" target="_blank">
+                  documentation on Space component
+                </a>.
+              </>
+            ) }
+        });

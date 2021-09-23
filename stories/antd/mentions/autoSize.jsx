@@ -5,11 +5,21 @@ import { Mentions } from 'antd';
 
 const { Option } = Mentions;
 
-storiesOf('antd/mentions', module).add('autoSize', () => 
+storiesOf('Components/Ant Design/Mentions', module).add('autoSize', () => 
   <Mentions autoSize style={{ width: '100%' }}>
     <Option value="afc163">afc163</Option>
     <Option value="zombieJ">zombieJ</Option>
     <Option value="yesmeck">yesmeck</Option>
   </Mentions>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Height autoSize.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/mentions/" target="_blank">
+                  documentation on Mentions component
+                </a>.
+              </>
+            ) }
+        });

@@ -26,7 +26,7 @@ const props = {
   },
 };
 
-storiesOf('antd/upload', module).add('drag', () => 
+storiesOf('Components/Ant Design/Upload', module).add('drag', () => 
   <Dragger {...props}>
     <p className="ant-upload-drag-icon">
       <InboxOutlined />
@@ -37,6 +37,15 @@ storiesOf('antd/upload', module).add('drag', () =>
       band files
     </p>
   </Dragger>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>You can drag files to a specific area, to upload. Alternatively, you can also upload by selecting.</p>
-<p>We can upload serveral files at once in modern browsers by giving the input the <code>multiple</code> attribute.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/upload/" target="_blank">
+                  documentation on Upload component
+                </a>.
+              </>
+            ) }
+        });

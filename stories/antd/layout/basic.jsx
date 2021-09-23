@@ -5,7 +5,7 @@ import { Layout } from 'antd';
 
 const { Header, Footer, Sider, Content } = Layout;
 
-storiesOf('antd/layout', module).add('basic', () => 
+storiesOf('Components/Ant Design/Layout', module).add('basic', () => 
   <>
     <Layout>
       <Header>Header</Header>
@@ -40,5 +40,15 @@ storiesOf('antd/layout', module).add('basic', () =>
       </Layout>
     </Layout>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Classic page layouts.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/layout/" target="_blank">
+                  documentation on Layout component
+                </a>.
+              </>
+            ) }
+        });

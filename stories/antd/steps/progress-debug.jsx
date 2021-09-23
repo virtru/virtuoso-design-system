@@ -49,5 +49,15 @@ function Demo() {
   );
 }
 
-storiesOf('antd/steps', module).add('progress-debug', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Buggy!</p></>) } });
+storiesOf('Components/Ant Design/Steps', module).add('progress-debug', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/steps/" target="_blank">
+                  documentation on Steps component
+                </a>.
+              </>
+            ) }
+        });

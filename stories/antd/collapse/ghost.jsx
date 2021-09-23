@@ -11,7 +11,7 @@ const text = `
   it can be found as a welcome guest in many households across the world.
 `;
 
-storiesOf('antd/collapse', module).add('ghost', () => 
+storiesOf('Components/Ant Design/Collapse', module).add('ghost', () => 
   <Collapse defaultActiveKey={['1']} ghost>
     <Panel header="This is panel header 1" key="1">
       <p>{text}</p>
@@ -23,5 +23,15 @@ storiesOf('antd/collapse', module).add('ghost', () =>
       <p>{text}</p>
     </Panel>
   </Collapse>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Making collapse's background to transparent.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/collapse/" target="_blank">
+                  documentation on Collapse component
+                </a>.
+              </>
+            ) }
+        });

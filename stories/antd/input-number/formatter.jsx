@@ -7,7 +7,7 @@ function onChange(value) {
   console.log('changed', value);
 }
 
-storiesOf('antd/input-number', module).add('formatter', () => 
+storiesOf('Components/Ant Design/Input Number', module).add('formatter', () => 
   <>
     <InputNumber
       defaultValue={1000}
@@ -24,8 +24,15 @@ storiesOf('antd/input-number', module).add('formatter', () =>
       onChange={onChange}
     />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Display value within it's situation with <code>formatter</code>, and we usually use <code>parser</code> at the same time.</p>
-<blockquote>
-  <p>Here is a Intl.NumberFormat InputNumber implementation: <a href="https://codesandbox.io/s/currency-wrapper-antd-input-3ynzo">https://codesandbox.io/s/currency-wrapper-antd-input-3ynzo</a></p>
-</blockquote></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input-number/" target="_blank">
+                  documentation on Input Number component
+                </a>.
+              </>
+            ) }
+        });

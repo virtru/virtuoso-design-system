@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Row, Col } from 'antd';
 
-storiesOf('antd/grid', module).add('responsive', () => 
+storiesOf('Components/Ant Design/Grid', module).add('responsive', () => 
   <Row>
     <Col xs={2} sm={4} md={6} lg={8} xl={10}>
       Col
@@ -15,5 +15,15 @@ storiesOf('antd/grid', module).add('responsive', () =>
       Col
     </Col>
   </Row>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Referring to the Bootstrap <a href="http://getbootstrap.com/css/#grid-media-queries">responsive design</a>, here preset six dimensions: <code>xs</code> <code>sm</code> <code>md</code> <code>lg</code> <code>xl</code> <code>xxl</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/grid/" target="_blank">
+                  documentation on Grid component
+                </a>.
+              </>
+            ) }
+        });

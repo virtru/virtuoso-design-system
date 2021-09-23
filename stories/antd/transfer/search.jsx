@@ -56,5 +56,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/transfer', module).add('search', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Transfer with a search box.</p></>) } });
+storiesOf('Components/Ant Design/Transfer', module).add('search', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/transfer/" target="_blank">
+                  documentation on Transfer component
+                </a>.
+              </>
+            ) }
+        });

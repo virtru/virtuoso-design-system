@@ -49,5 +49,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/tree-select', module).add('treeData', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The tree structure can be populated using <code>treeData</code> property. This is a quick and easy way to provide the tree content.</p></>) } });
+storiesOf('Components/Ant Design/Tree Select', module).add('treeData', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tree-select/" target="_blank">
+                  documentation on Tree Select component
+                </a>.
+              </>
+            ) }
+        });

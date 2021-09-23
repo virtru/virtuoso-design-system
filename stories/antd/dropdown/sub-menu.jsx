@@ -23,11 +23,21 @@ const menu = (
   </Menu>
 );
 
-storiesOf('antd/dropdown', module).add('sub-menu', () => 
+storiesOf('Components/Ant Design/Dropdown', module).add('sub-menu', () => 
   <Dropdown overlay={menu}>
     <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
       Cascading menu <DownOutlined />
     </a>
   </Dropdown>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The menu has multiple levels.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/dropdown/" target="_blank">
+                  documentation on Dropdown component
+                </a>.
+              </>
+            ) }
+        });

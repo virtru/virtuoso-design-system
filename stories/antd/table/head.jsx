@@ -91,10 +91,15 @@ function onChange(pagination, filters, sorter, extra) {
   console.log('params', pagination, filters, sorter, extra);
 }
 
-storiesOf('antd/table', module).add('head', () => <Table columns={columns} dataSource={data} onChange={onChange} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use <code>filters</code> to generate filter menu in columns, <code>onFilter</code> to determine filtered result, and <code>filterMultiple</code> to indicate whether it's multiple or single selection.</p>
-<p>Uses <code>defaultFilteredValue</code> to make a column filtered by default.</p>
-<p>Use <code>sorter</code> to make a column sortable. <code>sorter</code> can be a function of the type <code>function(a, b) &#123; ... &#125;</code> for sorting data locally.</p>
-<p><code>sortDirections: ['ascend' | 'descend']</code> defines available sort methods for each columns, effective for all columns when set on table props. You can set as <code>['ascend', 'descend', 'ascend']</code> to prevent sorter back to default status.</p>
-<p>Uses <code>defaultSortOrder</code> to make a column sorted by default.</p>
-<p>If a <code>sortOrder</code> or <code>defaultSortOrder</code> is specified with the value <code>ascend</code> or <code>descend</code>, you can access this value from within the function passed to the <code>sorter</code> as explained above. Such a function can take the form: <code>function(a, b, sortOrder) &#123; ... &#125;</code>.</p></>) } });
+storiesOf('Components/Ant Design/Table', module).add('head', () => <Table columns={columns} dataSource={data} onChange={onChange} />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

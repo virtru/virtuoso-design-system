@@ -83,5 +83,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/empty', module).add('config-provider', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use ConfigProvider set global Empty style.</p></>) } });
+storiesOf('Components/Ant Design/Empty', module).add('config-provider', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/empty/" target="_blank">
+                  documentation on Empty component
+                </a>.
+              </>
+            ) }
+        });

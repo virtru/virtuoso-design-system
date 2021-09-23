@@ -12,9 +12,19 @@ const openMessage = () => {
   }, 1000);
 };
 
-storiesOf('antd/message', module).add('update', () => 
+storiesOf('Components/Ant Design/Message', module).add('update', () => 
   <Button type="primary" onClick={openMessage}>
     Open the message box
   </Button>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Update message content with unique <code>key</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/message/" target="_blank">
+                  documentation on Message component
+                </a>.
+              </>
+            ) }
+        });

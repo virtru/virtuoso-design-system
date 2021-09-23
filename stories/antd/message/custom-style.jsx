@@ -13,5 +13,15 @@ const success = () => {
   });
 };
 
-storiesOf('antd/message', module).add('custom-style', () => <Button onClick={success}>Customized style</Button>, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The <code>style</code> and <code>className</code> are available to customize Message.</p></>) } });
+storiesOf('Components/Ant Design/Message', module).add('custom-style', () => <Button onClick={success}>Customized style</Button>, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/message/" target="_blank">
+                  documentation on Message component
+                </a>.
+              </>
+            ) }
+        });

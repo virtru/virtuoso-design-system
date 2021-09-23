@@ -63,5 +63,15 @@ class SiderDemo extends React.Component {
   }
 }
 
-storiesOf('antd/layout', module).add('custom-trigger', () => <SiderDemo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>If you want to use a customized trigger, you can hide the default one by setting <code>trigger=&#123;null&#125;</code>.</p></>) } });
+storiesOf('Components/Ant Design/Layout', module).add('custom-trigger', () => <SiderDemo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/layout/" target="_blank">
+                  documentation on Layout component
+                </a>.
+              </>
+            ) }
+        });

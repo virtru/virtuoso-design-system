@@ -18,7 +18,7 @@ const data = [
   },
 ];
 
-storiesOf('antd/list', module).add('grid', () => 
+storiesOf('Components/Ant Design/List', module).add('grid', () => 
   <List
     grid={{ gutter: 16, column: 4 }}
     dataSource={data}
@@ -28,5 +28,15 @@ storiesOf('antd/list', module).add('grid', () =>
       </List.Item>
     )}
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Create a grid layout by setting the <code>grid</code> property of List.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/list/" target="_blank">
+                  documentation on List component
+                </a>.
+              </>
+            ) }
+        });

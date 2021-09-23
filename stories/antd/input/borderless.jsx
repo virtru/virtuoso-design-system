@@ -3,5 +3,15 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Input } from 'antd';
 
-storiesOf('antd/Input', module).add('borderless', () => <Input placeholder="Borderless" bordered={false} />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>No border.</p></>) } });
+storiesOf('Components/Ant Design/Input', module).add('borderless', () => <Input placeholder="Borderless" bordered={false} />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input/" target="_blank">
+                  documentation on Input component
+                </a>.
+              </>
+            ) }
+        });

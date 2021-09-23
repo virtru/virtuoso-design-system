@@ -23,7 +23,7 @@ const menu = (
   </Menu>
 );
 
-storiesOf('antd/dropdown', module).add('placement', () => 
+storiesOf('Components/Ant Design/Dropdown', module).add('placement', () => 
   <Space direction="vertical">
     <Space wrap>
       <Dropdown overlay={menu} placement="bottomLeft">
@@ -48,5 +48,15 @@ storiesOf('antd/dropdown', module).add('placement', () =>
       </Dropdown>
     </Space>
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Support 6 placements.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/dropdown/" target="_blank">
+                  documentation on Dropdown component
+                </a>.
+              </>
+            ) }
+        });

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Pagination } from 'antd';
 
-storiesOf('antd/pagination', module).add('total', () => 
+storiesOf('Components/Ant Design/Pagination', module).add('total', () => 
   <>
     <Pagination
       total={85}
@@ -19,5 +19,15 @@ storiesOf('antd/pagination', module).add('total', () =>
       defaultCurrent={1}
     />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>You can show the total number of data by setting <code>showTotal</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/pagination/" target="_blank">
+                  documentation on Pagination component
+                </a>.
+              </>
+            ) }
+        });

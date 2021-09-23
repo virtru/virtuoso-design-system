@@ -54,5 +54,15 @@ const App = () => {
   );
 };
 
-storiesOf('antd/transfer', module).add('large-data', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>large count of items with pagination.</p></>) } });
+storiesOf('Components/Ant Design/Transfer', module).add('large-data', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/transfer/" target="_blank">
+                  documentation on Transfer component
+                </a>.
+              </>
+            ) }
+        });

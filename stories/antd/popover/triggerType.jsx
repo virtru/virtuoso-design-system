@@ -10,7 +10,7 @@ const content = (
   </div>
 );
 
-storiesOf('antd/popover', module).add('triggerType', () => 
+storiesOf('Components/Ant Design/Popover', module).add('triggerType', () => 
   <div>
     <Popover content={content} title="Title" trigger="hover">
       <Button>Hover me</Button>
@@ -22,5 +22,15 @@ storiesOf('antd/popover', module).add('triggerType', () =>
       <Button>Click me</Button>
     </Popover>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Mouse to click, focus and move in.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/popover/" target="_blank">
+                  documentation on Popover component
+                </a>.
+              </>
+            ) }
+        });

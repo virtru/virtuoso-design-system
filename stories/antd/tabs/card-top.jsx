@@ -5,7 +5,7 @@ import { Tabs } from 'antd';
 
 const { TabPane } = Tabs;
 
-storiesOf('antd/tabs', module).add('card-top', () => 
+storiesOf('Components/Ant Design/Tabs', module).add('card-top', () => 
   <div className="card-container">
     <Tabs type="card">
       <TabPane tab="Tab Title 1" key="1">
@@ -25,5 +25,15 @@ storiesOf('antd/tabs', module).add('card-top', () =>
       </TabPane>
     </Tabs>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Should be used at the top of container, needs to override styles.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tabs/" target="_blank">
+                  documentation on Tabs component
+                </a>.
+              </>
+            ) }
+        });

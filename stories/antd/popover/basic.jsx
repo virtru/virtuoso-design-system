@@ -10,9 +10,19 @@ const content = (
   </div>
 );
 
-storiesOf('antd/popover', module).add('basic', () => 
+storiesOf('Components/Ant Design/Popover', module).add('basic', () => 
   <Popover content={content} title="Title">
     <Button type="primary">Hover me</Button>
   </Popover>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The most basic example. The size of the floating layer depends on the contents region.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/popover/" target="_blank">
+                  documentation on Popover component
+                </a>.
+              </>
+            ) }
+        });

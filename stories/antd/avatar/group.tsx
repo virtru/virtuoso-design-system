@@ -39,5 +39,15 @@ const Demo = () => (
   </>
 );
 
-storiesOf('antd/avatar', module).add('group', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Avatar group display.</p></>) } });
+storiesOf('Components/Ant Design/Avatar', module).add('group', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/avatar/" target="_blank">
+                  documentation on Avatar component
+                </a>.
+              </>
+            ) }
+        });

@@ -19,7 +19,7 @@ const fileList = [
   },
 ];
 
-storiesOf('antd/upload', module).add('picture-style', () => 
+storiesOf('Components/Ant Design/Upload', module).add('picture-style', () => 
   <>
     <Upload
       action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
@@ -39,5 +39,15 @@ storiesOf('antd/upload', module).add('picture-style', () =>
       <Button icon={<UploadOutlined />}>Upload</Button>
     </Upload>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>If uploaded file is a picture, the thumbnail can be shown. <code>IE8/9</code> do not support local thumbnail show. Please use <code>thumbUrl</code> instead.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/upload/" target="_blank">
+                  documentation on Upload component
+                </a>.
+              </>
+            ) }
+        });

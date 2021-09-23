@@ -42,5 +42,15 @@ function onChange(value) {
   console.log(value);
 }
 
-storiesOf('antd/cascader', module).add('change-on-select', () => <Cascader options={options} onChange={onChange} changeOnSelect />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Allow only select parent options.</p></>) } });
+storiesOf('Components/Ant Design/Cascader', module).add('change-on-select', () => <Cascader options={options} onChange={onChange} changeOnSelect />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/cascader/" target="_blank">
+                  documentation on Cascader component
+                </a>.
+              </>
+            ) }
+        });

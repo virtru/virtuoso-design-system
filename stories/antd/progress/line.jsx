@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Progress } from 'antd';
 
-storiesOf('antd/progress', module).add('line', () => 
+storiesOf('Components/Ant Design/Progress', module).add('line', () => 
   <>
     <Progress percent={30} />
     <Progress percent={50} status="active" />
@@ -11,5 +11,15 @@ storiesOf('antd/progress', module).add('line', () =>
     <Progress percent={100} />
     <Progress percent={50} showInfo={false} />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A standard progress bar.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/progress/" target="_blank">
+                  documentation on Progress component
+                </a>.
+              </>
+            ) }
+        });

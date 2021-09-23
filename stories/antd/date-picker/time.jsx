@@ -14,7 +14,7 @@ function onOk(value) {
   console.log('onOk: ', value);
 }
 
-storiesOf('antd/date-picker', module).add('time', () => 
+storiesOf('Components/Ant Design/Date Picker', module).add('time', () => 
   <Space direction="vertical" size={12}>
     <DatePicker showTime onChange={onChange} onOk={onOk} />
     <RangePicker
@@ -24,5 +24,15 @@ storiesOf('antd/date-picker', module).add('time', () =>
       onOk={onOk}
     />
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>This property provide an additional time selection. When <code>showTime</code> is an Object, its properties will be passed on to built-in <code>TimePicker</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/date-picker/" target="_blank">
+                  documentation on Date Picker component
+                </a>.
+              </>
+            ) }
+        });

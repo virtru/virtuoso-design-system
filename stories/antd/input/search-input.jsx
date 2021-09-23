@@ -17,7 +17,7 @@ const suffix = (
 
 const onSearch = value => console.log(value);
 
-storiesOf('antd/Input', module).add('search-input', () => 
+storiesOf('Components/Ant Design/Input', module).add('search-input', () => 
   <Space direction="vertical">
     <Search placeholder="input search text" onSearch={onSearch} style={{ width: 200 }} />
     <Search placeholder="input search text" allowClear onSearch={onSearch} style={{ width: 200 }} />
@@ -37,5 +37,15 @@ storiesOf('antd/Input', module).add('search-input', () =>
       onSearch={onSearch}
     />
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Example of creating a search box by grouping a standard input with a search button.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input/" target="_blank">
+                  documentation on Input component
+                </a>.
+              </>
+            ) }
+        });

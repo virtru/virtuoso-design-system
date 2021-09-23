@@ -80,5 +80,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/radio', module).add('radiogroup-options', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Render radios by configuring <code>options</code>. Radio type can also be set through the <code>optionType</code> parameter.</p></>) } });
+storiesOf('Components/Ant Design/Radio', module).add('radiogroup-options', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/radio/" target="_blank">
+                  documentation on Radio component
+                </a>.
+              </>
+            ) }
+        });

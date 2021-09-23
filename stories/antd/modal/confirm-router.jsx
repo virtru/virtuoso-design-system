@@ -27,5 +27,15 @@ function showConfirm() {
   }
 }
 
-storiesOf('antd/modal', module).add('confirm-router', () => <Button onClick={showConfirm}>Confirm</Button>, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p><code>Modal.destroyAll()</code> will destroy all confirmation modal dialogs. Usually, you can use it in router change event to destroy confirm modal dialog automatically.</p></>) } });
+storiesOf('Components/Ant Design/Modal', module).add('confirm-router', () => <Button onClick={showConfirm}>Confirm</Button>, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/modal/" target="_blank">
+                  documentation on Modal component
+                </a>.
+              </>
+            ) }
+        });

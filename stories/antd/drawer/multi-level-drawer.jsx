@@ -61,5 +61,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/drawer', module).add('multi-level-drawer', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Open a new drawer on top of an existing drawer to handle multi branch tasks.</p></>) } });
+storiesOf('Components/Ant Design/Drawer', module).add('multi-level-drawer', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/drawer/" target="_blank">
+                  documentation on Drawer component
+                </a>.
+              </>
+            ) }
+        });

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Pagination } from 'antd';
 
-storiesOf('antd/pagination', module).add('all', () => 
+storiesOf('Components/Ant Design/Pagination', module).add('all', () => 
   <>
     <Pagination
       total={85}
@@ -12,5 +12,15 @@ storiesOf('antd/pagination', module).add('all', () =>
       showTotal={total => `Total ${total} items`}
     />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Show all configured prop.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/pagination/" target="_blank">
+                  documentation on Pagination component
+                </a>.
+              </>
+            ) }
+        });

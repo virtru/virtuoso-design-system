@@ -47,5 +47,15 @@ const Sider = () => {
   );
 };
 
-storiesOf('antd/menu', module).add('sider-current', () => <Sider />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Click the menu and you will see that all the other menus gets collapsed to keep the entire menu compact.</p></>) } });
+storiesOf('Components/Ant Design/Menu', module).add('sider-current', () => <Sider />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/menu/" target="_blank">
+                  documentation on Menu component
+                </a>.
+              </>
+            ) }
+        });

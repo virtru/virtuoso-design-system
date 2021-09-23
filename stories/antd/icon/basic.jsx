@@ -9,7 +9,7 @@ import {
   LoadingOutlined,
 } from '@ant-design/icons';
 
-storiesOf('antd/Icon', module).add('basic', () => 
+storiesOf('Components/Ant Design/Icon', module).add('basic', () => 
   <div className="icons-list">
     <HomeOutlined />
     <SettingFilled />
@@ -18,5 +18,15 @@ storiesOf('antd/Icon', module).add('basic', () =>
     <SmileOutlined rotate={180} />
     <LoadingOutlined />
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Import icons from <code>@ant-design/icons</code>, component name of icons with different theme is the icon name suffixed by the theme name. Specify the <code>spin</code> property to show spinning animation.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/icon/" target="_blank">
+                  documentation on Icon component
+                </a>.
+              </>
+            ) }
+        });

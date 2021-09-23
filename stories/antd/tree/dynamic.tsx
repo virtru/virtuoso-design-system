@@ -60,5 +60,15 @@ const Demo: React.FC<{}> = () => {
   return <Tree loadData={onLoadData} treeData={treeData} />;
 };
 
-storiesOf('antd/tree', module).add('dynamic', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>To load data asynchronously when click to expand a treeNode.</p></>) } });
+storiesOf('Components/Ant Design/Tree', module).add('dynamic', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tree/" target="_blank">
+                  documentation on Tree component
+                </a>.
+              </>
+            ) }
+        });

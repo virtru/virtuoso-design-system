@@ -15,7 +15,7 @@ const text = `
   it can be found as a welcome guest in many households across the world.
 `;
 
-storiesOf('antd/collapse', module).add('mix', () => 
+storiesOf('Components/Ant Design/Collapse', module).add('mix', () => 
   <Collapse onChange={callback}>
     <Panel header="This is panel header 1" key="1">
       <Collapse defaultActiveKey="1">
@@ -31,5 +31,15 @@ storiesOf('antd/collapse', module).add('mix', () =>
       <p>{text}</p>
     </Panel>
   </Collapse>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p><code>Collapse</code> is nested inside the <code>Collapse</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/collapse/" target="_blank">
+                  documentation on Collapse component
+                </a>.
+              </>
+            ) }
+        });

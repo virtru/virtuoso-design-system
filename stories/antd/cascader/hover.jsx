@@ -47,12 +47,22 @@ function displayRender(label) {
   return label[label.length - 1];
 }
 
-storiesOf('antd/cascader', module).add('hover', () => 
+storiesOf('Components/Ant Design/Cascader', module).add('hover', () => 
   <Cascader
     options={options}
     expandTrigger="hover"
     displayRender={displayRender}
     onChange={onChange}
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Hover to expand sub menu, click to select option.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/cascader/" target="_blank">
+                  documentation on Cascader component
+                </a>.
+              </>
+            ) }
+        });

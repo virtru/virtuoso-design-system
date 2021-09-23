@@ -4,7 +4,7 @@ import React from 'react';
 import { Statistic, Card, Row, Col } from 'antd';
 import { ArrowUpOutlined, ArrowDownOutlined } from '@ant-design/icons';
 
-storiesOf('antd/statistic', module).add('card', () => 
+storiesOf('Components/Ant Design/Statistic', module).add('card', () => 
   <div className="site-statistic-demo-card">
     <Row gutter={16}>
       <Col span={12}>
@@ -33,5 +33,15 @@ storiesOf('antd/statistic', module).add('card', () =>
       </Col>
     </Row>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Display statistic data in Card.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/statistic/" target="_blank">
+                  documentation on Statistic component
+                </a>.
+              </>
+            ) }
+        });

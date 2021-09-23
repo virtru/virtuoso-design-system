@@ -4,7 +4,7 @@ import React from 'react';
 import { Input, Tooltip } from 'antd';
 import { InfoCircleOutlined, UserOutlined } from '@ant-design/icons';
 
-storiesOf('antd/Input', module).add('presuffix', () => 
+storiesOf('Components/Ant Design/Input', module).add('presuffix', () => 
   <>
     <Input
       placeholder="Enter your username"
@@ -22,5 +22,15 @@ storiesOf('antd/Input', module).add('presuffix', () =>
     <br />
     <Input prefix="￥" suffix="RMB" disabled />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Add a prefix or suffix icons inside input.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input/" target="_blank">
+                  documentation on Input component
+                </a>.
+              </>
+            ) }
+        });

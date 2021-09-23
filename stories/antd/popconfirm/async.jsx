@@ -41,5 +41,15 @@ const App = () => {
   );
 };
 
-storiesOf('antd/popconfirm', module).add('async', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Asynchronously close a popconfirm when a the OK button is pressed. For example, you can use this pattern when you submit a form.</p></>) } });
+storiesOf('Components/Ant Design/Popconfirm', module).add('async', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/popconfirm/" target="_blank">
+                  documentation on Popconfirm component
+                </a>.
+              </>
+            ) }
+        });

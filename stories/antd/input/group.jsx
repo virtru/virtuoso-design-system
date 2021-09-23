@@ -155,6 +155,15 @@ const App = () => (
   </div>
 );
 
-storiesOf('antd/Input', module).add('group', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Input.Group example.</p>
-<p>Note: You don't need <code>Col</code> to control the width in the <code>compact</code> mode.</p></>) } });
+storiesOf('Components/Ant Design/Input', module).add('group', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input/" target="_blank">
+                  documentation on Input component
+                </a>.
+              </>
+            ) }
+        });

@@ -58,10 +58,20 @@ const HeartIcon = props => <Icon component={HeartSvg} {...props} />;
 
 const PandaIcon = props => <Icon component={PandaSvg} {...props} />;
 
-storiesOf('antd/Icon', module).add('custom', () => 
+storiesOf('Components/Ant Design/Icon', module).add('custom', () => 
   <div className="custom-icons-list">
     <HeartIcon style={{ color: 'hotpink' }} />
     <PandaIcon style={{ fontSize: '32px' }} />
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Create a reusable React component by using <code>&lt;Icon component=&#123;...&#125; /&gt;</code>. The property <code>component</code> takes a React component that renders to <code>svg</code> element.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/icon/" target="_blank">
+                  documentation on Icon component
+                </a>.
+              </>
+            ) }
+        });

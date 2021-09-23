@@ -9,7 +9,7 @@ function confirm() {
   message.info('Clicked on Yes.');
 }
 
-storiesOf('antd/popconfirm', module).add('placement', () => 
+storiesOf('Components/Ant Design/Popconfirm', module).add('placement', () => 
   <div className="demo">
     <div style={{ marginLeft: 70, whiteSpace: 'nowrap' }}>
       <Popconfirm placement="topLeft" title={text} onConfirm={confirm} okText="Yes" cancelText="No">
@@ -92,5 +92,15 @@ storiesOf('antd/popconfirm', module).add('placement', () =>
       </Popconfirm>
     </div>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>There are 12 <code>placement</code> options available. Use <code>arrowPointAtCenter</code> if you want the arrow to point at the center of target.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/popconfirm/" target="_blank">
+                  documentation on Popconfirm component
+                </a>.
+              </>
+            ) }
+        });

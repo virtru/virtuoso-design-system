@@ -58,5 +58,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/typography', module).add('ellipsis-debug', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Multiple line ellipsis support.</p></>) } });
+storiesOf('Components/Ant Design/Typography', module).add('ellipsis-debug', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/typography/" target="_blank">
+                  documentation on Typography component
+                </a>.
+              </>
+            ) }
+        });

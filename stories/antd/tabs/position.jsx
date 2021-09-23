@@ -43,5 +43,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/tabs', module).add('position', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Tab's position: left, right, top or bottom. Will auto switch to <code>top</code> in mobile.</p></>) } });
+storiesOf('Components/Ant Design/Tabs', module).add('position', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tabs/" target="_blank">
+                  documentation on Tabs component
+                </a>.
+              </>
+            ) }
+        });

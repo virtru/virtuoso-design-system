@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Row, Col, Divider } from 'antd';
 
-storiesOf('antd/grid', module).add('flex', () => 
+storiesOf('Components/Ant Design/Grid', module).add('flex', () => 
   <>
     <Divider orientation="left">sub-element align left</Divider>
     <Row justify="start">
@@ -45,5 +45,15 @@ storiesOf('antd/grid', module).add('flex', () =>
       <Col span={4}>col-4</Col>
     </Row>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Child elements depending on the value of the <code>start</code>,<code>center</code>, <code>end</code>,<code>space-between</code>, <code>space-around</code>, which are defined in its parent node typesetting mode.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/grid/" target="_blank">
+                  documentation on Grid component
+                </a>.
+              </>
+            ) }
+        });

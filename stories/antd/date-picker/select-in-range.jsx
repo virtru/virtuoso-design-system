@@ -38,5 +38,15 @@ const App = () => {
   );
 };
 
-storiesOf('antd/date-picker', module).add('select-in-range', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A example shows how to select a dynamic range by using <code>onCalendarChange</code> and <code>disabledDate</code>.</p></>) } });
+storiesOf('Components/Ant Design/Date Picker', module).add('select-in-range', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/date-picker/" target="_blank">
+                  documentation on Date Picker component
+                </a>.
+              </>
+            ) }
+        });

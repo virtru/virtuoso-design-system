@@ -28,7 +28,7 @@ const menu = (
   </Menu>
 );
 
-storiesOf('antd/dropdown', module).add('dropdown-button', () => 
+storiesOf('Components/Ant Design/Dropdown', module).add('dropdown-button', () => 
   <Space wrap>
     <Dropdown.Button onClick={handleButtonClick} overlay={menu}>
       Dropdown
@@ -56,5 +56,15 @@ storiesOf('antd/dropdown', module).add('dropdown-button', () =>
       </Button>
     </Dropdown>
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A button is on the left, and a related functional menu is on the right. You can set the icon property to modify the icon of right.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/dropdown/" target="_blank">
+                  documentation on Dropdown component
+                </a>.
+              </>
+            ) }
+        });

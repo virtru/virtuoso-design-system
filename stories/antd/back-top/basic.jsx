@@ -3,12 +3,22 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { BackTop } from 'antd';
 
-storiesOf('antd/back-top', module).add('basic', () => 
+storiesOf('Components/Ant Design/Back Top', module).add('basic', () => 
   <>
     <BackTop />
     Scroll down to see the bottom-right
     <strong className="site-back-top-basic"> gray </strong>
     button.
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The most basic usage.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/back-top/" target="_blank">
+                  documentation on Back Top component
+                </a>.
+              </>
+            ) }
+        });

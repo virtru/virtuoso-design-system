@@ -69,7 +69,7 @@ for (let i = 0; i < 20; i += 1) {
   });
 }
 
-storiesOf('antd/table', module).add('summary', () => 
+storiesOf('Components/Ant Design/Table', module).add('summary', () => 
   <>
     <Table
       columns={columns}
@@ -125,5 +125,15 @@ storiesOf('antd/table', module).add('summary', () =>
       )}
     />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Set summary content by <code>summary</code> prop. Sync column fixed status with <code>Table.Summary.Cell</code>. You can fixed it by set <code>Table.Summary</code> <code>fixed</code> prop(since <code>4.16.0</code>).</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/table/" target="_blank">
+                  documentation on Table component
+                </a>.
+              </>
+            ) }
+        });

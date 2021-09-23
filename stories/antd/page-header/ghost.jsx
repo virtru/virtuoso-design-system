@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { PageHeader, Button, Descriptions } from 'antd';
 
-storiesOf('antd/page-header', module).add('ghost', () => 
+storiesOf('Components/Ant Design/Page Header', module).add('ghost', () => 
   <div className="site-page-header-ghost-wrapper">
     <PageHeader
       ghost={false}
@@ -31,5 +31,15 @@ storiesOf('antd/page-header', module).add('ghost', () =>
       </Descriptions>
     </PageHeader>
   </div>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>The default PageHeader is a transparent background. In some cases, PageHeader needs its own background color.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/page-header/" target="_blank">
+                  documentation on Page Header component
+                </a>.
+              </>
+            ) }
+        });

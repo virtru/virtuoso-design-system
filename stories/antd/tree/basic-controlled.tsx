@@ -86,5 +86,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/tree', module).add('basic-controlled', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Controlled mode lets parent nodes reflect the status of child nodes more intelligently.</p></>) } });
+storiesOf('Components/Ant Design/Tree', module).add('basic-controlled', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tree/" target="_blank">
+                  documentation on Tree component
+                </a>.
+              </>
+            ) }
+        });

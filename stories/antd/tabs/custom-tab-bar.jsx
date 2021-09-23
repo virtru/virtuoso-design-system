@@ -14,7 +14,7 @@ const renderTabBar = (props, DefaultTabBar) => (
   </Sticky>
 );
 
-storiesOf('antd/tabs', module).add('custom-tab-bar', () => 
+storiesOf('Components/Ant Design/Tabs', module).add('custom-tab-bar', () => 
   <StickyContainer>
     <Tabs defaultActiveKey="1" renderTabBar={renderTabBar}>
       <TabPane tab="Tab 1" key="1" style={{ height: 200 }}>
@@ -28,5 +28,15 @@ storiesOf('antd/tabs', module).add('custom-tab-bar', () =>
       </TabPane>
     </Tabs>
   </StickyContainer>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use react-sticky.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tabs/" target="_blank">
+                  documentation on Tabs component
+                </a>.
+              </>
+            ) }
+        });

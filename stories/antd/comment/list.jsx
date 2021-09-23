@@ -41,7 +41,7 @@ const data = [
   },
 ];
 
-storiesOf('antd/comment', module).add('list', () => 
+storiesOf('Components/Ant Design/Comment', module).add('list', () => 
   <List
     className="comment-list"
     header={`${data.length} replies`}
@@ -59,5 +59,15 @@ storiesOf('antd/comment', module).add('list', () =>
       </li>
     )}
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Displaying a series of comments using the <code>antd</code> List Component.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/comment/" target="_blank">
+                  documentation on Comment component
+                </a>.
+              </>
+            ) }
+        });

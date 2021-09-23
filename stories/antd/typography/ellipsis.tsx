@@ -45,5 +45,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/typography', module).add('ellipsis', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Multiple line ellipsis support. You can use <code>tooltip</code> to config ellipsis tooltip. Recommend <code>expandable</code> when have lots of content.</p></>) } });
+storiesOf('Components/Ant Design/Typography', module).add('ellipsis', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/typography/" target="_blank">
+                  documentation on Typography component
+                </a>.
+              </>
+            ) }
+        });

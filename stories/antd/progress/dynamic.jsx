@@ -38,5 +38,15 @@ class App extends React.Component {
   }
 }
 
-storiesOf('antd/progress', module).add('dynamic', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>A dynamic progress bar is better.</p></>) } });
+storiesOf('Components/Ant Design/Progress', module).add('dynamic', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/progress/" target="_blank">
+                  documentation on Progress component
+                </a>.
+              </>
+            ) }
+        });

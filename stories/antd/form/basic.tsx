@@ -50,5 +50,15 @@ const Demo = () => {
   );
 };
 
-storiesOf('antd/form', module).add('basic', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Basic Form data control. Includes layout, initial values, validation and submit.</p></>) } });
+storiesOf('Components/Ant Design/Form', module).add('basic', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/form/" target="_blank">
+                  documentation on Form component
+                </a>.
+              </>
+            ) }
+        });

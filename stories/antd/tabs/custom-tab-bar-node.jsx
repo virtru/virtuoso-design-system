@@ -123,7 +123,7 @@ class DraggableTabs extends React.Component {
   }
 }
 
-storiesOf('antd/tabs', module).add('custom-tab-bar-node', () => 
+storiesOf('Components/Ant Design/Tabs', module).add('custom-tab-bar-node', () => 
   <DraggableTabs>
     <TabPane tab="tab 1" key="1">
       Content of Tab Pane 1
@@ -135,5 +135,15 @@ storiesOf('antd/tabs', module).add('custom-tab-bar-node', () =>
       Content of Tab Pane 3
     </TabPane>
   </DraggableTabs>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Use <code>react-dnd</code> to make tabs draggable.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/tabs/" target="_blank">
+                  documentation on Tabs component
+                </a>.
+              </>
+            ) }
+        });

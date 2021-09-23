@@ -3,9 +3,19 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Affix, Button } from 'antd';
 
-storiesOf('antd/affix', module).add('on-change', () => 
+storiesOf('Components/Ant Design/Affix', module).add('on-change', () => 
   <Affix offsetTop={120} onChange={affixed => console.log(affixed)}>
     <Button>120px to affix top</Button>
   </Affix>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Callback with affixed state.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/affix/" target="_blank">
+                  documentation on Affix component
+                </a>.
+              </>
+            ) }
+        });

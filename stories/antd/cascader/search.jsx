@@ -51,15 +51,22 @@ function filter(inputValue, path) {
   return path.some(option => option.label.toLowerCase().indexOf(inputValue.toLowerCase()) > -1);
 }
 
-storiesOf('antd/cascader', module).add('search', () => 
+storiesOf('Components/Ant Design/Cascader', module).add('search', () => 
   <Cascader
     options={options}
     onChange={onChange}
     placeholder="Please select"
     showSearch={{ filter }}
   />,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Search and select options directly.</p>
-<blockquote>
-  <p>Now, <code>Cascader[showSearch]</code> doesn't support search on server, more info <a href="https://github.com/ant-design/ant-design/issues/5547">#5547</a></p>
-</blockquote></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/cascader/" target="_blank">
+                  documentation on Cascader component
+                </a>.
+              </>
+            ) }
+        });

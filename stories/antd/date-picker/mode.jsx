@@ -62,10 +62,20 @@ class ControlledRangePicker extends React.Component {
   }
 }
 
-storiesOf('antd/date-picker', module).add('mode', () => 
+storiesOf('Components/Ant Design/Date Picker', module).add('mode', () => 
   <Space direction="vertical" size={12}>
     <ControlledDatePicker />
     <ControlledRangePicker />
   </Space>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Determing which panel to show with <code>mode</code> and <code>onPanelChange</code>.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/date-picker/" target="_blank">
+                  documentation on Date Picker component
+                </a>.
+              </>
+            ) }
+        });

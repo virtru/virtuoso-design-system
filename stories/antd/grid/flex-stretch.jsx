@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Row, Col, Divider } from 'antd';
 
-storiesOf('antd/grid', module).add('flex-stretch', () => 
+storiesOf('Components/Ant Design/Grid', module).add('flex-stretch', () => 
   <>
     <Divider orientation="left">Percentage columns</Divider>
     <Row>
@@ -28,5 +28,15 @@ storiesOf('antd/grid', module).add('flex-stretch', () =>
       <Col flex="auto">auto with no-wrap</Col>
     </Row>
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Col provides <code>flex</code> prop to support fill rest.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/grid/" target="_blank">
+                  documentation on Grid component
+                </a>.
+              </>
+            ) }
+        });

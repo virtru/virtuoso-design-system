@@ -20,5 +20,15 @@ const App = () => {
   );
 };
 
-storiesOf('antd/input-number', module).add('keyboard', () => <App />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Control keyboard behavior by <code>keyboard</code>.</p></>) } });
+storiesOf('Components/Ant Design/Input Number', module).add('keyboard', () => <App />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/input-number/" target="_blank">
+                  documentation on Input Number component
+                </a>.
+              </>
+            ) }
+        });

@@ -67,5 +67,15 @@ class Demo extends React.Component {
   }
 }
 
-storiesOf('antd/skeleton', module).add('element', () => <Demo />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Skeleton Button, Avatar, Input and Image.</p></>) } });
+storiesOf('Components/Ant Design/Skeleton', module).add('element', () => <Demo />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/skeleton/" target="_blank">
+                  documentation on Skeleton component
+                </a>.
+              </>
+            ) }
+        });

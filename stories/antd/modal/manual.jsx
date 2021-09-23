@@ -21,5 +21,15 @@ function countDown() {
   }, secondsToGo * 1000);
 }
 
-storiesOf('antd/modal', module).add('manual', () => <Button onClick={countDown}>Open modal to close in 5s</Button>, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Manually updating and destroying a modal from <code>Modal.method</code>.</p></>) } });
+storiesOf('Components/Ant Design/Modal', module).add('manual', () => <Button onClick={countDown}>Open modal to close in 5s</Button>, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/modal/" target="_blank">
+                  documentation on Modal component
+                </a>.
+              </>
+            ) }
+        });

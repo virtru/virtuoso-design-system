@@ -7,7 +7,7 @@ function showTotal(total) {
   return `Total ${total} items`;
 }
 
-storiesOf('antd/pagination', module).add('mini', () => 
+storiesOf('Components/Ant Design/Pagination', module).add('mini', () => 
   <>
     <Pagination size="small" total={50} />
     <Pagination size="small" total={50} showSizeChanger showQuickJumper />
@@ -21,5 +21,15 @@ storiesOf('antd/pagination', module).add('mini', () =>
       showQuickJumper
     />
   </>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Mini size pagination.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/pagination/" target="_blank">
+                  documentation on Pagination component
+                </a>.
+              </>
+            ) }
+        });

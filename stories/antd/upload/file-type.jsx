@@ -125,5 +125,15 @@ class PicturesWall extends React.Component {
   }
 }
 
-storiesOf('antd/upload', module).add('file-type', () => <PicturesWall />, { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Displays the corresponding by default by type icon</p></>) } });
+storiesOf('Components/Ant Design/Upload', module).add('file-type', () => <PicturesWall />, {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/upload/" target="_blank">
+                  documentation on Upload component
+                </a>.
+              </>
+            ) }
+        });

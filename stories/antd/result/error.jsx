@@ -6,7 +6,7 @@ import { CloseCircleOutlined } from '@ant-design/icons';
 
 const { Paragraph, Text } = Typography;
 
-storiesOf('antd/result', module).add('error', () => 
+storiesOf('Components/Ant Design/Result', module).add('error', () => 
   <Result
     status="error"
     title="Submission Failed"
@@ -39,5 +39,15 @@ storiesOf('antd/result', module).add('error', () =>
       </Paragraph>
     </div>
   </Result>,
-  { docs: { page: () => (<><h1 id="enus">en-US</h1>
-<p>Complex error feedback.</p></>) } });
+  {
+          docs: {
+            page: () => (
+              <>
+                Visit Ant Design website for full
+                &nbsp;
+                <a href="https://ant.design/components/result/" target="_blank">
+                  documentation on Result component
+                </a>.
+              </>
+            ) }
+        });
