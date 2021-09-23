@@ -1,12 +1,12 @@
+.virtuosoCustomTable :global(.ant-pagination-item) {
+  display: none;
+}
+
 .virtuosoCustomTable :global(.ant-table-thead > tr > th) {
   font-weight: 600;
 }
 
 .virtuosoCustomTable :global(.ant-table-thead > tr > th::before) {
-  display: none;
-}
-
-.virtuosoCustomTable :global(.ant-pagination-item) {
   display: none;
 }
 
