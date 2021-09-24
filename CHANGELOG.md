@@ -1,3 +1,20 @@
+# v3.1.0 (Fri Sep 24 2021)
+
+#### 🚀 Enhancement
+
+- #CCR-386 some changes for custom ant elements [#212](https://github.com/virtru/virtuoso-design-system/pull/212) ([@virtru-dubich](https://github.com/virtru-dubich))
+
+#### 🐛 Bug Fix
+
+- docs: explain install for create-react-apps [#207](https://github.com/virtru/virtuoso-design-system/pull/207) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 2
+
+- [@virtru-dubich](https://github.com/virtru-dubich)
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v2.0.0 (Tue Aug 31 2021)
 
 #### 💥 Breaking Change
