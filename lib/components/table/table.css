@@ -1,0 +1,25 @@
+.virtuosoCustomTable :global(.ant-pagination-item) {
+  display: none;
+}
+
+.virtuosoCustomTable :global(.ant-table-thead > tr > th) {
+  font-weight: var(--vds-font-weight-semibold);
+}
+
+.virtuosoCustomTable :global(.ant-table-thead > tr > th::before) {
+  display: none;
+}
+
+.virtuosoCustomTable :global(.ant-pagination-prev .ant-pagination-item-link),
+.virtuosoCustomTable :global(.ant-pagination-next .ant-pagination-item-link) {
+  font-size: var(--vds-font-size-body);
+}
+
+.virtuosoCustomTable :global(.ant-pagination.mini .ant-pagination-next) {
+  margin-left: var(--vds-spacer-md);
+}
+
+.virtuosoCustomTotalTable {
+  padding-right: var(--vds-spacer-sm);
+  font-weight: var(--vds-font-weight-normal);
+}

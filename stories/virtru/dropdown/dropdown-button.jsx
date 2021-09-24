@@ -30,7 +30,7 @@ const menu = (
   </Menu>
 );
 
-storiesOf('virtru/dropdown', module).add('dropdown-button', () => 
+storiesOf('virtru/dropdown', module).add('dropdown-button', () =>
   <Space wrap>
     <Dropdown.Button onClick={handleButtonClick} overlay={menu}>
       Dropdown
