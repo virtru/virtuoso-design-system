@@ -70,6 +70,18 @@ Update the existing calls to react-scripts in the scripts section of your packag
 
 ```
 
+In index.css need add 
+```
+@import '~virtuoso-design-system/dist/design_tokens.css';
+@import '~virtuoso-design-system/dist/bundle.cjs.css';
+@import '~virtuoso-design-system/dist/open-sans.css';
+@import '~virtuoso-design-system/dist/raleway.css';
+
+html {
+    font-size: 62.5%;
+}
+
+```
 Example:
 ```
 import React from 'react';

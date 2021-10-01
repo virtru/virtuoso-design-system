@@ -1,4 +1,6 @@
-.virtuosoCustomTable :global(.ant-pagination-item) {
+.virtuosoCustomTable :global(.ant-pagination-item),
+.virtuosoCustomTable :global(.ant-pagination-jump-prev),
+.virtuosoCustomTable :global(.ant-pagination-jump-next) {
   display: none;
 }
 
