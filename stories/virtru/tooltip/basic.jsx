@@ -63,7 +63,7 @@ storiesOf('virtru/tooltip', module).add(
       page: () => (
         <>
           <h1 id="enus">en-US</h1>
-          <p>Simple Tooltip component examples.</p>
+          <p>Simple Tooltip component examples (original antd component).</p>
         </>
       ),
     },
