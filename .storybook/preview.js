@@ -61,3 +61,11 @@ addDecorator(Story => (
 ));
 
 addDecorator(withKnobs);
+
+export const parameters = {
+  options: {
+    storySort: {
+      order: ['Basics', 'virtru', 'antd'], 
+    },
+  },
+};
