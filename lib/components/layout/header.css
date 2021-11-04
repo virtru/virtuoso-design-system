@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.headerContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.divider {
+  background: var(--vds-color-white);
+  height: 25px;
+  margin: 0;
+}
+
+.appName {
+  padding-left: var(--vds-spacer-sm);
+  padding-right: var(--vds-spacer-sm);
+  font-size: var(--vds-font-size-heading-xs);
+  color: var(--vds-color-white);
+  cursor: pointer;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 0 0;
+}
+
+.alignRight {
+  justify-content: right;
+}

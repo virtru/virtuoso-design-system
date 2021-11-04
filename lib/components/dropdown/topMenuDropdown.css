@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  align-items: center;
+  border: 0;
+  font-size: var(--vds-font-size-sm);
+  font-weight: var(--vds-font-weight-normal);
+  line-height: var(--vds-line-height-sm);
+}
+
+.avatarIcon {
+  margin-right: var(--vds-spacer-sm);
+}
+
+.arrow {
+  margin-left: var(--vds-spacer-sm);
+}
+
+.arrow path,
+.avatarIcon path {
+  fill: var(--vds-color-white);
+}
