@@ -1,11 +1,11 @@
-.container {
+.container:global(.ant-layout-footer) {
   display: flex;
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
   height: 65px;
   background: var(--vds-color-white);
-  max-width: 1280px;
+  max-width: 1440px;
   width: 100%;
   border-top: 1px solid var(--vds-color-slate-lightest);
   font-family: var(--vds-font-family-body);
@@ -35,7 +35,7 @@
   text-decoration: underline;
 }
 
-.link:not(:last-child)::after {
+.itemLi:not(:last-child)::after {
   content: '';
   width: 1px;
   height: 18px;

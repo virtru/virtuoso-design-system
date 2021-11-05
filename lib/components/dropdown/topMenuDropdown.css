@@ -1,4 +1,4 @@
-.button {
+.button:global(.ant-btn) {
   display: flex;
   align-items: center;
   border: 0;
@@ -12,6 +12,8 @@
 }
 
 .arrow {
+  position: relative;
+  top: 1px;
   margin-left: var(--vds-spacer-sm);
 }
 

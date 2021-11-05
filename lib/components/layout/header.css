@@ -1,4 +1,4 @@
-.header {
+.header:global(.ant-layout-header) {
   display: flex;
   align-items: center;
   width: 100%;
@@ -12,16 +12,31 @@
   margin: 0 auto;
 }
 
-.divider {
+.divider:global(.ant-divider-vertical) {
   background: var(--vds-color-white);
   height: 25px;
   margin: 0;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: var(--vds-spacer-sm);
+}
+
+.logo path {
+  fill: var(--vds-color-white);
 }
 
 .appName {
   padding-left: var(--vds-spacer-sm);
   padding-right: var(--vds-spacer-sm);
   font-size: var(--vds-font-size-heading-xs);
+  font-family: var(--vds-font-family-display);
+  font-weight: var(--vds-font-weight-semibold);
   color: var(--vds-color-white);
   cursor: pointer;
 }
