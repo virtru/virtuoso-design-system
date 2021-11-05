@@ -4,6 +4,7 @@ module.exports = {
   stories: [
     // Make Introduction appear first in list of stories.
     '../stories/Intro.stories.@(js|mdx)',
+    '../stories/Intro*.stories.(js|mdx)',
     // // include antd stories
     '../stories/antd/*.@(js|mdx|ts|tsx)',
     '../stories/antd/**/*.@(ts|tsx|jsx)',

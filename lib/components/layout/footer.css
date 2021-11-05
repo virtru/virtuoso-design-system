@@ -25,17 +25,17 @@
   padding: 0;
 }
 
-.link {
+.itemLi {
   color: var(--vds-color-blue-darker);
   padding: 0 var(--vds-spacer-sm);
   position: relative;
 }
 
-.link a {
+.itemLi .link {
   text-decoration: underline;
 }
 
-.link:not(:last-child):after {
+.link:not(:last-child)::after {
   content: '';
   width: 1px;
   height: 18px;
