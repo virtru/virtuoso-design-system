@@ -1,0 +1,17 @@
+.mainLayout:global(.ant-layout) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.mainLayout:global(.ant-layout) > * {
+  width: 100%;
+}
+
+.container:global(.ant-layout) {
+  max-width: 1440px;
+  flex-direction: row;
+  padding: var(--vds-spacer-md);
+}

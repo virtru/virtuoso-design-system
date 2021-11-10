@@ -1,7 +1,17 @@
 import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { Layout, Header, TopMenuDropdownWrap, Menu, TopMenuDropdown, CustomIconAvatar } from '@';
+import {
+  VirtruLayout,
+  Layout,
+  Header,
+  Menu,
+  TopMenuDropdown,
+  TopMenuDropdownWrap,
+  CustomIconAvatar,
+} from '@';
+
+const { Sider, Content } = Layout;
 
 const menu = (
   <TopMenuDropdownWrap defaultSelectedKeys={['1']}>
@@ -20,32 +30,17 @@ const menu = (
 );
 
 storiesOf('virtru/layout', module).add(
-  'top',
+  'virtru layout',
   () => (
-    <Layout className="layout" style={{ width: '100%' }}>
-      <Header appName="Control Center" homeUrl="/">
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-          <Menu.Item key="1">nav 1</Menu.Item>
-          <Menu.Item key="2">nav 2</Menu.Item>
-          <Menu.Item key="3">nav 3</Menu.Item>
-        </Menu>
-        <TopMenuDropdown menu={menu} activeUser="ksuchak@virtru.com" />
-      </Header>
-
-      <br />
-      <Header appName="Control Center" homeUrl="/home">
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-          <Menu.Item key="1">nav 1</Menu.Item>
-          <Menu.Item key="2">nav 2</Menu.Item>
-          <Menu.Item key="3">nav 3</Menu.Item>
-        </Menu>
-      </Header>
-
-      <br />
-      <Header appName="Control " alignRight>
-        <TopMenuDropdown menu={menu} activeUser="ksuchak@virtru.com" />
-      </Header>
-    </Layout>
+    <VirtruLayout
+      header={
+        <Header appName="Control Center" alignRight>
+          <TopMenuDropdown menu={menu} activeUser="ksuchak@virtru.com" />
+        </Header>
+      }
+      sider={<Sider theme="light">Sider</Sider>}
+      content={<Content>Content</Content>}
+    />
   ),
   {
     docs: {

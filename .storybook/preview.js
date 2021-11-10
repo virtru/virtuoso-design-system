@@ -8,9 +8,8 @@ import {
 } from '@storybook/react';
 import { withA11y } from '@storybook/addon-a11y';
 import { withKnobs } from '@storybook/addon-knobs';
-import { themes } from '@storybook/theming';
 import virtuosoTheme from './virtuosoTheme.js';
-
+import StoryRouter from 'storybook-react-router';
 import 'loki/configure-react';
 
 import styles from './styles.css';
@@ -60,12 +59,14 @@ addDecorator(Story => (
   </div>
 ));
 
+addDecorator(StoryRouter());
+
 addDecorator(withKnobs);
 
 export const parameters = {
   options: {
     storySort: {
-      order: ['Basics', 'virtru', 'antd'], 
+      order: ['Basics', 'virtru', 'antd'],
     },
   },
 };

@@ -1,0 +1,65 @@
+.header:global(.ant-layout-header) {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.headerContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.divider:global(.ant-divider-vertical) {
+  background: var(--vds-color-white);
+  height: 25px;
+  margin: 0;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.logoLink:focus-visible {
+  outline: 1px auto var(--vds-color-blue-primary);
+}
+
+.logo {
+  margin-right: var(--vds-spacer-sm);
+}
+
+.logo path {
+  fill: var(--vds-color-white);
+}
+
+.appName {
+  padding-left: var(--vds-spacer-sm);
+  padding-right: var(--vds-spacer-sm);
+  font-size: var(--vds-font-size-heading-xs);
+  font-family: var(--vds-font-family-display);
+  font-weight: var(--vds-font-weight-semibold);
+  color: var(--vds-color-white);
+  cursor: pointer;
+}
+
+.appNameLink {
+  line-height: var(--vds-line-height-sm);
+}
+
+.appNameLink:focus-visible {
+  outline: 1px auto var(--vds-color-blue-primary);
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 0 0;
+}
+
+.alignRight {
+  justify-content: right;
+}

@@ -1,0 +1,27 @@
+.button:global(.ant-btn) {
+  display: flex;
+  align-items: center;
+  border: 0;
+  font-size: var(--vds-font-size-sm);
+  font-weight: var(--vds-font-weight-normal);
+  line-height: var(--vds-line-height-sm);
+}
+
+.button:global(.ant-btn):focus-visible {
+  outline: 1px auto var(--vds-color-blue-primary);
+}
+
+.avatarIcon {
+  margin-right: var(--vds-spacer-sm);
+}
+
+.arrow {
+  position: relative;
+  top: 1px;
+  margin-left: var(--vds-spacer-sm);
+}
+
+.arrow path,
+.avatarIcon path {
+  fill: var(--vds-color-white);
+}
