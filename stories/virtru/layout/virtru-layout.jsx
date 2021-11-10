@@ -1,29 +1,32 @@
 import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { UserOutlined } from '@ant-design/icons';
-import { VirtruLayout, Layout, Header, Menu, TopMenuDropdown } from '@';
+import {
+  VirtruLayout,
+  Layout,
+  Header,
+  Menu,
+  TopMenuDropdown,
+  TopMenuDropdownWrap,
+  CustomIconAvatar,
+} from '@';
 
 const { Sider, Content } = Layout;
 
 const menu = (
-  <Menu defaultOpenKeys={['users']}>
-    <Menu.ItemGroup
-      key="users"
-      title="Signed-in Users"
-      style={{ fontSize: '1.3rem', color: 'black' }}
-    >
-      <Menu.Item key="1" icon={<UserOutlined />}>
+  <TopMenuDropdownWrap defaultSelectedKeys={['1']}>
+    <Menu.ItemGroup key="users" title="Signed-in Users">
+      <Menu.Item key="1" icon={<CustomIconAvatar />}>
         abc@virtru.com
       </Menu.Item>
-      <Menu.Item key="2" icon={<UserOutlined />}>
+      <Menu.Item key="2" icon={<CustomIconAvatar />}>
         xyz@virtru.com
       </Menu.Item>
     </Menu.ItemGroup>
     <Menu.Divider />
     <Menu.Item key="3">Sign in as different user</Menu.Item>
     <Menu.Item key="4">Sign out</Menu.Item>
-  </Menu>
+  </TopMenuDropdownWrap>
 );
 
 storiesOf('virtru/layout', module).add(

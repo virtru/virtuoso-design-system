@@ -23,8 +23,8 @@
   align-items: center;
 }
 
-.logoLink:focus {
-  outline: 1px solid var(--vds-color-blue-primary);
+.logoLink:focus-visible {
+  outline: 1px auto var(--vds-color-blue-primary);
 }
 
 .logo {
@@ -49,8 +49,8 @@
   line-height: var(--vds-line-height-sm);
 }
 
-.appNameLink:focus {
-  outline: 1px solid var(--vds-color-blue-primary);
+.appNameLink:focus-visible {
+  outline: 1px auto var(--vds-color-blue-primary);
 }
 
 .headerContent {

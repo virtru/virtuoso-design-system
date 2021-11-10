@@ -7,8 +7,8 @@
   line-height: var(--vds-line-height-sm);
 }
 
-.button:global(.ant-btn):focus {
-  outline: 1px solid var(--vds-color-blue-primary);
+.button:global(.ant-btn):focus-visible {
+  outline: 1px auto var(--vds-color-blue-primary);
 }
 
 .avatarIcon {
