@@ -35,6 +35,10 @@
   text-decoration: underline;
 }
 
+.itemLi .link:focus {
+  outline: 1px solid var(--vds-color-blue-primary);
+}
+
 .itemLi:not(:last-child)::after {
   content: '';
   width: 1px;

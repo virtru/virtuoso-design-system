@@ -23,6 +23,10 @@
   align-items: center;
 }
 
+.logoLink:focus {
+  outline: 1px solid var(--vds-color-blue-primary);
+}
+
 .logo {
   margin-right: var(--vds-spacer-sm);
 }
@@ -39,6 +43,14 @@
   font-weight: var(--vds-font-weight-semibold);
   color: var(--vds-color-white);
   cursor: pointer;
+}
+
+.appNameLink {
+  line-height: var(--vds-line-height-sm);
+}
+
+.appNameLink:focus {
+  outline: 1px solid var(--vds-color-blue-primary);
 }
 
 .headerContent {

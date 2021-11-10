@@ -7,6 +7,10 @@
   line-height: var(--vds-line-height-sm);
 }
 
+.button:global(.ant-btn):focus {
+  outline: 1px solid var(--vds-color-blue-primary);
+}
+
 .avatarIcon {
   margin-right: var(--vds-spacer-sm);
 }
