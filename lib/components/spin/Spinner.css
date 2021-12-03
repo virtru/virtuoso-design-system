@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinnerContainer {
+  position: relative;
+  margin-right: 1.8rem;
+}
+
+.spinnerContainer path {
+  fill: var(--vds-color-blue-primary);
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: spin 0.75s infinite linear;
+}
+
+.middle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+._icon {
+  fill: var(--vds-color-blue-primary);
+  width: 40%;
+  height: 40%;
+}
+
+.logo {
+  composes: _icon;
+  width: 100%;
+  height: 100%;
+}
+
+.export {
+  composes: _icon;
+}
+
+.text {
+  color: var(--vds-color-blue-primary);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
