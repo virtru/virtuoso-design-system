@@ -1,3 +1,27 @@
+# v3.1.0 (Mon Dec 06 2021)
+
+#### 🚀 Enhancement
+
+- [CCR-598] update nav [#239](https://github.com/virtru/virtuoso-design-system/pull/239) ([@dillonthompson](https://github.com/dillonthompson))
+- #CCR-517 added spinner virtru [#238](https://github.com/virtru/virtuoso-design-system/pull/238) ([@virtru-dubich](https://github.com/virtru-dubich))
+- feat: update header menu CCR-479 [#232](https://github.com/virtru/virtuoso-design-system/pull/232) ([@virtru-dubich](https://github.com/virtru-dubich))
+- #CCR-479 improved styles for table [#219](https://github.com/virtru/virtuoso-design-system/pull/219) ([@virtru-dubich](https://github.com/virtru-dubich))
+- #CCR-386 some changes for custom ant elements [#212](https://github.com/virtru/virtuoso-design-system/pull/212) ([@virtru-dubich](https://github.com/virtru-dubich))
+
+#### 🐛 Bug Fix
+
+- docs: restore introductory pages and sort them first [#231](https://github.com/virtru/virtuoso-design-system/pull/231) ([@avkvirtru](https://github.com/avkvirtru))
+- docs: explain install for create-react-apps [#207](https://github.com/virtru/virtuoso-design-system/pull/207) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### Authors: 4
+
+- [@virtru-dubich](https://github.com/virtru-dubich)
+- Arthur Klepchukov ([@avkvirtru](https://github.com/avkvirtru))
+- Dillon Thompson ([@dillonthompson](https://github.com/dillonthompson))
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+
+---
+
 # v2.0.0 (Tue Aug 31 2021)
 
 #### 💥 Breaking Change
