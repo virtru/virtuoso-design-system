@@ -23,6 +23,10 @@
   border-right: none;
 }
 
+.vdsNavItem :global(.ant-menu-item-selected::after) {
+  border-right: none;
+}
+
 .vdsNavItemLoading :global(.ant-menu-item::after) {
   border-right: none;
 }
