@@ -1,4 +1,4 @@
-.button:global(.ant-btn) {
+.vdsButton:global(.ant-btn) {
   display: flex;
   align-items: center;
   border: 0;
@@ -7,21 +7,21 @@
   line-height: var(--vds-line-height-sm);
 }
 
-.button:global(.ant-btn):focus-visible {
+.vdsButton:global(.ant-btn):focus-visible {
   outline: 1px auto var(--vds-color-blue-primary);
 }
 
-.avatarIcon {
+.vdsAvatarIcon {
   margin-right: var(--vds-spacer-sm);
 }
 
-.arrow {
+.vdsArrow {
   position: relative;
   top: 1px;
   margin-left: var(--vds-spacer-sm);
 }
 
-.arrow path,
-.avatarIcon path {
+.vdsArrow path,
+.vdsAvatarIcon path {
   fill: var(--vds-color-white);
 }

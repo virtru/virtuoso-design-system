@@ -1,0 +1,38 @@
+.vdsNavItem :global(.ant-menu-item-selected) {
+  border-left: 3px solid var(--vds-color-blue-primary);
+  text-decoration: underline;
+  height: 1.2em;
+}
+
+.vdsNavItemLoading :global(.ant-menu-item-selected) {
+  color: var(--vds-color-blue-primary);
+  text-decoration: none;
+}
+
+.vdsNavItem :global(.ant-menu-item) {
+  height: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.vdsNavItemLoading :global(.ant-menu-item) {
+  color: var(--vds-color-blue-primary);
+  text-decoration: none;
+}
+
+.vdsNavItem :global(.ant-menu-item::after) {
+  border-right: none;
+}
+
+.vdsNavItemLoading :global(.ant-menu-item::after) {
+  border-right: none;
+}
+
+.vdsNavItem :global(.ant-menu-item):hover {
+  border-left: 3px solid var(--vds-color-blue-primary);
+  color: var(--vds-color-blue-primary);
+}
+
+.vdsNavItemLoading :global(.ant-menu-item):hover {
+  color: var(--vds-color-blue-primary);
+  text-decoration: none;
+}
