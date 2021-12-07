@@ -1,0 +1,3 @@
+.vdsNavigation :global(.ant-menu-inline) {
+  border-right: none;
+}

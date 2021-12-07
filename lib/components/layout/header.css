@@ -1,10 +1,10 @@
-.header:global(.ant-layout-header) {
+.vdsHeader:global(.ant-layout-header) {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-.headerContainer {
+.vdsHeaderContainer {
   width: 100%;
   display: flex;
   align-items: center;
@@ -12,30 +12,30 @@
   margin: 0 auto;
 }
 
-.divider:global(.ant-divider-vertical) {
+.vdsDivider:global(.ant-divider-vertical) {
   background: var(--vds-color-white);
   height: 25px;
   margin: 0;
 }
 
-.logoLink {
+.vdsLogoLink {
   display: flex;
   align-items: center;
 }
 
-.logoLink:focus-visible {
+.vdsLogoLink:focus-visible {
   outline: 1px auto var(--vds-color-blue-primary);
 }
 
-.logo {
+.vdsLogo {
   margin-right: var(--vds-spacer-sm);
 }
 
-.logo path {
+.vdsLogo path {
   fill: var(--vds-color-white);
 }
 
-.appName {
+.vdsAppName {
   padding-left: var(--vds-spacer-sm);
   padding-right: var(--vds-spacer-sm);
   font-size: var(--vds-font-size-heading-xs);
@@ -45,21 +45,21 @@
   cursor: pointer;
 }
 
-.appNameLink {
+.vdsAppNameLink {
   line-height: var(--vds-line-height-sm);
 }
 
-.appNameLink:focus-visible {
+.vdsAppNameLink:focus-visible {
   outline: 1px auto var(--vds-color-blue-primary);
 }
 
-.headerContent {
+.vdsHeaderContent {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex: 1 0 0;
 }
 
-.alignRight {
+.vdsAlignRight {
   justify-content: right;
 }
