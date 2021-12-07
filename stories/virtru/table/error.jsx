@@ -16,4 +16,17 @@ storiesOf('virtru/table_error', module).add(
       ),
     },
   },
-);
+).add(
+    'no data',
+    () => <TableError onClick={() => alert('no data')} variant={TableError.VARIANT.NO_DATA} />,
+    {
+      docs: {
+        page: () => (
+          <>
+            <h1 id="enus">en-US</h1>
+            <p>Simple table with actions.</p>
+          </>
+        ),
+      },
+    },
+  );

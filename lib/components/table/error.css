@@ -2,13 +2,23 @@
   padding: 0 24px;
 }
 
-.errorMessageWrapper {
+.messageWrapper {
   background: var(--vds-color-slate-lightest);
-  min-height: 278px;
+  min-height: 288px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 70px;
+  font-size: var(--vds-font-size-md);
+  color: var(--vds-color-slate-darker);
+  line-height: var(--vds-line-height-md);
+}
+
+.errorWrapper {
+  padding-top: 66px;
+}
+
+.noDataWrapper {
+  padding-top: 72px;
 }
 
 .attentionIcon {
@@ -16,11 +26,12 @@
 }
 
 .errorMessage {
+  padding-top: 6px;
   color: var(--vds-color-red-darker);
 }
 
 .underline {
   text-decoration: underline;
-  color: var(--vds-color-blue-primary);
+  color: var(--vds-color-blue-darker);
   cursor: pointer;
 }
