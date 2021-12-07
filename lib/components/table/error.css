@@ -1,0 +1,26 @@
+.paddingWrapper {
+    padding: 0 24px;
+}
+
+.errorMessageWrapper {
+    background: var(--vds-color-slate-lightest);
+    min-height: 278px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.attentionIcon {
+    height: 48px;
+}
+
+.errorMessage {
+    color: var(--vds-color-red-darker);
+}
+
+.underline {
+    text-decoration: underline;
+    color: var(--vds-color-blue-primary);
+    cursor: pointer;
+}
