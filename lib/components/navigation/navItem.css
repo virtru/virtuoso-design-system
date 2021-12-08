@@ -10,8 +10,9 @@
 }
 
 .vdsNavItem :global(.ant-menu-item) {
-  height: 1.2em;
-  margin-bottom: 1.2em;
+  /* This is a special case where using !important saved us a lot of time this should not be used elsewhere unless heavily discussed. */
+  height: 1.2em !important;
+  margin-bottom: 1.2em !important;
 }
 
 .vdsNavItemLoading :global(.ant-menu-item) {
@@ -24,7 +25,8 @@
 }
 
 .vdsNavItem :global(.ant-menu-item-selected::after) {
-  border-right: none;
+  /* This is a special case where using !important saved us a lot of time this should not be used elsewhere unless heavily discussed. */
+  border-right: none !important;
 }
 
 .vdsNavItemLoading :global(.ant-menu-item::after) {
