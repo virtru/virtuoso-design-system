@@ -27,6 +27,7 @@
 .vdsNavItem :global(.ant-menu-item-selected::after) {
   /* This is a special case where using !important saved us a lot of time this should not be used elsewhere unless heavily discussed. */
   border-right: none !important;
+  transition: none !important;
 }
 
 .vdsNavItemLoading :global(.ant-menu-item::after) {
