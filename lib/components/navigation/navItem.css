@@ -11,8 +11,8 @@
 
 .vdsNavItem :global(.ant-menu-item) {
   /* This is a special case where using !important saved us a lot of time this should not be used elsewhere unless heavily discussed. */
-  height: 1.2em !important;
-  margin-bottom: 1.2em !important;
+  height: 1.4em !important;
+  margin-bottom: 1em !important;
   transition: none !important;
 }
 
@@ -37,8 +37,9 @@
 }
 
 .vdsNavItem :global(.ant-menu-item):hover {
+  /* This is a special case where using !important saved us a lot of time this should not be used elsewhere unless heavily discussed. */
   border-left: 3px solid var(--vds-color-blue-primary);
-  color: var(--vds-color-blue-primary);
+  color: var(--vds-color-blue-primary) !important;
 }
 
 .vdsNavItemLoading :global(.ant-menu-item):hover {
