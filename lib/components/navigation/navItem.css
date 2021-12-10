@@ -10,8 +10,10 @@
 }
 
 .vdsNavItem :global(.ant-menu-item) {
-  height: 1.2em;
-  margin-bottom: 1.2em;
+  /* This is a special case where using !important saved us a lot of time this should not be used elsewhere unless heavily discussed. */
+  height: 1.4em !important;
+  margin-bottom: 1em !important;
+  transition: none !important;
 }
 
 .vdsNavItemLoading :global(.ant-menu-item) {
@@ -20,16 +22,25 @@
 }
 
 .vdsNavItem :global(.ant-menu-item::after) {
+  /* This is a special case where using !important saved us a lot of time this should not be used elsewhere unless heavily discussed. */
   border-right: none;
+  transition: none !important;
+}
+
+.vdsNavItem :global(.ant-menu-item-selected::after) {
+  /* This is a special case where using !important saved us a lot of time this should not be used elsewhere unless heavily discussed. */
+  border-right: none !important;
 }
 
 .vdsNavItemLoading :global(.ant-menu-item::after) {
-  border-right: none;
+  /* This is a special case where using !important saved us a lot of time this should not be used elsewhere unless heavily discussed. */
+  border-right: none !important;
 }
 
 .vdsNavItem :global(.ant-menu-item):hover {
+  /* This is a special case where using !important saved us a lot of time this should not be used elsewhere unless heavily discussed. */
   border-left: 3px solid var(--vds-color-blue-primary);
-  color: var(--vds-color-blue-primary);
+  color: var(--vds-color-blue-primary) !important;
 }
 
 .vdsNavItemLoading :global(.ant-menu-item):hover {
