@@ -60,6 +60,6 @@
   flex: 1 0 0;
 }
 
-.vdsAlignRight {
-  justify-content: right;
+.vdsAlignRight > * {
+  margin-left: auto;
 }
