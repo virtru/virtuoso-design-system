@@ -18,11 +18,15 @@
   font-weight: var(--vds-font-weight-bold);
 }
 
-a.vdsLink {
+.vdsNav {
+  margin-top: 55px;
+}
+
+.vdsNav a.vdsLink {
   margin-left: var(--vds-spacer-md);
   text-decoration: underline;
 }
 
-.vdsNav {
-  margin-top: 55px;
+.vdsNav a.vdsLink:hover {
+  text-decoration: none;
 }
