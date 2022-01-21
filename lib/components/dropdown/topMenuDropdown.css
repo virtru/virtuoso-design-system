@@ -11,6 +11,11 @@
   outline: 1px auto var(--vds-color-blue-primary);
 }
 
+.vdsButton:global(.ant-btn.ant-btn-background-ghost):hover,
+.vdsButton:global(.ant-btn.ant-btn-background-ghost):focus {
+  color: var(--vds-color-white);
+}
+
 .vdsAvatarIcon {
   margin-right: var(--vds-spacer-sm);
 }
