@@ -58,6 +58,7 @@ module.exports = {
       },
     ],
     'react-hooks/rules-of-hooks': 'error',
+    'import/no-unresolved': 'warn',
   },
   overrides: [
     {
