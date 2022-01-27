@@ -1,3 +1,16 @@
+# v1.21.2 (Thu Jan 27 2022)
+
+#### 🚀 Enhancement
+
+- CCR-704 Update header to accept logo be clickable [#255](https://github.com/virtru/virtuoso-design-system/pull/255) ([@korobko-virtru](https://github.com/korobko-virtru))
+
+#### Authors: 1
+
+- [@korobko-virtru](https://github.com/korobko-virtru)
+- Alex Korobko (okorobka@virtru.com)
+
+---
+
 # v1.21.1 (Mon May 03 2021)
 
 #### 🐛 Bug Fix
