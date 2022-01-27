@@ -67,7 +67,7 @@
 }
 
 .branding {
-  padding-left: 24px;
+  padding-left: var(--vds-spacer-md);
 }
 
 
