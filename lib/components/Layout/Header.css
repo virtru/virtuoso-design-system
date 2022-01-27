@@ -9,7 +9,6 @@
 .brandingLogo {
   fill: var(--vds-color-white);
   line-height: var(--vds-line-height-sm);
-  margin-left: 24px;
   height: 20px;
 }
 
@@ -65,6 +64,10 @@
 
 .whitelabelLogo {
   display: none;
+}
+
+.branding {
+  padding-left: 24px;
 }
 
 
