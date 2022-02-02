@@ -1,3 +1,70 @@
 .vdsNavigation :global(.ant-menu-inline) {
   border-right: none;
 }
+
+.vdsNavigation :global(.ant-spin) {
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+.vdsNavigation :global(.ant-menu-inline .ant-menu-item-group-title) {
+  padding-left: var(--vds-spacer-md);
+  padding-top: var(--vds-spacer-md);
+  padding-bottom: var(--vds-spacer-xs);
+  font-size: var(--vds-font-size-xs);
+}
+
+.vdsNavigation :global(.ant-menu-inline .ant-menu-item) {
+  padding-left: var(--vds-spacer-md);
+  line-height: var(--vds-line-height-md);
+  height: auto;
+  min-height: var(--vds-line-height-md);
+  padding-top: var(--vds-spacer-xxs);
+  padding-bottom: var(--vds-spacer-xxs);
+  font-family: var(--vds-font-family-display);
+  font-weight: var(--vds-font-weight-semibold);
+}
+
+.vdsNavigation :global(.ant-menu-inline .ant-menu-item::after) {
+  right: auto;
+  left: 0;
+  top: 50%;
+  height: 12px;
+  margin-top: -6px;
+  border-right-color: var(--vds-color-blue-darker);
+}
+
+.vdsNavigation :global(.ant-menu-inline .ant-menu-item .ant-menu-title-content) {
+  overflow: visible;
+}
+
+.vdsNavigation :global(.ant-menu-inline .ant-menu-item.loading::after) {
+  opacity: 0;
+}
+
+.vdsNavigation :global(.ant-menu-inline .ant-menu-item [class*=-title-content] > a) {
+  color: var(--vds-color-slate-darker);
+}
+
+.vdsNavigation :global(.ant-menu-inline .ant-menu-item.ant-menu-item-selected [class*=-title-content] > a) {
+  text-decoration: underline;
+}
+
+.vdsNavigation :global(.ant-menu-inline .ant-menu-item:not(.loading):focus::after),
+.vdsNavigation :global(.ant-menu-inline .ant-menu-item:not(.loading):hover::after) {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.vdsNavigation :global(.ant-menu-inline .ant-menu-item [class*=-title-content] > a:focus),
+.vdsNavigation :global(.ant-menu-inline .ant-menu-item [class*=-title-content] > a:focus-visible) {
+  outline-offset: 1px;
+  outline-style: auto;
+  outline-color: var(--vds-color-blue-darker);
+}
+
+.vdsNavigation :global(.ant-menu-inline .ant-menu-item:not(.loading):focus [class*=-title-content] > a),
+.vdsNavigation :global(.ant-menu-inline .ant-menu-item:not(.loading):hover [class*=-title-content] > a) {
+  color: var(--vds-color-blue-darker);
+}
