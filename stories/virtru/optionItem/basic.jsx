@@ -11,6 +11,9 @@ import {
   ExpirationPicker,
   LayoutOneThird,
   TextEditor,
+  ReplayRow,
+  Input,
+  GroupEditor,
 } from '@';
 
 const { Title } = Typography;
@@ -29,12 +32,25 @@ storiesOf('virtru/optionItem', module).add('basic', () => {
     console.log(time);
   };
 
+  const getTypeOfReplay = (value) => {
+    console.log(value);
+  };
+
   return (
     <LayoutOneThird
       left={
-        <div>
+        <GroupEditor>
+          <ReplayRow
+            authorEmail="testuser@mail.com"
+            recipients={['testuser@mail.com', 'testuser2@mail.com']}
+            typeOfReplay={getTypeOfReplay}
+          />
+          <Divider />
+          <Input placeholder="secrets confidential advanced options" bordered={false} />
+          <Divider />
+
           <TextEditor />
-        </div>
+        </GroupEditor>
       }
       right={
         <div>

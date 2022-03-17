@@ -1,0 +1,11 @@
+.wrap {
+  padding-top: var(--vds-spacer-sm);
+  border: var(--vds-border-enabled);
+  border-radius: var(--vds-border-radius-sm);
+  caret-color: var(--vds-color-black);
+}
+
+.wrap :global(.ant-divider) {
+  margin-top: var(--vds-spacer-sm);
+  margin-bottom: var(--vds-spacer-sm);
+}

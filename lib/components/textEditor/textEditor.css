@@ -1,0 +1,35 @@
+.editorWrap {
+  border: 0;
+  caret-color: var(--vds-color-black);
+  height: 250px;
+  border-radius: var(--vds-border-radius-sm);
+}
+
+.editorWrap :global([class^='EditorToolbar__root']) {
+  display: flex;
+  justify-content: center;
+  margin-left: var(--vds-spacer-md);
+  margin-right: var(--vds-spacer-md);
+}
+
+.editorWrap :global([class*='IconButton__root']) {
+  position: relative;
+  background: var(--vds-color-white);
+  border-color: var(--vds-color-slate-lightest);
+}
+
+.editorWrap :global([class*='IconButton__isActive']::after) {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--vds-color-blue-primary);
+}
+
+.editorWrap :global(.RichTextEditor__editor___1QqIU .public-DraftEditor-content),
+.editorWrap :global(.RichTextEditor__editor___1QqIU .public-DraftEditorPlaceholder-root) {
+  padding-left: var(--vds-spacer-md);
+  padding-right: var(--vds-spacer-md);
+}
