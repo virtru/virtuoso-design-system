@@ -10,7 +10,7 @@ import {
   Typography,
   ExpirationPicker,
   LayoutOneThird,
-  TextEditor,
+  RichText,
   ReplayRow,
   Input,
   GroupEditor,
@@ -36,6 +36,10 @@ storiesOf('virtru/optionItem', module).add('basic', () => {
     console.log(value);
   };
 
+  const getEditorData = (value) => {
+    console.log(value);
+  };
+
   return (
     <LayoutOneThird
       left={
@@ -49,7 +53,10 @@ storiesOf('virtru/optionItem', module).add('basic', () => {
           <Input placeholder="secrets confidential advanced options" bordered={false} />
           <Divider />
 
-          <TextEditor />
+          <RichText
+            getEditorData={getEditorData}
+            placeholder="Encrypted message goes here. Recipient can only view this message after decryption."
+          />
         </GroupEditor>
       }
       right={
