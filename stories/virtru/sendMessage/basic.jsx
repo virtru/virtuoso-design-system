@@ -118,34 +118,49 @@ storiesOf('virtru/optionItem', module).add('basic', () => {
         </Space>
       }
       right={
-        <div>
-          <Title level={5}>
-            Security <InfoTooltip title="security" />
-          </Title>
-          <div>MESSAGE OPTIONS</div>
-          <ItemOption
-            icon={<NoForwardingIcon />}
-            name="Disable Forwarding"
-            changeSwitch={changeSwitch}
-            tooltipTitle="Some tooltip text"
-          />
-          <ItemOption
-            icon={<HourglassIcon />}
-            name="Expiration Date"
-            changeSwitch={changeSwitchExpirationPicker}
-            tooltipTitle={<span>text in html tag</span>}
-          />
-          {showExpirationPicker && <ExpirationPicker getTime={getTime} />}
-          <Divider plain />
+        <div
+          style={{
+            display: 'flex',
+            height: '100%',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+          }}
+        >
           <div>
-            ATTACHMENT OPTIONS <InfoTooltip title="Some tooltip" />
+            <Title level={5}>
+              Security <InfoTooltip title="security" />
+            </Title>
+            <div>MESSAGE OPTIONS</div>
+            <ItemOption
+              icon={<NoForwardingIcon />}
+              name="Disable Forwarding"
+              changeSwitch={changeSwitch}
+              tooltipTitle="Some tooltip text"
+            />
+            <ItemOption
+              icon={<HourglassIcon />}
+              name="Expiration Date"
+              changeSwitch={changeSwitchExpirationPicker}
+              tooltipTitle={<span>text in html tag</span>}
+            />
+            {showExpirationPicker && <ExpirationPicker getTime={getTime} />}
+            <Divider plain />
+            <div>
+              ATTACHMENT OPTIONS <InfoTooltip title="Some tooltip" />
+            </div>
+            <ItemOption icon={<WatermarkIcon />} name="Watermarking" changeSwitch={changeSwitch} />
+            <ItemOption
+              icon={<WatermarkIcon />}
+              name="Persistent protection"
+              changeSwitch={changeSwitch}
+            />
           </div>
-          <ItemOption icon={<WatermarkIcon />} name="Watermarking" changeSwitch={changeSwitch} />
-          <ItemOption
-            icon={<WatermarkIcon />}
-            name="Persistent protection"
-            changeSwitch={changeSwitch}
-          />
+          <Row justify="end">
+            <Space>
+              <Button>Cancel</Button>
+              <Button type="primary">Send</Button>
+            </Space>
+          </Row>
         </div>
       }
     />
