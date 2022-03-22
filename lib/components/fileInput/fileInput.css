@@ -1,0 +1,60 @@
+.inputWrapper {
+  padding: var(--vds-spacer-sm);
+  position: relative;
+}
+
+.focusedInputWrapper::after {
+  content: '';
+  display: block;
+  width: calc(100% - var(--vds-spacer-xs));
+  height: calc(100% - var(--vds-spacer-xs));
+  position: absolute;
+  top: var(--vds-spacer-xxs);
+  left: var(--vds-spacer-xxs);
+  outline: 3px dashed var(--vds-color-blue-primary);
+  background: var(--vds-color-ghosted);
+}
+
+.textWrapper {
+  display: flex;
+  align-items: center;
+  font-family: var(--vds-font-family-display);
+  font-size: var(--vds-font-scale-base);
+  cursor: pointer;
+}
+
+.textWrapper .addFileIcon {
+  margin-right: var(--vds-spacer-xs);
+  font-size: 24px;
+}
+
+.label {
+  display: flex;
+  color: var(--vds-color-slate-darkest);
+  font-weight: bold;
+  height: 100px;
+  background-color: var(--vds-color-slate-lightest);
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--vds-border-radius-sm);
+}
+
+.input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.fakeLink {
+  text-decoration: underline;
+  color: var(--vds-color-blue-primary);
+  margin-left: var(--vds-spacer-xs);
+  margin-right: var(--vds-spacer-xs);
+}
+
+.textWrapper:hover .fakeLink {
+  color: var(--vds-color-blue-dark);
+}

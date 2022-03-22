@@ -1,0 +1,91 @@
+.item {
+  padding: var(--vds-spacer-xs);
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      var(--vds-color-white),
+      var(--vds-color-white) 3px,
+      var(--vds-color-slate-even-lighter) 3px,
+      var(--vds-color-slate-even-lighter) 5px
+    );
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  background: var(--vds-color-white);
+  overflow: hidden;
+}
+
+.icon {
+  flex: 0 0 30px;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.fileInfo {
+  position: relative;
+  flex: 0 0 calc(100% - 35px);
+  padding: var(--vds-spacer-xxs);
+  overflow: hidden;
+}
+
+.hoverElement {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: var(--vds-spacer-xs);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--vds-color-slate-lightest);
+  z-index: 1;
+  opacity: 0;
+}
+
+.fileInfo:hover .hoverElement {
+  opacity: 1;
+}
+
+.fileInfoName {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 0;
+  line-height: var(--vds-line-height-sm);
+  font-size: var(--vds-font-size-sm);
+}
+
+.fileName {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.fileExtension {
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+.tooltipTitle {
+  display: flex;
+  margin-bottom: var(--vds-spacer-xs);
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--vds-color-black);
+  font-size: var(--vds-font-size-heading-xxs);
+  font-weight: var(--vds-font-weight-semibold);
+}
+
+.warnIcon {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  height: 12px;
+  width: 12px;
+  color: var(--vds-color-red-darker);
+}

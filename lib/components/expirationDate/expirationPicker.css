@@ -11,3 +11,8 @@
   margin-bottom: var(--vds-spacer-sm);
   font-size: var(--vds-font-size-xs);
 }
+
+.input {
+  padding-left: var(--vds-spacer-sm);
+  padding-right: var(--vds-spacer-xs);
+}

@@ -1,3 +1,7 @@
+.row {
+  padding-top: var(--vds-spacer-sm);
+}
+
 .iconReply {
   width: 30px;
 }
