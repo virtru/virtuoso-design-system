@@ -24,7 +24,7 @@ import {
 
 const { Title } = Typography;
 
-storiesOf('virtru/optionItem', module).add('basic', () => {
+storiesOf('virtru/sendMessage', module).add('basic', () => {
   const [showExpirationPicker, setShowExpirationPicker] = useState(false);
   const [fileList, setFileList] = useState([]);
 

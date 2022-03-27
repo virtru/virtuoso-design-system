@@ -1,8 +1,13 @@
 .editor {
   padding: var(--vds-spacer-sm) var(--vds-spacer-md);
   caret-color: var(--vds-color-black);
-  min-height: 250px;
+  min-height: 150px;
+  width: 100%;
   border-radius: var(--vds-border-radius-sm);
+}
+
+.firstBtn {
+  background: black;
 }
 
 .undoRow {
