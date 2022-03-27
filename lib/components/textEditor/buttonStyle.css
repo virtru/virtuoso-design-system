@@ -31,13 +31,13 @@
   background: var(--vds-color-blue-primary);
 }
 
-:global([class*='richText__editor'] .ant-space-item .ant-row > div:first-of-type) .button:first-of-type {
+:global(.toolbar-button-group.ant-row > div:first-of-type) .button:first-of-type {
   border-left: 1px solid var(--vds-color-slate-lighter);
   border-top-left-radius: var(--vds-border-radius-xs);
   border-bottom-left-radius: var(--vds-border-radius-xs);
 }
 
-:global([class*='richText__editor'] .ant-space-item .ant-row > div:last-of-type) .button:last-of-type {
+:global(.toolbar-button-group.ant-row > div:last-of-type) .button:last-of-type {
   border-top-right-radius: var(--vds-border-radius-xs);
   border-bottom-right-radius: var(--vds-border-radius-xs);
 }
