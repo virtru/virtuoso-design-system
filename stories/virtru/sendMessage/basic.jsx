@@ -56,9 +56,9 @@ storiesOf('virtru/sendMessage', module).add('basic', () => {
     setFileList([...data]);
   };
 
-  const handleClickRemove = (name) => {
+  const handleClickRemove = () => {
     // eslint-disable-next-line no-console
-    console.log(name);
+    console.log('handleClickRemove function');
   };
 
   return (
@@ -102,9 +102,13 @@ storiesOf('virtru/sendMessage', module).add('basic', () => {
                               name={file.name.split('.')[0]}
                               extension={`.${file.name.split('.')[1]}`}
                               size="1.09 Kb"
-                              remove={handleClickRemove}
                               tooltipText="This file is encrypted with no additional security options enabled."
                               warning={false}
+                              button={
+                                <Button type="primary" size="small" onClick={handleClickRemove}>
+                                  Remove
+                                </Button>
+                              }
                             />
                           </Col>
                         );
