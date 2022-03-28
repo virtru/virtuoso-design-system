@@ -18,7 +18,7 @@
 }
 
 .icon {
-  flex: 0 0 30px;
+  flex: 0 0 35px;
   font-size: 24px;
   align-items: center;
   justify-content: center;
@@ -54,7 +54,7 @@
 .fileInfoName {
   display: flex;
   overflow: hidden;
-  margin-bottom: 0;
+  padding-right: var(--vds-spacer-xs);
   line-height: var(--vds-line-height-sm);
   font-size: var(--vds-font-size-sm);
 }
