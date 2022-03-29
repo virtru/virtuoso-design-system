@@ -81,6 +81,11 @@
   font-weight: var(--vds-font-weight-semibold);
 }
 
+.tooltipText {
+  font-size: var(--vds-font-size-sm);
+  line-height: var(--vds-line-height-sm);
+}
+
 .warnIcon {
   position: absolute;
   right: 4px;
