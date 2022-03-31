@@ -1,0 +1,6 @@
+.toolbar {
+  padding-bottom: var(--vds-spacer-sm);
+  margin-bottom: var(--vds-spacer-sm);
+  border-bottom: 1px solid var(--vds-color-slate-lightest);
+  order: -1;
+}
