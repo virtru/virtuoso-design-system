@@ -5,6 +5,7 @@ import {
   Divider,
   WatermarkIcon,
   HourglassIcon,
+  PersistentProtectionIcon,
   NoForwardingIcon,
   InfoTooltip,
   Typography,
@@ -140,23 +141,31 @@ storiesOf('virtru/sendMessage', module).add('basic', () => {
               name="Disable Forwarding"
               changeSwitch={changeSwitch}
               tooltipTitle="Some tooltip text"
+              disabled
             />
             <ItemOption
               icon={<HourglassIcon />}
               name="Expiration Date"
               changeSwitch={changeSwitchExpirationPicker}
               tooltipTitle={<span>text in html tag</span>}
+              disabled={false}
             />
             {showExpirationPicker && <ExpirationPicker getTime={getTime} />}
             <Divider plain />
             <div>
               ATTACHMENT OPTIONS <InfoTooltip title="Some tooltip" />
             </div>
-            <ItemOption icon={<WatermarkIcon />} name="Watermarking" changeSwitch={changeSwitch} />
             <ItemOption
               icon={<WatermarkIcon />}
+              name="Watermarking"
+              changeSwitch={changeSwitch}
+              disabled={false}
+            />
+            <ItemOption
+              icon={<PersistentProtectionIcon />}
               name="Persistent protection"
               changeSwitch={changeSwitch}
+              disabled={false}
             />
           </div>
           <Row justify="end">
