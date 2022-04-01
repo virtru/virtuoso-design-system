@@ -1,0 +1,18 @@
+.wrap {
+  padding-left: 34px;
+}
+
+.select {
+  width: 150px;
+}
+
+.formattedText {
+  margin-top: var(--vds-spacer-xs);
+  margin-bottom: var(--vds-spacer-sm);
+  font-size: var(--vds-font-size-xs);
+}
+
+.input {
+  padding-left: var(--vds-spacer-sm);
+  padding-right: var(--vds-spacer-xs);
+}

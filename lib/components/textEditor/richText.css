@@ -1,0 +1,19 @@
+.editor {
+  padding: var(--vds-spacer-sm) var(--vds-spacer-md);
+  caret-color: var(--vds-color-black);
+  min-height: 250px;
+  border-radius: var(--vds-border-radius-sm);
+}
+
+.undoRow {
+  display: flex;
+}
+
+.editor :global(.DraftEditor-root) {
+  position: relative;
+}
+
+.editor :global(.public-DraftEditorPlaceholder-inner) {
+  position: absolute;
+  color: var(--vds-color-slate-primary);
+}
