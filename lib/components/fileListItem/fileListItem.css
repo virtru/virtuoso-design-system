@@ -47,7 +47,7 @@
   opacity: 0;
 }
 
-.fileInfo:hover .hoverElement {
+.inner:hover .hoverElement {
   opacity: 1;
 }
 
