@@ -160,6 +160,7 @@ storiesOf('virtru/sendMessage', module).add('basic', () => {
               name="Watermarking"
               changeSwitch={changeSwitch}
               disabled={false}
+              hasValue
             />
             <ItemOption
               icon={<PersistentProtectionIcon />}
