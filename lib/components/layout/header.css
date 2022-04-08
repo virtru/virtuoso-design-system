@@ -45,7 +45,15 @@
   cursor: pointer;
 }
 
+.vdsHeader .vdsTitle {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  line-height: 1;
+}
+
 .vdsAppNameLink {
+  display: inherit;
   line-height: var(--vds-line-height-sm);
 }
 
