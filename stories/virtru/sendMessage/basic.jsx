@@ -5,6 +5,7 @@ import {
   Divider,
   WatermarkIcon,
   HourglassIcon,
+  PersistentProtectionIcon,
   NoForwardingIcon,
   InfoTooltip,
   Typography,
@@ -24,7 +25,7 @@ import {
 
 const { Title } = Typography;
 
-storiesOf('virtru/optionItem', module).add('basic', () => {
+storiesOf('virtru/sendMessage', module).add('basic', () => {
   const [showExpirationPicker, setShowExpirationPicker] = useState(false);
   const [fileList, setFileList] = useState([]);
 
@@ -56,9 +57,9 @@ storiesOf('virtru/optionItem', module).add('basic', () => {
     setFileList([...data]);
   };
 
-  const handleClickRemove = (name) => {
+  const handleClickRemove = () => {
     // eslint-disable-next-line no-console
-    console.log(name);
+    console.log('handleClickRemove function');
   };
 
   return (
@@ -102,9 +103,13 @@ storiesOf('virtru/optionItem', module).add('basic', () => {
                               name={file.name.split('.')[0]}
                               extension={`.${file.name.split('.')[1]}`}
                               size="1.09 Kb"
-                              remove={handleClickRemove}
                               tooltipText="This file is encrypted with no additional security options enabled."
                               warning={false}
+                              button={
+                                <Button type="primary" size="small" onClick={handleClickRemove}>
+                                  Remove
+                                </Button>
+                              }
                             />
                           </Col>
                         );
@@ -136,23 +141,32 @@ storiesOf('virtru/optionItem', module).add('basic', () => {
               name="Disable Forwarding"
               changeSwitch={changeSwitch}
               tooltipTitle="Some tooltip text"
+              disabled
             />
             <ItemOption
               icon={<HourglassIcon />}
               name="Expiration Date"
               changeSwitch={changeSwitchExpirationPicker}
               tooltipTitle={<span>text in html tag</span>}
+              disabled={false}
             />
             {showExpirationPicker && <ExpirationPicker getTime={getTime} />}
             <Divider plain />
             <div>
               ATTACHMENT OPTIONS <InfoTooltip title="Some tooltip" />
             </div>
-            <ItemOption icon={<WatermarkIcon />} name="Watermarking" changeSwitch={changeSwitch} />
             <ItemOption
               icon={<WatermarkIcon />}
+              name="Watermarking"
+              changeSwitch={changeSwitch}
+              disabled={false}
+              hasValue
+            />
+            <ItemOption
+              icon={<PersistentProtectionIcon />}
               name="Persistent protection"
               changeSwitch={changeSwitch}
+              disabled={false}
             />
           </div>
           <Row justify="end">

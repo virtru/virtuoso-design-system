@@ -18,7 +18,7 @@
 }
 
 .icon {
-  flex: 0 0 30px;
+  flex: 0 0 35px;
   font-size: 24px;
   align-items: center;
   justify-content: center;
@@ -47,14 +47,14 @@
   opacity: 0;
 }
 
-.fileInfo:hover .hoverElement {
+.inner:hover .hoverElement {
   opacity: 1;
 }
 
 .fileInfoName {
   display: flex;
   overflow: hidden;
-  margin-bottom: 0;
+  padding-right: var(--vds-spacer-xs);
   line-height: var(--vds-line-height-sm);
   font-size: var(--vds-font-size-sm);
 }
@@ -79,6 +79,11 @@
   color: var(--vds-color-black);
   font-size: var(--vds-font-size-heading-xxs);
   font-weight: var(--vds-font-weight-semibold);
+}
+
+.tooltipText {
+  font-size: var(--vds-font-size-sm);
+  line-height: var(--vds-line-height-sm);
 }
 
 .warnIcon {

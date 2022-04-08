@@ -21,32 +21,45 @@ const menu = (
 
 storiesOf('virtru/layout', module).add(
   'top',
-  () => (
-    <Layout className="layout" style={{ width: '100%' }}>
-      <Header appName="Control Center" homeUrl="/">
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-          <Menu.Item key="1">nav 1</Menu.Item>
-          <Menu.Item key="2">nav 2</Menu.Item>
-          <Menu.Item key="3">nav 3</Menu.Item>
-        </Menu>
-        <TopMenuDropdown menu={menu} activeUser="ksuchak@virtru.com" />
-      </Header>
+  () => {
+    const handleClickLogo = (e) => {
+      e.preventDefault();
+      // eslint-disable-next-line no-console
+      console.log(e);
+    };
 
-      <br />
-      <Header appName="Control Center" homeUrl="/home">
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-          <Menu.Item key="1">nav 1</Menu.Item>
-          <Menu.Item key="2">nav 2</Menu.Item>
-          <Menu.Item key="3">nav 3</Menu.Item>
-        </Menu>
-      </Header>
+    return (
+      <Layout className="layout" style={{ width: '100%' }}>
+        <Header appName="Control Center" homeUrl="/">
+          <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
+            <Menu.Item key="1">nav 1</Menu.Item>
+            <Menu.Item key="2">nav 2</Menu.Item>
+            <Menu.Item key="3">nav 3</Menu.Item>
+          </Menu>
+          <TopMenuDropdown menu={menu} activeUser="ksuchak@virtru.com" />
+        </Header>
 
-      <br />
-      <Header appName="Control " alignRight>
-        <TopMenuDropdown menu={menu} activeUser="ksuchak@virtru.com" />
-      </Header>
-    </Layout>
-  ),
+        <br />
+        <Header appName="Control Center" homeUrl="/home">
+          <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
+            <Menu.Item key="1">nav 1</Menu.Item>
+            <Menu.Item key="2">nav 2</Menu.Item>
+            <Menu.Item key="3">nav 3</Menu.Item>
+          </Menu>
+        </Header>
+
+        <br />
+        <Header appName="Control " alignRight>
+          <TopMenuDropdown menu={menu} activeUser="ksuchak@virtru.com" />
+        </Header>
+
+        <br />
+        <Header appName="Control Share" alignRight handleClickLogo={handleClickLogo}>
+          <TopMenuDropdown menu={menu} activeUser="ksuchak@virtru.com" />
+        </Header>
+      </Layout>
+    );
+  },
   {
     docs: {
       page: () => (
