@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="30px" viewBox="0 0 25 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ErrorIcon</title>
+    <defs>
+        <path d="M14,7.10542736e-15 L20.3232233,7.10542736e-15 C22.2562199,7.10542736e-15 24,1.74378007 24,3.6767767 L24,10 L14,7.10542736e-15 Z" id="ErrorPath"></path>
+        <filter x="-20.0%" y="-30.0%" width="140.0%" height="140.0%" filterUnits="objectBoundingBox" id="ErrorFilter">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0967221467 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="ErrorIcons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Error-File-Type-Icons" transform="translate(-749.000000, -160.000000)">
+            <g id="Error-row-1-icons" transform="translate(74.000000, 160.000000)">
+                <g id="Error" transform="translate(675.000000, 0.000000)">
+                    <path d="M13.7928932,0.5 L23.5,10.2071068 L23.5,26.5 C23.5,27.3308348 23.178153,28.0838496 22.6551851,28.6286078 C22.1394543,29.1658275 21.4275107,29.5 20.64,29.5 L20.64,29.5 L3.36,29.5 C2.57248933,29.5 1.86054572,29.1658275 1.34481488,28.6286078 C0.821846959,28.0838496 0.5,27.3308348 0.5,26.5 L0.5,26.5 L0.5,3.5 C0.5,2.66916525 0.821846959,1.91615043 1.34481488,1.37139218 C1.86054572,0.834172547 2.57248933,0.5 3.36,0.5 L3.36,0.5 L13.7928932,0.5 Z" id="page-ERROR" stroke="#B1B8C4" fill="#FFFFFF"></path>
+                    <g id="curl-ERROR" transform="translate(19.000000, 5.000000) scale(-1, -1) translate(-19.000000, -5.000000) ">
+                        <use fill="black" fill-opacity="1" filter="url(#ErrorFilter)" xlink:href="#ErrorPath"></use>
+                        <use fill="#767D92" fill-rule="evenodd" xlink:href="#ErrorPath"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

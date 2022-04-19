@@ -101,7 +101,8 @@ storiesOf('virtru/sendMessage', module).add('basic', () => {
                           <Col key={file.name} md={12}>
                             <FileListItem
                               name={file.name.split('.')[0]}
-                              extension={`.${file.name.split('.')[1]}`}
+                              extension={`.${file.name.split('.')[1]}.tdf`}
+                              decryptedExt={`${file.name.split('.')[1]}`}
                               size="1.09 Kb"
                               tooltipText="This file is encrypted with no additional security options enabled."
                               warning={false}
