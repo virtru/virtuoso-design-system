@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="30px" viewBox="0 0 25 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>PFPTxtIcon</title>
+    <defs>
+        <linearGradient x1="26.00625%" y1="100%" x2="82%" y2="0%" id="TxtLinearGradient">
+            <stop stop-color="#969DA9" offset="0%"></stop>
+            <stop stop-color="#646A78" offset="100%"></stop>
+        </linearGradient>
+        <path d="M14,7.10542736e-15 L20.3232233,7.10542736e-15 C22.2562199,7.10542736e-15 24,1.74378007 24,3.6767767 L24,10 L14,7.10542736e-15 Z" id="TxtPath1"></path>
+        <filter x="-20.0%" y="-30.0%" width="140.0%" height="140.0%" filterUnits="objectBoundingBox" id="TxtFilter1">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0967221467 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M7.00177723,0.576071453 C8.89993353,0.576071453 10.2020226,2.0950315 10.2020226,4.07794659 L10.2012083,4.67007145 L11.0804583,4.67038596 C11.8858736,4.67038596 12.5387917,5.32330404 12.5387917,6.1287193 L12.5387917,11.9655952 C12.5387917,12.7710105 11.8858736,13.4239285 11.0804583,13.4239285 L2.91954168,13.4239285 C2.11412642,13.4239285 1.46120834,12.7710105 1.46120834,11.9655952 L1.46120834,6.1287193 C1.46120834,5.32330404 2.11412642,4.67038596 2.91954168,4.67038596 L3.78420834,4.67007145 L3.78512446,4.07794659 C3.78512446,2.09829723 5.10183521,0.576071453 7.00177723,0.576071453 Z M8.42051634,7 C8.13723605,7 7.90753911,7.22583512 7.90753911,7.50429082 C7.90753911,8.68373457 7.14232342,9.27283737 6.56997004,9.54850728 L6.56997004,7.09471703 L5.54407856,7.09471703 L5.54407856,10.8736172 L6.15622592,10.7550042 C7.1168855,10.5687893 8.93349357,9.64984831 8.93349357,7.50429082 C8.93349357,7.22583512 8.7038596,7 8.42051634,7 Z M7.00177723,1.74273812 C5.78679565,1.74273812 4.95179113,2.70807193 4.95179113,4.07794659 L4.95120834,4.67007145 L9.03520834,4.67007145 L9.03535589,4.07794659 C9.03535589,2.70289625 8.21228529,1.74273812 7.00177723,1.74273812 Z" id="TxtPath2"></path>
+    </defs>
+    <g id="PFP-Txt-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PFP-Txt-File-Type-Icons" transform="translate(-451.000000, -300.000000)">
+            <g id="PFP-Txt-row-2-icons" transform="translate(74.000000, 300.000000)">
+                <g id="PFP-TXT" transform="translate(377.000000, 0.000000)">
+                    <path d="M14,0 L24,10 L24,26.5 C24,28.4329966 22.4956768,30 20.64,30 L3.36,30 C1.50432324,30 0,28.4329966 0,26.5 L0,3.5 C0,1.56700338 1.50432324,0 3.36,0 L14,0 Z" id="page-PFP-TXT" fill="url(#TxtLinearGradient)"></path>
+                    <g id="curl-PFP-TXT" transform="translate(19.000000, 5.000000) scale(-1, -1) translate(-19.000000, -5.000000) ">
+                        <use fill="black" fill-opacity="1" filter="url(#TxtFilter1)" xlink:href="#TxtPath1"></use>
+                        <use fill="#393C44" fill-rule="evenodd" xlink:href="#TxtPath1"></use>
+                    </g>
+                    <g id="PFP-Txt-Encrypted-solid-24" transform="translate(5.000000, 7.000000)">
+                        <mask id="PFP-Txt-mask-5" fill="white">
+                            <use xlink:href="#TxtPath2"></use>
+                        </mask>
+                        <use id="PFP-Txt-Icon" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#TxtPath2"></use>
+                    </g>
+                    <path d="M8.71582031,27 L8.71582031,23.4726562 L9.87890625,23.4726562 L9.87890625,22.7167969 L6.64453125,22.7167969 L6.64453125,23.4726562 L7.80761719,23.4726562 L7.80761719,27 L8.71582031,27 Z M10.9716797,27 L11.9677734,25.3798828 L12.9638672,27 L14.0009766,27 L12.5537109,24.8408203 L13.8984375,22.7167969 L12.9199219,22.7167969 L12.0146484,24.2578125 L11.0917969,22.7167969 L10.0898438,22.7167969 L11.4199219,24.7910156 L9.99902344,27 L10.9716797,27 Z M16.1923828,27 L16.1923828,23.4726562 L17.3554688,23.4726562 L17.3554688,22.7167969 L14.1210938,22.7167969 L14.1210938,23.4726562 L15.2841797,23.4726562 L15.2841797,27 L16.1923828,27 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
