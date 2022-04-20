@@ -1,0 +1,17 @@
+.input {
+  padding: 0 var(--vds-spacer-sm);
+  font-family: inherit;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.inputInvalid {
+  color: var(--vds-color-red-primary);
+}
+
+.link {
+  color: var(--vds-color-blue-darker);
+  text-decoration: underline;
+}
