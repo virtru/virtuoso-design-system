@@ -10,3 +10,14 @@ jest.mock('../lib/helpers/useMatchMedia', () => ({
   __esModule: true,
   default: () => false,
 }));
+
+global.matchMedia =
+  global.matchMedia ||
+  function () {
+    return {
+      addListener: jest.fn(),
+      removeListener: jest.fn(),
+    };
+  };
+
+window.scrollTo = jest.fn();
