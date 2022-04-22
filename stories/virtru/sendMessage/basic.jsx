@@ -79,6 +79,7 @@ storiesOf('virtru/sendMessage', module).add('basic', () => {
             <RichText
               getEditorData={getEditorData}
               placeholder="Encrypted message goes here. Recipient can only view this message after decryption."
+              ariaLabel="Encrypted message"
             />
           </GroupEditor>
           <GroupEditor>
