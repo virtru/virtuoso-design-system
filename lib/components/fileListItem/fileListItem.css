@@ -94,3 +94,8 @@
   width: 12px;
   color: var(--vds-color-red-darker);
 }
+
+.warnIconName {
+  color: var(--vds-color-red-darker);
+  margin-right: var(--vds-spacer-xs);
+}
