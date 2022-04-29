@@ -12,7 +12,7 @@
   font-size: var(--vds-font-size-xs);
 }
 
-.input {
+.input:global(.ant-input) {
   padding-left: var(--vds-spacer-sm);
   padding-right: var(--vds-spacer-xs);
 }
