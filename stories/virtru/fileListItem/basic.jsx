@@ -14,7 +14,7 @@ storiesOf('virtru/fileListItem', module).add(
   () => (
     <Row gutter={[8, 8]}>
       {icons.map((key) => (
-        <Col span={4} key={key}>
+        <Col key={key} xs={24} sm={12} lg={4}>
           <FileListItem
             name={key}
             extension=".tdf"
