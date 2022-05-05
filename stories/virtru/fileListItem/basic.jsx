@@ -7,8 +7,6 @@ import { iconTypeObject } from '@/components/icon/customIconTypeFile';
 
 const icons = Object.keys(iconTypeObject);
 
-const getRandomSize = () => (Math.random() * 900 + 100).toFixed(2);
-
 storiesOf('virtru/fileListItem', module).add(
   'basic',
   () => (
@@ -19,7 +17,7 @@ storiesOf('virtru/fileListItem', module).add(
             name={key}
             extension=".tdf"
             decryptedExt={key}
-            size={`${getRandomSize()} KB`}
+            size="123.45 KB"
             button={
               <Button type="primary" size="small">
                 Remove

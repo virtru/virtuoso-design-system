@@ -3,8 +3,6 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { FileListItem, Button } from '@';
 
-const getRandomSize = () => (Math.random() * 900 + 100).toFixed(2);
-
 storiesOf('virtru/fileListItem', module).add(
   'withError',
   () => (
@@ -14,7 +12,7 @@ storiesOf('virtru/fileListItem', module).add(
         name="file-with-error"
         extension=".tdf"
         decryptedExt="pdf"
-        size={`${getRandomSize()} KB`}
+        size="123.45 KB"
         button={
           <Button type="primary" size="small">
             Remove
