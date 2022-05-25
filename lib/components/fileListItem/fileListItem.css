@@ -82,6 +82,7 @@
 }
 
 .tooltipText {
+  color: var(--vds-color-slate-darkest);
   font-size: var(--vds-font-size-sm);
   line-height: var(--vds-line-height-sm);
 }
