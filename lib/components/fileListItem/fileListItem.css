@@ -17,6 +17,10 @@
   overflow: hidden;
 }
 
+.inner.warning {
+  background: var(--vds-color-slate-lightest);
+}
+
 .icon {
   flex: 0 0 35px;
   font-size: 24px;
