@@ -52,6 +52,10 @@
   opacity: 1;
 }
 
+.inner:focus-visible {
+  outline: none;
+}
+
 .fileInfoName {
   display: flex;
   overflow: hidden;
