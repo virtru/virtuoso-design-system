@@ -47,6 +47,7 @@
   opacity: 0;
 }
 
+.focus .hoverElement,
 .inner:hover .hoverElement {
   opacity: 1;
 }
