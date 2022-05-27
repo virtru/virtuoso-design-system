@@ -30,9 +30,3 @@
   position: absolute;
   color: var(--vds-color-slate-primary);
 }
-
-@media screen and (max-width: 919px) {
-  .editor {
-    min-height: 180px;
-  }
-}
