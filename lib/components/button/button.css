@@ -1,0 +1,55 @@
+:global(.ant-btn:hover),
+:global(.ant-btn:focus) {
+  border-color: var(--vds-color-blue-darkest);
+  box-shadow: var(--vds-shadow-hover);
+}
+
+:global(.ant-btn:active) {
+  color: var(--vds-color-white);
+  background-color: var(--vds-color-slate-primary);
+  border-color: var(--vds-color-slate-primary);
+}
+
+:global(.ant-btn-primary:hover),
+:global(.ant-btn-primary:focus) {
+  background: var(--vds-color-blue-darkest);
+  border-color: var(--vds-color-blue-darkest);
+}
+
+:global(.ant-btn-primary:active) {
+  background: var(--vds-color-slate-primary);
+  border-color: var(--vds-color-slate-primary);
+}
+
+:global(.ant-btn-link:hover),
+:global(.ant-btn-link:focus) {
+  border-color: transparent;
+}
+
+:global(.ant-btn-link:active) {
+  background-color: var(--vds-color-slate-lightest);
+  border-color: var(--vds-color-slate-lightest);
+  color: var(--vds-color-blue-darkest);
+}
+
+:global(.ant-btn[disabled]),
+:global(.ant-btn[disabled]:hover),
+:global(.ant-btn[disabled]:focus),
+:global(.ant-btn[disabled]:active) {
+  background-color: var(--vds-color-white);
+  color: var(--vds-color-slate-lighter);
+}
+
+/* stylelint-disable */
+:global(.ant-btn-primary[disabled]),
+:global(.ant-btn-primary[disabled]:hover),
+:global(.ant-btn-primary[disabled]:focus),
+:global(.ant-btn-primary[disabled]:active) {
+  background-color: var(--vds-color-slate-lighter);
+  color: var(--vds-color-white);
+}
+/* stylelint-enable */
+
+:global(.ant-btn:not([disabled]):active) {
+  box-shadow: var(--vds-shadow-pressed);
+}
