@@ -1,0 +1,18 @@
+.virtuosoCustomSwitch {
+  background-color: white;
+  border: 1px solid var(--vds-color-slate-lighter);
+  height: 24px;
+  min-width: 48px;
+}
+
+.virtuosoCustomSwitch:global(.ant-switch-checked) {
+  border: 1px solid var(--vds-color-blue-darker);
+}
+
+.virtuosoCustomSwitch:not(:global(.ant-switch-checked)) :global(.ant-switch-handle::before) {
+  background-color: var(--vds-color-slate-lighter);
+}
+
+.virtuosoCustomSwitch:global(.ant-switch-checked) :global(.ant-switch-handle::before) {
+  background-color: var(--vds-color-blue-darker) !important;
+}
