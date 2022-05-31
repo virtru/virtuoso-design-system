@@ -16,3 +16,7 @@
 .virtuosoCustomSwitch:global(.ant-switch-checked) :global(.ant-switch-handle::before) {
   background-color: var(--vds-color-blue-darker) !important;
 }
+
+.virtuosoCustomSwitch:global(.ant-switch) {
+    background-image: none !important;
+}
