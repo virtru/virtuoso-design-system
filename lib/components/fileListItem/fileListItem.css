@@ -51,7 +51,8 @@
   opacity: 0;
 }
 
-.inner:hover .hoverElement {
+.inner:not(.noButton):focus-within .hoverElement,
+.inner:not(.noButton):hover .hoverElement {
   opacity: 1;
 }
 
