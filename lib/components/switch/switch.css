@@ -18,5 +18,5 @@
 }
 
 .virtuosoCustomSwitch:global(.ant-switch) {
-    background-image: none !important;
+  background-image: none !important;
 }
