@@ -192,11 +192,9 @@
     "animejs": "^3.0.1",
     "antd": "^4.16.8",
     "classnames": "^2.2.6",
-    "clsx": "^1.1.1",
     "draft-js": "^0.11.7",
     "draft-js-export-html": "^1.4.1",
     "moment": "^2.29.3",
-    "numeral": "^2.0.6",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
