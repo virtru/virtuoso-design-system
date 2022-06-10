@@ -17,21 +17,32 @@
   overflow: hidden;
 }
 
-.inner.warning {
+.inner:hover {
   background: var(--vds-color-slate-lightest);
 }
 
+.inner.warning,
+.inner.warning:hover {
+  background: var(--vds-color-red-lightest);
+}
+
 .icon {
-  flex: 0 0 35px;
-  font-size: 24px;
+  flex-shrink: 0;
+  font-size: var(--vds-spacer-md);
   align-items: center;
   justify-content: center;
   display: flex;
+  padding: 0 var(--vds-spacer-xs);
+}
+
+.warnIcon {
+  color: var(--vds-color-red-darker);
 }
 
 .fileInfo {
   position: relative;
-  flex: 0 0 calc(100% - 35px);
+  flex-grow: 1;
+  color: var(--vds-color-slate-darkest);
   padding: var(--vds-spacer-xxs);
   overflow: hidden;
 }
@@ -41,7 +52,7 @@
   display: flex;
   align-items: center;
   justify-content: end;
-  padding-right: var(--vds-spacer-xs);
+  padding: calc(var(--vds-spacer-xxs) + var(--vds-spacer-xs));
   top: 0;
   right: 0;
   bottom: 0;
@@ -51,17 +62,25 @@
   opacity: 0;
 }
 
+.inner.warning .hoverElement {
+  background: var(--vds-color-red-lightest);
+}
+
 .inner:not(.noButton):focus-within .hoverElement,
 .inner:not(.noButton):hover .hoverElement {
   opacity: 1;
 }
 
 .fileInfoName {
-  display: flex;
-  overflow: hidden;
   padding-right: var(--vds-spacer-xs);
   line-height: var(--vds-line-height-sm);
   font-size: var(--vds-font-size-sm);
+  font-weight: var(--vds-font-weight-semibold);
+}
+
+.fileNameWrap {
+  display: flex;
+  overflow: hidden;
 }
 
 .fileName {
@@ -73,34 +92,32 @@
 .fileExtension {
   overflow: hidden;
   white-space: nowrap;
-  flex: 0 0 auto;
+  flex-shrink: 0;
+}
+
+.fileInfoText {
+  margin-top: var(--vds-spacer-xxs);
+  font-size: var(--vds-font-size-xs);
 }
 
 .tooltipTitle {
   display: flex;
-  margin-bottom: var(--vds-spacer-xs);
-  overflow: hidden;
-  white-space: nowrap;
-  color: var(--vds-color-black);
-  font-size: var(--vds-font-size-heading-xxs);
-  font-weight: var(--vds-font-weight-semibold);
+  align-items: center;
+  margin-bottom: var(--vds-spacer-xxs);
+  color: var(--vds-color-slate-darkest);
+  font-family: var(--vds-font-family-display);
+  font-size: var(--vds-font-size-md);
+  font-weight: var(--vds-font-weight-bold);
+}
+
+.tooltipTitle .warnIcon {
+  flex-shrink: 0;
+  margin-right: var(--vds-spacer-sm);
+  font-size: var(--vds-spacer-md);
 }
 
 .tooltipText {
+  color: var(--vds-color-slate-darkest);
   font-size: var(--vds-font-size-sm);
   line-height: var(--vds-line-height-sm);
-}
-
-.warnIcon {
-  position: absolute;
-  right: 4px;
-  bottom: 4px;
-  height: 12px;
-  width: 12px;
-  color: var(--vds-color-red-darker);
-}
-
-.warnIconName {
-  color: var(--vds-color-red-darker);
-  margin-right: var(--vds-spacer-xs);
 }
