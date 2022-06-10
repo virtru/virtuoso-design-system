@@ -56,6 +56,6 @@
 }
 
 .textWrapper:hover .fakeLink,
-.input:focus-visible + .label .fakeLink {
+.input:focus-visible + .labelWrap .fakeLink {
   color: var(--vds-color-blue-dark);
 }
