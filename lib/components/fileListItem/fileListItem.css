@@ -22,8 +22,7 @@
 }
 
 .inner.warning,
-.inner.warning:hover,
-.inner.warning .hoverElement {
+.inner.warning:hover {
   background: var(--vds-color-red-lightest);
 }
 
@@ -61,6 +60,10 @@
   background: var(--vds-color-slate-lightest);
   z-index: 1;
   opacity: 0;
+}
+
+.inner.warning .hoverElement {
+  background: var(--vds-color-red-lightest);
 }
 
 .inner:not(.noButton):focus-within .hoverElement,
