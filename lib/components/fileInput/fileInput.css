@@ -55,6 +55,7 @@
   margin-right: var(--vds-spacer-xs);
 }
 
-.textWrapper:hover .fakeLink {
+.textWrapper:hover .fakeLink,
+.input:focus-visible + .labelWrap .fakeLink {
   color: var(--vds-color-blue-dark);
 }
