@@ -112,12 +112,12 @@ storiesOf('virtru/sendMessage', module).add('basic', () => {
                                 size="1.09 Kb"
                                 tooltipText="This file is encrypted with no additional security options enabled."
                                 warning={false}
+                                tabIndex="0"
                                 button={
                                   <Button type="primary" size="small" onClick={handleClickRemove}>
                                     Remove
                                   </Button>
                                 }
-                                tabIndex="0"
                               />
                             </Col>
                           );
