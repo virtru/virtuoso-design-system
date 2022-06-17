@@ -97,33 +97,32 @@ storiesOf('virtru/sendMessage', module).add('basic', () => {
                     </Col>
                   </Row>
                   {fileList.length > 0 && (
-                    <Row gutter={[12, 12]} id="itemsList">
-                      <ArrowsNavigationWrap
-                        tabbingSelector="[data-testid='item-wrapper']"
-                        parentSelector="#itemsList"
-                      >
-                        {fileList.map((file) => {
-                          return (
-                            <Col key={file.name} md={12}>
-                              <FileListItem
-                                name={file.name.split('.')[0]}
-                                extension={`.${file.name.split('.')[1]}.tdf`}
-                                decryptedExt={`${file.name.split('.')[1]}`}
-                                size="1.09 Kb"
-                                tooltipText="This file is encrypted with no additional security options enabled."
-                                warning={false}
-                                tabIndex="0"
-                                button={
-                                  <Button type="primary" size="small" onClick={handleClickRemove}>
-                                    Remove
-                                  </Button>
-                                }
-                              />
-                            </Col>
-                          );
-                        })}
-                      </ArrowsNavigationWrap>
-                    </Row>
+                    <ArrowsNavigationWrap
+                      as={Row}
+                      gutter={[12, 12]}
+                      tabbingSelector="[data-testid='item-wrapper']"
+                    >
+                      {fileList.map((file) => {
+                        return (
+                          <Col key={file.name} md={12}>
+                            <FileListItem
+                              name={file.name.split('.')[0]}
+                              extension={`.${file.name.split('.')[1]}.tdf`}
+                              decryptedExt={`${file.name.split('.')[1]}`}
+                              size="1.09 Kb"
+                              tooltipText="This file is encrypted with no additional security options enabled."
+                              warning={false}
+                              tabIndex="0"
+                              button={
+                                <Button type="primary" size="small" onClick={handleClickRemove}>
+                                  Remove
+                                </Button>
+                              }
+                            />
+                          </Col>
+                        );
+                      })}
+                    </ArrowsNavigationWrap>
                   )}
                 </Space>
               </div>
