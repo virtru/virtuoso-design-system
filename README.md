@@ -203,7 +203,7 @@ _Note_: Before performing this step, you must first run the VRT once (see previo
 If you run the tests above and have legitimate changes in the visual appearance of the components, you can approve new baselines, which will replace the existing baseline images with the new, current images:
 
 ```shell
-npx loki approve
+npm run loki:approve
 ```
 
 This will immediately take all new baseline images from the last test run and replace the existing baseline images. If you wish to update a specific test case image only but reject other changes, see the [Loki CLI reference](https://loki.js.org/command-line-arguments.html).
