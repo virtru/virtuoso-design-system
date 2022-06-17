@@ -97,11 +97,7 @@ storiesOf('virtru/sendMessage', module).add('basic', () => {
                     </Col>
                   </Row>
                   {fileList.length > 0 && (
-                    <ArrowsNavigationWrap
-                      as={Row}
-                      gutter={[12, 12]}
-                      tabbingSelector="[data-testid='item-wrapper']"
-                    >
+                    <ArrowsNavigationWrap as={Row} gutter={[12, 12]} tabbingSelector=".fileItem">
                       {fileList.map((file) => {
                         return (
                           <Col key={file.name} md={12}>
@@ -113,6 +109,7 @@ storiesOf('virtru/sendMessage', module).add('basic', () => {
                               tooltipText="This file is encrypted with no additional security options enabled."
                               warning={false}
                               tabIndex="0"
+                              className="fileItem"
                               button={
                                 <Button type="primary" size="small" onClick={handleClickRemove}>
                                   Remove
