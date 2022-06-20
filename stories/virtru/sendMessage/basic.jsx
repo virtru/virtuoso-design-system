@@ -97,28 +97,32 @@ storiesOf('virtru/sendMessage', module).add('basic', () => {
                     </Col>
                   </Row>
                   {fileList.length > 0 && (
-                    <ArrowsNavigationWrap as={Row} gutter={[12, 12]} tabbingSelector=".fileItem">
-                      {fileList.map((file) => {
-                        return (
-                          <Col key={file.name} md={12}>
-                            <FileListItem
-                              name={file.name.split('.')[0]}
-                              extension={`.${file.name.split('.')[1]}.tdf`}
-                              decryptedExt={`${file.name.split('.')[1]}`}
-                              size="1.09 Kb"
-                              tooltipText="This file is encrypted with no additional security options enabled."
-                              warning={false}
-                              tabIndex="0"
-                              className="fileItem"
-                              button={
-                                <Button type="primary" size="small" onClick={handleClickRemove}>
-                                  Remove
-                                </Button>
-                              }
-                            />
-                          </Col>
-                        );
-                      })}
+                    <ArrowsNavigationWrap tabbingSelector=".fileItem">
+                      {(rowRef) => (
+                        <Row gutter={[12, 12]} ref={rowRef}>
+                          {fileList.map((file) => {
+                            return (
+                              <Col key={file.name} md={12}>
+                                <FileListItem
+                                  name={file.name.split('.')[0]}
+                                  extension={`.${file.name.split('.')[1]}.tdf`}
+                                  decryptedExt={`${file.name.split('.')[1]}`}
+                                  size="1.09 Kb"
+                                  tooltipText="This file is encrypted with no additional security options enabled."
+                                  warning={false}
+                                  tabIndex="0"
+                                  className="fileItem"
+                                  button={
+                                    <Button type="primary" size="small" onClick={handleClickRemove}>
+                                      Remove
+                                    </Button>
+                                  }
+                                />
+                              </Col>
+                            );
+                          })}
+                        </Row>
+                      )}
                     </ArrowsNavigationWrap>
                   )}
                 </Space>
