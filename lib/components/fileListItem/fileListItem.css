@@ -17,7 +17,9 @@
   overflow: hidden;
 }
 
-.inner:hover {
+.inner:hover,
+.item:focus .inner,
+.item:focus-within .inner {
   background: var(--vds-color-slate-lightest);
 }
 
@@ -67,7 +69,8 @@
 }
 
 .inner:not(.noButton):focus-within .hoverElement,
-.inner:not(.noButton):hover .hoverElement {
+.inner:not(.noButton):hover .hoverElement,
+.item:focus .inner:not(.noButton) .hoverElement {
   opacity: 1;
 }
 
