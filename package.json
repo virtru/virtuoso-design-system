@@ -1,6 +1,6 @@
 {
   "name": "virtuoso-design-system",
-  "version": "3.0.0",
+  "version": "3.27.0",
   "description": "A set of reusable elements that enable Virtru designers and Virtru engineers to create consistent Virtru products.",
   "author": "Virtru CI <ci@virtru.com>",
   "main": "dist/bundle.cjs.js",
