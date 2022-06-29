@@ -1,6 +1,6 @@
 .button {
   background: transparent;
-  padding: var(--vds-spacer-xxs);
+  padding: 1px;
   border: 1px solid var(--vds-color-slate-lighter);
   border-left: 0;
   display: flex;
@@ -17,8 +17,8 @@
 }
 /* stylelint-disable */
 .button svg {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
 }
 /* stylelint-enable */
 .active::after {
