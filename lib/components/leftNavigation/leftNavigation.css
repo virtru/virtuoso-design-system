@@ -1,0 +1,64 @@
+.menuWrapper {
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  z-index: 5;
+}
+
+.leftMenu :global(.ant-menu-item::after) {
+  border: none;
+}
+
+.leftMenu :global(.ant-menu-item span) {
+  transition: none;
+}
+
+.leftMenu :global(.ant-menu-item-selected.ant-menu-item),
+.leftMenu :global(.ant-menu-item):active {
+  background: var(--vds-color-slate-lightest);
+}
+
+.leftMenu :global(.ant-menu-item .ant-menu-title-content) {
+  color: var(--vds-color-slate-darker);
+}
+
+.leftMenu :global(.ant-menu-item-selected .ant-menu-title-content) {
+  text-decoration: underline;
+  color: var(--vds-color-slate-darkest);
+  text-underline-offset: 3px;
+}
+
+
+.leftMenu:global(.ant-menu) {
+  background: var(--vds-color-slate-lightest);
+  height: 100%;
+  box-shadow: 2px 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: width 0.05s linear;
+  transition: width 0.05s linear;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  transform: translateZ(0) scale(1, 1);
+}
+
+.leftMenu:global(.ant-menu.ant-menu-inline-collapsed) {
+  width: 64px;
+}
+
+.leftMenu:global(.ant-menu.ant-menu-inline-collapsed > .ant-menu-item) {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.leftMenu:global(.ant-menu.ant-menu-inline-collapsed > .ant-menu-item .anticon) {
+  line-height: 0;
+}
+
+.leftMenu path {
+  fill: var(--vds-color-slate-darker);
+}
+
+.leftMenu :global(.ant-menu-item-selected) path {
+  fill: var(--vds-color-slate-darkest);
+}
+
