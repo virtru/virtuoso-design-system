@@ -1,4 +1,5 @@
-.vdsCustomMenuWrap :global(.ant-dropdown-menu-item-group-title) {
+.vdsCustomMenuWrap :global(.ant-dropdown-menu-item-group-title),
+.vdsCustomMenuWrap :global(.ant-menu-item-group-title) {
   padding-top: var(--vds-spacer-sm);
   padding-bottom: 15px;
   font-size: var(--vds-font-size-sm);
@@ -7,7 +8,9 @@
 }
 
 .vdsCustomMenuWrap :global(.ant-dropdown-menu-item),
-.vdsCustomMenuWrap :global(.ant-dropdown-menu-submenu-title) {
+.vdsCustomMenuWrap :global(.ant-menu-item),
+.vdsCustomMenuWrap :global(.ant-dropdown-menu-submenu-title),
+.vdsCustomMenuWrap :global(.ant-menu-submenu-title) {
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: var(--vds-font-size-sm);
@@ -16,42 +19,61 @@
 }
 
 
-.vdsCustomMenuWrap :global(.ant-dropdown-menu-item-group-list) {
+.vdsCustomMenuWrap :global(.ant-dropdown-menu-item-group-list),
+.vdsCustomMenuWrap :global(.ant-menu-item-group-list) {
   margin: 0;
 }
 
 .vdsCustomMenuWrap :global(.ant-dropdown-menu-item-selected),
-.vdsCustomMenuWrap :global(.ant-dropdown-menu-submenu-title-selected) {
+.vdsCustomMenuWrap :global(.ant-menu-item-selected),
+.vdsCustomMenuWrap :global(.ant-dropdown-menu-submenu-title-selected),
+.vdsCustomMenuWrap :global(.ant-menu-submenu-title-selected) {
   background-color: var(--vds-color-white);
   color: var(--vds-color-blue-darker);
 }
 
 .vdsCustomMenuWrap :global(.ant-dropdown-menu-item:hover),
+.vdsCustomMenuWrap :global(.ant-menu-item:hover),
 .vdsCustomMenuWrap :global(.ant-dropdown-menu-submenu-title:hover),
+.vdsCustomMenuWrap :global(.ant-menu-submenu-title:hover),
 .vdsCustomMenuWrap :global(.ant-dropdown-menu-item:focus),
+.vdsCustomMenuWrap :global(.ant-menu-item:focus),
 .vdsCustomMenuWrap :global(.ant-dropdown-menu-submenu-title:focus),
+.vdsCustomMenuWrap :global(.ant-menu-submenu-title:focus),
 .vdsCustomMenuWrap :global(.ant-dropdown-menu-item-selected:hover),
+.vdsCustomMenuWrap :global(.ant-menu-item-selected:hover),
 .vdsCustomMenuWrap :global(.ant-dropdown-menu-item-selected:focus),
+.vdsCustomMenuWrap :global(.ant-menu-item-selected:focus),
 .vdsCustomMenuWrap :global(.ant-dropdown-menu-submenu-title-selected:hover),
-.vdsCustomMenuWrap :global(.ant-dropdown-menu-submenu-title-selected:focus) {
+.vdsCustomMenuWrap :global(.ant-menu-submenu-title-selected:hover),
+.vdsCustomMenuWrap :global(.ant-dropdown-menu-submenu-title-selected:focus),
+.vdsCustomMenuWrap :global(.ant-menu-submenu-title-selected:focus) {
   background-color: var(--vds-color-white);
   text-decoration: underline;
 }
 
 .vdsCustomMenuWrap :global(.ant-dropdown-menu-item:active),
-.vdsCustomMenuWrap :global(.ant-dropdown-menu-submenu-title:active) {
+.vdsCustomMenuWrap :global(.ant-menu-item:active),
+.vdsCustomMenuWrap :global(.ant-dropdown-menu-submenu-title:active),
+.vdsCustomMenuWrap :global(.ant-menu-submenu-title:active) {
   color: var(--vds-color-blue-darker);
   text-decoration: none;
 }
 
 .vdsCustomMenuWrap :global(.ant-dropdown-menu-item svg.custom-avatar path),
-.vdsCustomMenuWrap :global(.ant-dropdown-menu-submenu-title svg.custom-avatar path) {
+.vdsCustomMenuWrap :global(.ant-menu-item svg.custom-avatar path),
+.vdsCustomMenuWrap :global(.ant-dropdown-menu-submenu-title svg.custom-avatar path),
+.vdsCustomMenuWrap :global(.ant-menu-submenu-title svg.custom-avatar path) {
   fill: var(--vds-color-slate-darkest);
 }
 
 .vdsCustomMenuWrap :global(.ant-dropdown-menu-item-selected svg.custom-avatar path),
+.vdsCustomMenuWrap :global(.ant-menu-item-selected svg.custom-avatar path),
 .vdsCustomMenuWrap :global(.ant-dropdown-menu-submenu-title-selected svg.custom-avatar path),
+.vdsCustomMenuWrap :global(.ant-menu-submenu-title-selected svg.custom-avatar path),
 .vdsCustomMenuWrap :global(.ant-dropdown-menu-item:active svg.custom-avatar path),
-.vdsCustomMenuWrap :global(.ant-dropdown-menu-submenu-title:active svg.custom-avatar path) {
+.vdsCustomMenuWrap :global(.ant-menu-item:active svg.custom-avatar path),
+.vdsCustomMenuWrap :global(.ant-dropdown-menu-submenu-title:active svg.custom-avatar path),
+.vdsCustomMenuWrap :global(.ant-menu-submenu-title:active svg.custom-avatar path) {
   fill: var(--vds-color-blue-darker);
 }
