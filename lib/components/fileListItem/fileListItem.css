@@ -1,4 +1,6 @@
 .item {
+  --warning-background-color: var(--vds-color-yellow-lighter);
+
   padding: var(--vds-spacer-xs);
   background-image:
     repeating-linear-gradient(
@@ -24,8 +26,10 @@
 }
 
 .inner.warning,
-.inner.warning:hover {
-  background: var(--vds-color-red-lightest);
+.inner.warning:hover,
+.item:focus .inner,
+.item:focus-within .inner {
+  background: var(--warning-background-color);
 }
 
 .icon {
@@ -38,7 +42,7 @@
 }
 
 .warnIcon {
-  color: var(--vds-color-red-darker);
+  color: var(--vds-color-slate-darkest);
 }
 
 .fileInfo {
@@ -57,15 +61,14 @@
   padding: calc(var(--vds-spacer-xxs) + var(--vds-spacer-xs));
   top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
+  width: 100%;
   background: var(--vds-color-slate-lightest);
   z-index: 1;
   opacity: 0;
 }
 
 .inner.warning .hoverElement {
-  background: var(--vds-color-red-lightest);
+  background: var(--warning-background-color);
 }
 
 .inner:not(.noButton):focus-within .hoverElement,
@@ -123,4 +126,36 @@
   color: var(--vds-color-slate-darkest);
   font-size: var(--vds-font-size-sm);
   line-height: var(--vds-line-height-sm);
+}
+
+.tooltipOverlay.unsupportedFileType :global(.ant-tooltip-inner) {
+  padding: var(--vds-spacer-sm);
+}
+
+.limitationItem {
+  display: flex;
+  align-items: center;
+  font-size: var(--vds-font-size-sm);
+  line-height: var(--vds-line-height-sm);
+  white-space: nowrap;
+  color: var(--vds-color-slate-darkest);
+  margin-bottom: var(--vds-spacer-sm);
+}
+
+.limitationItem:last-child {
+  margin-bottom: 0;
+}
+
+.limitationItemIconSuccess,
+.limitationItemIconDanger {
+  font-size: var(--vds-spacer-md);
+  margin-right: var(--vds-spacer-sm);
+}
+
+.limitationItemIconSuccess {
+  color: var(--vds-color-green-darker);
+}
+
+.limitationItemIconDanger {
+  color: var(--vds-color-red-darker);
 }
