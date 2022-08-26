@@ -30,3 +30,17 @@
 .vdsAvatarIcon path {
   fill: var(--vds-color-white);
 }
+
+@media screen and (max-width: 767px) {
+  .vdsButton:global(.ant-btn) {
+    padding-right: var(--vds-spacer-xs);
+  }
+
+  .vdsButton:global(.ant-btn) > span.vdsUserName {
+    display: none;
+  }
+
+  .vdsAvatarIcon {
+    margin-right: 0;
+  }
+}
