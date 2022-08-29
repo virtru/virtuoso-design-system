@@ -1,0 +1,31 @@
+.tooltipOverlay.unsupportedFileType :global(.ant-tooltip-inner) {
+  padding: var(--vds-spacer-sm);
+}
+
+.limitationItem {
+  display: flex;
+  align-items: center;
+  font-size: var(--vds-font-size-sm);
+  line-height: var(--vds-line-height-sm);
+  white-space: nowrap;
+  color: var(--vds-color-slate-darkest);
+  margin-bottom: var(--vds-spacer-sm);
+}
+
+.limitationItem:last-child {
+  margin-bottom: 0;
+}
+
+.limitationItemIconSuccess,
+.limitationItemIconDanger {
+  font-size: var(--vds-spacer-md);
+  margin-right: var(--vds-spacer-sm);
+}
+
+.limitationItemIconSuccess {
+  color: var(--vds-color-green-darker);
+}
+
+.limitationItemIconDanger {
+  color: var(--vds-color-red-darker);
+}

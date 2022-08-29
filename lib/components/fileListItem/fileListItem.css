@@ -84,78 +84,11 @@
   font-weight: var(--vds-font-weight-semibold);
 }
 
-.fileNameWrap {
-  display: flex;
-  overflow: hidden;
-}
-
-.fileName {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.fileExtension {
-  overflow: hidden;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
 .fileInfoText {
   margin-top: var(--vds-spacer-xxs);
   font-size: var(--vds-font-size-xs);
 }
 
-.tooltipTitle {
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--vds-spacer-xxs);
-  color: var(--vds-color-slate-darkest);
-  font-family: var(--vds-font-family-display);
-  font-size: var(--vds-font-size-md);
-  font-weight: var(--vds-font-weight-bold);
-}
-
-.tooltipTitle .warnIcon {
-  flex-shrink: 0;
-  margin-right: var(--vds-spacer-sm);
-  font-size: var(--vds-spacer-md);
-}
-
-.tooltipText {
-  color: var(--vds-color-slate-darkest);
-  font-size: var(--vds-font-size-sm);
-  line-height: var(--vds-line-height-sm);
-}
-
 .tooltipOverlay.unsupportedFileType :global(.ant-tooltip-inner) {
   padding: var(--vds-spacer-sm);
-}
-
-.limitationItem {
-  display: flex;
-  align-items: center;
-  font-size: var(--vds-font-size-sm);
-  line-height: var(--vds-line-height-sm);
-  white-space: nowrap;
-  color: var(--vds-color-slate-darkest);
-  margin-bottom: var(--vds-spacer-sm);
-}
-
-.limitationItem:last-child {
-  margin-bottom: 0;
-}
-
-.limitationItemIconSuccess,
-.limitationItemIconDanger {
-  font-size: var(--vds-spacer-md);
-  margin-right: var(--vds-spacer-sm);
-}
-
-.limitationItemIconSuccess {
-  color: var(--vds-color-green-darker);
-}
-
-.limitationItemIconDanger {
-  color: var(--vds-color-red-darker);
 }

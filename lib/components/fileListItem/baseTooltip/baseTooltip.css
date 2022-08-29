@@ -1,0 +1,15 @@
+.tooltipTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--vds-spacer-xxs);
+  color: var(--vds-color-slate-darkest);
+  font-family: var(--vds-font-family-display);
+  font-size: var(--vds-font-size-md);
+  font-weight: var(--vds-font-weight-bold);
+}
+
+.tooltipText {
+  color: var(--vds-color-slate-darkest);
+  font-size: var(--vds-font-size-sm);
+  line-height: var(--vds-line-height-sm);
+}
