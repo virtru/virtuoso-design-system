@@ -1,0 +1,7 @@
+.wrap {
+  font: var(--vds-font-family-body);
+}
+
+:global(.sidebar-wrap) :global(.ant-drawer-content) {
+  background-color: var(--vds-color-slate-lightest);
+}
