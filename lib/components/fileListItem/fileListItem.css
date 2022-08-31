@@ -27,8 +27,8 @@
 
 .inner.warning,
 .inner.warning:hover,
-.item:focus .inner,
-.item:focus-within .inner {
+.item:focus .inner.warning,
+.item:focus-within .inner.warning {
   background: var(--warning-background-color);
 }
 
