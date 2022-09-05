@@ -96,7 +96,7 @@
     "array-move": "^3.0.1",
     "auto": "^9.50.1",
     "babel-eslint": "^10.1.0",
-    "babel-jest": "^26.3.0",
+    "babel-jest": "^29.0.2",
     "babel-loader": "^8.1.0",
     "babel-plugin-import": "^1.13.3",
     "babel-plugin-module-name-mapper": "^1.2.0",
