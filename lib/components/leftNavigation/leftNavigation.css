@@ -52,6 +52,7 @@
 
 .leftMenu:global(.ant-menu > .ant-menu-item .ant-menu-item-icon) {
   line-height: 0;
+  flex-shrink: 0;
 }
 
 .leftMenu path {
