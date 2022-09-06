@@ -1,5 +1,5 @@
 .menuWrapper {
-  height: 100vh;
+  height: 100%;
   position: absolute;
   left: 0;
   width: 200px;
@@ -47,10 +47,10 @@
 .leftMenu:global(.ant-menu.ant-menu-inline-collapsed > .ant-menu-item) {
   display: flex;
   align-items: center;
-  padding: 0 24px;
+  padding: 0 var(--vds-spacer-md);
 }
 
-.leftMenu:global(.ant-menu.ant-menu-inline-collapsed > .ant-menu-item .anticon) {
+.leftMenu:global(.ant-menu > .ant-menu-item .ant-menu-item-icon) {
   line-height: 0;
 }
 
@@ -62,3 +62,82 @@
   fill: var(--vds-color-slate-darkest);
 }
 
+@media screen and (max-width: 767px) {
+  .mobile {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 72px;
+    width: auto;
+  }
+
+  .mobile .leftMenu:global(.ant-menu) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: var(--vds-color-blue-darkest);
+    border: none;
+  }
+
+  .mobile .leftMenu:global(.ant-menu > .ant-menu-item) {
+    flex-direction: column;
+    height: 100%;
+    padding: 0 var(--vds-spacer-md);
+    flex: 1;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-bottom: 2px solid transparent;
+  }
+
+  .mobile .leftMenu :global(.ant-menu-item .ant-menu-title-content) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--vds-color-slate-even-lighter);
+  }
+
+  .mobile .leftMenu :global(.ant-menu-item-selected.ant-menu-item),
+  .mobile .leftMenu :global(.ant-menu-item):active {
+    color: var(--vds-color-white);
+    background: var(--vds-color-blue-darkest);
+    border-bottom-color: var(--vds-color-white);
+    margin: 0;
+  }
+
+  .mobile .leftMenu path {
+    fill: var(--vds-color-slate-even-lighter);
+  }
+
+  .mobile .leftMenu :global(.ant-menu-item-selected) path {
+    fill: var(--vds-color-white);
+  }
+
+  .mobile :global(.ant-menu > .ant-menu-item .ant-menu-title-content),
+  .mobile :global(.ant-menu.ant-menu-inline-collapsed > .ant-menu-item .ant-menu-title-content) {
+    opacity: 1;
+    margin: 0;
+    text-transform: uppercase;
+    height: 16px;
+    line-height: 1;
+    flex: unset;
+    text-decoration: none;
+  }
+
+  .mobile .leftMenu :global(.ant-menu-item-selected.ant-menu-item .ant-menu-title-content) {
+    color: var(--vds-color-white);
+  }
+
+  .mobile .leftMenu :global(.ant-menu .ant-menu-item-selected .ant-menu-title-content) {
+    text-decoration: none;
+  }
+
+  .mobile .leftMenu:global(.ant-menu > .ant-menu-item .ant-menu-item-icon) {
+    font-size: 18px;
+    margin-bottom: var(--vds-spacer-sm);
+    line-height: 1;
+    height: 18px;
+  }
+}
