@@ -1,7 +1,7 @@
 import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
 import React, { useState } from 'react';
-import { Sidebar } from '@';
+import { Sidebar, SidebarCard } from '@';
 import { CloseOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 
@@ -48,8 +48,23 @@ storiesOf('virtru/sidebar', module).add(
         <Sidebar
           {...{
             visibleDrawer,
-            cardsData,
-            drawerProps: { width: 360, closable: true, style: { marginTop: '54px' } },
+            children: cardsData
+              .sort((card1, card2) => card1.index - card2.index)
+              .map(({ title, extra, cover, bodyStyle }, i) => (
+                <SidebarCard
+                  {...{
+                    title,
+                    extra,
+                    cover,
+                    bodyStyle,
+                    key: i,
+                    width: 360,
+                    closable: true,
+                    style: { marginTop: '54px' },
+                  }}
+                />
+              )),
+              style: { marginTop: '1px' },
           }}
         ></Sidebar>
       </>
