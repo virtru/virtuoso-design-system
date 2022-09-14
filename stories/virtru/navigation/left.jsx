@@ -18,12 +18,11 @@ const menuItems = [
 
 storiesOf('virtru/navigation', module).add('left', () => {
   return (
-    <LeftNavigation>
+    <LeftNavigation mobileAdaptive>
       {menuItems.map((item) => {
         return (
-          <Menu.Item key={item.key}>
-            {item.icon}
-            <span>{item.label}</span>
+          <Menu.Item key={item.key} icon={item.icon}>
+            {item.label}
           </Menu.Item>
         );
       })}
