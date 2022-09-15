@@ -17,20 +17,14 @@ import {
 import stylesMenu from '../../../lib/components/dropdown/topMenuDropdown.css';
 import styles from '../../../lib/components/layout/header.css';
 
-storiesOf('virtru/icons', module).add(
+storiesOf('virtru/iconsCustom', module).add(
   'basic',
   () => (
     <>
       <Space style={{ background: 'black', padding: '24px' }}>
-        <div>
-          <LogoVirtruIcon className={styles.vdsLogo} />
-        </div>
-        <div>
-          <CustomIconAvatar className={stylesMenu.vdsAvatarIcon} />
-        </div>
-        <div>
-          <CustomIconArrow className={stylesMenu.vdsArrow} />
-        </div>
+        <LogoVirtruIcon className={styles.vdsLogo} />
+        <CustomIconAvatar className={stylesMenu.vdsAvatarIcon} />
+        <CustomIconArrow className={stylesMenu.vdsArrow} />
       </Space>
 
       <br />
