@@ -1,0 +1,8 @@
+.expirationPickerWrap {
+  max-width: 280px;
+}
+
+.expirationPickerWrap :global(.ant-col-10) {
+  flex-basis: 75%;
+  max-width: 75%;
+}
