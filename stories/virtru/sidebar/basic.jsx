@@ -9,36 +9,34 @@ storiesOf('virtru/sidebar', module).add(
   'sidebar',
   () => {
     const [visibleDrawer, setVisibleDrawer] = useState(false);
-    const cardsData = [
-      { index: 5, title: 'Accessed (5/7 recipients)' },
-      {
-        index: 2,
-        title: 'Security',
-        bodyStyle: {
-          borderBottom: '1px solid var(--vds-color-slate-darker)',
-          marginBottom: '23px',
-        },
-        extra: <Button danger>Revoke Access</Button>,
+
+    const card1 = {
+      index: 1,
+      title: 'Session Information',
+      extra: (
+        <CloseOutlined
+          style={{ fontSize: '23px', color: 'var(--vds-color-slate-darker)', marginLeft: '10px' }}
+          onClick={() => {
+            console.log('click')
+            setVisibleDrawer(false);
+          }}
+        />
+      ),
+      cover: <div>Card body JSX</div>,
+      bodyStyle: {
+        borderBottom: '1px solid var(--vds-color-slate-darker)',
+        marginBottom: '23px',
       },
-      { index: 4, title: 'Files (78 total)' },
-      {
-        index: 1,
-        title: 'Session Information',
-        extra: (
-          <CloseOutlined
-            style={{ fontSize: '23px', color: 'var(--vds-color-slate-darker)' }}
-            onClick={() => {
-              setVisibleDrawer(false);
-            }}
-          />
-        ),
-        cover: <div>Card body JSX</div>,
-        bodyStyle: {
-          borderBottom: '1px solid var(--vds-color-slate-darker)',
-          marginBottom: '23px',
-        },
+    };
+    const card2 = {
+      index: 2,
+      title: 'Security',
+      bodyStyle: {
+        borderBottom: '1px solid var(--vds-color-slate-darker)',
+        marginBottom: '23px',
       },
-    ];
+      extra: <Button danger>Revoke Access</Button>,
+    };
 
     return (
       <>
@@ -47,24 +45,15 @@ storiesOf('virtru/sidebar', module).add(
         </Button>
         <Sidebar
           {...{
-            visibleDrawer,
-            children: cardsData
-              .sort((card1, card2) => card1.index - card2.index)
-              .map(({ title, extra, cover, bodyStyle }, i) => (
-                <SidebarCard
-                  {...{
-                    title,
-                    extra,
-                    cover,
-                    bodyStyle,
-                    key: i,
-                    width: 360,
-                    closable: true,
-                    style: { marginTop: '54px' },
-                  }}
-                />
-              )),
-              style: { marginTop: '1px' },
+            visible: visibleDrawer,
+            children: (
+              <>
+                <SidebarCard {...card1} />
+                <SidebarCard {...card2} />
+              </>
+            ),
+            style: { marginTop: '1px' },
+            contentWrapperStyle: { width: '360px' },
           }}
         ></Sidebar>
       </>

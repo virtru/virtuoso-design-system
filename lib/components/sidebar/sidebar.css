@@ -6,3 +6,7 @@
   font: var(--vds-font-family-body);
   background-color: var(--vds-color-slate-lightest);
 }
+
+.sidebarWrap :global(.ant-drawer-close) {
+  padding: 0;
+}
