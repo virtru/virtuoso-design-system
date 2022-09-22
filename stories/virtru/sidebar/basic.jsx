@@ -9,7 +9,6 @@ storiesOf('virtru/sidebar', module).add(
   'sidebar',
   () => {
     const [visibleDrawer, setVisibleDrawer] = useState(false);
-
     const card1 = {
       index: 1,
       title: 'Session Information',
@@ -17,24 +16,16 @@ storiesOf('virtru/sidebar', module).add(
         <CloseOutlined
           style={{ fontSize: '23px', color: 'var(--vds-color-slate-darker)', marginLeft: '10px' }}
           onClick={() => {
-            console.log('click')
+            console.log('click');
             setVisibleDrawer(false);
           }}
         />
       ),
       cover: <div>Card body JSX</div>,
-      bodyStyle: {
-        borderBottom: '1px solid var(--vds-color-slate-darker)',
-        marginBottom: '23px',
-      },
     };
     const card2 = {
       index: 2,
       title: 'Security',
-      bodyStyle: {
-        borderBottom: '1px solid var(--vds-color-slate-darker)',
-        marginBottom: '23px',
-      },
       extra: <Button danger>Revoke Access</Button>,
     };
 
