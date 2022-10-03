@@ -8,7 +8,7 @@ import 'antd/dist/antd.less';
 storiesOf('virtru/fileListItem', module).add(
   'loading',
   () => {
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     const checkboxChangeHandler = useCallback((checked) => {
       setLoading(checked);
