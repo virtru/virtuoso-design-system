@@ -22,7 +22,7 @@
     "test-ci": "jest --ci --coverage",
     "test:js": "jest",
     "test:vrt": "build-storybook && npm run loki",
-    "loki": "loki --require-reference --reactUri file:./storybook-static --storiesFilter=virtru/.*",
+    "loki": "loki --requireReference --reactUri file:./storybook-static --storiesFilter=virtru/.* --chromeEnableAnimations",
     "loki:update": "loki update --storiesFilter=\"virtru/.*\" --require-reference --reactUri=\"file:./storybook-static\"",
     "loki:approve": "loki approve",
     "storybook": "start-storybook -p 6006",
