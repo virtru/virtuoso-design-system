@@ -22,7 +22,7 @@
     "test-ci": "jest --ci --coverage",
     "test:js": "jest",
     "test:vrt": "build-storybook && npm run loki",
-    "loki": "loki --require-reference --reactUri file:./storybook-static --storiesFilter=virtru/.*",
+    "loki": "loki --requireReference --reactUri file:./storybook-static --storiesFilter=virtru/.* --chromeEnableAnimations",
     "loki:update": "loki update --storiesFilter=\"virtru/.*\" --require-reference --reactUri=\"file:./storybook-static\"",
     "loki:approve": "loki approve",
     "storybook": "start-storybook -p 6006",
@@ -185,7 +185,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
-    "@draft-js-plugins/anchor": "^4.1.3",
+    "@draft-js-plugins/anchor": "^4.2.0",
     "@draft-js-plugins/buttons": "^4.3.2",
     "@draft-js-plugins/editor": "^4.1.2",
     "@draft-js-plugins/static-toolbar": "^4.1.2",
