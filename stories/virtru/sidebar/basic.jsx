@@ -25,12 +25,11 @@ storiesOf('virtru/sidebar', module).add(
               <CloseOutlined
                 style={{ fontSize: '23px', color: 'var(--vds-color-slate-darker)', marginLeft: '10px' }}
                 onClick={() => {
-                  console.log('click');
                   setVisibleDrawer(false);
                 }}
               />
             )}
-            cover={<div>Card body JSX</div>}
+            children={<div>Card body JSX</div>}
           />
           <SidebarCard 
             title="Security"
