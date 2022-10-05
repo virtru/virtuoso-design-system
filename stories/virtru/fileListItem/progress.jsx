@@ -1,14 +1,19 @@
 import React, { useCallback, useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { FileListItem, Button } from '@';
+import { FileListItem, Button, Switch } from '@';
 
 import 'antd/dist/antd.less';
 
 storiesOf('virtru/fileListItem', module).add(
   'progress',
   () => {
+    const [loading, setLoading] = useState(true);
     const [progress, setProgress] = useState(30);
+
+    const checkboxChangeHandler = useCallback((checked) => {
+      setLoading(checked);
+    }, []);
 
     const inputSlideChangeHandler = useCallback((e) => {
       setProgress(+e.target.value);
@@ -16,6 +21,7 @@ storiesOf('virtru/fileListItem', module).add(
 
     return (
       <div style={{ width: 250 }}>
+        <Switch checked={loading} onChange={checkboxChangeHandler} /> Loading
         <input
           type="range"
           min={0}
@@ -24,8 +30,8 @@ storiesOf('virtru/fileListItem', module).add(
           style={{ width: '100%' }}
           onChange={inputSlideChangeHandler}
         />
-
         <FileListItem
+          loading={loading}
           progress={progress}
           name="file-with-error"
           extension=".tdf"
