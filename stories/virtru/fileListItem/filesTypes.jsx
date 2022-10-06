@@ -10,7 +10,7 @@ import { iconTypeObject } from '@/components/icon/customIconTypeFile';
 const icons = Object.keys(iconTypeObject);
 
 storiesOf('virtru/fileListItem', module).add(
-  'files-types',
+  'filesTypes',
   () => (
     <Row gutter={[8, 8]}>
       {icons.map((key) => (
