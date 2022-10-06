@@ -79,37 +79,23 @@
   opacity: 1;
 }
 
-.progress :global(.ant-progress-outer) {
-  flex-grow: 1;
-  display: block;
-  width: initial;
-  margin-bottom: 2px;
+.progress.infinite :global(.ant-progress-circle-path) {
+  transform-origin: center center;
+  animation: ckw 1s linear infinite;
 }
 
-.progress :global(.ant-progress-inner) {
-  display: block;
-}
+@keyframes ckw {
+  0% {
+    transform: rotate(0deg);
+  }
 
-.progress :global(.ant-progress-text) {
-  flex-shrink: 0;
-  display: block;
-  width: initial;
-  text-align: right;
-  margin-left: var(--vds-spacer-xs);
-}
-
-.progress :global(.ant-progress-bg) {
-  height: var(--vds-spacer-xxs) !important;
+  100% {
+    transform: rotate(359deg);
+  }
 }
 
 .tooltipOverlay.unsupportedFileType :global(.ant-tooltip-inner) {
   padding: var(--vds-spacer-sm);
-}
-
-.inner:not(.noButton):focus-within .progress :global(.ant-progress-text),
-.inner:not(.noButton):hover .progress :global(.ant-progress-text),
-.item:focus .inner:not(.noButton) .progress :global(.ant-progress-text) {
-  display: none;
 }
 
 .fileInfoName {
@@ -122,38 +108,4 @@
 .fileInfoText {
   margin-top: var(--vds-spacer-xxs);
   font-size: var(--vds-font-size-xs);
-}
-
-.spinner {
-  width: 25px;
-  height: 25px;
-  border: 2px solid var(--vds-color-blue-primary);
-  border-radius: 50%;
-  border-top-color: transparent;
-  animation: ckw 1s linear infinite;
-}
-
-@keyframes ckw {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.progress {
-  position: absolute;
-  z-index: 3;
-  left: var(--vds-spacer-xs);
-  display: flex;
-  align-items: flex-end;
-  width: calc(100% - var(--vds-spacer-xs) * 2);
-  bottom: 0;
-}
-
-.progress:global(.ant-progress-show-info .ant-progress-outer) {
-  padding-right: 0;
-  margin-right: 0;
 }
