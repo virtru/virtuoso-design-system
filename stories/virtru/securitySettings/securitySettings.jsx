@@ -1,7 +1,7 @@
+import React from 'react';
 import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
-import React from 'react';
-import { SecuritySettingsToggles } from '@';
+import { SecuritySettingsToggles, Row, Col } from '@';
 
 storiesOf('virtru/securitySettings', module).add(
   'securitySettings',
@@ -15,18 +15,23 @@ storiesOf('virtru/securitySettings', module).add(
 
     const securitySettingsUpdating = false;
     const securitySettingChangeHandler = () => {
+      // eslint-disable-next-line no-console
       console.log('securitySettingChangeHandler click');
     };
 
     return (
-      <SecuritySettingsToggles
-        showFilesSettings={showFilesSettings}
-        expirationDateTime={securitySettings.expirationDateTime}
-        watermark={securitySettings.watermark}
-        persistentProtection={securitySettings.persistentProtection}
-        disabled={securitySettingsUpdating}
-        onChange={securitySettingChangeHandler}
-      />
+      <Row style={{ width: '100%' }}>
+        <Col sspan={12} offset={6}>
+          <SecuritySettingsToggles
+            showFilesSettings={showFilesSettings}
+            expirationDateTime={securitySettings.expirationDateTime}
+            watermark={securitySettings.watermark}
+            persistentProtection={securitySettings.persistentProtection}
+            disabled={securitySettingsUpdating}
+            onChange={securitySettingChangeHandler}
+          />
+        </Col>
+      </Row>
     );
   },
   {
