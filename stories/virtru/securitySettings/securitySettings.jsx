@@ -8,7 +8,7 @@ storiesOf('virtru/securitySettings', module).add(
   () => {
     const showFilesSettings = true;
     const securitySettings = {
-      expirationDateTime: '13 Aug, 2022',
+      expirationDateTime: null,
       watermark: true,
       persistentProtection: false,
     };
