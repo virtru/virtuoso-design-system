@@ -1,14 +1,16 @@
-import 'antd/dist/antd.less';
-import { storiesOf } from '@storybook/react';
 import React from 'react';
+import { storiesOf } from '@storybook/react';
+
 import { FileListItem, Row, Col, Button } from '@';
+
+import 'antd/dist/antd.less';
 
 import { iconTypeObject } from '@/components/icon/customIconTypeFile';
 
 const icons = Object.keys(iconTypeObject);
 
 storiesOf('virtru/fileListItem', module).add(
-  'basic',
+  'filesTypes',
   () => (
     <Row gutter={[8, 8]}>
       {icons.map((key) => (
@@ -30,15 +32,7 @@ storiesOf('virtru/fileListItem', module).add(
   ),
   {
     docs: {
-      page: () => (
-        <>
-          <h1 id="enus">en-US</h1>
-          <p>
-            There are <code>primary</code> button, <code>default</code> button, <code>dashed</code>{' '}
-            button, <code>text</code> button and <code>link</code> button in antd.
-          </p>
-        </>
-      ),
+      page: null,
     },
   },
 );
