@@ -1,7 +1,14 @@
 import React from 'react';
 import 'antd/dist/antd.less';
 import { storiesOf } from '@storybook/react';
+import { withKnobs, boolean } from '@storybook/addon-knobs';
+
 import { SecuritySettingsToggles, Row, Col } from '@';
+
+export default {
+  title: 'With security settings',
+  decorators: [withKnobs],
+};
 
 storiesOf('virtru/securitySettings', module).add(
   'securitySettings',
@@ -25,8 +32,8 @@ storiesOf('virtru/securitySettings', module).add(
           <SecuritySettingsToggles
             showFilesSettings={showFilesSettings}
             expirationDateTime={securitySettings.expirationDateTime}
-            watermark={securitySettings.watermark}
-            persistentProtection={securitySettings.persistentProtection}
+            watermark={boolean('Watermark', false)}
+            persistentProtection={boolean('PFP', true)}
             disabled={securitySettingsUpdating}
             onChange={securitySettingChangeHandler}
           />
@@ -36,12 +43,7 @@ storiesOf('virtru/securitySettings', module).add(
   },
   {
     docs: {
-      page: () => (
-        <>
-          <h1 id="enus">en-US</h1>
-          <p>Custom Virtru spinner.</p>
-        </>
-      ),
+      page: null,
     },
   },
 );
