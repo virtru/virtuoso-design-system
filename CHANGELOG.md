@@ -1,3 +1,76 @@
+# v3.1.0 (Mon Oct 24 2022)
+
+#### 🚀 Enhancement
+
+- feat(header): add custom logo [#363](https://github.com/virtru/virtuoso-design-system/pull/363) ([@suchak1](https://github.com/suchak1))
+- Changed progress bar from linear to circular for FileListItem [#360](https://github.com/virtru/virtuoso-design-system/pull/360) ([@riabokon-virtru](https://github.com/riabokon-virtru))
+- feat(sidebar): added sidebar component [#336](https://github.com/virtru/virtuoso-design-system/pull/336) ([@gerus-virtru](https://github.com/gerus-virtru))
+- Added spinner and progress bar for FileListItem com… [#354](https://github.com/virtru/virtuoso-design-system/pull/354) ([@riabokon-virtru](https://github.com/riabokon-virtru))
+- fix(version bump): adds accessibility label to link button for CCR-817 [#349](https://github.com/virtru/virtuoso-design-system/pull/349) ([@virtrujakev](https://github.com/virtrujakev))
+- #CCR-1352 Update Navigation Menu for Secure Share Mobile Sizes [#342](https://github.com/virtru/virtuoso-design-system/pull/342) ([@virtru-dubich](https://github.com/virtru-dubich))
+- Version bump: @draft-js-plugins/buttons with latest accessibility updates [#343](https://github.com/virtru/virtuoso-design-system/pull/343) ([@virtrujakev](https://github.com/virtrujakev))
+- CCR-1186: Tile for unsupported file types + watermark/PFP displays as a tile for incorrect file [#334](https://github.com/virtru/virtuoso-design-system/pull/334) ([@riabokon-virtru](https://github.com/riabokon-virtru))
+- Feature/ccr 1313 Improve header and footer for mobile device [#330](https://github.com/virtru/virtuoso-design-system/pull/330) ([@virtru-dubich](https://github.com/virtru-dubich))
+- feat(navigation): add lefthand navigation bar [#326](https://github.com/virtru/virtuoso-design-system/pull/326) ([@stvik](https://github.com/stvik))
+- fix(components/expiration-picker): fixing formatted string [#318](https://github.com/virtru/virtuoso-design-system/pull/318) ([@gerus-virtru](https://github.com/gerus-virtru))
+- refactor(components): added the ability to set additional props [#316](https://github.com/virtru/virtuoso-design-system/pull/316) ([@gerus-virtru](https://github.com/gerus-virtru))
+- feat(switch): add switch wrapper [#298](https://github.com/virtru/virtuoso-design-system/pull/298) ([@gerus-virtru](https://github.com/gerus-virtru))
+- CCR-1034: Add our logo into web apps (Virtuoso) [#314](https://github.com/virtru/virtuoso-design-system/pull/314) ([@riabokon-virtru](https://github.com/riabokon-virtru))
+- #CCR-1094 Added focus for whole item and navigation with arrows [#312](https://github.com/virtru/virtuoso-design-system/pull/312) ([@virtru-dubich](https://github.com/virtru-dubich))
+- CCR-990: Secure file share: Update the UI chip state on error to match design [#311](https://github.com/virtru/virtuoso-design-system/pull/311) ([@riabokon-virtru](https://github.com/riabokon-virtru))
+- #CCR-1095 added focus state for attachment component [#310](https://github.com/virtru/virtuoso-design-system/pull/310) ([@virtru-dubich](https://github.com/virtru-dubich))
+- #CCR-955_4 updated buttons global styles (hover, focus, active) [#299](https://github.com/virtru/virtuoso-design-system/pull/299) ([@virtru-dubich](https://github.com/virtru-dubich) [@jrschumacher](https://github.com/jrschumacher))
+- #CCR-955_5 fixed width column for tablet in layoutOneThird.js [#300](https://github.com/virtru/virtuoso-design-system/pull/300) ([@virtru-dubich](https://github.com/virtru-dubich))
+- CCR-955 fixed bugs #6, 7, 9 from ticket's comments [#296](https://github.com/virtru/virtuoso-design-system/pull/296) ([@virtru-dubich](https://github.com/virtru-dubich))
+- CCR-990: Secure file share: Update the UI chip state on error to match design [#291](https://github.com/virtru/virtuoso-design-system/pull/291) ([@riabokon-virtru](https://github.com/riabokon-virtru))
+- #CCR-955 micro improve styles for expiration picker [#290](https://github.com/virtru/virtuoso-design-system/pull/290) ([@virtru-dubich](https://github.com/virtru-dubich))
+- #CCR-961 Missing the correct labels for the message compose windows in secure share [#286](https://github.com/virtru/virtuoso-design-system/pull/286) ([@virtru-dubich](https://github.com/virtru-dubich))
+- #CCR-960 Tool bar buttons are not working as expected [#285](https://github.com/virtru/virtuoso-design-system/pull/285) ([@virtru-dubich](https://github.com/virtru-dubich))
+- CCR-959 Missing the graphics for the supported and unsupported file formats [#283](https://github.com/virtru/virtuoso-design-system/pull/283) ([@virtru-dubich](https://github.com/virtru-dubich))
+- CCR-808 Update UI components for correct implementation [#278](https://github.com/virtru/virtuoso-design-system/pull/278) ([@virtru-dubich](https://github.com/virtru-dubich))
+- CCR 850 Create a composer component in Virtuoso Design System V3 [#269](https://github.com/virtru/virtuoso-design-system/pull/269) ([@virtru-dubich](https://github.com/virtru-dubich))
+- #CCR-709 updated navigation [#256](https://github.com/virtru/virtuoso-design-system/pull/256) ([@virtru-dubich](https://github.com/virtru-dubich))
+- #CCR-710 improve some styles [#253](https://github.com/virtru/virtuoso-design-system/pull/253) ([@virtru-dubich](https://github.com/virtru-dubich))
+- #CCR-599 create error screen [#246](https://github.com/virtru/virtuoso-design-system/pull/246) ([@virtru-dubich](https://github.com/virtru-dubich))
+- Feature/ccr 597 [#244](https://github.com/virtru/virtuoso-design-system/pull/244) ([@virtru-dubich](https://github.com/virtru-dubich))
+- [CCR-598] update nav [#239](https://github.com/virtru/virtuoso-design-system/pull/239) ([@dillonthompson](https://github.com/dillonthompson))
+- #CCR-517 added spinner virtru [#238](https://github.com/virtru/virtuoso-design-system/pull/238) ([@virtru-dubich](https://github.com/virtru-dubich))
+- feat: update header menu CCR-479 [#232](https://github.com/virtru/virtuoso-design-system/pull/232) ([@virtru-dubich](https://github.com/virtru-dubich))
+- #CCR-479 improved styles for table [#219](https://github.com/virtru/virtuoso-design-system/pull/219) ([@virtru-dubich](https://github.com/virtru-dubich))
+- #CCR-386 some changes for custom ant elements [#212](https://github.com/virtru/virtuoso-design-system/pull/212) ([@virtru-dubich](https://github.com/virtru-dubich))
+
+#### 🐛 Bug Fix
+
+- fix(richtext): added check for content size [#361](https://github.com/virtru/virtuoso-design-system/pull/361) ([@gerus-virtru](https://github.com/gerus-virtru))
+- #CCR-1493 created security settings toggles [#367](https://github.com/virtru/virtuoso-design-system/pull/367) ([@virtru-dubich](https://github.com/virtru-dubich))
+- fix(logo): size and spacing [#364](https://github.com/virtru/virtuoso-design-system/pull/364) ([@suchak1](https://github.com/suchak1))
+- CCR-1416 Fix warning and create page with custom icons [#347](https://github.com/virtru/virtuoso-design-system/pull/347) ([@virtru-dubich](https://github.com/virtru-dubich))
+- Fixed FileListItem component [#337](https://github.com/virtru/virtuoso-design-system/pull/337) ([@riabokon-virtru](https://github.com/riabokon-virtru))
+- #CCR-1089 fix dependencies [#305](https://github.com/virtru/virtuoso-design-system/pull/305) ([@virtru-dubich](https://github.com/virtru-dubich))
+- fix: warning icon [#289](https://github.com/virtru/virtuoso-design-system/pull/289) ([@crbraun1](https://github.com/crbraun1))
+- [CCR-598] update navitem style [#241](https://github.com/virtru/virtuoso-design-system/pull/241) ([@dillonthompson](https://github.com/dillonthompson))
+- docs: restore introductory pages and sort them first [#231](https://github.com/virtru/virtuoso-design-system/pull/231) ([@avkvirtru](https://github.com/avkvirtru))
+- docs: explain install for create-react-apps [#207](https://github.com/virtru/virtuoso-design-system/pull/207) ([@jrschumacher](https://github.com/jrschumacher))
+
+#### 🏎 Performance
+
+- CCR-1121: Engineering Day: Bump Loki package version [#313](https://github.com/virtru/virtuoso-design-system/pull/313) ([@riabokon-virtru](https://github.com/riabokon-virtru))
+
+#### Authors: 10
+
+- [@gerus-virtru](https://github.com/gerus-virtru)
+- [@virtru-dubich](https://github.com/virtru-dubich)
+- [@virtrujakev](https://github.com/virtrujakev)
+- Arthur Klepchukov ([@avkvirtru](https://github.com/avkvirtru))
+- Chris Braun ([@crbraun1](https://github.com/crbraun1))
+- Dillon Thompson ([@dillonthompson](https://github.com/dillonthompson))
+- Krish Suchak ([@suchak1](https://github.com/suchak1))
+- Michael ([@riabokon-virtru](https://github.com/riabokon-virtru))
+- Ryan Schumacher ([@jrschumacher](https://github.com/jrschumacher))
+- Sara Tarnvik ([@stvik](https://github.com/stvik))
+
+---
+
 # v2.0.0 (Tue Aug 31 2021)
 
 #### 💥 Breaking Change
