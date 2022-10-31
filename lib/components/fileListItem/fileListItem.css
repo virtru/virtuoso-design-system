@@ -18,6 +18,7 @@
   align-items: center;
   background: var(--vds-color-white);
   overflow: hidden;
+  min-height: 42px;
 }
 
 .inner:hover,
