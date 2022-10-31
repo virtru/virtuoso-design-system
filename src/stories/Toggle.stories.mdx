@@ -1,0 +1,156 @@
+import Button from '@mui/material/Button';
+import { ArgsTable, Story, Canvas, Meta } from '@storybook/addon-docs';
+import Switch from '@mui/material/Switch';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+
+<Meta
+    title='Base/Toggle'
+    component={Switch}
+    argTypes={{
+        checked: {
+            type: 'boolean',
+            description: 'If true, the component is checked.',
+            control: {
+                type: 'boolean',
+            },
+            table: {
+                defaultValue: { summary: 'false' },
+            },
+        },
+        color: {
+            description: 'The color of the component.',
+            control: {
+                type: 'select',
+            },
+            options: [
+                'default',
+                'primary',
+                'secondary',
+                'error',
+                'info',
+                'success',
+                'warning',
+            ],
+            table: {
+                defaultValue: { summary: 'primary' },
+            },
+        },
+        defaultChecked: {
+            type: 'boolean',
+            description:
+                'The default checked state. Use when the component is not controlled.',
+            control: {
+                type: 'boolean',
+            },
+            table: {
+                defaultValue: { summary: 'false' },
+            },
+        },
+        disabled: {
+            type: 'boolean',
+            description: 'If true, the component is disabled.',
+            control: {
+                type: 'boolean',
+            },
+            table: {
+                defaultValue: { summary: 'false' },
+            },
+        },
+        disableRipple: {
+            type: 'boolean',
+            description: 'If true, the ripple effect is disabled.',
+            control: {
+                type: 'boolean',
+            },
+            table: {
+                defaultValue: { summary: 'false' },
+            },
+        },
+        required: {
+            type: 'boolean',
+            description: 'If true, the component is required.',
+            control: {
+                type: 'boolean',
+            },
+            table: {
+                defaultValue: { summary: 'false' },
+            },
+        },
+        size: {
+            description:
+                'The size of the component. small is equivalent to the dense switch styling.',
+            control: {
+                type: 'select',
+            },
+            options: ['small', 'medium', 'large'],
+            table: {
+                defaultValue: { summary: 'medium' },
+            },
+        },
+    }}
+/>
+
+export const Template = (args) => {
+    return <Switch {...args} />;
+};
+
+# Toggle
+
+Switches toggle the state of a single setting on or off.
+
+<Canvas>
+    <Story name='Default' args={{}}>
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+<ArgsTable story='Default' />
+
+## Stories
+
+### Basic
+<Canvas>
+    <Story name='Basic' args={{}}>
+        <>
+        <Switch defaultChecked />
+        <Switch />
+        <Switch disabled defaultChecked />
+        <Switch disabled />
+        </>
+    </Story>
+</Canvas>
+
+### Label
+<Canvas>
+    <Story name='Label' args={{}}>
+        <FormGroup>
+            <FormControlLabel control={<Switch defaultChecked />} label="Label" />
+            <FormControlLabel disabled control={<Switch />} label="Disabled" />
+        </FormGroup>
+    </Story>
+</Canvas>
+
+### Size
+<Canvas>
+    <Story name='size' args={{}}>
+        <>
+        <Switch defaultChecked />
+        <Switch defaultChecked size="small" />
+        <Switch defaultChecked size="medium" />
+        <Switch defaultChecked size="large" />
+        </>
+    </Story>
+</Canvas>
+
+### Color
+<Canvas>
+    <Story name='color' args={{}}>
+        <>
+        <Switch defaultChecked />
+        <Switch defaultChecked color="secondary" />
+        <Switch defaultChecked color="warning" />
+        <Switch defaultChecked color="default" />
+        </>
+    </Story>
+</Canvas>
