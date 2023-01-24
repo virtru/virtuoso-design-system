@@ -1,6 +1,8 @@
 .trigger {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
+  vertical-align: baseline;
   margin-left: var(--vds-spacer-xxs);
 }
 
