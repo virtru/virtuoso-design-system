@@ -1,5 +1,17 @@
-.wrap {
+.trigger {
   display: inline-flex;
   align-items: center;
-  padding: 0 var(--vds-spacer-xxs);
+  margin-left: var(--vds-spacer-xxs);
+}
+
+.trigger:global(.ant-btn-icon-only) {
+  width: inherit;
+  height: inherit;
+  padding: var(--vds-spacer-xxs);
+  font-size: inherit;
+}
+
+.trigger:hover:not(:focus) {
+  border-color: transparent;
+  box-shadow: none;
 }
