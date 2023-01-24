@@ -142,7 +142,8 @@ storiesOf('virtru/sendMessage', module).add('basic', () => {
         >
           <div>
             <Title level={5}>
-              Security <InfoTooltip title="security" />
+              Security
+              <InfoTooltip title="security" />
             </Title>
             <div>MESSAGE OPTIONS</div>
             <ItemOption
@@ -162,7 +163,8 @@ storiesOf('virtru/sendMessage', module).add('basic', () => {
             {showExpirationPicker && <ExpirationPicker getTime={getTime} />}
             <Divider plain />
             <div>
-              ATTACHMENT OPTIONS <InfoTooltip title="Some tooltip" />
+              ATTACHMENT OPTIONS
+              <InfoTooltip title="Some tooltip" />
             </div>
             <ItemOption
               icon={<WatermarkIcon />}
