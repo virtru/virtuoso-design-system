@@ -13,6 +13,7 @@ storiesOf('virtru/fileListItem', module).add(
         extension=".tdf"
         decryptedExt="pdf"
         size="123.45 KB"
+        tabIndex="0"
         button={
           <Button type="primary" size="small">
             Remove

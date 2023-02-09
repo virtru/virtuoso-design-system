@@ -9,6 +9,7 @@ const UnsupportedFileType = (props) => (
     extension=".tdf"
     decryptedExt="pdf"
     size="File type security limitation"
+    tabIndex="0"
     button={
       <Button type="primary" size="small">
         Remove
