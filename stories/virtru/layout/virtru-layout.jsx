@@ -1,6 +1,7 @@
-import 'antd/dist/antd.less';
-import { storiesOf } from '@storybook/react';
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { storiesOf } from '@storybook/react';
+
 import {
   VirtruLayout,
   Layout,
@@ -9,9 +10,13 @@ import {
   TopMenuDropdown,
   TopMenuDropdownWrap,
   CustomIconAvatar,
+  LeftNavigation,
 } from '@';
 
-const { Sider, Content } = Layout;
+import { ReactComponent as SendIcon } from '@/assets/send-24.svg';
+import { ReactComponent as InboxIcon } from '@/assets/inbox-24.svg';
+
+import 'antd/dist/antd.less';
 
 const menu = (
   <TopMenuDropdownWrap defaultSelectedKeys={['1']}>
@@ -29,6 +34,23 @@ const menu = (
   </TopMenuDropdownWrap>
 );
 
+const sidebar = (
+  <LeftNavigation
+    items={[
+      {
+        key: 'outbound',
+        icon: <SendIcon />,
+        label: <Link to="/">Send</Link>,
+      },
+      {
+        key: 'inbound',
+        icon: <InboxIcon />,
+        label: <Link to="/">Request</Link>,
+      },
+    ]}
+  />
+);
+
 storiesOf('virtru/layout', module).add(
   'virtru layout',
   () => (
@@ -38,8 +60,8 @@ storiesOf('virtru/layout', module).add(
           <TopMenuDropdown menu={menu} activeUser="ksuchak@virtru.com" />
         </Header>
       }
-      sider={<Sider theme="light">Sider</Sider>}
-      content={<Content>Content</Content>}
+      sider={sidebar}
+      content={<Layout.Content>Content</Layout.Content>}
     />
   ),
   {
