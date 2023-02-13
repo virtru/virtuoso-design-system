@@ -1,17 +1,19 @@
-.vdsMainLayout:global(.ant-layout) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.mainLayout:global(.ant-layout) {
   width: 100%;
   min-height: 100vh;
 }
 
-.vdsMainLayout:global(.ant-layout) > * {
+.container:global(.ant-layout) {
+  position: relative;
   width: 100%;
+  max-width: 1440px;
+  align-self: center;
 }
 
-.vdsContainer:global(.ant-layout) {
-  max-width: 1440px;
-  flex-direction: row;
+.container:global(.ant-layout.ant-layout-has-sider) {
+  padding-left: var(--vds-left-navigation-width-collapsed);
+}
+
+.container :global(.ant-layout-content) {
   padding: var(--vds-spacer-md);
 }

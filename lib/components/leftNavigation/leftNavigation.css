@@ -1,47 +1,53 @@
-.menuWrapper {
-  height: 100%;
+:root {
+  --vds-left-navigation-width-collapsed: 64px;
+  --vds-left-navigation-width: 200px;
+}
+
+.sider {
   position: absolute;
+  top: 0;
   left: 0;
-  width: 200px;
-  z-index: 5;
+  width: var(--vds-left-navigation-width-collapsed);
+  height: 100%;
+  background-color: var(--vds-color-slate-lightest);
+}
+
+.leftMenu :global(.ant-menu-item) {
+  color: var(--vds-color-slate-darker);
+}
+
+.leftMenu :global(.ant-menu-item-selected) {
+  background: var(--vds-color-slate-lightest);
+}
+
+.leftMenu :global(.ant-menu-title-content) {
+  color: inherit;
+  transition: none;
 }
 
 .leftMenu :global(.ant-menu-item::after) {
   border: none;
 }
 
-.leftMenu :global(.ant-menu-item span) {
-  transition: none;
+.leftMenu :global(.ant-menu-item a) {
+  color: inherit;
 }
 
-.leftMenu :global(.ant-menu-item-selected.ant-menu-item),
-.leftMenu :global(.ant-menu-item):active {
-  background: var(--vds-color-slate-lightest);
-}
-
-.leftMenu :global(.ant-menu-item .ant-menu-title-content) {
-  color: var(--vds-color-slate-darker);
+.leftMenu:not(:global(.ant-menu-inline-collapsed)) :global(.ant-menu-item-selected),
+.leftMenu:not(:global(.ant-menu-inline-collapsed)) :global(.ant-menu-item-active) {
+  color: var(--vds-color-slate-darkest);
 }
 
 .leftMenu :global(.ant-menu-item-selected .ant-menu-title-content) {
   text-decoration: underline;
-  color: var(--vds-color-slate-darkest);
   text-underline-offset: 3px;
 }
 
-
 .leftMenu:global(.ant-menu) {
-  background: var(--vds-color-slate-lightest);
   height: 100%;
+  background: var(--vds-color-slate-lightest);
   box-shadow: 2px 0 1px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: width 0.05s linear;
   transition: width 0.05s linear;
-  -webkit-transform: translateZ(0) scale(1, 1);
-  transform: translateZ(0) scale(1, 1);
-}
-
-.leftMenu:global(.ant-menu.ant-menu-inline-collapsed) {
-  width: 64px;
 }
 
 .leftMenu:global(.ant-menu.ant-menu-inline-collapsed > .ant-menu-item) {
@@ -51,16 +57,13 @@
 }
 
 .leftMenu:global(.ant-menu > .ant-menu-item .ant-menu-item-icon) {
+  color: inherit;
   line-height: 0;
   flex-shrink: 0;
 }
 
-.leftMenu path {
-  fill: var(--vds-color-slate-darker);
-}
-
-.leftMenu :global(.ant-menu-item-selected) path {
-  fill: var(--vds-color-slate-darkest);
+.leftMenu :global(.ant-menu-item-icon) path {
+  fill: currentColor;
 }
 
 @media screen and (max-width: 767px) {
