@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { HomeOutlined, SettingFilled } from '@ant-design/icons';
-import { LeftNavigation, Menu } from '@';
+import { LeftNavigation } from '@';
 
 const menuItems = [
   {
@@ -17,15 +17,5 @@ const menuItems = [
 ];
 
 storiesOf('virtru/navigation', module).add('left', () => {
-  return (
-    <LeftNavigation mobileAdaptive>
-      {menuItems.map((item) => {
-        return (
-          <Menu.Item key={item.key} icon={item.icon}>
-            {item.label}
-          </Menu.Item>
-        );
-      })}
-    </LeftNavigation>
-  );
+  return <LeftNavigation mobileAdaptive items={menuItems} />;
 });
