@@ -196,6 +196,20 @@ Any failed tests will be output in `.loki/difference/`. You can inspect any visu
 
 If the differences are intended, you can update the baselines by following the instructions in the next section.
 
+#### Note: If you have an Apple Silicon chip on your Mac, you have to use [Colima](https://github.com/abiosoft/colima) to make everything work correctly
+
+```shell
+colima start --arch x86_64
+```
+
+```shell
+npm run test:vrt
+```
+
+```shell
+colima stop
+```
+
 ### Updating Loki Baselines
 
 _Note_: Before performing this step, you must first run the VRT once (see previous section).
