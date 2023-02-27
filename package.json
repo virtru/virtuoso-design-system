@@ -169,7 +169,7 @@
     "rollup-plugin-typescript2": "^0.30.0",
     "showdown": "^1.9.1",
     "storybook-addons-abstract": "^6.0.3",
-    "storybook-design-token": "^0.8.1",
+    "storybook-design-token": "^2.9.0",
     "storybook-react-router": "^1.0.8",
     "style-dictionary": "^2.10.1",
     "style-loader": "^0.23.1",
