@@ -143,7 +143,7 @@ storiesOf('virtru/sendMessage', module).add('basic', () => {
           <div>
             <Title level={5}>
               Security
-              <InfoTooltip title="security" />
+              <InfoTooltip title="security" trigger={['click', 'focus']} />
             </Title>
             <div>MESSAGE OPTIONS</div>
             <ItemOption
@@ -164,7 +164,7 @@ storiesOf('virtru/sendMessage', module).add('basic', () => {
             <Divider plain />
             <div>
               ATTACHMENT OPTIONS
-              <InfoTooltip title="Some tooltip" />
+              <InfoTooltip title="Some tooltip" trigger={['click', 'focus']} />
             </div>
             <ItemOption
               icon={<WatermarkIcon />}
