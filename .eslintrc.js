@@ -16,7 +16,6 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:jsx-a11y/strict',
     'prettier',
-    'prettier/react',
   ],
   env: {
     browser: true,
@@ -58,6 +57,7 @@ module.exports = {
       },
     ],
     'react-hooks/rules-of-hooks': 'error',
+    'arrow-body-style': 'warn'
   },
   overrides: [
     {
