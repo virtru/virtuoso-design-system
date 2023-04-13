@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text, number } from '@storybook/addon-knobs';
 
@@ -24,11 +24,21 @@ storiesOf('virtru/richText', module)
     );
   })
   .add('controlled', () => {
-    const value = text('Value', 'Some text');
+    const knobsValue = text('Value', 'Some text');
+
+    const [value, setValue] = useState(knobsValue);
+
+    const richTextChangeHandler = useCallback((newValue) => {
+      setValue(newValue);
+    }, []);
+
+    useEffect(() => {
+      setValue(knobsValue);
+    }, [knobsValue]);
 
     return (
       <GroupEditor>
-        <RichText value={value} />
+        <RichText value={value} onChange={richTextChangeHandler} />
       </GroupEditor>
     );
   })
