@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { EditorState } from 'draft-js';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text, number } from '@storybook/addon-knobs';
 
 import { GroupEditor, RichText } from '@';
+
+import { createEditorState } from '@/utils/richText';
 
 storiesOf('virtru/richText', module)
   .addDecorator(withKnobs)
@@ -25,7 +26,7 @@ storiesOf('virtru/richText', module)
     );
   })
   .add('controlled', () => {
-    const [editorState, setEditorState] = useState(EditorState.createEmpty());
+    const [editorState, setEditorState] = useState(createEditorState());
 
     return (
       <GroupEditor>
