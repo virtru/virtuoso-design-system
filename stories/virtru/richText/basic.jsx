@@ -1,8 +1,10 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text, number } from '@storybook/addon-knobs';
 
 import { GroupEditor, RichText } from '@';
+
+import { createEditorState } from '@/utils/richText';
 
 storiesOf('virtru/richText', module)
   .addDecorator(withKnobs)
@@ -24,21 +26,11 @@ storiesOf('virtru/richText', module)
     );
   })
   .add('controlled', () => {
-    const knobsValue = text('Value', 'Some text');
-
-    const [value, setValue] = useState(knobsValue);
-
-    const richTextChangeHandler = useCallback((newValue) => {
-      setValue(newValue);
-    }, []);
-
-    useEffect(() => {
-      setValue(knobsValue);
-    }, [knobsValue]);
+    const [editorState, setEditorState] = useState(createEditorState());
 
     return (
       <GroupEditor>
-        <RichText value={value} onChange={richTextChangeHandler} />
+        <RichText editorState={editorState} onChange={setEditorState} />
       </GroupEditor>
     );
   })
