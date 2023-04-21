@@ -100,7 +100,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-import": "^1.13.3",
     "babel-plugin-module-name-mapper": "^1.2.0",
-    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-module-resolver": "^5.0.0",
     "classnames": "^2.3.1",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "common-js": "^0.3.8",
