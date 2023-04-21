@@ -1,3 +1,5 @@
+import glob from 'glob';
+import path from 'path';
 import less from 'rollup-plugin-less';
 import svgr from '@svgr/rollup';
 
@@ -13,15 +15,27 @@ const modifyVars = require('../lib/styles/antd');
 const postcssConfig = require('./postcss.config');
 
 module.exports = {
-  input: 'lib/index.js',
+  input: {
+    bundle: 'lib/index.js',
+    ...glob.sync('lib/utils/*.js').reduce((previousValue, currentValue) => {
+      const file = currentValue.replace('lib/', '');
+
+      // eslint-disable-next-line no-param-reassign
+      previousValue[file.replace(path.extname(file.replace('utils/', '')), '')] = currentValue;
+
+      return previousValue;
+    }, {}),
+  },
   output: [
     {
-      file: 'dist//bundle.esm.js',
+      dir: 'dist',
+      entryFileNames: '[name].esm.js',
       format: 'esm',
       sourcemap: true,
     },
     {
-      file: 'dist//bundle.cjs.js',
+      dir: 'dist',
+      entryFileNames: '[name].cjs.js',
       format: 'cjs',
       sourcemap: true,
     },
