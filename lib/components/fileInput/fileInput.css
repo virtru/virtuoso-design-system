@@ -22,7 +22,9 @@
   font-size: var(--vds-font-scale-base);
   cursor: pointer;
 }
-
+.textWrapperDisable {
+  cursor: default;
+}
 .textWrapper .addFileIcon {
   margin-right: var(--vds-spacer-xs);
   font-size: 24px;
@@ -39,6 +41,9 @@
   border-radius: var(--vds-border-radius-sm);
 }
 
+.labelDisable {
+  opacity: 0.5;
+}
 .input {
   position: absolute;
   top: 0;
