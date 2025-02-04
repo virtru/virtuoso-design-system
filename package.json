@@ -158,7 +158,7 @@
     "react-window": "^1.8.6",
     "reqwest": "^2.0.5",
     "rimraf": "^3.0.2",
-    "rollup": "^2.23.0",
+    "rollup": "^4.34.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-less": "^1.1.3",
